@@ -138,3 +138,39 @@ export async function wecCalendar() {
   }
   return out;
 }
+
+// ---------- Cycling: UCI World Tour calendar (Wikipedia season pages) ----------
+const MONUMENTS = /Milan–San Remo|Tour of Flanders|Paris–Roubaix|Liège–Bastogne–Liège|Il Lombardia/;
+const GRAND_TOURS = /Giro d'Italia|Tour de France|Vuelta a España/; // these come from the ASO sites and Giro page
+
+/** Every World Tour race of this season and next, with the winner once it is run. */
+export async function cyclingWorldTour() {
+  const out = [];
+  for (const y of [Y, Y + 1]) {
+    const page = `${y} UCI World Tour`;
+    const w = await wikitext(page);
+    if (!w || !w.includes(`[[${y} `)) continue; // a redirect to the generic article has no season table
+    for (const row of w.split(/\n\|-/)) {
+      const head = row.match(/^\s*!\s*scope="row"\s*\|.*?\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/m);
+      const dateLine = row.split('\n').find(l => /^\|\s*\d{1,2}(?:\s*[–-]\s*\d{1,2})?\s+[A-Z]/.test(l) || /^\|\s*\d{1,2} [A-Z][a-z]+ [–-] \d/.test(l));
+      if (!head || !dateLine) continue;
+      const race = head[1].trim();
+      if (GRAND_TOURS.test(race)) continue;
+      const d = parseDate(dateLine, y);
+      if (!d) continue;
+      const winner = row.match(/Flagathlete\|\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/);
+      out.push({
+        id: `uci:${y}:${race}`,
+        passion: 'cicl',
+        title: race,
+        sub: winner ? `Winner: ${winner[1]}` : `UCI World Tour ${y}`,
+        start: iso(zoned(d.y, d.m, d.d, 10, 0, 'Europe/Rome')),
+        weight: MONUMENTS.test(race) ? 3 : /–| Classic|Gent|Amstel|Flèche|Strade/.test(race) ? 2 : 1,
+        approxTime: true,
+        link: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}`,
+        source: 'Wikipedia',
+      });
+    }
+  }
+  return out;
+}

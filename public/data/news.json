@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T17:39:22.336Z",
+ "updated": "2026-10-15T17:44:19.592Z",
  "status": {
   "Apple Newsroom (apple)": "12 items",
   "The Guardian (royal)": "12 items",
@@ -9,7 +9,11 @@
   "Cyclingnews (cicl)": "12 items",
   "Ski Racing (sci)": "12 items",
   "ESPN (tennis)": "12 items",
-  "FIA WEC (wec)": "Error: 404 https://www.fiawec.com/en/news/rss"
+  "Sportscar365 (wec)": "1 items",
+  "Google News (dakar)": "12 items",
+  "Google News (ac)": "12 items",
+  "Google News (wec)": "12 items",
+  "Google News (space)": "12 items"
  },
  "items": [
   {
@@ -691,6 +695,398 @@
    "source": "ESPN",
    "time": "2026-10-12T05:17:14.000Z",
    "url": "https://www.espn.com/tennis/story/_/id/50163882/zheng-qinwen-withdraws-wuhan-open-shoulder-injury"
+  },
+  {
+   "id": "Sportscar365:https://sportscar365.com/lemans/wec/mclaren-adds-lynn-to-2027-hypercar-roster/",
+   "passion": "wec",
+   "title": "McLaren Adds Lynn to 2027 Hypercar Roster",
+   "source": "Sportscar365",
+   "time": "2026-10-15T13:00:25.000Z",
+   "url": "https://sportscar365.com/lemans/wec/mclaren-adds-lynn-to-2027-hypercar-roster/"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5M2UxcHZEZm9Wdjc1emZqNGdKLWpuX0p1bWtHaVBLSlB5NEVqT3Z0RlBycWw5T2lqalM4LWNKZl9saFc2WWdoVVNsSFlLVGZYcjF6ZDN6NFVjUlU3Y0MyMzJWZjNtdw?oc=5",
+   "passion": "dakar",
+   "title": "The 2027 Dakar Rally route is a journey into the greatest adventure yet",
+   "source": "Red Bull",
+   "time": "2026-10-12T17:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5M2UxcHZEZm9Wdjc1emZqNGdKLWpuX0p1bWtHaVBLSlB5NEVqT3Z0RlBycWw5T2lqalM4LWNKZl9saFc2WWdoVVNsSFlLVGZYcjF6ZDN6NFVjUlU3Y0MyMzJWZjNtdw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxQX2ZFT1NpNk5maENCaVlVMjFfby10VktEMXpDSUZtUmpTeUlsQVpRNWJZWXJFVnVsRVZqNjdHb0ZQWWZ2X2wxcUZ5QlkzVzlPUG1pWWpjSlhOeHU3M1AxSlducUl5ZVhYMkoxQzRzdk1GNENFbUNEVXBYZUtUTVVoWmpieVJWbTRnVlpKMnUtNlFyMGs?oc=5",
+   "passion": "dakar",
+   "title": "DEFENDERS EXPLORE AND DEFINE DAKAR RALLY ROUTE",
+   "source": "JLR Corporate Website",
+   "time": "2026-10-12T11:48:20.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQX2ZFT1NpNk5maENCaVlVMjFfby10VktEMXpDSUZtUmpTeUlsQVpRNWJZWXJFVnVsRVZqNjdHb0ZQWWZ2X2wxcUZ5QlkzVzlPUG1pWWpjSlhOeHU3M1AxSlducUl5ZVhYMkoxQzRzdk1GNENFbUNEVXBYZUtUTVVoWmpieVJWbTRnVlpKMnUtNlFyMGs?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxNMXp2ZUQybFlnbV8yeHJ4d2hJVU1NUXZmdEM5aU1fbk9EZmplQ1Vid01rWVNSUXJQOHllTllEMXc3bnItY3lNWTZscER6UXpzenAyQXd2dnRlRkdwZEh5ZFYyWFdkWXlmSGowNjFKTmVQXzNjZkFIQ3RvRVp6NlZ0TnpBaGw4NWNWSWtPZ3dDbk9WY00?oc=5",
+   "passion": "dakar",
+   "title": "2027 Sonora Rally Scheduled for February 11–14",
+   "source": "Cycle News",
+   "time": "2026-10-11T20:38:01.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMXp2ZUQybFlnbV8yeHJ4d2hJVU1NUXZmdEM5aU1fbk9EZmplQ1Vid01rWVNSUXJQOHllTllEMXc3bnItY3lNWTZscER6UXpzenAyQXd2dnRlRkdwZEh5ZFYyWFdkWXlmSGowNjFKTmVQXzNjZkFIQ3RvRVp6NlZ0TnpBaGw4NWNWSWtPZ3dDbk9WY00?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMitgFBVV95cUxOUlZJZHlNaFB2V180N0poT25QeHNBeEdNOXpfdWJwQ2ZCOWFqTC02c2t1QUE0NFdyQXdmVFFNYlV3bzNkbjNQQll3ZVU5NkU4d1BQdkpMTm5OSlFzcldSVzRhUDBvOGR2SDUwTEVhWUtGU3MxRjQxUnB5dDhuZ1JSSnQwQkc2LTVZMjV0cTVId3NpMkxYMzNObF8wQlVYZm9NVUJoZlEybmZVbU51M1BtY3NuZjB6dw?oc=5",
+   "passion": "dakar",
+   "title": "Bore & Stoke Breakout: Johnny Campbell Guides Ricky Brabec to Dakar",
+   "source": "Motorcycle.com",
+   "time": "2026-10-15T16:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUlZJZHlNaFB2V180N0poT25QeHNBeEdNOXpfdWJwQ2ZCOWFqTC02c2t1QUE0NFdyQXdmVFFNYlV3bzNkbjNQQll3ZVU5NkU4d1BQdkpMTm5OSlFzcldSVzRhUDBvOGR2SDUwTEVhWUtGU3MxRjQxUnB5dDhuZ1JSSnQwQkc2LTVZMjV0cTVId3NpMkxYMzNObF8wQlVYZm9NVUJoZlEybmZVbU51M1BtY3NuZjB6dw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiekFVX3lxTE1WbDNYOW9LdzlGdzc0SVVoWlFwelNUbERHNl9YUHNpbWFzc29QaTVwOW8zbG5NMGc2NjMyb1NPYmJ5YkN1NjVUS1hIRllBdi1RVzdxX2VwTE1ieE8tSzZRT3pXUjdTUnRGSC1hU2xYSk5UcVRlaU80Y1p3?oc=5",
+   "passion": "dakar",
+   "title": "Dakar 2027: Northern route, Morocco plan and what teams face",
+   "source": "www.motorcycles.news",
+   "time": "2026-10-12T16:17:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1WbDNYOW9LdzlGdzc0SVVoWlFwelNUbERHNl9YUHNpbWFzc29QaTVwOW8zbG5NMGc2NjMyb1NPYmJ5YkN1NjVUS1hIRllBdi1RVzdxX2VwTE1ieE8tSzZRT3pXUjdTUnRGSC1hU2xYSk5UcVRlaU80Y1p3?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMivgFBVV95cUxPSkhRWjY2Wm9XWFZxVThhc0Y1dTZIMFZaMXhkTlN4ZDVKNVpMRHhHejBBdVlPRnRhMDJmc1hTTWFxUHYxTEt5YXNaQ1JnNzIxeUZEc2dHODcwZ3JLNlBVT1Rvak1FdnlmS0djd3dEem9adGNGRVE3VUVldVB2dDlFZV9MV29iSkVNN3NMTlY5ZFFYSjB6NUJJalNkOXJyWUhFdVkzMkJXZDItZFdJdXJoU1JSRlBhSEpJSl90T0ln?oc=5",
+   "passion": "dakar",
+   "title": "After being linked to a Dakar return, Fernando Alonso shuts down these reports",
+   "source": "grandprix247",
+   "time": "2026-10-09T06:48:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSkhRWjY2Wm9XWFZxVThhc0Y1dTZIMFZaMXhkTlN4ZDVKNVpMRHhHejBBdVlPRnRhMDJmc1hTTWFxUHYxTEt5YXNaQ1JnNzIxeUZEc2dHODcwZ3JLNlBVT1Rvak1FdnlmS0djd3dEem9adGNGRVE3VUVldVB2dDlFZV9MV29iSkVNN3NMTlY5ZFFYSjB6NUJJalNkOXJyWUhFdVkzMkJXZDItZFdJdXJoU1JSRlBhSEpJSl90T0ln?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiW0FVX3lxTE53N2MxVzJXTXNyeEdVMTV2X1dmM0w2aFVJZEJEYjdDdG1ITEtwdFpzRG0wWUxIQzJaXzBaSGh4WHJiRGxSMmpnUUZpN0RQNlctTEtGSW9Ia1NjeU0?oc=5",
+   "passion": "dakar",
+   "title": "Tonbridge team aims to boost profile of off-road endurance racing",
+   "source": "BBC",
+   "time": "2026-10-09T05:08:46.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53N2MxVzJXTXNyeEdVMTV2X1dmM0w2aFVJZEJEYjdDdG1ITEtwdFpzRG0wWUxIQzJaXzBaSGh4WHJiRGxSMmpnUUZpN0RQNlctTEtGSW9Ia1NjeU0?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMickFVX3lxTFBQVHpGNmNtWGY1WXAwZzFqOHZvMTV1OGttc1QxYlVfd3dOM3p6YzJVSnY2WDJGTkFGdmdOdE1HQ2F0S21fSzFJNlR5Qy1CS29ZRzJHZGhfSTNQM2t5M2pFNXc4c0Z4TThxM05iTlFDYmZGZw?oc=5",
+   "passion": "dakar",
+   "title": "Gallery3",
+   "source": "Webike Japan",
+   "time": "2026-10-10T16:19:03.000Z",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQVHpGNmNtWGY1WXAwZzFqOHZvMTV1OGttc1QxYlVfd3dOM3p6YzJVSnY2WDJGTkFGdmdOdE1HQ2F0S21fSzFJNlR5Qy1CS29ZRzJHZGhfSTNQM2t5M2pFNXc4c0Z4TThxM05iTlFDYmZGZw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMilwFBVV95cUxPWjFDb2Ffd2NmeXl2eW8yaGxQLWZpalJxS090dFY4eWhoOU1vY0o4dHVlS2l2R2VGa0d6UzlCbFhvQ0ZRTDdQRC1jeThQUGJnUHZ1M3FfQ2szSktlVXFsc181ZUtuTEJtQXZhcXJGRzJPd1pvVHUyZDhjMk94cTh0SktLRFU5eUZfcFpvdmFpV0RfSEd2d0930gGcAUFVX3lxTE5wM3VDb0Jya1F4ZVBQLU5OUjRjdG91eENmOTAtc29xMjV3bGxISUl1bGtHaERtM2U5VnFzVEg4dW1tejBHMTEyY1h5a2ZJQzk3c3Iyc3FDakVJMWs0ajBzV1JJRUxkSkdxaUc4c2hhbjZQQ0V1Q0k0ZDk0Vk1vMlhLQ0FJTVFrNlZOQnZWNlFCYUtrNlN6RGliY1VKTA?oc=5",
+   "passion": "dakar",
+   "title": "Alonso denies Dakar 2027 comeback: ‘I don’t think it’s possible’",
+   "source": "F1i.com",
+   "time": "2026-10-09T10:39:49.000Z",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWjFDb2Ffd2NmeXl2eW8yaGxQLWZpalJxS090dFY4eWhoOU1vY0o4dHVlS2l2R2VGa0d6UzlCbFhvQ0ZRTDdQRC1jeThQUGJnUHZ1M3FfQ2szSktlVXFsc181ZUtuTEJtQXZhcXJGRzJPd1pvVHUyZDhjMk94cTh0SktLRFU5eUZfcFpvdmFpV0RfSEd2d0930gGcAUFVX3lxTE5wM3VDb0Jya1F4ZVBQLU5OUjRjdG91eENmOTAtc29xMjV3bGxISUl1bGtHaERtM2U5VnFzVEg4dW1tejBHMTEyY1h5a2ZJQzk3c3Iyc3FDakVJMWs0ajBzV1JJRUxkSkdxaUc4c2hhbjZQQ0V1Q0k0ZDk0Vk1vMlhLQ0FJTVFrNlZOQnZWNlFCYUtrNlN6RGliY1VKTA?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikgFBVV95cUxNU2lYZFRfUXZzdlpZMEpCMDlYdklVWDh2bzJOaEotQy1OYXZCVFVNZWJZQmREX25IZFV0UlBCV2NLTWpDdTVaZ1lXcENfLVJDUDZhZmNNdWhyNWtOb01QV0hQZUxiSHZzeUxLNThyUEg5b0RQckd6OERoSVhHNnRveVpIUEN1dGpRS09Db2dVLWpQZw?oc=5",
+   "passion": "dakar",
+   "title": "DEFENDER DAKAR: A ROAD-LEGAL EVOLUTION OF THE DAKAR RALLY WINNER",
+   "source": "JLR Corporate Website",
+   "time": "2026-10-12T05:36:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNU2lYZFRfUXZzdlpZMEpCMDlYdklVWDh2bzJOaEotQy1OYXZCVFVNZWJZQmREX25IZFV0UlBCV2NLTWpDdTVaZ1lXcENfLVJDUDZhZmNNdWhyNWtOb01QV0hQZUxiSHZzeUxLNThyUEg5b0RQckd6OERoSVhHNnRveVpIUEN1dGpRS09Db2dVLWpQZw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkI1WFFzb1k5SnltMU1USGdZNnFhdDdzQXF2ZDRvU1YwSG44WnVhRkFtWUxnTjVrdDJKSGVzbjFfd3pjcFJ0d0tWb0loOVpsZlYzYmZQYVFNV05LUnFNbU5HRVdXRnI5a2NoWUtOU3BWc1Q5YjYxb3dJY0dYZTNxZ2ZqRzl4dFlEdkd5blVZcnJXOUhOaFM2VHBjdUFYV3hGR25BemlNNDd6YzNzM1ZaSlY2QWM?oc=5",
+   "passion": "dakar",
+   "title": "De la Rosa sees two exceptions in F1: “Verstappen and Alonso are the GOATs”",
+   "source": "GPblog",
+   "time": "2026-10-15T16:47:11.000Z",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQkI1WFFzb1k5SnltMU1USGdZNnFhdDdzQXF2ZDRvU1YwSG44WnVhRkFtWUxnTjVrdDJKSGVzbjFfd3pjcFJ0d0tWb0loOVpsZlYzYmZQYVFNV05LUnFNbU5HRVdXRnI5a2NoWUtOU3BWc1Q5YjYxb3dJY0dYZTNxZ2ZqRzl4dFlEdkd5blVZcnJXOUhOaFM2VHBjdUFYV3hGR25BemlNNDd6YzNzM1ZaSlY2QWM?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeUhReTNtdlBVb1RUdmNCYUwzNkd0cGpNbnZrRXYwNWU3WHB3SlFSU2pXU3h0RUhORGN1N1pjcjN3UWIxeUdCYWItVW95X0RZR2tQRFNHLVBaZ3dpakFkS1dTRTA2VFJpZW5tWkUxeE0xaDJEY2hrajQ5QnR0YzdiZDN0R3E0dTRK?oc=5",
+   "passion": "dakar",
+   "title": "This CEO lost 137lbs - but the weight loss was just the beginning: how one man transformed his body and his life",
+   "source": "Men's Fitness",
+   "time": "2026-10-09T09:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeUhReTNtdlBVb1RUdmNCYUwzNkd0cGpNbnZrRXYwNWU3WHB3SlFSU2pXU3h0RUhORGN1N1pjcjN3UWIxeUdCYWItVW95X0RZR2tQRFNHLVBaZ3dpakFkS1dTRTA2VFJpZW5tWkUxeE0xaDJEY2hrajQ5QnR0YzdiZDN0R3E0dTRK?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZFhpOVAtai03dHl2S0pHdGZ5WElWaFRObko5andQeVpFOVloeFA1eXNxNDJYaU44emRPRGhobE9IeWFQdDdacFJ4N2dXb1dmYlNVcFFKVEU3Q2s3SXJPakh5M0Y3NkwwY2trQUhkaUc0QW9WSTRLSzY5T2p1VExvWEVDQ2hxUVlyZVptY3R3MTNvbWFpMU9V?oc=5",
+   "passion": "ac",
+   "title": "INSIDE THE AC75: WHAT DOES THE FIFTH SAILOR ACTUALLY DO?",
+   "source": "America's Cup",
+   "time": "2026-10-13T05:30:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZFhpOVAtai03dHl2S0pHdGZ5WElWaFRObko5andQeVpFOVloeFA1eXNxNDJYaU44emRPRGhobE9IeWFQdDdacFJ4N2dXb1dmYlNVcFFKVEU3Q2s3SXJPakh5M0Y3NkwwY2trQUhkaUc0QW9WSTRLSzY5T2p1VExvWEVDQ2hxUVlyZVptY3R3MTNvbWFpMU9V?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMWNzaHZwOU1YejNmVVk1LU5fNkU0djAzdllrZzI4dHlxNEotX3lXcHhwMjJTblFpY3ZwQzBxamFLNmFvVFB6SlRNc2w2ejZsUkpaRmctZ1pjZC1FZlAxZWtKd2ZKU1FaYmNXUXd2d0pSSjN1emJiVU82U19WQkxXb0dTVUVGTVJY?oc=5",
+   "passion": "ac",
+   "title": "America's Cup: Luna Rossa cuts session short after mystery underwater issue - Sail-World.com",
+   "source": "Google News",
+   "time": "2026-10-09T02:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMWNzaHZwOU1YejNmVVk1LU5fNkU0djAzdllrZzI4dHlxNEotX3lXcHhwMjJTblFpY3ZwQzBxamFLNmFvVFB6SlRNc2w2ejZsUkpaRmctZ1pjZC1FZlAxZWtKd2ZKU1FaYmNXUXd2d0pSSjN1emJiVU82U19WQkxXb0dTVUVGTVJY?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOER4VEp6ZG85VVRMQ29fZUxmYzB3STR2WkpITGdTWTVNTEdZRXQzVGRDcEc0bmd2M2U5QmpIOGhmMkZHSVc1N290WGt0OGE0RFBGYTItYXRNSlJfUWlNU2JjM0QwenlhNHdNZFAxbWI0bnNZV0lzWnRIUFMydUZhQ19GbmJfWktfOFFCTWYwaGF1NzFnTjVKWkFDQTNXc2ZQNUlqM09hWkpUZUFfNWZqM0J2a3Z2c2t6ZTFQV05zRlpTdw?oc=5",
+   "passion": "ac",
+   "title": "Why to Watch the America’s Cup as It Heads to Italy: An Introduction to the 2027 Season",
+   "source": "Wanted in Rome",
+   "time": "2026-10-13T13:49:06.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOER4VEp6ZG85VVRMQ29fZUxmYzB3STR2WkpITGdTWTVNTEdZRXQzVGRDcEc0bmd2M2U5QmpIOGhmMkZHSVc1N290WGt0OGE0RFBGYTItYXRNSlJfUWlNU2JjM0QwenlhNHdNZFAxbWI0bnNZV0lzWnRIUFMydUZhQ19GbmJfWktfOFFCTWYwaGF1NzFnTjVKWkFDQTNXc2ZQNUlqM09hWkpUZUFfNWZqM0J2a3Z2c2t6ZTFQV05zRlpTdw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0dQWHR0WnYxSVdCbnQyaTM3bUZpMlJ1WHZkZGVXbVFDckVLdUZjeUFtU0VmbEgyRDVsdHJLWlljQWlNOC10dDdhNXVhR195ZUxzeWFvYmNXNm9ZVTFWTUNta3NlVWZFTEo0QkFpVy1lb1lhRDVBSU51ZVJqaUphMWJZODZOQnFic1JQdkVyZUE5dw?oc=5",
+   "passion": "ac",
+   "title": "TUDOR TEAM ALINGHI ANNOUNCE WOMEN AND YOUTH SQUADS",
+   "source": "America's Cup",
+   "time": "2026-10-14T07:54:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ0dQWHR0WnYxSVdCbnQyaTM3bUZpMlJ1WHZkZGVXbVFDckVLdUZjeUFtU0VmbEgyRDVsdHJLWlljQWlNOC10dDdhNXVhR195ZUxzeWFvYmNXNm9ZVTFWTUNta3NlVWZFTEo0QkFpVy1lb1lhRDVBSU51ZVJqaUphMWJZODZOQnFic1JQdkVyZUE5dw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikgFBVV95cUxObUdrd1hmNnFaNTJDWFp1NmxyNGJ3RUVXLUlqOE43c3JHTWRabTBNTmhlZ293Y3FNeC1KYjhmaEU2S0k3X0hDN2M3U2xwUU5zbWxmbzhjbnJxWXhzVWRGYnBaeG5aMlF5bUkzRnBHZktrN05kaWRYS2l1cnhvOTNXSzdTTUtRLWo3T19vRlZtQ1Zldw?oc=5",
+   "passion": "ac",
+   "title": "Team New Zealand’s Latest America’s Cup Opponent Has a Law Degree",
+   "source": "LawFuel.com",
+   "time": "2026-10-12T13:37:57.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObUdrd1hmNnFaNTJDWFp1NmxyNGJ3RUVXLUlqOE43c3JHTWRabTBNTmhlZ293Y3FNeC1KYjhmaEU2S0k3X0hDN2M3U2xwUU5zbWxmbzhjbnJxWXhzVWRGYnBaeG5aMlF5bUkzRnBHZktrN05kaWRYS2l1cnhvOTNXSzdTTUtRLWo3T19vRlZtQ1Zldw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMib0FVX3lxTE1MZVV1VS13ZlR3eUtYZ242TW9xd3dGdk9CRHk5bUtNY2JkV3d0MDVfaGRxdGhhQ0FYRVh4Y1BZVE9wSGJtV0JCZC1lS0lnX3NVa3BUbWc2X1JPN19zY1JrRE9fMVdZSGJtWXNYeUNnWQ?oc=5",
+   "passion": "ac",
+   "title": "America's Cup: Emirates Team NZ - Day 26 -",
+   "source": "Yachts and Yachting Online",
+   "time": "2026-10-14T22:24:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MZVV1VS13ZlR3eUtYZ242TW9xd3dGdk9CRHk5bUtNY2JkV3d0MDVfaGRxdGhhQ0FYRVh4Y1BZVE9wSGJtV0JCZC1lS0lnX3NVa3BUbWc2X1JPN19zY1JrRE9fMVdZSGJtWXNYeUNnWQ?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxPaXFsN01yNXo5SFJyUFk2UW9pOTRCRFBkUU1ndjQ5V2lJX3pzSTVZd2Z0WmlVTkhKSl82WnYzMXJCVkltNk1JTnFXYXQ3TXNCMUE2Q0lEbWkwQjJhLUQ1ckdTeERxc05ZMFV2c2JTMUVVdjFmRkRHVC1nRWRjRExQYUhFZ1V5QXdnZ0FabVNJSFlYd18xSHlNd3k2VjctWUNTV2VOag?oc=5",
+   "passion": "ac",
+   "title": "Trimmer Maria Giubilei: “On Luna Rossa it’s talent that counts, not gender”",
+   "source": "Daily Nautica",
+   "time": "2026-10-15T16:28:07.000Z",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPaXFsN01yNXo5SFJyUFk2UW9pOTRCRFBkUU1ndjQ5V2lJX3pzSTVZd2Z0WmlVTkhKSl82WnYzMXJCVkltNk1JTnFXYXQ3TXNCMUE2Q0lEbWkwQjJhLUQ1ckdTeERxc05ZMFV2c2JTMUVVdjFmRkRHVC1nRWRjRExQYUhFZ1V5QXdnZ0FabVNJSFlYd18xSHlNd3k2VjctWUNTV2VOag?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMimAFBVV95cUxQYm5IX2h3c2FPcjlWTV9CUDRvckM5WDhtQXZvME1INTJPekhLOXpIUUx4RF9DVTFSS0dzU2hIM0QyNmh3VGU4TURHeDNfRzF6VGFtaWhEZWJkTzB5cTU4aERBemF3anNzT1ltY1ZXWllyd0tCa1cyM3lQZFl6YkV2MlFqbUNlS0s5cWNzTGNBeHBmTDRYdUVoSg?oc=5",
+   "passion": "ac",
+   "title": "SailGP and America’s Cup teams face a busy, busy New Year",
+   "source": "Sailweb",
+   "time": "2026-10-13T23:28:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYm5IX2h3c2FPcjlWTV9CUDRvckM5WDhtQXZvME1INTJPekhLOXpIUUx4RF9DVTFSS0dzU2hIM0QyNmh3VGU4TURHeDNfRzF6VGFtaWhEZWJkTzB5cTU4aERBemF3anNzT1ltY1ZXWllyd0tCa1cyM3lQZFl6YkV2MlFqbUNlS0s5cWNzTGNBeHBmTDRYdUVoSg?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMimgFBVV95cUxNVWV1MXZKRHJoUkVwa01BUVNZcDYzdTFFU1QtekNrQkJrOV9jN1JqNjl4MU51VFY1QlhGNUpTSkVJaFlWd0xWWnhIMnRmOGc5S1JaS2xoaHVtSm9jSG9XY0lNazk1US11ZWY2c0x1VE9aelhYYzJ4YWJtdFg1OFBKdThtY2lEcS1OQ1JBRXhnRW4zT0dlN2dFZjB3?oc=5",
+   "passion": "ac",
+   "title": "AIRILIS, when the sea of Naples becomes a stage",
+   "source": "inITALY",
+   "time": "2026-10-09T07:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVWV1MXZKRHJoUkVwa01BUVNZcDYzdTFFU1QtekNrQkJrOV9jN1JqNjl4MU51VFY1QlhGNUpTSkVJaFlWd0xWWnhIMnRmOGc5S1JaS2xoaHVtSm9jSG9XY0lNazk1US11ZWY2c0x1VE9aelhYYzJ4YWJtdFg1OFBKdThtY2lEcS1OQ1JBRXhnRW4zT0dlN2dFZjB3?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMihgFBVV95cUxNMEJfSDBPdjFTcG1DMlpmYzJBNlU3V2hyczhRUDJJNndDNXFkTUZYaHplazRqcmc4VzF4UDdQWnF6b194cThTTUhxOEx2TVV1U2U0dlJ1Zmd6dkFtSGxfNHNRb0dJN2dfRUIwdDRNS2N3Tzlzc0ExaEh5WkN0VzNRNFBaUmJEUQ?oc=5",
+   "passion": "ac",
+   "title": "America's Cup: New mainsail for Kiwis...Tony Rae reflects on 40 yrs with Team NZ - Sail-World.com",
+   "source": "Google News",
+   "time": "2026-10-15T08:58:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMEJfSDBPdjFTcG1DMlpmYzJBNlU3V2hyczhRUDJJNndDNXFkTUZYaHplazRqcmc4VzF4UDdQWnF6b194cThTTUhxOEx2TVV1U2U0dlJ1Zmd6dkFtSGxfNHNRb0dJN2dfRUIwdDRNS2N3Tzlzc0ExaEh5WkN0VzNRNFBaUmJEUQ?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikgFBVV95cUxQZURaSi1UbmJDMWp2RE9oandJZjFhUWI5eHlNaXpER2wyU2IxY01DNmZKUlNkU0ZnZW5XczIyaGlRTlkzTVNoMnkwWFpQRnk5Rk12R0hidVFQNXdtQ3VHWElLRjZ3ZG1xUTJjSkRBWjdwNWM5OXRTc25DOHZ3aHh0SVoyLXMxUGdrM1huVWU4bk1PUdIBlwFBVV95cUxPQWZxaDNfS2oyZGpPVFhudERJdW54Q2pMOFh4VmFrOURKWjNZdFJKbGxCQkduMFZTZEFKTlBQRmRPTmVJakxZUW5wbW9NNnFWTXZNMlVnX2cxNGZ5bGRfc29wbndnQl9YWlhpZGpJYklHdEktMWdaWHBYeGtVODFrYTVnWm05ZFpfbndRUTZtU1o2Y0tsdmVr?oc=5",
+   "passion": "ac",
+   "title": "Naples Gears Up for the America's Cup Spectacle",
+   "source": "Il Mattino",
+   "time": "2026-10-14T00:36:11.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZURaSi1UbmJDMWp2RE9oandJZjFhUWI5eHlNaXpER2wyU2IxY01DNmZKUlNkU0ZnZW5XczIyaGlRTlkzTVNoMnkwWFpQRnk5Rk12R0hidVFQNXdtQ3VHWElLRjZ3ZG1xUTJjSkRBWjdwNWM5OXRTc25DOHZ3aHh0SVoyLXMxUGdrM1huVWU4bk1PUdIBlwFBVV95cUxPQWZxaDNfS2oyZGpPVFhudERJdW54Q2pMOFh4VmFrOURKWjNZdFJKbGxCQkduMFZTZEFKTlBQRmRPTmVJakxZUW5wbW9NNnFWTXZNMlVnX2cxNGZ5bGRfc29wbndnQl9YWlhpZGpJYklHdEktMWdaWHBYeGtVODFrYTVnWm05ZFpfbndRUTZtU1o2Y0tsdmVr?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMitwFBVV95cUxPbnlMLWlPNmx6cWVUazMwQ2UybmN5YnBjaFhMenhFZHB1Yk9CVnBkRmZqUE8tUHFDVWNOeUNLc0dxZW1RMXpEcFM0Wl9sQkFiT1J5VVNnQlVOR2lKUFZHYXFETjhDRHN6MWVXYVdwc1lZbzdVbC02dVQ2czRKOHNRcFdlbmc0X29xNDJoNDVyMkV5TkNVazNwSHJ1UVVCVU03ejNtQktxSTJvXzBreWwtZlc5SWNPVzQ?oc=5",
+   "passion": "ac",
+   "title": "INSIDE THE AC75: THE PROGRAMMABLE LOGIC CONTROLLER – THE BRAIN BEHIND THE MACHINE",
+   "source": "America's Cup",
+   "time": "2026-10-09T04:30:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPbnlMLWlPNmx6cWVUazMwQ2UybmN5YnBjaFhMenhFZHB1Yk9CVnBkRmZqUE8tUHFDVWNOeUNLc0dxZW1RMXpEcFM0Wl9sQkFiT1J5VVNnQlVOR2lKUFZHYXFETjhDRHN6MWVXYVdwc1lZbzdVbC02dVQ2czRKOHNRcFdlbmc0X29xNDJoNDVyMkV5TkNVazNwSHJ1UVVCVU03ejNtQktxSTJvXzBreWwtZlc5SWNPVzQ?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiogFBVV95cUxQUjdpQ1BZQW45UnhIRml0RXRtNkVxRzVhcGg0MmpZTXlldWVCTi1BNUphQW5TTXFqN1JTbnlWLTJWVlZwTDJXZ0dUMUFyd3lsZVlhZVRKR2dOX2RPSnlBeW5nclFESkFLUEhpY2doMGxNZEZoWUd6VTUxci1wQzJ0WnRPbVd6RDFfc3lPQXZIck9Xamc0TDd0MndEMHlhbjZMM3c?oc=5",
+   "passion": "wec",
+   "title": "Lynn ‘couldn’t be more driven’ as he joins McLaren Hypercar squad",
+   "source": "FIA WEC",
+   "time": "2026-10-15T13:01:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUjdpQ1BZQW45UnhIRml0RXRtNkVxRzVhcGg0MmpZTXlldWVCTi1BNUphQW5TTXFqN1JTbnlWLTJWVlZwTDJXZ0dUMUFyd3lsZVlhZVRKR2dOX2RPSnlBeW5nclFESkFLUEhpY2doMGxNZEZoWUd6VTUxci1wQzJ0WnRPbVd6RDFfc3lPQXZIck9Xamc0TDd0MndEMHlhbjZMM3c?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMirAFBVV95cUxNbVJ2LXp2WG1FTDRFR3NsOXYyMktRS1BfX3NnUl8xRHhGYTZqVC1ZWURJSWNYcVhkNDhsenFQUTBDaHo4Yko2bHRCQ0ZxMy1EMGJiVDcxVExZdjRjVEpTT0VVT010TzVBeFp1UVFkbUV4UHZDOXlyZkY3TjhnSkJhbEhTaW05OFhncHgwaHJJeG9JUXkwWmp4YWFHTFdwdE0zZUpmV0RoZFkyVVlq?oc=5",
+   "passion": "wec",
+   "title": "Could Alpine-Geely deal to save WEC hypercar programme fall through?",
+   "source": "Motorsport.com",
+   "time": "2026-10-12T14:04:20.000Z",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbVJ2LXp2WG1FTDRFR3NsOXYyMktRS1BfX3NnUl8xRHhGYTZqVC1ZWURJSWNYcVhkNDhsenFQUTBDaHo4Yko2bHRCQ0ZxMy1EMGJiVDcxVExZdjRjVEpTT0VVT010TzVBeFp1UVFkbUV4UHZDOXlyZkY3TjhnSkJhbEhTaW05OFhncHgwaHJJeG9JUXkwWmp4YWFHTFdwdE0zZUpmV0RoZFkyVVlq?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMi2AFBVV95cUxOX1ZJZVRVX2RZRHozNnVfVHFJQWRNb0hIbkQwQjB2aFo5cFl1T2Y2RGRVNk5wTHVnMXpqeVFuVmx5MVhfekpOVzNpdXVkRlBvZVdPQjk2T3pBRllRY3JxM0JQOWdZdnhmVVE5Ry1NdFlfaXhKUFNaUXMwcUJNaUZORERtcXJXRFNYUm5SOHNlTmhudU92eXJYM1c3ci1JUC1GOWdDVUJTV0JtSDJvaHM1VDNuQmRBY29vWGtsLW5GMnRDS0hUdk84c1Q4T0J3ZURWZnkyOWdUWE8?oc=5",
+   "passion": "wec",
+   "title": "Alpine Hypercar likely to disappear from 2027 WEC grid after talks with Chinese manufacturer Geely collapse - RACER",
+   "source": "Racing News",
+   "time": "2026-10-14T12:13:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOX1ZJZVRVX2RZRHozNnVfVHFJQWRNb0hIbkQwQjB2aFo5cFl1T2Y2RGRVNk5wTHVnMXpqeVFuVmx5MVhfekpOVzNpdXVkRlBvZVdPQjk2T3pBRllRY3JxM0JQOWdZdnhmVVE5Ry1NdFlfaXhKUFNaUXMwcUJNaUZORERtcXJXRFNYUm5SOHNlTmhudU92eXJYM1c3ci1JUC1GOWdDVUJTV0JtSDJvaHM1VDNuQmRBY29vWGtsLW5GMnRDS0hUdk84c1Q4T0J3ZURWZnkyOWdUWE8?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMisgFBVV95cUxOLXd6MDAxLWd3dWFqeENEa2Z5U0FDZlNKTVpmWm9nZTNSbXFFLXRXOUx3a01sMGQ5T2tYakUxUjVWOEpTMUs5dFJGa2RXeVB4SWlKSEtNa3VWelctODRMVlpicWxHUVpVS1QyN20xNjBXY2FOSDZOMDRYT1dJSmNhMkN2TF9FbWc5N29MMXpaN0x2aG9NNXBPa2d6M0ZSSm84Y1JlTlhNdXN4T0kwd2s0ZDNR?oc=5",
+   "passion": "wec",
+   "title": "GENESIS MAGMA RACING’S DANI JUNCADELLA HEADS HOME FOR FIA WEC’S FIRST BARCELONA RACE",
+   "source": "Genesis Newsroom",
+   "time": "2026-10-15T08:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLXd6MDAxLWd3dWFqeENEa2Z5U0FDZlNKTVpmWm9nZTNSbXFFLXRXOUx3a01sMGQ5T2tYakUxUjVWOEpTMUs5dFJGa2RXeVB4SWlKSEtNa3VWelctODRMVlpicWxHUVpVS1QyN20xNjBXY2FOSDZOMDRYT1dJSmNhMkN2TF9FbWc5N29MMXpaN0x2aG9NNXBPa2d6M0ZSSm84Y1JlTlhNdXN4T0kwd2s0ZDNR?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikgFBVV95cUxQVnNDd3lSNWJTTlNBQVNJMDh5cktEdVhBT2gwSTMzZEFpTDEzMXlROGNyR3lPS2xsc2Ztc3JvMC1nVDRUS0U2bVlPelpyVml0aERFc25LSW9SdUx1V3FkQV84d1EzX21jWW1yeGNnUjBqZnFVeEV0MmhMUHhhN01vY29BRnd5QUU2OXd3MHNwSjJ1Zw?oc=5",
+   "passion": "wec",
+   "title": "Penske Exploring WEC Return With Cadillac",
+   "source": "dailysportscar.com",
+   "time": "2026-10-14T13:00:21.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVnNDd3lSNWJTTlNBQVNJMDh5cktEdVhBT2gwSTMzZEFpTDEzMXlROGNyR3lPS2xsc2Ztc3JvMC1nVDRUS0U2bVlPelpyVml0aERFc25LSW9SdUx1V3FkQV84d1EzX21jWW1yeGNnUjBqZnFVeEV0MmhMUHhhN01vY29BRnd5QUU2OXd3MHNwSjJ1Zw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMihAFBVV95cUxOclhuNTFFUHE2SDJPQy1MTFJrWUtNelNBYVc5ck5HR0J6dklkeUp4WU14aUNUbXRPTWY1OWcyd2RpRk5NLTM4c0YyZG93LXU5Q3RDQVJ4VmdPSzBadWUzdzRmSzJod1psa2RKUERIcFNQUTVwcnFPTzFJdHk5YXBIMFBQVEY?oc=5",
+   "passion": "wec",
+   "title": "McLaren Adds Lynn to 2027 Hypercar Roster",
+   "source": "Sportscar365",
+   "time": "2026-10-15T13:00:36.000Z",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOclhuNTFFUHE2SDJPQy1MTFJrWUtNelNBYVc5ck5HR0J6dklkeUp4WU14aUNUbXRPTWY1OWcyd2RpRk5NLTM4c0YyZG93LXU5Q3RDQVJ4VmdPSzBadWUzdzRmSzJod1psa2RKUERIcFNQUTVwcnFPTzFJdHk5YXBIMFBQVEY?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMigAFBVV95cUxQSnBDaE41YlBsZjZQZEl1ZExSYW5TQnA5OUJKYThEN01zdHdjLXFfcnRnSGMzZXlWWkRMYTlYUXNSYkI3T2NYTXBzNHRPUlRUZUhoZUpWNGpEWmFRMWZCNk9xYlhkbGZLaU56QmZka0xlN25wQ296bEtKbmwzay1Ocw?oc=5",
+   "passion": "wec",
+   "title": "No buyer for the Alpine A424 as Geely turns down the WEC hypercar",
+   "source": "AutoNext.co",
+   "time": "2026-10-13T09:21:45.000Z",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSnBDaE41YlBsZjZQZEl1ZExSYW5TQnA5OUJKYThEN01zdHdjLXFfcnRnSGMzZXlWWkRMYTlYUXNSYkI3T2NYTXBzNHRPUlRUZUhoZUpWNGpEWmFRMWZCNk9xYlhkbGZLaU56QmZka0xlN25wQ296bEtKbmwzay1Ocw?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzZsSWVCMzNtRm85R2FRMWZNYmR3UGNRVEJ0cGpWTGdGM1pYcGdNVEZFU01CdWd3THEwbndsZzdkR0hFN1NwbDk2VVFBU2RMNkIydGxQR19pdXR2OWgxQjM3dlFUNExNaG5sWmJadldEdWhXbjlsd05leW80THduMXFIUWRyaGxqSUM2V1ZoN2JxVXA1bEE?oc=5",
+   "passion": "wec",
+   "title": "Ford Hypercar Testing Extends To Two Vehicles This Month",
+   "source": "Ford Authority",
+   "time": "2026-10-09T17:14:44.000Z",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNSzZsSWVCMzNtRm85R2FRMWZNYmR3UGNRVEJ0cGpWTGdGM1pYcGdNVEZFU01CdWd3THEwbndsZzdkR0hFN1NwbDk2VVFBU2RMNkIydGxQR19pdXR2OWgxQjM3dlFUNExNaG5sWmJadldEdWhXbjlsd05leW80THduMXFIUWRyaGxqSUM2V1ZoN2JxVXA1bEE?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZXU2OUFLRGVSUUNqV3B1dEp6M2pYaUtwNi0yWnZoMDRIX0FuYkc0RW9wNzBDRmEyUnZyZWV6WF9rTGZFMENQaWNxVlJGaXlpQklUSDVnalVJNWdnV3RtanNnS1Y3c0xDU3RVNUs0SVQyNmphSWdsZnFpbkVuODJab0ZUWXVpajAwb0Z1ekhkU2hSNkFTcnNwd1VUQVFuZWViOHJrRm9kWmlLLUlYbUxLRUhRYVdVcTdyTWN0VmdMdTQ3azFLYzF5Ymc2SDNRVE5HUDNiTmkzUFp0T1doWWc?oc=5",
+   "passion": "wec",
+   "title": "Valkyrie chasing more 2026 FIA World Endurance Championship points on Barcelona debut",
+   "source": "Aston Martin",
+   "time": "2026-10-15T00:27:48.000Z",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZXU2OUFLRGVSUUNqV3B1dEp6M2pYaUtwNi0yWnZoMDRIX0FuYkc0RW9wNzBDRmEyUnZyZWV6WF9rTGZFMENQaWNxVlJGaXlpQklUSDVnalVJNWdnV3RtanNnS1Y3c0xDU3RVNUs0SVQyNmphSWdsZnFpbkVuODJab0ZUWXVpajAwb0Z1ekhkU2hSNkFTcnNwd1VUQVFuZWViOHJrRm9kWmlLLUlYbUxLRUhRYVdVcTdyTWN0VmdMdTQ3azFLYzF5Ymc2SDNRVE5HUDNiTmkzUFp0T1doWWc?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUZDdXF6REd6T3N3ZXFZSmVPRnZkZUNXWVl3X3kyUXZ4RmlRaV92RkNrQndMcjI2T1BHR1p4ZGR1bmNUU21PVkdJZm9VOWNhcnQyWE02cDNsNkd1MlZRTXI4X0xUWWhpWTVUTVZycDQ2VTN2ZnhzUzM5eERTbC1ac0xhR2drNTRjTm9lV0JmbmJQOW9FcEpGRmZyNVg?oc=5",
+   "passion": "wec",
+   "title": "Ford's Hypercar program is progressing rapidly",
+   "source": "https://www.autohebdof1.com/",
+   "time": "2026-10-14T16:43:33.000Z",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRUZDdXF6REd6T3N3ZXFZSmVPRnZkZUNXWVl3X3kyUXZ4RmlRaV92RkNrQndMcjI2T1BHR1p4ZGR1bmNUU21PVkdJZm9VOWNhcnQyWE02cDNsNkd1MlZRTXI4X0xUWWhpWTVUTVZycDQ2VTN2ZnhzUzM5eERTbC1ac0xhR2drNTRjTm9lV0JmbmJQOW9FcEpGRmZyNVg?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMidEFVX3lxTE9nUnY1U2tFRzdVYTJfVV9nd3p5dlE4eFY5MldyaHNrbUJadzRGX18zdmdYNWJ4X0Y4YkJmd3hYek9FRVdKemFsVE9KUTRvMU9oUjJSSHlqSVNmTnVsUG9Ic19xdmtGc2pwZV8zYWtmd09ZeTVx?oc=5",
+   "passion": "wec",
+   "title": "WEC Preview: 6 Hours of Barcelona",
+   "source": "DIVEBOMB Motorsport",
+   "time": "2026-10-15T11:01:17.000Z",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9nUnY1U2tFRzdVYTJfVV9nd3p5dlE4eFY5MldyaHNrbUJadzRGX18zdmdYNWJ4X0Y4YkJmd3hYek9FRVdKemFsVE9KUTRvMU9oUjJSSHlqSVNmTnVsUG9Ic19xdmtGc2pwZV8zYWtmd09ZeTVx?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiiwFBVV95cUxPemRvN2lvR0xWMFpfRVYyZzZrVDVXaUJkaGxNOTVCQjlVOWRDQ0VETHFjNEl1MWdKOWVNT2xMS3IyUktKcnJrZTdnbUEwZG9WVzNfQXRWUEEtMGhqS29uOW5PYWl6d2p6TmRXNHd6UzNzd3dSWmNwa0FuUFZ3ZTdyeks0anRaRldqQzZB?oc=5",
+   "passion": "wec",
+   "title": "WEC Barcelona 6 Hours: Full entry list",
+   "source": "Motorsport.com",
+   "time": "2026-10-13T14:35:03.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPemRvN2lvR0xWMFpfRVYyZzZrVDVXaUJkaGxNOTVCQjlVOWRDQ0VETHFjNEl1MWdKOWVNT2xMS3IyUktKcnJrZTdnbUEwZG9WVzNfQXRWUEEtMGhqS29uOW5PYWl6d2p6TmRXNHd6UzNzd3dSWmNwa0FuUFZ3ZTdyeks0anRaRldqQzZB?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMisgFBVV95cUxNa2hpRzZqWGl4Zm1qeHV0VHkzQWNjWlE0RFFzNTFBY1JTQndiYTU2N1E1aG42Z1U4RXZGd0xiSU5ZVkMzZWNKbmNEaWNJNmg2UjA0Si10dkxDUnNRQjVEMHJDdGJ3RjFMOWRnSlpGOTNYWWJ1ZjNoYm85SW1NOE5fXzN4ZDhUX0xfX0dPalJRNEF0NVN0bm9VOXBKcXJOSmhvQzRhdmRzOV8xX2xsaXN1a1hR?oc=5",
+   "passion": "space",
+   "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
+   "source": "NASA (.gov)",
+   "time": "2026-10-13T18:49:25.000Z",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa2hpRzZqWGl4Zm1qeHV0VHkzQWNjWlE0RFFzNTFBY1JTQndiYTU2N1E1aG42Z1U4RXZGd0xiSU5ZVkMzZWNKbmNEaWNJNmg2UjA0Si10dkxDUnNRQjVEMHJDdGJ3RjFMOWRnSlpGOTNYWWJ1ZjNoYm85SW1NOE5fXzN4ZDhUX0xfX0dPalJRNEF0NVN0bm9VOXBKcXJOSmhvQzRhdmRzOV8xX2xsaXN1a1hR?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSXV1bUViS3VlVUl2RWhMQ0RoNTZiRnV3eGJmQTZVSWhsMTVtOURRUjBnYUNLRWkxRWlHQXpCMGRvQVNKVHg4Ml9xZ2VjNlAya1dSVkxyRzhET29OSDBIMnB3NWVtdWFiUElCalpNWmhzb1h4ZGoweEwtQzVjS0VFUy00cGg2MWsySUlQa0otVFByVEFOQ1hScXlwRTdyN3VtQUk3emhEQjhHZThtcWtaOHdWV1huZTFQdVY1c2NLaTdrMHM?oc=5",
+   "passion": "space",
+   "title": "SpaceX's Starship just turned 10 years old. When will it go to Mars?",
+   "source": "Space",
+   "time": "2026-10-14T18:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSXV1bUViS3VlVUl2RWhMQ0RoNTZiRnV3eGJmQTZVSWhsMTVtOURRUjBnYUNLRWkxRWlHQXpCMGRvQVNKVHg4Ml9xZ2VjNlAya1dSVkxyRzhET29OSDBIMnB3NWVtdWFiUElCalpNWmhzb1h4ZGoweEwtQzVjS0VFUy00cGg2MWsySUlQa0otVFByVEFOQ1hScXlwRTdyN3VtQUk3emhEQjhHZThtcWtaOHdWV1huZTFQdVY1c2NLaTdrMHM?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxPUWJRZGNVOGxBeURMdHhSaEFpaWd0U0R3dDBzNDc5dGYzUngzcE1MSmJ6ZGljcEhwQWQ1aS1XTGdCRVVyWmdXMWNUWlhfcFdJZkpnNWNaSmhOU3ppcFptMHplZU9tOXJ0VDVvTm1meS14LWJhSmRjUzFWaGdEbG5XM1hudHZXelphdTMxTjJNdXRWTlU?oc=5",
+   "passion": "space",
+   "title": "See more sights and sounds from the Artemis II moon mission",
+   "source": "Scientific American",
+   "time": "2026-10-08T20:28:58.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUWJRZGNVOGxBeURMdHhSaEFpaWd0U0R3dDBzNDc5dGYzUngzcE1MSmJ6ZGljcEhwQWQ1aS1XTGdCRVVyWmdXMWNUWlhfcFdJZkpnNWNaSmhOU3ppcFptMHplZU9tOXJ0VDVvTm1meS14LWJhSmRjUzFWaGdEbG5XM1hudHZXelphdTMxTjJNdXRWTlU?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeDJTQlRMNzB4TzBHZE5Jd2lqWlVFSDk0QmQ0MnJzWExoeGpDUFpXaU1UcDQ2NFc1bDNubHRYMHB6MUxxRWlfSzZ2Zl8zQlBsYkhFQmRrX0VndThYLW1zR0xPUEttZm5mTnhCNmI3dUh2ZlBhRVdPUVFteGNzVWNCb0ZrcFVCNjNJWk5GNjZ1YnpmNkpLdU1JbXBVdzZXQW9MYjU3eGNUNzVYVHVNWEdyaEdaN29XR3dVdV92czFBNDA0QQ?oc=5",
+   "passion": "space",
+   "title": "WATCH: Four astronauts return to Earth after 8 months aboard International Space Station",
+   "source": "PBS",
+   "time": "2026-10-08T19:42:17.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOeDJTQlRMNzB4TzBHZE5Jd2lqWlVFSDk0QmQ0MnJzWExoeGpDUFpXaU1UcDQ2NFc1bDNubHRYMHB6MUxxRWlfSzZ2Zl8zQlBsYkhFQmRrX0VndThYLW1zR0xPUEttZm5mTnhCNmI3dUh2ZlBhRVdPUVFteGNzVWNCb0ZrcFVCNjNJWk5GNjZ1YnpmNkpLdU1JbXBVdzZXQW9MYjU3eGNUNzVYVHVNWEdyaEdaN29XR3dVdV92czFBNDA0QQ?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxOb245WDE2OGFZMG9aM3F2cEd3bzNqaElGVWttQ2dNUzA5SnhIcnRweWRRYUprWTZHNzhxcWFkZHhfNlRxTTBDbHA3blZYMUhWbG1qUXJPc1c4dG5lN0dfZTJ2OE1tZFhOTHNoVjE1Nlcxd0dxZjVJMmQxUUdEVTJlZTVwbnFoRGs1Q2E5d182MEZ0am8?oc=5",
+   "passion": "space",
+   "title": "Global Book Franchise ‘Artemis Fowl’ Greenlit For Animated Television Series On Disney Channel And Disney+",
+   "source": "Disney+ Press Center",
+   "time": "2026-10-11T07:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOb245WDE2OGFZMG9aM3F2cEd3bzNqaElGVWttQ2dNUzA5SnhIcnRweWRRYUprWTZHNzhxcWFkZHhfNlRxTTBDbHA3blZYMUhWbG1qUXJPc1c4dG5lN0dfZTJ2OE1tZFhOTHNoVjE1Nlcxd0dxZjVJMmQxUUdEVTJlZTVwbnFoRGs1Q2E5d182MEZ0am8?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMib0FVX3lxTE1CWE1TTVhUWURfTS1UV3JkeE5JSXBqel9GLWhKNmRxTEdxWkFtZVp6REVPbzB4VXRJNnYyTHNBc1EyVHRVSG1IaDl5SHYtdjdWQWVnc2t3Nm1RYU9ua0pZQVlObXd0OUozOEc1R01vUQ?oc=5",
+   "passion": "space",
+   "title": "NASA astronauts splash down after 100 million miles in space",
+   "source": "Science Daily",
+   "time": "2026-10-09T03:58:15.000Z",
+   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1CWE1TTVhUWURfTS1UV3JkeE5JSXBqel9GLWhKNmRxTEdxWkFtZVp6REVPbzB4VXRJNnYyTHNBc1EyVHRVSG1IaDl5SHYtdjdWQWVnc2t3Nm1RYU9ua0pZQVlObXd0OUozOEc1R01vUQ?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxQaUZUNUxkeTJmck1fMnV2YWE4eUZSNzNxamkyODJwVU1RRkxoekI0S3RFeHM3RTVaakJZV2xPRDloeF9wb3hfQkcxbmRYa2Q5b3hUcFI1QXpkUEFfOC10Wktmb0lYbUZPcXZ1UmkzVE93QzF0QTBkbzlRc0xYeUwzTGpHODFkekJyOTJlUFlNTmhNNnlQeVM3SldQZDEtWGV0X3JJcA?oc=5",
+   "passion": "space",
+   "title": "‘Artemis Fowl’ Animated Series Greenlit At Disney Channel, Disney+ With Author Eoin Colfer As EP — NYCC",
+   "source": "Deadline",
+   "time": "2026-10-11T18:45:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaUZUNUxkeTJmck1fMnV2YWE4eUZSNzNxamkyODJwVU1RRkxoekI0S3RFeHM3RTVaakJZV2xPRDloeF9wb3hfQkcxbmRYa2Q5b3hUcFI1QXpkUEFfOC10Wktmb0lYbUZPcXZ1UmkzVE93QzF0QTBkbzlRc0xYeUwzTGpHODFkekJyOTJlUFlNTmhNNnlQeVM3SldQZDEtWGV0X3JJcA?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxONlNuX00xUW9qLUxka1FiSl9EYlQ0UlVxQXBiaWluSnFJNkxoVnlVTlAzLXdaanNwQTVSTHREdkxhMndWeG8zOFVSRVFpMjNyTmgxaUpoVDdIaU1RSFMtdUVmd1NuR1Z5VE1HZ1VoblRxcUZLd2xFYXNNNk1Zc2VtZWJHQ01MdzV0?oc=5",
+   "passion": "space",
+   "title": "‘Artemis Fowl’ Animated TV Show Set at Disney",
+   "source": "Variety",
+   "time": "2026-10-11T18:45:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxONlNuX00xUW9qLUxka1FiSl9EYlQ0UlVxQXBiaWluSnFJNkxoVnlVTlAzLXdaanNwQTVSTHREdkxhMndWeG8zOFVSRVFpMjNyTmgxaUpoVDdIaU1RSFMtdUVmd1NuR1Z5VE1HZ1VoblRxcUZLd2xFYXNNNk1Zc2VtZWJHQ01MdzV0?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTkp4aUo2SW1EZ1RqeC0yZzg4dllNNVJpQnFaV21YNUdWZTR0bjJOZnNMUUZCR2dlTHNmSFFLeDRqMlN4OEZFcEJXbHBfd2xPUXhaWUlMdXlCS0g0TWthU1Q5NXQ4ZWdicEdSRGE3Yi1TUnBBVjFmYktBZWpBaGVrYW5TQ1MzMEFx?oc=5",
+   "passion": "space",
+   "title": "Four astronauts return to Earth from ISS after medical relief mission",
+   "source": "The Guardian",
+   "time": "2026-10-08T17:52:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTkp4aUo2SW1EZ1RqeC0yZzg4dllNNVJpQnFaV21YNUdWZTR0bjJOZnNMUUZCR2dlTHNmSFFLeDRqMlN4OEZFcEJXbHBfd2xPUXhaWUlMdXlCS0g0TWthU1Q5NXQ4ZWdicEdSRGE3Yi1TUnBBVjFmYktBZWpBaGVrYW5TQ1MzMEFx?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMi8AFBVV95cUxQa0duNURVemx2QU5nSDZ5RzlQRk9KMzV2b3U0aUFfVVZ3bDBBWkQ4MFB2aEhEYWhCOUV2RGRYSHpENDQ0cnctZUlLaDVWOEpTdXpfbnR4YktJbVlYQVlZeUU5YzhlQWllRWdGUlJqYzY2MWNFTDRNLVFhN1M4S0w3QXNkNzBNNkZoa181MVpFa0I3d0ktNUxDam9SOGRLUGpST05HYW02bTJObi1fS3pMd1hpUmZ4THByUktZd3pjZnFzSXNqQW5oMGtuaHpvMXQ4bHZfaDY2WkprVUtuOTNnV1JoUVQwQVFER1BIWkEtRWk?oc=5",
+   "passion": "space",
+   "title": "'Swamp-like colors' on the moon: New 130-page NASA science report reveals strange sights from Artemis II mission",
+   "source": "Live Science",
+   "time": "2026-10-11T10:00:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQa0duNURVemx2QU5nSDZ5RzlQRk9KMzV2b3U0aUFfVVZ3bDBBWkQ4MFB2aEhEYWhCOUV2RGRYSHpENDQ0cnctZUlLaDVWOEpTdXpfbnR4YktJbVlYQVlZeUU5YzhlQWllRWdGUlJqYzY2MWNFTDRNLVFhN1M4S0w3QXNkNzBNNkZoa181MVpFa0I3d0ktNUxDam9SOGRLUGpST05HYW02bTJObi1fS3pMd1hpUmZ4THByUktZd3pjZnFzSXNqQW5oMGtuaHpvMXQ4bHZfaDY2WkprVUtuOTNnV1JoUVQwQVFER1BIWkEtRWk?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxQM1NIb1RyNHZycXRFRi0tc1UyamdlZFlpNl9NMWNPRTE4U2ZUMmNEQXZqSkw4dlkwZmc3YVNzV1BlQTE0YTJGMm5XV29KcXU5dHpkdXdySzVhWTh2cTBOVXJScFNrME1kLTg4Z3VRQkZSYk9rWThnekpoQ3RXcHRnTnRoVjJKYkpkd243RXZXdGdQY3llZVhMdlhxUHlSbko1enlmZg?oc=5",
+   "passion": "space",
+   "title": "Artemis III Scientist Shares What to Expect From NASA’s Next Lunar Mission",
+   "source": "WIRED",
+   "time": "2026-10-15T09:15:00.000Z",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQM1NIb1RyNHZycXRFRi0tc1UyamdlZFlpNl9NMWNPRTE4U2ZUMmNEQXZqSkw4dlkwZmc3YVNzV1BlQTE0YTJGMm5XV29KcXU5dHpkdXdySzVhWTh2cTBOVXJScFNrME1kLTg4Z3VRQkZSYk9rWThnekpoQ3RXcHRnTnRoVjJKYkpkd243RXZXdGdQY3llZVhMdlhxUHlSbko1enlmZg?oc=5"
+  },
+  {
+   "id": "Google News:https://news.google.com/rss/articles/CBMilgFBVV95cUxQWlRMWHdxaVhpUnd3LVd0WEM5Z1VoOS03Vy1wUTZuWnNfbFlVcnZCTlBscFNuOHJWX3FybHlDZTBEQkZkOTdiX1RoTHJBVUEyejZuWU16NEt1SGRIajhKT0IycXVleVp6dUpsQm5LMFVuV3VXYW5iVm0teC1fbkxpblpJM1NGc01xX3NtSmVEZjhJNTV4cmc?oc=5",
+   "passion": "space",
+   "title": "How Artemis 2’s tech will improve life on Earth",
+   "source": "Astronomy.com",
+   "time": "2026-10-10T13:01:41.000Z",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWlRMWHdxaVhpUnd3LVd0WEM5Z1VoOS03Vy1wUTZuWnNfbFlVcnZCTlBscFNuOHJWX3FybHlDZTBEQkZkOTdiX1RoTHJBVUEyejZuWU16NEt1SGRIajhKT0IycXVleVp6dUpsQm5LMFVuV3VXYW5iVm0teC1fbkxpblpJM1NGc01xX3NtSmVEZjhJNTV4cmc?oc=5"
   }
  ]
 }
