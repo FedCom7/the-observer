@@ -2,261 +2,200 @@
 
 Una sezione per passione, in ordine di **imminenza** (aggiornato al 15 ottobre 2026). È anche l'ordine in cui sistemiamo le fonti, **una alla volta**.
 
-Per ognuna:
-- **Cosa mi interessa** → da compilare (le domande sotto sono solo spunti, rispondi liberamente)
-- **Oggi nell'app** → cosa c'è già
-- **Fonte** → da dove arrivano i dati. Regola: **per gli sport si usa l'API ESPN** dove esiste.
+Regole generali:
+- **Sport:** si usa l'**API ESPN** dove copre la disciplina.
+- **Altrimenti:** siti ufficiali degli eventi e i loro **live timing**, poi Wikipedia, RSS e calendari iCal.
+- **Calendario:** ogni evento ha **orario reale** in ora italiana. Dove serve, sessioni separate (prove, qualifiche, gara).
+- **Pagina focus:** più ricca possibile, con grafici in stile New York Times.
 
-Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata
+Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme più avanti
 
 ---
 
-## 1. AC Milan ⬜
-**Prossimo:** Milan–Atalanta, domenica 18 ottobre 18:00 · poi Bournemouth–Milan (Europa League) giovedì 22
+## Piano a step (passioni già descritte)
+
+| Step | Passione | Perché adesso | Stato |
+|---|---|---|---|
+| 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ⬜ |
+| 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ⬜ |
+| 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ⬜ |
+| 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | ⬜ |
+| 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ⬜ |
+| 6 | Formula 1 | GP di Austin 23–25 ottobre | ⬜ |
+| 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ⬜ |
+| 8 | Spazio | Lanci continui; Artemis | ⬜ |
+| 9 | Dakar | 1–15 gennaio | ⬜ |
+| 10 | Apple | Prossimo keynote non ancora annunciato | ⬜ |
+| 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ⬜ |
+
+---
+
+## MLB ⬜
+**Prossimo:** finali di Lega in corso (Dodgers in NLCS) · World Series da venerdì 23 ottobre
 
 **Cosa mi interessa:**
-- 
+- **Stagione regolare:** vista generica per capire l'andamento della lega, con focus sui **Dodgers**.
+- **Playoff:** focus su playoff e **World Series**.
 
-*Spunti: tutte le competizioni o solo Serie A? Formazioni e marcatori? Statistiche partita? Classifica marcatori? Mercato? Le rivali in diretta quando contano per la classifica?*
-
-**Oggi nell'app:** calendario e risultati di tutte le competizioni, diretta con punteggio e minuto, classifica Serie A, notizie, grafico gol fatti/subiti partita per partita.
-**Fonte:** ESPN (calendario squadra, partita in diretta, classifica, notizie).
+**Piano fonti:**
+- ESPN: classifiche di division e lega, calendario e risultati dei Dodgers, partita in diretta, tabellone dei playoff, notizie.
+- Pagina focus: andamento dei Dodgers partita per partita (vinte e perse e differenza dalla vetta), classifiche di division, tabellone playoff con le serie, World Series in evidenza.
 
 ---
 
-## 2. WEC e 24h di Le Mans ⬜
+## College Football ⬜
+**Prossimo:** Week 8, sabato 17 ottobre · College Football Playoff e bowl a dicembre e gennaio
+
+**Cosa mi interessa:**
+- **College Football Playoff:** tutte le partite.
+- **Bowl di fine anno:** tutti in calendario.
+
+**Piano fonti:**
+- ESPN: calendario di postseason (bowl e playoff con date, orari ed emittenti), AP Top 25 e ranking del CFP, tabellone dei playoff, risultati in diretta.
+- Pagina focus: tabellone a 12 squadre, calendario dei bowl, andamento del ranking settimana per settimana.
+
+---
+
+## WEC e 24 Ore di Le Mans ⬜
 **Prossimo:** 6 Ore di Barcellona, domenica 18 ottobre · finale 6 Ore di Monza, 8 novembre (Bahrain cancellato)
 
 **Cosa mi interessa:**
-- 
+- **Classifiche e risultati.**
+- **Calendario per sessione:** prove libere, qualifiche e gara, ognuna con il suo orario.
 
-*Spunti: solo Hypercar o anche LMGT3? Classifica piloti/costruttori? Diretta delle posizioni in gara? Le Mans con un livello di dettaglio diverso?*
-
-**Oggi nell'app:** calendario 2026 e 2027, notizie. Mancano risultati e classifiche.
-**Fonte:** Wikipedia (calendario), Sportscar365 e Google News (notizie). ESPN non copre il WEC.
-
----
-
-## 3. New England Patriots ⬜
-**Prossimo:** Jets–Patriots, domenica 18 ottobre 19:00
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: diretta con possesso/down? Statistiche di Maye? Infortuni? Corsa ai playoff e seeding AFC? Draft?*
-
-**Oggi nell'app:** calendario, risultati, diretta, classifica AFC East, grafico scarto punti, notizie.
-**Fonte:** ESPN.
+**Piano fonti:**
+- Sito ufficiale FIA WEC: programma del weekend con gli orari delle sessioni.
+- Live timing ufficiale (Al Kamel Systems): risultati e classifiche di sessione, da verificare.
+- Classifiche del campionato per piloti e costruttori, Hypercar e LMGT3: sito ufficiale o Wikipedia.
+- Pagina focus: andamento della classifica gara per gara, risultati per categoria, Le Mans con una sezione dedicata.
 
 ---
 
-## 4. NFL ⬜
-**Prossimo:** Week 7, da giovedì 15 a lunedì 19 ottobre
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: solo le partite in prima serata (TNF/SNF/MNF) o tutte? Classifiche complete per division? Quadro playoff? Power ranking?*
-
-**Oggi nell'app:** partite in prima serata e quelle in diretta, notizie, Super Bowl.
-**Fonte:** ESPN.
-
----
-
-## 5. Texas Longhorns ⬜
-**Prossimo:** Florida–Texas, sabato 17 ottobre 18:00
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: ranking settimanale? Corsa al College Football Playoff? Classifica SEC?*
-
-**Oggi nell'app:** calendario, risultati, diretta, posizione AP, grafico scarto punti, notizie.
-**Fonte:** ESPN.
-
----
-
-## 6. College Football ⬜
-**Prossimo:** Week 8, sabato 17 ottobre
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: solo Top 25? Big game della settimana? Ranking del CFP da novembre? Heisman?*
-
-**Oggi nell'app:** AP Top 25, finale CFP.
-**Fonte:** ESPN.
-
----
-
-## 7. MLB ⬜
-**Prossimo:** finali di Lega in corso · World Series da venerdì 23 ottobre
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: solo postseason? Una squadra preferita? Tabellone playoff?*
-
-**Oggi nell'app:** partite del giorno e diretta, notizie.
-**Fonte:** ESPN.
-
----
-
-## 8. NBA ⬜
-**Prossimo:** inizio stagione regolare, ~20–21 ottobre
-
-**Cosa mi interessa (hai detto: infarinatura e playoff):**
-- 
-
-*Spunti: solo classifica di conference e big match? Una squadra da seguire? Da aprile solo playoff?*
-
-**Oggi nell'app:** partite del giorno (senza la preseason).
-**Fonte:** ESPN.
-
----
-
-## 9. Formula 1 ⬜
-**Prossimo:** GP Stati Uniti (Austin), 23–25 ottobre · gara domenica 21:00
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: tutte le sessioni o solo qualifica e gara? Distacchi giro per giro? Classifica costruttori? Gomme e pit stop? Ferrari in evidenza?*
-
-**Oggi nell'app:** calendario sessioni, classifiche, ultimo podio, ordine in diretta (ogni minuto).
-**Fonte:** Jolpica (calendario, classifiche) e ESPN (diretta). Si potrebbe passare tutto su ESPN.
-
----
-
-## 10. Sci alpino ⬜
-**Prossimo:** Sölden, gigante femminile sabato 24 e maschile domenica 25 ottobre
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: maschile, femminile o entrambi? Solo azzurri? Classifica di Coppa generale e di specialità? Risultati delle due manche?*
-
-**Oggi nell'app:** calendario della Coppa del Mondo 2026–27 (orario indicativo), notizie.
-**Fonte:** Wikipedia (calendario), Ski Racing (notizie). ESPN non copre lo sci.
-
----
-
-## 11. Famiglia reale inglese ⬜
+## Famiglia reale inglese ⬜
 **Prossimo:** visita di Stato dell'Oman, 20 ottobre · viaggio del Re ai Caraibi, 27 ottobre – 4 novembre
 
 **Cosa mi interessa:**
-- 
+- **Eventi minori:** tutti in calendario.
+- **Grandi eventi:** Trooping the Colour, incoronazione, apertura del Parlamento ecc.
+- **Eventi straordinari:** matrimoni, funerali ecc., **con orari**.
 
-*Spunti: solo il Re e i Principi di Galles o tutta la famiglia? Eventi pubblici e cerimonie? Viaggi? Matrimoni, nascite, salute?*
-
-**Oggi nell'app:** visite di Stato, ricorrenze fisse (Remembrance, Natale, Commonwealth Day), notizie da Guardian e BBC.
-**Fonte:** Wikipedia, regole fisse, RSS. Il sito royal.uk blocca le richieste automatiche.
+**Piano fonti:**
+- Court Circular e diario ufficiale: royal.uk blocca le richieste automatiche, quindi va trovato un altro accesso, da verificare.
+- Wikipedia: visite di Stato ed eventi straordinari.
+- Regole fisse per le ricorrenze.
+- Eventuali calendari iCal.
+- Pagina focus: agenda per membro della famiglia, mappa dei viaggi, grandi cerimonie in evidenza.
 
 ---
 
-## 12. Missioni umane nello spazio ⬜
+## NBA ⬜
+**Prossimo:** inizio stagione regolare, ~20–21 ottobre
+
+**Cosa mi interessa:**
+- **Stagione regolare:** vista generica per capire l'andamento della lega, con focus sui **Lakers**.
+- **Playoff:** focus su playoff e **Finals**.
+
+**Piano fonti:**
+- ESPN: classifiche di conference, calendario e risultati dei Lakers, diretta, tabellone dei playoff, notizie.
+- Pagina focus: andamento dei Lakers, classifica di conference con la zona play-in e playoff, tabellone, Finals in evidenza.
+
+---
+
+## Formula 1 ⬜
+**Prossimo:** GP Stati Uniti (Austin), 23–25 ottobre · gara domenica 21:00
+
+**Cosa mi interessa:**
+- **Orari di tutte le sessioni.**
+
+**Piano fonti:**
+- ESPN per sessioni, orari, risultati e diretta, come per gli altri sport.
+- Jolpica resta solo se ESPN non basta per le classifiche.
+- Pagina focus: weekend sessione per sessione, punti accumulati gara per gara (grafico a linee in stile NYT), classifica costruttori.
+
+---
+
+## Sci alpino ⬜
+**Prossimo:** Sölden, gigante femminile sabato 24 e maschile domenica 25 ottobre · Mondiali a febbraio 2027
+
+**Cosa mi interessa:**
+- **Orari reali** delle gare, con **disciplina** e **maschile o femminile**.
+- **Mondiali** con una grafica dedicata.
+
+**Piano fonti:**
+- Calendario FIS (fis-ski.com): orari ufficiali di prima e seconda manche.
+- Live timing FIS: risultati, da verificare.
+- Classifiche di Coppa del Mondo, generale e di specialità.
+- Pagina focus: calendario per disciplina, classifiche, Mondiali con una sezione dedicata.
+
+---
+
+## Missioni umane nello spazio ⬜
 **Prossimo:** lanci con equipaggio e voli di Starship secondo Launch Library
 
 **Cosa mi interessa:**
-- 
+- **Artemis**, voli con equipaggio, **Starship**, missioni sulla **ISS**.
+- I vari lanci con gli **orari**.
+- Qualche notizia dalle **fonti ufficiali NASA** (feed RSS e blog dedicati).
 
-*Spunti: solo voli con equipaggio o anche Starship e grandi missioni robotiche? Artemis? Diretta dei lanci con il conto alla rovescia? Chi è in orbita?*
-
-**Oggi nell'app:** prossimi lanci con equipaggio e voli di Starship, persone in orbita, posizione ISS in diretta, notizie.
-**Fonte:** Launch Library 2, Spaceflight News, wheretheiss.at, Google News.
-
----
-
-## 13. Elezioni americane ⬜
-**Prossimo:** Election Day, martedì 3 novembre · primi seggi chiusi a mezzanotte italiana
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: solo Senato o anche Camera e governatori? Sondaggi, rating, o entrambi? Notte elettorale in diretta? Dopo il voto: le primarie del 2028?*
-
-**Oggi nell'app:** rating di 10 analisti, sondaggi per le corse in bilico, voto generico, orari di chiusura dei seggi, risultati in diretta la notte elettorale.
-**Fonte:** Wikipedia e FiftyPlusOne (pagine pubbliche).
+**Piano fonti:**
+- Launch Library 2: lanci, orari, finestre di lancio, equipaggi.
+- Feed RSS e blog NASA: notizie, Artemis, blog della ISS.
+- SpaceX: aggiornamenti su Starship.
+- Pagina focus: conto alla rovescia del prossimo lancio, chi è in orbita e da quanti giorni, timeline del programma Artemis.
 
 ---
 
-## 14. Ciclismo ⬜
-**Prossimo:** presentazione del Tour de France 2027, 22 ottobre · stagione 2027 da gennaio
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: grandi giri e classiche monumento, o tutto il World Tour? Corridori italiani? Tappe in diretta con distacchi?*
-
-**Oggi nell'app:** World Tour con vincitori, partenza di Tour e Vuelta 2027, notizie.
-**Fonte:** Wikipedia, siti ufficiali ASO, Cyclingnews. ESPN non copre il ciclismo.
-
----
-
-## 15. Premi del cinema ⬜
-**Prossimo:** nomination Golden Globe, 7 dicembre · Golden Globes 10 gennaio · Oscar 14 marzo
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: quali premi (Oscar, Globes, BAFTA, SAG, Critics Choice, Venezia, Cannes)? Nomination e vincitori? Pronostici?*
-
-**Oggi nell'app:** date di Oscar e Golden Globes, notizie da Variety.
-**Fonte:** Wikipedia, Variety.
-
----
-
-## 16. Dakar ⬜
+## Dakar ⬜
 **Prossimo:** Dakar 2027, 1–15 gennaio, Arabia Saudita
 
 **Cosa mi interessa:**
-- 
+- **Date e orari delle tappe.**
+- **Risultati e classifiche**, possibilmente **in diretta**.
 
-*Spunti: auto, moto, entrambe? Classifica tappa per tappa? Italiani in gara?*
-
-**Oggi nell'app:** date di partenza e arrivo, notizie.
-**Fonte:** dakar.com, Google News.
-
----
-
-## 17. Tennis, tornei del Grande Slam ⬜
-**Prossimo:** Australian Open, dal 17 gennaio 2027
-
-**Cosa mi interessa:**
-- 
-
-*Spunti: maschile, femminile? Sinner e italiani in evidenza? Tabellone? Risultati in diretta durante gli Slam? Anche le ATP Finals di Torino?*
-
-**Oggi nell'app:** date dei quattro Slam 2027, notizie.
-**Fonte:** API WTA (date), ESPN (notizie). ESPN copre anche i risultati in diretta del tennis.
+**Piano fonti:**
+- dakar.com: programma delle tappe, classifiche di tappa e generali, eventuale live timing, da verificare a gennaio.
+- Pagina focus: distacchi in classifica generale tappa per tappa (grafico a linee), mappa del percorso.
 
 ---
 
-## 18. Apple ⬜
+## Apple ⬜
 **Prossimo:** nessun evento annunciato · WWDC di solito a giugno
 
 **Cosa mi interessa:**
-- 
+- **Orari dei keynote.**
+- **Uscite di prodotti**, prese dalla Newsroom.
 
-*Spunti: keynote, nuovi prodotti, aggiornamenti software, indiscrezioni (rumor)?*
-
-**Oggi nell'app:** keynote dalla pagina ufficiale, notizie dalla Newsroom.
-**Fonte:** apple.com, Apple Newsroom.
+**Piano fonti:**
+- apple.com/apple-events per i keynote.
+- Apple Newsroom (RSS) per le uscite, con le date di disponibilità.
+- Pagina focus: prossimo keynote con conto alla rovescia, cronologia delle uscite.
 
 ---
 
-## 19. America's Cup ⬜
-**Prossimo:** 38ª America's Cup a Napoli, dal 10 luglio 2027
+## America's Cup ⬜
+**Prossimo:** 38ª America's Cup a Napoli, Match dal 10 luglio 2027
 
 **Cosa mi interessa:**
-- 
+- **Orari delle regate.**
+- **Risultati** dell'America's Cup e di **tutte le regate preliminari**.
 
-*Spunti: solo il match finale o anche le regate preliminari e la Louis Vuitton Cup? Luna Rossa in evidenza?*
-
-**Oggi nell'app:** data del Match, notizie.
-**Fonte:** Wikipedia, Google News.
+**Piano fonti:**
+- americascup.com: calendario degli eventi e delle regate preliminari, risultati, eventuale live data.
+- Pagina focus: tabellone della Louis Vuitton Cup, punteggio del Match, calendario delle regate.
 
 ---
+
+## Da definire più avanti 💬
+Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a coprirle con le fonti attuali.
+
+- **AC Milan:** ESPN, tutte le competizioni, diretta, classifica.
+- **New England Patriots:** ESPN.
+- **NFL:** ESPN, partite in prima serata.
+- **Texas Longhorns:** ESPN.
+- **Elezioni americane:** Wikipedia, FiftyPlusOne, risultati in diretta la notte del 3 novembre.
+- **Ciclismo:** Wikipedia, siti ASO, Cyclingnews.
+- **Premi del cinema:** Wikipedia, Variety.
+- **Tennis, tornei del Grande Slam:** API WTA, ESPN.
 
 ## Altre passioni da aggiungere
 - 
