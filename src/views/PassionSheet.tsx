@@ -150,6 +150,7 @@ function GenericPage({ id }: { id: PassionId }) {
           <div className="osrc">Source: ESPN</div>
         </section>
       )}
+      {id === 'f1' && <F1SessionCard />}
       {id === 'f1' && standings.f1d && (
         <section className="ocard">
           <h2>The drivers' championship</h2>
@@ -193,6 +194,29 @@ function GenericPage({ id }: { id: PassionId }) {
         </div>
       </section>
     </>
+  );
+}
+
+/** Running order of the live session, or the classification of the latest one this weekend (ESPN). */
+function F1SessionCard() {
+  const { f1Sessions } = useData();
+  const live = f1Sessions?.find(x => x.state === 'in');
+  const latest = live ?? [...(f1Sessions ?? [])].reverse().find(x => x.state === 'post' && x.order.length);
+  if (!latest) return null;
+  return (
+    <section className="ocard">
+      <div className="lab">{live ? <span style={{ color: '#ff453a' }}>● Live · {latest.detail || 'session running'}</span> : 'Latest session'}</div>
+      <h2>{latest.name}</h2>
+      <p className="dek">{live ? 'Running order, refreshed every minute.' : 'Final classification.'} Source: ESPN.</p>
+      <ol style={{ margin: 0, paddingLeft: 0, listStyle: 'none', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: '6px 18px', fontFamily: 'var(--f-chart)' }}>
+        {latest.order.slice(0, 20).map((d, i) => (
+          <li key={d} style={{ display: 'flex', gap: 10, padding: '6px 0', borderTop: '1px solid var(--o-line)' }}>
+            <b style={{ width: 22, color: i < 3 ? 'var(--oc-mot)' : 'var(--o-ink3)', fontVariantNumeric: 'tabular-nums' }}>{i + 1}</b>
+            <Score>{d}</Score>
+          </li>
+        ))}
+      </ol>
+    </section>
   );
 }
 

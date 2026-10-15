@@ -60,3 +60,32 @@ export async function f1LastRace(): Promise<ObsEvent | null> {
     loc: [Number(r.Circuit.Location.long), Number(r.Circuit.Location.lat)], place: r.Circuit.circuitName,
   };
 }
+
+// ---------- Live session order from ESPN (free, browser-friendly) ----------
+const ESPN_F1 = 'https://site.api.espn.com/apis/site/v2/sports/racing/f1/scoreboard';
+const SESSION_NAME: Record<string, string> = { FP1: 'Practice 1', FP2: 'Practice 2', FP3: 'Practice 3', Qual: 'Qualifying', Race: 'Race', SS: 'Sprint Shootout', SQ: 'Sprint Qualifying', Sprint: 'Sprint', SR: 'Sprint' };
+
+export interface F1Session {
+  gp: string;
+  name: string;
+  start: number;
+  state: 'pre' | 'in' | 'post';
+  detail: string;
+  order: string[];
+}
+
+/** Every session of the current Grand Prix weekend, with the running or final order. */
+export async function f1Sessions(): Promise<F1Session[]> {
+  const j = await getJSON<any>(ESPN_F1, 50e3);
+  const e = j.events?.[0];
+  if (!e) return [];
+  const gp = String(e.name ?? '').replace(/^.*?(\b[A-Z][\w-]*(?: [A-Z][\w-]*)* Grand Prix)$/, '$1').replace('Grand Prix', 'GP');
+  return (e.competitions ?? []).map((c: any) => ({
+    gp,
+    name: SESSION_NAME[c.type?.abbreviation] ?? c.type?.abbreviation ?? 'Session',
+    start: Date.parse(c.date),
+    state: (c.status?.type?.state ?? 'pre') as F1Session['state'],
+    detail: c.status?.type?.shortDetail ?? '',
+    order: [...(c.competitors ?? [])].sort((a: any, b: any) => (a.order ?? 99) - (b.order ?? 99)).map((x: any) => x.athlete?.displayName ?? x.athlete?.shortName ?? '?'),
+  }));
+}

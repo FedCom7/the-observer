@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
-import { f1Calendar, f1Constructors, f1Drivers, f1LastRace } from '../sources/f1';
+import { f1Calendar, f1Constructors, f1Drivers, f1LastRace, f1Sessions, type F1Session } from '../sources/f1';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
 import type { ElectionData } from './elections';
 import { getJSON } from './fetcher';
@@ -16,6 +16,7 @@ interface Data {
   news: NewsItem[];
   orbit?: InOrbit;
   elections?: ElectionData;
+  f1Sessions?: F1Session[];
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -64,6 +65,7 @@ const SOURCES: Source[] = [
   { key: 'nba', every: 15 * MIN, run: async () => ({ events: (await scoreboard('nba', 'basketball', 'nba')).map(e => ({ ...e, weight: 1 })) }) },
   { key: 'f1', every: 6 * HOUR, run: async () => ({ events: await f1Calendar() }) },
   { key: 'f1last', every: 30 * MIN, run: async () => { const r = await f1LastRace(); return { events: r ? [r] : [] }; } },
+  { key: 'f1live', every: 60e3, run: async () => ({ f1Sessions: await f1Sessions() }) },
   { key: 'f1std', every: HOUR, run: async () => ({ standings: { f1d: await f1Drivers(), f1c: await f1Constructors() } }) },
   { key: 'space', every: 2 * HOUR, run: async () => ({ events: await launches() }) },
   { key: 'orbit', every: 6 * HOUR, run: async () => ({ orbit: await inOrbit() }) },
@@ -135,6 +137,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     const news: NewsItem[] = [];
     let orbit: InOrbit | undefined;
     let elections: ElectionData | undefined;
+    let f1s: F1Session[] | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -145,6 +148,13 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.news) news.push(...p.news);
       if (p.orbit) orbit = p.orbit;
       if (p.elections) elections = p.elections;
+      if (p.f1Sessions) f1s = p.f1Sessions;
+    });
+    f1s?.forEach(sess => {
+      const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
+      if (match && sess.state !== 'pre') {
+        events.set(match.id, { ...match, state: sess.state, clock: sess.state === 'in' ? sess.detail || 'LIVE' : undefined, sub: sess.order.length ? `P1 ${sess.order[0]}${sess.order[1] ? ' · P2 ' + sess.order[1] : ''}${sess.order[2] ? ' · P3 ' + sess.order[2] : ''}` : match.sub, f1Live: true });
+      }
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -157,6 +167,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       news: news.filter(n => (seenNews.has(n.title) ? false : (seenNews.add(n.title), true))).sort((a, b) => b.time - a.time),
       orbit,
       elections,
+      f1Sessions: f1s,
     };
   }, [bySource, live]);
 
@@ -180,7 +191,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   // Events without a live feed get their state from the clock.
   const bucket = Math.floor(now / 30e3);
   const events = useMemo(() => merged.events.map(e => {
-    if (e.espn || e.state === 'post') return e;
+    if (e.espn || e.f1Live || e.state === 'post') return e;
     const t = bucket * 30e3;
     if (t < e.start) return e;
     return { ...e, state: t < e.start + duration(e) ? 'in' as const : 'post' as const };

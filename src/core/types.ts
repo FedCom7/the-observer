@@ -38,6 +38,8 @@ export interface ObsEvent {
   tbc?: boolean;
   /** the source gives the day but not the start time; the time shown is the usual one */
   approx?: boolean;
+  /** F1 session whose state comes from the live ESPN feed */
+  f1Live?: boolean;
   /** ESPN coordinates for live refresh */
   espn?: { sport: string; league: string; id: string };
 }
