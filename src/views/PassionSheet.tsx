@@ -1,15 +1,16 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { DiffBars, MarginDots, PointsBars, SeasonStrip, type Bar } from '../components/charts';
 import { ElectionNight, isElectionNight } from '../components/ElectionNight';
 import { Score, Tbc } from '../components/common';
-import { CATS, PASSION } from '../core/passions';
+import { Hero, Row, ocol } from '../components/sheet';
+import { MlbPage } from './MlbPage';
+import { PASSION } from '../core/passions';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, hhmm, isNight } from '../core/time';
 import type { ObsEvent, PassionId, Side, Standing } from '../core/types';
 import { CLOSINGS, FIRST_CLOSE, GOVERNORS_UP, HOUSE_MAJORITY, HOUSE_SEATS, SENATE_UP, fmtMargin, senateIfPollsHold, type Race } from '../core/elections';
 
-const ocol = (id: PassionId) => `var(--oc-${PASSION[id].cat})`;
 
 /** Standings and team-schedule charts that belong to each passion. */
 const STANDINGS: Partial<Record<PassionId, string[]>> = {
@@ -51,20 +52,9 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
-  );
-}
-
-function Hero({ id, dek }: { id: PassionId; dek: ReactNode }) {
-  const p = PASSION[id];
-  return (
-    <header className="s-hero">
-      <div className="s-eyebrow"><i style={{ background: ocol(id) }} />{CATS[p.cat]}</div>
-      <h1 id="sheetTitle">{p.name}</h1>
-      <p>{dek}</p>
-    </header>
   );
 }
 
@@ -221,16 +211,6 @@ function F1SessionCard() {
 }
 
 const ordinal = (n: number) => (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] ?? 'th');
-
-function Row({ e, right, past }: { e: ObsEvent; right: ReactNode; past?: boolean }) {
-  return (
-    <div className={`r${past ? ' past' : ''}`}>
-      <time>{dayShort(e.start)}<small>{e.approx ? '≈ ' : ''}{hhmm(e.start)}{isNight(e.start) ? ' · night' : ''}</small></time>
-      <div><b>{e.title}</b><Tbc e={e} />{(e.sub || e.tv) && <small>{[e.sub, e.tv].filter(Boolean).join(' · ')}</small>}{!e.espn && e.link && <small><a href={e.link} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Source</a></small>}</div>
-      <span className="x">{right}</span>
-    </div>
-  );
-}
 
 function TableCard({ s }: { s: Standing }) {
   const rows = s.rows.slice(0, 20);

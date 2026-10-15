@@ -164,3 +164,77 @@ export function MarginDots({ races, tokens, compact = false }: {
     </div>
   );
 }
+
+export interface TrendPoint { x: number; y: number; tip: string }
+
+/**
+ * A single series over time around a zero line, NYT style: 2px line, light area
+ * wash, hairline grid, direct label at the end and at the peak, crosshair on hover.
+ */
+export function TrendLine({ points, color, unit, notes = [] }: { points: TrendPoint[]; color: string; unit: string; notes?: { x: number; text: string }[] }) {
+  const [ref, W] = useWidth<HTMLDivElement>();
+  const [hover, setHover] = useState<number | null>(null);
+  if (points.length < 2) return null;
+  const H = 260, l = 36, r = 92, t = 18, b = 26;
+  const x0 = points[0].x, x1 = points[points.length - 1].x;
+  const ys = points.map(p => p.y);
+  const step = Math.max(...ys.map(Math.abs)) > 30 ? 10 : 5;
+  const lo = Math.min(0, Math.floor(Math.min(...ys) / step) * step), hi = Math.max(step, Math.ceil(Math.max(...ys) / step) * step);
+  const x = (v: number) => l + ((v - x0) / (x1 - x0 || 1)) * (W - l - r);
+  const y = (v: number) => t + ((hi - v) / (hi - lo)) * (H - t - b);
+  const line = points.map(p => `${x(p.x)},${y(p.y)}`).join(' ');
+  const area = `${x(x0)},${y(0)} ${line} ${x(x1)},${y(0)}`;
+  const ticks = Array.from({ length: Math.round((hi - lo) / step) + 1 }, (_, i) => lo + i * step);
+  const months: number[] = [];
+  // Month ticks, skipping one that would sit on top of the first point.
+  for (let d = new Date(new Date(x0).getFullYear(), new Date(x0).getMonth() + 1, 1); d.getTime() <= x1; d = new Date(d.getFullYear(), d.getMonth() + 1, 1)) months.push(d.getTime());
+  const peak = points.reduce((a, p) => (p.y > a.y ? p : a), points[0]);
+  const last = points[points.length - 1];
+  const fmtY = (v: number) => `${v > 0 ? '+' : ''}${v}`;
+  return (
+    <div ref={ref} className="ochart" style={{ position: 'relative' }}
+      onPointerMove={ev => {
+        const box = (ev.currentTarget as HTMLDivElement).getBoundingClientRect();
+        const px = ev.clientX - box.left;
+        let best = 0;
+        points.forEach((p, i) => { if (Math.abs(x(p.x) - px) < Math.abs(x(points[best].x) - px)) best = i; });
+        setHover(best);
+      }}
+      onPointerLeave={() => setHover(null)}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label={`Trend in ${unit}`}>
+        {ticks.map(v => (
+          <g key={v}>
+            <line x1={l} x2={W - r} y1={y(v)} y2={y(v)} stroke={v === 0 ? 'var(--o-ink3)' : 'var(--o-grid)'} />
+            <text x={l - 6} y={y(v) + 4} textAnchor="end">{fmtY(v)}</text>
+          </g>
+        ))}
+        {months.map(m => <text key={m} x={x(m)} y={H - 6} textAnchor="middle">{new Intl.DateTimeFormat('en-GB', { month: 'short' }).format(m)}</text>)}
+        {notes.map(n => (
+          <g key={n.text}>
+            <line x1={x(n.x)} x2={x(n.x)} y1={t} y2={H - b} stroke="var(--o-ink3)" strokeDasharray="0" strokeWidth={1} />
+            <text x={x(n.x) + 5} y={t + 10} style={{ fill: 'var(--o-ink2)' }}>{n.text}</text>
+          </g>
+        ))}
+        <polygon points={area} fill={color} fillOpacity={0.1} />
+        <polyline points={line} fill="none" stroke={color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+        {peak !== last && (
+          <g>
+            <circle cx={x(peak.x)} cy={y(peak.y)} r={4} fill={color} stroke="var(--o-card)" strokeWidth={2} />
+            <text x={x(peak.x)} y={y(peak.y) - 9} textAnchor="middle" style={{ fill: 'var(--o-ink2)', fontWeight: 600 }}>Peak {fmtY(peak.y)}</text>
+          </g>
+        )}
+        <circle cx={x(last.x)} cy={y(last.y)} r={4.5} fill={color} stroke="var(--o-card)" strokeWidth={2} />
+        <text className="lbl" x={x(last.x) + 9} y={y(last.y) + 4}>{fmtY(last.y)} {unit}</text>
+        {hover !== null && (
+          <g>
+            <line x1={x(points[hover].x)} x2={x(points[hover].x)} y1={t} y2={H - b} stroke="var(--o-ink3)" />
+            <circle cx={x(points[hover].x)} cy={y(points[hover].y)} r={4} fill={color} stroke="var(--o-card)" strokeWidth={2} />
+          </g>
+        )}
+      </svg>
+      {hover !== null && (
+        <div className="tip obs" style={{ position: 'absolute', left: Math.min(W - 230, x(points[hover].x) + 12), top: 8 }}>{points[hover].tip}</div>
+      )}
+    </div>
+  );
+}

@@ -16,7 +16,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 | Step | Passione | Perché adesso | Stato |
 |---|---|---|---|
-| 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ⬜ |
+| 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ✅ |
 | 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ⬜ |
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ⬜ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | ⬜ |
@@ -30,7 +30,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## MLB ⬜
+## MLB ✅
 **Prossimo:** finali di Lega in corso (Dodgers in NLCS) · World Series da venerdì 23 ottobre
 
 **Cosa mi interessa:**
@@ -40,6 +40,9 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 **Piano fonti:**
 - ESPN: classifiche di division e lega, calendario e risultati dei Dodgers, partita in diretta, tabellone dei playoff, notizie.
 - Pagina focus: andamento dei Dodgers partita per partita (vinte e perse e differenza dalla vetta), classifiche di division, tabellone playoff con le serie, World Series in evidenza.
+
+**Fatto (16 ottobre):** pagina dedicata con prossima partita dei Dodgers e conto alla rovescia, stato della serie (pallini delle vittorie), tabellone completo da Wild Card a World Series ricostruito dai calendari playoff delle 12 squadre, grafico NYT "partite sopra il 50%" della stagione, 6 classifiche di division, calendario Dodgers e notizie. Tutte le partite dei playoff entrano in calendario (Dodgers e World Series in evidenza). Fonte: solo ESPN.
+**Da fare a primavera:** in stagione regolare aggiungere la corsa alle Wild Card.
 
 ---
 

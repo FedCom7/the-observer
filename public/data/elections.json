@@ -1,6 +1,6 @@
 {
  "cycle": 2026,
- "updated": "2026-10-15T17:46:33.379Z",
+ "updated": "2026-10-15T21:45:20.803Z",
  "ratingsSource": {
   "name": "Wikipedia forecast table (Cook, Sabato, Inside Elections, Economist and others)",
   "asOf": "Oct 6, 2026",
@@ -314,8 +314,8 @@
      "score": -3
     },
     "IE": {
-     "label": "Solid R",
-     "score": -3
+     "label": "Likely R",
+     "score": -2
     },
     "RCP": {
      "label": "Lean R",
@@ -335,7 +335,7 @@
     }
    },
    "cook": "Solid R",
-   "consensus": -2.3,
+   "consensus": -2.2,
    "consensusLabel": "Likely R"
   },
   {
@@ -406,8 +406,8 @@
      "score": -3
     },
     "Economist": {
-     "label": "Likely R",
-     "score": -2
+     "label": "Safe R",
+     "score": -3
     },
     "FPO": {
      "label": "Safe R",
@@ -439,7 +439,7 @@
     }
    },
    "cook": "Solid R",
-   "consensus": -2.9,
+   "consensus": -3,
    "consensusLabel": "Safe R"
   },
   {
@@ -510,8 +510,8 @@
      "score": 0
     },
     "Economist": {
-     "label": "Toss Up",
-     "score": 0
+     "label": "Lean R",
+     "score": -1
     },
     "FPO": {
      "label": "Toss Up",
@@ -543,7 +543,7 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": -0.05,
+   "consensus": -0.15,
    "consensusLabel": "Toss Up"
   },
   {
@@ -574,8 +574,8 @@
      "score": -1
     },
     "IE": {
-     "label": "Likely R",
-     "score": -2
+     "label": "Tilt R",
+     "score": -0.5
     },
     "RCP": {
      "label": "Toss Up",
@@ -595,8 +595,8 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": -0.4,
-   "consensusLabel": "Lean R"
+   "consensus": -0.25,
+   "consensusLabel": "Toss Up"
   },
   {
    "state": "Kentucky",
@@ -930,8 +930,8 @@
      "score": -2
     },
     "FPO": {
-     "label": "Safe R",
-     "score": -3
+     "label": "Likely R",
+     "score": -2
     },
     "Fox": {
      "label": "Solid R",
@@ -959,7 +959,7 @@
     }
    },
    "cook": "Solid R",
-   "consensus": -2.7,
+   "consensus": -2.6,
    "consensusLabel": "Safe R"
   },
   {
@@ -1094,8 +1094,8 @@
      "score": 1
     },
     "IE": {
-     "label": "Toss Up",
-     "score": 0
+     "label": "Tilt D",
+     "score": 0.5
     },
     "RCP": {
      "label": "Lean D",
@@ -1115,7 +1115,7 @@
     }
    },
    "cook": "Lean D",
-   "consensus": 1.5,
+   "consensus": 1.55,
    "consensusLabel": "Likely D"
   },
   {
@@ -1510,8 +1510,8 @@
      "score": -2
     },
     "IE": {
-     "label": "Likely R",
-     "score": -2
+     "label": "Lean R",
+     "score": -1
     },
     "RCP": {
      "label": "Lean R",
@@ -1531,7 +1531,7 @@
     }
    },
    "cook": "Likely R",
-   "consensus": -1.6,
+   "consensus": -1.5,
    "consensusLabel": "Likely R"
   },
   {
@@ -1666,8 +1666,8 @@
      "score": 0
     },
     "IE": {
-     "label": "Tilt R",
-     "score": -0.5
+     "label": "Toss Up",
+     "score": 0
     },
     "RCP": {
      "label": "Toss Up",
@@ -1687,7 +1687,7 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": 0.15,
+   "consensus": 0.2,
    "consensusLabel": "Toss Up"
   },
   {
@@ -1996,8 +1996,8 @@
      "score": 1
     },
     "IE": {
-     "label": "Toss Up",
-     "score": 0
+     "label": "Tilt D",
+     "score": 0.5
     },
     "RCP": {
      "label": "Lean D",
@@ -2017,7 +2017,7 @@
     }
    },
    "cook": "Lean D",
-   "consensus": 1.5,
+   "consensus": 1.55,
    "consensusLabel": "Likely D",
    "dem": "Pappas",
    "rep": "Sununu",
@@ -2089,66 +2089,6 @@
    "results": null
   },
   {
-   "state": "Michigan",
-   "special": false,
-   "incumbent": "Gary Peters",
-   "incumbentParty": "D",
-   "open": true,
-   "raters": {
-    "Cook": {
-     "label": "Toss Up",
-     "score": 0
-    },
-    "DDHQ": {
-     "label": "Lean D",
-     "score": 1
-    },
-    "Economist": {
-     "label": "Lean D",
-     "score": 1
-    },
-    "FPO": {
-     "label": "Lean D",
-     "score": 1
-    },
-    "Fox": {
-     "label": "Toss Up",
-     "score": 0
-    },
-    "IE": {
-     "label": "Tilt D",
-     "score": 0.5
-    },
-    "RCP": {
-     "label": "Toss Up",
-     "score": 0
-    },
-    "Sabato": {
-     "label": "Lean D",
-     "score": 1
-    },
-    "SB": {
-     "label": "Likely D",
-     "score": 2
-    },
-    "ST": {
-     "label": "Lean D",
-     "score": 1
-    }
-   },
-   "cook": "Toss Up",
-   "consensus": 0.75,
-   "consensusLabel": "Lean D",
-   "dem": "El-Sayed",
-   "rep": "Rogers",
-   "demPct": 48.2,
-   "repPct": 44.7,
-   "margin": 3.5,
-   "pollsAsOf": "2026-10-15",
-   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/michigan",
-   "results": null
-  },
-  {
    "state": "Minnesota",
    "special": false,
    "incumbent": "Tina Smith",
@@ -2209,6 +2149,66 @@
    "results": null
   },
   {
+   "state": "Michigan",
+   "special": false,
+   "incumbent": "Gary Peters",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt D",
+     "score": 0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.75,
+   "consensusLabel": "Lean D",
+   "dem": "El-Sayed",
+   "rep": "Rogers",
+   "demPct": 47.9,
+   "repPct": 44.6,
+   "margin": 3.3,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/michigan",
+   "results": null
+  },
+  {
    "state": "Texas",
    "special": false,
    "incumbent": "John Cornyn",
@@ -2236,8 +2236,8 @@
      "score": 0
     },
     "IE": {
-     "label": "Tilt R",
-     "score": -0.5
+     "label": "Toss Up",
+     "score": 0
     },
     "RCP": {
      "label": "Toss Up",
@@ -2257,7 +2257,7 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": 0.15,
+   "consensus": 0.2,
    "consensusLabel": "Toss Up",
    "dem": "Talarico",
    "rep": "Paxton",
@@ -2416,8 +2416,8 @@
      "score": -1
     },
     "IE": {
-     "label": "Likely R",
-     "score": -2
+     "label": "Tilt R",
+     "score": -0.5
     },
     "RCP": {
      "label": "Toss Up",
@@ -2437,13 +2437,13 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": -0.4,
-   "consensusLabel": "Lean R",
+   "consensus": -0.25,
+   "consensusLabel": "Toss Up",
    "dem": "Hamilton",
    "rep": "Marshall",
-   "demPct": 46.8,
+   "demPct": 46.7,
    "repPct": 45.2,
-   "margin": 1.6,
+   "margin": 1.5,
    "pollsAsOf": "2026-10-15",
    "pollsUrl": "https://fiftyplusone.news/polls/senate/general/kansas",
    "results": null
@@ -2464,8 +2464,8 @@
      "score": 0
     },
     "Economist": {
-     "label": "Toss Up",
-     "score": 0
+     "label": "Lean R",
+     "score": -1
     },
     "FPO": {
      "label": "Toss Up",
@@ -2497,7 +2497,7 @@
     }
    },
    "cook": "Toss Up",
-   "consensus": -0.05,
+   "consensus": -0.15,
    "consensusLabel": "Toss Up",
    "dem": "Turek",
    "rep": "Hinson",
@@ -2536,8 +2536,8 @@
      "score": -2
     },
     "IE": {
-     "label": "Likely R",
-     "score": -2
+     "label": "Lean R",
+     "score": -1
     },
     "RCP": {
      "label": "Lean R",
@@ -2557,7 +2557,7 @@
     }
    },
    "cook": "Likely R",
-   "consensus": -1.6,
+   "consensus": -1.5,
    "consensusLabel": "Likely R",
    "dem": "Andrews",
    "rep": "Graham Nordone",
@@ -2656,8 +2656,8 @@
      "score": -3
     },
     "IE": {
-     "label": "Solid R",
-     "score": -3
+     "label": "Likely R",
+     "score": -2
     },
     "RCP": {
      "label": "Lean R",
@@ -2677,7 +2677,7 @@
     }
    },
    "cook": "Solid R",
-   "consensus": -2.3,
+   "consensus": -2.2,
    "consensusLabel": "Likely R",
    "dem": "Nixon",
    "rep": "Moody",
