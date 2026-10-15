@@ -1,0 +1,24 @@
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { SpoilerProvider } from './components/common';
+import { DataProvider } from './core/store';
+import './styles/app.css';
+import { ControlRoom } from './views/ControlRoom';
+import { PassionSheet } from './views/PassionSheet';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <DataProvider>
+      <SpoilerProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<ControlRoom />}>
+              <Route path="p/:id" element={<PassionSheet />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </SpoilerProvider>
+    </DataProvider>
+  </StrictMode>,
+);

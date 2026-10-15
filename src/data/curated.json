@@ -1,0 +1,41 @@
+{
+  "_note": "Hand-curated dates for passions without a free structured API. Times are ISO with offset. tbc=true means the date still needs confirmation; the UI shows a TBC tag. The editor routine will maintain this file.",
+  "updated": "2026-10-15",
+  "events": [
+    { "passion": "elez", "title": "Election Day · Midterms", "start": "2026-11-03T12:00:00+01:00", "weight": 3, "place": "Washington", "loc": [-77.04, 38.9] },
+    { "passion": "elez", "title": "First polls close (Indiana, Kentucky)", "start": "2026-11-04T00:00:00+01:00", "weight": 3, "place": "Indiana", "loc": [-86.16, 39.77] },
+
+    { "passion": "royal", "title": "Remembrance Sunday at the Cenotaph", "start": "2026-11-08T12:00:00+01:00", "weight": 2, "place": "Whitehall, London", "loc": [-0.126, 51.502] },
+    { "passion": "royal", "title": "The King's Christmas broadcast", "start": "2026-12-25T16:00:00+01:00", "weight": 2, "place": "London", "loc": [-0.14, 51.5] },
+    { "passion": "royal", "title": "Trooping the Colour", "start": "2027-06-12T11:00:00+02:00", "weight": 2, "tbc": true, "place": "Horse Guards Parade, London", "loc": [-0.128, 51.504] },
+
+    { "passion": "awards", "title": "Golden Globe nominations", "start": "2026-12-08T14:00:00+01:00", "weight": 2, "tbc": true },
+    { "passion": "awards", "title": "Golden Globes", "start": "2027-01-11T02:00:00+01:00", "weight": 3, "tbc": true, "place": "Beverly Hills", "loc": [-118.41, 34.07] },
+    { "passion": "awards", "title": "Oscar nominations", "start": "2027-01-21T14:30:00+01:00", "weight": 2, "tbc": true },
+    { "passion": "awards", "title": "BAFTA Film Awards", "start": "2027-02-14T20:00:00+01:00", "weight": 2, "tbc": true, "place": "London", "loc": [-0.12, 51.51] },
+    { "passion": "awards", "title": "99th Academy Awards", "start": "2027-03-15T01:00:00+01:00", "weight": 3, "tbc": true, "place": "Dolby Theatre, Hollywood", "loc": [-118.34, 34.1] },
+
+    { "passion": "apple", "title": "WWDC 2027 keynote", "start": "2027-06-07T19:00:00+02:00", "weight": 3, "tbc": true, "place": "Cupertino", "loc": [-122.01, 37.33] },
+
+    { "passion": "tennis", "title": "Australian Open", "start": "2027-01-17T01:00:00+01:00", "weight": 3, "tbc": true, "place": "Melbourne Park", "loc": [144.98, -37.82] },
+    { "passion": "tennis", "title": "Roland Garros", "start": "2027-05-23T11:00:00+02:00", "weight": 3, "tbc": true, "place": "Paris", "loc": [2.25, 48.85] },
+    { "passion": "tennis", "title": "Wimbledon", "start": "2027-06-28T12:00:00+02:00", "weight": 3, "tbc": true, "place": "London", "loc": [-0.21, 51.43] },
+    { "passion": "tennis", "title": "US Open", "start": "2027-08-30T17:00:00+02:00", "weight": 3, "tbc": true, "place": "New York", "loc": [-73.85, 40.75] },
+
+    { "passion": "sci", "title": "Sölden · women's giant slalom", "start": "2026-10-24T10:00:00+02:00", "weight": 2, "tbc": true, "place": "Sölden", "loc": [11.0, 46.97] },
+    { "passion": "sci", "title": "Sölden · men's giant slalom", "start": "2026-10-25T10:00:00+01:00", "weight": 2, "tbc": true, "place": "Sölden", "loc": [11.0, 46.97] },
+
+    { "passion": "cicl", "title": "Tour de France 2027 route presentation", "start": "2026-10-27T11:30:00+01:00", "weight": 2, "tbc": true, "place": "Paris", "loc": [2.29, 48.83] },
+    { "passion": "cicl", "title": "Tour de France 2027 · Grand Départ", "start": "2027-07-03T13:00:00+02:00", "weight": 3, "tbc": true, "place": "Edinburgh", "loc": [-3.19, 55.95] },
+
+    { "passion": "wec", "title": "8 Hours of Bahrain · WEC finale", "start": "2026-11-07T12:00:00+01:00", "weight": 3, "tbc": true, "place": "Sakhir", "loc": [50.51, 26.03] },
+    { "passion": "wec", "title": "24 Hours of Le Mans", "start": "2027-06-12T16:00:00+02:00", "weight": 3, "tbc": true, "place": "Le Mans", "loc": [0.21, 47.95] },
+
+    { "passion": "dakar", "title": "Dakar 2027 · start", "start": "2027-01-03T08:00:00+01:00", "weight": 3, "tbc": true, "place": "Saudi Arabia", "loc": [38.1, 24.1] },
+
+    { "passion": "ac", "title": "38th America's Cup · Naples", "start": "2027-07-01T14:00:00+02:00", "weight": 3, "tbc": true, "place": "Gulf of Naples", "loc": [14.25, 40.83] },
+
+    { "passion": "nfl", "title": "Super Bowl LXI", "start": "2027-02-15T00:30:00+01:00", "weight": 3, "tbc": true, "place": "SoFi Stadium, Inglewood", "loc": [-118.34, 33.95] },
+    { "passion": "cfb", "title": "CFP National Championship", "start": "2027-01-19T01:30:00+01:00", "weight": 3, "tbc": true }
+  ]
+}
