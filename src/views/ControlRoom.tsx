@@ -5,7 +5,8 @@ import { CATS, PASSION, PASSIONS, catColor, passionColor } from '../core/passion
 import { useData } from '../core/store';
 import { DAY, HOUR, countdown, dayShort, hhmm, hhmmss } from '../core/time';
 import type { CatId, ObsEvent, PassionId, Standing } from '../core/types';
-import elections from '../data/elections.json';
+import { MarginDots } from '../components/charts';
+import { ELEX, fmtMargin, genericBallot, senateIfPollsHold } from '../core/elections';
 
 const CLOCKS: [string, string, boolean?][] = [
   ['ROME', 'Europe/Rome', true], ['LONDON', 'Europe/London'], ['NEW YORK', 'America/New_York'],
@@ -167,28 +168,29 @@ function LiveBoard({ open }: { open: (p: PassionId) => void }) {
   );
 }
 
+const ROOM_TOKENS = { ink: 'var(--ink)', ink2: 'var(--ink-2)', ink3: 'var(--ink-3)', grid: 'var(--grid)', dem: 'var(--dem)', rep: 'var(--rep)', surface: 'var(--panel)' };
+
 function Elections({ open }: { open: (p: PassionId) => void }) {
   const { now } = useData();
   const firstClose = Date.parse('2026-11-04T00:00:00+01:00');
-  const rated = elections.senateRaces.filter(r => r.margin !== null);
+  const sen = senateIfPollsHold();
+  const gb = genericBallot();
+  const races = [...ELEX.senateRaces].sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0));
   return (
     <section className="panel elex" data-p="elez" onClick={() => open('elez')}>
-      <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: 'var(--c-pol)' }} />Midterms 2026<span className="meta">open ›</span></div>
+      <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: 'var(--c-pol)' }} />Midterms 2026<span className="meta">polls {dayShort(Date.parse(ELEX.polls.asOf))} · open ›</span></div>
       <div className="elex-body">
         <div className="big-row">
           <div><div className="k">First polls close</div><div className="v">{now < firstClose ? `T-${countdown(firstClose - now)}` : 'Results night'}</div></div>
-          <div style={{ textAlign: 'right' }}><div className="k">Senate up</div><div className="v">{elections.chambers.senate.up}</div></div>
-        </div>
-        <div className="big-row">
-          <div><div className="k">House majority</div><div className="v" style={{ fontSize: 18 }}>{elections.chambers.house.majority} of {elections.chambers.house.seats}</div></div>
-          <div style={{ textAlign: 'right' }}><div className="k">Governors</div><div className="v" style={{ fontSize: 18 }}>{elections.chambers.governors.up}</div></div>
+          <div style={{ textAlign: 'right' }}><div className="k">Generic ballot</div><div className="v" style={{ color: 'var(--dem)' }}>{fmtMargin(gb.mean)}</div></div>
         </div>
         <div>
-          <div className="k" style={{ fontSize: 10, letterSpacing: '.12em', color: 'var(--ink-3)', fontWeight: 600, textTransform: 'uppercase' }}>Senate races to watch</div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 6 }}>
-            {elections.senateRaces.map(r => <span key={r.state} className="tag" style={{ border: '1px solid var(--edge)', borderRadius: 4, padding: '2px 6px' }}>{r.state}</span>)}
-          </div>
-          {rated.length === 0 && <div className="foot" style={{ padding: '8px 0 0' }}>Polling margins arrive with the editor routine.</div>}
+          <div className="big-row"><div className="k">Senate if polls hold</div><div className="k">now {ELEX.chambers.senate.current.D}–{ELEX.chambers.senate.current.R}</div></div>
+          <div className="prob" style={{ marginTop: 6, position: 'relative' }}><div style={{ flex: sen.D, background: 'var(--dem)' }} /><div style={{ flex: sen.R, background: 'var(--rep)' }} /></div>
+          <div className="prob-lab"><span>DEM {sen.D}</span><span>51 for control</span><span>REP {sen.R}</span></div>
+        </div>
+        <div className="races"><div className="big-row"><div className="k">Senate battlegrounds · polling margin</div></div>
+          <MarginDots races={races} tokens={ROOM_TOKENS} compact />
         </div>
       </div>
     </section>

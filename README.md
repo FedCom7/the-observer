@@ -38,5 +38,6 @@ Static hosting on Firebase Hosting (free Spark plan). `firebase.json` is ready. 
 ## Known limits
 
 - ESPN's public API is unofficial and can change without notice. It also rejects headless browsers, so automated screenshots need a normal user agent.
-- Election ratings and polling margins are not collected yet (`src/data/elections.json`).
+- Election polling and ratings are curated by hand in `src/data/elections.json` (FiftyPlusOne averages, Cook ratings, three generic-ballot averages), because the aggregators' APIs are paid. Refresh the file weekly until 3 November.
+- Curated dates in `src/data/curated.json` carry a `source` link; the ones still unconfirmed are tagged TBC.
 - Apple Newsroom's RSS feed does not allow browser requests; it will be read by a scheduled job.

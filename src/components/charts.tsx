@@ -107,3 +107,60 @@ export function SeasonStrip({ heat, now }: { heat: number[]; now: number }) {
     </>
   );
 }
+
+export interface RaceMargin { state: string; seat: string; margin: number | null; dem?: string; rep?: string; rating?: string | null }
+
+/**
+ * Polling margin per race around an "even" line (NYT dot style).
+ * Works on both surfaces: pass the token set of the surface it sits on.
+ */
+export function MarginDots({ races, tokens, compact = false }: {
+  races: RaceMargin[];
+  tokens: { ink: string; ink2: string; ink3: string; grid: string; dem: string; rep: string; surface: string };
+  compact?: boolean;
+}) {
+  const [ref, W] = useWidth<HTMLDivElement>(320);
+  const [hover, setHover] = useState<number | null>(null);
+  const rows = races.filter(r => r.margin !== null);
+  const row = compact ? 20 : 30, l = compact ? 92 : 210, r = compact ? 44 : 56, H = rows.length * row + 24;
+  // Domain fits the data but always keeps some room on both sides of "even".
+  const ms = rows.map(x => x.margin!);
+  const step = Math.max(...ms.map(Math.abs)) > 8 ? 4 : 2;
+  const lo = Math.min(-step, Math.floor(Math.min(...ms) / step) * step), hi = Math.max(step, Math.ceil(Math.max(...ms) / step) * step);
+  const x = (v: number) => l + ((v - lo) / (hi - lo)) * (W - l - r);
+  const ticks = Array.from({ length: Math.round((hi - lo) / step) + 1 }, (_, i) => lo + i * step);
+  const lab = (v: number) => (v === 0 ? 'Even' : `${v < 0 ? 'R' : 'D'}+${Math.abs(v)}`);
+  const fs = compact ? 10.5 : 12;
+  return (
+    <div ref={ref} style={{ position: 'relative' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label="Polling margin by Senate race" style={{ display: 'block', fontFamily: compact ? 'var(--f-mono)' : 'var(--f-chart)' }}>
+        {ticks.map(v => (
+          <g key={v}>
+            <line x1={x(v)} x2={x(v)} y1={4} y2={H - 18} stroke={v === 0 ? tokens.ink3 : tokens.grid} />
+            <text x={x(v)} y={H - 4} textAnchor="middle" style={{ fill: tokens.ink3, fontSize: 10 }}>{lab(v)}</text>
+          </g>
+        ))}
+        {rows.map((race, i) => {
+          const y = (compact ? 12 : 16) + i * row, m = race.margin!, c = m >= 0 ? tokens.dem : tokens.rep;
+          return (
+            <g key={race.state} onPointerEnter={() => setHover(i)} onPointerLeave={() => setHover(null)}>
+              <rect x={0} y={y - row / 2} width={W} height={row} fill="transparent" />
+              <text x={0} y={y + 4} style={{ fill: tokens.ink, fontSize: fs, fontWeight: compact ? 400 : 600 }}>{race.state}</text>
+              {!compact && <text x={l - 12} y={y + 4} textAnchor="end" style={{ fill: tokens.ink3, fontSize: 10.5 }}>{race.seat}</text>}
+              <line x1={x(0)} x2={x(m)} y1={y} y2={y} stroke={c} strokeWidth={2} />
+              <circle cx={x(m)} cy={y} r={compact ? 4.5 : 5.5} fill={c} stroke={tokens.surface} strokeWidth={2} />
+              <text x={W} y={y + 4} textAnchor="end" style={{ fill: tokens.ink, fontWeight: 600, fontSize: fs }}>{lab(Math.round(m * 10) / 10)}</text>
+            </g>
+          );
+        })}
+      </svg>
+      {hover !== null && rows[hover].dem && (
+        <div className={`tip${compact ? '' : ' obs'}`} style={{ position: 'absolute', left: Math.min(W - 240, x(rows[hover].margin!) + 12), top: (compact ? 12 : 16) + hover * row - 10 }}>
+          <div className="k">{rows[hover].state} · {rows[hover].rating ?? 'Unrated'}</div>
+          <div>{rows[hover].dem} (D) vs {rows[hover].rep} (R)</div>
+          <b>{lab(Math.round(rows[hover].margin! * 10) / 10)}</b>
+        </div>
+      )}
+    </div>
+  );
+}

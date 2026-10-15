@@ -1,12 +1,12 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DiffBars, PointsBars, SeasonStrip, type Bar } from '../components/charts';
+import { DiffBars, MarginDots, PointsBars, SeasonStrip, type Bar } from '../components/charts';
 import { Score, Tbc } from '../components/common';
 import { CATS, PASSION } from '../core/passions';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, hhmm, isNight } from '../core/time';
 import type { ObsEvent, PassionId, Side, Standing } from '../core/types';
-import elections from '../data/elections.json';
+import { ELEX, fmtMargin, genericBallot, senateIfPollsHold } from '../core/elections';
 
 const ocol = (id: PassionId) => `var(--oc-${PASSION[id].cat})`;
 
@@ -201,7 +201,7 @@ function Row({ e, right, past }: { e: ObsEvent; right: ReactNode; past?: boolean
   return (
     <div className={`r${past ? ' past' : ''}`}>
       <time>{dayShort(e.start)}<small>{hhmm(e.start)}{isNight(e.start) ? ' · night' : ''}</small></time>
-      <div><b>{e.title}</b><Tbc e={e} />{(e.sub || e.tv) && <small>{[e.sub, e.tv].filter(Boolean).join(' · ')}</small>}</div>
+      <div><b>{e.title}</b><Tbc e={e} />{(e.sub || e.tv) && <small>{[e.sub, e.tv].filter(Boolean).join(' · ')}</small>}{e.id.startsWith('cur:') && e.link && <small><a href={e.link} target="_blank" rel="noreferrer" style={{ textDecoration: 'underline' }}>Source</a></small>}</div>
       <span className="x">{right}</span>
     </div>
   );
@@ -229,15 +229,27 @@ function TableCard({ s }: { s: Standing }) {
   );
 }
 
+function battlegroundHeadline(races: { margin: number | null }[]) {
+  const polled = races.filter(r => r.margin !== null), d = polled.filter(r => r.margin! > 0).length;
+  if (d === polled.length) return `Democrats lead in all ${polled.length} Senate battlegrounds`;
+  if (d === 0) return `Republicans lead in all ${polled.length} Senate battlegrounds`;
+  return `Democrats lead in ${d} of ${polled.length} Senate battlegrounds`;
+}
+
+const SHEET_TOKENS = { ink: 'var(--o-ink)', ink2: 'var(--o-ink2)', ink3: 'var(--o-ink3)', grid: 'var(--o-grid)', dem: 'var(--o-dem)', rep: 'var(--o-rep)', surface: 'var(--o-card)' };
+
 function ElectionsPage() {
   const { now, events } = useData();
   const firstClose = Date.parse('2026-11-04T00:00:00+01:00');
   // Election night: Eastern Time on 3 November is UTC-5, so Rome is six hours ahead.
-  const closings = elections.closings.map(c => ({ ...c, t: Date.parse(`2026-11-0${c.nextDay ? 4 : 3}T${c.et}:00-05:00`) }));
+  const closings = ELEX.closings.map(c => ({ ...c, t: Date.parse(`2026-11-0${c.nextDay ? 4 : 3}T${c.et}:00-05:00`) }));
   const upcoming = events.filter(e => e.passion === 'elez' && e.start > now);
+  const sen = senateIfPollsHold();
+  const gb = genericBallot();
+  const races = [...ELEX.senateRaces].sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0));
   return (
     <>
-      <Hero id="elez" dek="Midterms on Tuesday 3 November: the full House, 35 Senate seats and 36 governors." />
+      <Hero id="elez" dek={`Democrats lead the generic ballot by about ${Math.round(gb.mean)} points and are ahead in every Senate race that decides the majority. They need a net gain of ${ELEX.chambers.senate.demNeed} seats.`} />
       <section className="s-top">
         <div className="ocard s-next">
           <div className="lab">Election night</div>
@@ -246,46 +258,75 @@ function ElectionsPage() {
           <div className="s-cd">{now < firstClose ? countdown(firstClose - now) : 'Results night'}<small>until first results</small></div>
         </div>
         <div className="ocard">
-          <div className="lab">What's on the ballot</div>
-          <div className="kpis">
-            <div className="kpi"><b>{elections.chambers.house.seats}</b><span>House seats · {elections.chambers.house.majority} for a majority</span></div>
-            <div className="kpi"><b>{elections.chambers.senate.up}</b><span>Senate seats · {elections.chambers.senate.majority} for control</span></div>
-            <div className="kpi"><b>{elections.chambers.governors.up}</b><span>Governors</span></div>
+          <div className="lab">Senate if the polls hold</div>
+          <div className="kpis" style={{ gridTemplateColumns: '1fr 1fr' }}>
+            <div className="kpi"><b style={{ color: 'var(--o-dem)' }}>{sen.D}</b><span>Democrats</span></div>
+            <div className="kpi" style={{ textAlign: 'right' }}><b style={{ color: 'var(--o-rep)' }}>{sen.R}</b><span>Republicans</span></div>
           </div>
+          <div style={{ position: 'relative', display: 'flex', gap: 2, height: 10, borderRadius: 3, overflow: 'hidden', marginTop: 12 }}>
+            <div style={{ flex: sen.D, background: 'var(--o-dem)' }} /><div style={{ flex: sen.R, background: 'var(--o-rep)' }} />
+          </div>
+          <div className="osrc">Now {ELEX.chambers.senate.current.D}–{ELEX.chambers.senate.current.R}. Flips if leaders win: {sen.dFlips.map(r => r.state).join(', ') || 'none'}.</div>
         </div>
         <div className="ocard">
-          <div className="lab">Calendar</div>
-          <div className="olist">{upcoming.map(e => <Row key={e.id} e={e} right={`in ${countdown(e.start - now)}`} />)}</div>
+          <div className="lab">Generic ballot · House</div>
+          <div className="kpis" style={{ gridTemplateColumns: '1fr' }}>
+            <div className="kpi"><b style={{ color: 'var(--o-dem)' }}>{fmtMargin(gb.mean)}</b><span>Average of three aggregators, {dayShort(Date.parse(gb.asOf))}</span></div>
+          </div>
+          <div className="onews" style={{ marginTop: 8 }}>
+            {gb.avgs.map(a => <a key={a.source} className="r" href={a.url} target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'space-between', padding: '6px 0' }}><span>{a.source}</span><b>{fmtMargin(a.margin)}</b></a>)}
+          </div>
         </div>
       </section>
+
+      <section className="ocard">
+        <h2>{battlegroundHeadline(races)}</h2>
+        <p className="dek">Polling average in each race, from the safest Democratic lead to the closest contest. {sen.closest ? `The tightest is ${sen.closest.state}, at ${fmtMargin(sen.closest.margin!)}.` : ''} Hover a race for the candidates.</p>
+        <MarginDots races={races} tokens={SHEET_TOKENS} />
+        <div className="osrc">
+          Polling: <a href={ELEX.polls.url} target="_blank" rel="noreferrer">{ELEX.polls.source}</a>, {dayShort(Date.parse(ELEX.polls.asOf))}. Ratings: <a href={ELEX.ratings.url} target="_blank" rel="noreferrer">{ELEX.ratings.source}</a>, {dayShort(Date.parse(ELEX.ratings.asOf))}.
+        </div>
+      </section>
+
       <section className="s-two">
         <div className="ocard">
-          <h2>The Senate races to watch</h2>
-          <p className="dek">The seats most likely to decide control of the chamber.</p>
-          <table className="otable">
-            <thead><tr><th>State</th><th>Seat</th><th className="n">Rating</th><th className="n">Polling</th></tr></thead>
-            <tbody>
-              {elections.senateRaces.map(r => (
-                <tr key={r.state}><td><b>{r.state}</b></td><td>{r.seat}</td><td className="n">{r.rating ?? '—'}</td><td className="n">{r.margin ?? '—'}</td></tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="osrc">Ratings and polling margins are filled in by the editor routine from free sources. Curated {elections.updated}.</div>
+          <div className="lab">Races to watch</div>
+          <div style={{ overflowX: 'auto' }}>
+            <table className="otable">
+              <thead><tr><th>State</th><th>Democrat</th><th>Republican</th><th className="n">Cook</th><th className="n">Polls</th></tr></thead>
+              <tbody>
+                {races.map(r => (
+                  <tr key={r.state}>
+                    <td><b>{r.state}</b><br /><small style={{ color: 'var(--o-ink3)' }}>{r.seat}</small></td>
+                    <td>{r.dem}</td><td>{r.rep}</td>
+                    <td className="n">{r.rating ?? '—'}</td>
+                    <td className="n" style={{ color: (r.margin ?? 0) >= 0 ? 'var(--o-dem)' : 'var(--o-rep)', fontWeight: 600 }}>{r.margin === null ? '—' : fmtMargin(r.margin)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div className="ocard">
-          <div className="lab">Election night · Rome time</div>
-          <h2 style={{ marginBottom: 10 }}>When the polls close</h2>
-          <div className="closings">
-            {closings.map(c => (
-              <div key={c.et} className="r">
-                <b>{hhmm(c.t)}</b>
-                <div>{c.states}{c.note && <><br /><small>{c.note}</small></>}</div>
-              </div>
-            ))}
+        <div style={{ display: 'grid', gap: 18, minWidth: 0 }}>
+          <div className="ocard">
+            <div className="lab">Election night · Rome time</div>
+            <h2 style={{ marginBottom: 10 }}>When the polls close</h2>
+            <div className="closings">
+              {closings.map(c => (
+                <div key={c.et} className="r">
+                  <b>{hhmm(c.t)}</b>
+                  <div>{c.states}{c.note && <><br /><small>{c.note}</small></>}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="ocard">
+            <div className="lab">Calendar</div>
+            <div className="olist">{upcoming.map(e => <Row key={e.id} e={e} right={`in ${countdown(e.start - now)}`} />)}</div>
           </div>
         </div>
       </section>
-      <section className="ocard"><div className="lab">The cycle ahead</div><SeasonStrip heat={PASSION.elez.heat} now={now} /></section>
+      <div className="osrc">Curated {ELEX.updated}. Figures refresh when the data file is updated.</div>
     </>
   );
 }

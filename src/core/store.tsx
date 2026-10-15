@@ -34,6 +34,7 @@ const curatedEvents: ObsEvent[] = curated.events.map((e, i) => ({
   tbc: 'tbc' in e ? Boolean(e.tbc) : false,
   place: 'place' in e ? e.place : undefined,
   loc: 'loc' in e ? (e.loc as [number, number]) : undefined,
+  link: 'source' in e ? e.source : undefined,
 }));
 
 /** Primetime NFL windows (Thursday, Sunday and Monday night), the games worth showing league-wide. */
