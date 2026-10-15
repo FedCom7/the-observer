@@ -69,7 +69,8 @@ export function parseDate(text, fallbackYear) {
 /** First "| key = value" infobox field among the given keys. */
 export function infobox(w, keys) {
   for (const k of keys) {
-    const m = w.match(new RegExp(`^\\s*\\|\\s*${k}\\s*=\\s*(.+)$`, 'mi'));
+    // [ \t] instead of \s: an empty field must not swallow the next line.
+    const m = w.match(new RegExp(`^[ \\t]*\\|[ \\t]*${k}[ \\t]*=[ \\t]*(.*)$`, 'mi'));
     if (m && m[1].trim()) return m[1].trim();
   }
   return null;

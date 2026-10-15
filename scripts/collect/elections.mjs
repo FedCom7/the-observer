@@ -1,6 +1,6 @@
 // US elections: Senate ratings from ten forecasters (Wikipedia), polling averages
 // and the generic ballot (FiftyPlusOne public pages). Runs unattended.
-import { decode, get, wikitext } from './lib.mjs';
+import { decode, get, infobox, wikitext } from './lib.mjs';
 
 const CYCLE = 2026;
 const SCORE = { safe: 3, solid: 3, likely: 2, lean: 1, tilt: 0.5, tossup: 0, 'toss-up': 0 };
@@ -67,6 +67,35 @@ async function fpoAverage(path) {
   return { lines: head, asOf: date ? new Date(`${date} 12:00 UTC`).toISOString().slice(0, 10) : null, url: `https://fiftyplusone.news/polls/${path}` };
 }
 
+const num = v => (v ? Number(String(v).replace(/[^\d.]/g, '')) || null : null);
+const plain = v => (v ? v.replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').replace(/'''?|<[^>]+>|\{\{[^}]*\}\}/g, '').trim() : null);
+
+/**
+ * Election-night results from each race's Wikipedia infobox (nominee, party,
+ * popular vote, percentage, winner). Editors fill these within minutes of the
+ * networks' calls, so this is a free, slightly delayed results feed.
+ */
+export async function raceResults(r, cycle = CYCLE) {
+  const title = `${cycle} United States Senate ${r.special ? 'special ' : ''}election in ${r.state}`;
+  const w = await wikitext(title, 0);
+  if (!w) return null;
+  const sides = [];
+  for (let i = 1; i <= 4; i++) {
+    const party = infobox(w, [`party${i}`]);
+    if (!party) continue;
+    sides.push({
+      name: plain(infobox(w, [`nominee${i}`, `candidate${i}`])),
+      party: /Democratic|DFL/.test(party) ? 'D' : /Republican/.test(party) ? 'R' : 'I',
+      votes: num(infobox(w, [`popular_vote${i}`])),
+      pct: num(infobox(w, [`percentage${i}`])),
+    });
+  }
+  const winner = plain(infobox(w, ['after_election', 'elected_senator']));
+  const reporting = num(infobox(w, ['reporting']));
+  if (!sides.some(x => x.pct) && !winner) return null;
+  return { sides, winner: winner || null, reporting, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}` };
+}
+
 export async function collectElections() {
   const { races, cookAsOf } = await senateRatings();
   // Battlegrounds: any race a forecaster does not call safe for one side.
@@ -81,6 +110,9 @@ export async function collectElections() {
       return { ...r, dem: null, rep: null, margin: null };
     }
   }));
+  // Results are only filled in from election night on; before that every call returns null.
+  for (const r of polled) r.results = await raceResults(r).catch(() => null);
+
   let generic = null;
   try {
     const g = await fpoAverage('generic-ballot/generic-ballot');

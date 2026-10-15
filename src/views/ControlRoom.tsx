@@ -6,6 +6,7 @@ import { useData } from '../core/store';
 import { DAY, HOUR, countdown, dayShort, hhmm, hhmmss } from '../core/time';
 import type { CatId, ObsEvent, PassionId, Standing } from '../core/types';
 import { MarginDots } from '../components/charts';
+import { ElectionNight, hasResults, isElectionNight } from '../components/ElectionNight';
 import { FIRST_CLOSE, fmtMargin, senateIfPollsHold } from '../core/elections';
 
 const CLOCKS: [string, string, boolean?][] = [
@@ -189,9 +190,13 @@ function Elections({ open }: { open: (p: PassionId) => void }) {
             <div className="prob-lab"><span>DEM {sen.D}</span><span>51 for control</span><span>REP {sen.R}</span></div>
           </div>
         )}
-        <div className="races"><div className="big-row"><div className="k">Senate battlegrounds · polling margin</div></div>
+        {e && (isElectionNight(now) || hasResults(e.battlegrounds)) ? (
+          <div className="races"><div className="big-row"><div className="k" style={{ color: 'var(--signal)' }}>● Results · Senate battlegrounds</div></div>
+            <ElectionNight races={e.battlegrounds} now={now} variant="room" />
+          </div>
+        ) : <div className="races"><div className="big-row"><div className="k">Senate battlegrounds · polling margin</div></div>
           {races.length ? <MarginDots races={races.map(r => ({ state: r.state, seat: r.incumbentParty, margin: r.margin ?? null, dem: r.dem ?? undefined, rep: r.rep ?? undefined, rating: r.consensusLabel }))} tokens={ROOM_TOKENS} compact /> : <div className="foot" style={{ padding: 0 }}>Loading…</div>}
-        </div>
+        </div>}
       </div>
     </section>
   );

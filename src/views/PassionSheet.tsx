@@ -1,6 +1,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { DiffBars, MarginDots, PointsBars, SeasonStrip, type Bar } from '../components/charts';
+import { ElectionNight, isElectionNight } from '../components/ElectionNight';
 import { Score, Tbc } from '../components/common';
 import { CATS, PASSION } from '../core/passions';
 import { useData } from '../core/store';
@@ -286,6 +287,8 @@ function ElectionsPage() {
         </div>
       </section>
 
+      {isElectionNight(now) && <NightCard races={e.battlegrounds} now={now} updated={e.updated} />}
+
       <section className="ocard">
         <h2>{battlegroundHeadline(races)}</h2>
         <p className="dek">Polling average in each race the forecasters do not call safe, from the widest Democratic lead to the widest Republican one. {sen.closest ? `The closest is ${sen.closest.state}, at ${fmtMargin(sen.closest.margin!)}.` : ''} Hover a race for the candidates.</p>
@@ -316,6 +319,8 @@ function ElectionsPage() {
         </div>
       </section>
 
+      {!isElectionNight(now) && <NightCard races={e.battlegrounds} now={now} updated={e.updated} />}
+
       <section className="s-two">
         <div className="ocard">
           <div className="lab">Election night · Rome time</div>
@@ -345,6 +350,19 @@ function ElectionsPage() {
         </div>
       </section>
     </>
+  );
+}
+
+function NightCard({ races, now, updated }: { races: Race[]; now: number; updated: string }) {
+  return (
+    <section className="ocard">
+      <div className="lab">{isElectionNight(now) ? <span style={{ color: '#ff453a' }}>● Election night · live</span> : 'Election night tracker'}</div>
+      <h2>{isElectionNight(now) ? 'Results in the Senate battlegrounds' : 'What to watch on the night, in closing order'}</h2>
+      <p className="dek">{isElectionNight(now)
+        ? `Vote shares and winners from each race's Wikipedia page, refreshed every five minutes. Last update ${hhmm(Date.parse(updated))}.`
+        : 'Each row turns into a live result bar on 3 November, once the polls in that state close.'}</p>
+      <ElectionNight races={races} now={now} variant="sheet" />
+    </section>
   );
 }
 

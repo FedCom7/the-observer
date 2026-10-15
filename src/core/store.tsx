@@ -52,7 +52,7 @@ const primetime = (e: ObsEvent) => {
 const SOURCES: Source[] = [
   { key: 'calendar', every: 10 * MIN, run: async () => ({ events: await collectedCalendar() }) },
   { key: 'feeds', every: 10 * MIN, run: async () => ({ news: await collectedNews() }) },
-  { key: 'elections', every: 10 * MIN, run: async () => ({ elections: await collected<ElectionData>('elections') }) },
+  { key: 'elections', every: 2 * MIN, run: async () => ({ elections: await getJSON<ElectionData>('/data/elections.json', 2 * MIN) }) },
   { key: 'milan', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('milan', 'soccer', 'all', MILAN)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'seriea', every: 30 * MIN, run: async () => ({ standings: { seriea: await soccerTable('milan', 'ita.1', MILAN, 'Serie A') } }) },
   { key: 'pats', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('pats', 'football', 'nfl', PATRIOTS)).map(e => ({ ...e, weight: 3 })) }) },
