@@ -6,7 +6,7 @@ import { useData } from '../core/store';
 import { DAY, HOUR, countdown, dayShort, hhmm, hhmmss } from '../core/time';
 import type { CatId, ObsEvent, PassionId, Standing } from '../core/types';
 import { MarginDots } from '../components/charts';
-import { ELEX, fmtMargin, genericBallot, senateIfPollsHold } from '../core/elections';
+import { FIRST_CLOSE, fmtMargin, senateIfPollsHold } from '../core/elections';
 
 const CLOCKS: [string, string, boolean?][] = [
   ['ROME', 'Europe/Rome', true], ['LONDON', 'Europe/London'], ['NEW YORK', 'America/New_York'],
@@ -119,7 +119,7 @@ function TMinus({ open }: { open: (p: PassionId) => void }) {
           <div key={e.id} className={`tm-row${e.start - now < 12 * HOUR ? ' soon' : ''}`} data-p={e.passion} tabIndex={0}
             onClick={() => open(e.passion)} onKeyDown={k => k.key === 'Enter' && open(e.passion)}>
             <i style={{ background: passionColor(e.passion) }} />
-            <div className="t"><b>{e.title}<Tbc e={e} /></b><small>{dayShort(e.start)} {hhmm(e.start)} · {PASSION[e.passion].name}{e.tv ? ` · ${e.tv}` : ''}</small></div>
+            <div className="t"><b>{e.title}<Tbc e={e} /></b><small>{dayShort(e.start)} {e.approx ? '≈' : ''}{hhmm(e.start)} · {PASSION[e.passion].name}{e.tv ? ` · ${e.tv}` : ''}</small></div>
             <div className="cd">{countdown(e.start - now)}<small>T-MINUS</small></div>
           </div>
         ))}
@@ -171,26 +171,26 @@ function LiveBoard({ open }: { open: (p: PassionId) => void }) {
 const ROOM_TOKENS = { ink: 'var(--ink)', ink2: 'var(--ink-2)', ink3: 'var(--ink-3)', grid: 'var(--grid)', dem: 'var(--dem)', rep: 'var(--rep)', surface: 'var(--panel)' };
 
 function Elections({ open }: { open: (p: PassionId) => void }) {
-  const { now } = useData();
-  const firstClose = Date.parse('2026-11-04T00:00:00+01:00');
-  const sen = senateIfPollsHold();
-  const gb = genericBallot();
-  const races = [...ELEX.senateRaces].sort((a, b) => (b.margin ?? 0) - (a.margin ?? 0));
+  const { now, elections: e } = useData();
+  const sen = e ? senateIfPollsHold(e) : null;
+  const races = (e?.battlegrounds ?? []).filter(r => r.dem && r.rep && r.margin != null);
   return (
     <section className="panel elex" data-p="elez" onClick={() => open('elez')}>
-      <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: 'var(--c-pol)' }} />Midterms 2026<span className="meta">polls {dayShort(Date.parse(ELEX.polls.asOf))} · open ›</span></div>
+      <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: 'var(--c-pol)' }} />Midterms 2026<span className="meta">{e ? `auto ${hhmm(Date.parse(e.updated))} · ` : ''}open ›</span></div>
       <div className="elex-body">
         <div className="big-row">
-          <div><div className="k">First polls close</div><div className="v">{now < firstClose ? `T-${countdown(firstClose - now)}` : 'Results night'}</div></div>
-          <div style={{ textAlign: 'right' }}><div className="k">Generic ballot</div><div className="v" style={{ color: 'var(--dem)' }}>{fmtMargin(gb.mean)}</div></div>
+          <div><div className="k">First polls close</div><div className="v">{now < FIRST_CLOSE ? `T-${countdown(FIRST_CLOSE - now)}` : 'Results night'}</div></div>
+          <div style={{ textAlign: 'right' }}><div className="k">Generic ballot</div><div className="v" style={{ color: (e?.generic?.margin ?? 0) >= 0 ? 'var(--dem)' : 'var(--rep)' }}>{e?.generic ? fmtMargin(e.generic.margin) : '–'}</div></div>
         </div>
-        <div>
-          <div className="big-row"><div className="k">Senate if polls hold</div><div className="k">now {ELEX.chambers.senate.current.D}–{ELEX.chambers.senate.current.R}</div></div>
-          <div className="prob" style={{ marginTop: 6, position: 'relative' }}><div style={{ flex: sen.D, background: 'var(--dem)' }} /><div style={{ flex: sen.R, background: 'var(--rep)' }} /></div>
-          <div className="prob-lab"><span>DEM {sen.D}</span><span>51 for control</span><span>REP {sen.R}</span></div>
-        </div>
+        {sen && e && (
+          <div>
+            <div className="big-row"><div className="k">Senate if polls hold</div><div className="k">now {e.senate.current.D}–{e.senate.current.R}</div></div>
+            <div className="prob" style={{ marginTop: 6 }}><div style={{ flex: sen.D, background: 'var(--dem)' }} /><div style={{ flex: sen.R, background: 'var(--rep)' }} /></div>
+            <div className="prob-lab"><span>DEM {sen.D}</span><span>51 for control</span><span>REP {sen.R}</span></div>
+          </div>
+        )}
         <div className="races"><div className="big-row"><div className="k">Senate battlegrounds · polling margin</div></div>
-          <MarginDots races={races} tokens={ROOM_TOKENS} compact />
+          {races.length ? <MarginDots races={races.map(r => ({ state: r.state, seat: r.incumbentParty, margin: r.margin ?? null, dem: r.dem ?? undefined, rep: r.rep ?? undefined, rating: r.consensusLabel }))} tokens={ROOM_TOKENS} compact /> : <div className="foot" style={{ padding: 0 }}>Loading…</div>}
         </div>
       </div>
     </section>

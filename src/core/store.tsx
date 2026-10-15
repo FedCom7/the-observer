@@ -1,8 +1,9 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import curated from '../data/curated.json';
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
 import { f1Calendar, f1Constructors, f1Drivers, f1LastRace } from '../sources/f1';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
+import type { ElectionData } from './elections';
+import { getJSON } from './fetcher';
 import { HOUR, MIN } from './time';
 import type { NewsItem, ObsEvent, PassionId, SourceStatus, Standing } from './types';
 
@@ -14,6 +15,7 @@ interface Data {
   standings: Record<string, Standing>;
   news: NewsItem[];
   orbit?: InOrbit;
+  elections?: ElectionData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -24,18 +26,22 @@ interface Source {
   run: () => Promise<Patch>;
 }
 
-const curatedEvents: ObsEvent[] = curated.events.map((e, i) => ({
-  id: `cur:${e.passion}:${i}`,
-  passion: e.passion as PassionId,
-  title: e.title,
-  start: Date.parse(e.start),
-  state: 'pre',
-  weight: e.weight as 1 | 2 | 3,
-  tbc: 'tbc' in e ? Boolean(e.tbc) : false,
-  place: 'place' in e ? e.place : undefined,
-  loc: 'loc' in e ? (e.loc as [number, number]) : undefined,
-  link: 'source' in e ? e.source : undefined,
-}));
+// Files written by the collectors (scripts/collect), refreshed on the server every hour.
+interface CollectedEvent { id: string; passion: PassionId; title: string; sub?: string; start: string; weight?: number; approxTime?: boolean; place?: string; loc?: [number, number]; link?: string }
+interface CollectedNews { id: string; passion: PassionId; title: string; source: string; time: string; url?: string }
+
+const collected = async <T,>(name: string) => getJSON<T>(`/data/${name}.json`, 5 * MIN);
+
+async function collectedCalendar(): Promise<ObsEvent[]> {
+  const j = await collected<{ events: CollectedEvent[] }>('calendar');
+  return j.events.map(e => ({ ...e, start: Date.parse(e.start), state: 'pre' as const, weight: (e.weight ?? 1) as 1 | 2 | 3, approx: e.approxTime }));
+}
+
+async function collectedNews(): Promise<NewsItem[]> {
+  const j = await collected<{ items: CollectedNews[] }>('news');
+  return j.items.map(n => ({ ...n, time: Date.parse(n.time) }));
+}
+
 
 /** Primetime NFL windows (Thursday, Sunday and Monday night), the games worth showing league-wide. */
 const primetime = (e: ObsEvent) => {
@@ -44,6 +50,9 @@ const primetime = (e: ObsEvent) => {
 };
 
 const SOURCES: Source[] = [
+  { key: 'calendar', every: 10 * MIN, run: async () => ({ events: await collectedCalendar() }) },
+  { key: 'feeds', every: 10 * MIN, run: async () => ({ news: await collectedNews() }) },
+  { key: 'elections', every: 10 * MIN, run: async () => ({ elections: await collected<ElectionData>('elections') }) },
   { key: 'milan', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('milan', 'soccer', 'all', MILAN)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'seriea', every: 30 * MIN, run: async () => ({ standings: { seriea: await soccerTable('milan', 'ita.1', MILAN, 'Serie A') } }) },
   { key: 'pats', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('pats', 'football', 'nfl', PATRIOTS)).map(e => ({ ...e, weight: 3 })) }) },
@@ -122,10 +131,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
   const merged = useMemo<Data>(() => {
     const events = new Map<string, ObsEvent>();
-    curatedEvents.forEach(e => events.set(e.id, e));
     const standings: Record<string, Standing> = {};
     const news: NewsItem[] = [];
     let orbit: InOrbit | undefined;
+    let elections: ElectionData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -135,6 +144,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       Object.assign(standings, p.standings);
       if (p.news) news.push(...p.news);
       if (p.orbit) orbit = p.orbit;
+      if (p.elections) elections = p.elections;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -146,6 +156,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       standings,
       news: news.filter(n => (seenNews.has(n.title) ? false : (seenNews.add(n.title), true))).sort((a, b) => b.time - a.time),
       orbit,
+      elections,
     };
   }, [bySource, live]);
 

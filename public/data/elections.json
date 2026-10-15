@@ -1,0 +1,2678 @@
+{
+ "cycle": 2026,
+ "updated": "2026-10-15T17:27:18.327Z",
+ "ratingsSource": {
+  "name": "Wikipedia forecast table (Cook, Sabato, Inside Elections, Economist and others)",
+  "asOf": "Oct 6, 2026",
+  "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections#Predictions"
+ },
+ "pollsSource": {
+  "name": "FiftyPlusOne polling averages",
+  "url": "https://fiftyplusone.news/polls/senate/general/georgia"
+ },
+ "senate": {
+  "current": {
+   "D": 47,
+   "R": 53
+  },
+  "majority": 51
+ },
+ "generic": {
+  "dem": 51.3,
+  "rep": 43.1,
+  "margin": 8.2,
+  "asOf": "2026-10-15",
+  "source": "FiftyPlusOne",
+  "url": "https://fiftyplusone.news/polls/generic-ballot/generic-ballot"
+ },
+ "races": [
+  {
+   "state": "Alabama",
+   "special": false,
+   "incumbent": "Tommy Tuberville",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Alaska",
+   "special": false,
+   "incumbent": "Dan Sullivan",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.5,
+   "consensusLabel": "Lean D"
+  },
+  {
+   "state": "Arkansas",
+   "special": false,
+   "incumbent": "Tom Cotton",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.9,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Colorado",
+   "special": false,
+   "incumbent": "John Hickenlooper",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "Delaware",
+   "special": false,
+   "incumbent": "Chris Coons",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "Florida",
+   "special": true,
+   "incumbent": "Ashley Moody",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "ST": {
+     "label": "Likely R",
+     "score": -2
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.3,
+   "consensusLabel": "Likely R"
+  },
+  {
+   "state": "Georgia",
+   "special": false,
+   "incumbent": "Jon Ossoff",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Sabato": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 2.1,
+   "consensusLabel": "Likely D"
+  },
+  {
+   "state": "Idaho",
+   "special": false,
+   "incumbent": "Jim Risch",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.9,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Illinois",
+   "special": false,
+   "incumbent": "Dick Durbin",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "Iowa",
+   "special": false,
+   "incumbent": "Joni Ernst",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt R",
+     "score": -0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "ST": {
+     "label": "Toss Up",
+     "score": 0
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": -0.05,
+   "consensusLabel": "Toss Up"
+  },
+  {
+   "state": "Kansas",
+   "special": false,
+   "incumbent": "Roger Marshall",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "IE": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "ST": {
+     "label": "Toss Up",
+     "score": 0
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": -0.4,
+   "consensusLabel": "Lean R"
+  },
+  {
+   "state": "Kentucky",
+   "special": false,
+   "incumbent": "Mitch McConnell",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Louisiana",
+   "special": false,
+   "incumbent": "Bill Cassidy",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.7,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Maine",
+   "special": false,
+   "incumbent": "Susan Collins",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.4,
+   "consensusLabel": "Lean D"
+  },
+  {
+   "state": "Massachusetts",
+   "special": false,
+   "incumbent": "Ed Markey",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "Michigan",
+   "special": false,
+   "incumbent": "Gary Peters",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt D",
+     "score": 0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.75,
+   "consensusLabel": "Lean D"
+  },
+  {
+   "state": "Minnesota",
+   "special": false,
+   "incumbent": "Tina Smith",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Likely D",
+     "score": 2
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 1.4,
+   "consensusLabel": "Likely D"
+  },
+  {
+   "state": "Mississippi",
+   "special": false,
+   "incumbent": "Cindy Hyde-Smith",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.7,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Montana",
+   "special": false,
+   "incumbent": "Steve Daines",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.7,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Nebraska",
+   "special": false,
+   "incumbent": "Pete Ricketts",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "IE": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "SB": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "ST": {
+     "label": "Lean R",
+     "score": -1
+    }
+   },
+   "cook": "Likely R",
+   "consensus": -1.4,
+   "consensusLabel": "Likely R"
+  },
+  {
+   "state": "New Hampshire",
+   "special": false,
+   "incumbent": "Jeanne Shaheen",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Sabato": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Likely D",
+     "score": 2
+    }
+   },
+   "cook": "Lean D",
+   "consensus": 1.5,
+   "consensusLabel": "Likely D"
+  },
+  {
+   "state": "New Jersey",
+   "special": false,
+   "incumbent": "Cory Booker",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "New Mexico",
+   "special": false,
+   "incumbent": "Ben Ray Luján",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 2.9,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "North Carolina",
+   "special": false,
+   "incumbent": "Thom Tillis",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 2,
+   "consensusLabel": "Likely D"
+  },
+  {
+   "state": "Ohio",
+   "special": true,
+   "incumbent": null,
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.4,
+   "consensusLabel": "Lean D"
+  },
+  {
+   "state": "Oklahoma",
+   "special": false,
+   "incumbent": "Alan Armstrong",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Oregon",
+   "special": false,
+   "incumbent": "Jeff Merkley",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "Rhode Island",
+   "special": false,
+   "incumbent": "Jack Reed",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "South Carolina",
+   "special": false,
+   "incumbent": "Darline Graham",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "DDHQ": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Economist": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "FPO": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Fox": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "IE": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "SB": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "ST": {
+     "label": "Likely R",
+     "score": -2
+    }
+   },
+   "cook": "Likely R",
+   "consensus": -1.6,
+   "consensusLabel": "Likely R"
+  },
+  {
+   "state": "South Dakota",
+   "special": false,
+   "incumbent": "Mike Rounds",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Likely R",
+     "score": -2
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.8,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Tennessee",
+   "special": false,
+   "incumbent": "Bill Hagerty",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Texas",
+   "special": false,
+   "incumbent": "John Cornyn",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt R",
+     "score": -0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.15,
+   "consensusLabel": "Toss Up"
+  },
+  {
+   "state": "Virginia",
+   "special": false,
+   "incumbent": "Mark Warner",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "DDHQ": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Economist": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "IE": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "RCP": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "Sabato": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Solid D",
+   "consensus": 3,
+   "consensusLabel": "Safe D"
+  },
+  {
+   "state": "West Virginia",
+   "special": false,
+   "incumbent": "Shelley Moore Capito",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  },
+  {
+   "state": "Wyoming",
+   "special": false,
+   "incumbent": "Cynthia Lummis",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Economist": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "FPO": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "ST": {
+     "label": "Safe R",
+     "score": -3
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -3,
+   "consensusLabel": "Safe R"
+  }
+ ],
+ "battlegrounds": [
+  {
+   "state": "North Carolina",
+   "special": false,
+   "incumbent": "Thom Tillis",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 2,
+   "consensusLabel": "Likely D",
+   "dem": "Cooper",
+   "rep": "Whatley",
+   "demPct": 51,
+   "repPct": 40.9,
+   "margin": 10.1,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/north-carolina"
+  },
+  {
+   "state": "Georgia",
+   "special": false,
+   "incumbent": "Jon Ossoff",
+   "incumbentParty": "D",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Safe D",
+     "score": 3
+    },
+    "Fox": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Sabato": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "SB": {
+     "label": "Solid D",
+     "score": 3
+    },
+    "ST": {
+     "label": "Safe D",
+     "score": 3
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 2.1,
+   "consensusLabel": "Likely D",
+   "dem": "Ossoff",
+   "rep": "Collins",
+   "demPct": 52.3,
+   "repPct": 43.2,
+   "margin": 9.1,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/georgia"
+  },
+  {
+   "state": "New Hampshire",
+   "special": false,
+   "incumbent": "Jeanne Shaheen",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Sabato": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Likely D",
+     "score": 2
+    }
+   },
+   "cook": "Lean D",
+   "consensus": 1.5,
+   "consensusLabel": "Likely D",
+   "dem": "Pappas",
+   "rep": "Sununu",
+   "demPct": 49.8,
+   "repPct": 42.7,
+   "margin": 7.1,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/new-hampshire"
+  },
+  {
+   "state": "Ohio",
+   "special": true,
+   "incumbent": null,
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.4,
+   "consensusLabel": "Lean D",
+   "dem": "Brown",
+   "rep": "Husted",
+   "demPct": 47.9,
+   "repPct": 43.9,
+   "margin": 4,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/ohio"
+  },
+  {
+   "state": "Michigan",
+   "special": false,
+   "incumbent": "Gary Peters",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt D",
+     "score": 0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.75,
+   "consensusLabel": "Lean D",
+   "dem": "El-Sayed",
+   "rep": "Rogers",
+   "demPct": 48.2,
+   "repPct": 44.7,
+   "margin": 3.5,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/michigan"
+  },
+  {
+   "state": "Minnesota",
+   "special": false,
+   "incumbent": "Tina Smith",
+   "incumbentParty": "D",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "DDHQ": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "Fox": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "IE": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Likely D",
+     "score": 2
+    },
+    "ST": {
+     "label": "Likely D",
+     "score": 2
+    }
+   },
+   "cook": "Likely D",
+   "consensus": 1.4,
+   "consensusLabel": "Likely D",
+   "dem": "Flanagan",
+   "rep": "Tafoya",
+   "demPct": 46,
+   "repPct": 42.6,
+   "margin": 3.4,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/minnesota"
+  },
+  {
+   "state": "Texas",
+   "special": false,
+   "incumbent": "John Cornyn",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt R",
+     "score": -0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.15,
+   "consensusLabel": "Toss Up",
+   "dem": "Talarico",
+   "rep": "Paxton",
+   "demPct": 48.5,
+   "repPct": 45.2,
+   "margin": 3.3,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/texas"
+  },
+  {
+   "state": "Alaska",
+   "special": false,
+   "incumbent": "Dan Sullivan",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.5,
+   "consensusLabel": "Lean D",
+   "dem": "Peltola",
+   "rep": "Sullivan",
+   "demPct": 48.8,
+   "repPct": 45.8,
+   "margin": 3,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/alaska"
+  },
+  {
+   "state": "Maine",
+   "special": false,
+   "incumbent": "Susan Collins",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "FPO": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Lean D",
+     "score": 1
+    },
+    "ST": {
+     "label": "Lean D",
+     "score": 1
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": 0.4,
+   "consensusLabel": "Lean D",
+   "dem": "Jackson",
+   "rep": "Collins",
+   "demPct": 49.1,
+   "repPct": 46.9,
+   "margin": 2.2,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/maine"
+  },
+  {
+   "state": "Kansas",
+   "special": false,
+   "incumbent": "Roger Marshall",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "IE": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "ST": {
+     "label": "Toss Up",
+     "score": 0
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": -0.4,
+   "consensusLabel": "Lean R",
+   "dem": "Hamilton",
+   "rep": "Marshall",
+   "demPct": 46.7,
+   "repPct": 45.2,
+   "margin": 1.5,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/kansas"
+  },
+  {
+   "state": "Iowa",
+   "special": false,
+   "incumbent": "Joni Ernst",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "DDHQ": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Economist": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "FPO": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Fox": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "IE": {
+     "label": "Tilt R",
+     "score": -0.5
+    },
+    "RCP": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "Sabato": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "SB": {
+     "label": "Toss Up",
+     "score": 0
+    },
+    "ST": {
+     "label": "Toss Up",
+     "score": 0
+    }
+   },
+   "cook": "Toss Up",
+   "consensus": -0.05,
+   "consensusLabel": "Toss Up",
+   "dem": "Turek",
+   "rep": "Hinson",
+   "demPct": 46.5,
+   "repPct": 45.8,
+   "margin": 0.7,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/iowa"
+  },
+  {
+   "state": "South Carolina",
+   "special": false,
+   "incumbent": "Darline Graham",
+   "incumbentParty": "R",
+   "open": false,
+   "raters": {
+    "Cook": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "DDHQ": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Economist": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "FPO": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Fox": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "IE": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "SB": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "ST": {
+     "label": "Likely R",
+     "score": -2
+    }
+   },
+   "cook": "Likely R",
+   "consensus": -1.6,
+   "consensusLabel": "Likely R",
+   "dem": "Andrews",
+   "rep": "Graham Nordone",
+   "demPct": 43.3,
+   "repPct": 44.4,
+   "margin": -1.1,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/south-carolina"
+  },
+  {
+   "state": "Nebraska",
+   "special": false,
+   "incumbent": "Pete Ricketts",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "IE": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "SB": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "ST": {
+     "label": "Lean R",
+     "score": -1
+    }
+   },
+   "cook": "Likely R",
+   "consensus": -1.4,
+   "consensusLabel": "Likely R",
+   "dem": null,
+   "rep": "Ricketts",
+   "demPct": null,
+   "repPct": 46.9,
+   "margin": null,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/nebraska"
+  },
+  {
+   "state": "Florida",
+   "special": true,
+   "incumbent": "Ashley Moody",
+   "incumbentParty": "R",
+   "open": true,
+   "raters": {
+    "Cook": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "DDHQ": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Economist": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "FPO": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "Fox": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "IE": {
+     "label": "Solid R",
+     "score": -3
+    },
+    "RCP": {
+     "label": "Lean R",
+     "score": -1
+    },
+    "Sabato": {
+     "label": "Safe R",
+     "score": -3
+    },
+    "SB": {
+     "label": "Likely R",
+     "score": -2
+    },
+    "ST": {
+     "label": "Likely R",
+     "score": -2
+    }
+   },
+   "cook": "Solid R",
+   "consensus": -2.3,
+   "consensusLabel": "Likely R",
+   "dem": "Nixon",
+   "rep": "Moody",
+   "demPct": 42.7,
+   "repPct": 49,
+   "margin": -6.3,
+   "pollsAsOf": "2026-10-15",
+   "pollsUrl": "https://fiftyplusone.news/polls/senate/general/florida"
+  }
+ ]
+}

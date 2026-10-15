@@ -34,8 +34,10 @@ export interface ObsEvent {
   link?: string;
   /** 1 normal, 2 notable, 3 headline */
   weight?: 1 | 2 | 3;
-  /** set for hand-curated dates that still need confirmation */
+  /** date still to be confirmed by the source */
   tbc?: boolean;
+  /** the source gives the day but not the start time; the time shown is the usual one */
+  approx?: boolean;
   /** ESPN coordinates for live refresh */
   espn?: { sport: string; league: string; id: string };
 }

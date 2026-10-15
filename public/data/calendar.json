@@ -1,0 +1,862 @@
+{
+ "updated": "2026-10-15T17:28:30.737Z",
+ "status": {
+  "wikipedia": "9 events",
+  "tennis": "8 events",
+  "aso": "4 events",
+  "ski": "41 events",
+  "wec": "15 events",
+  "royalRules": "6 events",
+  "electionRules": "4 events"
+ },
+ "events": [
+  {
+   "id": "wec:2026:6",
+   "passion": "wec",
+   "title": "6 Hours of Fuji",
+   "sub": "WEC 2026 · Round 6",
+   "start": "2026-09-27T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Fuji Speedway",
+   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2026:7",
+   "passion": "wec",
+   "title": "6 Hours of Barcelona",
+   "sub": "WEC 2026 · Round 7",
+   "start": "2026-10-18T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Circuit de Barcelona-Catalunya",
+   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-10-24:GS:Sölden",
+   "passion": "sci",
+   "title": "Sölden · women's giant slalom",
+   "start": "2026-10-24T08:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-10-25:GS:Sölden",
+   "passion": "sci",
+   "title": "Sölden · men's giant slalom",
+   "start": "2026-10-25T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "rule:election:2026",
+   "passion": "elez",
+   "title": "Election Day · Midterms",
+   "start": "2026-11-03T11:00:00.000Z",
+   "weight": 3,
+   "place": "United States",
+   "loc": [
+    -77.04,
+    38.9
+   ],
+   "source": "Fixed date: Tuesday after the first Monday of November"
+  },
+  {
+   "id": "rule:election:2026:close",
+   "passion": "elez",
+   "title": "First polls close (Indiana, Kentucky)",
+   "start": "2026-11-03T23:00:00.000Z",
+   "weight": 3,
+   "place": "Indiana",
+   "loc": [
+    -86.16,
+    39.77
+   ],
+   "source": "Fixed: polls close at 18:00 Eastern in most of Indiana and Kentucky"
+  },
+  {
+   "id": "wec:2026:8",
+   "passion": "wec",
+   "title": "6 Hours of Monza",
+   "sub": "WEC 2026 · Round 8",
+   "start": "2026-11-08T11:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Monza Circuit",
+   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "rule:remembrance:2026",
+   "passion": "royal",
+   "title": "Remembrance Sunday at the Cenotaph",
+   "start": "2026-11-08T11:00:00.000Z",
+   "weight": 2,
+   "place": "Whitehall, London",
+   "loc": [
+    -0.126,
+    51.502
+   ],
+   "source": "Fixed date: second Sunday of November"
+  },
+  {
+   "id": "ski:women:2026-11-14:SL:Levi",
+   "passion": "sci",
+   "title": "Levi · women's slalom",
+   "start": "2026-11-14T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-11-15:SL:Levi",
+   "passion": "sci",
+   "title": "Levi · men's slalom",
+   "start": "2026-11-15T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-11-21:SL:Gurgl",
+   "passion": "sci",
+   "title": "Gurgl · women's slalom",
+   "start": "2026-11-21T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-11-22:SL:Gurgl",
+   "passion": "sci",
+   "title": "Gurgl · men's slalom",
+   "start": "2026-11-22T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-11-28:SG:Copper Mountain",
+   "passion": "sci",
+   "title": "Copper Mountain · men's super-G",
+   "start": "2026-11-28T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-11-28:GS:Killington",
+   "passion": "sci",
+   "title": "Killington · women's giant slalom",
+   "start": "2026-11-28T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-12-3:DH:Beaver Creek",
+   "passion": "sci",
+   "title": "Beaver Creek · men's downhill",
+   "start": "2026-12-03T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-12-5:GS:Tremblant",
+   "passion": "sci",
+   "title": "Tremblant · women's giant slalom",
+   "start": "2026-12-05T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-12-11:DH:Beaver Creek",
+   "passion": "sci",
+   "title": "Beaver Creek · women's downhill",
+   "start": "2026-12-11T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-12-12:GS:Val d'Isere",
+   "passion": "sci",
+   "title": "Val d'Isere · men's giant slalom",
+   "start": "2026-12-12T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-12-18:SG:Val Gardena/Gröden",
+   "passion": "sci",
+   "title": "Val Gardena/Gröden · men's super-G",
+   "start": "2026-12-18T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-12-18:SG:&nbsp;&nbsp; St. Moritz",
+   "passion": "sci",
+   "title": "&nbsp;&nbsp; St. Moritz · women's super-G",
+   "start": "2026-12-18T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-12-20:GS:Alta Badia",
+   "passion": "sci",
+   "title": "Alta Badia · men's giant slalom",
+   "start": "2026-12-20T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-12-22:SL:Courchevel",
+   "passion": "sci",
+   "title": "Courchevel · women's slalom",
+   "start": "2026-12-22T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2026-12-23:SL:Madonna di Campiglio",
+   "passion": "sci",
+   "title": "Madonna di Campiglio · men's slalom",
+   "start": "2026-12-23T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "rule:xmas:2026",
+   "passion": "royal",
+   "title": "The King's Christmas broadcast",
+   "start": "2026-12-25T15:00:00.000Z",
+   "weight": 2,
+   "place": "London",
+   "loc": [
+    -0.14,
+    51.5
+   ],
+   "source": "Fixed date: 25 December, 15:00 UK"
+  },
+  {
+   "id": "ski:men:2026-12-28:DH:Bormio",
+   "passion": "sci",
+   "title": "Bormio · men's downhill",
+   "start": "2026-12-28T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2026-12-28:GS:Gosau",
+   "passion": "sci",
+   "title": "Gosau · women's giant slalom",
+   "start": "2026-12-28T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "aso:Dakar Rally:2027",
+   "passion": "dakar",
+   "title": "Dakar Rally 2027 · start",
+   "start": "2027-01-01T04:45:00.000Z",
+   "weight": 3,
+   "place": "Saudi Arabia",
+   "loc": [
+    39.1,
+    22.45
+   ],
+   "link": "https://www.dakar.com/en",
+   "source": "dakar.com"
+  },
+  {
+   "id": "ski:men:2027-1-2:GS:Kranjska Gora",
+   "passion": "sci",
+   "title": "Kranjska Gora · men's giant slalom",
+   "start": "2027-01-02T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-1-4:GS:Flachau",
+   "passion": "sci",
+   "title": "Flachau · women's giant slalom",
+   "start": "2027-01-04T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-1-9:GS:&nbsp;&nbsp; Adelboden",
+   "passion": "sci",
+   "title": "&nbsp;&nbsp; Adelboden · men's giant slalom",
+   "start": "2027-01-09T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-1-9:DH:Val di Fassa",
+   "passion": "sci",
+   "title": "Val di Fassa · women's downhill",
+   "start": "2027-01-09T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "aso:Dakar Rally:2027:finish",
+   "passion": "dakar",
+   "title": "Dakar Rally 2027 · finish",
+   "start": "2027-01-15T09:00:00.000Z",
+   "weight": 3,
+   "place": "Saudi Arabia",
+   "loc": [
+    39.1,
+    22.45
+   ],
+   "link": "https://www.dakar.com/en",
+   "source": "dakar.com",
+   "approxTime": true
+  },
+  {
+   "id": "ski:men:2027-1-15:SG:&nbsp;&nbsp; Wengen",
+   "passion": "sci",
+   "title": "&nbsp;&nbsp; Wengen · men's super-G",
+   "start": "2027-01-15T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-1-15:DH:Cortina d'Ampezzo",
+   "passion": "sci",
+   "title": "Cortina d'Ampezzo · women's downhill",
+   "start": "2027-01-15T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:AUSTRALIAN OPEN",
+   "passion": "tennis",
+   "title": "Australian Open · day 1",
+   "start": "2027-01-17T00:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Melbourne Park",
+   "loc": [
+    144.98,
+    -37.82
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "ski:women:2027-1-19:GS:Kronplatz",
+   "passion": "sci",
+   "title": "Kronplatz · women's giant slalom",
+   "start": "2027-01-19T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-1-22:SG:Kitzbühel",
+   "passion": "sci",
+   "title": "Kitzbühel · men's super-G",
+   "start": "2027-01-22T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-1-23:GS:Jasná",
+   "passion": "sci",
+   "title": "Jasná · women's giant slalom",
+   "start": "2027-01-23T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-1-26:GS:Schladming",
+   "passion": "sci",
+   "title": "Schladming · men's giant slalom",
+   "start": "2027-01-26T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-1-29:GS:Kranjska Gora",
+   "passion": "sci",
+   "title": "Kranjska Gora · women's giant slalom",
+   "start": "2027-01-29T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-1-30:SL:Chamonix",
+   "passion": "sci",
+   "title": "Chamonix · men's slalom",
+   "start": "2027-01-30T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:AUSTRALIAN OPEN:final",
+   "passion": "tennis",
+   "title": "Australian Open · men's final",
+   "start": "2027-01-31T08:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Melbourne Park",
+   "loc": [
+    144.98,
+    -37.82
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "wiki:Super Bowl LXI",
+   "passion": "nfl",
+   "title": "Super Bowl LXI",
+   "start": "2027-02-14T23:30:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/Super_Bowl_LXI",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-2-20:DH:Garmisch-Partenkirchen",
+   "passion": "sci",
+   "title": "Garmisch-Partenkirchen · men's downhill",
+   "start": "2027-02-20T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-2-20:SG:&nbsp;&nbsp; Lenzerheide",
+   "passion": "sci",
+   "title": "&nbsp;&nbsp; Lenzerheide · women's super-G",
+   "start": "2027-02-20T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-2-27:DH:Saalbach",
+   "passion": "sci",
+   "title": "Saalbach · men's downhill",
+   "start": "2027-02-27T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-2-27:DH:Garmisch-Partenkirchen",
+   "passion": "sci",
+   "title": "Garmisch-Partenkirchen · women's downhill",
+   "start": "2027-02-27T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-3-6:DH:Kvitfjell",
+   "passion": "sci",
+   "title": "Kvitfjell · men's downhill",
+   "start": "2027-03-06T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "rule:commonwealth:2027",
+   "passion": "royal",
+   "title": "Commonwealth Day service",
+   "start": "2027-03-08T11:00:00.000Z",
+   "weight": 1,
+   "place": "Westminster Abbey",
+   "loc": [
+    -0.127,
+    51.499
+   ],
+   "source": "Fixed date: second Monday of March"
+  },
+  {
+   "id": "ski:women:2027-3-12:DH:Narvik",
+   "passion": "sci",
+   "title": "Narvik · women's downhill",
+   "start": "2027-03-12T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-3-13:GS:Åre",
+   "passion": "sci",
+   "title": "Åre · men's giant slalom",
+   "start": "2027-03-13T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wiki:99th Academy Awards",
+   "passion": "awards",
+   "title": "99th Academy Awards",
+   "start": "2027-03-14T23:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Dolby Theatre, Hollywood",
+   "loc": [
+    -118.34,
+    34.1
+   ],
+   "link": "https://en.wikipedia.org/wiki/99th_Academy_Awards",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:men:2027-3-20:DH:Sun Valley",
+   "passion": "sci",
+   "title": "Sun Valley · men's downhill",
+   "start": "2027-03-20T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "ski:women:2027-3-20:DH:Sun Valley",
+   "passion": "sci",
+   "title": "Sun Valley · women's downhill",
+   "start": "2027-03-20T09:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2027:2",
+   "passion": "wec",
+   "title": "6 Hours of Imola",
+   "sub": "WEC 2027 · Round 2",
+   "start": "2027-04-11T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Imola Circuit",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2027:3",
+   "passion": "wec",
+   "title": "6 Hours of Silverstone",
+   "sub": "WEC 2027 · Round 3",
+   "start": "2027-04-25T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Silverstone Circuit",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2027:4",
+   "passion": "wec",
+   "title": "6 Hours of Spa-Francorchamps",
+   "sub": "WEC 2027 · Round 4",
+   "start": "2027-05-15T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Circuit de Spa-Francorchamps",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:ROLAND GARROS",
+   "passion": "tennis",
+   "title": "Roland Garros · day 1",
+   "start": "2027-05-23T09:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Stade Roland Garros, Paris",
+   "loc": [
+    2.25,
+    48.85
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "wta:2027:ROLAND GARROS:final",
+   "passion": "tennis",
+   "title": "Roland Garros · men's final",
+   "start": "2027-06-06T13:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Stade Roland Garros, Paris",
+   "loc": [
+    2.25,
+    48.85
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "wec:2027:5",
+   "passion": "wec",
+   "title": "24 Hours of Le Mans",
+   "sub": "WEC 2027 · Round 5",
+   "start": "2027-06-12T10:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Circuit de la Sarthe",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:WIMBLEDON",
+   "passion": "tennis",
+   "title": "Wimbledon · day 1",
+   "start": "2027-06-28T10:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "All England Club, London",
+   "loc": [
+    -0.21,
+    51.43
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "aso:Tour de France:2027",
+   "passion": "cicl",
+   "title": "Tour de France 2027 · Stage 1",
+   "start": "2027-07-02T15:05:00.000Z",
+   "weight": 3,
+   "link": "https://www.letour.fr/en/",
+   "source": "letour.fr"
+  },
+  {
+   "id": "wiki:2027 America's Cup",
+   "passion": "ac",
+   "title": "America's Cup Match",
+   "start": "2027-07-10T12:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Gulf of Naples",
+   "loc": [
+    14.25,
+    40.83
+   ],
+   "link": "https://en.wikipedia.org/wiki/2027_America's_Cup",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2027:6",
+   "passion": "wec",
+   "title": "6 Hours of São Paulo",
+   "sub": "WEC 2027 · Round 6",
+   "start": "2027-07-11T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Interlagos Circuit",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:WIMBLEDON:final",
+   "passion": "tennis",
+   "title": "Wimbledon · men's final",
+   "start": "2027-07-11T14:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "All England Club, London",
+   "loc": [
+    -0.21,
+    51.43
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "wta:2027:US OPEN",
+   "passion": "tennis",
+   "title": "US Open · day 1",
+   "start": "2027-08-29T15:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Flushing Meadows, New York",
+   "loc": [
+    -73.85,
+    40.75
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "aso:La Vuelta:2027",
+   "passion": "cicl",
+   "title": "La Vuelta 2027 · Stage 1",
+   "start": "2027-09-04T08:10:00.000Z",
+   "weight": 3,
+   "link": "https://www.lavuelta.es/en",
+   "source": "lavuelta.es"
+  },
+  {
+   "id": "wec:2027:7",
+   "passion": "wec",
+   "title": "Lone Star Le Mans",
+   "sub": "WEC 2027 · Round 7",
+   "start": "2027-09-12T10:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Circuit of the Americas",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wta:2027:US OPEN:final",
+   "passion": "tennis",
+   "title": "US Open · men's final",
+   "start": "2027-09-12T19:00:00.000Z",
+   "weight": 3,
+   "approxTime": true,
+   "place": "Flushing Meadows, New York",
+   "loc": [
+    -73.85,
+    40.75
+   ],
+   "source": "WTA tournament calendar"
+  },
+  {
+   "id": "wec:2027:8",
+   "passion": "wec",
+   "title": "6 Hours of Fuji",
+   "sub": "WEC 2027 · Round 8",
+   "start": "2027-09-26T10:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Fuji Speedway",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "wec:2027:9",
+   "passion": "wec",
+   "title": "8 Hours of Bahrain",
+   "sub": "WEC 2027 · Round 9",
+   "start": "2027-11-06T11:00:00.000Z",
+   "weight": 2,
+   "approxTime": true,
+   "place": "Bahrain International Circuit",
+   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
+   "source": "Wikipedia"
+  },
+  {
+   "id": "rule:remembrance:2027",
+   "passion": "royal",
+   "title": "Remembrance Sunday at the Cenotaph",
+   "start": "2027-11-14T11:00:00.000Z",
+   "weight": 2,
+   "place": "Whitehall, London",
+   "loc": [
+    -0.126,
+    51.502
+   ],
+   "source": "Fixed date: second Sunday of November"
+  },
+  {
+   "id": "rule:xmas:2027",
+   "passion": "royal",
+   "title": "The King's Christmas broadcast",
+   "start": "2027-12-25T15:00:00.000Z",
+   "weight": 2,
+   "place": "London",
+   "loc": [
+    -0.14,
+    51.5
+   ],
+   "source": "Fixed date: 25 December, 15:00 UK"
+  },
+  {
+   "id": "rule:election:2028",
+   "passion": "elez",
+   "title": "Election Day · Presidential election",
+   "start": "2028-11-07T11:00:00.000Z",
+   "weight": 3,
+   "place": "United States",
+   "loc": [
+    -77.04,
+    38.9
+   ],
+   "source": "Fixed date: Tuesday after the first Monday of November"
+  },
+  {
+   "id": "rule:election:2028:close",
+   "passion": "elez",
+   "title": "First polls close (Indiana, Kentucky)",
+   "start": "2028-11-07T23:00:00.000Z",
+   "weight": 3,
+   "place": "Indiana",
+   "loc": [
+    -86.16,
+    39.77
+   ],
+   "source": "Fixed: polls close at 18:00 Eastern in most of Indiana and Kentucky"
+  }
+ ]
+}

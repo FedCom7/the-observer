@@ -15,16 +15,33 @@ npm run preview    # serve dist/ on http://localhost:4173
 
 ## How it works
 
-Everything runs in the browser, with no server and no paid services.
+Nothing is typed in by hand. Two layers keep the data fresh:
 
-| Layer | Where | Notes |
+1. **In the browser, live** (`src/sources/`): sources that allow direct requests, polled every few minutes and every 20 seconds during live games.
+2. **Collectors** (`scripts/collect/`): sources that need a server (no CORS, HTML scraping, Wikipedia). They write `public/data/*.json`. Locally the dev server runs them at start and every 30 minutes; online `.github/workflows/collect.yml` runs them every hour and commits the result.
+
+| Passion | Source | Layer |
 |---|---|---|
-| Live and scheduled data | `src/sources/` | ESPN (NFL, Patriots, college football, Texas, MLB, NBA, Serie A and Milan in all competitions), Jolpica (F1), Launch Library 2 and Spaceflight News (space), wheretheiss.at (live ISS position). All allow requests straight from the browser. |
-| Curated data | `src/data/*.json` | Elections, Royal Family, awards, Apple, tennis, skiing, cycling, WEC, Dakar, America's Cup. Dates that still need confirmation carry `"tbc": true` and show a TBC tag. |
-| Store | `src/core/store.tsx` | Each source refreshes on its own schedule. Games that are live or about to start are refreshed every 20 seconds. Responses are cached in `localStorage` to stay inside free rate limits (Launch Library allows 15 requests per hour). |
-| Views | `src/views/` | `ControlRoom` (dark operations wall) and `PassionSheet` (one page per passion, Apple and NYT style). |
+| Milan (all competitions), Serie A table | ESPN | live |
+| NFL, Patriots, AFC East | ESPN | live |
+| College football, Texas, AP Top 25 | ESPN | live |
+| MLB, NBA | ESPN | live |
+| F1 calendar, results, standings | Jolpica (Ergast) | live |
+| Human spaceflight, people in orbit, ISS position | Launch Library 2, Spaceflight News, wheretheiss.at | live |
+| US elections: ratings from 10 forecasters | Wikipedia forecast table | collector |
+| US elections: Senate polling averages, generic ballot | FiftyPlusOne public pages | collector |
+| Election Day | Rule: Tuesday after the first Monday of November | collector |
+| Tennis Grand Slams | WTA tournament API | collector |
+| Alpine skiing World Cup | Wikipedia season page | collector |
+| WEC and Le Mans | Wikipedia season pages | collector |
+| Dakar, Tour de France, Vuelta | Countdown on the official ASO sites | collector |
+| Giro, Oscars, Golden Globes, BAFTA, Critics' Choice, America's Cup, Super Bowl | Wikipedia edition pages (picked up as soon as they exist) | collector |
+| Royal Family fixtures | Rules (Remembrance Sunday, Christmas broadcast, Commonwealth Day) | collector |
+| News: Apple, Royals, awards, elections, cycling, skiing, tennis | RSS feeds (Apple Newsroom, Guardian, BBC, Variety, Politico, Cyclingnews, Ski Racing, ESPN) | collector |
 
-All times are shown in Rome time. Events between midnight and 07:00 are flagged as night viewing.
+Run the collectors by hand with `npm run collect` (or `npm run collect -- elections`).
+
+Times come out in Rome time. When a source gives only the day, the app shows the usual start time with "≈".
 
 ## Adding a passion
 
@@ -38,6 +55,5 @@ Static hosting on Firebase Hosting (free Spark plan). `firebase.json` is ready. 
 ## Known limits
 
 - ESPN's public API is unofficial and can change without notice. It also rejects headless browsers, so automated screenshots need a normal user agent.
-- Election polling and ratings are curated by hand in `src/data/elections.json` (FiftyPlusOne averages, Cook ratings, three generic-ballot averages), because the aggregators' APIs are paid. Refresh the file weekly until 3 November.
-- Curated dates in `src/data/curated.json` carry a `source` link; the ones still unconfirmed are tagged TBC.
-- Apple Newsroom's RSS feed does not allow browser requests; it will be read by a scheduled job.
+- Scrapers depend on page layouts (FiftyPlusOne, ASO sites, Wikipedia tables). When one breaks, its previous file stays in place and the collector report says FAILED.
+- ProCyclingStats, FirstCycling and royal.uk block automated requests, so cycling and the Royals rely on Wikipedia, the ASO sites, rules and news feeds.
