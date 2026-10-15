@@ -6,7 +6,7 @@ const gnews = q => `https://news.google.com/rss/search?q=${encodeURIComponent(q 
 const FEEDS = [
   { passion: 'apple', source: 'Apple Newsroom', url: 'https://www.apple.com/newsroom/rss-feed.rss' },
   { passion: 'royal', source: 'The Guardian', url: 'https://www.theguardian.com/uk/monarchy/rss' },
-  { passion: 'royal', source: 'BBC News', url: 'https://feeds.bbci.co.uk/news/uk/rss.xml', filter: /king|queen|prince|princess|royal|palace|monarch/i },
+  { passion: 'royal', source: 'BBC News', url: 'https://feeds.bbci.co.uk/news/uk/rss.xml', filter: /\b(king|queen|prince|princess|royals?|palace|monarch|monarchy)\b/i },
   { passion: 'awards', source: 'Variety', url: 'https://variety.com/v/film/awards/feed/' },
   { passion: 'elez', source: 'Politico', url: 'https://rss.politico.com/congress.xml', filter: /senate|house|midterm|election|poll|campaign/i },
   { passion: 'cicl', source: 'Cyclingnews', url: 'https://www.cyclingnews.com/feeds.xml' },

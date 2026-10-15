@@ -158,7 +158,7 @@ export async function cyclingWorldTour() {
       if (GRAND_TOURS.test(race)) continue;
       const d = parseDate(dateLine, y);
       if (!d) continue;
-      const winner = row.match(/Flagathlete\|\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/);
+      const winner = row.match(/flagathlete\|\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/i);
       out.push({
         id: `uci:${y}:${race}`,
         passion: 'cicl',

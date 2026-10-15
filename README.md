@@ -27,17 +27,21 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 | College football, Texas, AP Top 25 | ESPN | live |
 | MLB, NBA | ESPN | live |
 | F1 calendar, results, standings | Jolpica (Ergast) | live |
+| F1 live session order (practice, qualifying, race) | ESPN racing scoreboard, every minute | live |
 | Human spaceflight, people in orbit, ISS position | Launch Library 2, Spaceflight News, wheretheiss.at | live |
 | US elections: ratings from 10 forecasters | Wikipedia forecast table | collector |
 | US elections: Senate polling averages, generic ballot | FiftyPlusOne public pages | collector |
 | Election Day | Rule: Tuesday after the first Monday of November | collector |
+| Election night results (vote share, winner) | Each race's Wikipedia infobox, every 5 minutes on 3-4 November | collector |
 | Tennis Grand Slams | WTA tournament API | collector |
 | Alpine skiing World Cup | Wikipedia season page | collector |
 | WEC and Le Mans | Wikipedia season pages | collector |
 | Dakar, Tour de France, Vuelta | Countdown on the official ASO sites | collector |
-| Giro, Oscars, Golden Globes, BAFTA, Critics' Choice, America's Cup, Super Bowl | Wikipedia edition pages (picked up as soon as they exist) | collector |
-| Royal Family fixtures | Rules (Remembrance Sunday, Christmas broadcast, Commonwealth Day) | collector |
-| News: Apple, Royals, awards, elections, cycling, skiing, tennis | RSS feeds (Apple Newsroom, Guardian, BBC, Variety, Politico, Cyclingnews, Ski Racing, ESPN) | collector |
+| Giro, Oscars, Golden Globes, BAFTA, Critics' Choice, America's Cup, Super Bowl | Wikipedia edition pages, or the list of ceremonies when the edition page is not written yet | collector |
+| Royal Family | State visits made and received (Wikipedia lists) and fixed fixtures (Remembrance, Christmas, Commonwealth Day) | collector |
+| Apple keynotes | apple.com/apple-events | collector |
+| Cycling World Tour, with winners | Wikipedia season pages | collector |
+| News for every passion without an ESPN feed | RSS (Apple Newsroom, Guardian, BBC, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches (Dakar, America's Cup, WEC, spaceflight) | collector |
 
 Run the collectors by hand with `npm run collect` (or `npm run collect -- elections`).
 

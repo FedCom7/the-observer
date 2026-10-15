@@ -15,8 +15,8 @@ const Y = now.getUTCFullYear();
  */
 const WIKI = [
   // Awards season: ceremonies fall early in the year after the films.
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1928)} Academy Awards`, label: y => `${ordinal(y - 1928)} Academy Awards`, time: ['16:00', 'America/Los_Angeles'], weight: 3, place: 'Dolby Theatre, Hollywood', loc: [-118.34, 34.1] },
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1943)} Golden Globes`, label: y => `${ordinal(y - 1943)} Golden Globes`, time: ['17:00', 'America/Los_Angeles'], weight: 3, place: 'The Beverly Hilton', loc: [-118.41, 34.07] },
+  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1928)} Academy Awards`, label: y => `${ordinal(y - 1928)} Academy Awards`, list: { page: 'List of Academy Awards ceremonies', edition: y => ordinal(y - 1928) }, time: ['16:00', 'America/Los_Angeles'], weight: 3, place: 'Dolby Theatre, Hollywood', loc: [-118.34, 34.1] },
+  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1943)} Golden Globes`, label: y => `${ordinal(y - 1943)} Golden Globes`, list: { page: 'List of Golden Globe Awards ceremonies', edition: y => ordinal(y - 1943) }, time: ['17:00', 'America/Los_Angeles'], weight: 3, place: 'The Beverly Hilton', loc: [-118.41, 34.07] },
   { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1947)} British Academy Film Awards`, label: y => `${ordinal(y - 1947)} BAFTA Film Awards`, time: ['19:00', 'Europe/London'], weight: 2, place: 'Royal Festival Hall, London', loc: [-0.12, 51.51] },
   { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1995)} Critics' Choice Awards`, label: y => `${ordinal(y - 1995)} Critics' Choice Awards`, time: ['19:00', 'America/Los_Angeles'], weight: 1 },
   // Giro d'Italia (Tour and Vuelta come from the ASO sites)
@@ -27,12 +27,21 @@ const WIKI = [
   { passion: 'nfl', years: [Y, Y + 1], page: y => `Super Bowl ${roman(y - 1966)}`, label: y => `Super Bowl ${roman(y - 1966)}`, time: ['18:30', 'America/New_York'], weight: 3 },
 ];
 
-async function fromWikipedia(src, year) {
-  const title = src.page(year);
-  const w = await wikitext(title, 0);
+/** Date of an edition from a "List of ... ceremonies" table row ("| 84th || January 10, 2027"). */
+async function fromList(list, year) {
+  const w = await wikitext(list.page);
   if (!w) return null;
-  const raw = infobox(w, ['dates?', 'date_of_event', 'start_date', 'event_date']);
-  const d = parseDate(raw, year);
+  const ed = list.edition(year);
+  const line = w.split('\n').find(l => new RegExp(`^\\|\\s*(?:\\[\\[[^|\\]]*\\|)?${ed}\\b`).test(l));
+  return line ? parseDate(line.replace(/<ref[\s\S]*$/, ''), year) : null;
+}
+
+async function fromWikipedia(src, year) {
+  let title = src.page(year);
+  const w = await wikitext(title, 0);
+  let d = w ? parseDate(infobox(w, ['dates?', 'date_of_event', 'start_date', 'event_date']), year) : null;
+  // The edition page may not exist yet, or may lack the date: fall back to the list of ceremonies.
+  if (!d && src.list) { d = await fromList(src.list, year); if (d) title = src.list.page; }
   if (!d || d.y !== year && d.y !== year - 1) return null;
   const [hm, tz] = src.time;
   const [hh, mm] = hm.split(':').map(Number);
