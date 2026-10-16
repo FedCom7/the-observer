@@ -27,6 +27,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 9 | Dakar | 1–15 gennaio | ✅ |
 | 10 | Apple | Prossimo keynote non ancora annunciato | ✅ |
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ✅ |
+| 12 | Ciclismo | Stagione 2027 da gennaio; Sanremo 20 marzo, Giro dall'8 maggio | ✅ |
 
 ---
 
@@ -251,6 +252,30 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Risultati 2026:** Luna Rossa vince entrambe le preliminari (63 punti a Cagliari, 71 a Napoli), New Zealand seconda.
 - **Pagina:** conto alla rovescia per il Match (10 luglio 2027), podi delle regate, grafico NYT dei punti accumulati prova per prova, classifiche finali, elenco prove con vincitori, notizie.
 
+## Ciclismo ✅
+**Interessi:** calendario UCI, solo uomini élite. WorldTour (classi 1.UWT e 2.UWT), con in evidenza Monumento e grandi giri e le altre corse più importanti; Mondiali (CM) ed Europei (CC). Niente Women's WorldTour né ProSeries.
+
+**Fonti (collector `cycling`):**
+- **Calendario:** API pubblica del calendario UCI (`uci.org/api/calendar/upcoming|past`, filtri `raceClass` e `raceCategory=ME`). Stessi dati dell'export XLS ufficiale, che però richiede un token.
+- **Corse ASO** (Tour, Vuelta, Paris-Nice, Delfinato, Roubaix, Freccia, Liegi):
+  - orario ufficiale di partenza;
+  - tappe con prima partenza e ultimo arrivo;
+  - classifiche ufficiali: tappa, generale dopo ogni tappa, punti, montagna, giovani, squadre.
+- **Corse RCS** (Giro, Sanremo, Lombardia, Strade Bianche, Tirreno): orario dal conto alla rovescia del sito (≈), tappe del Giro, podio dell'ultima edizione. La cronotabella del Giro è un'immagine, quindi gli orari delle tappe del Giro restano ≈.
+- **Wikipedia:** vincitori di ogni corsa e di Mondiali ed Europei.
+- **Notizie:** Cyclingnews.
+
+**Escluse:** ProCyclingStats e FirstCycling, bloccati da Cloudflare. Anche le loro "API" (first_cycling_api, Cycling_API) li leggono e si fermano allo stesso modo. API commerciali solo a pagamento. TheSportsDB in versione gratuita dà 5 eventi senza orari. Il calendario The Inner Ring (.ics) è manuale e senza orari.
+
+**Pagina:**
+- prossima corsa, prossima Monumento e prossimo grande giro con conto alla rovescia;
+- stagione a colpo d'occhio, con scelta dell'anno;
+- schede di Monumento e grandi giri;
+- grafico NYT dei distacchi in classifica generale tappa per tappa;
+- classifiche e vincitori di tappa;
+- percorso del grande giro con le tappe colorate per terreno;
+- albo dei vincitori e notizie.
+
 ---
 
 ## Da definire più avanti 💬
@@ -261,7 +286,6 @@ Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a 
 - **NFL:** ESPN, partite in prima serata.
 - **Texas Longhorns:** ESPN.
 - **Elezioni americane:** Wikipedia, FiftyPlusOne, risultati in diretta la notte del 3 novembre.
-- **Ciclismo:** Wikipedia, siti ASO, Cyclingnews.
 - **Premi del cinema:** Wikipedia, Variety.
 - **Tennis, tornei del Grande Slam:** API WTA, ESPN.
 

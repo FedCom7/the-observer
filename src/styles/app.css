@@ -267,6 +267,15 @@ body.sheet-open { overflow: hidden; }
 .sheet .score { transition: filter .2s; }
 .tip.obs { background: var(--o-card); color: var(--o-ink); border-color: var(--o-line); box-shadow: 0 8px 30px rgba(0,0,0,.14); font-family: var(--f-chart); }
 .tip.obs .k { color: var(--o-ink3); }
+/* Cycling */
+.cy-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+.cy-tile { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; border: 1px solid var(--o-line); border-top: 3px solid; border-radius: 10px; color: var(--o-ink); text-decoration: none; font-family: var(--f-chart); }
+.cy-tile small { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--o-ink3); }
+.cy-tile b { font-size: 15px; }
+.cy-tile span { font-size: 12.5px; color: var(--o-ink2); }
+.cy-win { font-size: 13px; font-weight: 600; margin-top: 4px; }
+.cy-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.tip.obs i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
 @media (max-width: 960px) { .s-top, .s-two { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) { .s-wrap { padding-inline: 16px; } .ocard { padding: 18px; } .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } .olist .r { grid-template-columns: 74px 1fr; } .olist .r .x { grid-column: 2; text-align: left; } }
 @media (prefers-reduced-motion: reduce) { .sheet { animation: none; } }

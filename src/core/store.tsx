@@ -7,6 +7,7 @@ import { loadSki, skiEvents, type SkiData } from '../sources/ski';
 import { dakarEvents, loadDakar, type DakarData } from '../sources/dakar';
 import { appleEvents, appleNews, loadApple, type AppleData } from '../sources/apple';
 import { acEvents, loadAc, type AcData } from '../sources/ac';
+import { cyclingEvents, loadCycling, type CyclingData } from '../sources/cycling';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
@@ -37,6 +38,7 @@ interface Data {
   dakar?: DakarData;
   apple?: AppleData;
   ac?: AcData;
+  cycling?: CyclingData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -82,6 +84,7 @@ const SOURCES: Source[] = [
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
   { key: 'spacedata', every: 10 * MIN, run: async () => { const d = await loadSpace(); return { space: d, events: spaceEvents(d), orbit: orbitOf(d), news: nasaNews(d) }; } },
+  { key: 'cycling', every: 10 * MIN, run: async () => { const c = await loadCycling(); return { cycling: c, events: cyclingEvents(c) }; } },
   { key: 'ac', every: 10 * MIN, run: async () => { const a = await loadAc(); return { ac: a, events: acEvents(a) }; } },
   { key: 'apple', every: 10 * MIN, run: async () => { const a = await loadApple(); return { apple: a, events: appleEvents(a), news: appleNews(a) }; } },
   { key: 'dakar', every: 10 * MIN, run: async () => { const d = await loadDakar(); return { dakar: d, events: dakarEvents(d) }; } },
@@ -131,6 +134,7 @@ function duration(e: ObsEvent) {
   if (e.passion === 'space') return 15 * MIN;
   if (e.passion === 'f1') return e.weight === 3 ? 2 * HOUR : HOUR;
   if (e.passion === 'elez') return 10 * HOUR;
+  if (e.passion === 'cicl') return (/Stage|stage/.test(e.title) ? 5 : 6.5) * HOUR;
   if (e.passion === 'wec') return e.weight === 3 ? (/24 Hours/.test(e.title) ? 24 : /8 Hours/.test(e.title) ? 8 : /1812/.test(e.title) ? 10 : 6) * HOUR : HOUR;
   return 3 * HOUR;
 }
@@ -183,6 +187,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let dakar: DakarData | undefined;
     let apple: AppleData | undefined;
     let ac: AcData | undefined;
+    let cycling: CyclingData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -204,6 +209,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.dakar) dakar = p.dakar;
       if (p.apple) apple = p.apple;
       if (p.ac) ac = p.ac;
+      if (p.cycling) cycling = p.cycling;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -227,6 +233,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       dakar,
       apple,
       ac,
+      cycling,
     };
   }, [bySource, live]);
 

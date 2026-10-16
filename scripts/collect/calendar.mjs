@@ -3,7 +3,7 @@
 // year, so next season's page is picked up as soon as someone writes it) or
 // from fixed calendar rules. Nothing here is typed in by hand.
 import { infobox, iso, ordinal, parseDate, roman, wikitext, zoned } from './lib.mjs';
-import { asoEvents, cyclingWorldTour, tennisSlams } from './sports.mjs';
+import { tennisSlams } from './sports.mjs';
 
 const now = new Date();
 const Y = now.getUTCFullYear();
@@ -19,8 +19,6 @@ const WIKI = [
   { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1943)} Golden Globes`, label: y => `${ordinal(y - 1943)} Golden Globes`, list: { page: 'List of Golden Globe Awards ceremonies', edition: y => ordinal(y - 1943) }, time: ['17:00', 'America/Los_Angeles'], weight: 3, place: 'The Beverly Hilton', loc: [-118.41, 34.07] },
   { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1947)} British Academy Film Awards`, label: y => `${ordinal(y - 1947)} BAFTA Film Awards`, time: ['19:00', 'Europe/London'], weight: 2, place: 'Royal Festival Hall, London', loc: [-0.12, 51.51] },
   { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1995)} Critics' Choice Awards`, label: y => `${ordinal(y - 1995)} Critics' Choice Awards`, time: ['19:00', 'America/Los_Angeles'], weight: 1 },
-  // Giro d'Italia (Tour and Vuelta come from the ASO sites)
-  { passion: 'cicl', years: [Y, Y + 1], page: y => `${y} Giro d'Italia`, label: () => "Giro d'Italia · Stage 1", time: ['13:00', 'Europe/Rome'], weight: 3 },
   // America's Cup
   { passion: 'ac', years: [Y, Y + 1], page: y => `${y} America's Cup`, label: () => "America's Cup Match", time: ['14:00', 'Europe/Rome'], weight: 3, place: 'Gulf of Naples', loc: [14.25, 40.83] },
   // Season finales
@@ -88,7 +86,8 @@ export async function collectCalendar() {
     }
     return out;
   };
-  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, electionRules: async () => electionRules(), cycling: cyclingWorldTour };
+  // Cycling has its own collector (cycling.mjs)
+  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, electionRules: async () => electionRules() };
   const settled = await Promise.allSettled(Object.values(jobs).map(f => f()));
   const status = Object.fromEntries(Object.keys(jobs).map((k, i) => [k, settled[i].status === 'fulfilled' ? `${settled[i].value.length} events` : String(settled[i].reason).slice(0, 80)]));
   const seen = new Set();

@@ -12,6 +12,7 @@ import { RoyalPage } from './RoyalPage';
 import { SkiPage } from './SkiPage';
 import { SpacePage } from './SpacePage';
 import { DakarPage } from './DakarPage';
+import { CyclingPage } from './CyclingPage';
 import { ApplePage } from './ApplePage';
 import { AcPage } from './AcPage';
 import { WecPage } from './WecPage';
@@ -62,7 +63,7 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : passion.id === 'sci' ? <SkiPage /> : passion.id === 'space' ? <SpacePage /> : passion.id === 'dakar' ? <DakarPage /> : passion.id === 'apple' ? <ApplePage /> : passion.id === 'ac' ? <AcPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : passion.id === 'sci' ? <SkiPage /> : passion.id === 'space' ? <SpacePage /> : passion.id === 'dakar' ? <DakarPage /> : passion.id === 'apple' ? <ApplePage /> : passion.id === 'ac' ? <AcPage /> : passion.id === 'cicl' ? <CyclingPage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
   );

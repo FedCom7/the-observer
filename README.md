@@ -37,7 +37,8 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 | Dakar: stage-by-stage route, stage and general rankings by category | dakar.com (route page, rankings JSON) | collector `dakar` |
 | Apple: keynotes, pre-order and in-store dates | apple.com/apple-events, Apple Newsroom press releases | collector `apple` |
 | America's Cup: regattas, standings, points and time of every race | americascup.com results feeds | collector `ac` |
-| Tennis Slams, Tour de France and Vuelta starts, World Tour cycling, awards, Super Bowl, Election Day | WTA API, ASO sites, Wikipedia, rules | collector `calendar` |
+| Tennis Slams, awards, Super Bowl, Election Day | WTA API, Wikipedia, rules | collector `calendar` |
+| Cycling: men's WorldTour, Worlds and Euros, stages with official times, official rankings, winners | UCI calendar API, ASO and RCS race sites, Wikipedia | collector `cycling` |
 | News for passions without an ESPN feed | RSS (Guardian, BBC, Royal Central, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches | collector `news` |
 
 Passion by passion, with what each page shows: [PASSIONI.md](PASSIONI.md).
@@ -60,6 +61,6 @@ Static hosting on Firebase Hosting (free Spark plan). `firebase.json` is ready. 
 
 - ESPN's public API is unofficial and can change without notice. It also rejects headless browsers, so automated screenshots need a normal user agent.
 - Scrapers depend on page layouts (FiftyPlusOne, ASO sites, Wikipedia tables). When one breaks, its previous file stays in place and the collector report says FAILED.
-- ProCyclingStats, FirstCycling and royal.uk block automated requests (Cloudflare); we do not bypass them. Cycling and the Royals rely on Wikipedia, official sites, rules and news.
+- ProCyclingStats, FirstCycling and royal.uk block automated requests (Cloudflare); we do not bypass them. Cycling and the Royals rely on official sites, the UCI calendar API, Wikipedia, rules and news. Giro stage times are approximate (the organiser publishes them as an image).
 - Launch Library allows 15 requests per hour: the space collector makes one pass per hour and backs off for 20 minutes after a refusal.
 - Some times are not published in advance (FIS run times until a few days before, Dakar stage starts, Apple store openings). The app shows the usual time with "≈" and replaces it when the source publishes it.
