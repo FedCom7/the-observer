@@ -66,34 +66,6 @@ const nthWeekday = (y, m, weekday, n) => {
   return 1 + ((weekday - first + 7) % 7) + (n - 1) * 7;
 };
 
-/**
- * State visits the King makes and receives, from Wikipedia's lists, which
- * carry announced visits weeks ahead (date range plus country flag per row).
- */
-async function royalStateVisits() {
-  const out = [];
-  const lists = [
-    { page: 'List of state visits made by Charles III', title: c => `The King's state visit: ${c}`, weight: 2 },
-    { page: 'List of state visits received by Charles III', title: c => `State visit to the UK: ${c}`, weight: 2 },
-  ];
-  for (const l of lists) {
-    const w = await wikitext(l.page);
-    if (!w) continue;
-    for (const row of w.split(/\n\|-/)) {
-      const cells = row.split('\n').filter(x => x.startsWith('|')).map(x => x.replace(/^\|\s*(?:rowspan="\d+"\|)?/, '').trim());
-      const dateCell = cells.find(c => /\d{1,2}(?:\s*[–-]\s*\d{1,2})?\s+[A-Z][a-z]+(?:\s*[–-]\s*\d{1,2}\s+[A-Z][a-z]+)?\s+20\d\d/.test(c.replace(/\{\{nowrap\|([^}]+)\}\}/, '$1')));
-      const flag = row.match(/\{\{flag(?:country)?\|([^|}]+)/i);
-      if (!dateCell || !flag) continue;
-      const d = parseDate(dateCell.replace(/\{\{nowrap\|([^}]+)\}\}/, '$1'));
-      if (!d || !d.y) continue;
-      const start = zoned(d.y, d.m, d.d, 10, 0, 'Europe/London');
-      if (start < Date.now() - 7 * 86400e3) continue;
-      out.push({ id: `royal:visit:${l.page.includes('made') ? 'out' : 'in'}:${d.y}-${d.m}-${d.d}:${flag[1]}`, passion: 'royal', title: l.title(flag[1].trim()), start: iso(start), weight: l.weight, approxTime: true, link: `https://en.wikipedia.org/wiki/${encodeURIComponent(l.page.replace(/ /g, '_'))}`, source: 'Wikipedia' });
-    }
-  }
-  return out;
-}
-
 /** Apple events: every dated event on apple.com/apple-events, so a new keynote appears as soon as Apple announces it. */
 async function appleEvents() {
   const html = await get('https://www.apple.com/apple-events/', { browser: true });
@@ -126,19 +98,6 @@ function electionRules() {
   return out;
 }
 
-/** Royal calendar fixtures that follow fixed rules. */
-function royalRules() {
-  const out = [];
-  for (const y of [Y, Y + 1]) {
-    out.push({ id: `rule:remembrance:${y}`, passion: 'royal', title: 'Remembrance Sunday at the Cenotaph', start: iso(zoned(y, 11, nthWeekday(y, 11, 0, 2), 11, 0, 'Europe/London')), weight: 2, place: 'Whitehall, London', loc: [-0.126, 51.502], source: 'Fixed date: second Sunday of November' });
-    out.push({ id: `rule:xmas:${y}`, passion: 'royal', title: "The King's Christmas broadcast", start: iso(zoned(y, 12, 25, 15, 0, 'Europe/London')), weight: 2, place: 'London', loc: [-0.14, 51.5], source: 'Fixed date: 25 December, 15:00 UK' });
-    out.push({ id: `rule:festival:${y}`, passion: 'royal', title: 'Festival of Remembrance, Royal Albert Hall', start: iso(zoned(y, 11, nthWeekday(y, 11, 0, 2) - 1, 19, 0, 'Europe/London')), weight: 1, place: 'Royal Albert Hall, London', loc: [-0.177, 51.501], approxTime: true, source: 'Fixed date: Saturday before Remembrance Sunday' });
-    out.push({ id: `rule:sandringham:${y}`, passion: 'royal', title: 'Christmas Day church service at Sandringham', start: iso(zoned(y, 12, 25, 10, 45, 'Europe/London')), weight: 1, place: 'Sandringham, Norfolk', loc: [0.51, 52.83], approxTime: true, source: 'Fixed date: 25 December' });
-    out.push({ id: `rule:commonwealth:${y}`, passion: 'royal', title: 'Commonwealth Day service', start: iso(zoned(y, 3, nthWeekday(y, 3, 1, 2), 11, 0, 'Europe/London')), weight: 1, place: 'Westminster Abbey', loc: [-0.127, 51.499], source: 'Fixed date: second Monday of March' });
-  }
-  return out;
-}
-
 export async function collectCalendar() {
   const wikiJob = async () => {
     const out = [];
@@ -148,7 +107,7 @@ export async function collectCalendar() {
     }
     return out;
   };
-  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, ski: skiCalendar, royalRules: async () => royalRules(), electionRules: async () => electionRules(), stateVisits: royalStateVisits, apple: appleEvents, cycling: cyclingWorldTour };
+  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, ski: skiCalendar, electionRules: async () => electionRules(), apple: appleEvents, cycling: cyclingWorldTour };
   const settled = await Promise.allSettled(Object.values(jobs).map(f => f()));
   const status = Object.fromEntries(Object.keys(jobs).map((k, i) => [k, settled[i].status === 'fulfilled' ? `${settled[i].value.length} events` : String(settled[i].reason).slice(0, 80)]));
   const seen = new Set();

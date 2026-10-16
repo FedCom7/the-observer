@@ -1,13 +1,11 @@
 {
- "updated": "2026-10-16T04:38:40.857Z",
+ "updated": "2026-10-16T04:47:57.302Z",
  "status": {
   "wikipedia": "10 events",
   "tennis": "8 events",
   "aso": "4 events",
   "ski": "41 events",
-  "royalRules": "10 events",
   "electionRules": "4 events",
-  "stateVisits": "4 events",
   "apple": "0 events",
   "cycling": "33 events"
  },
@@ -35,16 +33,6 @@
    "source": "Wikipedia"
   },
   {
-   "id": "royal:visit:in:2026-10-20:Oman",
-   "passion": "royal",
-   "title": "State visit to the UK: Oman",
-   "start": "2026-10-20T09:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "link": "https://en.wikipedia.org/wiki/List_of_state_visits_received_by_Charles_III",
-   "source": "Wikipedia"
-  },
-  {
    "id": "ski:women:2026-10-24:GS:Sölden",
    "passion": "sci",
    "title": "Sölden · women's giant slalom",
@@ -62,36 +50,6 @@
    "weight": 2,
    "approxTime": true,
    "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "royal:visit:out:2026-10-27:Bahamas",
-   "passion": "royal",
-   "title": "The King's state visit: Bahamas",
-   "start": "2026-10-27T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "royal:visit:out:2026-10-29:Guyana",
-   "passion": "royal",
-   "title": "The King's state visit: Guyana",
-   "start": "2026-10-29T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "royal:visit:out:2026-11-1:Antigua and Barbuda",
-   "passion": "royal",
-   "title": "The King's state visit: Antigua and Barbuda",
-   "start": "2026-11-01T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
    "source": "Wikipedia"
   },
   {
@@ -119,33 +77,6 @@
     39.77
    ],
    "source": "Fixed: polls close at 18:00 Eastern in most of Indiana and Kentucky"
-  },
-  {
-   "id": "rule:festival:2026",
-   "passion": "royal",
-   "title": "Festival of Remembrance, Royal Albert Hall",
-   "start": "2026-11-07T19:00:00.000Z",
-   "weight": 1,
-   "place": "Royal Albert Hall, London",
-   "loc": [
-    -0.177,
-    51.501
-   ],
-   "approxTime": true,
-   "source": "Fixed date: Saturday before Remembrance Sunday"
-  },
-  {
-   "id": "rule:remembrance:2026",
-   "passion": "royal",
-   "title": "Remembrance Sunday at the Cenotaph",
-   "start": "2026-11-08T11:00:00.000Z",
-   "weight": 2,
-   "place": "Whitehall, London",
-   "loc": [
-    -0.126,
-    51.502
-   ],
-   "source": "Fixed date: second Sunday of November"
   },
   {
    "id": "ski:women:2026-11-14:SL:Levi",
@@ -296,33 +227,6 @@
    "approxTime": true,
    "link": "https://en.wikipedia.org/wiki/2026%E2%80%9327_FIS_Alpine_Ski_World_Cup",
    "source": "Wikipedia"
-  },
-  {
-   "id": "rule:sandringham:2026",
-   "passion": "royal",
-   "title": "Christmas Day church service at Sandringham",
-   "start": "2026-12-25T10:45:00.000Z",
-   "weight": 1,
-   "place": "Sandringham, Norfolk",
-   "loc": [
-    0.51,
-    52.83
-   ],
-   "approxTime": true,
-   "source": "Fixed date: 25 December"
-  },
-  {
-   "id": "rule:xmas:2026",
-   "passion": "royal",
-   "title": "The King's Christmas broadcast",
-   "start": "2026-12-25T15:00:00.000Z",
-   "weight": 2,
-   "place": "London",
-   "loc": [
-    -0.14,
-    51.5
-   ],
-   "source": "Fixed date: 25 December, 15:00 UK"
   },
   {
    "id": "ski:men:2026-12-28:DH:Bormio",
@@ -597,19 +501,6 @@
    "source": "Wikipedia"
   },
   {
-   "id": "rule:commonwealth:2027",
-   "passion": "royal",
-   "title": "Commonwealth Day service",
-   "start": "2027-03-08T11:00:00.000Z",
-   "weight": 1,
-   "place": "Westminster Abbey",
-   "loc": [
-    -0.127,
-    51.499
-   ],
-   "source": "Fixed date: second Monday of March"
-  },
-  {
    "id": "ski:women:2027-3-12:DH:Narvik",
    "passion": "sci",
    "title": "Narvik · women's downhill",
@@ -780,60 +671,6 @@
     40.75
    ],
    "source": "WTA tournament calendar"
-  },
-  {
-   "id": "rule:festival:2027",
-   "passion": "royal",
-   "title": "Festival of Remembrance, Royal Albert Hall",
-   "start": "2027-11-13T19:00:00.000Z",
-   "weight": 1,
-   "place": "Royal Albert Hall, London",
-   "loc": [
-    -0.177,
-    51.501
-   ],
-   "approxTime": true,
-   "source": "Fixed date: Saturday before Remembrance Sunday"
-  },
-  {
-   "id": "rule:remembrance:2027",
-   "passion": "royal",
-   "title": "Remembrance Sunday at the Cenotaph",
-   "start": "2027-11-14T11:00:00.000Z",
-   "weight": 2,
-   "place": "Whitehall, London",
-   "loc": [
-    -0.126,
-    51.502
-   ],
-   "source": "Fixed date: second Sunday of November"
-  },
-  {
-   "id": "rule:sandringham:2027",
-   "passion": "royal",
-   "title": "Christmas Day church service at Sandringham",
-   "start": "2027-12-25T10:45:00.000Z",
-   "weight": 1,
-   "place": "Sandringham, Norfolk",
-   "loc": [
-    0.51,
-    52.83
-   ],
-   "approxTime": true,
-   "source": "Fixed date: 25 December"
-  },
-  {
-   "id": "rule:xmas:2027",
-   "passion": "royal",
-   "title": "The King's Christmas broadcast",
-   "start": "2027-12-25T15:00:00.000Z",
-   "weight": 2,
-   "place": "London",
-   "loc": [
-    -0.14,
-    51.5
-   ],
-   "source": "Fixed date: 25 December, 15:00 UK"
   },
   {
    "id": "rule:election:2028",

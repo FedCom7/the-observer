@@ -19,7 +19,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ✅ |
 | 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ✅ |
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ✅ |
-| 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | ⬜ |
+| 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | 🟨 |
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ⬜ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ⬜ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ⬜ |
@@ -83,7 +83,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Famiglia reale inglese ⬜
+## Famiglia reale inglese 🟨
 **Prossimo:** visita di Stato dell'Oman, 20 ottobre · viaggio del Re ai Caraibi, 27 ottobre – 4 novembre
 
 **Cosa mi interessa:**
@@ -97,6 +97,15 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - Regole fisse per le ricorrenze.
 - Eventuali calendari iCal.
 - Pagina focus: agenda per membro della famiglia, mappa dei viaggi, grandi cerimonie in evidenza.
+
+**Fatto (16 ottobre):**
+- **Viaggi:** visite di Stato fatte e ricevute dal Re, viaggi ufficiali all'estero del Re e dei Principi di Galles. Fonte: liste di Wikipedia, che riportano i viaggi annunciati con settimane di anticipo.
+- **Anno cerimoniale calcolato con le regole:** Commonwealth Day, Royal Maundy ed Easter Service (dalla data di Pasqua), Trooping the Colour, Garter Day e Royal Ascot (regola verificata sul 2023–2026: Ascot finisce il primo sabato dal 18 giugno, Trooping è il sabato prima), Braemar Gathering, Festival of Remembrance, Remembrance Sunday, messa e discorso di Natale. Le date dedotte e non ancora annunciate sono segnate TBC.
+- **Eventi straordinari:** avvisi automatici solo per annunci veri (matrimoni, fidanzamenti, nascite, morti, funerali) di membri della famiglia reale, senza gossip.
+- **Annunciati dalla stampa:** visite riportate in anticipo dai giornali (es. "King Charles and Queen Camilla to visit South Wales next week"), con link all'articolo.
+- **Pagina:** prossimo impegno, chi è all'estero ora, prossima grande occasione, cronologia dei viaggi per persona, agenda per mese, regole del calendario, notizie (Guardian, BBC, Royal Central).
+
+**Limite:** gli impegni minori in patria con orario esatto stanno solo su royal.uk ("Future engagements"), che blocca esplicitamente i programmi automatici. Non la aggiriamo. Gli eventi straordinari (matrimoni, funerali) entrano come avviso; data e ora arrivano dalle notizie, non da un calendario.
 
 ---
 

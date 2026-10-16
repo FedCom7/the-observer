@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState, type R
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
 import { f1Calendar, f1Constructors, f1Drivers, f1LastRace, f1Sessions, type F1Session } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
+import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
@@ -23,6 +24,7 @@ interface Data {
   mlb?: MlbData;
   cfb?: CfbData;
   wec?: WecData;
+  royal?: RoyalData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -67,6 +69,7 @@ const SOURCES: Source[] = [
   { key: 'nfl', every: 10 * MIN, run: async () => ({ events: (await scoreboard('nfl', 'football', 'nfl')).filter(e => primetime(e) || e.state === 'in').map(e => ({ ...e, weight: 2 })) }) },
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
+  { key: 'royal', every: 10 * MIN, run: async () => { const r = await loadRoyal(); return { royal: r, events: royalEvents(r) }; } },
   { key: 'wec', every: 2 * MIN, run: async () => { const w = await loadWec(); return { wec: w, events: wecEvents(w) }; } },
   { key: 'cfbdata', every: 10 * MIN, run: async () => { const c = await cfbData(); return { cfb: c.data, events: c.events }; } },
   { key: 'mlb', every: 10 * MIN, run: async () => ({ events: (await scoreboard('mlb', 'baseball', 'mlb')).map(e => ({ ...e, weight: 2 })) }) },
@@ -152,6 +155,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let mlb: MlbData | undefined;
     let cfb: CfbData | undefined;
     let wec: WecData | undefined;
+    let royal: RoyalData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -166,6 +170,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.mlb) mlb = p.mlb;
       if (p.cfb) cfb = p.cfb;
       if (p.wec) wec = p.wec;
+      if (p.royal) royal = p.royal;
     });
     f1s?.forEach(sess => {
       const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
@@ -188,6 +193,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       mlb,
       cfb,
       wec,
+      royal,
     };
   }, [bySource, live]);
 

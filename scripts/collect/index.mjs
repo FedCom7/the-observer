@@ -7,6 +7,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { collectCalendar } from './calendar.mjs';
 import { collectElections } from './elections.mjs';
 import { collectNews } from './news.mjs';
+import { collectRoyal } from './royal.mjs';
 import { collectWec } from './wec.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '../../public/data');
@@ -16,6 +17,7 @@ const JOBS = {
   calendar: collectCalendar,
   news: collectNews,
   wec: collectWec,
+  royal: collectRoyal,
 };
 
 export async function collect(only = Object.keys(JOBS)) {
