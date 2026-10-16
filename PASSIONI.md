@@ -25,7 +25,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ✅ |
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
 | 9 | Dakar | 1–15 gennaio | ✅ |
-| 10 | Apple | Prossimo keynote non ancora annunciato | ⬜ |
+| 10 | Apple | Prossimo keynote non ancora annunciato | ✅ |
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ⬜ |
 
 ---
@@ -209,7 +209,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Apple ⬜
+## Apple ✅
 **Prossimo:** nessun evento annunciato · WWDC di solito a giugno
 
 **Cosa mi interessa:**
@@ -220,6 +220,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - apple.com/apple-events per i keynote.
 - Apple Newsroom (RSS) per le uscite, con le date di disponibilità.
 - Pagina focus: prossimo keynote con conto alla rovescia, cronologia delle uscite.
+
+**Fatto (16 ottobre):** raccoglitore `scripts/collect/apple.mjs`.
+- **Keynote:** dalla pagina ufficiale apple.com/apple-events, con orario reale (10:00 Pacific, mostrato in ora italiana). Un nuovo evento compare da solo appena Apple lo annuncia.
+- **Uscite di prodotti:** dai comunicati della Newsroom, letti nella sezione "Pricing and Availability". Per ogni prodotto: data di annuncio, apertura preordini, arrivo nei negozi e prezzo. Le date entrano in calendario. Oggi: Apple TV 4K nei negozi dal 13 novembre, HomePod mini dal 30 ottobre.
+- **Pagina:** prossimo keynote, prossimo prodotto in arrivo, storico keynote, calendario grafico delle uscite (annuncio, preordine, negozio), schede prodotto, Newsroom.
 
 ---
 

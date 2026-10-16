@@ -2,7 +2,7 @@
 // automatically: from Wikipedia edition pages (the title is computed from the
 // year, so next season's page is picked up as soon as someone writes it) or
 // from fixed calendar rules. Nothing here is typed in by hand.
-import { get, infobox, iso, ordinal, parseDate, roman, wikitext, zoned } from './lib.mjs';
+import { infobox, iso, ordinal, parseDate, roman, wikitext, zoned } from './lib.mjs';
 import { asoEvents, cyclingWorldTour, tennisSlams } from './sports.mjs';
 
 const now = new Date();
@@ -66,25 +66,6 @@ const nthWeekday = (y, m, weekday, n) => {
   return 1 + ((weekday - first + 7) % 7) + (n - 1) * 7;
 };
 
-/** Apple events: every dated event on apple.com/apple-events, so a new keynote appears as soon as Apple announces it. */
-async function appleEvents() {
-  const html = await get('https://www.apple.com/apple-events/', { browser: true });
-  const MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December';
-  const seen = new Set();
-  const out = [];
-  for (const m of html.matchAll(new RegExp(`(${MONTHS}) (\\d{1,2}), (20\\d{2})`, 'g'))) {
-    const d = parseDate(m[0]);
-    if (!d) continue;
-    const key = `${d.y}-${d.m}-${d.d}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    const start = zoned(d.y, d.m, d.d, 10, 0, 'America/Los_Angeles');
-    if (start < Date.now() - 2 * 86400e3) continue;
-    out.push({ id: `apple:event:${key}`, passion: 'apple', title: d.m === 6 ? 'WWDC keynote' : 'Apple Event', start: iso(start), weight: 3, place: 'Apple Park, Cupertino', loc: [-122.01, 37.33], link: 'https://www.apple.com/apple-events/', source: 'apple.com' });
-  }
-  return out;
-}
-
 /** US federal elections: the Tuesday after the first Monday of November in even years. */
 function electionRules() {
   const out = [];
@@ -107,7 +88,7 @@ export async function collectCalendar() {
     }
     return out;
   };
-  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, electionRules: async () => electionRules(), apple: appleEvents, cycling: cyclingWorldTour };
+  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, electionRules: async () => electionRules(), cycling: cyclingWorldTour };
   const settled = await Promise.allSettled(Object.values(jobs).map(f => f()));
   const status = Object.fromEntries(Object.keys(jobs).map((k, i) => [k, settled[i].status === 'fulfilled' ? `${settled[i].value.length} events` : String(settled[i].reason).slice(0, 80)]));
   const seen = new Set();
