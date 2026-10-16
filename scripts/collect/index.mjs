@@ -9,6 +9,8 @@ import { collectElections } from './elections.mjs';
 import { collectNews } from './news.mjs';
 import { collectRoyal } from './royal.mjs';
 import { collectSki } from './ski.mjs';
+import { collectSpace } from './space.mjs';
+import { collectDakar } from './dakar.mjs';
 import { collectWec } from './wec.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '../../public/data');
@@ -20,6 +22,8 @@ const JOBS = {
   wec: collectWec,
   royal: collectRoyal,
   ski: collectSki,
+  space: collectSpace,
+  dakar: collectDakar,
 };
 
 export async function collect(only = Object.keys(JOBS)) {

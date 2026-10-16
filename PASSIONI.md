@@ -24,7 +24,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ✅ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ✅ |
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
-| 9 | Dakar | 1–15 gennaio | ⬜ |
+| 9 | Dakar | 1–15 gennaio | ✅ |
 | 10 | Apple | Prossimo keynote non ancora annunciato | ⬜ |
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ⬜ |
 
@@ -191,7 +191,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Dakar ⬜
+## Dakar ✅
 **Prossimo:** Dakar 2027, 1–15 gennaio, Arabia Saudita
 
 **Cosa mi interessa:**
@@ -201,6 +201,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 **Piano fonti:**
 - dakar.com: programma delle tappe, classifiche di tappa e generali, eventuale live timing, da verificare a gennaio.
 - Pagina focus: distacchi in classifica generale tappa per tappa (grafico a linee), mappa del percorso.
+
+**Fatto (16 ottobre):** raccoglitore `scripts/collect/dakar.mjs` sul sito ufficiale dakar.com.
+- **Percorso 2027:** tutte le 15 giornate (prologo, 13 tappe, riposo a Bisha) con data, partenza, arrivo, km totali e km di prova speciale. Ogni tappa entra in calendario; l'orario è indicativo (07:30 ora saudita), perché l'organizzatore non pubblica un orario unico.
+- **Classifiche ufficiali:** generale e di tappa per categoria (moto, auto, classic, ecc.), lette dai dati JSON della pagina classifiche, con tempi e distacchi. Durante la gara si aggiornano a ogni passaggio del raccoglitore (ogni ora online). Oggi mostrano l'edizione 2026: Benavides vince le moto per 2 secondi su Brabec, Al-Attiyah le auto.
+- **Pagina:** conto alla rovescia, leader, grafico del percorso tappa per tappa (speciale contro totale), classifiche con selettore di categoria, notizie.
 
 ---
 

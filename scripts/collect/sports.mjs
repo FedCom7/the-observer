@@ -35,7 +35,6 @@ export async function tennisSlams() {
 
 // ---------- ASO events: countdown target embedded in the official home pages ----------
 const ASO = [
-  { passion: 'dakar', url: 'https://www.dakar.com/en', name: 'Dakar Rally', label: 'start', place: 'Saudi Arabia', loc: [39.1, 22.45] },
   { passion: 'cicl', url: 'https://www.letour.fr/en/', name: 'Tour de France', label: 'Stage 1' },
   { passion: 'cicl', url: 'https://www.lavuelta.es/en', name: 'La Vuelta', label: 'Stage 1' },
 ];

@@ -4,10 +4,12 @@ import { f1Data, type F1Data } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
 import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadSki, skiEvents, type SkiData } from '../sources/ski';
+import { dakarEvents, loadDakar, type DakarData } from '../sources/dakar';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
-import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
+import type { InOrbit } from '../sources/space';
+import { loadSpace, nasaNews, orbitOf, spaceEvents, type SpaceData } from '../sources/spaceData';
 import type { ElectionData } from './elections';
 import { getJSON } from './fetcher';
 import { HOUR, MIN } from './time';
@@ -29,6 +31,8 @@ interface Data {
   royal?: RoyalData;
   nba?: NbaData;
   ski?: SkiData;
+  space?: SpaceData;
+  dakar?: DakarData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -73,6 +77,8 @@ const SOURCES: Source[] = [
   { key: 'nfl', every: 10 * MIN, run: async () => ({ events: (await scoreboard('nfl', 'football', 'nfl')).filter(e => primetime(e) || e.state === 'in').map(e => ({ ...e, weight: 2 })) }) },
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
+  { key: 'spacedata', every: 10 * MIN, run: async () => { const d = await loadSpace(); return { space: d, events: spaceEvents(d), orbit: orbitOf(d), news: nasaNews(d) }; } },
+  { key: 'dakar', every: 10 * MIN, run: async () => { const d = await loadDakar(); return { dakar: d, events: dakarEvents(d) }; } },
   { key: 'ski', every: 10 * MIN, run: async () => { const k = await loadSki(); return { ski: k, events: skiEvents(k) }; } },
   { key: 'royal', every: 10 * MIN, run: async () => { const r = await loadRoyal(); return { royal: r, events: royalEvents(r) }; } },
   { key: 'wec', every: 2 * MIN, run: async () => { const w = await loadWec(); return { wec: w, events: wecEvents(w) }; } },
@@ -89,8 +95,6 @@ const SOURCES: Source[] = [
       return { f1: data, events, standings: { f1d } };
     },
   },
-  { key: 'space', every: 2 * HOUR, run: async () => ({ events: await launches() }) },
-  { key: 'orbit', every: 6 * HOUR, run: async () => ({ orbit: await inOrbit() }) },
   {
     key: 'news', every: 15 * MIN, run: async () => {
       const all = await Promise.allSettled([
@@ -103,7 +107,6 @@ const SOURCES: Source[] = [
         espnNews('nba', 'basketball/nba/news?limit=5'),
         espnNews('nba', 'basketball/nba/news?team=13&limit=6'),
         espnNews('f1', 'racing/f1/news?limit=8'),
-        spaceNews(),
       ]);
       return { news: all.flatMap(r => (r.status === 'fulfilled' ? r.value : [])) };
     },
@@ -170,6 +173,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let royal: RoyalData | undefined;
     let nba: NbaData | undefined;
     let ski: SkiData | undefined;
+    let space: SpaceData | undefined;
+    let dakar: DakarData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -187,6 +192,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.royal) royal = p.royal;
       if (p.nba) nba = p.nba;
       if (p.ski) ski = p.ski;
+      if (p.space) space = p.space;
+      if (p.dakar) dakar = p.dakar;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -206,6 +213,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
       royal,
       nba,
       ski,
+      space,
+      dakar,
     };
   }, [bySource, live]);
 
