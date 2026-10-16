@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState, type R
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
 import { f1Calendar, f1Constructors, f1Drivers, f1LastRace, f1Sessions, type F1Session } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
+import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
 import type { ElectionData } from './elections';
@@ -21,6 +22,7 @@ interface Data {
   f1Sessions?: F1Session[];
   mlb?: MlbData;
   cfb?: CfbData;
+  wec?: WecData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -65,6 +67,7 @@ const SOURCES: Source[] = [
   { key: 'nfl', every: 10 * MIN, run: async () => ({ events: (await scoreboard('nfl', 'football', 'nfl')).filter(e => primetime(e) || e.state === 'in').map(e => ({ ...e, weight: 2 })) }) },
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
+  { key: 'wec', every: 2 * MIN, run: async () => { const w = await loadWec(); return { wec: w, events: wecEvents(w) }; } },
   { key: 'cfbdata', every: 10 * MIN, run: async () => { const c = await cfbData(); return { cfb: c.data, events: c.events }; } },
   { key: 'mlb', every: 10 * MIN, run: async () => ({ events: (await scoreboard('mlb', 'baseball', 'mlb')).map(e => ({ ...e, weight: 2 })) }) },
   { key: 'mlbdata', every: 10 * MIN, run: async () => { const m = await mlbData(); return { mlb: m, events: m.postseasonEvents }; } },
@@ -104,6 +107,7 @@ function duration(e: ObsEvent) {
   if (e.passion === 'space') return 15 * MIN;
   if (e.passion === 'f1') return e.weight === 3 ? 2 * HOUR : HOUR;
   if (e.passion === 'elez') return 10 * HOUR;
+  if (e.passion === 'wec') return e.weight === 3 ? (/24 Hours/.test(e.title) ? 24 : /8 Hours/.test(e.title) ? 8 : /1812/.test(e.title) ? 10 : 6) * HOUR : HOUR;
   return 3 * HOUR;
 }
 
@@ -147,6 +151,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let f1s: F1Session[] | undefined;
     let mlb: MlbData | undefined;
     let cfb: CfbData | undefined;
+    let wec: WecData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -160,6 +165,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.f1Sessions) f1s = p.f1Sessions;
       if (p.mlb) mlb = p.mlb;
       if (p.cfb) cfb = p.cfb;
+      if (p.wec) wec = p.wec;
     });
     f1s?.forEach(sess => {
       const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
@@ -181,6 +187,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       f1Sessions: f1s,
       mlb,
       cfb,
+      wec,
     };
   }, [bySource, live]);
 

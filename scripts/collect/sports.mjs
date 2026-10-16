@@ -105,40 +105,6 @@ export async function skiCalendar() {
   return events;
 }
 
-/** WEC: calendar table of this year's and next year's season pages, stopping at "Cancelled races". */
-export async function wecCalendar() {
-  const out = [];
-  for (const y of [Y, Y + 1]) {
-    const page = `${y} FIA World Endurance Championship`;
-    const w = await wikitext(page);
-    if (!w) continue;
-    const cal = w.slice(w.search(/==\s*(Calendar|Schedule)\s*==/i));
-    const table = cal.slice(0, cal.search(/Cancelled races|\n\|\}/));
-    for (const row of table.split(/\n\|-/)) {
-      const lines = row.split('\n').map(l => l.trim()).filter(Boolean);
-      const round = lines.find(l => /^!\s*\d+\s*$/.test(l));
-      const cells = lines.filter(l => l.startsWith('|')).map(l => l.slice(1).trim());
-      if (!round || cells.length < 3) continue;
-      const d = parseDate(cells[cells.length - 1], y);
-      if (!d) continue;
-      const race = clean(cells[0]), circuit = clean(cells[1]);
-      out.push({
-        id: `wec:${y}:${round.replace(/\D/g, '')}`,
-        passion: 'wec',
-        title: race,
-        sub: `WEC ${y} · Round ${round.replace(/\D/g, '')}`,
-        start: iso(zoned(d.y, d.m, d.d, 12, 0, 'Europe/Rome')),
-        weight: /Le Mans/.test(race) ? 3 : 2,
-        approxTime: true,
-        place: circuit,
-        link: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}`,
-        source: 'Wikipedia',
-      });
-    }
-  }
-  return out;
-}
-
 // ---------- Cycling: UCI World Tour calendar (Wikipedia season pages) ----------
 const MONUMENTS = /Milan–San Remo|Tour of Flanders|Paris–Roubaix|Liège–Bastogne–Liège|Il Lombardia/;
 const GRAND_TOURS = /Giro d'Italia|Tour de France|Vuelta a España/; // these come from the ASO sites and Giro page

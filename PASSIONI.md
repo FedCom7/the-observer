@@ -18,7 +18,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 |---|---|---|---|
 | 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ✅ |
 | 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ✅ |
-| 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ⬜ |
+| 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ✅ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | ⬜ |
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ⬜ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ⬜ |
@@ -61,7 +61,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## WEC e 24 Ore di Le Mans ⬜
+## WEC e 24 Ore di Le Mans ✅
 **Prossimo:** 6 Ore di Barcellona, domenica 18 ottobre · finale 6 Ore di Monza, 8 novembre (Bahrain cancellato)
 
 **Cosa mi interessa:**
@@ -73,6 +73,13 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - Live timing ufficiale (Al Kamel Systems): risultati e classifiche di sessione, da verificare.
 - Classifiche del campionato per piloti e costruttori, Hypercar e LMGT3: sito ufficiale o Wikipedia.
 - Pagina focus: andamento della classifica gara per gara, risultati per categoria, Le Mans con una sezione dedicata.
+
+**Fatto (16 ottobre):**
+- **Calendario:** ogni sessione di ogni weekend (prove libere, qualifiche e Hyperpole per classe, warm-up, gara) con l'orario ufficiale dal sito fiawec.com, letto dai dati strutturati della pagina. Le sessioni 2027 con orario segnaposto sono segnate TBC.
+- **Risultati:** dal live timing ufficiale (Al Kamel Systems), classifica di ogni sessione e, durante la gara, ora per ora. Vengono letti solo i file della cartella dell'evento giusto, perché il sito a volte serve la pagina di un altro evento.
+- **Classifiche del campionato:** piloti e costruttori Hypercar, piloti e team LMGT3, da Wikipedia (aggiornate dopo ogni gara).
+- **Pagina:** programma del weekend con lo stato delle sessioni, ultima classifica ufficiale per classe con distacchi dal primo della classe, grafico punti degli equipaggi, griglia dei risultati gara per gara (oro, argento, bronzo), costruttori, LMGT3, vincitori della stagione, conto alla rovescia per Le Mans con il vincitore dell'anno prima.
+- **Nota:** il calendario Google che avevi non serve più, perché il sito ufficiale ha tutti gli orari.
 
 ---
 

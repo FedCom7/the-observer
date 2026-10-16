@@ -65,9 +65,9 @@ export function DiffBars({ bars, color }: { bars: Bar[]; color: string }) {
 }
 
 /** Horizontal bars for a points table (for example the F1 drivers' championship). */
-export function PointsBars({ rows, color, unit = 'pts' }: { rows: { name: string; value: number; sub?: string }[]; color: string; unit?: string }) {
+export function PointsBars({ rows, color, unit = 'pts', labelWidth = 110 }: { rows: { name: string; value: number; sub?: string }[]; color: string; unit?: string; labelWidth?: number }) {
   const [ref, W] = useWidth<HTMLDivElement>();
-  const row = 26, H = rows.length * row + 6, l = 110, r = 130;
+  const row = 26, H = rows.length * row + 6, l = labelWidth, r = 150;
   const max = Math.max(1, ...rows.map(x => x.value));
   return (
     <div ref={ref} className="ochart">

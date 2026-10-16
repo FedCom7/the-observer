@@ -1,11 +1,10 @@
 {
- "updated": "2026-10-16T04:14:48.900Z",
+ "updated": "2026-10-16T04:38:40.857Z",
  "status": {
   "wikipedia": "10 events",
   "tennis": "8 events",
   "aso": "4 events",
   "ski": "41 events",
-  "wec": "15 events",
   "royalRules": "10 events",
   "electionRules": "4 events",
   "stateVisits": "4 events",
@@ -13,18 +12,6 @@
   "cycling": "33 events"
  },
  "events": [
-  {
-   "id": "wec:2026:6",
-   "passion": "wec",
-   "title": "6 Hours of Fuji",
-   "sub": "WEC 2026 · Round 6",
-   "start": "2026-09-27T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Fuji Speedway",
-   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
   {
    "id": "uci:2026:Il Lombardia",
    "passion": "cicl",
@@ -45,18 +32,6 @@
    "weight": 1,
    "approxTime": true,
    "link": "https://en.wikipedia.org/wiki/2026_UCI_World_Tour",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "wec:2026:7",
-   "passion": "wec",
-   "title": "6 Hours of Barcelona",
-   "sub": "WEC 2026 · Round 7",
-   "start": "2026-10-18T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Circuit de Barcelona-Catalunya",
-   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
    "source": "Wikipedia"
   },
   {
@@ -158,18 +133,6 @@
    ],
    "approxTime": true,
    "source": "Fixed date: Saturday before Remembrance Sunday"
-  },
-  {
-   "id": "wec:2026:8",
-   "passion": "wec",
-   "title": "6 Hours of Monza",
-   "sub": "WEC 2026 · Round 8",
-   "start": "2026-11-08T11:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Monza Circuit",
-   "link": "https://en.wikipedia.org/wiki/2026_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
   },
   {
    "id": "rule:remembrance:2026",
@@ -702,42 +665,6 @@
    "source": "Wikipedia"
   },
   {
-   "id": "wec:2027:2",
-   "passion": "wec",
-   "title": "6 Hours of Imola",
-   "sub": "WEC 2027 · Round 2",
-   "start": "2027-04-11T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Imola Circuit",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "wec:2027:3",
-   "passion": "wec",
-   "title": "6 Hours of Silverstone",
-   "sub": "WEC 2027 · Round 3",
-   "start": "2027-04-25T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Silverstone Circuit",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "wec:2027:4",
-   "passion": "wec",
-   "title": "6 Hours of Spa-Francorchamps",
-   "sub": "WEC 2027 · Round 4",
-   "start": "2027-05-15T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Circuit de Spa-Francorchamps",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
    "id": "wta:2027:ROLAND GARROS",
    "passion": "tennis",
    "title": "Roland Garros · day 1",
@@ -764,18 +691,6 @@
     48.85
    ],
    "source": "WTA tournament calendar"
-  },
-  {
-   "id": "wec:2027:5",
-   "passion": "wec",
-   "title": "24 Hours of Le Mans",
-   "sub": "WEC 2027 · Round 5",
-   "start": "2027-06-12T10:00:00.000Z",
-   "weight": 3,
-   "approxTime": true,
-   "place": "Circuit de la Sarthe",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
   },
   {
    "id": "wta:2027:WIMBLEDON",
@@ -816,18 +731,6 @@
    "source": "Wikipedia"
   },
   {
-   "id": "wec:2027:6",
-   "passion": "wec",
-   "title": "6 Hours of São Paulo",
-   "sub": "WEC 2027 · Round 6",
-   "start": "2027-07-11T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Interlagos Circuit",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
    "id": "wta:2027:WIMBLEDON:final",
    "passion": "tennis",
    "title": "Wimbledon · men's final",
@@ -865,18 +768,6 @@
    "source": "lavuelta.es"
   },
   {
-   "id": "wec:2027:7",
-   "passion": "wec",
-   "title": "Lone Star Le Mans",
-   "sub": "WEC 2027 · Round 7",
-   "start": "2027-09-12T10:00:00.000Z",
-   "weight": 3,
-   "approxTime": true,
-   "place": "Circuit of the Americas",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
    "id": "wta:2027:US OPEN:final",
    "passion": "tennis",
    "title": "US Open · men's final",
@@ -889,30 +780,6 @@
     40.75
    ],
    "source": "WTA tournament calendar"
-  },
-  {
-   "id": "wec:2027:8",
-   "passion": "wec",
-   "title": "6 Hours of Fuji",
-   "sub": "WEC 2027 · Round 8",
-   "start": "2027-09-26T10:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Fuji Speedway",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
-  },
-  {
-   "id": "wec:2027:9",
-   "passion": "wec",
-   "title": "8 Hours of Bahrain",
-   "sub": "WEC 2027 · Round 9",
-   "start": "2027-11-06T11:00:00.000Z",
-   "weight": 2,
-   "approxTime": true,
-   "place": "Bahrain International Circuit",
-   "link": "https://en.wikipedia.org/wiki/2027_FIA_World_Endurance_Championship",
-   "source": "Wikipedia"
   },
   {
    "id": "rule:festival:2027",
