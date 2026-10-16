@@ -9,6 +9,7 @@ import { F1Page } from './F1Page';
 import { MlbPage } from './MlbPage';
 import { NbaPage } from './NbaPage';
 import { RoyalPage } from './RoyalPage';
+import { SkiPage } from './SkiPage';
 import { WecPage } from './WecPage';
 import { PASSION } from '../core/passions';
 import { useData } from '../core/store';
@@ -57,7 +58,7 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : passion.id === 'sci' ? <SkiPage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
   );

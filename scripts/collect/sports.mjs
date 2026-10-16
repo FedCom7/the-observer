@@ -63,48 +63,6 @@ export async function asoEvents() {
 // ---------- Wikipedia season tables ----------
 const clean = s => s.replace(/\{\{flagicon\|[^}]*\}\}/g, '').replace(/<ref[\s\S]*?(<\/ref>|\/>)/g, '').replace(/\{\{efn[\s\S]*?\}\}/g, '').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').replace(/<br\s*\/?>.*$/i, '').replace(/'''?/g, '').trim();
 
-const SKI_TYPE = { DH: 'downhill', SG: 'super-G', GS: 'giant slalom', SL: 'slalom', AC: 'combined', TC: 'team combined', PG: 'parallel' };
-
-/** Alpine World Cup: men's and women's calendar tables of the current season page. */
-export async function skiCalendar() {
-  const startYear = new Date().getUTCMonth() >= 6 ? Y : Y - 1;
-  const page = `${startYear}–${String(startYear + 1).slice(2)} FIS Alpine Ski World Cup`;
-  const w = await wikitext(page);
-  if (!w) return [];
-  const events = [];
-  // Split by level-2/3 headings so we know whether a table is men's or women's.
-  // The page is "== Men ==" / "== Women ==", each with a "=== Calendar ===" table.
-  const sections = w.split(/\n(?==+[^=\n]+=+\s*\n)/);
-  let gender = null;
-  for (const sec of sections) {
-    const [, eq = '', heading = ''] = sec.match(/^(=+)\s*([^=\n]+?)\s*=+/) ?? [];
-    if (eq.length === 2) gender = /ladies|women/i.test(heading) ? 'women' : /\bmen\b/i.test(heading) ? 'men' : null;
-    if (!gender || !/calendar/i.test(heading) || !sec.includes('Venue')) continue;
-    for (const row of sec.split(/\n\|-/)) {
-      const cells = row.split('\n').filter(l => l.startsWith('|')).map(l => l.replace(/^\|\s*(?:[^|[{]*\|(?!\|))?/, '').trim());
-      const dateCell = cells.find(c => /\b\d{1,2} [A-Z][a-z]+ 20\d\d\b/.test(c));
-      if (!dateCell) continue;
-      const d = parseDate(dateCell);
-      const venueCell = cells.find(c => c.includes('[[') && !/\d{1,2} [A-Z][a-z]+ 20\d\d/.test(c));
-      const typeCell = cells.find(c => /^(?:align=\w+\s*\|)?\s*(DH|SG|GS|SL|AC|TC|PG)\b/.test(c.replace(/^align=\w+\|/, '')));
-      const type = typeCell?.match(/\b(DH|SG|GS|SL|AC|TC|PG)\b/)?.[1];
-      if (!d || !venueCell || !type) continue;
-      const venue = clean(venueCell);
-      events.push({
-        id: `ski:${gender}:${d.y}-${d.m}-${d.d}:${type}:${venue}`,
-        passion: 'sci',
-        title: `${venue} · ${gender === 'men' ? "men's" : "women's"} ${SKI_TYPE[type]}`,
-        start: iso(zoned(d.y, d.m, d.d, 10, 0, 'Europe/Zurich')),
-        weight: 2,
-        approxTime: true,
-        link: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}`,
-        source: 'Wikipedia',
-      });
-    }
-  }
-  return events;
-}
-
 // ---------- Cycling: UCI World Tour calendar (Wikipedia season pages) ----------
 const MONUMENTS = /Milan–San Remo|Tour of Flanders|Paris–Roubaix|Liège–Bastogne–Liège|Il Lombardia/;
 const GRAND_TOURS = /Giro d'Italia|Tour de France|Vuelta a España/; // these come from the ASO sites and Giro page

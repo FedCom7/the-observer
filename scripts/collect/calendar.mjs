@@ -3,7 +3,7 @@
 // year, so next season's page is picked up as soon as someone writes it) or
 // from fixed calendar rules. Nothing here is typed in by hand.
 import { get, infobox, iso, ordinal, parseDate, roman, wikitext, zoned } from './lib.mjs';
-import { asoEvents, cyclingWorldTour, skiCalendar, tennisSlams } from './sports.mjs';
+import { asoEvents, cyclingWorldTour, tennisSlams } from './sports.mjs';
 
 const now = new Date();
 const Y = now.getUTCFullYear();
@@ -107,7 +107,7 @@ export async function collectCalendar() {
     }
     return out;
   };
-  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, ski: skiCalendar, electionRules: async () => electionRules(), apple: appleEvents, cycling: cyclingWorldTour };
+  const jobs = { wikipedia: wikiJob, tennis: tennisSlams, aso: asoEvents, electionRules: async () => electionRules(), apple: appleEvents, cycling: cyclingWorldTour };
   const settled = await Promise.allSettled(Object.values(jobs).map(f => f()));
   const status = Object.fromEntries(Object.keys(jobs).map((k, i) => [k, settled[i].status === 'fulfilled' ? `${settled[i].value.length} events` : String(settled[i].reason).slice(0, 80)]));
   const seen = new Set();

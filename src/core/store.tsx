@@ -3,6 +3,7 @@ import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTabl
 import { f1Data, type F1Data } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
 import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
+import { loadSki, skiEvents, type SkiData } from '../sources/ski';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
@@ -27,6 +28,7 @@ interface Data {
   wec?: WecData;
   royal?: RoyalData;
   nba?: NbaData;
+  ski?: SkiData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -71,6 +73,7 @@ const SOURCES: Source[] = [
   { key: 'nfl', every: 10 * MIN, run: async () => ({ events: (await scoreboard('nfl', 'football', 'nfl')).filter(e => primetime(e) || e.state === 'in').map(e => ({ ...e, weight: 2 })) }) },
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
+  { key: 'ski', every: 10 * MIN, run: async () => { const k = await loadSki(); return { ski: k, events: skiEvents(k) }; } },
   { key: 'royal', every: 10 * MIN, run: async () => { const r = await loadRoyal(); return { royal: r, events: royalEvents(r) }; } },
   { key: 'wec', every: 2 * MIN, run: async () => { const w = await loadWec(); return { wec: w, events: wecEvents(w) }; } },
   { key: 'cfbdata', every: 10 * MIN, run: async () => { const c = await cfbData(); return { cfb: c.data, events: c.events }; } },
@@ -166,6 +169,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let wec: WecData | undefined;
     let royal: RoyalData | undefined;
     let nba: NbaData | undefined;
+    let ski: SkiData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -182,6 +186,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.wec) wec = p.wec;
       if (p.royal) royal = p.royal;
       if (p.nba) nba = p.nba;
+      if (p.ski) ski = p.ski;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -200,6 +205,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       wec,
       royal,
       nba,
+      ski,
     };
   }, [bySource, live]);
 

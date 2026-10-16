@@ -22,7 +22,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | 🟨 |
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ✅ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ✅ |
-| 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ⬜ |
+| 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ✅ |
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
 | 9 | Dakar | 1–15 gennaio | ⬜ |
 | 10 | Apple | Prossimo keynote non ancora annunciato | ⬜ |
@@ -151,7 +151,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Sci alpino ⬜
+## Sci alpino ✅
 **Prossimo:** Sölden, gigante femminile sabato 24 e maschile domenica 25 ottobre · Mondiali a febbraio 2027
 
 **Cosa mi interessa:**
@@ -163,6 +163,15 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - Live timing FIS: risultati, da verificare.
 - Classifiche di Coppa del Mondo, generale e di specialità.
 - Pagina focus: calendario per disciplina, classifiche, Mondiali con una sezione dedicata.
+
+**Fatto (16 ottobre):** tutto dal sito FIS, nuovo raccoglitore `scripts/collect/ski.mjs`.
+- **Calendario:** 98 gare tra Coppa del Mondo e Mondiali, con disciplina e maschile/femminile/misto. Le prove cronometrate di discesa sono escluse.
+- **Orari:** quelli ufficiali delle manche (1ª e 2ª) dalla pagina evento FIS, che la FIS compila qualche giorno prima. Fino ad allora c'è l'orario tipico della disciplina, segnato ≈, che si aggiorna da solo.
+- **Risultati:** primi 10 delle gare appena concluse.
+- **Classifiche di Coppa:** generale e per specialità. Prima della prima gara mostra quelle finali 2025–26.
+- **Mondiali di Crans-Montana (1–14 febbraio 2027):** sezione dedicata con griglia giorno per giorno (donne sopra, uomini sotto, colore per disciplina) e conto alla rovescia.
+- **Pagina:** prossima gara con gli orari delle manche, calendario per località, ultimi risultati con gli azzurri evidenziati, classifiche e notizie.
+- **Nota:** il calendario iCal FIS che mi avevi dato contiene gli stessi dati ma senza orari; la pagina evento FIS li ha.
 
 ---
 
