@@ -108,6 +108,7 @@ export function parseFeed(xml) {
     title: decode(pick(s, 'title')),
     link: pick(s, 'link') || (s.match(/<link[^>]*href="([^"]+)"/) ?? [])[1] || '',
     time: Date.parse(pick(s, 'pubDate') || pick(s, 'updated') || pick(s, 'published')) || Date.now(),
+    description: decode(pick(s, 'description') || pick(s, 'summary')),
   }));
 }
 

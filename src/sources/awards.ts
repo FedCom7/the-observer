@@ -6,11 +6,14 @@ import type { ObsEvent } from '../core/types';
 export type AwardGroup = 'festival' | 'critics' | 'major' | 'guild' | 'oscars';
 export interface Nominee { film: string | null; people: string | null; role: string | null; song: string | null; winner: boolean }
 export interface AwardCategory { name: string; oscar: string | null; nominees: Nominee[] }
-export interface AwardDate { award: string; kind: string; title: string; date: string; end?: string; approx: boolean }
+export interface AwardDate { award: string; kind: string; title: string; date: string; end?: string; approx: boolean; source?: string; url?: string }
+export interface RadarItem { award: string; kind: 'nominations' | 'winners' | 'date' | 'news'; title: string; url: string; source: string; time: string; date: string | null }
 export interface Award {
   id: string; name: string; short: string; group: AwardGroup; tz: string;
   dates: AwardDate[]; state: 'pending' | 'nominations' | 'winners';
   edition: { page: string | null; url: string | null; categories: AwardCategory[]; span: [string, string] | null } | null;
+  official?: { fetched: string; url: string } | null;
+  news?: RadarItem[];
 }
 export interface OddsRow { name: string; film: string | null; pct: number; was: number; fraction: string; winner: boolean }
 export interface AwardsData {
@@ -18,6 +21,7 @@ export interface AwardsData {
   calendarUrl: string | null; calendar: AwardDate[]; oscarSteps: AwardDate[];
   categories: { id: string; name: string }[];
   awards: Award[];
+  radar?: RadarItem[];
   odds: { league: string; stage: 'nominations' | 'winners'; url: string; updated: string; categories: Record<string, { experts?: OddsRow[]; users?: OddsRow[] }>; history: Record<string, { experts?: { d: string; v: Record<string, number> }[]; users?: { d: string; v: Record<string, number> }[] }> } | null;
 }
 

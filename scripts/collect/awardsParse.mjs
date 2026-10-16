@@ -156,3 +156,21 @@ export function festivalCat(name) {
   if (/screenplay/.test(n)) return 'origScreenplay';
   return null;
 }
+
+/** USC Scripter: one list page, a block of rows per film year ("| rowspan=5 | 2025 || winner…"). */
+export function scripterRows(w, year) {
+  const film = w.slice(w.indexOf('==Film'), w.indexOf('==Television') > 0 ? w.indexOf('==Television') : undefined).replace(/<ref[\s\S]*?<\/ref>|<ref[^>]*\/>/g, '');
+  const rows = film.split(/\n\|-[^\n]*/);
+  const out = [];
+  let inYear = false;
+  for (const r of rows) {
+    const y = r.match(/^\s*\|\s*rowspan="?\d+"?[^|]*\|\s*(\d{4})/m);
+    if (y) inYear = Number(y[1]) === year;
+    if (!inYear) continue;
+    const cells = r.replace(/^\s*\|\s*rowspan[^|]*\|\s*\d{4}[^|]*\|\|/m, '|').replace(/^\s*\|/, '').split('||').map(c => c.replace(/style="[^"]*"\s*\|/, '').trim());
+    if (cells.length < 2) continue;
+    const e = entry(`* ${cells[0]}`);
+    out.push({ film: e.film, people: clean(cells[1]), role: null, song: null, winner: /'''/.test(cells[0]) || /FAEB86/.test(r) });
+  }
+  return out.length ? [{ category: 'Film Adaptation', nominees: out }] : [];
+}

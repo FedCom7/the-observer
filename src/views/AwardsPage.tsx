@@ -4,7 +4,7 @@ import { Score } from '../components/common';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, fmt, hhmm } from '../core/time';
-import { KIND_LABEL, PERSON_CATS, sameContender, type Award, type AwardDate, type AwardsData, type OddsRow } from '../sources/awards';
+import { KIND_LABEL, PERSON_CATS, sameContender, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem } from '../sources/awards';
 
 const GROUPS: { id: Award['group']; label: string; color: string }[] = [
   { id: 'festival', label: 'Festivals', color: 'var(--o-s3)' },
@@ -74,6 +74,8 @@ export function AwardsPage() {
         </div>
       </section>
 
+      <Announcements items={d.radar ?? []} byId={byId} now={now} />
+
       <section className="ocard">
         <h2>The road to the {d.ceremonyYear - 1928}th Oscars</h2>
         <p className="dek">Every step of the Academy's calendar, from the honorary awards to the ceremony. Times are Rome time; ≈ marks the usual hour where the Academy has not given one.</p>
@@ -117,7 +119,7 @@ export function AwardsPage() {
             {all.filter(x => Date.parse(x.date) > now).slice(0, 12).map(x => (
               <div key={x.award + x.kind + x.date} className="r">
                 <time>{dayShort(Date.parse(x.date))}<small>{when(x)}</small></time>
-                <div><b>{byId[x.award]?.short ?? 'Oscars'} · {KIND_LABEL[x.kind] ?? x.kind}</b><small>{x.award === 'oscars' ? x.title : byId[x.award]?.name}</small></div>
+                <div><b>{byId[x.award]?.short ?? 'Oscars'} · {KIND_LABEL[x.kind] ?? x.kind}</b><small>{x.award === 'oscars' ? x.title : byId[x.award]?.name}{x.source ? ` · source: ${x.source}` : ''}</small></div>
                 <span className="x"><i className="cy-dot" style={{ background: colorOf(byId[x.award]?.group ?? 'oscars') }} /></span>
               </div>
             ))}
@@ -138,13 +140,38 @@ export function AwardsPage() {
                 <b>{a.short}</b>
                 <span>{nm ? `Noms ${dayShort(Date.parse(nm.date))}` : ''}{nm && cer ? ' · ' : ''}{cer ? `${a.group === 'festival' ? '' : 'Awards '}${dayShort(Date.parse(cer.date))}` : ''}</span>
                 <div className="cy-win" style={{ color: a.state === 'pending' ? 'var(--o-ink3)' : 'var(--o-ink)' }}>{a.state === 'winners' ? 'Winners out' : a.state === 'nominations' ? 'Nominations out' : 'Not yet announced'}</div>
+                {a.news?.find(n => n.kind !== 'news') && <small style={{ textTransform: 'none', letterSpacing: 0 }}>{a.news.find(n => n.kind !== 'news')!.source}: {a.news.find(n => n.kind !== 'news')!.title.slice(0, 70)}</small>}
               </a>
             );
           })}
         </div>
-        <div className="osrc">Nominees and winners from each edition's Wikipedia page · updated {dayShort(Date.parse(d.updated))} {hhmm(Date.parse(d.updated))}</div>
+        <div className="osrc">Nominees and winners from each edition's Wikipedia page, re-read as soon as the trade press reports an announcement · dates from the official sites, Gold Derby and Wikipedia · updated {dayShort(Date.parse(d.updated))} {hhmm(Date.parse(d.updated))}</div>
       </section>
     </>
+  );
+}
+
+const RADAR_LABEL: Record<RadarItem['kind'], string> = { nominations: 'Nominations', winners: 'Winners', date: 'Date', news: 'News' };
+
+/** What was announced in the last days, as the trade press and awards blogs report it. */
+function Announcements({ items, byId, now }: { items: RadarItem[]; byId: Record<string, Award>; now: number }) {
+  const hot = items.filter(i => i.kind !== 'news').slice(0, 8);
+  const rest = items.filter(i => i.kind === 'news').slice(0, Math.max(0, 8 - hot.length));
+  const list = [...hot, ...rest].slice(0, 8);
+  if (!list.length) return null;
+  return (
+    <section className="ocard">
+      <h2>Latest announcements</h2>
+      <p className="dek">Nominations, winners and dates as soon as Variety, The Hollywood Reporter, IndieWire, Gold Derby and the awards blogs report them; each announcement also triggers a fresh read of the nominees.</p>
+      <div className="onews">
+        {list.map(i => (
+          <a key={i.url + i.title} className="r" href={i.url} target="_blank" rel="noreferrer">
+            <time>{dayShort(Date.parse(i.time))} {hhmm(Date.parse(i.time))} · {i.source}{now - Date.parse(i.time) < DAY ? ' · new' : ''}</time>
+            <p><span className="tag" style={{ marginRight: 6, background: i.kind === 'winners' ? 'var(--oc-cul)' : i.kind === 'nominations' ? 'var(--o-s1)' : i.kind === 'date' ? 'var(--o-s4)' : 'var(--o-other)', color: '#fff', padding: '1px 6px', borderRadius: 4, fontSize: 10.5 }}>{byId[i.award]?.short ?? 'Oscars'} · {RADAR_LABEL[i.kind]}</span>{i.title}</p>
+          </a>
+        ))}
+      </div>
+    </section>
   );
 }
 

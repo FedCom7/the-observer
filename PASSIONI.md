@@ -350,9 +350,18 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
   - pranzo dei candidati;
   - voto finale e cerimonia.
 
-**Esclusi:** premi europei e italiani, Berlino e Sundance, associazioni di critici regionali. Mancano anche USC Scripter, SCL, Cinema Eye e IDA, che non hanno pagine Wikipedia leggibili.
+**Aggiunti (17 ottobre):** USC Scripter (sceneggiatura non originale), SCL (colonne sonore) e Critics' Choice Documentary Awards per i documentari, al posto di Cinema Eye e IDA, che non hanno fonti leggibili.
 
-**Fonti (collector `awards`):**
+**Esclusi:** premi europei e italiani, Berlino e Sundance, associazioni di critici regionali.
+
+**Aggiornamento rapido (collector `awards`, ogni 15 minuti):**
+- **Radar delle notizie:** i feed di Variety, The Hollywood Reporter, IndieWire, Gold Derby, AwardsWatch, Awards Daily e Next Best Picture.
+  - Ogni titolo che annuncia nomination, vincitori o una data compare subito in "Latest announcements".
+  - Il premio viene segnato come caldo: la sua pagina Wikipedia viene riletta subito, e così il suo sito ufficiale.
+- **Siti ufficiali:** riletti due volte al giorno. Vale solo una data scritta come annuncio esplicito ("will take place on…", "nominees will be announced on…").
+- **Priorità delle date:** sito ufficiale, poi calendario Gold Derby, poi Wikipedia, poi notizie. Per ogni data è indicata la fonte.
+
+**Fonti:**
 - **Date:** il calendario della stagione di Gold Derby, completato con le schede di Wikipedia.
 - **Nominati e vincitori:** la pagina Wikipedia di ogni edizione. Il collector legge le tabelle dei candidati, gli elenchi "Premio: film" e le tabelle "Premio | Film | Regista". Ogni pagina viene riletta ogni 6 ore, e a ogni giro nei giorni degli annunci.
 - **Favoriti:** l'API pubblica di Gold Derby, con le quote di esperti e utenti per categoria. Prima delle nomination è la probabilità di essere candidati, dopo quella di vincere. Il collector salva una lettura al giorno per disegnare l'andamento.

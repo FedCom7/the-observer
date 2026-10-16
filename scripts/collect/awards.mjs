@@ -6,7 +6,8 @@
 //   category, with a daily history kept in the file.
 import { readFile } from 'node:fs/promises';
 import { decode, get, infobox, iso, ordinal, parseDate, wikitext, zoned } from './lib.mjs';
-import { OSCAR_CATS, colonList, festivalCat, nomineeTables, oscarCat, rowTables } from './awardsParse.mjs';
+import { OSCAR_CATS, colonList, festivalCat, nomineeTables, oscarCat, rowTables, scripterRows } from './awardsParse.mjs';
+import { officialDates, radar } from './awardsWatch.mjs';
 
 const DAY = 86400e3;
 const now = Date.now();
@@ -25,6 +26,7 @@ const AWARDS = [
   { id: 'nbr', name: 'National Board of Review', short: 'NBR', group: 'critics', pages: [`National Board of Review Awards ${S}`], mode: 'auto', tz: 'America/New_York' },
   { id: 'nyfcc', name: 'New York Film Critics Circle', short: 'NYFCC', group: 'critics', pages: [`${S} New York Film Critics Circle Awards`], mode: 'auto', tz: 'America/New_York' },
   { id: 'lafca', name: 'Los Angeles Film Critics Association', short: 'LAFCA', group: 'critics', pages: [`${S} Los Angeles Film Critics Association Awards`], mode: 'auto', tz: 'America/Los_Angeles' },
+  { id: 'ccda', name: "Critics' Choice Documentary Awards", short: 'CC Docs', group: 'critics', pages: [`${ordinal(S - 2015)} Critics' Choice Documentary Awards`], tz: 'America/Los_Angeles' },
   { id: 'cca', name: "Critics' Choice Awards", short: 'Critics Choice', group: 'critics', pages: [`${ordinal(C - 1995)} Critics' Choice Awards`], tz: 'America/Los_Angeles' },
   { id: 'globes', name: 'Golden Globe Awards', short: 'Globes', group: 'major', pages: [`${ordinal(C - 1943)} Golden Globe Awards`], tz: 'America/Los_Angeles' },
   { id: 'nsfc', name: 'National Society of Film Critics', short: 'NSFC', group: 'critics', pages: [`${S} National Society of Film Critics Awards`], mode: 'auto', tz: 'America/New_York' },
@@ -44,12 +46,24 @@ const AWARDS = [
   { id: 'spirit', name: 'Independent Spirit Awards', short: 'Spirit', group: 'critics', pages: [`${ordinal(C - 1985)} Independent Spirit Awards`], tz: 'America/Los_Angeles' },
   { id: 'mpse', name: 'Golden Reel Awards (sound editing)', short: 'MPSE', group: 'guild', pages: [`Golden Reel Awards ${S}`], tz: 'America/Los_Angeles' },
   { id: 'asc', name: 'American Society of Cinematographers', short: 'ASC', group: 'guild', pages: [`${S} American Society of Cinematographers Awards`], tz: 'America/Los_Angeles' },
+  { id: 'scripter', name: 'USC Scripter Awards (adaptation)', short: 'Scripter', group: 'guild', pages: ['USC Scripter Awards'], mode: 'scripter', tz: 'America/Los_Angeles' },
+  { id: 'scl', name: 'Society of Composers & Lyricists Awards', short: 'SCL', group: 'guild', pages: [`${ordinal(C - 2019)} Society of Composers & Lyricists Awards`], tz: 'America/Los_Angeles' },
   { id: 'oscars', name: 'Academy Awards', short: 'Oscars', group: 'oscars', pages: [`${ordinal(C - 1928)} Academy Awards`], tz: 'America/Los_Angeles' },
 ];
 
+/** Each award's own site, read for explicitly announced dates (twice a day). */
+const OFFICIAL = {
+  globes: 'https://goldenglobes.com/', sag: 'https://www.actorawards.org/', cca: 'https://www.criticschoice.com/', pga: 'https://producersguild.org/pga-awards/',
+  dga: 'https://www.dga.org/Awards/Annual.aspx', wga: 'https://awards.wga.org/', ace: 'https://americancinemaeditors.org/eddie-awards/', asc: 'https://theasc.com/asc-awards',
+  adg: 'https://www.adg.org/awards', cas: 'https://cinemaaudiosociety.org/cas-awards/', annie: 'https://annieawards.org/', spirit: 'https://www.filmindependent.org/spirit-awards/',
+  nbr: 'https://nationalboardofreview.org/', nyfcc: 'https://www.nyfcc.com/', nsfc: 'https://nationalsocietyoffilmcritics.com/', scripter: 'https://scripter.usc.edu/',
+  scl: 'https://thescl.com/scl-awards/', gotham: 'https://www.thegotham.org/', mpse: 'https://www.mpse.org/', cdg: 'https://www.costumedesignersguild.com/',
+  csa: 'https://www.castingsociety.com/', muahs: 'https://www.local706.org/', lafca: 'https://www.lafca.net/', ccda: 'https://www.criticschoice.com/',
+};
+
 // ---------- Gold Derby season calendar ----------
 const CAL_MAP = [
-  [/Critics Choice/i, 'cca'], [/Golden Globe/i, 'globes'], [/Producers Guild/i, 'pga'], [/Art Directors/i, 'adg'], [/Directors Guild/i, 'dga'], [/Writers Guild/i, 'wga'],
+  [/Critics Choice Documentary/i, 'ccda'], [/Critics Choice/i, 'cca'], [/Scripter/i, 'scripter'], [/Society of Composers/i, 'scl'], [/Golden Globe/i, 'globes'], [/Producers Guild/i, 'pga'], [/Art Directors/i, 'adg'], [/Directors Guild/i, 'dga'], [/Writers Guild/i, 'wga'],
   [/Actor Awards|SAG/i, 'sag'], [/BAFTA|British Academy/i, 'bafta'], [/Costume Designers/i, 'cdg'], [/Make-?Up Artists/i, 'muahs'],
   [/Cinema Audio/i, 'cas'], [/Golden Reel|MPSE/i, 'mpse'], [/Visual Effects Society/i, 'ves'], [/American Cinema Editors|\bACE\b/i, 'ace'], [/Casting Society|Artios/i, 'csa'],
   [/Spirit Awards/i, 'spirit'], [/Annie Awards/i, 'annie'], [/Society of Cinematographers/i, 'asc'], [/Gotham/i, 'gotham'], [/National Board of Review/i, 'nbr'],
@@ -101,9 +115,10 @@ async function seasonCalendar() {
 }
 
 // ---------- Wikipedia: nominees and winners ----------
-async function readEdition(a, prev) {
-  // Pages are re-read every six hours, and on every run around their announcement days
-  const hot = prev?.dates?.some(d => Math.abs(Date.parse(d.date) - now) < 2 * DAY);
+async function readEdition(a, prev, force = false) {
+  // Pages are re-read every six hours, on every run around their announcement days,
+  // and at once when the news radar sees nominations or winners
+  const hot = force || prev?.dates?.some(d => Math.abs(Date.parse(d.date) - now) < 2 * DAY);
   if (prev?.fetched && now - Date.parse(prev.fetched) < 6 * 3600e3 && !hot) return prev;
   for (const page of a.pages) {
     const w = await wikitext(page);
@@ -119,7 +134,7 @@ async function readEdition(a, prev) {
     const subs = section.split(/\n(?====[^=])/);
     const main = subs.slice(1).find(x => !/^===\s*[^=\n]*(?:tribute|honorary|lifetime|jur(?:y|ies))/i.test(x));
     const official = main ? `${subs[0]}\n${main}` : subs[0];
-    let cats = a.mode === 'none' ? [] : a.mode === 'colon' ? [...colonList(official), ...rowTables(official)] : nomineeTables(w);
+    let cats = a.mode === 'none' ? [] : a.mode === 'scripter' ? scripterRows(w, S) : a.mode === 'colon' ? [...colonList(official), ...rowTables(official)] : nomineeTables(w);
     if (a.mode === 'auto' && !cats.length) cats = colonList(w);
     // Festivals list sections ("In Competition", "Independent awards"): keep only the official prizes
     const categories = cats.map(c => ({ name: c.category, oscar: a.group === 'festival' ? festivalCat(c.category) : oscarCat(c.category, a.id), nominees: c.nominees.map(({ film, people, role, song, winner }) => ({ film, people, role, song, winner })) }))
@@ -156,7 +171,7 @@ async function odds(prev) {
   // Category ids are stable, but the endpoint that names them returns a random few per call:
   // learn them over the runs, and find which ids exist by probing the per-category odds
   // Seen on the Oscar leagues so far (the same ids are used every year); the rest are learned
-  const KNOWN = { 1: 'Best Production Design', 2: 'Best Actor', 3: 'Best Picture', 4: 'Best Actress', 5: 'Best Supporting Actor', 6: 'Best Supporting Actress', 7: 'Best Director', 8: 'Best Adapted Screenplay', 9: 'Best Original Screenplay', 10: 'Best Animated Feature', 12: 'Best Cinematography', 13: 'Best Costume Design', 17: 'Best Song', 18: 'Best Casting', 19: 'Best Sound', 20: 'Best Visual Effects', 22: 'Best Documentary Feature' };
+  const KNOWN = { 14: 'Best Film Editing', 15: 'Best Makeup and Hairstyling', 16: 'Best Original Score', 1: 'Best Production Design', 2: 'Best Actor', 3: 'Best Picture', 4: 'Best Actress', 5: 'Best Supporting Actor', 6: 'Best Supporting Actress', 7: 'Best Director', 8: 'Best Adapted Screenplay', 9: 'Best Original Screenplay', 10: 'Best Animated Feature', 12: 'Best Cinematography', 13: 'Best Costume Design', 17: 'Best Song', 18: 'Best Casting', 19: 'Best Sound', 20: 'Best Visual Effects', 22: 'Best Documentary Feature' };
   const catMap = { ...KNOWN, ...(same ? prev.catMap ?? {} : {}) };
   let ids = same ? prev.ids ?? null : null;
   if (!ids) {
@@ -199,21 +214,55 @@ export async function collectAwards() {
   let cal = { events: prev.calendar ?? [], url: prev.calendarUrl ?? null };
   try { cal = await seasonCalendar(); status.calendar = `${cal.events.length} dates`; } catch (err) { status.calendar = `failed: ${err.message.slice(0, 80)}`; }
 
+  // News radar first: it tells which awards just announced something
+  let news = prev.radar ?? [];
+  try { news = await radar(S, C, AWARDS.map(x => x.id)); status.radar = `${news.length} headlines`; } catch (err) { status.radar = `failed: ${err.message.slice(0, 60)}`; }
+  const hotIds = new Set(news.filter(n => (n.kind === 'nominations' || n.kind === 'winners') && now - Date.parse(n.time) < 2 * DAY).map(n => n.award));
+
   const awards = [];
   for (const a of AWARDS) {
     const old = prev.awards?.find(x => x.id === a.id);
     let ed = null;
-    try { ed = await readEdition(a, old?.edition ? { ...old.edition, dates: old.dates } : null); } catch (err) { status[a.id] = `wiki: ${err.message.slice(0, 60)}`; ed = old?.edition ?? null; }
-    // Dates: Gold Derby's calendar first, then the Wikipedia infobox
-    const dates = cal.events.filter(e => e.award === a.id && a.id !== 'oscars');
-    if (ed?.span && !dates.length) dates.push({ award: a.id, kind: 'festival', title: a.name, date: ed.span[0], end: ed.span[1], approx: true });
-    if (ed?.wikiAnnounced && !dates.some(d => d.kind === 'nominations')) dates.push({ award: a.id, kind: 'nominations', title: `${a.name} nominations`, date: ed.wikiAnnounced, approx: true });
-    if (ed?.wikiDate && !dates.some(d => d.kind === 'ceremony') && a.group !== 'festival') dates.push({ award: a.id, kind: 'ceremony', title: a.name, date: ed.wikiDate, approx: true });
+    try { ed = await readEdition(a, old?.edition ? { ...old.edition, dates: old.dates } : null, hotIds.has(a.id)); } catch (err) { status[a.id] = `wiki: ${err.message.slice(0, 60)}`; ed = old?.edition ?? null; }
+
+    // Official site: dates the organisers state explicitly (twice a day)
+    let official = old?.official ?? null;
+    if (OFFICIAL[a.id] && (!official || now - Date.parse(official.fetched) > 12 * 3600e3 || hotIds.has(a.id))) {
+      try {
+        const f = officialDates(await get(OFFICIAL[a.id], { browser: true }), S, C);
+        official = { fetched: new Date().toISOString(), url: OFFICIAL[a.id], ...Object.fromEntries(Object.entries(f).map(([k, x]) => [k, { date: iso(zoned(x.y, x.m, x.d, ...timeOf(a.id, k), a.tz)), text: x.sentence }])) };
+      } catch (err) { status[`${a.id}-official`] = err.message.slice(0, 50); }
+    }
+
+    // Dates, best source first: the official site, Gold Derby's calendar, Wikipedia, then the news
+    const dates = [];
+    const add = (kind, d) => { if (!dates.some(x => x.kind === kind)) dates.push({ award: a.id, kind, ...d }); };
+    for (const kind of ['nominations', 'ceremony']) if (official?.[kind]) add(kind, { title: `${a.name} ${kind}`, date: official[kind].date, approx: true, source: 'official site', url: official.url });
+    for (const e of cal.events.filter(x => x.award === a.id && a.id !== 'oscars')) {
+      if (e.kind === 'nominations' || e.kind === 'ceremony') add(e.kind, { ...e, source: 'Gold Derby' });
+      else dates.push({ ...e, source: 'Gold Derby' });
+    }
+    if (a.mode !== 'scripter') {
+      if (ed?.span && a.group === 'festival') add('festival', { title: a.name, date: ed.span[0], end: ed.span[1], approx: true, source: 'Wikipedia' });
+      if (ed?.wikiAnnounced) add('nominations', { title: `${a.name} nominations`, date: ed.wikiAnnounced, approx: true, source: 'Wikipedia' });
+      if (ed?.wikiDate && a.group !== 'festival') add('ceremony', { title: a.name, date: ed.wikiDate, approx: true, source: 'Wikipedia' });
+    }
+    // From the news: a date announcement, or — when nominations are out — the ceremony date they mention;
+    // the nominations themselves happened when the first article came out
+    for (const n of news.filter(x => x.award === a.id)) {
+      if (n.kind === 'date' && n.date) add(/nominat/i.test(n.title) ? 'nominations' : 'ceremony', { title: n.title, date: n.date, approx: true, source: n.source, url: n.url });
+      if (n.kind === 'nominations') {
+        const first = news.filter(x => x.award === a.id && x.kind === 'nominations').map(x => x.time).sort()[0];
+        add('nominations', { title: n.title, date: first, approx: false, source: n.source, url: n.url });
+        if (n.date) add('ceremony', { title: `${a.name} ceremony`, date: n.date, approx: true, source: n.source, url: n.url });
+      }
+    }
+
     const cats = ed?.categories ?? [];
     const state = cats.some(c => c.nominees.some(n => n.winner)) ? 'winners' : cats.length ? 'nominations' : 'pending';
     const { pages, mode, ...meta } = a;
     void pages; void mode;
-    awards.push({ ...meta, dates: dates.sort((x, y) => x.date.localeCompare(y.date)), state, edition: ed });
+    awards.push({ ...meta, dates: dates.sort((x, y) => x.date.localeCompare(y.date)), state, edition: ed, official, news: news.filter(n => n.award === a.id).slice(0, 5) });
   }
 
   let gd = prev.odds ?? null;
@@ -229,5 +278,6 @@ export async function collectAwards() {
     oscarSteps: oscarSteps.sort((a, b) => a.date.localeCompare(b.date)),
     categories: OSCAR_CATS.map(([id, name]) => ({ id, name })),
     awards, odds: gd,
+    radar: news.slice(0, 40),
   };
 }
