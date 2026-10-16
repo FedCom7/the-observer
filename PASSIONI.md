@@ -28,6 +28,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 10 | Apple | Prossimo keynote non ancora annunciato | ✅ |
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ✅ |
 | 12 | Ciclismo | Stagione 2027 da gennaio; Sanremo 20 marzo, Giro dall'8 maggio | ✅ |
+| 13 | Elezioni americane | Midterm martedì 3 novembre | ✅ |
 
 ---
 
@@ -276,6 +277,45 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - percorso del grande giro con le tappe colorate per terreno;
 - albo dei vincitori e notizie.
 
+## Elezioni americane ✅
+**Interessi:**
+- **Fuori dalle elezioni:** sondaggi di opinione pubblica e calendario delle prossime elezioni USA.
+- **Prima del voto:** previsioni e sondaggi.
+- **Notte elettorale:** risultati in diretta e mappa per Senato, Camera, governatori e referendum statali.
+
+**Fonti (tutte gratuite, senza chiave):**
+- **On Point Politics** (onpointpolitics.us):
+  - il modello 2026 completo (`/forecast/model.json`): probabilità di controllo di Senato, Camera e governatori, distribuzione dei seggi su 2.000 simulazioni, margine e probabilità per ognuna delle 506 gare;
+  - le medie dei sondaggi (`/api/polls/...`): approvazione di Trump, generic ballot, direzione del Paese, Vance, 2028.
+- **Silver Bulletin:** media pubblica dell'approvazione di Trump e dettaglio per tema, dai grafici Datawrapper delle pagine gratuite. I modelli 2026 sono a pagamento e non vengono usati.
+- **civicAPI:**
+  - rating di Cook, Sabato, Inside Elections, Split Ticket, Decision Desk, FiftyPlusOne, Kalshi e Polymarket;
+  - risultati in diretta letti dal browser: tutte le gare con voti, percentuale di scrutinio e vincitore dichiarato, più i risultati per contea per la mappa;
+  - calendario delle gare future.
+- **Open America:** conteggi ufficiali degli stati (22 stati), affiancati a quelli di civicAPI. Non dichiara vincitori.
+
+**Pagina:**
+- **Prima del voto:**
+  - probabilità di controllo;
+  - mappa delle previsioni stato per stato, con scheda della gara al clic;
+  - distribuzione dei seggi e andamento delle probabilità;
+  - tabella delle gare in bilico con margine, intervallo all'80% e i rating di ogni fonte;
+  - gare della Camera più vicine.
+- **Notte elettorale** (dal 3 novembre per un mese):
+  - conteggio dei seggi verso la maggioranza;
+  - mappa dei risultati con contee e conteggio ufficiale al clic;
+  - Senato in ordine di chiusura dei seggi;
+  - griglia dei 435 seggi della Camera;
+  - governatori e referendum.
+  
+  Aggiornamento ogni minuto; la Camera ogni 2 minuti e i referendum ogni 5.
+- **Sempre:**
+  - sondaggi, con approvazione e generic ballot nel tempo (On Point a linea continua, Silver Bulletin tratteggiato);
+  - approvazione per tema e ultimi sondaggi;
+  - orari di chiusura dei seggi e calendario.
+
+**Test:** `?live=1` attiva il live prima della notte elettorale. `?live=2024` rigioca le elezioni 2024 con dati veri.
+
 ---
 
 ## Da definire più avanti 💬
@@ -285,7 +325,6 @@ Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a 
 - **New England Patriots:** ESPN.
 - **NFL:** ESPN, partite in prima serata.
 - **Texas Longhorns:** ESPN.
-- **Elezioni americane:** Wikipedia, FiftyPlusOne, risultati in diretta la notte del 3 novembre.
 - **Premi del cinema:** Wikipedia, Variety.
 - **Tennis, tornei del Grande Slam:** API WTA, ESPN.
 

@@ -14,6 +14,7 @@ import { nbaData, type NbaData } from '../sources/nba';
 import type { InOrbit } from '../sources/space';
 import { loadSpace, nasaNews, orbitOf, spaceEvents, type SpaceData } from '../sources/spaceData';
 import type { ElectionData } from './elections';
+import { loadLive, type LiveData } from '../sources/electionsLive';
 import { getJSON } from './fetcher';
 import { HOUR, MIN } from './time';
 import type { NewsItem, ObsEvent, PassionId, SourceStatus, Standing } from './types';
@@ -27,6 +28,7 @@ interface Data {
   news: NewsItem[];
   orbit?: InOrbit;
   elections?: ElectionData;
+  live?: LiveData;
   f1?: F1Data;
   mlb?: MlbData;
   cfb?: CfbData;
@@ -76,6 +78,8 @@ const SOURCES: Source[] = [
   { key: 'calendar', every: 10 * MIN, run: async () => ({ events: await collectedCalendar() }) },
   { key: 'feeds', every: 10 * MIN, run: async () => ({ news: await collectedNews() }) },
   { key: 'elections', every: 2 * MIN, run: async () => ({ elections: await getJSON<ElectionData>('/data/elections.json', 2 * MIN) }) },
+  // Election night: civicAPI and Open America straight from the browser, every minute (no requests outside the results window)
+  { key: 'live', every: MIN, run: async () => { const l = await loadLive(); return l ? { live: l } : {}; } },
   { key: 'milan', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('milan', 'soccer', 'all', MILAN)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'seriea', every: 30 * MIN, run: async () => ({ standings: { seriea: await soccerTable('milan', 'ita.1', MILAN, 'Serie A') } }) },
   { key: 'pats', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('pats', 'football', 'nfl', PATRIOTS)).map(e => ({ ...e, weight: 3 })) }) },
@@ -176,6 +180,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     const news: NewsItem[] = [];
     let orbit: InOrbit | undefined;
     let elections: ElectionData | undefined;
+    let results: LiveData | undefined;
     let f1: F1Data | undefined;
     let mlb: MlbData | undefined;
     let cfb: CfbData | undefined;
@@ -198,6 +203,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.news) news.push(...p.news);
       if (p.orbit) orbit = p.orbit;
       if (p.elections) elections = p.elections;
+      if (p.live) results = p.live;
       if (p.f1) f1 = p.f1;
       if (p.mlb) mlb = p.mlb;
       if (p.cfb) cfb = p.cfb;
@@ -222,6 +228,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       news: news.filter(n => (seenNews.has(n.title) ? false : (seenNews.add(n.title), true))).sort((a, b) => b.time - a.time),
       orbit,
       elections,
+      live: results,
       f1,
       mlb,
       cfb,

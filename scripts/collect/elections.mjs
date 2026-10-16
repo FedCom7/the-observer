@@ -1,136 +1,172 @@
-// US elections: Senate ratings from ten forecasters (Wikipedia), polling averages
-// and the generic ballot (FiftyPlusOne public pages). Runs unattended.
-import { decode, get, infobox, wikitext } from './lib.mjs';
+// US elections, everything automatic:
+// - On Point Politics: the 2026 forecast model (every Senate, House and governor race,
+//   chances of control, seat distributions) and its polling averages (Trump approval,
+//   generic ballot, right/wrong track, 2028), all from the site's public JSON.
+// - Silver Bulletin: the public Trump approval average and its issue breakdown
+//   (the Datawrapper charts embedded in the free pages; the models are paid and not used).
+// - civicAPI: ratings from the main forecasters (Cook, Sabato, Inside Elections, Split
+//   Ticket, Decision Desk, prediction markets) and the calendar of upcoming races.
+// Live results on election night are read by the browser (civicAPI, Open America).
+import { get, iso, zoned } from './lib.mjs';
 
 const CYCLE = 2026;
-const SCORE = { safe: 3, solid: 3, likely: 2, lean: 1, tilt: 0.5, tossup: 0, 'toss-up': 0 };
+const OP = 'https://www.onpointpolitics.us';
+const CIVIC = 'https://civicapi.org/api/v2';
+const r1 = v => (v == null ? null : Math.round(v * 10) / 10);
+const r3 = v => (v == null ? null : Math.round(v * 1000) / 1000);
 
-/** Parses the "Predictions" table of the Senate elections page: one row per seat, one cell per forecaster. */
-export async function senateRatings() {
-  const w = await wikitext(`${CYCLE} United States Senate elections`);
-  if (!w) throw new Error('Senate elections page missing');
-  const blocks = w.split(/\n\|-/).filter(b => b.includes('<!--Cook-->'));
-  const races = [];
-  for (const b of blocks) {
-    const head = b.match(/^! \[\[[^|\]]*?election in ([^|\]]+)\|([^\]]+)\]\]/m);
-    if (!head) continue;
-    const label = head[2].trim();
-    const special = /special/i.test(label) || /special/i.test(b.split('\n')[1] ?? '');
-    const incParty = /Party shading\/(Democratic|DFL)/.test(b) ? 'D' : /Party shading\/Republican/.test(b) ? 'R' : 'I';
-    const inc = b.match(/\{\{sortname\|([^|}]+)\|([^|}]+)/);
-    const retiring = /Retiring|Lost renomination|Resign/i.test(b);
-    const raters = {};
-    for (const m of b.matchAll(/<!--\s*([^>]+?)\s*-->\s*\|\s*\{\{USRaceRating\|([^|}]+)\|?([DRI])?/g)) {
-      const level = m[2].toLowerCase().replace(/\s/g, '');
-      const side = (m[3] ?? '').toUpperCase();
-      const base = SCORE[level] ?? 0;
-      raters[m[1]] = { label: level === 'tossup' || level === 'toss-up' ? 'Toss Up' : `${m[2]} ${side}`.trim(), score: side === 'R' ? -base : base };
+// ---------- On Point Politics: forecast ----------
+async function forecast() {
+  const m = await get(`${OP}/forecast/model.json`, { json: true, browser: true });
+  const chambers = {};
+  for (const [k, c] of Object.entries(m.chambers)) {
+    chambers[k] = {
+      total: c.seatsTotal, dem: r3(c.demControl), demSeats: r1(c.demSeats), gopSeats: r1(c.gopSeats),
+      p10: c.demP10, p90: c.demP90, median: c.median, hist: c.hist, trend: c.trend.map(t => ({ dem: r3(t.dem), seats: r1(t.demSeats) })),
+    };
+  }
+  chambers.senate.notUp = { D: m.meta.senNotUpD, R: m.meta.senNotUpR };
+  chambers.governor.notUp = { D: m.meta.govNotUpD, R: m.meta.govNotUpR };
+  // The model's margins are Republican minus Democrat and its probability is the Republican's;
+  // we store everything from the Democratic side (positive = Democratic lead).
+  const races = m.races
+    .filter(r => r.office !== 'house' || r.marquee || Math.abs(r.est?.margin ?? 100) < 15)
+    .map(r => ({
+      id: r.id, office: r.office, st: r.st, state: r.state, district: r.district || null, name: r.name,
+      dem: r.dem, gop: r.gop, incParty: r.inc === 1 ? 'R' : r.inc === -1 ? 'D' : null, open: r.open, marquee: r.marquee,
+      margin: r1(-r.est.margin), pDem: r3(1 - r.est.prob), lo: r1(-r.est.p90), hi: r1(-r.est.p10),
+      poll: r.pollAvg == null ? null : r1(-r.pollAvg), polls: (r.polls ?? []).length,
+      trend: (r.trend ?? []).map(t => r3(1 - t.p)),
+    }));
+  // House seats not in the list above are safe: count them by side for the seat bar
+  const safeHouse = m.races.filter(r => r.office === 'house' && !races.some(x => x.id === r.id));
+  return {
+    updated: m.meta.updated, sims: m.meta.sims, chambers, races,
+    safeHouse: { D: safeHouse.filter(r => r.est.margin < 0).length, R: safeHouse.filter(r => r.est.margin >= 0).length },
+    url: `${OP}/forecast`,
+  };
+}
+
+// ---------- On Point Politics: polling averages ----------
+const POLLS = { approval: 'trump-approval', generic: 'generic-ballot', track: 'right-wrong-track', vance: 'vance-favorability', y2028: '2028-vance-newsom' };
+
+async function polls() {
+  const out = {};
+  for (const [key, id] of Object.entries(POLLS)) {
+    try {
+      const j = await get(`${OP}/api/polls/${id}`, { json: true, browser: true });
+      const s = j.series ?? [];
+      // Daily points for the last four months, weekly before that
+      const cut = new Date(Date.now() - 120 * 86400e3).toISOString().slice(0, 10);
+      const series = s.filter((p, i) => p.date >= cut || i % 7 === 0 || i === s.length - 1).map(p => ({ d: p.date, a: p.a, b: p.b }));
+      out[key] = {
+        title: j.avg.title, a: j.avg.a, b: j.avg.b, margin: j.avg.margin, marginText: j.avg.marginText, marginDefinition: j.avg.marginDefinition,
+        updated: j.updated, n: (j.polls ?? []).length, url: j.avg.page.replace('onpointpolitics.com', 'www.onpointpolitics.us'), series,
+        latest: (j.polls ?? []).slice(0, 12).map(p => ({ pollster: p.pollster, date: p.date, n: p.sampleSize, type: p.sampleType, a: p.a, b: p.b, margin: p.margin })),
+      };
+    } catch (err) { console.error(`[elections] polls ${id}: ${err.message}`); }
+  }
+  return out;
+}
+
+// ---------- Silver Bulletin: public charts ----------
+const SB_PAGES = ['trump-approval-ratings-nate-silver-bulletin', 'generic-ballot-average-2026-nate-silver-bulletin-congress-polls'];
+
+function csv(text) {
+  const lines = text.trim().split(/\r?\n/);
+  const head = lines[0].split(',');
+  return lines.slice(1).map(l => Object.fromEntries(l.split(',').map((v, i) => [head[i], v])));
+}
+const usDate = s => { const [m, d, y] = s.split('/').map(Number); return `${y < 100 ? 2000 + y : y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`; };
+
+async function silver() {
+  const charts = new Set();
+  for (const p of SB_PAGES) {
+    const html = (await get(`https://www.natesilver.net/p/${p}`, { browser: true })).replace(/&quot;/g, '"');
+    for (const m of html.matchAll(/datawrapper\.dwcdn\.net\/([A-Za-z0-9]{5})\/(\d+)\//g)) charts.add(`${m[1]}/${m[2]}`);
+  }
+  const out = {};
+  for (const c of charts) {
+    const text = await get(`https://datawrapper.dwcdn.net/${c}/dataset.csv`, { browser: true }).catch(() => '');
+    const head = text.split('\n')[0] ?? '';
+    const rows = text ? csv(text) : [];
+    const thin = r => rows.filter((_, i) => i % 3 === 0 || i === rows.length - 1).map(r);
+    if (/^modeldate,approve_estimate/.test(head)) out.approval = { series: thin(x => ({ d: usDate(x.modeldate), a: +(+x.approve_estimate).toFixed(1), b: +(+x.disapprove_estimate).toFixed(1) })) };
+    else if (/^modeldate,immg/.test(head)) {
+      const last = rows[rows.length - 1];
+      out.issues = { date: usDate(last.modeldate), net: { Immigration: +last.immg, Economy: +last.econ, 'Trade and tariffs': +last.trade, 'Cost of living': +last.cost } };
+    } else if (/^modeldate,dem,rep/.test(head)) out.generic = { series: thin(x => ({ d: usDate(x.modeldate), a: +(+x.dem).toFixed(1), b: +(+x.rep).toFixed(1) })) };
+  }
+  for (const k of ['approval', 'generic']) if (out[k]) out[k].updated = out[k].series[out[k].series.length - 1]?.d ?? null;
+  return { ...out, url: 'https://www.natesilver.net/p/trump-approval-ratings-nate-silver-bulletin' };
+}
+
+// ---------- civicAPI: forecasters' ratings ----------
+const RATERS = { cook: 'Cook', sabato: 'Sabato', insideelections: 'Inside Elections', splitticket: 'Split Ticket', ddhq: 'Decision Desk', fiftyplusone: 'FiftyPlusOne', kalshi: 'Kalshi', polymarket: 'Polymarket' };
+
+async function raters() {
+  const out = { names: RATERS, senate: {}, governor: {}, totals: { senate: {}, governor: {} }, asOf: null };
+  for (const office of ['senate', 'governor']) {
+    for (const [id] of Object.entries(RATERS)) {
+      if (id === 'fiftyplusone' && office === 'governor') continue;
+      try {
+        const j = await get(`${CIVIC}/forecast/${office}/${CYCLE}/${id}`, { json: true });
+        out.totals[office][id] = j.totals;
+        out.asOf = j.last_updated ?? out.asOf;
+        for (const [st, v] of Object.entries(j.states ?? {})) {
+          (out[office][st] ??= {})[id] = v.rating;
+          // Markets give a percentage instead of a category
+          if (v.democrat_pct != null && /kalshi|polymarket/.test(id)) out[office][st][id] = `${Math.round(v.democrat_pct)}% D`;
+        }
+      } catch { /* this forecaster does not cover the office */ }
     }
-    const scores = Object.values(raters).map(r => r.score);
-    if (!scores.length) continue;
-    const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
-    races.push({
-      state: head[1].trim().replace(/ \(special\)/i, ''),
-      special,
-      incumbent: inc ? `${inc[1]} ${inc[2]}` : null,
-      incumbentParty: incParty,
-      open: retiring,
-      raters,
-      cook: raters.Cook?.label ?? null,
-      consensus: Math.round(avg * 100) / 100,
-      consensusLabel: label3(avg),
-    });
   }
-  const asOf = (w.match(/Cook Political Report\|Cook\]\]''<br \/>\{\{small\|([^}]+)\}\}/) ?? [])[1]?.replace(/<br \/>/g, ' ') ?? null;
-  return { races, cookAsOf: asOf };
+  return out;
 }
 
-function label3(avg) {
-  const a = Math.abs(avg), side = avg > 0 ? 'D' : 'R';
-  if (a < 0.35) return 'Toss Up';
-  if (a < 1.2) return `Lean ${side}`;
-  if (a < 2.4) return `Likely ${side}`;
-  return `Safe ${side}`;
-}
+// ---------- calendar of upcoming US elections ----------
+/** n-th weekday of a month (weekday 0 = Sunday). */
+const nthWeekday = (y, m, weekday, n) => 1 + ((weekday - new Date(Date.UTC(y, m - 1, 1)).getUTCDay() + 7) % 7) + (n - 1) * 7;
+const electionDay = y => nthWeekday(y, 11, 1, 1) + 1;
 
-const slug = s => s.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
-
-/** Candidates and polling average from a FiftyPlusOne race page (server-rendered HTML). */
-async function fpoAverage(path) {
-  const html = await get(`https://fiftyplusone.news/polls/${path}`, { browser: true });
-  const lines = [...html.matchAll(/<button class="flex (text-(?:blue|red|gray|green|purple)[\w-]*)[^"]*"[^>]*aria-label="View line for ([^"]+)"><span class="pr-1">[^<]*<\/span><br\/>\s*<span class="font-bold">([\d.]+)%<\/span>/g)]
-    .map(m => ({ name: decode(m[2]).trim(), party: m[1].includes('blue') ? 'D' : m[1].includes('red') ? 'R' : 'I', pct: +m[3] }));
-  const date = (html.match(/<span class="color-gray pr-1 uppercase">([^<]+)<\/span>/) ?? [])[1] ?? null;
-  // Only the first chart on the page is the headline average.
+async function calendar() {
+  const Y = new Date().getUTCFullYear();
+  const out = [];
+  for (let y = Y; y <= Y + 2; y++) {
+    const d = `${y}-11-${String(electionDay(y)).padStart(2, '0')}`;
+    if (y % 2 === 0) out.push({ date: d, title: y % 4 === 0 ? 'Presidential election, plus House, a third of the Senate and governors' : 'Midterm elections: House, a third of the Senate, 36 governors', kind: 'general' });
+    else out.push({ date: d, title: 'Off-year elections: Virginia and New Jersey governors, mayors, ballot measures', kind: 'offyear' });
+  }
+  // Races civicAPI already lists after today (specials, runoffs, next cycle)
+  const from = new Date(Date.now() + 86400e3).toISOString().slice(0, 10), to = `${Y + 2}-12-31`;
+  for (const q of ['US Senate', 'Governor', 'US House', 'President', 'Runoff', 'Special']) {
+    try {
+      const j = await get(`${CIVIC}/race/search?startDate=${from}&endDate=${to}&country=US&query=${encodeURIComponent(q)}&limit=100`, { json: true });
+      for (const r of j.races ?? []) {
+        if (!/US Senate|Governor|House of Representatives|President/.test(r.type) || r.type === 'Lieutenant Governor') continue;
+        out.push({ date: r.election_date.slice(0, 10), title: r.election_name, kind: /Primary/i.test(r.election_type) ? 'primary' : 'race', civicId: r.id });
+      }
+    } catch { /* keep the rules */ }
+  }
+  // Single races on a general Election Day are already covered by that day's entry
+  const general = new Set(out.filter(e => e.kind !== 'race' && e.kind !== 'primary').map(e => e.date));
   const seen = new Set();
-  const head = lines.filter(l => (seen.has(l.name) ? false : (seen.add(l.name), true))).slice(0, 3);
-  return { lines: head, asOf: date ? new Date(`${date} 12:00 UTC`).toISOString().slice(0, 10) : null, url: `https://fiftyplusone.news/polls/${path}` };
-}
-
-const num = v => (v ? Number(String(v).replace(/[^\d.]/g, '')) || null : null);
-const plain = v => (v ? v.replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').replace(/'''?|<[^>]+>|\{\{[^}]*\}\}/g, '').trim() : null);
-
-/**
- * Election-night results from each race's Wikipedia infobox (nominee, party,
- * popular vote, percentage, winner). Editors fill these within minutes of the
- * networks' calls, so this is a free, slightly delayed results feed.
- */
-export async function raceResults(r, cycle = CYCLE) {
-  const title = `${cycle} United States Senate ${r.special ? 'special ' : ''}election in ${r.state}`;
-  const w = await wikitext(title, 0);
-  if (!w) return null;
-  const sides = [];
-  for (let i = 1; i <= 4; i++) {
-    const party = infobox(w, [`party${i}`]);
-    if (!party) continue;
-    sides.push({
-      name: plain(infobox(w, [`nominee${i}`, `candidate${i}`])),
-      party: /Democratic|DFL/.test(party) ? 'D' : /Republican/.test(party) ? 'R' : 'I',
-      votes: num(infobox(w, [`popular_vote${i}`])),
-      pct: num(infobox(w, [`percentage${i}`])),
-    });
-  }
-  const winner = plain(infobox(w, ['after_election', 'elected_senator']));
-  const reporting = num(infobox(w, ['reporting']));
-  if (!sides.some(x => x.pct) && !winner) return null;
-  return { sides, winner: winner || null, reporting, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(title.replace(/ /g, '_'))}` };
+  return out.filter(e => !(e.civicId && general.has(e.date))).filter(e => (seen.has(e.title + e.date) ? false : (seen.add(e.title + e.date), true))).sort((a, b) => a.date.localeCompare(b.date));
 }
 
 export async function collectElections() {
-  const { races, cookAsOf } = await senateRatings();
-  // Battlegrounds: any race a forecaster does not call safe for one side.
-  const battle = races.filter(r => Math.abs(r.consensus) < 2.6);
-  const polled = await Promise.all(battle.map(async r => {
-    try {
-      const fpo = await fpoAverage(`senate/general/${slug(r.state)}`);
-      const d = fpo.lines.find(l => l.party === 'D') ?? fpo.lines.find(l => l.party === 'I');
-      const rep = fpo.lines.find(l => l.party === 'R');
-      return { ...r, dem: d?.name ?? null, rep: rep?.name ?? null, demPct: d?.pct ?? null, repPct: rep?.pct ?? null, margin: d && rep ? Math.round((d.pct - rep.pct) * 10) / 10 : null, pollsAsOf: fpo.asOf, pollsUrl: fpo.url };
-    } catch {
-      return { ...r, dem: null, rep: null, margin: null };
-    }
-  }));
-  // Results are only filled in from election night on; before that every call returns null.
-  for (const r of polled) r.results = await raceResults(r).catch(() => null);
-
-  let generic = null;
-  try {
-    const g = await fpoAverage('generic-ballot/generic-ballot');
-    const d = g.lines.find(l => l.party === 'D'), rep = g.lines.find(l => l.party === 'R');
-    if (d && rep) generic = { dem: d.pct, rep: rep.pct, margin: Math.round((d.pct - rep.pct) * 10) / 10, asOf: g.asOf, source: 'FiftyPlusOne', url: g.url };
-  } catch { /* keep null */ }
-
-  // Senate seats not up this cycle, from the same table's totals are not exposed, so derive:
-  // current composition = 47 D (incl. independents) / 53 R at the start of the cycle.
-  const current = { D: 47, R: 53 };
+  const status = {};
+  const step = async (name, fn) => { try { const v = await fn(); status[name] = 'ok'; return v; } catch (err) { status[name] = `failed: ${err.message.slice(0, 80)}`; return null; } };
+  const [model, avg, sb, ratings, cal] = await Promise.all([step('onpoint-model', forecast), step('onpoint-polls', polls), step('silver-bulletin', silver), step('civicapi-ratings', raters), step('calendar', calendar)]);
+  if (!model && !avg) throw new Error(`no data: ${JSON.stringify(status)}`);
+  const day = electionDay(CYCLE);
   return {
     cycle: CYCLE,
+    electionDay: iso(zoned(CYCLE, 11, day, 6, 0, 'America/New_York')),
     updated: new Date().toISOString(),
-    ratingsSource: { name: 'Wikipedia forecast table (Cook, Sabato, Inside Elections, Economist and others)', asOf: cookAsOf, url: `https://en.wikipedia.org/wiki/${CYCLE}_United_States_Senate_elections#Predictions` },
-    pollsSource: { name: 'FiftyPlusOne polling averages', url: 'https://fiftyplusone.news/polls/senate/general/georgia' },
-    senate: { current, majority: 51 },
-    generic,
-    races,
-    battlegrounds: polled.sort((a, b) => (b.margin ?? b.consensus) - (a.margin ?? a.consensus)),
+    status,
+    senate: { current: { D: 47, R: 53 }, majority: 51 },
+    house: { majority: 218 },
+    model, polls: avg, silver: sb, ratings, calendar: cal,
   };
 }

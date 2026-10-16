@@ -29,7 +29,8 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 | NBA with Lakers focus, standings, playoff bracket | ESPN | live |
 | F1: every session, live order, standings with points per round | ESPN | live |
 | ISS position and day-night line | wheretheiss.at | live |
-| US elections: ratings (10 forecasters), polls, generic ballot, election-night results | Wikipedia, FiftyPlusOne | collector `elections` |
+| US elections: forecast model, polling averages, forecasters' ratings, calendar | On Point Politics (public JSON), Silver Bulletin (public charts), civicAPI | collector `elections` |
+| US elections: live results, calls, county maps, official state counts | civicAPI, Open America | browser, every minute on election night |
 | WEC and Le Mans: session times, official classifications, championships | fiawec.com (JSON-LD), Al Kamel Systems (CSV), Wikipedia | collector `wec` |
 | Alpine skiing: races with run times, World Championships, results, Cup standings | FIS website | collector `ski` |
 | Royal Family: state visits and trips, ceremonial year, galas, press notices, alerts | Wikipedia lists, rules, The Royal Watcher, Google News | collector `royal` |
@@ -60,7 +61,7 @@ Static hosting on Firebase Hosting (free Spark plan). `firebase.json` is ready. 
 ## Known limits
 
 - ESPN's public API is unofficial and can change without notice. It also rejects headless browsers, so automated screenshots need a normal user agent.
-- Scrapers depend on page layouts (FiftyPlusOne, ASO sites, Wikipedia tables). When one breaks, its previous file stays in place and the collector report says FAILED.
+- Scrapers depend on page layouts (ASO sites, Wikipedia tables, Silver Bulletin's Datawrapper embeds). When one breaks, its previous file stays in place and the collector report says FAILED.
 - ProCyclingStats, FirstCycling and royal.uk block automated requests (Cloudflare); we do not bypass them. Cycling and the Royals rely on official sites, the UCI calendar API, Wikipedia, rules and news. Giro stage times are approximate (the organiser publishes them as an image).
 - Launch Library allows 15 requests per hour: the space collector makes one pass per hour and backs off for 20 minutes after a refusal.
 - Some times are not published in advance (FIS run times until a few days before, Dakar stage starts, Apple store openings). The app shows the usual time with "≈" and replaces it when the source publishes it.

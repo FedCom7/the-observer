@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-16T16:46:35.598Z",
- "llAt": "2026-10-16T16:46:35.598Z",
+ "updated": "2026-10-16T19:46:36.059Z",
+ "llAt": "2026-10-16T19:46:36.059Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -874,15 +874,6 @@
  ],
  "events": [
   {
-   "id": 1563,
-   "name": "SpaceX Crew-12 Post-Flight News Conference",
-   "type": "Press Event",
-   "date": "2026-10-15T19:30:00Z",
-   "description": "After more than seven months aboard the International Space Station, NASA’s SpaceX Crew-12 mission safely splashed down in the Pacific Ocean off the coast of Los Angeles. The crew members will discuss their science mission during a news conference at the agency’s Johnson Space Center in Houston.\r\n\r\nNASA astronauts Jessica Meir and Jack Hathaway, ESA (European Space Agency) astronaut Sophie Adenot, and Roscosmos cosmonaut Andrey Fedyaev will answer questions about their mission.",
-   "location": "Johnson Space Center, Houston, TX, USA",
-   "webcast": false
-  },
-  {
    "id": 1568,
    "name": "US EVA-100/101 Preview News Conference",
    "type": "Press Event",
@@ -952,6 +943,15 @@
    "date": "2026-12-31T00:00:00Z",
    "description": "NASA TV will livestream the rendezvous and capture of Sierra Nevada Corporation's Dream Chaser cargo craft to the International Space Station.",
    "location": "International Space Station",
+   "webcast": false
+  },
+  {
+   "id": 364,
+   "name": "SNC-1 Dream Chaser Landing",
+   "type": "Spacecraft Landing",
+   "date": "2026-12-31T02:00:00Z",
+   "description": "The Sierra Nevada Corporation SNC-1 Dream Chaser will land autonomously at the Launch and Landing Facility of Kennedy Space Center.",
+   "location": "Kennedy Space Center, FL, USA",
    "webcast": false
   }
  ],
@@ -1055,6 +1055,12 @@
  ],
  "news": [
   {
+   "title": "Crew Unpacks Dragon and Begins Activating New Science Experiments",
+   "source": "NASA · Space Station blog",
+   "time": "2026-10-16T17:15:06.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/16/crew-unpacks-dragon-and-begins-activating-new-science-experiments/"
+  },
+  {
    "title": "Artemis II Heat Shield After Splashdown",
    "source": "NASA · Artemis",
    "time": "2026-10-16T16:28:01.000Z",
@@ -1149,12 +1155,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-10-09T17:01:31.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/09/cygnus-xl-cargo-spacecraft-released-from-station-by-canadarm2/"
-  },
-  {
-   "title": "Cygnus XL Cargo Spacecraft Departing Station Soon on NASA+",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-09T16:35:40.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/09/cygnus-xl-cargo-spacecraft-departing-station-soon-on-nasa/"
   },
   {
    "title": "NASA’s SpaceX Crew-12 Dragon Splashes Down at 11:34 a.m. EDT",

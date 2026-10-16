@@ -6,8 +6,9 @@ import { useData } from '../core/store';
 import { DAY, HOUR, countdown, dayShort, hhmm, hhmmss } from '../core/time';
 import type { CatId, ObsEvent, PassionId, Standing } from '../core/types';
 import { MarginDots } from '../components/charts';
-import { ElectionNight, hasResults, isElectionNight } from '../components/ElectionNight';
-import { FIRST_CLOSE, fmtMargin, senateIfPollsHold } from '../core/elections';
+import { ElectionNight, hasResults, isElectionNight, joinLive } from '../components/ElectionNight';
+import { tally } from '../sources/electionsLive';
+import { FIRST_CLOSE, STATE_NAME } from '../core/elections';
 
 const CLOCKS: [string, string, boolean?][] = [
   ['ROME', 'Europe/Rome', true], ['LONDON', 'Europe/London'], ['NEW YORK', 'America/New_York'],
@@ -172,30 +173,44 @@ function LiveBoard({ open }: { open: (p: PassionId) => void }) {
 const ROOM_TOKENS = { ink: 'var(--ink)', ink2: 'var(--ink-2)', ink3: 'var(--ink-3)', grid: 'var(--grid)', dem: 'var(--dem)', rep: 'var(--rep)', surface: 'var(--panel)' };
 
 function Elections({ open }: { open: (p: PassionId) => void }) {
-  const { now, elections: e } = useData();
-  const sen = e ? senateIfPollsHold(e) : null;
-  const races = (e?.battlegrounds ?? []).filter(r => r.dem && r.rep && r.margin != null);
+  const { now, elections: e, live } = useData();
+  const c = e?.model?.chambers;
+  const gb = e?.polls?.generic, ap = e?.polls?.approval;
+  const night = isElectionNight(now) || hasResults(live);
+  const senate = (e?.model?.races ?? []).filter(r => r.office === 'senate');
+  const close = senate.filter(r => Math.abs(r.margin) < 8).sort((a, b) => b.margin - a.margin);
+  const called = live ? { D: (c?.senate.notUp?.D ?? 34) + tally(live.senate).D + tally(live.senate).I, R: (c?.senate.notUp?.R ?? 31) + tally(live.senate).R } : null;
   return (
     <section className="panel elex" data-p="elez" onClick={() => open('elez')}>
       <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: 'var(--c-pol)' }} />Midterms 2026<span className="meta">{e ? `auto ${hhmm(Date.parse(e.updated))} · ` : ''}open ›</span></div>
       <div className="elex-body">
         <div className="big-row">
           <div><div className="k">First polls close</div><div className="v">{now < FIRST_CLOSE ? `T-${countdown(FIRST_CLOSE - now)}` : 'Results night'}</div></div>
-          <div style={{ textAlign: 'right' }}><div className="k">Generic ballot</div><div className="v" style={{ color: (e?.generic?.margin ?? 0) >= 0 ? 'var(--dem)' : 'var(--rep)' }}>{e?.generic ? fmtMargin(e.generic.margin) : '–'}</div></div>
+          <div style={{ textAlign: 'right' }}><div className="k">Generic ballot · approval</div><div className="v"><span style={{ color: (gb?.margin ?? 0) >= 0 ? 'var(--dem)' : 'var(--rep)' }}>{gb?.marginText ?? '–'}</span> <span style={{ color: 'var(--ink-3)', fontSize: '0.7em' }}>{ap ? `Trump ${ap.marginText}` : ''}</span></div></div>
         </div>
-        {sen && e && (
+        {night && called ? (
           <div>
-            <div className="big-row"><div className="k">Senate if polls hold</div><div className="k">now {e.senate.current.D}–{e.senate.current.R}</div></div>
-            <div className="prob" style={{ marginTop: 6 }}><div style={{ flex: sen.D, background: 'var(--dem)' }} /><div style={{ flex: sen.R, background: 'var(--rep)' }} /></div>
-            <div className="prob-lab"><span>DEM {sen.D}</span><span>51 for control</span><span>REP {sen.R}</span></div>
+            <div className="big-row"><div className="k" style={{ color: 'var(--signal)' }}>● Senate seats called</div><div className="k">51 for control</div></div>
+            <div className="prob" style={{ marginTop: 6 }}><div style={{ flex: called.D, background: 'var(--dem)' }} /><div style={{ flex: Math.max(0, 100 - called.D - called.R), background: 'var(--grid)' }} /><div style={{ flex: called.R, background: 'var(--rep)' }} /></div>
+            <div className="prob-lab"><span>DEM {called.D}</span><span>{100 - called.D - called.R} open</span><span>REP {called.R}</span></div>
+          </div>
+        ) : c && (
+          <div>
+            <div className="big-row"><div className="k">Chance of control · On Point</div><div className="k">D / R</div></div>
+            {(['senate', 'house'] as const).map(k => (
+              <div key={k} style={{ marginTop: 6 }}>
+                <div className="prob"><div style={{ flex: c[k].dem, background: 'var(--dem)' }} /><div style={{ flex: 1 - c[k].dem, background: 'var(--rep)' }} /></div>
+                <div className="prob-lab"><span>{k.toUpperCase()} D {Math.round(c[k].dem * 100)}%</span><span>avg {Math.round(c[k].demSeats)}–{Math.round(c[k].total - c[k].demSeats)}</span><span>R {Math.round((1 - c[k].dem) * 100)}%</span></div>
+              </div>
+            ))}
           </div>
         )}
-        {e && (isElectionNight(now) || hasResults(e.battlegrounds)) ? (
-          <div className="races"><div className="big-row"><div className="k" style={{ color: 'var(--signal)' }}>● Results · Senate battlegrounds</div></div>
-            <ElectionNight races={e.battlegrounds} now={now} variant="room" />
+        {night ? (
+          <div className="races"><div className="big-row"><div className="k" style={{ color: 'var(--signal)' }}>● Results · closest Senate races</div></div>
+            <ElectionNight rows={joinLive(close, live?.senate)} now={now} variant="room" />
           </div>
-        ) : <div className="races"><div className="big-row"><div className="k">Senate battlegrounds · polling margin</div></div>
-          {races.length ? <MarginDots races={races.map(r => ({ state: r.state, seat: r.incumbentParty, margin: r.margin ?? null, dem: r.dem ?? undefined, rep: r.rep ?? undefined, rating: r.consensusLabel }))} tokens={ROOM_TOKENS} compact /> : <div className="foot" style={{ padding: 0 }}>Loading…</div>}
+        ) : <div className="races"><div className="big-row"><div className="k">Closest Senate races · projected margin</div></div>
+          {close.length ? <MarginDots races={close.map(r => ({ state: STATE_NAME[r.st], seat: r.incParty ?? 'open', margin: r.margin, dem: r.dem, rep: r.gop, rating: `${Math.round(r.pDem * 100)}% D` }))} tokens={ROOM_TOKENS} compact /> : <div className="foot" style={{ padding: 0 }}>Loading…</div>}
         </div>}
       </div>
     </section>
