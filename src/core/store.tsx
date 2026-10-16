@@ -5,6 +5,7 @@ import { cfbData, type CfbData } from '../sources/cfb';
 import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
+import { nbaData, type NbaData } from '../sources/nba';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
 import type { ElectionData } from './elections';
 import { getJSON } from './fetcher';
@@ -25,6 +26,7 @@ interface Data {
   cfb?: CfbData;
   wec?: WecData;
   royal?: RoyalData;
+  nba?: NbaData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -76,6 +78,7 @@ const SOURCES: Source[] = [
   { key: 'mlbdata', every: 10 * MIN, run: async () => { const m = await mlbData(); return { mlb: m, events: m.postseasonEvents }; } },
   { key: 'dodgers', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('mlb', 'baseball', 'mlb', '19')).map(e => ({ ...e, weight: 3 as const })) }) },
   { key: 'nba', every: 15 * MIN, run: async () => ({ events: (await scoreboard('nba', 'basketball', 'nba')).map(e => ({ ...e, weight: 1 })) }) },
+  { key: 'nbadata', every: 10 * MIN, run: async () => { const n = await nbaData(); return { nba: n, events: n.events }; } },
   { key: 'f1', every: 6 * HOUR, run: async () => ({ events: await f1Calendar() }) },
   { key: 'f1last', every: 30 * MIN, run: async () => { const r = await f1LastRace(); return { events: r ? [r] : [] }; } },
   { key: 'f1live', every: 60e3, run: async () => ({ f1Sessions: await f1Sessions() }) },
@@ -90,6 +93,9 @@ const SOURCES: Source[] = [
         espnNews('milan', 'soccer/ita.1/news?limit=20', h => /milan|rossoneri|allegri|serie a/i.test(h)),
         espnNews('texas', `football/college-football/news?team=${TEXAS}&limit=6`),
         espnNews('mlb', 'baseball/mlb/news?limit=5'),
+        espnNews('mlb', 'baseball/mlb/news?team=19&limit=5'),
+        espnNews('nba', 'basketball/nba/news?limit=5'),
+        espnNews('nba', 'basketball/nba/news?team=13&limit=6'),
         espnNews('f1', 'racing/f1/news?limit=8'),
         spaceNews(),
       ]);
@@ -156,6 +162,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let cfb: CfbData | undefined;
     let wec: WecData | undefined;
     let royal: RoyalData | undefined;
+    let nba: NbaData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -171,6 +178,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.cfb) cfb = p.cfb;
       if (p.wec) wec = p.wec;
       if (p.royal) royal = p.royal;
+      if (p.nba) nba = p.nba;
     });
     f1s?.forEach(sess => {
       const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
@@ -194,6 +202,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       cfb,
       wec,
       royal,
+      nba,
     };
   }, [bySource, live]);
 

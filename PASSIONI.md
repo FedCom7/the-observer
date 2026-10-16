@@ -20,7 +20,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ✅ |
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ✅ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | 🟨 |
-| 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ⬜ |
+| 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ✅ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ⬜ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ⬜ |
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
@@ -115,7 +115,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## NBA ⬜
+## NBA ✅
 **Prossimo:** inizio stagione regolare, ~20–21 ottobre
 
 **Cosa mi interessa:**
@@ -125,6 +125,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 **Piano fonti:**
 - ESPN: classifiche di conference, calendario e risultati dei Lakers, diretta, tabellone dei playoff, notizie.
 - Pagina focus: andamento dei Lakers, classifica di conference con la zona play-in e playoff, tabellone, Finals in evidenza.
+
+**Fatto (16 ottobre):** solo ESPN.
+- **Calendario:** tutte le partite dei Lakers della stagione regolare (incluse quelle della NBA Cup) e, da aprile, tutte quelle di play-in, playoff e Finals.
+- **Pagina:** prossima partita dei Lakers con il conto alla rovescia (o il punteggio in diretta), il loro record e seed, i campioni in carica, le partite in diretta, il grafico NYT delle "partite sopra il 50%" dei Lakers, le classifiche di conference colorate per zona (1–6 playoff, 7–10 play-in), il tabellone dei playoff, il calendario e le notizie.
+- **Prima dell'inizio della stagione:** la pagina mostra il tabellone e le classifiche 2025–26 (campioni i Knicks, 4–1 sugli Spurs; Lakers eliminati da OKC). Il tabellone della stagione in corso compare da aprile.
 
 ---
 
