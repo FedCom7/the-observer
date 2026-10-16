@@ -24,24 +24,23 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 |---|---|---|
 | Milan (all competitions), Serie A table | ESPN | live |
 | NFL, Patriots, AFC East | ESPN | live |
-| College football, Texas, AP Top 25 | ESPN | live |
-| MLB, NBA | ESPN | live |
-| F1 calendar, results, standings | Jolpica (Ergast) | live |
-| F1 live session order (practice, qualifying, race) | ESPN racing scoreboard, every minute | live |
-| Human spaceflight, people in orbit, ISS position | Launch Library 2, Spaceflight News, wheretheiss.at | live |
-| US elections: ratings from 10 forecasters | Wikipedia forecast table | collector |
-| US elections: Senate polling averages, generic ballot | FiftyPlusOne public pages | collector |
-| Election Day | Rule: Tuesday after the first Monday of November | collector |
-| Election night results (vote share, winner) | Each race's Wikipedia infobox, every 5 minutes on 3-4 November | collector |
-| Tennis Grand Slams | WTA tournament API | collector |
-| Alpine skiing World Cup | Wikipedia season page | collector |
-| WEC and Le Mans | Wikipedia season pages | collector |
-| Dakar, Tour de France, Vuelta | Countdown on the official ASO sites | collector |
-| Giro, Oscars, Golden Globes, BAFTA, Critics' Choice, America's Cup, Super Bowl | Wikipedia edition pages, or the list of ceremonies when the edition page is not written yet | collector |
-| Royal Family | State visits made and received (Wikipedia lists) and fixed fixtures (Remembrance, Christmas, Commonwealth Day) | collector |
-| Apple keynotes | apple.com/apple-events | collector |
-| Cycling World Tour, with winners | Wikipedia season pages | collector |
-| News for every passion without an ESPN feed | RSS (Apple Newsroom, Guardian, BBC, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches (Dakar, America's Cup, WEC, spaceflight) | collector |
+| College football: Texas, AP poll and history, all bowls and CFP games | ESPN (site and core APIs) | live |
+| MLB with Dodgers focus, postseason bracket | ESPN | live |
+| NBA with Lakers focus, standings, playoff bracket | ESPN | live |
+| F1: every session, live order, standings with points per round | ESPN | live |
+| ISS position and day-night line | wheretheiss.at | live |
+| US elections: ratings (10 forecasters), polls, generic ballot, election-night results | Wikipedia, FiftyPlusOne | collector `elections` |
+| WEC and Le Mans: session times, official classifications, championships | fiawec.com (JSON-LD), Al Kamel Systems (CSV), Wikipedia | collector `wec` |
+| Alpine skiing: races with run times, World Championships, results, Cup standings | FIS website | collector `ski` |
+| Royal Family: state visits and trips, ceremonial year, galas, press notices, alerts | Wikipedia lists, rules, The Royal Watcher, Google News | collector `royal` |
+| Human spaceflight: crewed, Starship and Artemis launches, station events, crew in orbit | Launch Library 2 (max one pass per hour), NASA RSS and blogs | collector `space` |
+| Dakar: stage-by-stage route, stage and general rankings by category | dakar.com (route page, rankings JSON) | collector `dakar` |
+| Apple: keynotes, pre-order and in-store dates | apple.com/apple-events, Apple Newsroom press releases | collector `apple` |
+| America's Cup: regattas, standings, points and time of every race | americascup.com results feeds | collector `ac` |
+| Tennis Slams, Tour de France and Vuelta starts, World Tour cycling, awards, Super Bowl, Election Day | WTA API, ASO sites, Wikipedia, rules | collector `calendar` |
+| News for passions without an ESPN feed | RSS (Guardian, BBC, Royal Central, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches | collector `news` |
+
+Passion by passion, with what each page shows: [PASSIONI.md](PASSIONI.md).
 
 Run the collectors by hand with `npm run collect` (or `npm run collect -- elections`).
 
@@ -50,7 +49,8 @@ Times come out in Rome time. When a source gives only the day, the app shows the
 ## Adding a passion
 
 1. Add it to `PASSIONS` in `src/core/passions.ts` (id, name, category, season intensity by month).
-2. Feed it events: an ESPN team schedule or scoreboard in `SOURCES` (`src/core/store.tsx`), a new adapter in `src/sources/`, or entries in `src/data/curated.json`.
+2. Feed it events: an ESPN team schedule or scoreboard in `SOURCES` (`src/core/store.tsx`), a browser adapter in `src/sources/`, or a collector in `scripts/collect/` that writes `public/data/<name>.json`.
+3. Give it a page in `src/views/` and route it in `src/views/PassionSheet.tsx`.
 
 ## Deploy
 
@@ -60,4 +60,6 @@ Static hosting on Firebase Hosting (free Spark plan). `firebase.json` is ready. 
 
 - ESPN's public API is unofficial and can change without notice. It also rejects headless browsers, so automated screenshots need a normal user agent.
 - Scrapers depend on page layouts (FiftyPlusOne, ASO sites, Wikipedia tables). When one breaks, its previous file stays in place and the collector report says FAILED.
-- ProCyclingStats, FirstCycling and royal.uk block automated requests, so cycling and the Royals rely on Wikipedia, the ASO sites, rules and news feeds.
+- ProCyclingStats, FirstCycling and royal.uk block automated requests (Cloudflare); we do not bypass them. Cycling and the Royals rely on Wikipedia, official sites, rules and news.
+- Launch Library allows 15 requests per hour: the space collector makes one pass per hour and backs off for 20 minutes after a refusal.
+- Some times are not published in advance (FIS run times until a few days before, Dakar stage starts, Apple store openings). The app shows the usual time with "≈" and replaces it when the source publishes it.
