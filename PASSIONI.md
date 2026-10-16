@@ -105,6 +105,12 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Annunciati dalla stampa:** visite riportate in anticipo dai giornali (es. "King Charles and Queen Camilla to visit South Wales next week"), con link all'articolo.
 - **Pagina:** prossimo impegno, chi è all'estero ora, prossima grande occasione, cronologia dei viaggi per persona, agenda per mese, regole del calendario, notizie (Guardian, BBC, Royal Central).
 
+**Blog verificati (16 ottobre):**
+- **The Royal Watcher:** il calendario del blog elenca grandi eventi di gala (visite di Stato, banchetti, matrimoni) con data, chi partecipa e link. È aggiunto, solo le voci britanniche, senza doppioni rispetto a Wikipedia.
+- **Unofficial Royalty:** rassegna stampa quotidiana, utile da leggere ma non è un calendario.
+- **The Crown Chronicles:** la rubrica "Royal diary" settimanale è ferma da anni.
+- **everydayexceptional.royal.uk:** sottodominio ufficiale con lo stesso diario, protetto come royal.uk.
+
 **Limite:** gli impegni minori in patria con orario esatto stanno solo su royal.uk ("Future engagements"), che blocca esplicitamente i programmi automatici. Non la aggiriamo. Gli eventi straordinari (matrimoni, funerali) entrano come avviso; data e ora arrivano dalle notizie, non da un calendario.
 
 ---

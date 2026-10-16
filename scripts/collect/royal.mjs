@@ -57,6 +57,34 @@ async function travel() {
   return [...seen.values()];
 }
 
+// ---------- The Royal Watcher calendar (fan blog listing galas, state visits, weddings) ----------
+const BRITISH = /British|United Kingdom|King Charles|Queen Camilla|Prince of Wales|Princess of Wales|Princess Royal|Duke of Edinburgh|Duchess of Edinburgh/i;
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+export async function royalWatcher() {
+  const html = await get('https://royalwatcherblog.com/calendar/', { browser: true });
+  const body = html.slice(html.indexOf('entry-content'), html.indexOf('Not every event'));
+  const out = [];
+  let year = Y;
+  // Walk headings (month or "Later in 2026") and entries (bold title + list: who, dates, details link)
+  for (const m of body.matchAll(/<h3[\s\S]*?<\/h3>|<p[^>]*>\s*<(?:strong|b)>([^<]+)<\/(?:strong|b)>\s*<\/p>\s*<ul[^>]*>([\s\S]*?)<\/ul>/g)) {
+    if (m[0].startsWith('<h3')) { const y = m[0].match(/20\d\d/); if (y) year = Number(y[0]); continue; }
+    const title = m[1].replace(/\*$/, '').replace(/&#8217;/g, "'").trim();
+    const items = [...m[2].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map(x => x[1]);
+    const who = (items[0] ?? '').replace(/<[^>]+>/g, '').trim();
+    const dates = (items[1] ?? '').replace(/<[^>]+>/g, '').trim();
+    const link = (m[2].match(/href="([^"]+)"/) ?? [])[1];
+    if (!BRITISH.test(`${title} ${who}`) || /delayed|postponed|cancel/i.test(dates)) continue;
+    const dm = dates.match(new RegExp(`(${MONTHS.join('|')})\\s+(\\d{1,2})`));
+    if (!dm) continue;
+    const start = zoned(year, MONTHS.indexOf(dm[1]) + 1, Number(dm[2]), 10, 0, LONDON);
+    if (start < Date.now() - 2 * DAY) continue;
+    out.push({ id: `royal:rw:${title}`, passion: 'royal', who: 'The Royal Family', kind: /state visit/i.test(title) ? (/to the United Kingdom/i.test(title) ? 'state-visit-in' : 'state-visit') : 'ceremony',
+      title: `${title}${/tiara/i.test(html) && m[1].includes('*') ? ' (white tie)' : ''}`, start: iso(start), approxTime: true, weight: 2, link, source: 'The Royal Watcher calendar' });
+  }
+  return out;
+}
+
 // ---------- The ceremonial year (rules) ----------
 const nthWeekday = (y, m, weekday, n) => 1 + ((weekday - new Date(Date.UTC(y, m - 1, 1)).getUTCDay() + 7) % 7) + (n - 1) * 7;
 
@@ -125,7 +153,10 @@ async function pressAnnouncements() {
 }
 
 export async function collectRoyal() {
-  const [trips, al, press] = await Promise.all([travel().catch(() => []), alerts().catch(() => []), pressAnnouncements().catch(() => [])]);
-  const events = [...trips, ...ceremonies()].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  const [trips, al, press, rw] = await Promise.all([travel().catch(() => []), alerts().catch(() => []), pressAnnouncements().catch(() => []), royalWatcher().catch(() => [])]);
+  // The blog repeats state visits already known from Wikipedia: keep its entry only when the day is new.
+  const days = new Set(trips.map(e => e.start.slice(0, 10)));
+  const extra = rw.filter(e => !days.has(e.start.slice(0, 10)));
+  const events = [...trips, ...extra, ...ceremonies()].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
   return { updated: new Date().toISOString(), events, alerts: al, press };
 }
