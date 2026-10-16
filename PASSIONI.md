@@ -23,7 +23,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ✅ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ✅ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ✅ |
-| 8 | Spazio | Lanci continui; Artemis | ⬜ |
+| 8 | Spazio | Lanci continui; Artemis | ✅ |
 | 9 | Dakar | 1–15 gennaio | ✅ |
 | 10 | Apple | Prossimo keynote non ancora annunciato | ✅ |
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ✅ |
@@ -175,7 +175,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Missioni umane nello spazio ⬜
+## Missioni umane nello spazio ✅
 **Prossimo:** lanci con equipaggio e voli di Starship secondo Launch Library
 
 **Cosa mi interessa:**
@@ -188,6 +188,13 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - Feed RSS e blog NASA: notizie, Artemis, blog della ISS.
 - SpaceX: aggiornamenti su Starship.
 - Pagina focus: conto alla rovescia del prossimo lancio, chi è in orbita e da quanti giorni, timeline del programma Artemis.
+
+**Fatto (16 ottobre):** raccoglitore `scripts/collect/space.mjs` (Launch Library spostata dal browser al server).
+- **Lanci:** con equipaggio, Starship e Artemis, con orario o precisione dichiarata ("Month", "Quarter 4": segnati TBC) e stato (Go, TBD…). Entrano in calendario.
+- **Stazioni:** eventi in programma (attracchi, passeggiate spaziali, ammaraggi) e persone in orbita con i giorni trascorsi nel volo attuale (Starman, il manichino di SpaceX, escluso).
+- **Notizie ufficiali NASA:** blog Space Station, Artemis, Commercial Crew e comunicati stampa.
+- **Pagina:** prossimo lancio, chi è in orbita (ISS e Tiangong), prossima operazione sulle stazioni, elenco dei lanci, timeline del programma Artemis (da Artemis I ad Artemis VII), storico dei voli Starship (successo, parziale, fallimento), equipaggio, notizie NASA.
+- **Limite:** Launch Library consente 15 richieste l'ora. Il raccoglitore fa un solo passaggio orario e dopo un rifiuto si ferma 20 minuti; nel frattempo mostra gli ultimi dati validi.
 
 ---
 

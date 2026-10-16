@@ -22,6 +22,8 @@ export function SpacePage() {
   const nextStarship = upcoming.find(l => l.starship);
   const next = upcoming[0];
   const events = (space.events ?? []).filter(e => Date.parse(e.date) > now - 3 * 3600e3);
+  // Operations first (docking, spacewalk, splashdown); press conferences only in the list
+  const ops = events.filter(e => !/press|conference|briefing/i.test(`${e.type} ${e.name}`));
   const people = space.people ?? [];
   const onIss = people.filter(p => !/CNSA|CMSA/.test(p.agency));
   const onTiangong = people.filter(p => /CNSA|CMSA/.test(p.agency));
@@ -53,11 +55,11 @@ export function SpacePage() {
         </div>
         <div className="ocard">
           <div className="lab">Next at the stations</div>
-          {events[0] ? (
+          {ops[0] ? (
             <>
-              <h3 style={{ margin: 0, fontSize: 18 }}>{events[0].name}</h3>
-              <div className="when">{events[0].type} · {dayLong(Date.parse(events[0].date))} · {hhmm(Date.parse(events[0].date))} Rome</div>
-              <div className="s-cd" style={{ fontSize: 30 }}>{countdown(Date.parse(events[0].date) - now)}</div>
+              <h3 style={{ margin: 0, fontSize: 18 }}>{ops[0].name}</h3>
+              <div className="when">{ops[0].type} · {dayLong(Date.parse(ops[0].date))} · {hhmm(Date.parse(ops[0].date))} Rome</div>
+              <div className="s-cd" style={{ fontSize: 30 }}>{countdown(Date.parse(ops[0].date) - now)}</div>
             </>
           ) : <div>No docking, spacewalk or splashdown scheduled.</div>}
         </div>

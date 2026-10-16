@@ -79,7 +79,9 @@ export async function collectSpace() {
   });
   const artemis = await section('artemis', async () => {
     const [up, past] = [await ll('/launches/upcoming/?search=Artemis&limit=5&mode=normal'), await ll('/launches/previous/?search=Artemis&limit=5&mode=normal')];
-    return [...past.results.map(l => launch(l, true)).reverse(), ...up.results.map(l => launch(l))];
+    // Only NASA's crewed lunar programme ("Artemis I", "Artemis II", ...), not satellites sharing the name
+    const isProgramme = l => /^Artemis [IVX]+\b/.test(l.mission);
+    return [...past.results.map(l => launch(l, true)).reverse(), ...up.results.map(l => launch(l))].filter(isProgramme);
   });
   const recentCrewed = await section('recentCrewed', async () => (await ll('/launches/previous/?is_crewed=true&limit=5&mode=normal')).results.map(l => launch(l, true)));
   const events = await section('events', async () => (await ll('/events/upcoming/?limit=15&mode=normal')).results
@@ -87,7 +89,8 @@ export async function collectSpace() {
     .map(e => ({ id: e.id, name: e.name, type: e.type?.name ?? '', date: e.date, description: e.description ?? '', location: e.location ?? '', webcast: e.webcast_live ?? false })));
   const people = await section('people', async () => {
     const j = await ll('/astronauts/?in_space=true&limit=40&mode=normal');
-    return j.results.map(a => ({
+    // Launch Library lists SpaceX's mannequin "Starman" as being in space: leave him out
+    return j.results.filter(a => !/^starman$/i.test(a.name)).map(a => ({
       name: a.name, agency: a.agency?.abbrev ?? '', nationality: a.nationality?.[0]?.nationality_name ?? '',
       lastFlight: a.last_flight, timeInSpace: a.time_in_space, image: a.image?.thumbnail_url ?? null,
     }));
