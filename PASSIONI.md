@@ -17,7 +17,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | Step | Passione | Perché adesso | Stato |
 |---|---|---|---|
 | 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ✅ |
-| 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ⬜ |
+| 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ✅ |
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ⬜ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | ⬜ |
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ⬜ |
@@ -46,7 +46,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## College Football ⬜
+## College Football ✅
 **Prossimo:** Week 8, sabato 17 ottobre · College Football Playoff e bowl a dicembre e gennaio
 
 **Cosa mi interessa:**
@@ -56,6 +56,8 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 **Piano fonti:**
 - ESPN: calendario di postseason (bowl e playoff con date, orari ed emittenti), AP Top 25 e ranking del CFP, tabellone dei playoff, risultati in diretta.
 - Pagina focus: tabellone a 12 squadre, calendario dei bowl, andamento del ranking settimana per settimana.
+
+**Fatto (16 ottobre):** in calendario tutte le 47 partite di postseason con orario reale: 36 bowl e le 11 del College Football Playoff (primo turno 19–20 dicembre, quarti a Fiesta, Cotton, Rose e Peach Bowl, semifinali a Orange e Sugar Bowl, finale a Las Vegas il 26 gennaio alle 01:30). Gli orari non ancora fissati sono segnati TBC. In calendario anche gli scontri della settimana tra squadre del Top 25. La pagina ha il tabellone a 12 squadre (si riempie dopo il Selection Sunday), il grafico in stile NYT dell'andamento del ranking AP (prime 10 più Texas), la classifica AP (e quella del comitato CFP da novembre), Texas in evidenza e notizie. Fonte: solo ESPN (anche l'API core per lo storico dei ranking).
 
 ---
 

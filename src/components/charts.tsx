@@ -238,3 +238,54 @@ export function TrendLine({ points, color, unit, notes = [] }: { points: TrendPo
     </div>
   );
 }
+
+export interface BumpSeries { id: string; name: string; ranks: (number | null)[]; color?: string }
+
+/**
+ * Rank over time (1 at the top), NYT bump-chart style: highlighted teams in
+ * color, the rest in grey, labels at the right edge. Hover a line to isolate it.
+ */
+export function BumpChart({ weeks, series, maxRank = 25 }: { weeks: number[]; series: BumpSeries[]; maxRank?: number }) {
+  const [ref, W] = useWidth<HTMLDivElement>();
+  const [hot, setHot] = useState<string | null>(null);
+  const H = Math.max(240, maxRank * 16), l = 30, r = 130, t = 12, b = 24;
+  const x = (i: number) => l + (i / Math.max(1, weeks.length - 1)) * (W - l - r);
+  const y = (rank: number) => t + ((rank - 1) / (maxRank - 1)) * (H - t - b);
+  const ordered = [...series].sort((a, b) => Number(Boolean(a.color)) - Number(Boolean(b.color)));
+  // End labels: sort by final rank and keep at least 13px apart
+  const ends = series.map(s => ({ s, last: s.ranks[s.ranks.length - 1] })).filter(e => e.last).sort((a, b) => a.last! - b.last!);
+  let prev = -Infinity;
+  const labelY = new Map<string, number>();
+  for (const e of ends) { const yy = Math.max(y(e.last!), prev + 13); labelY.set(e.s.id, yy); prev = yy; }
+  const path = (s: BumpSeries) => {
+    let d = '', pen = false;
+    s.ranks.forEach((rk, i) => { if (rk == null) { pen = false; return; } d += `${pen ? 'L' : 'M'}${x(i)},${y(rk)} `; pen = true; });
+    return d;
+  };
+  return (
+    <div ref={ref} className="ochart">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label="Ranking by week">
+        {[1, 5, 10, 15, 20, 25].filter(v => v <= maxRank).map(v => (
+          <g key={v}><line x1={l} x2={W - r} y1={y(v)} y2={y(v)} stroke="var(--o-grid)" /><text x={l - 8} y={y(v) + 4} textAnchor="end">{v}</text></g>
+        ))}
+        {weeks.map((w, i) => <text key={w} x={x(i)} y={H - 6} textAnchor="middle">{i === 0 ? `Wk ${w}` : w}</text>)}
+        {ordered.map(s => {
+          const c = s.color ?? 'var(--o-other)';
+          const dim = hot !== null && hot !== s.id;
+          return (
+            <g key={s.id} onPointerEnter={() => setHot(s.id)} onPointerLeave={() => setHot(null)} style={{ cursor: 'default' }}>
+              <path d={path(s)} fill="none" stroke="transparent" strokeWidth={12} />
+              <path d={path(s)} fill="none" stroke={c} strokeWidth={s.color || hot === s.id ? 2.5 : 1.5} strokeLinejoin="round" strokeLinecap="round" opacity={dim ? 0.15 : 1} />
+              {s.ranks.map((rk, i) => (rk == null ? null : <circle key={i} cx={x(i)} cy={y(rk)} r={s.color || hot === s.id ? 3.5 : 2.5} fill={c} stroke="var(--o-card)" strokeWidth={1.5} opacity={dim ? 0.15 : 1} />))}
+              {labelY.has(s.id) && (
+                <text x={x(weeks.length - 1) + 10} y={labelY.get(s.id)! + 4} style={{ fill: s.color || hot === s.id ? 'var(--o-ink)' : 'var(--o-ink2)', fontWeight: s.color ? 700 : 500, fontSize: 11.5 }} opacity={dim ? 0.3 : 1}>
+                  {s.ranks[s.ranks.length - 1]}. {s.name}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}

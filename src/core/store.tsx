@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
 import { f1Calendar, f1Constructors, f1Drivers, f1LastRace, f1Sessions, type F1Session } from '../sources/f1';
+import { cfbData, type CfbData } from '../sources/cfb';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { inOrbit, launches, spaceNews, type InOrbit } from '../sources/space';
 import type { ElectionData } from './elections';
@@ -19,6 +20,7 @@ interface Data {
   elections?: ElectionData;
   f1Sessions?: F1Session[];
   mlb?: MlbData;
+  cfb?: CfbData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -63,6 +65,7 @@ const SOURCES: Source[] = [
   { key: 'nfl', every: 10 * MIN, run: async () => ({ events: (await scoreboard('nfl', 'football', 'nfl')).filter(e => primetime(e) || e.state === 'in').map(e => ({ ...e, weight: 2 })) }) },
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
+  { key: 'cfbdata', every: 10 * MIN, run: async () => { const c = await cfbData(); return { cfb: c.data, events: c.events }; } },
   { key: 'mlb', every: 10 * MIN, run: async () => ({ events: (await scoreboard('mlb', 'baseball', 'mlb')).map(e => ({ ...e, weight: 2 })) }) },
   { key: 'mlbdata', every: 10 * MIN, run: async () => { const m = await mlbData(); return { mlb: m, events: m.postseasonEvents }; } },
   { key: 'dodgers', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('mlb', 'baseball', 'mlb', '19')).map(e => ({ ...e, weight: 3 as const })) }) },
@@ -143,6 +146,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let elections: ElectionData | undefined;
     let f1s: F1Session[] | undefined;
     let mlb: MlbData | undefined;
+    let cfb: CfbData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -155,6 +159,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.elections) elections = p.elections;
       if (p.f1Sessions) f1s = p.f1Sessions;
       if (p.mlb) mlb = p.mlb;
+      if (p.cfb) cfb = p.cfb;
     });
     f1s?.forEach(sess => {
       const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
@@ -175,6 +180,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       elections,
       f1Sessions: f1s,
       mlb,
+      cfb,
     };
   }, [bySource, live]);
 

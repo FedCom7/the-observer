@@ -4,6 +4,7 @@ import { DiffBars, MarginDots, PointsBars, SeasonStrip, type Bar } from '../comp
 import { ElectionNight, isElectionNight } from '../components/ElectionNight';
 import { Score, Tbc } from '../components/common';
 import { Hero, Row, ocol } from '../components/sheet';
+import { CfbPage } from './CfbPage';
 import { MlbPage } from './MlbPage';
 import { PASSION } from '../core/passions';
 import { useData } from '../core/store';
@@ -52,7 +53,7 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'cfb' ? <CfbPage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
   );
