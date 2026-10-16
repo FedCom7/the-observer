@@ -38,7 +38,8 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 | Dakar: stage-by-stage route, stage and general rankings by category | dakar.com (route page, rankings JSON) | collector `dakar` |
 | Apple: keynotes, pre-order and in-store dates | apple.com/apple-events, Apple Newsroom press releases | collector `apple` |
 | America's Cup: regattas, standings, points and time of every race | americascup.com results feeds | collector `ac` |
-| Tennis Slams, awards, Super Bowl, Election Day | WTA API, Wikipedia, rules | collector `calendar` |
+| Tennis Slams, Super Bowl, Election Day | WTA API, Wikipedia, rules | collector `calendar` |
+| Awards season: dates of every award and Oscar step, nominees and winners, Oscar odds | Gold Derby (season calendar, public odds API), Wikipedia edition pages | collector `awards` |
 | Cycling: men's WorldTour, Worlds and Euros, stages with official times, official rankings, winners | UCI calendar API, ASO and RCS race sites, Wikipedia | collector `cycling` |
 | News for passions without an ESPN feed | RSS (Guardian, BBC, Royal Central, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches | collector `news` |
 

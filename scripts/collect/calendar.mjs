@@ -14,11 +14,7 @@ const Y = now.getUTCFullYear();
  * so the time is marked approximate).
  */
 const WIKI = [
-  // Awards season: ceremonies fall early in the year after the films.
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1928)} Academy Awards`, label: y => `${ordinal(y - 1928)} Academy Awards`, list: { page: 'List of Academy Awards ceremonies', edition: y => ordinal(y - 1928) }, time: ['16:00', 'America/Los_Angeles'], weight: 3, place: 'Dolby Theatre, Hollywood', loc: [-118.34, 34.1] },
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1943)} Golden Globes`, label: y => `${ordinal(y - 1943)} Golden Globes`, list: { page: 'List of Golden Globe Awards ceremonies', edition: y => ordinal(y - 1943) }, time: ['17:00', 'America/Los_Angeles'], weight: 3, place: 'The Beverly Hilton', loc: [-118.41, 34.07] },
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1947)} British Academy Film Awards`, label: y => `${ordinal(y - 1947)} BAFTA Film Awards`, time: ['19:00', 'Europe/London'], weight: 2, place: 'Royal Festival Hall, London', loc: [-0.12, 51.51] },
-  { passion: 'awards', years: [Y, Y + 1], page: y => `${ordinal(y - 1995)} Critics' Choice Awards`, label: y => `${ordinal(y - 1995)} Critics' Choice Awards`, time: ['19:00', 'America/Los_Angeles'], weight: 1 },
+  // Awards season has its own collector (awards.mjs)
   // America's Cup
   { passion: 'ac', years: [Y, Y + 1], page: y => `${y} America's Cup`, label: () => "America's Cup Match", time: ['14:00', 'Europe/Rome'], weight: 3, place: 'Gulf of Naples', loc: [14.25, 40.83] },
   // Season finales

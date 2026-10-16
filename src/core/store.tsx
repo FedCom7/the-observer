@@ -8,6 +8,7 @@ import { dakarEvents, loadDakar, type DakarData } from '../sources/dakar';
 import { appleEvents, appleNews, loadApple, type AppleData } from '../sources/apple';
 import { acEvents, loadAc, type AcData } from '../sources/ac';
 import { cyclingEvents, loadCycling, type CyclingData } from '../sources/cycling';
+import { awardsEvents, loadAwards, type AwardsData } from '../sources/awards';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
@@ -41,6 +42,7 @@ interface Data {
   apple?: AppleData;
   ac?: AcData;
   cycling?: CyclingData;
+  awards?: AwardsData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -88,6 +90,7 @@ const SOURCES: Source[] = [
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
   { key: 'spacedata', every: 10 * MIN, run: async () => { const d = await loadSpace(); return { space: d, events: spaceEvents(d), orbit: orbitOf(d), news: nasaNews(d) }; } },
+  { key: 'awards', every: 10 * MIN, run: async () => { const a = await loadAwards(); return { awards: a, events: awardsEvents(a) }; } },
   { key: 'cycling', every: 10 * MIN, run: async () => { const c = await loadCycling(); return { cycling: c, events: cyclingEvents(c) }; } },
   { key: 'ac', every: 10 * MIN, run: async () => { const a = await loadAc(); return { ac: a, events: acEvents(a) }; } },
   { key: 'apple', every: 10 * MIN, run: async () => { const a = await loadApple(); return { apple: a, events: appleEvents(a), news: appleNews(a) }; } },
@@ -193,6 +196,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let apple: AppleData | undefined;
     let ac: AcData | undefined;
     let cycling: CyclingData | undefined;
+    let awards: AwardsData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -216,6 +220,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.apple) apple = p.apple;
       if (p.ac) ac = p.ac;
       if (p.cycling) cycling = p.cycling;
+      if (p.awards) awards = p.awards;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -241,6 +246,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       apple,
       ac,
       cycling,
+      awards,
     };
   }, [bySource, live]);
 

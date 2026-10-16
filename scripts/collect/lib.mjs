@@ -12,14 +12,14 @@ export async function get(url, { browser = false, json = false } = {}) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // Wikipedia asks API clients to send one request at a time; we queue them with a short gap
-// and back off when told to slow down (HTTP 429).
+// (600 ms) and back off when told to slow down (HTTP 429).
 let wikiQueue = Promise.resolve();
 function wikiGet(url) {
   const run = async () => {
     for (let attempt = 0; ; attempt++) {
       try {
         const j = await get(url, { json: true });
-        await sleep(250);
+        await sleep(600);
         return j;
       } catch (err) {
         if (!String(err.message).startsWith('429') || attempt >= 4) throw err;
@@ -111,6 +111,6 @@ export function parseFeed(xml) {
   }));
 }
 
-export const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;|&#x27;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n));
+export const decode = s => s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;|&#x27;/g, "'").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n)).replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCharCode(parseInt(h, 16))).replace(/&nbsp;/g, ' ');
 
 export const iso = t => new Date(t).toISOString();

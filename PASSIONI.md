@@ -29,6 +29,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ✅ |
 | 12 | Ciclismo | Stagione 2027 da gennaio; Sanremo 20 marzo, Giro dall'8 maggio | ✅ |
 | 13 | Elezioni americane | Midterm martedì 3 novembre | ✅ |
+| 14 | Premi del cinema | Governors Awards 15 novembre, Oscar 14 marzo | ✅ |
 
 ---
 
@@ -316,6 +317,54 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 **Test:** `?live=1` attiva il live prima della notte elettorale. `?live=2024` rigioca le elezioni 2024 con dati veri.
 
+## Premi del cinema (stagione dei premi) ✅
+**Interessi:** la stagione dei premi da Cannes agli Oscar. Per ogni premio maggiore e tecnico interessano le date delle nomination e della cerimonia, i nominati e i vincitori. Lo scopo è analizzare l'andamento della stagione e capire chi è favorito. Per gli Oscar servono anche tutti i passi intermedi.
+
+**Premi seguiti (scelti insieme):**
+- **Festival:** Cannes, Venezia, Telluride, Toronto.
+- **Critica:** Gotham, NBR, NYFCC, LAFCA, NSFC, Critics Choice, Independent Spirit.
+- **Grandi premi:** Golden Globes, BAFTA.
+- **Sindacati e associazioni di categoria:**
+
+| Premio | Categoria che anticipa |
+|---|---|
+| PGA | Miglior film |
+| DGA | Regia |
+| Actor Awards (SAG) | Recitazione e cast |
+| WGA | Sceneggiature |
+| ACE | Montaggio |
+| ASC | Fotografia |
+| ADG | Scenografia |
+| CDG | Costumi |
+| MUAHS | Trucco e acconciature |
+| CAS e MPSE | Sonoro |
+| VES | Effetti visivi |
+| CSA Artios | Casting |
+| Annie | Animazione |
+
+- **Oscar:** tutte le 24 categorie, con questi passi:
+  - Governors Awards;
+  - chiusura dell'eleggibilità;
+  - voto preliminare e shortlist;
+  - voto per le nomination e annuncio delle nomination;
+  - pranzo dei candidati;
+  - voto finale e cerimonia.
+
+**Esclusi:** premi europei e italiani, Berlino e Sundance, associazioni di critici regionali. Mancano anche USC Scripter, SCL, Cinema Eye e IDA, che non hanno pagine Wikipedia leggibili.
+
+**Fonti (collector `awards`):**
+- **Date:** il calendario della stagione di Gold Derby, completato con le schede di Wikipedia.
+- **Nominati e vincitori:** la pagina Wikipedia di ogni edizione. Il collector legge le tabelle dei candidati, gli elenchi "Premio: film" e le tabelle "Premio | Film | Regista". Ogni pagina viene riletta ogni 6 ore, e a ogni giro nei giorni degli annunci.
+- **Favoriti:** l'API pubblica di Gold Derby, con le quote di esperti e utenti per categoria. Prima delle nomination è la probabilità di essere candidati, dopo quella di vincere. Il collector salva una lettura al giorno per disegnare l'andamento.
+
+**Pagina:**
+- prossimo appuntamento e conto alla rovescia per gli Oscar;
+- primi cinque per il Miglior film;
+- linea temporale dei passi degli Oscar;
+- calendario di tutta la stagione: anelli per le nomination, punti per le cerimonie, barre per i festival;
+- per ogni categoria: quote di esperti e utenti con le variazioni, grafico dell'andamento, tabella dei precursori (★ vinto, ● nominato) e ultimi nominati;
+- vincitori dei festival, prossime date, notizie (Variety), griglia di tutti i premi con il loro stato.
+
 ---
 
 ## Da definire più avanti 💬
@@ -325,7 +374,6 @@ Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a 
 - **New England Patriots:** ESPN.
 - **NFL:** ESPN, partite in prima serata.
 - **Texas Longhorns:** ESPN.
-- **Premi del cinema:** Wikipedia, Variety.
 - **Tennis, tornei del Grande Slam:** API WTA, ESPN.
 
 ## Altre passioni da aggiungere
