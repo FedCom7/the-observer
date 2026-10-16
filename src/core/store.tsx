@@ -6,6 +6,7 @@ import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadSki, skiEvents, type SkiData } from '../sources/ski';
 import { dakarEvents, loadDakar, type DakarData } from '../sources/dakar';
 import { appleEvents, appleNews, loadApple, type AppleData } from '../sources/apple';
+import { acEvents, loadAc, type AcData } from '../sources/ac';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
@@ -35,6 +36,7 @@ interface Data {
   space?: SpaceData;
   dakar?: DakarData;
   apple?: AppleData;
+  ac?: AcData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -80,6 +82,7 @@ const SOURCES: Source[] = [
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
   { key: 'spacedata', every: 10 * MIN, run: async () => { const d = await loadSpace(); return { space: d, events: spaceEvents(d), orbit: orbitOf(d), news: nasaNews(d) }; } },
+  { key: 'ac', every: 10 * MIN, run: async () => { const a = await loadAc(); return { ac: a, events: acEvents(a) }; } },
   { key: 'apple', every: 10 * MIN, run: async () => { const a = await loadApple(); return { apple: a, events: appleEvents(a), news: appleNews(a) }; } },
   { key: 'dakar', every: 10 * MIN, run: async () => { const d = await loadDakar(); return { dakar: d, events: dakarEvents(d) }; } },
   { key: 'ski', every: 10 * MIN, run: async () => { const k = await loadSki(); return { ski: k, events: skiEvents(k) }; } },
@@ -179,6 +182,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let space: SpaceData | undefined;
     let dakar: DakarData | undefined;
     let apple: AppleData | undefined;
+    let ac: AcData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -199,6 +203,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.space) space = p.space;
       if (p.dakar) dakar = p.dakar;
       if (p.apple) apple = p.apple;
+      if (p.ac) ac = p.ac;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -221,6 +226,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       space,
       dakar,
       apple,
+      ac,
     };
   }, [bySource, live]);
 

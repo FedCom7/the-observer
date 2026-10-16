@@ -12,6 +12,7 @@ import { collectSki } from './ski.mjs';
 import { collectSpace } from './space.mjs';
 import { collectDakar } from './dakar.mjs';
 import { collectApple } from './apple.mjs';
+import { collectAc } from './ac.mjs';
 import { collectWec } from './wec.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '../../public/data');
@@ -26,6 +27,7 @@ const JOBS = {
   space: collectSpace,
   dakar: collectDakar,
   apple: collectApple,
+  ac: collectAc,
 };
 
 export async function collect(only = Object.keys(JOBS)) {

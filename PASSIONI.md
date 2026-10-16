@@ -26,7 +26,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
 | 9 | Dakar | 1–15 gennaio | ✅ |
 | 10 | Apple | Prossimo keynote non ancora annunciato | ✅ |
-| 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ⬜ |
+| 11 | America's Cup | Regate preliminari e Match a Napoli, luglio 2027 | ✅ |
 
 ---
 
@@ -228,7 +228,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## America's Cup ⬜
+## America's Cup ✅
 **Prossimo:** 38ª America's Cup a Napoli, Match dal 10 luglio 2027
 
 **Cosa mi interessa:**
@@ -238,6 +238,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 **Piano fonti:**
 - americascup.com: calendario degli eventi e delle regate preliminari, risultati, eventuale live data.
 - Pagina focus: tabellone della Louis Vuitton Cup, punteggio del Match, calendario delle regate.
+
+**Fatto (16 ottobre):** raccoglitore `scripts/collect/ac.mjs` sui feed JSON ufficiali che il sito americascup.com usa per la pagina risultati.
+- **Regate:** ogni regata (preliminari di Cagliari e Napoli 2026; Louis Vuitton Cup e Match appena programmate) con classifica, punti di ogni squadra in ogni prova e orario di ogni prova. Le prove entrano in calendario.
+- **Risultati 2026:** Luna Rossa vince entrambe le preliminari (63 punti a Cagliari, 71 a Napoli), New Zealand seconda.
+- **Pagina:** conto alla rovescia per il Match (10 luglio 2027), podi delle regate, grafico NYT dei punti accumulati prova per prova, classifiche finali, elenco prove con vincitori, notizie.
 
 ---
 
