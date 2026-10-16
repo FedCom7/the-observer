@@ -60,7 +60,7 @@ export async function collectApple() {
   const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(m => ({
     title: decode(m[1].match(/<title[^>]*>([\s\S]*?)<\/title>/)?.[1].replace(/<!\[CDATA\[|\]\]>/g, '').trim() ?? ''),
     url: m[1].match(/<link[^>]*href="([^"]+)"/)?.[1] ?? '',
-    time: new Date(m[1].match(/<updated>([^<]+)/)?.[1] ?? Date.now()).toISOString(),
+    time: new Date(m[1].match(/<updated>(?:<!\[CDATA\[)?([^<\]]+)/)?.[1] ?? Date.now()).toISOString(),
   }));
   const candidates = entries.filter(e => PRODUCT.test(e.title) && Date.parse(e.time) > now - 75 * DAY).slice(0, 10);
   const releases = (await Promise.all(candidates.map(e => release(e).catch(() => null)))).filter(Boolean);
