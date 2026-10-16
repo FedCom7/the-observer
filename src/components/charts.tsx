@@ -289,3 +289,62 @@ export function BumpChart({ weeks, series, maxRank = 25 }: { weeks: number[]; se
     </div>
   );
 }
+
+export interface LineSeries { name: string; values: (number | null)[]; color: string }
+
+/**
+ * Several series over the same steps (e.g. cumulative points per round), NYT style:
+ * 2px lines, labels at the end nudged apart, crosshair with all values on hover.
+ */
+export function MultiLine({ steps, series, unit = '' }: { steps: string[]; series: LineSeries[]; unit?: string }) {
+  const [ref, W] = useWidth<HTMLDivElement>();
+  const [hover, setHover] = useState<number | null>(null);
+  const H = 300, l = 40, r = 120, t = 14, b = 26;
+  const n = steps.length;
+  const all = series.flatMap(s => s.values.filter((v): v is number => v != null));
+  const max = Math.max(10, ...all);
+  const step = max > 300 ? 100 : max > 100 ? 50 : 10;
+  const hi = Math.ceil(max / step) * step;
+  const x = (i: number) => l + (i / Math.max(1, n - 1)) * (W - l - r);
+  const y = (v: number) => t + ((hi - v) / hi) * (H - t - b);
+  const lastIdx = (s: LineSeries) => s.values.reduce<number>((a, v, i) => (v != null ? i : a), -1);
+  const ends = series.map(s => ({ s, i: lastIdx(s) })).filter(e => e.i >= 0).map(e => ({ ...e, yy: y(e.s.values[e.i]!) })).sort((a, b) => a.yy - b.yy);
+  for (let k = 1; k < ends.length; k++) if (ends[k].yy - ends[k - 1].yy < 13) ends[k].yy = ends[k - 1].yy + 13;
+  const every = Math.ceil(n / Math.max(1, Math.floor((W - l - r) / 34)));
+  return (
+    <div ref={ref} className="ochart" style={{ position: 'relative' }}
+      onPointerMove={ev => {
+        const box = (ev.currentTarget as HTMLDivElement).getBoundingClientRect();
+        const i = Math.round(((ev.clientX - box.left - l) / (W - l - r)) * (n - 1));
+        setHover(i >= 0 && i < n ? i : null);
+      }}
+      onPointerLeave={() => setHover(null)}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label={`Cumulative ${unit}`}>
+        {Array.from({ length: hi / step + 1 }, (_, k) => k * step).map(v => (
+          <g key={v}><line x1={l} x2={W - r} y1={y(v)} y2={y(v)} stroke="var(--o-grid)" /><text x={l - 6} y={y(v) + 4} textAnchor="end">{v}</text></g>
+        ))}
+        {steps.map((s, i) => (i % every === 0 || i === n - 1 ? <text key={s + i} x={x(i)} y={H - 7} textAnchor="middle">{s}</text> : null))}
+        {series.map(s => {
+          let d = '', pen = false;
+          s.values.forEach((v, i) => { if (v == null) { pen = false; return; } d += `${pen ? 'L' : 'M'}${x(i)},${y(v)} `; pen = true; });
+          return <path key={s.name} d={d} fill="none" stroke={s.color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />;
+        })}
+        {ends.map(({ s, i, yy }) => (
+          <g key={s.name}>
+            <circle cx={x(i)} cy={y(s.values[i]!)} r={4} fill={s.color} stroke="var(--o-card)" strokeWidth={2} />
+            <text className="lbl" x={x(i) + 9} y={yy + 4} style={{ fontSize: 11.5 }}>{s.name} {s.values[i]}</text>
+          </g>
+        ))}
+        {hover !== null && <line x1={x(hover)} x2={x(hover)} y1={t} y2={H - b} stroke="var(--o-ink3)" />}
+      </svg>
+      {hover !== null && (
+        <div className="tip obs" style={{ position: 'absolute', left: Math.min(W - 200, x(hover) + 12), top: 8 }}>
+          <div className="k">{steps[hover]}</div>
+          {[...series].filter(s => s.values[hover] != null).sort((a, b) => (b.values[hover] ?? 0) - (a.values[hover] ?? 0)).map(s => (
+            <div key={s.name} style={{ display: 'flex', justifyContent: 'space-between', gap: 14 }}><span><i style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: s.color, marginRight: 6 }} />{s.name}</span><b>{s.values[hover]}</b></div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

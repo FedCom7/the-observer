@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { DiffBars, MarginDots, PointsBars, SeasonStrip, type Bar } from '../components/charts';
+import { DiffBars, MarginDots, SeasonStrip, type Bar } from '../components/charts';
 import { ElectionNight, isElectionNight } from '../components/ElectionNight';
 import { Score, Tbc } from '../components/common';
 import { Hero, Row, ocol } from '../components/sheet';
 import { CfbPage } from './CfbPage';
+import { F1Page } from './F1Page';
 import { MlbPage } from './MlbPage';
 import { NbaPage } from './NbaPage';
 import { RoyalPage } from './RoyalPage';
@@ -56,7 +57,7 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
   );
@@ -95,10 +96,6 @@ function GenericPage({ id }: { id: PassionId }) {
   if (bars.length) {
     const w = bars.filter(b => b.value > 0).length, l = bars.filter(b => b.value < 0).length, d = bars.length - w - l;
     kpis.push(id === 'milan' ? [`${w}–${d}–${l}`, 'W–D–L, all comps'] : [`${w}–${l}`, 'W–L']);
-  }
-  if (id === 'f1' && standings.f1d?.rows[0]) {
-    const [a, b] = standings.f1d.rows;
-    kpis.push([a.name, 'Leader'], [String(a.values[2]), 'Points'], [`+${Number(a.values[2]) - Number(b?.values[2] ?? 0)}`, 'Gap to P2']);
   }
   if (id === 'space' && orbit) kpis.push([String(orbit.total), 'In orbit now'], ...orbit.byAgency.slice(0, 2).map(([a, n]) => [String(n), a] as [string, string]));
   if (!kpis.length) kpis.push([String(upcoming.length), 'Upcoming dates'], [upcoming.filter(e => e.tbc).length ? 'TBC' : 'Set', 'Calendar status']);
@@ -144,16 +141,6 @@ function GenericPage({ id }: { id: PassionId }) {
           <div className="osrc">Source: ESPN</div>
         </section>
       )}
-      {id === 'f1' && <F1SessionCard />}
-      {id === 'f1' && standings.f1d && (
-        <section className="ocard">
-          <h2>The drivers' championship</h2>
-          <p className="dek">Points after round {standings.f1d.meta?.replace('After round ', '')}. Wins on the right.</p>
-          <PointsBars rows={standings.f1d.rows.slice(0, 10).map(r => ({ name: r.name, value: Number(r.values[2]), sub: `${r.values[1]} wins` }))} color={ocol('f1')} />
-          <div className="osrc">Source: Jolpica (Ergast)</div>
-        </section>
-      )}
-
       <section className="s-two">
         <div style={{ display: 'grid', gap: 18, minWidth: 0 }}>
           <div className="ocard">
@@ -188,29 +175,6 @@ function GenericPage({ id }: { id: PassionId }) {
         </div>
       </section>
     </>
-  );
-}
-
-/** Running order of the live session, or the classification of the latest one this weekend (ESPN). */
-function F1SessionCard() {
-  const { f1Sessions } = useData();
-  const live = f1Sessions?.find(x => x.state === 'in');
-  const latest = live ?? [...(f1Sessions ?? [])].reverse().find(x => x.state === 'post' && x.order.length);
-  if (!latest) return null;
-  return (
-    <section className="ocard">
-      <div className="lab">{live ? <span style={{ color: '#ff453a' }}>● Live · {latest.detail || 'session running'}</span> : 'Latest session'}</div>
-      <h2>{latest.name}</h2>
-      <p className="dek">{live ? 'Running order, refreshed every minute.' : 'Final classification.'} Source: ESPN.</p>
-      <ol style={{ margin: 0, paddingLeft: 0, listStyle: 'none', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(190px, 1fr))', gap: '6px 18px', fontFamily: 'var(--f-chart)' }}>
-        {latest.order.slice(0, 20).map((d, i) => (
-          <li key={d} style={{ display: 'flex', gap: 10, padding: '6px 0', borderTop: '1px solid var(--o-line)' }}>
-            <b style={{ width: 22, color: i < 3 ? 'var(--oc-mot)' : 'var(--o-ink3)', fontVariantNumeric: 'tabular-nums' }}>{i + 1}</b>
-            <Score>{d}</Score>
-          </li>
-        ))}
-      </ol>
-    </section>
   );
 }
 

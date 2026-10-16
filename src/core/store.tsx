@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
-import { f1Calendar, f1Constructors, f1Drivers, f1LastRace, f1Sessions, type F1Session } from '../sources/f1';
+import { f1Data, type F1Data } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
 import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
@@ -21,7 +21,7 @@ interface Data {
   news: NewsItem[];
   orbit?: InOrbit;
   elections?: ElectionData;
-  f1Sessions?: F1Session[];
+  f1?: F1Data;
   mlb?: MlbData;
   cfb?: CfbData;
   wec?: WecData;
@@ -79,10 +79,13 @@ const SOURCES: Source[] = [
   { key: 'dodgers', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('mlb', 'baseball', 'mlb', '19')).map(e => ({ ...e, weight: 3 as const })) }) },
   { key: 'nba', every: 15 * MIN, run: async () => ({ events: (await scoreboard('nba', 'basketball', 'nba')).map(e => ({ ...e, weight: 1 })) }) },
   { key: 'nbadata', every: 10 * MIN, run: async () => { const n = await nbaData(); return { nba: n, events: n.events }; } },
-  { key: 'f1', every: 6 * HOUR, run: async () => ({ events: await f1Calendar() }) },
-  { key: 'f1last', every: 30 * MIN, run: async () => { const r = await f1LastRace(); return { events: r ? [r] : [] }; } },
-  { key: 'f1live', every: 60e3, run: async () => ({ f1Sessions: await f1Sessions() }) },
-  { key: 'f1std', every: HOUR, run: async () => ({ standings: { f1d: await f1Drivers(), f1c: await f1Constructors() } }) },
+  {
+    key: 'f1', every: 60e3, run: async () => {
+      const { data, events } = await f1Data();
+      const f1d = { passion: 'f1' as const, title: 'F1 drivers', meta: `${data.season}`, cols: ['#', 'Driver', 'Pts'], rows: data.drivers.map(d => ({ rank: d.rank, name: d.name.split(' ').slice(-1)[0], values: [d.points] })) };
+      return { f1: data, events, standings: { f1d } };
+    },
+  },
   { key: 'space', every: 2 * HOUR, run: async () => ({ events: await launches() }) },
   { key: 'orbit', every: 6 * HOUR, run: async () => ({ orbit: await inOrbit() }) },
   {
@@ -157,7 +160,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     const news: NewsItem[] = [];
     let orbit: InOrbit | undefined;
     let elections: ElectionData | undefined;
-    let f1s: F1Session[] | undefined;
+    let f1: F1Data | undefined;
     let mlb: MlbData | undefined;
     let cfb: CfbData | undefined;
     let wec: WecData | undefined;
@@ -173,18 +176,12 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.news) news.push(...p.news);
       if (p.orbit) orbit = p.orbit;
       if (p.elections) elections = p.elections;
-      if (p.f1Sessions) f1s = p.f1Sessions;
+      if (p.f1) f1 = p.f1;
       if (p.mlb) mlb = p.mlb;
       if (p.cfb) cfb = p.cfb;
       if (p.wec) wec = p.wec;
       if (p.royal) royal = p.royal;
       if (p.nba) nba = p.nba;
-    });
-    f1s?.forEach(sess => {
-      const match = [...events.values()].find(e => e.passion === 'f1' && Math.abs(e.start - sess.start) < 10 * MIN);
-      if (match && sess.state !== 'pre') {
-        events.set(match.id, { ...match, state: sess.state, clock: sess.state === 'in' ? sess.detail || 'LIVE' : undefined, sub: sess.order.length ? `P1 ${sess.order[0]}${sess.order[1] ? ' · P2 ' + sess.order[1] : ''}${sess.order[2] ? ' · P3 ' + sess.order[2] : ''}` : match.sub, f1Live: true });
-      }
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -197,7 +194,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       news: news.filter(n => (seenNews.has(n.title) ? false : (seenNews.add(n.title), true))).sort((a, b) => b.time - a.time),
       orbit,
       elections,
-      f1Sessions: f1s,
+      f1,
       mlb,
       cfb,
       wec,

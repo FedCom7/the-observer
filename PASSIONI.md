@@ -21,7 +21,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ✅ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | 🟨 |
 | 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ✅ |
-| 6 | Formula 1 | GP di Austin 23–25 ottobre | ⬜ |
+| 6 | Formula 1 | GP di Austin 23–25 ottobre | ✅ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ⬜ |
 | 8 | Spazio | Lanci continui; Artemis | ⬜ |
 | 9 | Dakar | 1–15 gennaio | ⬜ |
@@ -133,7 +133,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 ---
 
-## Formula 1 ⬜
+## Formula 1 ✅
 **Prossimo:** GP Stati Uniti (Austin), 23–25 ottobre · gara domenica 21:00
 
 **Cosa mi interessa:**
@@ -143,6 +143,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - ESPN per sessioni, orari, risultati e diretta, come per gli altri sport.
 - Jolpica resta solo se ESPN non basta per le classifiche.
 - Pagina focus: weekend sessione per sessione, punti accumulati gara per gara (grafico a linee in stile NYT), classifica costruttori.
+
+**Fatto (16 ottobre):** tutto su ESPN, Jolpica rimossa.
+- **Calendario:** ogni sessione della stagione (prove, Sprint Qualifying, Sprint, qualifica, gara) con orario reale. Le gare cancellate (Bahrain, Arabia Saudita) vengono riconosciute ed escluse.
+- **Diretta:** stato delle sessioni e ordine in pista aggiornati ogni minuto.
+- **Pagina:** prossima sessione, ultima gara, campionato (punti, distacco, punti ancora disponibili), programma del weekend, ordine in diretta, grafico NYT dei punti accumulati gara per gara (top 6), classifiche piloti e costruttori, calendario con vincitori e pole, notizie.
 
 ---
 
