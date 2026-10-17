@@ -62,8 +62,13 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
   const { path, proj } = useMemo(() => {
     const p = geoNaturalEarth1();
     const pad: [[number, number], [number, number]] = [[10, 10], [size.w - 10, size.h - 10]];
-    if (view === 'atl') p.fitExtent(pad, { type: 'MultiPoint', coordinates: [[-125, 22], [55, 22], [-125, 58], [55, 58]] });
-    else p.fitExtent(pad, { type: 'Sphere' });
+    if (view === 'atl') {
+      p.fitExtent(pad, { type: 'MultiPoint', coordinates: [[-125, 22], [55, 22], [-125, 58], [55, 58]] });
+      // The panel is taller than the North Atlantic band: instead of leaving empty space above
+      // the pole, pin the map's top near 84°N and let the extra height show more of the south.
+      const top = p([-35, 84])?.[1] ?? 0;
+      if (top > 0) { const [tx, ty] = p.translate(); p.translate([tx, ty - top]); }
+    } else p.fitExtent(pad, { type: 'Sphere' });
     return { path: geoPath(p), proj: p };
   }, [size, view]);
 
