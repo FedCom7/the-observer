@@ -30,10 +30,11 @@ button { font: inherit; color: inherit; }
 .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
 
 .room { display: grid; gap: 8px; padding-inline: 12px; padding-block: 0 12px;
-  /* The theatre row has a fixed height, so Live & latest shows up without scrolling; T-minus scrolls inside it */
-  --theatre-h: clamp(340px, 46vh, 520px);
+  /* Theatre and Live & latest fill the screen (heights set by useRoomFit); T-minus, the election panel and the wire scroll inside */
+  --theatre-h: clamp(340px, 52vh, 620px);
+  --live-h: auto;
   grid-template-columns: 300px minmax(0, 1fr) 340px;
-  grid-template-rows: auto auto var(--theatre-h) auto auto auto;
+  grid-template-rows: auto auto var(--theatre-h) var(--live-h) auto auto;
   grid-template-areas:
     "top top top"
     "rail rail rail"
@@ -72,7 +73,8 @@ button { font: inherit; color: inherit; }
 
 /* Feed */
 .feed { grid-area: feed; }
-.feed-list { overflow-y: auto; flex: 1; max-height: 640px; }
+.feed { min-height: 0; }
+.feed-list { overflow-y: auto; flex: 1; min-height: 0; }
 .item { padding: 9px 12px; border-bottom: 1px solid var(--grid); display: grid; gap: 3px; }
 .item.new { background: linear-gradient(90deg, rgba(41,151,255,.10), transparent 70%); }
 .item .h { display: flex; gap: 8px; align-items: center; }
@@ -121,7 +123,8 @@ button { font: inherit; color: inherit; }
 .spoil .score:not(.shown) { filter: blur(6px); cursor: pointer; }
 
 /* Election */
-.elex { grid-area: elex; }
+.elex { grid-area: elex; overflow-y: auto; scrollbar-width: thin; }
+.elex .ph { position: sticky; top: 0; z-index: 1; background: var(--panel); }
 .elex-body { padding: 10px 12px; display: grid; gap: 10px; }
 .big-row { display: flex; justify-content: space-between; align-items: end; gap: 10px; }
 .big-row .k { font-size: 10px; letter-spacing: .12em; color: var(--ink-3); font-weight: 600; text-transform: uppercase; }

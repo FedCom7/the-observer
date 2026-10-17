@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { Score, Tag, Tbc, useSpoiler } from '../components/common';
 import { Theatre } from '../components/Theatre';
@@ -17,6 +18,36 @@ const CLOCKS: [string, string, boolean?][] = [
 
 const isMineGame = (e: ObsEvent) => Boolean(e.home?.mine || e.away?.mine);
 
+/**
+ * Map and Live & latest together fill the screen: Live & latest takes the height of its two
+ * rows of games, the theatre gets everything left down to the bottom of the window.
+ */
+function useRoomFit() {
+  const ref = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const fit = () => {
+      const map = el.querySelector<HTMLElement>('.map'), head = el.querySelector<HTMLElement>('.live .ph'), games = el.querySelector<HTMLElement>('.live .games');
+      if (!map || !head || !games) return;
+      // Wide layout only: on narrow screens the panels stack and keep their natural heights
+      if (getComputedStyle(el).gridTemplateColumns.split(' ').length < 3) { el.style.removeProperty('--theatre-h'); el.style.removeProperty('--live-h'); return; }
+      const liveH = head.offsetHeight + games.scrollHeight + 2;
+      const top = map.getBoundingClientRect().top + window.scrollY;
+      const theatre = Math.max(340, window.innerHeight - top - 8 - liveH - 10);
+      el.style.setProperty('--live-h', `${liveH}px`);
+      el.style.setProperty('--theatre-h', `${theatre}px`);
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    const games = el.querySelector('.live .games');
+    if (games) ro.observe(games);
+    window.addEventListener('resize', fit);
+    return () => { ro.disconnect(); window.removeEventListener('resize', fit); };
+  }, []);
+  return ref;
+}
+
 export function ControlRoom() {
   const { events, now } = useData();
   const nav = useNavigate();
@@ -24,9 +55,11 @@ export function ControlRoom() {
   const live = events.filter(e => e.state === 'in');
   const next72 = events.filter(e => e.state === 'pre' && e.start > now && e.start - now < 72 * HOUR);
 
+  const room = useRoomFit();
+
   return (
     <>
-      <div className="room" id="room">
+      <div className="room" id="room" ref={room}>
         <TopBar liveCount={live.length} next72={next72} />
         <Rail live={live} open={open} />
         <Wire open={open} />
