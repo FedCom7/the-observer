@@ -2,14 +2,14 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { useWidth } from '../components/charts';
 import { Score } from '../components/common';
 import { getJSON } from '../core/fetcher';
-import { awardTimes, contenderKey, evidence, forecastCategory, raceSeries, recordAt, type ForecastRow, type History } from '../core/oscarModel';
+import { awardTimes, contenderKey, evidence, forecastCategory, raceSeries, recordAt, type ForecastRow, type History, type Status } from '../core/oscarModel';
 import { DAY, dayShort, fmt } from '../core/time';
 import { PERSON_CATS, filmOf, personOf, tmdbImg, type Award, type AwardsData } from '../sources/awards';
 
 export type AwardsTab = 'overview' | 'tracker' | 'forecast' | 'race' | 'study';
 const TABS: [AwardsTab, string][] = [['overview', 'Overview'], ['tracker', 'Tracker'], ['forecast', 'Forecast'], ['race', 'The race'], ['study', 'The study']];
 const MAIN = ['picture', 'director', 'actor', 'actress', 'supActor', 'supActress', 'origScreenplay', 'adaptScreenplay'];
-const SRC = { model: 'var(--o-ink)', gd: 'var(--oc-cul)', poly: 'var(--o-s1)', kalshi: 'var(--o-s3)' };
+const SRC = { model: 'var(--o-ink)', gd: 'var(--oc-cul)', poly: 'var(--o-s1)', kalshi: 'var(--o-s3)', zz: 'var(--o-s4)' };
 const pct = (p: number | null | undefined) => (p == null ? '–' : `${Math.round(p * 100)}%`);
 
 export function AwardsTabs({ tab, set }: { tab: AwardsTab; set: (t: AwardsTab) => void }) {
@@ -65,7 +65,7 @@ export function TrackerScreen({ d, h, now }: { d: AwardsData; h: History | null;
         {(['category', 'award'] as const).map(m => <button key={m} className="btn" aria-pressed={mode === m} onClick={() => setMode(m)} style={{ color: 'var(--o-ink)', background: mode === m ? 'var(--o-accent-soft)' : 'transparent', borderColor: 'var(--o-line)' }}>By {m}</button>)}
       </div>
       {mode === 'category' ? <>
-        <p className="dek">Every contender against every precursor that speaks to the category, in the order they announce. ★ won, ● nominated, – left out; empty columns have not announced yet. Rows ordered by the Observer forecast.</p>
+        <p className="dek">Every contender against every precursor that gives a prize in the category. Rows ordered by the Observer forecast.</p>
         <CatChips d={d} cat={cat} set={setCat} />
         <Scorecard d={d} h={h} cat={cat} now={now} />
       </> : <>
@@ -79,36 +79,77 @@ export function TrackerScreen({ d, h, now }: { d: AwardsData; h: History | null;
   );
 }
 
+const PHASES: { id: Award['group']; label: string }[] = [
+  { id: 'festival', label: 'Festivals' }, { id: 'critics', label: 'Critics & indies' }, { id: 'major', label: 'Televised: CCA, Globes, BAFTA' }, { id: 'guild', label: 'Guilds' },
+];
+
+/** The NYT-style key glyphs: a filled dot for a win, a ring for a nomination, a speck for left out. */
+function Mark({ s }: { s: Status | null }) {
+  if (s === 'win') return <span className="aw-mark win" aria-label="won" />;
+  if (s === 'nom') return <span className="aw-mark nom" aria-label="nominated" />;
+  if (s === 'none') return <span className="aw-mark out" aria-label="left out" />;
+  return null;
+}
+
 function Scorecard({ d, h, cat, now }: { d: AwardsData; h: History | null; cat: string; now: number }) {
-  const cols = relevantAwards(d, h, cat);
+  const all = relevantAwards(d, h, cat);
+  const groups = PHASES.map(g => ({ ...g, cols: all.filter(a => (a.id === 'cca' ? 'major' : a.group) === g.id) })).filter(g => g.cols.length);
+  const cols = groups.flatMap(g => g.cols);
   const rows = useMemo(() => (h ? forecastCategory(d, h, cat, now) : null), [d, h, cat, now]);
-  const people = rows ?? [];
-  // Without the study yet, order by wins and nominations
-  const list = people.map(r => {
+  const list = (rows ?? []).map(r => {
     const rec = cols.map(a => recordAt(d, a, cat, r.key, now));
     return { r, rec, wins: rec.filter(x => x === 'win').length, noms: rec.filter(x => x === 'win' || x === 'nom').length };
   }).filter(x => x.noms > 0 || x.r.p > 0.02).slice(0, 16);
+  if (!rows) return <p className="dek">Loading the study…</p>;
   if (!list.length) return <p className="dek">No precursor has spoken in this category yet.</p>;
+  const spoken = cols.filter(a => { const t = awardTimes(a); return (t.nom ?? t.win ?? Infinity) <= now; }).length;
+  const byWins = [...list].sort((a, b) => b.wins - a.wins || b.noms - a.noms)[0];
+  const byNoms = [...list].sort((a, b) => b.noms - a.noms || b.wins - a.wins)[0];
+  const future = (a: Award) => { const t = awardTimes(a); return (t.nom ?? t.win ?? Infinity) > now; };
+  const firstOf = new Set(groups.map(g => g.cols[0].id));
   return (
-    <div style={{ overflowX: 'auto' }}>
-      <table className="otable" style={{ minWidth: 640 }}>
-        <thead>
-          <tr>
-            <th>Contender</th>
-            {cols.map(a => { const t = awardTimes(a); const future = (t.nom ?? t.win ?? 0) > now; return <th key={a.id} className="n" title={a.name} style={{ textAlign: 'center', color: future ? 'var(--o-ink3)' : undefined, fontWeight: 500, writingMode: 'vertical-rl', transform: 'rotate(180deg)', whiteSpace: 'nowrap', padding: '6px 2px', height: 118 }}>{a.short}{future && (t.nom ?? t.win) ? ` · ${fmt(t.nom ?? t.win!, { day: 'numeric', month: 'short' })}` : ''}</th>; })}
-            <th className="n">Wins</th><th className="n">Noms</th><th className="n">Forecast</th>
-          </tr>
-        </thead>
-        <tbody>{list.map(({ r, rec, wins, noms }) => (
-          <tr key={r.key}>
-            <td><span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><Thumb d={d} cat={cat} name={r.name} /><span><b>{r.name}</b>{r.film && PERSON_CATS.has(cat) ? <small style={{ color: 'var(--o-ink3)' }}> · {r.film}</small> : null}</span></span></td>
-            {rec.map((s, i) => <td key={cols[i].id} style={{ textAlign: 'center', fontSize: 15, color: s === 'win' ? 'var(--oc-cul)' : s === 'nom' ? 'var(--o-ink)' : 'var(--o-ink3)', background: s == null ? 'color-mix(in srgb, var(--o-grid) 40%, transparent)' : undefined }}>{s === 'win' ? '★' : s === 'nom' ? '●' : s === 'none' ? '–' : ''}</td>)}
-            <td className="n"><b>{wins}</b></td><td className="n">{noms}</td>
-            <td className="n"><Score><b>{h ? pct(r.p) : '…'}</b></Score></td>
-          </tr>
-        ))}</tbody>
-      </table>
-    </div>
+    <>
+      <p className="aw-lede">
+        {spoken ? <>{spoken} of {cols.length} precursors have spoken. </> : null}
+        {byWins.wins ? <><b>{byWins.r.name}</b> leads with {byWins.wins} win{byWins.wins > 1 ? 's' : ''}{byNoms.r.key !== byWins.r.key && byNoms.noms > byWins.noms ? <>; <b>{byNoms.r.name}</b> has been named most often ({byNoms.noms} times)</> : null}. </> : 'No winner yet. '}
+        {h && list[0] ? <>The Observer model makes <b>{list[0].r.name}</b> the favourite at {pct(list[0].r.p)}.</> : null}
+      </p>
+      <div className="aw-key"><span><Mark s="win" /> Won</span><span><Mark s="nom" /> Nominated</span><span><Mark s="none" /> Left out</span><span><i className="aw-hatch" /> Not announced yet</span></div>
+      <div className="aw-track">
+        <table>
+          <thead>
+            <tr className="aw-groups">
+              <th className="aw-sticky" />
+              {groups.map(g => <th key={g.id} colSpan={g.cols.length}><span>{g.label}</span></th>)}
+              <th colSpan={2} />
+            </tr>
+            <tr className="aw-heads">
+              <th className="aw-sticky aw-left">{catName(d, cat)}</th>
+              {cols.map(a => { const t = awardTimes(a); const f = future(a); return (
+                <th key={a.id} className={`${f ? 'aw-future' : ''} ${firstOf.has(a.id) ? 'aw-first' : ''}`} title={a.name}>
+                  <div>{a.short}{f && (t.nom ?? t.win) ? <small> {fmt(t.nom ?? t.win!, { day: 'numeric', month: 'short' })}</small> : null}</div>
+                </th>); })}
+              <th className="aw-num">Record</th>
+              <th className="aw-left aw-fc">Observer forecast</th>
+            </tr>
+          </thead>
+          <tbody>{list.map(({ r, rec, wins, noms }, i) => (
+            <tr key={r.key}>
+              <td className="aw-sticky">
+                <span className="aw-who"><span className="aw-rank">{i + 1}</span><Thumb d={d} cat={cat} name={r.name} h={30} /><span><b>{r.name}</b>{r.film && PERSON_CATS.has(cat) ? <small>{r.film}</small> : null}</span></span>
+              </td>
+              {rec.map((s, k) => <td key={cols[k].id} className={`aw-cell ${future(cols[k]) ? 'aw-future' : ''} ${firstOf.has(cols[k].id) ? 'aw-first' : ''}`}><Mark s={s} /></td>)}
+              <td className="aw-num">{noms ? <Score>{wins ? <b>{wins} win{wins > 1 ? 's' : ''}</b> : null}{wins && noms > wins ? ', ' : ''}{noms > wins ? `${noms - wins} nom${noms - wins > 1 ? 's' : ''}` : ''}</Score> : <span className="aw-dim">–</span>}</td>
+              <td className="aw-fc"><div>
+                <span className="aw-bar"><i style={{ width: `${r.p * 100}%` }} /></span>
+                <Score><b>{pct(r.p)}</b></Score>
+              </div></td>
+            </tr>
+          ))}</tbody>
+        </table>
+      </div>
+      <div className="osrc">Columns grouped by kind of award and ordered by date within each group; a precursor counts for this category when it gives a matching prize. Nominations and winners from each award's Wikipedia page. Record: wins, and nominations that did not win.</div>
+    </>
   );
 }
 
@@ -132,17 +173,18 @@ function AwardBoard({ d, a }: { d: AwardsData; a: Award }) {
 
 // ===================================================================== Forecast
 
-interface Compared { key: string; name: string; model: number | null; gd: number | null; poly: number | null; kalshi: number | null; row?: ForecastRow }
+interface Compared { key: string; name: string; model: number | null; gd: number | null; poly: number | null; kalshi: number | null; zz: number | null; row?: ForecastRow }
 
 function compare(d: AwardsData, rows: ForecastRow[], cat: string): Compared[] {
   const by = new Map<string, Compared>();
-  const get = (name: string) => { const k = contenderKey(d, cat, name); if (!by.has(k)) by.set(k, { key: k, name, model: null, gd: null, poly: null, kalshi: null }); return by.get(k)!; };
+  const get = (name: string) => { const k = contenderKey(d, cat, name); if (!by.has(k)) by.set(k, { key: k, name, model: null, gd: null, poly: null, kalshi: null, zz: null }); return by.get(k)!; };
   rows.slice(0, 10).forEach(r => { const c = get(r.name); c.model = r.p; c.row = r; });
   if (d.odds?.stage === 'winners') (d.odds?.categories[cat]?.experts ?? []).slice(0, 8).forEach(r => { get(r.name).gd = r.pct / 100; });
   (d.markets?.polymarket?.[cat]?.winner ?? []).slice(0, 8).forEach(r => { get(r.name).poly = r.p; });
   (d.markets?.kalshi?.[cat]?.winner ?? []).slice(0, 8).forEach(r => { get(r.name).kalshi = r.p; });
+  (d.analysts?.zauzmer?.winner?.cats[cat] ?? []).slice(0, 8).forEach(r => { get(r.name).zz = r.p; });
   for (const c of by.values()) if (c.model == null) { const r = rows.find(x => x.key === c.key); if (r) { c.model = r.p; c.row = r; } }
-  return [...by.values()].sort((a, b) => Math.max(b.model ?? 0, b.poly ?? 0, b.kalshi ?? 0) - Math.max(a.model ?? 0, a.poly ?? 0, a.kalshi ?? 0)).slice(0, 12);
+  return [...by.values()].sort((a, b) => Math.max(b.model ?? 0, b.poly ?? 0, b.kalshi ?? 0, b.zz ?? 0) - Math.max(a.model ?? 0, a.poly ?? 0, a.kalshi ?? 0, a.zz ?? 0)).slice(0, 12);
 }
 
 export function ForecastScreen({ d, h, now }: { d: AwardsData; h: History | null; now: number }) {
@@ -175,16 +217,44 @@ export function ForecastScreen({ d, h, now }: { d: AwardsData; h: History | null
           <WhyBars row={sel} />
         </section>
       )}
+      <Analysts d={d} />
     </>
   );
 }
 
+/** The statisticians who publish Oscar forecasts: what they have said this season. */
+function Analysts({ d }: { d: AwardsData }) {
+  const z = d.analysts?.zauzmer;
+  const reads = d.analysts?.reads ?? [];
+  return (
+    <section className="ocard" style={{ gridColumn: '1 / -1' }}>
+      <h2>The other quants</h2>
+      <p className="dek">Two statisticians publish Oscar models in the open. Ben Zauzmer, for The Hollywood Reporter, puts out odds for every category twice a season: nominations in mid-January, winners about a week before the ceremony; they join the comparison above as soon as they are out. Walt Hickey built FiveThirtyEight's Oscar model (FiveThirtyEight closed in 2025) and now writes Numlock Awards, whose forecasts are published as images, so here are links to them.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+        <div>
+          <div className="lab">Ben Zauzmer this season</div>
+          {(['nom', 'winner'] as const).map(k => z?.[k] ? (
+            <div key={k} style={{ fontSize: 13, padding: '4px 0' }}><a href={z[k]!.url} target="_blank" rel="noreferrer"><b>{k === 'nom' ? 'Nomination odds' : 'Winner odds'}</b></a> · {dayShort(Date.parse(z[k]!.date))} · {Object.keys(z[k]!.cats).length} categories
+              {z[k]!.cats.picture && <div style={{ color: 'var(--o-ink2)' }}>Best Picture: {z[k]!.cats.picture.slice(0, 3).map(r => `${r.name} ${pct(r.p)}`).join(' · ')}</div>}</div>
+          ) : <div key={k} style={{ fontSize: 13, padding: '4px 0', color: 'var(--o-ink3)' }}>{k === 'nom' ? 'Nomination odds: expected mid-January' : 'Winner odds: expected early March'}</div>)}
+        </div>
+        <div>
+          <div className="lab">Latest reads</div>
+          {reads.length ? reads.slice(0, 6).map(r => <div key={r.url} style={{ fontSize: 13, padding: '3px 0' }}><a href={r.url} target="_blank" rel="noreferrer">{r.title}</a> <small style={{ color: 'var(--o-ink3)' }}>· {r.source} · {dayShort(Date.parse(r.date))}</small></div>)
+            : <p className="dek" style={{ margin: 0 }}>Nothing yet this season: their first pieces usually come out around the critics' awards in December.</p>}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Glance({ d, h, now, onPick }: { d: AwardsData; h: History; now: number; onPick: (c: string) => void }) {
+  const zw = d.analysts?.zauzmer?.winner;
   const cats = d.categories.filter(c => !['casting', 'docShort', 'liveShort', 'animShort'].includes(c.id) || d.markets?.polymarket?.[c.id]);
   return (
     <div style={{ overflowX: 'auto' }}>
       <table className="otable">
-        <thead><tr><th>Category</th><th>Observer</th><th>Gold Derby experts</th><th>Polymarket</th><th>Kalshi</th><th className="n">Agree</th></tr></thead>
+        <thead><tr><th>Category</th><th>Observer</th><th>Gold Derby experts</th><th>Polymarket</th><th>Kalshi</th>{zw && <th>Zauzmer (THR)</th>}<th className="n">Agree</th></tr></thead>
         <tbody>{cats.map(c => {
           const rows = forecastCategory(d, h, c.id, now);
           const ev = evidence(rows);
@@ -192,7 +262,8 @@ function Glance({ d, h, now, onPick }: { d: AwardsData; h: History; now: number;
           const gd = d.odds?.categories[c.id]?.experts?.[0];
           const po = d.markets?.polymarket?.[c.id]?.winner?.[0];
           const ka = d.markets?.kalshi?.[c.id]?.winner?.[0];
-          const keys = [m?.name, gd?.name, po?.name, ka?.name].filter(Boolean).map(n => contenderKey(d, c.id, n));
+          const zz = zw?.cats[c.id]?.[0];
+          const keys = [m?.name, gd?.name, po?.name, ka?.name, zz?.name].filter(Boolean).map(n => contenderKey(d, c.id, n));
           const agree = keys.length > 1 ? Math.max(...keys.map(k => keys.filter(x => x === k).length)) : 0;
           const cell = (name?: string, p?: number | null, color?: string) => name ? <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><Thumb d={d} cat={c.id} name={name} h={20} /><span>{name} <Score><b style={{ color }}>{p != null ? pct(p) : ''}</b></Score></span></span> : <span style={{ color: 'var(--o-ink3)' }}>–</span>;
           return (
@@ -202,6 +273,7 @@ function Glance({ d, h, now, onPick }: { d: AwardsData; h: History; now: number;
               <td>{cell(gd?.name, gd && d.odds?.stage === 'winners' ? gd.pct / 100 : null, SRC.gd)}</td>
               <td>{cell(po?.name, po?.p, SRC.poly)}</td>
               <td>{cell(ka?.name, ka?.p, SRC.kalshi)}</td>
+              {zw && <td>{cell(zz?.name, zz?.p, SRC.zz)}</td>}
               <td className="n">{agree > 1 ? `${agree} of ${keys.length}` : '–'}</td>
             </tr>
           );
@@ -217,10 +289,10 @@ function DotCompare({ d, cat, rows, onPick, sel }: { d: AwardsData; cat: string;
   const l = Math.min(230, W * 0.36), r = 40, rowH = 30, top = 26;
   const H = top + rows.length * rowH + 10;
   const x = (p: number) => l + p * (W - l - r);
-  const marks = ([['model', SRC.model, 'Observer'], ['gd', SRC.gd, 'Gold Derby experts'], ['poly', SRC.poly, 'Polymarket'], ['kalshi', SRC.kalshi, 'Kalshi']] as [keyof Compared, string, string][]).filter(([k]) => rows.some(r => r[k] != null));
+  const marks = ([['model', SRC.model, 'Observer'], ['gd', SRC.gd, 'Gold Derby experts'], ['poly', SRC.poly, 'Polymarket'], ['kalshi', SRC.kalshi, 'Kalshi'], ['zz', SRC.zz, 'Ben Zauzmer (THR)']] as [keyof Compared, string, string][]).filter(([k]) => rows.some(r => r[k] != null));
   return (
     <div ref={ref} className="ochart">
-      <div className="olegend">{marks.map(([k, c, label]) => <span key={k}><i style={{ background: c, width: 10, height: 10, borderRadius: k === 'gd' ? 2 : 5 }} />{label}</span>)}</div>
+      <div className="olegend">{marks.map(([k, c, label]) => <span key={k}><i style={{ background: c, width: 10, height: 10, borderRadius: k === 'gd' || k === 'zz' ? 2 : 5, transform: k === 'zz' ? 'rotate(45deg) scale(.85)' : undefined }} />{label}</span>)}</div>
       <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label="Forecasts compared">
         {[0, 0.25, 0.5, 0.75, 1].map(v => <g key={v}><line x1={x(v)} x2={x(v)} y1={top - 6} y2={H - 4} stroke="var(--o-grid)" /><text x={x(v)} y={12} textAnchor="middle">{v * 100}%</text></g>)}
         {rows.map((c, i) => {
@@ -234,6 +306,7 @@ function DotCompare({ d, cat, rows, onPick, sel }: { d: AwardsData; cat: string;
               {marks.map(([k, color]) => {
                 const v = c[k] as number | null;
                 if (v == null) return null;
+                if (k === 'zz') return <rect key={k} x={x(v) - 4.5} y={cy - 4.5} width={9} height={9} transform={`rotate(45 ${x(v)} ${cy})`} fill={color} stroke="var(--o-card)" strokeWidth={1.5}><title>{`Ben Zauzmer: ${pct(v)}`}</title></rect>;
                 return k === 'gd' ? <rect key={k} x={x(v) - 5} y={cy - 5} width={10} height={10} rx={2} fill={color} stroke="var(--o-card)" strokeWidth={1.5}><title>{`Gold Derby: ${pct(v)}`}</title></rect>
                   : <circle key={k} cx={x(v)} cy={cy} r={k === 'model' ? 6.5 : 5.5} fill={color} stroke="var(--o-card)" strokeWidth={1.5}><title>{`${k}: ${pct(v)}`}</title></circle>;
               })}

@@ -30,6 +30,12 @@ export interface AwardsData {
     kalshi: Record<string, { winner?: MarketRow[]; nom?: MarketRow[] }>;
     history: Record<string, Record<string, { d: string; v: Record<string, number> }[]>>;
   } | null;
+  /** Public statisticians: Ben Zauzmer's per-category odds (THR), reads from him and Numlock Awards. */
+  analysts?: {
+    updated: string;
+    zauzmer: Partial<Record<'nom' | 'winner', { url: string; title: string; date: string; cats: Record<string, { name: string; film: string | null; p: number }[]> }>>;
+    reads: { source: string; title: string; url: string; date: string }[];
+  } | null;
   odds: { league: string; stage: 'nominations' | 'winners'; url: string; updated: string; categories: Record<string, { experts?: OddsRow[]; users?: OddsRow[] }>; history: Record<string, { experts?: { d: string; v: Record<string, number> }[]; users?: { d: string; v: Record<string, number> }[] }> } | null;
 }
 

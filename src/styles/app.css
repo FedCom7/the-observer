@@ -355,3 +355,42 @@ a { color: inherit; text-decoration: none; }
 .term-body .s-eyebrow { display: none; }
 .term-body .s-cd { font-family: var(--f-mono); font-size: 28px; }
 .term-body .kpi b { font-size: 20px; }
+
+/* ---------- Awards tracker (NYT scorecard) ---------- */
+.aw-lede { font-family: var(--f-serif, Georgia, serif); font-size: 17px; line-height: 1.45; margin: 2px 0 10px; max-width: 72ch; color: var(--o-ink); }
+.aw-key { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; color: var(--o-ink2); margin-bottom: 8px; }
+.aw-key span { display: inline-flex; align-items: center; gap: 6px; }
+.aw-mark { display: inline-block; vertical-align: middle; border-radius: 50%; }
+.aw-mark.win { width: 13px; height: 13px; background: var(--oc-cul); }
+.aw-mark.nom { width: 11px; height: 11px; border: 1.75px solid var(--o-ink2); box-sizing: border-box; }
+.aw-mark.out { width: 4px; height: 4px; background: var(--o-ink3); opacity: .6; }
+.aw-hatch { display: inline-block; width: 14px; height: 12px; border-radius: 2px; background: repeating-linear-gradient(135deg, var(--o-grid) 0 2px, transparent 2px 5px); }
+.aw-track { overflow-x: auto; }
+.aw-track table { border-collapse: collapse; font-family: var(--f-chart); font-size: 12.5px; min-width: 100%; }
+.aw-track th { font-weight: 500; color: var(--o-ink2); }
+.aw-groups th { font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; text-align: left; padding: 0 4px 2px; white-space: nowrap; }
+.aw-groups th span { display: block; border-bottom: 1px solid var(--o-ink3); padding-bottom: 3px; color: var(--o-ink); font-weight: 600; }
+.aw-heads th { height: 96px; vertical-align: bottom; position: relative; padding: 0 0 6px; border-bottom: 1px solid var(--o-ink); }
+.aw-heads th > div { position: absolute; left: 50%; bottom: 8px; transform-origin: 0 100%; transform: rotate(-50deg); white-space: nowrap; font-size: 11.5px; color: var(--o-ink); }
+.aw-heads th > div small { color: var(--o-ink3); font-size: 10.5px; }
+.aw-heads th.aw-future > div { color: var(--o-ink3); }
+.aw-heads th.aw-left { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; vertical-align: bottom; padding: 0 8px 6px 0; color: var(--o-ink); font-weight: 600; }
+.aw-heads th.aw-num, .aw-heads th.aw-fc { vertical-align: bottom; font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; padding: 0 8px 6px; white-space: nowrap; }
+.aw-track td { border-bottom: 1px solid var(--o-grid); padding: 5px 0; }
+.aw-track tbody tr:hover td { background: color-mix(in srgb, var(--o-accent-soft) 55%, transparent); }
+.aw-cell { width: 30px; min-width: 30px; text-align: center; }
+.aw-cell.aw-future { background: repeating-linear-gradient(135deg, color-mix(in srgb, var(--o-grid) 70%, transparent) 0 1.5px, transparent 1.5px 6px); }
+.aw-first { border-left: 1px solid var(--o-grid); }
+.aw-heads th.aw-first { border-left: none; }
+.aw-sticky { position: sticky; left: 0; background: var(--o-card); z-index: 1; min-width: 210px; padding-right: 10px !important; }
+.aw-who { display: flex; align-items: center; gap: 8px; }
+.aw-who b { display: block; font-family: var(--f-sans, inherit); font-size: 13px; color: var(--o-ink); }
+.aw-who small { display: block; color: var(--o-ink3); font-size: 11px; }
+.aw-rank { width: 16px; text-align: right; color: var(--o-ink3); font-size: 11px; }
+.aw-num { text-align: right; padding: 0 10px !important; white-space: nowrap; color: var(--o-ink2); }
+.aw-dim { color: var(--o-ink3); }
+.aw-fc { min-width: 150px; white-space: nowrap; }
+td.aw-fc { padding-left: 8px !important; }
+td.aw-fc > div { display: flex; align-items: center; gap: 8px; }
+.aw-bar { flex: 1; height: 8px; background: color-mix(in srgb, var(--o-grid) 60%, transparent); border-radius: 0 2px 2px 0; position: relative; max-width: 120px; }
+.aw-bar i { position: absolute; inset: 0 auto 0 0; background: var(--o-ink); border-radius: 0 2px 2px 0; }

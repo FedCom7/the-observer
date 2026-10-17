@@ -379,7 +379,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 **Schermate (schede sotto il titolo):**
 - **Overview:** la pagina descritta sopra.
-- **Tracker:** per categoria, ogni candidato contro ogni precursore in ordine di annuncio (★ vinto, ● nominato, – escluso, vuoto se non ancora annunciato), con vittorie, nomination e previsione. Per premio, tutte le categorie con nominati e vincitori.
+- **Tracker:** scheda in stile New York Times. Per categoria, ogni candidato contro ogni precursore, con colonne raggruppate (festival, critici e indipendenti, premi televisivi, guild) e ordinate per data. Pallino pieno = vinto, anello = nominato, puntino = escluso, tratteggio = non ancora annunciato. Una frase in apertura riassume chi guida, poi record e barra della previsione. Per premio, tutte le categorie con nominati e vincitori.
 - **Forecast:** tabella di tutte le categorie con il favorito dell'Observer, degli esperti Gold Derby, di Polymarket e di Kalshi, e quante fonti concordano. Per la categoria scelta, un dot plot delle quattro previsioni e le barre del "perché" (quanto pesa ogni precursore).
 - **The race:** la previsione rifatta dopo ogni annuncio della stagione (chi parte forte e cala, chi sale tardi), l'andamento giornaliero di Gold Derby, Polymarket e Kalshi, e chi è salito o sceso di più.
 - **The study:** quanto spesso il vincitore di ogni precursore vince l'Oscar (heatmap precursore × categoria), quando parla ogni premio e quanto è affidabile, l'accuratezza del modello sulle stagioni passate e le sorprese che i precursori non avevano visto.
@@ -389,6 +389,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Calcolo:** per ogni precursore e categoria, quanto più spesso i futuri vincitori dell'Oscar avevano vinto, erano stati nominati o esclusi rispetto agli altri nominati. I rapporti si moltiplicano, smorzati (0,42) perché i precursori condividono votanti e gusti. Lo smorzamento è calibrato sulle stagioni passate.
 - **Verifica:** ogni stagione passata viene prevista con i pesi imparati dalle altre. Il favorito vince il 70% delle categorie (Regia 18/21, Miglior film 12/21).
 - **Segnali più forti:** DGA per la regia (88%), Actor Awards (SAG) per gli attori (81–84%), PGA per il miglior film (72%), ADG per la scenografia (80%).
+- **Analisti:** Ben Zauzmer (The Hollywood Reporter) pubblica le probabilità di ogni categoria a metà gennaio (nomination) e a inizio marzo (vincitori). Il collector le legge dai grafici Datawrapper dei suoi articoli e le aggiunge al confronto. FiveThirtyEight ha chiuso nel 2025; Walt Hickey, che ne aveva costruito il modello sugli Oscar, ora scrive Numlock Awards, con previsioni pubblicate come immagini: compaiono solo come link.
 - **Confronto:** quote di vittoria di Polymarket (24 categorie) e Kalshi (6 categorie), lette ogni ora, con una lettura al giorno salvata per i grafici. Gli esperti Gold Derby entrano nel confronto dopo le nomination: prima danno la probabilità di essere candidati.
 
 ## AC Milan, New England Patriots, Texas Longhorns ✅

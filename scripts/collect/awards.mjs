@@ -9,6 +9,7 @@ import { decode, get, infobox, iso, ordinal, parseDate, wikitext, zoned } from '
 import { OSCAR_CATS, colonList, festivalCat, nomineeTables, oscarCat, rowTables, scripterRows } from './awardsParse.mjs';
 import { officialDates, radar } from './awardsWatch.mjs';
 import { films as tmdbFilms, people as tmdbPeople, tmdbKey } from './tmdb.mjs';
+import { analysts } from './awardsAnalysts.mjs';
 import { markets } from './awardsMarkets.mjs';
 
 const DAY = 86400e3;
@@ -285,6 +286,8 @@ export async function collectAwards() {
   const oscarSteps = cal.events.filter(e => e.award === 'oscars');
   oscarSteps.push({ award: 'oscars', kind: 'eligibility', title: `Eligibility period ends: films must open by December 31, ${S}`, date: iso(zoned(S, 12, 31, 23, 59, 'America/Los_Angeles')), approx: false });
 
+  let an = prev.analysts ?? null;
+  try { an = await analysts(C, prev.analysts); status.analysts = `Zauzmer ${Object.keys(an.zauzmer).join('+') || 'none yet'}, ${an.reads.length} reads`; } catch (err) { status.analysts = `failed: ${err.message.slice(0, 60)}`; }
   let mk = prev.markets ?? null;
   try { mk = await markets(C, prev.markets); status.markets = `Polymarket ${Object.keys(mk.polymarket).length} categories, Kalshi ${Object.keys(mk.kalshi).length}`; } catch (err) { status.markets = `failed: ${err.message.slice(0, 60)}`; }
 
@@ -318,7 +321,7 @@ export async function collectAwards() {
     calendarUrl: cal.url, calendar: cal.events,
     oscarSteps: oscarSteps.sort((a, b) => a.date.localeCompare(b.date)),
     categories: OSCAR_CATS.map(([id, name]) => ({ id, name })),
-    awards, odds: gd, markets: mk,
+    awards, odds: gd, markets: mk, analysts: an,
     radar: news.slice(0, 40),
   };
 }

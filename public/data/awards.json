@@ -1,13 +1,14 @@
 {
  "season": 2026,
  "ceremonyYear": 2027,
- "updated": "2026-10-17T15:17:32.402Z",
+ "updated": "2026-10-17T15:41:07.672Z",
  "status": {
   "calendar": "39 dates",
   "radar": "26 headlines",
   "lafca-official": "fetch failed",
   "adg-official": "fetch failed",
   "odds": "20 categories (nominations)",
+  "analysts": "Zauzmer none yet, 0 reads",
   "markets": "Polymarket 24 categories, Kalshi 6",
   "tmdb": "188 films, 79 people"
  },
@@ -11014,21 +11015,12 @@
    "edition": {
     "page": "Gotham Independent Film Awards 2026",
     "url": "https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_2026",
-    "fetched": "2026-10-17T09:38:54.137Z",
+    "fetched": "2026-10-17T15:41:05.917Z",
     "span": null,
     "wikiDate": "2026-11-30T23:00:00.000Z",
     "wikiAnnounced": null,
     "categories": [],
-    "dates": [
-     {
-      "award": "gotham",
-      "kind": "ceremony",
-      "title": "Gotham Awards",
-      "date": "2026-11-30T23:00:00.000Z",
-      "approx": true,
-      "source": "Wikipedia"
-     }
-    ]
+    "lineup": null
    },
    "official": {
     "fetched": "2026-10-17T12:30:44.779Z",
@@ -13226,21 +13218,12 @@
    "edition": {
     "page": "99th Academy Awards",
     "url": "https://en.wikipedia.org/wiki/99th_Academy_Awards",
-    "fetched": "2026-10-17T09:38:55.837Z",
+    "fetched": "2026-10-17T15:41:07.569Z",
     "span": null,
     "wikiDate": "2027-03-14T23:00:00.000Z",
     "wikiAnnounced": null,
     "categories": [],
-    "dates": [
-     {
-      "award": "oscars",
-      "kind": "ceremony",
-      "title": "Academy Awards",
-      "date": "2027-03-14T23:00:00.000Z",
-      "approx": true,
-      "source": "Wikipedia"
-     }
-    ]
+    "lineup": null
    },
    "official": null,
    "news": [
@@ -13296,7 +13279,7 @@
   "league": "Oscars Nominations 2027",
   "stage": "nominations",
   "url": "https://www.goldderby.com/odds/expert-odds/oscars-2027-predictions-best-picture/",
-  "updated": "2026-10-17T12:31:00.068Z",
+  "updated": "2026-10-17T15:32:28.794Z",
   "catMap": {
    "1": "Best Production Design",
    "2": "Best Actor",
@@ -13493,7 +13476,7 @@
      {
       "name": "Project Hail Mary",
       "film": null,
-      "pct": 84.8,
+      "pct": 85,
       "was": 82.9,
       "fraction": "1/5",
       "winner": false
@@ -13501,7 +13484,7 @@
      {
       "name": "Werwulf",
       "film": null,
-      "pct": 60.4,
+      "pct": 60.3,
       "was": 60.6,
       "fraction": "4/6",
       "winner": false
@@ -13509,15 +13492,15 @@
      {
       "name": "Digger",
       "film": null,
-      "pct": 33.2,
-      "was": 33.1,
+      "pct": 33,
+      "was": 33,
       "fraction": "2/1",
       "winner": false
      },
      {
       "name": "Backrooms",
       "film": null,
-      "pct": 21.2,
+      "pct": 21.3,
       "was": 21.7,
       "fraction": "4/1",
       "winner": false
@@ -13715,7 +13698,7 @@
      {
       "name": "John Malkovich",
       "film": "Wild Horse Nine",
-      "pct": 95.9,
+      "pct": 95.8,
       "was": 96.1,
       "fraction": "1/100",
       "winner": false
@@ -13739,7 +13722,7 @@
      {
       "name": "Robert Pattinson",
       "film": "Primetime",
-      "pct": 56.1,
+      "pct": 56.2,
       "was": 57.6,
       "fraction": "4/5",
       "winner": false
@@ -13749,13 +13732,13 @@
       "film": "Digger",
       "pct": 45,
       "was": 46.6,
-      "fraction": "6/5",
+      "fraction": "5/4",
       "winner": false
      },
      {
       "name": "Ryan Gosling",
       "film": "Project Hail Mary",
-      "pct": 43,
+      "pct": 43.1,
       "was": 42.5,
       "fraction": "11/8",
       "winner": false
@@ -13763,7 +13746,7 @@
      {
       "name": "Anthony Ippolito",
       "film": "I Play Rocky",
-      "pct": 22.4,
+      "pct": 22.5,
       "was": 18.9,
       "fraction": "7/2",
       "winner": false
@@ -13779,8 +13762,8 @@
      {
       "name": "Pedro Pascal",
       "film": "Behemoth!",
-      "pct": 13,
-      "was": 15.5,
+      "pct": 12.9,
+      "was": 15.4,
       "fraction": "13/2",
       "winner": false
      },
@@ -13803,7 +13786,7 @@
      {
       "name": "Yura Borisov",
       "film": "Artificial",
-      "pct": 3,
+      "pct": 3.1,
       "was": 1.3,
       "fraction": "33/1",
       "winner": false
@@ -13877,19 +13860,19 @@
       "winner": false
      },
      {
+      "name": "The Invite",
+      "film": null,
+      "pct": 92,
+      "was": 95,
+      "fraction": "1/5",
+      "winner": false
+     },
+     {
       "name": "Dune: Part Three",
       "film": null,
       "pct": 92,
       "was": 85,
       "fraction": "1/100",
-      "winner": false
-     },
-     {
-      "name": "The Invite",
-      "film": null,
-      "pct": 88,
-      "was": 95,
-      "fraction": "1/5",
       "winner": false
      },
      {
@@ -13927,7 +13910,7 @@
      {
       "name": "Artificial",
       "film": null,
-      "pct": 32,
+      "pct": 28,
       "was": 10,
       "fraction": "11/5",
       "winner": false
@@ -13943,7 +13926,7 @@
      {
       "name": "Elsinore",
       "film": null,
-      "pct": 28,
+      "pct": 24,
       "was": 35,
       "fraction": "13/5",
       "winner": false
@@ -13986,7 +13969,7 @@
       "name": "The Debut",
       "film": null,
       "pct": 93.8,
-      "was": 93.9,
+      "was": 94,
       "fraction": "1/100",
       "winner": false
      },
@@ -14002,7 +13985,7 @@
       "name": "The Invite",
       "film": null,
       "pct": 90.9,
-      "was": 89.7,
+      "was": 89.6,
       "fraction": "1/5",
       "winner": false
      },
@@ -14017,16 +14000,16 @@
      {
       "name": "All of a Sudden",
       "film": null,
-      "pct": 59.6,
-      "was": 53.9,
+      "pct": 59.7,
+      "was": 54.2,
       "fraction": "4/6",
       "winner": false
      },
      {
       "name": "Obsession",
       "film": null,
-      "pct": 58.9,
-      "was": 59.4,
+      "pct": 58.7,
+      "was": 59.3,
       "fraction": "8/11",
       "winner": false
      },
@@ -14034,7 +14017,7 @@
       "name": "Fjord",
       "film": null,
       "pct": 51.4,
-      "was": 56.8,
+      "was": 57,
       "fraction": "1/1",
       "winner": false
      },
@@ -14042,7 +14025,7 @@
       "name": "I Play Rocky",
       "film": null,
       "pct": 29.3,
-      "was": 27.9,
+      "was": 27.8,
       "fraction": "12/5",
       "winner": false
      },
@@ -14057,15 +14040,15 @@
      {
       "name": "You Can See Everything",
       "film": null,
-      "pct": 21,
-      "was": 9.8,
+      "pct": 21.3,
+      "was": 9.9,
       "fraction": "4/1",
       "winner": false
      },
      {
       "name": "Digger",
       "film": null,
-      "pct": 16.8,
+      "pct": 16.7,
       "was": 23.7,
       "fraction": "11/2",
       "winner": false
@@ -14073,8 +14056,8 @@
      {
       "name": "Behemoth!",
       "film": null,
-      "pct": 10.1,
-      "was": 17.5,
+      "pct": 9.9,
+      "was": 17.4,
       "fraction": "9/1",
       "winner": false
      }
@@ -14110,7 +14093,7 @@
       "name": "Sandra Hüller",
       "film": "Rose",
       "pct": 52,
-      "was": 28.6,
+      "was": 33.3,
       "fraction": "10/11",
       "winner": false
      },
@@ -14142,7 +14125,7 @@
       "name": "Sandra Hüller",
       "film": "Fatherland",
       "pct": 20,
-      "was": 42.9,
+      "was": 38.1,
       "fraction": "4/1",
       "winner": false
      },
@@ -14216,14 +14199,14 @@
       "name": "Inde Navarrette",
       "film": "Obsession",
       "pct": 87.8,
-      "was": 88.2,
+      "was": 88.3,
       "fraction": "1/5",
       "winner": false
      },
      {
       "name": "Olivia Wilde",
       "film": "The Invite",
-      "pct": 85.6,
+      "pct": 85.7,
       "was": 83.1,
       "fraction": "1/5",
       "winner": false
@@ -14231,8 +14214,8 @@
      {
       "name": "Virginie Efira",
       "film": "All of a Sudden",
-      "pct": 57.2,
-      "was": 45.5,
+      "pct": 57.3,
+      "was": 45.6,
       "fraction": "8/11",
       "winner": false
      },
@@ -14240,14 +14223,14 @@
       "name": "Renate Reinsve",
       "film": "Fjord",
       "pct": 54.1,
-      "was": 57.5,
+      "was": 57.6,
       "fraction": "5/6",
       "winner": false
      },
      {
       "name": "Sandra Hüller",
       "film": "Rose",
-      "pct": 35.9,
+      "pct": 36,
       "was": 27.4,
       "fraction": "15/8",
       "winner": false
@@ -14255,7 +14238,7 @@
      {
       "name": "Ruth Madeley",
       "film": "Being Heumann",
-      "pct": 28.6,
+      "pct": 28.4,
       "was": 29.3,
       "fraction": "13/5",
       "winner": false
@@ -14263,8 +14246,8 @@
      {
       "name": "Sandra Hüller",
       "film": "Fatherland",
-      "pct": 21.9,
-      "was": 34,
+      "pct": 21.7,
+      "was": 33.8,
       "fraction": "4/1",
       "winner": false
      },
@@ -14272,14 +14255,14 @@
       "name": "Jessica Lange",
       "film": "Long Day's Journey into Night",
       "pct": 3.9,
-      "was": 5.2,
+      "was": 5.1,
       "fraction": "33/1",
       "winner": false
      },
      {
       "name": "Emily Blunt",
       "film": "Disclosure Day",
-      "pct": 3.2,
+      "pct": 3.3,
       "was": 3.1,
       "fraction": "33/1",
       "winner": false
@@ -14304,7 +14287,7 @@
       "name": "Jeon Do-yeon",
       "film": "Possible Love",
       "pct": 2.2,
-      "was": 1.9,
+      "was": 1.8,
       "fraction": "50/1",
       "winner": false
      },
@@ -14312,7 +14295,7 @@
       "name": "Daisy Edgar-Jones",
       "film": "Sense and Sensibility",
       "pct": 1.9,
-      "was": 1.8,
+      "was": 1.7,
       "fraction": "100/1",
       "winner": false
      },
@@ -14320,7 +14303,7 @@
       "name": "Cynthia Erivo",
       "film": "Prima Facie",
       "pct": 1.7,
-      "was": 1.8,
+      "was": 1.7,
       "fraction": "100/1",
       "winner": false
      }
@@ -14355,7 +14338,7 @@
      {
       "name": "Edward Norton",
       "film": "The Invite",
-      "pct": 66.7,
+      "pct": 63,
       "was": 73.9,
       "fraction": "1/2",
       "winner": false
@@ -14379,7 +14362,7 @@
      {
       "name": "Colman Domingo",
       "film": "Michael",
-      "pct": 18.5,
+      "pct": 22.2,
       "was": 34.8,
       "fraction": "9/2",
       "winner": false
@@ -14478,39 +14461,39 @@
       "name": "Edward Norton",
       "film": "The Invite",
       "pct": 70.8,
-      "was": 74.7,
+      "was": 74.6,
       "fraction": "4/9",
       "winner": false
      },
      {
       "name": "Guitarricadelafuente",
       "film": "La Bola Negra",
-      "pct": 61.6,
-      "was": 57.2,
+      "pct": 61.7,
+      "was": 57.4,
       "fraction": "8/13",
       "winner": false
      },
      {
       "name": "Andrew Garfield",
       "film": "Artificial",
-      "pct": 44.1,
-      "was": 13.1,
+      "pct": 44.2,
+      "was": 13.4,
       "fraction": "5/4",
       "winner": false
      },
      {
       "name": "John Goodman",
       "film": "Digger",
-      "pct": 13.4,
-      "was": 24.6,
+      "pct": 13.3,
+      "was": 24.5,
       "fraction": "13/2",
       "winner": false
      },
      {
       "name": "Steve Buscemi",
       "film": "Wild Horse Nine",
-      "pct": 10.5,
-      "was": 16.6,
+      "pct": 10.4,
+      "was": 16.4,
       "fraction": "9/1",
       "winner": false
      },
@@ -14518,14 +14501,14 @@
       "name": "Colman Domingo",
       "film": "Michael",
       "pct": 9.8,
-      "was": 13.5,
+      "was": 13.4,
       "fraction": "10/1",
       "winner": false
      },
      {
       "name": "Robert Pattinson",
       "film": "The Odyssey",
-      "pct": 3.8,
+      "pct": 3.9,
       "was": 4.4,
       "fraction": "33/1",
       "winner": false
@@ -14533,7 +14516,7 @@
      {
       "name": "Riz Ahmed",
       "film": "Digger",
-      "pct": 2.7,
+      "pct": 2.6,
       "was": 2.6,
       "fraction": "50/1",
       "winner": false
@@ -14594,7 +14577,7 @@
       "name": "Penelope Cruz",
       "film": "The Invite",
       "pct": 73.1,
-      "was": 54.5,
+      "was": 59.1,
       "fraction": "4/11",
       "winner": false
      },
@@ -14650,7 +14633,7 @@
       "name": "Merritt Wever",
       "film": "Primetime",
       "pct": 15.4,
-      "was": 13.6,
+      "was": 9.1,
       "fraction": "11/2",
       "winner": false
      },
@@ -14715,7 +14698,7 @@
      {
       "name": "Penelope Cruz",
       "film": "La Bola Negra",
-      "pct": 77.9,
+      "pct": 78,
       "was": 78.4,
       "fraction": "3/10",
       "winner": false
@@ -14723,8 +14706,8 @@
      {
       "name": "Tao Okamoto",
       "film": "All of a Sudden",
-      "pct": 71.1,
-      "was": 66.4,
+      "pct": 71.2,
+      "was": 66.6,
       "fraction": "2/5",
       "winner": false
      },
@@ -14732,15 +14715,15 @@
       "name": "Penelope Cruz",
       "film": "The Invite",
       "pct": 61.5,
-      "was": 56.8,
+      "was": 56.9,
       "fraction": "8/13",
       "winner": false
      },
      {
       "name": "Mariana Di Girolamo",
       "film": "Wild Horse Nine",
-      "pct": 35.9,
-      "was": 42.6,
+      "pct": 35.8,
+      "was": 42.3,
       "fraction": "15/8",
       "winner": false
      },
@@ -14756,14 +14739,14 @@
       "name": "Sandra Hüller",
       "film": "Project Hail Mary",
       "pct": 12.2,
-      "was": 12.6,
+      "was": 12.7,
       "fraction": "15/2",
       "winner": false
      },
      {
       "name": "Kate O’Flynn",
       "film": "Tender Loving Care",
-      "pct": 9.4,
+      "pct": 9.3,
       "was": 8.9,
       "fraction": "10/1",
       "winner": false
@@ -14771,8 +14754,8 @@
      {
       "name": "Merritt Wever",
       "film": "Primetime",
-      "pct": 4.7,
-      "was": 5.7,
+      "pct": 4.6,
+      "was": 5.6,
       "fraction": "25/1",
       "winner": false
      },
@@ -14787,7 +14770,7 @@
      {
       "name": "Parker Posey",
       "film": "Wild Horse Nine",
-      "pct": 2.4,
+      "pct": 2.3,
       "was": 3.5,
       "fraction": "50/1",
       "winner": false
@@ -14796,7 +14779,7 @@
       "name": "Scarlett Johansson",
       "film": "Paper Tiger",
       "pct": 1.8,
-      "was": 1.8,
+      "was": 1.9,
       "fraction": "100/1",
       "winner": false
      },
@@ -14855,7 +14838,7 @@
      {
       "name": "Denis Villeneuve",
       "film": "Dune: Part Three",
-      "pct": 62.5,
+      "pct": 58.3,
       "was": 36.8,
       "fraction": "8/13",
       "winner": false
@@ -14885,6 +14868,14 @@
       "winner": false
      },
      {
+      "name": "Lee Chang-dong",
+      "film": "Possible Love",
+      "pct": 8.3,
+      "was": 10.5,
+      "fraction": "25/1",
+      "winner": false
+     },
+     {
       "name": "Cristian Mungiu",
       "film": "Fjord",
       "pct": 4.2,
@@ -14903,14 +14894,6 @@
      {
       "name": "Luca Guadagnino",
       "film": "Artificial",
-      "pct": 4.2,
-      "was": 5.3,
-      "fraction": "25/1",
-      "winner": false
-     },
-     {
-      "name": "Lee Chang-dong",
-      "film": "Possible Love",
       "pct": 4.2,
       "was": 10.5,
       "fraction": "25/1",
@@ -14954,7 +14937,7 @@
       "name": "Javier Ambrossi, Javier Calvo",
       "film": "La Bola Negra",
       "pct": 95.2,
-      "was": 94.8,
+      "was": 94.9,
       "fraction": "1/100",
       "winner": false
      },
@@ -14970,22 +14953,22 @@
       "name": "Olivia Wilde",
       "film": "The Invite",
       "pct": 75.9,
-      "was": 73.6,
-      "fraction": "3/10",
+      "was": 73.4,
+      "fraction": "1/3",
       "winner": false
      },
      {
       "name": "Denis Villeneuve",
       "film": "Dune: Part Three",
-      "pct": 56.5,
-      "was": 54.4,
+      "pct": 56.7,
+      "was": 54.6,
       "fraction": "4/5",
       "winner": false
      },
      {
       "name": "Ryusuke Hamaguchi",
       "film": "All of a Sudden",
-      "pct": 22.4,
+      "pct": 22.3,
       "was": 18.8,
       "fraction": "7/2",
       "winner": false
@@ -15001,8 +14984,8 @@
      {
       "name": "Cristian Mungiu",
       "film": "Fjord",
-      "pct": 10.6,
-      "was": 12.7,
+      "pct": 10.5,
+      "was": 12.6,
       "fraction": "9/1",
       "winner": false
      },
@@ -15010,7 +14993,7 @@
       "name": "Alejandro G. Inarritu",
       "film": "Digger",
       "pct": 7.9,
-      "was": 11,
+      "was": 11.1,
       "fraction": "13/1",
       "winner": false
      },
@@ -15192,7 +15175,7 @@
       "name": "La Bola Negra",
       "film": null,
       "pct": 97.5,
-      "was": 97.1,
+      "was": 97.2,
       "fraction": "1/100",
       "winner": false
      },
@@ -15200,7 +15183,7 @@
       "name": "The Invite",
       "film": null,
       "pct": 96,
-      "was": 95.6,
+      "was": 95.5,
       "fraction": "1/100",
       "winner": false
      },
@@ -15216,7 +15199,7 @@
       "name": "Project Hail Mary",
       "film": null,
       "pct": 85.4,
-      "was": 85,
+      "was": 85.1,
       "fraction": "1/5",
       "winner": false
      },
@@ -15224,7 +15207,7 @@
       "name": "All of a Sudden",
       "film": null,
       "pct": 71.7,
-      "was": 70.4,
+      "was": 70.5,
       "fraction": "2/5",
       "winner": false
      },
@@ -15232,7 +15215,7 @@
       "name": "Dune: Part Three",
       "film": null,
       "pct": 17.6,
-      "was": 17.5,
+      "was": 17.4,
       "fraction": "5/1",
       "winner": false
      },
@@ -15248,7 +15231,7 @@
       "name": "I Play Rocky",
       "film": null,
       "pct": 6.3,
-      "was": 5.6,
+      "was": 5.7,
       "fraction": "16/1",
       "winner": false
      },
@@ -15331,17 +15314,17 @@
      {
       "name": "Fjord",
       "film": null,
-      "pct": 75,
+      "pct": 70.8,
       "was": 76.2,
-      "fraction": "1/3",
+      "fraction": "4/9",
       "winner": false
      },
      {
       "name": "Obsession",
       "film": null,
-      "pct": 62.5,
-      "was": 61.9,
-      "fraction": "8/13",
+      "pct": 66.7,
+      "was": 66.7,
+      "fraction": "1/2",
       "winner": false
      },
      {
@@ -15372,7 +15355,7 @@
       "name": "Behemoth!",
       "film": null,
       "pct": 20.8,
-      "was": 23.8,
+      "was": 19,
       "fraction": "4/1",
       "winner": false
      },
@@ -15401,7 +15384,7 @@
       "winner": false
      },
      {
-      "name": "Josephine",
+      "name": "The Drama",
       "film": null,
       "pct": 0,
       "was": 0,
@@ -15409,7 +15392,7 @@
       "winner": false
      },
      {
-      "name": "The Drama",
+      "name": "Josephine",
       "film": null,
       "pct": 0,
       "was": 0,
@@ -15470,14 +15453,14 @@
       "name": "Club Kid",
       "film": null,
       "pct": 45.7,
-      "was": 40.2,
+      "was": 40.1,
       "fraction": "6/5",
       "winner": false
      },
      {
       "name": "Artificial",
       "film": null,
-      "pct": 25.8,
+      "pct": 25.9,
       "was": 12,
       "fraction": "3/1",
       "winner": false
@@ -15485,8 +15468,8 @@
      {
       "name": "Behemoth!",
       "film": null,
-      "pct": 23.2,
-      "was": 33.1,
+      "pct": 23.1,
+      "was": 33.2,
       "fraction": "10/3",
       "winner": false
      },
@@ -15502,7 +15485,7 @@
       "name": "Tender Loving Care",
       "film": null,
       "pct": 14.4,
-      "was": 15.2,
+      "was": 15.3,
       "fraction": "6/1",
       "winner": false
      },
@@ -15510,7 +15493,7 @@
       "name": "Elsinore",
       "film": null,
       "pct": 9.8,
-      "was": 10.9,
+      "was": 10.7,
       "fraction": "10/1",
       "winner": false
      },
@@ -15518,7 +15501,7 @@
       "name": "Possible Love",
       "film": null,
       "pct": 3.5,
-      "was": 3.9,
+      "was": 4,
       "fraction": "33/1",
       "winner": false
      },
@@ -15534,7 +15517,7 @@
       "name": "Josephine",
       "film": null,
       "pct": 2.6,
-      "was": 2.9,
+      "was": 2.8,
       "fraction": "50/1",
       "winner": false
      },
@@ -15578,7 +15561,7 @@
       "name": "Iron Boy",
       "film": null,
       "pct": 79.2,
-      "was": 72.7,
+      "was": 68.2,
       "fraction": "1/4",
       "winner": false
      },
@@ -15610,7 +15593,7 @@
       "name": "Forgotten Island",
       "film": null,
       "pct": 25,
-      "was": 27.3,
+      "was": 31.8,
       "fraction": "3/1",
       "winner": false
      },
@@ -15692,39 +15675,39 @@
       "name": "Toy Story 5",
       "film": null,
       "pct": 97.7,
-      "was": 97.1,
+      "was": 97.2,
       "fraction": "1/100",
       "winner": false
      },
      {
       "name": "Hoppers",
       "film": null,
-      "pct": 81,
+      "pct": 80.9,
       "was": 81.2,
-      "fraction": "2/9",
+      "fraction": "1/4",
       "winner": false
      },
      {
       "name": "Iron Boy",
       "film": null,
-      "pct": 66.3,
-      "was": 65,
+      "pct": 66.2,
+      "was": 64.9,
       "fraction": "1/2",
       "winner": false
      },
      {
       "name": "Tangles",
       "film": null,
-      "pct": 56.2,
-      "was": 55.8,
+      "pct": 56.4,
+      "was": 55.6,
       "fraction": "4/5",
       "winner": false
      },
      {
       "name": "Ray Gunn",
       "film": null,
-      "pct": 49.8,
-      "was": 48.3,
+      "pct": 49.9,
+      "was": 48.8,
       "fraction": "21/20",
       "winner": false
      },
@@ -15937,8 +15920,8 @@
      {
       "name": "La Bola Negra",
       "film": null,
-      "pct": 94.7,
-      "was": 94.5,
+      "pct": 94.8,
+      "was": 94.6,
       "fraction": "1/100",
       "winner": false
      },
@@ -15954,7 +15937,7 @@
       "name": "Project Hail Mary",
       "film": null,
       "pct": 77.7,
-      "was": 76.5,
+      "was": 76.4,
       "fraction": "3/10",
       "winner": false
      },
@@ -15978,7 +15961,7 @@
       "name": "Digger",
       "film": null,
       "pct": 16.7,
-      "was": 16,
+      "was": 16.1,
       "fraction": "11/2",
       "winner": false
      },
@@ -16184,7 +16167,7 @@
       "name": "La Bola Negra",
       "film": null,
       "pct": 93.7,
-      "was": 93.4,
+      "was": 93.5,
       "fraction": "1/100",
       "winner": false
      },
@@ -16199,8 +16182,8 @@
      {
       "name": "Sense and Sensibility",
       "film": null,
-      "pct": 79.5,
-      "was": 78.7,
+      "pct": 79.6,
+      "was": 78.6,
       "fraction": "1/4",
       "winner": false
      },
@@ -16208,7 +16191,7 @@
       "name": "Werwulf",
       "film": null,
       "pct": 55.4,
-      "was": 49.7,
+      "was": 49.8,
       "fraction": "5/6",
       "winner": false
      },
@@ -16216,7 +16199,7 @@
       "name": "The Devil Wears Prada 2",
       "film": null,
       "pct": 42.9,
-      "was": 47.6,
+      "was": 47.5,
       "fraction": "11/8",
       "winner": false
      },
@@ -16232,7 +16215,7 @@
       "name": "Michael",
       "film": null,
       "pct": 9.6,
-      "was": 10.1,
+      "was": 10.2,
       "fraction": "10/1",
       "winner": false
      },
@@ -16256,7 +16239,7 @@
       "name": "Digger",
       "film": null,
       "pct": 1.8,
-      "was": 2,
+      "was": 1.9,
       "fraction": "100/1",
       "winner": false
      },
@@ -16361,14 +16344,6 @@
       "winner": false
      },
      {
-      "name": "Artificial",
-      "film": null,
-      "pct": 7.7,
-      "was": 0,
-      "fraction": "13/1",
-      "winner": false
-     },
-     {
       "name": "The Debut",
       "film": null,
       "pct": 3.8,
@@ -16377,11 +16352,27 @@
       "winner": false
      },
      {
+      "name": "Artificial",
+      "film": null,
+      "pct": 3.8,
+      "was": 0,
+      "fraction": "13/1",
+      "winner": false
+     },
+     {
       "name": "Michael",
       "film": null,
       "pct": 3.8,
       "was": 4.5,
       "fraction": "33/1",
+      "winner": false
+     },
+     {
+      "name": "Elsinore",
+      "film": null,
+      "pct": 3.8,
+      "was": 0,
+      "fraction": "100/1",
       "winner": false
      },
      {
@@ -16407,14 +16398,6 @@
       "was": 0,
       "fraction": "100/1",
       "winner": false
-     },
-     {
-      "name": "Primetime",
-      "film": null,
-      "pct": 0,
-      "was": 0,
-      "fraction": "100/1",
-      "winner": false
      }
     ],
     "users": [
@@ -16422,7 +16405,7 @@
       "name": "The Odyssey",
       "film": null,
       "pct": 97.4,
-      "was": 97.3,
+      "was": 97.4,
       "fraction": "1/100",
       "winner": false
      },
@@ -16437,8 +16420,8 @@
      {
       "name": "Wild Horse Nine",
       "film": null,
-      "pct": 87.4,
-      "was": 86.9,
+      "pct": 87.3,
+      "was": 87,
       "fraction": "1/5",
       "winner": false
      },
@@ -16454,14 +16437,14 @@
       "name": "Dune: Part Three",
       "film": null,
       "pct": 72.6,
-      "was": 72.9,
+      "was": 73.1,
       "fraction": "2/5",
       "winner": false
      },
      {
       "name": "The Invite",
       "film": null,
-      "pct": 30.1,
+      "pct": 30.2,
       "was": 28,
       "fraction": "12/5",
       "winner": false
@@ -16470,14 +16453,14 @@
       "name": "The Debut",
       "film": null,
       "pct": 13,
-      "was": 14.7,
+      "was": 14.6,
       "fraction": "15/2",
       "winner": false
      },
      {
       "name": "I Play Rocky",
       "film": null,
-      "pct": 3.7,
+      "pct": 3.6,
       "was": 3.7,
       "fraction": "33/1",
       "winner": false
@@ -16493,7 +16476,7 @@
      {
       "name": "Artificial",
       "film": null,
-      "pct": 2.2,
+      "pct": 2.3,
       "was": 1.6,
       "fraction": "50/1",
       "winner": false
@@ -16531,10 +16514,10 @@
       "winner": false
      },
      {
-      "name": "Godzilla Minus Zero",
+      "name": "The Drama",
       "film": null,
-      "pct": 0.7,
-      "was": 1,
+      "pct": 0.6,
+      "was": 0.6,
       "fraction": "100/1",
       "winner": false
      }
@@ -16676,7 +16659,7 @@
       "name": "The Odyssey",
       "film": null,
       "pct": 93.5,
-      "was": 93.4,
+      "was": 93.3,
       "fraction": "1/100",
       "winner": false
      },
@@ -16691,24 +16674,24 @@
      {
       "name": "Dune: Part Three",
       "film": null,
-      "pct": 81.4,
-      "was": 80.6,
+      "pct": 81.3,
+      "was": 80.7,
       "fraction": "2/9",
       "winner": false
      },
      {
       "name": "Clayface",
       "film": null,
-      "pct": 59.7,
-      "was": 57.7,
+      "pct": 59.8,
+      "was": 57.8,
       "fraction": "4/6",
       "winner": false
      },
      {
       "name": "Wicker",
       "film": null,
-      "pct": 36.3,
-      "was": 37.3,
+      "pct": 36.2,
+      "was": 37.1,
       "fraction": "9/5",
       "winner": false
      },
@@ -16723,7 +16706,7 @@
      {
       "name": "Rose",
       "film": null,
-      "pct": 11.8,
+      "pct": 11.7,
       "was": 12.5,
       "fraction": "8/1",
       "winner": false
@@ -16732,7 +16715,7 @@
       "name": "La Bola Negra",
       "film": null,
       "pct": 4.3,
-      "was": 4.8,
+      "was": 4.9,
       "fraction": "25/1",
       "winner": false
      },
@@ -16914,7 +16897,7 @@
       "name": "The Odyssey",
       "film": null,
       "pct": 97.6,
-      "was": 96.9,
+      "was": 97,
       "fraction": "1/100",
       "winner": false
      },
@@ -16922,23 +16905,23 @@
       "name": "La Bola Negra",
       "film": null,
       "pct": 92.8,
-      "was": 91.9,
+      "was": 92.1,
       "fraction": "1/100",
       "winner": false
      },
      {
       "name": "Project Hail Mary",
       "film": null,
-      "pct": 86.2,
-      "was": 84.5,
+      "pct": 86.3,
+      "was": 84.4,
       "fraction": "1/5",
       "winner": false
      },
      {
       "name": "Disclosure Day",
       "film": null,
-      "pct": 72.6,
-      "was": 73.6,
+      "pct": 72.4,
+      "was": 73.5,
       "fraction": "2/5",
       "winner": false
      },
@@ -16946,31 +16929,31 @@
       "name": "Dune: Part Three",
       "film": null,
       "pct": 67.4,
-      "was": 65.5,
+      "was": 65.6,
       "fraction": "1/2",
       "winner": false
      },
      {
       "name": "Behemoth!",
       "film": null,
-      "pct": 30.2,
-      "was": 30.2,
+      "pct": 30.4,
+      "was": 30.7,
       "fraction": "12/5",
       "winner": false
      },
      {
       "name": "Wild Horse Nine",
       "film": null,
-      "pct": 14.2,
-      "was": 16.2,
+      "pct": 14.1,
+      "was": 15.8,
       "fraction": "6/1",
       "winner": false
      },
      {
       "name": "Wildwood",
       "film": null,
-      "pct": 11.3,
-      "was": 8.8,
+      "pct": 11.4,
+      "was": 9.1,
       "fraction": "8/1",
       "winner": false
      },
@@ -16986,7 +16969,7 @@
       "name": "The Debut",
       "film": null,
       "pct": 5,
-      "was": 6.7,
+      "was": 6.5,
       "fraction": "20/1",
       "winner": false
      },
@@ -16994,7 +16977,7 @@
       "name": "Digger",
       "film": null,
       "pct": 1.9,
-      "was": 1.7,
+      "was": 1.6,
       "fraction": "100/1",
       "winner": false
      },
@@ -17026,7 +17009,7 @@
       "name": "Elsinore",
       "film": null,
       "pct": 0.7,
-      "was": 1,
+      "was": 0.9,
       "fraction": "100/1",
       "winner": false
      }
@@ -17160,7 +17143,7 @@
       "name": "La Bola Negra",
       "film": "La Nieve",
       "pct": 96.3,
-      "was": 95.5,
+      "was": 95.6,
       "fraction": "1/100",
       "winner": false
      },
@@ -17168,7 +17151,7 @@
       "name": "The Debut",
       "film": "This City May Have Chewed Me Up",
       "pct": 95.2,
-      "was": 94,
+      "was": 94.2,
       "fraction": "1/100",
       "winner": false
      },
@@ -17184,30 +17167,30 @@
       "name": "By Any Means",
       "film": "By Any Means",
       "pct": 71.8,
-      "was": 72.4,
+      "was": 72.6,
       "fraction": "2/5",
       "winner": false
      },
      {
       "name": "The Odyssey",
       "film": "When I’m Home",
-      "pct": 59,
+      "pct": 59.1,
       "was": 60.2,
-      "fraction": "8/11",
+      "fraction": "4/6",
       "winner": false
      },
      {
       "name": "Wildwood",
       "film": "The Better Part of Bravery",
       "pct": 25,
-      "was": 16.9,
-      "fraction": "3/1",
+      "was": 17,
+      "fraction": "16/5",
       "winner": false
      },
      {
       "name": "Power Ballad",
       "film": "How to Write a Song Without You",
-      "pct": 10.8,
+      "pct": 10.7,
       "was": 11.2,
       "fraction": "9/1",
       "winner": false
@@ -17216,7 +17199,7 @@
       "name": "The Devil Wears Prada 2",
       "film": "Shape of a Woman",
       "pct": 8.7,
-      "was": 10.2,
+      "was": 10,
       "fraction": "12/1",
       "winner": false
      },
@@ -17232,7 +17215,7 @@
       "name": "Wuthering Heights",
       "film": "Chains of Love",
       "pct": 6.6,
-      "was": 7.1,
+      "was": 7,
       "fraction": "16/1",
       "winner": false
      },
@@ -17240,7 +17223,7 @@
       "name": "The Devil Wears Prada 2",
       "film": "Runway",
       "pct": 4.1,
-      "was": 4.5,
+      "was": 4.4,
       "fraction": "25/1",
       "winner": false
      },
@@ -17248,7 +17231,7 @@
       "name": "Behemoth!",
       "film": "Your God Is Sleeping",
       "pct": 3.6,
-      "was": 5.2,
+      "was": 5.1,
       "fraction": "33/1",
       "winner": false
      },
@@ -17256,7 +17239,7 @@
       "name": "Maserati: The Brothers",
       "film": "One Right Here",
       "pct": 2.3,
-      "was": 2.4,
+      "was": 2.3,
       "fraction": "50/1",
       "winner": false
      },
@@ -17264,7 +17247,7 @@
       "name": "Musk",
       "film": "Let Me Sell You a Dream",
       "pct": 1.8,
-      "was": 2.4,
+      "was": 2.8,
       "fraction": "100/1",
       "winner": false
      },
@@ -17272,7 +17255,7 @@
       "name": "Primetime",
       "film": "On Video",
       "pct": 1.7,
-      "was": 1.4,
+      "was": 1.6,
       "fraction": "100/1",
       "winner": false
      }
@@ -17299,7 +17282,7 @@
      {
       "name": "Wild Horse Nine",
       "film": null,
-      "pct": 88.9,
+      "pct": 92.6,
       "was": 91.3,
       "fraction": "1/5",
       "winner": false
@@ -17337,19 +17320,19 @@
       "winner": false
      },
      {
-      "name": "Artificial",
-      "film": null,
-      "pct": 11.1,
-      "was": 8.7,
-      "fraction": "8/1",
-      "winner": false
-     },
-     {
       "name": "Obsession",
       "film": null,
       "pct": 7.4,
       "was": 8.7,
       "fraction": "13/1",
+      "winner": false
+     },
+     {
+      "name": "Artificial",
+      "film": null,
+      "pct": 7.4,
+      "was": 8.7,
+      "fraction": "8/1",
       "winner": false
      },
      {
@@ -17405,7 +17388,7 @@
      {
       "name": "The Odyssey",
       "film": null,
-      "pct": 95.6,
+      "pct": 95.7,
       "was": 95.9,
       "fraction": "1/100",
       "winner": false
@@ -17429,7 +17412,7 @@
      {
       "name": "The Debut",
       "film": null,
-      "pct": 71.5,
+      "pct": 71.6,
       "was": 70.4,
       "fraction": "2/5",
       "winner": false
@@ -17438,7 +17421,7 @@
       "name": "I Play Rocky",
       "film": null,
       "pct": 43,
-      "was": 41.8,
+      "was": 41.9,
       "fraction": "11/8",
       "winner": false
      },
@@ -17453,7 +17436,7 @@
      {
       "name": "Being Heumann",
       "film": null,
-      "pct": 19.6,
+      "pct": 19.5,
       "was": 22.2,
       "fraction": "9/2",
       "winner": false
@@ -17461,8 +17444,8 @@
      {
       "name": "Obsession",
       "film": null,
-      "pct": 18.2,
-      "was": 18.6,
+      "pct": 18.1,
+      "was": 18.5,
       "fraction": "9/2",
       "winner": false
      },
@@ -17478,7 +17461,7 @@
       "name": "All of a Sudden",
       "film": null,
       "pct": 4.2,
-      "was": 4.8,
+      "was": 4.7,
       "fraction": "25/1",
       "winner": false
      },
@@ -17683,16 +17666,16 @@
      {
       "name": "Disclosure Day",
       "film": null,
-      "pct": 48.8,
-      "was": 47.7,
+      "pct": 48.7,
+      "was": 47.6,
       "fraction": "11/10",
       "winner": false
      },
      {
       "name": "Michael",
       "film": null,
-      "pct": 23,
-      "was": 23.1,
+      "pct": 23.1,
+      "was": 23.2,
       "fraction": "10/3",
       "winner": false
      },
@@ -17700,7 +17683,7 @@
       "name": "Godzilla Minus Zero",
       "film": null,
       "pct": 22.1,
-      "was": 22.2,
+      "was": 22.3,
       "fraction": "7/2",
       "winner": false
      },
@@ -17732,7 +17715,7 @@
       "name": "Obsession",
       "film": null,
       "pct": 2.2,
-      "was": 2.4,
+      "was": 2.3,
       "fraction": "50/1",
       "winner": false
      },
@@ -17747,7 +17730,7 @@
      {
       "name": "Digger",
       "film": null,
-      "pct": 1.3,
+      "pct": 1.4,
       "was": 1.2,
       "fraction": "100/1",
       "winner": false
@@ -17929,8 +17912,8 @@
      {
       "name": "Whalefall",
       "film": null,
-      "pct": 44.4,
-      "was": 43.4,
+      "pct": 44.5,
+      "was": 43.5,
       "fraction": "5/4",
       "winner": false
      },
@@ -17938,8 +17921,8 @@
       "name": "Avengers: Doomsday",
       "film": null,
       "pct": 25,
-      "was": 26.6,
-      "fraction": "3/1",
+      "was": 26.4,
+      "fraction": "16/5",
       "winner": false
      },
      {
@@ -17954,7 +17937,7 @@
       "name": "Wildwood",
       "film": null,
       "pct": 13.7,
-      "was": 12.4,
+      "was": 12.5,
       "fraction": "13/2",
       "winner": false
      },
@@ -18027,25 +18010,25 @@
       "winner": false
      },
      {
-      "name": "You Can See Everything",
-      "film": null,
-      "pct": 100,
-      "was": 0,
-      "fraction": "1/100",
-      "winner": false
-     },
-     {
       "name": "Once Upon a Time in Harlem",
       "film": null,
-      "pct": 90,
+      "pct": 90.9,
       "was": 0,
       "fraction": "1/5",
       "winner": false
      },
      {
+      "name": "You Can See Everything",
+      "film": null,
+      "pct": 90.9,
+      "was": 0,
+      "fraction": "1/100",
+      "winner": false
+     },
+     {
       "name": "American Doctor",
       "film": null,
-      "pct": 80,
+      "pct": 81.8,
       "was": 0,
       "fraction": "1/4",
       "winner": false
@@ -18053,7 +18036,7 @@
      {
       "name": "Musk",
       "film": null,
-      "pct": 40,
+      "pct": 45.5,
       "was": 0,
       "fraction": "6/4",
       "winner": false
@@ -18061,7 +18044,7 @@
      {
       "name": "14th",
       "film": null,
-      "pct": 30,
+      "pct": 27.3,
       "was": 0,
       "fraction": "12/5",
       "winner": false
@@ -18069,7 +18052,7 @@
      {
       "name": "Rehearsals for a Revolution",
       "film": null,
-      "pct": 10,
+      "pct": 18.2,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18077,7 +18060,7 @@
      {
       "name": "The History of Concrete",
       "film": null,
-      "pct": 10,
+      "pct": 9.1,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18085,7 +18068,7 @@
      {
       "name": "Nuisance Bear",
       "film": null,
-      "pct": 10,
+      "pct": 9.1,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18093,7 +18076,7 @@
      {
       "name": "Everest: The Other Side",
       "film": null,
-      "pct": 10,
+      "pct": 9.1,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18101,7 +18084,7 @@
      {
       "name": "One in a Million",
       "film": null,
-      "pct": 10,
+      "pct": 9.1,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18109,7 +18092,7 @@
      {
       "name": "Jane Elliott Against the World",
       "film": null,
-      "pct": 10,
+      "pct": 9.1,
       "was": 0,
       "fraction": "9/1",
       "winner": false
@@ -18143,7 +18126,7 @@
      {
       "name": "Naza",
       "film": null,
-      "pct": 95.4,
+      "pct": 95.5,
       "was": 0,
       "fraction": "1/100",
       "winner": false
@@ -18151,7 +18134,7 @@
      {
       "name": "Once Upon a Time in Harlem",
       "film": null,
-      "pct": 93.9,
+      "pct": 94.1,
       "was": 0,
       "fraction": "1/100",
       "winner": false
@@ -18159,7 +18142,7 @@
      {
       "name": "You Can See Everything",
       "film": null,
-      "pct": 92.5,
+      "pct": 92.6,
       "was": 0,
       "fraction": "1/100",
       "winner": false
@@ -18167,7 +18150,7 @@
      {
       "name": "American Doctor",
       "film": null,
-      "pct": 75.5,
+      "pct": 75.6,
       "was": 0,
       "fraction": "1/3",
       "winner": false
@@ -18183,7 +18166,7 @@
      {
       "name": "14th",
       "film": null,
-      "pct": 28.5,
+      "pct": 28.6,
       "was": 0,
       "fraction": "13/5",
       "winner": false
@@ -18191,7 +18174,7 @@
      {
       "name": "Rehearsals for a Revolution",
       "film": null,
-      "pct": 19,
+      "pct": 18.7,
       "was": 0,
       "fraction": "9/2",
       "winner": false
@@ -18199,7 +18182,7 @@
      {
       "name": "The History of Concrete",
       "film": null,
-      "pct": 13,
+      "pct": 12.7,
       "was": 0,
       "fraction": "15/2",
       "winner": false
@@ -18207,7 +18190,7 @@
      {
       "name": "Nuisance Bear",
       "film": null,
-      "pct": 8.6,
+      "pct": 8.8,
       "was": 0,
       "fraction": "12/1",
       "winner": false
@@ -18217,21 +18200,21 @@
       "film": null,
       "pct": 4,
       "was": 0,
-      "fraction": "25/1",
-      "winner": false
-     },
-     {
-      "name": "Everybody to Kenmure Street",
-      "film": null,
-      "pct": 2.9,
-      "was": 0,
-      "fraction": "50/1",
+      "fraction": "33/1",
       "winner": false
      },
      {
       "name": "One in a Million",
       "film": null,
-      "pct": 2.9,
+      "pct": 3.1,
+      "was": 0,
+      "fraction": "33/1",
+      "winner": false
+     },
+     {
+      "name": "Everybody to Kenmure Street",
+      "film": null,
+      "pct": 2.8,
       "was": 0,
       "fraction": "50/1",
       "winner": false
@@ -18255,7 +18238,7 @@
      {
       "name": "Remake",
       "film": null,
-      "pct": 1.2,
+      "pct": 1.1,
       "was": 0,
       "fraction": "100/1",
       "winner": false
@@ -18319,10 +18302,10 @@
        "The Odyssey": 98,
        "Dune: Part Three": 94,
        "La Bola Negra": 91.5,
-       "Project Hail Mary": 84.8,
-       "Werwulf": 60.4,
-       "Digger": 33.2,
-       "Backrooms": 21.2,
+       "Project Hail Mary": 85,
+       "Werwulf": 60.3,
+       "Digger": 33,
+       "Backrooms": 21.3,
        "Wuthering Heights": 4.3,
        "Wild Horse Nine": 2.4,
        "Sense and Sensibility": 1.7
@@ -18382,15 +18365,15 @@
      {
       "d": "2026-10-17",
       "v": {
-       "John Malkovich": 95.9,
+       "John Malkovich": 95.8,
        "Matt Damon": 94,
        "Andrew Scott": 88.7,
-       "Robert Pattinson": 56.1,
+       "Robert Pattinson": 56.2,
        "Tom Cruise": 45,
-       "Ryan Gosling": 43,
-       "Anthony Ippolito": 22.4,
+       "Ryan Gosling": 43.1,
+       "Anthony Ippolito": 22.5,
        "John Turturro": 13.5,
-       "Pedro Pascal": 13,
+       "Pedro Pascal": 12.9,
        "Sebastian Stan": 6.6
       }
      }
@@ -18421,8 +18404,8 @@
        "Wild Horse Nine": 100,
        "Project Hail Mary": 100,
        "The Debut": 92,
+       "The Invite": 92,
        "Dune: Part Three": 92,
-       "The Invite": 88,
        "I Play Rocky": 56,
        "All of a Sudden": 36,
        "Fjord": 36
@@ -18455,8 +18438,8 @@
        "Project Hail Mary": 92.7,
        "The Invite": 90.9,
        "Dune: Part Three": 89.1,
-       "All of a Sudden": 59.6,
-       "Obsession": 58.9,
+       "All of a Sudden": 59.7,
+       "Obsession": 58.7,
        "Fjord": 51.4
       }
      }
@@ -18513,13 +18496,13 @@
       "v": {
        "Julianne Moore": 97.4,
        "Inde Navarrette": 87.8,
-       "Olivia Wilde": 85.6,
-       "Virginie Efira": 57.2,
+       "Olivia Wilde": 85.7,
+       "Virginie Efira": 57.3,
        "Renate Reinsve": 54.1,
-       "Sandra Hüller": 21.9,
-       "Ruth Madeley": 28.6,
+       "Sandra Hüller": 21.7,
+       "Ruth Madeley": 28.4,
        "Jessica Lange": 3.9,
-       "Emily Blunt": 3.2
+       "Emily Blunt": 3.3
       }
      }
     ]
@@ -18547,10 +18530,10 @@
        "Paul Giamatti": 100,
        "Sam Rockwell": 96.3,
        "John Leguizamo": 77.8,
-       "Edward Norton": 66.7,
+       "Edward Norton": 63,
        "Andrew Garfield": 55.6,
        "Guitarricadelafuente": 44.4,
-       "Colman Domingo": 18.5,
+       "Colman Domingo": 22.2,
        "Steve Buscemi": 11.1,
        "John Goodman": 7.4,
        "Robert Pattinson": 3.7
@@ -18580,12 +18563,12 @@
        "Sam Rockwell": 91.2,
        "John Leguizamo": 77.7,
        "Edward Norton": 70.8,
-       "Guitarricadelafuente": 61.6,
-       "Andrew Garfield": 44.1,
-       "John Goodman": 13.4,
-       "Steve Buscemi": 10.5,
+       "Guitarricadelafuente": 61.7,
+       "Andrew Garfield": 44.2,
+       "John Goodman": 13.3,
+       "Steve Buscemi": 10.4,
        "Colman Domingo": 9.8,
-       "Robert Pattinson": 3.8
+       "Robert Pattinson": 3.9
       }
      }
     ]
@@ -18642,12 +18625,12 @@
        "Anne Hathaway": 95.1,
        "Samantha Morton": 87.2,
        "Penelope Cruz": 61.5,
-       "Tao Okamoto": 71.1,
-       "Mariana Di Girolamo": 35.9,
+       "Tao Okamoto": 71.2,
+       "Mariana Di Girolamo": 35.8,
        "Olivia Colman": 22.6,
        "Sandra Hüller": 12.2,
-       "Kate O’Flynn": 9.4,
-       "Merritt Wever": 4.7
+       "Kate O’Flynn": 9.3,
+       "Merritt Wever": 4.6
       }
      }
     ]
@@ -18676,12 +18659,12 @@
        "Javier Ambrossi, Javier Calvo": 95.8,
        "Martin McDonagh": 87.5,
        "Olivia Wilde": 75,
-       "Denis Villeneuve": 62.5,
+       "Denis Villeneuve": 58.3,
        "Jesse Eisenberg": 25,
        "Phil Lord, Christopher Miller": 16.7,
        "Ryusuke Hamaguchi": 12.5,
-       "Cristian Mungiu": 4.2,
-       "Nathan Fielder and Lance Oppenheim": 4.2
+       "Lee Chang-dong": 8.3,
+       "Cristian Mungiu": 4.2
       }
      }
     ],
@@ -18708,10 +18691,10 @@
        "Javier Ambrossi, Javier Calvo": 95.2,
        "Martin McDonagh": 86.8,
        "Olivia Wilde": 75.9,
-       "Denis Villeneuve": 56.5,
-       "Ryusuke Hamaguchi": 22.4,
+       "Denis Villeneuve": 56.7,
+       "Ryusuke Hamaguchi": 22.3,
        "Jesse Eisenberg": 16.4,
-       "Cristian Mungiu": 10.6,
+       "Cristian Mungiu": 10.5,
        "Alejandro G. Inarritu": 7.9,
        "Phil Lord, Christopher Miller": 6
       }
@@ -18806,8 +18789,8 @@
       "v": {
        "Wild Horse Nine": 100,
        "The Debut": 100,
-       "Fjord": 75,
-       "Obsession": 62.5,
+       "Fjord": 70.8,
+       "Obsession": 66.7,
        "Club Kid": 41.7,
        "Tender Loving Care": 37.5,
        "Artificial": 29.2,
@@ -18841,8 +18824,8 @@
        "Obsession": 78.8,
        "Fjord": 72.7,
        "Club Kid": 45.7,
-       "Artificial": 25.8,
-       "Behemoth!": 23.2,
+       "Artificial": 25.9,
+       "Behemoth!": 23.1,
        "Digger": 15.5,
        "Tender Loving Care": 14.4,
        "Elsinore": 9.8
@@ -18904,10 +18887,10 @@
       "v": {
        "Wildwood": 98.2,
        "Toy Story 5": 97.7,
-       "Hoppers": 81,
-       "Iron Boy": 66.3,
-       "Tangles": 56.2,
-       "Ray Gunn": 49.8,
+       "Hoppers": 80.9,
+       "Iron Boy": 66.2,
+       "Tangles": 56.4,
+       "Ray Gunn": 49.9,
        "Forgotten Island": 22.6,
        "Shaun the Sheep: The Beast of Mossy Bottom": 14.4,
        "Minions and Monsters": 2.9,
@@ -18969,7 +18952,7 @@
       "d": "2026-10-17",
       "v": {
        "The Odyssey": 97.7,
-       "La Bola Negra": 94.7,
+       "La Bola Negra": 94.8,
        "Dune: Part Three": 92.9,
        "Project Hail Mary": 77.7,
        "Werwulf": 72.1,
@@ -19037,7 +19020,7 @@
        "The Odyssey": 96.7,
        "La Bola Negra": 93.7,
        "Dune: Part Three": 87.5,
-       "Sense and Sensibility": 79.5,
+       "Sense and Sensibility": 79.6,
        "Werwulf": 55.4,
        "The Devil Wears Prada 2": 42.9,
        "Wuthering Heights": 17.8,
@@ -19076,8 +19059,8 @@
        "The Invite": 11.5,
        "I Play Rocky": 7.7,
        "Behemoth!": 7.7,
-       "Artificial": 7.7,
-       "The Debut": 3.8
+       "The Debut": 3.8,
+       "Artificial": 3.8
       }
      }
     ],
@@ -19102,14 +19085,14 @@
       "v": {
        "The Odyssey": 97.4,
        "La Bola Negra": 95.6,
-       "Wild Horse Nine": 87.4,
+       "Wild Horse Nine": 87.3,
        "Project Hail Mary": 79.7,
        "Dune: Part Three": 72.6,
-       "The Invite": 30.1,
+       "The Invite": 30.2,
        "The Debut": 13,
-       "I Play Rocky": 3.7,
+       "I Play Rocky": 3.6,
        "Behemoth!": 3.4,
-       "Artificial": 2.2
+       "Artificial": 2.3
       }
      }
     ]
@@ -19169,11 +19152,11 @@
        "Werwulf": 96.1,
        "The Odyssey": 93.5,
        "Digger": 86.5,
-       "Dune: Part Three": 81.4,
-       "Clayface": 59.7,
-       "Wicker": 36.3,
+       "Dune: Part Three": 81.3,
+       "Clayface": 59.8,
+       "Wicker": 36.2,
        "Michael": 16.3,
-       "Rose": 11.8,
+       "Rose": 11.7,
        "La Bola Negra": 4.3,
        "Elsinore": 2
       }
@@ -19234,12 +19217,12 @@
       "v": {
        "The Odyssey": 97.6,
        "La Bola Negra": 92.8,
-       "Project Hail Mary": 86.2,
-       "Disclosure Day": 72.6,
+       "Project Hail Mary": 86.3,
+       "Disclosure Day": 72.4,
        "Dune: Part Three": 67.4,
-       "Behemoth!": 30.2,
-       "Wild Horse Nine": 14.2,
-       "Wildwood": 11.3,
+       "Behemoth!": 30.4,
+       "Wild Horse Nine": 14.1,
+       "Wildwood": 11.4,
        "Artificial": 7.4,
        "The Debut": 5
       }
@@ -19302,9 +19285,9 @@
        "The Debut": 95.2,
        "Toy Story 5": 90.6,
        "By Any Means": 71.8,
-       "The Odyssey": 59,
+       "The Odyssey": 59.1,
        "Wildwood": 25,
-       "Power Ballad": 10.8,
+       "Power Ballad": 10.7,
        "The Devil Wears Prada 2": 8.7,
        "Artificial": 8.1,
        "Wuthering Heights": 6.6
@@ -19334,13 +19317,13 @@
       "v": {
        "The Odyssey": 100,
        "La Bola Negra": 96.3,
-       "Wild Horse Nine": 88.9,
+       "Wild Horse Nine": 92.6,
        "The Debut": 63,
        "I Play Rocky": 63,
        "Being Heumann": 33.3,
        "The Invite": 22.2,
-       "Artificial": 11.1,
        "Obsession": 7.4,
+       "Artificial": 7.4,
        "Dune: Part Three": 3.7
       }
      }
@@ -19364,14 +19347,14 @@
      {
       "d": "2026-10-17",
       "v": {
-       "The Odyssey": 95.6,
+       "The Odyssey": 95.7,
        "La Bola Negra": 95,
        "Wild Horse Nine": 86.3,
-       "The Debut": 71.5,
+       "The Debut": 71.6,
        "I Play Rocky": 43,
        "The Invite": 38.4,
-       "Being Heumann": 19.6,
-       "Obsession": 18.2,
+       "Being Heumann": 19.5,
+       "Obsession": 18.1,
        "Dune: Part Three": 6.6,
        "All of a Sudden": 4.2
       }
@@ -19434,8 +19417,8 @@
        "Project Hail Mary": 97.5,
        "Dune: Part Three": 96.2,
        "La Bola Negra": 84,
-       "Disclosure Day": 48.8,
-       "Michael": 23,
+       "Disclosure Day": 48.7,
+       "Michael": 23.1,
        "Godzilla Minus Zero": 22.1,
        "Whalefall": 7.3,
        "Werwulf": 4.5,
@@ -19500,7 +19483,7 @@
        "Dune: Part Three": 96.5,
        "The Odyssey": 92.2,
        "Godzilla Minus Zero": 92.1,
-       "Whalefall": 44.4,
+       "Whalefall": 44.5,
        "Avengers: Doomsday": 25,
        "Spider-Man: Brand New Day": 17.2,
        "Wildwood": 13.7,
@@ -19531,15 +19514,15 @@
       "d": "2026-10-17",
       "v": {
        "Naza": 100,
-       "You Can See Everything": 100,
-       "Once Upon a Time in Harlem": 90,
-       "American Doctor": 80,
-       "Musk": 40,
-       "14th": 30,
-       "Rehearsals for a Revolution": 10,
-       "The History of Concrete": 10,
-       "Nuisance Bear": 10,
-       "Everest: The Other Side": 10
+       "Once Upon a Time in Harlem": 90.9,
+       "You Can See Everything": 90.9,
+       "American Doctor": 81.8,
+       "Musk": 45.5,
+       "14th": 27.3,
+       "Rehearsals for a Revolution": 18.2,
+       "The History of Concrete": 9.1,
+       "Nuisance Bear": 9.1,
+       "Everest: The Other Side": 9.1
       }
      }
     ],
@@ -19562,15 +19545,15 @@
      {
       "d": "2026-10-17",
       "v": {
-       "Naza": 95.4,
-       "Once Upon a Time in Harlem": 93.9,
-       "You Can See Everything": 92.5,
-       "American Doctor": 75.5,
+       "Naza": 95.5,
+       "Once Upon a Time in Harlem": 94.1,
+       "You Can See Everything": 92.6,
+       "American Doctor": 75.6,
        "Musk": 47,
-       "14th": 28.5,
-       "Rehearsals for a Revolution": 19,
-       "The History of Concrete": 13,
-       "Nuisance Bear": 8.6,
+       "14th": 28.6,
+       "Rehearsals for a Revolution": 18.7,
+       "The History of Concrete": 12.7,
+       "Nuisance Bear": 8.8,
        "Everest: The Other Side": 4
       }
      }
@@ -23186,6 +23169,11 @@
     ]
    }
   }
+ },
+ "analysts": {
+  "updated": "2026-10-17T15:41:07.570Z",
+  "zauzmer": {},
+  "reads": []
  },
  "radar": [
   {

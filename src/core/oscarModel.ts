@@ -47,6 +47,7 @@ export function contenders(d: AwardsData, cat: string) {
   };
   for (const r of [...(d.odds?.categories[cat]?.experts ?? []).slice(0, 12), ...(d.odds?.categories[cat]?.users ?? []).slice(0, 8)]) add(r.name, r.film);
   for (const src of [d.markets?.polymarket?.[cat], d.markets?.kalshi?.[cat]]) for (const r of [...(src?.winner ?? []).slice(0, 10), ...(src?.nom ?? []).slice(0, 10)]) add(r.name);
+  for (const z of [d.analysts?.zauzmer?.winner, d.analysts?.zauzmer?.nom]) for (const r of (z?.cats[cat] ?? []).slice(0, 8)) add(r.name, r.film);
   for (const a of d.awards) for (const c of a.edition?.categories ?? []) if (c.oscar === cat) for (const n of c.nominees) add(PERSON_CATS.has(cat) ? n.people : cat === 'song' ? n.song ?? n.film : n.film, PERSON_CATS.has(cat) ? n.film : null);
   return out;
 }
