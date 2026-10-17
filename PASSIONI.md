@@ -32,6 +32,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 14 | Premi del cinema | Governors Awards 15 novembre, Oscar 14 marzo | ✅ |
 | 15 | Milan, Patriots, Texas | Partite ogni settimana | ✅ |
 | 16 | Tennis, Grande Slam | Australian Open dal 17 gennaio | ✅ |
+| 17 | NFL | Partite ogni weekend | ✅ |
 
 ---
 
@@ -418,12 +419,25 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - classifica di tutti i tempi dei titoli Slam, colorata per torneo;
 - campioni degli ultimi dieci anni, notizie.
 
+## NFL ✅
+**Interessi:** il riepilogo della stagione in corso e tutte le partite del weekend in diretta.
+
+**Fonti:** ESPN, letto direttamente dal browser.
+- Partite della settimana, aggiornate ogni 30 secondi quando una è in corso e ogni 2 minuti altrimenti.
+- Classifiche delle 8 division con i seed dei playoff, leader statistici e risultati della settimana precedente, ogni 15 minuti.
+
+**Pagina:**
+- **In alto:** prossimo calcio d'inizio o partita live, miglior record, numeri della settimana con le squadre a riposo.
+- **Partite della settimana:** tutte, divise per giorno con l'ora di Roma. Quelle in corso mostrano punteggio per quarto, possesso, down e distanza, ultima azione, red zone e migliori giocatori.
+- **Playoff:** "se la stagione finisse oggi", i 7 seed di AFC e NFC più le squadre in corsa.
+- **Differenza punti:** grafico di tutte le 32 squadre, raggruppate per division.
+- **In basso:** classifiche delle 8 division (Patriots evidenziati), leader statistici, risultati della settimana precedente.
+
 ---
 
 ## Da definire più avanti 💬
 Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a coprirle con le fonti attuali.
 
-- **NFL:** ESPN, partite in prima serata.
 
 ## Altre passioni da aggiungere
 - 
