@@ -355,7 +355,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 **Aggiunti (17 ottobre):** USC Scripter (sceneggiatura non originale), SCL (colonne sonore) e Critics' Choice Documentary Awards per i documentari, al posto di Cinema Eye e IDA, che non hanno fonti leggibili.
 
-**Esclusi:** premi europei e italiani, Berlino e Sundance, associazioni di critici regionali.
+**Esclusi:** premi europei e italiani, Berlino, associazioni di critici regionali.
 
 **Aggiornamento rapido (collector `awards`, ogni 15 minuti):**
 - **Radar delle notizie:** i feed di Variety, The Hollywood Reporter, IndieWire, Gold Derby, AwardsWatch, Awards Daily e Next Best Picture.
@@ -376,6 +376,20 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - calendario di tutta la stagione: anelli per le nomination, punti per le cerimonie, barre per i festival;
 - per ogni categoria: quote di esperti e utenti con le variazioni, grafico dell'andamento, tabella dei precursori (★ vinto, ● nominato) e ultimi nominati;
 - vincitori dei festival, prossime date, notizie (Variety), griglia di tutti i premi con il loro stato.
+
+**Schermate (schede sotto il titolo):**
+- **Overview:** la pagina descritta sopra.
+- **Tracker:** per categoria, ogni candidato contro ogni precursore in ordine di annuncio (★ vinto, ● nominato, – escluso, vuoto se non ancora annunciato), con vittorie, nomination e previsione. Per premio, tutte le categorie con nominati e vincitori.
+- **Forecast:** tabella di tutte le categorie con il favorito dell'Observer, degli esperti Gold Derby, di Polymarket e di Kalshi, e quante fonti concordano. Per la categoria scelta, un dot plot delle quattro previsioni e le barre del "perché" (quanto pesa ogni precursore).
+- **The race:** la previsione rifatta dopo ogni annuncio della stagione (chi parte forte e cala, chi sale tardi), l'andamento giornaliero di Gold Derby, Polymarket e Kalshi, e chi è salito o sceso di più.
+- **The study:** quanto spesso il vincitore di ogni precursore vince l'Oscar (heatmap precursore × categoria), quando parla ogni premio e quanto è affidabile, l'accuratezza del modello sulle stagioni passate e le sorprese che i precursori non avevano visto.
+
+**Il modello (collector `awards-history`, `src/core/oscarModel.ts`):**
+- **Dati:** tutte le stagioni 2005–2026, lette da Wikipedia: ogni nominato all'Oscar e il suo risultato a 22 precursori (festival, critici, Critics Choice, Globes, guild, Spirit, BAFTA). Le stagioni dal 2016 contano il doppio.
+- **Calcolo:** per ogni precursore e categoria, quanto più spesso i futuri vincitori dell'Oscar avevano vinto, erano stati nominati o esclusi rispetto agli altri nominati. I rapporti si moltiplicano, smorzati (0,42) perché i precursori condividono votanti e gusti. Lo smorzamento è calibrato sulle stagioni passate.
+- **Verifica:** ogni stagione passata viene prevista con i pesi imparati dalle altre. Il favorito vince il 70% delle categorie (Regia 18/21, Miglior film 12/21).
+- **Segnali più forti:** DGA per la regia (88%), Actor Awards (SAG) per gli attori (81–84%), PGA per il miglior film (72%), ADG per la scenografia (80%).
+- **Confronto:** quote di vittoria di Polymarket (24 categorie) e Kalshi (6 categorie), lette ogni ora, con una lettura al giorno salvata per i grafici. Gli esperti Gold Derby entrano nel confronto dopo le nomination: prima danno la probabilità di essere candidati.
 
 ## AC Milan, New England Patriots, Texas Longhorns ✅
 **Interessi:**

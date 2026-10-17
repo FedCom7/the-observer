@@ -1,0 +1,9342 @@
+{
+ "updated": "2026-10-17T15:11:10.588Z",
+ "status": {},
+ "years": [
+  2005,
+  2026
+ ],
+ "precursors": [
+  {
+   "id": "tiff",
+   "short": "TIFF",
+   "seasons": 9
+  },
+  {
+   "id": "nbr",
+   "short": "NBR",
+   "seasons": 19
+  },
+  {
+   "id": "nyfcc",
+   "short": "NYFCC",
+   "seasons": 20
+  },
+  {
+   "id": "lafca",
+   "short": "LAFCA",
+   "seasons": 22
+  },
+  {
+   "id": "cca",
+   "short": "Critics Choice",
+   "seasons": 22
+  },
+  {
+   "id": "globes",
+   "short": "Globes",
+   "seasons": 22
+  },
+  {
+   "id": "sag",
+   "short": "SAG / Actor Awards",
+   "seasons": 22
+  },
+  {
+   "id": "pga",
+   "short": "PGA",
+   "seasons": 22
+  },
+  {
+   "id": "dga",
+   "short": "DGA",
+   "seasons": 22
+  },
+  {
+   "id": "wga",
+   "short": "WGA",
+   "seasons": 17
+  },
+  {
+   "id": "scripter",
+   "short": "Scripter",
+   "seasons": 22
+  },
+  {
+   "id": "ace",
+   "short": "ACE",
+   "seasons": 13
+  },
+  {
+   "id": "adg",
+   "short": "ADG",
+   "seasons": 20
+  },
+  {
+   "id": "cdg",
+   "short": "CDG",
+   "seasons": 22
+  },
+  {
+   "id": "muahs",
+   "short": "MUAHS",
+   "seasons": 8
+  },
+  {
+   "id": "cas",
+   "short": "CAS",
+   "seasons": 17
+  },
+  {
+   "id": "mpse",
+   "short": "MPSE",
+   "seasons": 6
+  },
+  {
+   "id": "asc",
+   "short": "ASC",
+   "seasons": 21
+  },
+  {
+   "id": "ves",
+   "short": "VES",
+   "seasons": 22
+  },
+  {
+   "id": "annie",
+   "short": "Annie",
+   "seasons": 20
+  },
+  {
+   "id": "spirit",
+   "short": "Spirit",
+   "seasons": 22
+  },
+  {
+   "id": "bafta",
+   "short": "BAFTA",
+   "seasons": 22
+  }
+ ],
+ "damp": 0.42,
+ "lr": {
+  "nyfcc": {
+   "picture": {
+    "win": 1.705,
+    "nom": 7.286,
+    "none": 0.904,
+    "hit": 0.167,
+    "n": 30
+   },
+   "director": {
+    "win": 11.571,
+    "nom": 3.857,
+    "none": 0.579,
+    "hit": 0.433,
+    "n": 30
+   },
+   "actor": {
+    "win": 2.623,
+    "nom": 3.857,
+    "none": 0.8,
+    "hit": 0.267,
+    "n": 30
+   },
+   "actress": {
+    "win": 0.818,
+    "nom": 3.857,
+    "none": 1.015,
+    "hit": 0.1,
+    "n": 30
+   },
+   "supActor": {
+    "win": 2.793,
+    "nom": 3.857,
+    "none": 0.742,
+    "hit": 0.333,
+    "n": 30
+   },
+   "supActress": {
+    "win": 5.218,
+    "nom": 3.857,
+    "none": 0.669,
+    "hit": 0.367,
+    "n": 30
+   },
+   "origScreenplay": {
+    "win": 1.433,
+    "nom": 3.857,
+    "none": 0.913,
+    "hit": 0.2,
+    "n": 30
+   },
+   "animated": {
+    "win": 6.21,
+    "nom": 3.525,
+    "none": 0.42,
+    "hit": 0.621,
+    "n": 29
+   },
+   "international": {
+    "win": 1.653,
+    "nom": 3.857,
+    "none": 0.925,
+    "hit": 0.133,
+    "n": 30
+   },
+   "cinematography": {
+    "win": 2.516,
+    "nom": 3.857,
+    "none": 0.828,
+    "hit": 0.233,
+    "n": 30
+   }
+  },
+  "lafca": {
+   "picture": {
+    "win": 5.011,
+    "nom": 2.569,
+    "none": 0.506,
+    "hit": 0.406,
+    "n": 32
+   },
+   "director": {
+    "win": 3.599,
+    "nom": 3.866,
+    "none": 0.658,
+    "hit": 0.406,
+    "n": 32
+   },
+   "actor": {
+    "win": 2.616,
+    "nom": 3.824,
+    "none": 0.808,
+    "hit": 0.25,
+    "n": 24
+   },
+   "actress": {
+    "win": 1.682,
+    "nom": 3.824,
+    "none": 0.882,
+    "hit": 0.208,
+    "n": 24
+   },
+   "supActor": {
+    "win": 3.824,
+    "nom": 3.824,
+    "none": 0.782,
+    "hit": 0.25,
+    "n": 24
+   },
+   "supActress": {
+    "win": 3.824,
+    "nom": 3.824,
+    "none": 0.713,
+    "hit": 0.333,
+    "n": 24
+   },
+   "origScreenplay": {
+    "win": 2.226,
+    "nom": 2.393,
+    "none": 0.66,
+    "hit": 0.281,
+    "n": 32
+   },
+   "international": {
+    "win": 1.701,
+    "nom": 0.297,
+    "none": 0.962,
+    "hit": 0.156,
+    "n": 32
+   },
+   "documentary": {
+    "win": 3.866,
+    "nom": 0.773,
+    "none": 0.654,
+    "hit": 0.406,
+    "n": 32
+   },
+   "score": {
+    "win": 2.645,
+    "nom": 3.866,
+    "none": 0.698,
+    "hit": 0.188,
+    "n": 32
+   },
+   "production": {
+    "win": 3.616,
+    "nom": 5.055,
+    "none": 0.378,
+    "hit": 0.438,
+    "n": 32
+   },
+   "cinematography": {
+    "win": 0.809,
+    "nom": 8.786,
+    "none": 0.622,
+    "hit": 0.125,
+    "n": 32
+   },
+   "editing": {
+    "win": 1.275,
+    "nom": 2.294,
+    "none": 0.842,
+    "hit": 0.125,
+    "n": 24
+   }
+  },
+  "cca": {
+   "picture": {
+    "win": 4.616,
+    "nom": 0.623,
+    "none": 1.267,
+    "hit": 0.333,
+    "n": 30
+   },
+   "director": {
+    "win": 22.421,
+    "nom": 0.384,
+    "none": 0.978,
+    "hit": 0.438,
+    "n": 32
+   },
+   "actor": {
+    "win": 3.866,
+    "nom": 0.392,
+    "none": 3.203,
+    "hit": 0.25,
+    "n": 32
+   },
+   "actress": {
+    "win": 3.866,
+    "nom": 0.481,
+    "none": 1.678,
+    "hit": 0.313,
+    "n": 32
+   },
+   "supActor": {
+    "win": 22.421,
+    "nom": 0.304,
+    "none": 1.411,
+    "hit": 0.438,
+    "n": 32
+   },
+   "supActress": {
+    "win": 10.738,
+    "nom": 0.272,
+    "none": 1.725,
+    "hit": 0.375,
+    "n": 32
+   },
+   "animated": {
+    "win": 4.546,
+    "nom": 0.437,
+    "none": 1.706,
+    "hit": 0.267,
+    "n": 30
+   },
+   "international": {
+    "win": 5.584,
+    "nom": 1.099,
+    "none": 0.673,
+    "hit": 0.188,
+    "n": 32
+   },
+   "documentary": {
+    "win": 3.667,
+    "nom": 1.027,
+    "none": 0.954,
+    "hit": 0,
+    "n": 12
+   },
+   "song": {
+    "win": 20.921,
+    "nom": 0.652,
+    "none": 0.449,
+    "hit": 0.438,
+    "n": 32
+   },
+   "sound": {
+    "win": 15.909,
+    "nom": 0.868,
+    "none": 0.851,
+    "hit": 0.25,
+    "n": 8
+   },
+   "origScreenplay": {
+    "win": 5.009,
+    "nom": 0.402,
+    "none": 1.711,
+    "hit": 0.32,
+    "n": 25
+   },
+   "adaptScreenplay": {
+    "win": 4.99,
+    "nom": 0.615,
+    "none": 0.7,
+    "hit": 0.32,
+    "n": 25
+   },
+   "score": {
+    "win": 80.434,
+    "nom": 0.343,
+    "none": 1.018,
+    "hit": 0.4,
+    "n": 25
+   },
+   "production": {
+    "win": 10.673,
+    "nom": 0.229,
+    "none": 1.498,
+    "hit": 0.444,
+    "n": 27
+   },
+   "cinematography": {
+    "win": 2.938,
+    "nom": 0.557,
+    "none": 1.353,
+    "hit": 0.222,
+    "n": 27
+   },
+   "makeup": {
+    "win": 14.649,
+    "nom": 0.483,
+    "none": 0.702,
+    "hit": 0.444,
+    "n": 27
+   },
+   "editing": {
+    "win": 5.55,
+    "nom": 1.061,
+    "none": 0.549,
+    "hit": 0.222,
+    "n": 27
+   },
+   "vfx": {
+    "win": 15.842,
+    "nom": 0.769,
+    "none": 0.529,
+    "hit": 0.37,
+    "n": 27
+   },
+   "costume": {
+    "win": 19.182,
+    "nom": 0.364,
+    "none": 0.945,
+    "hit": 0.462,
+    "n": 26
+   }
+  },
+  "sag": {
+   "picture": {
+    "win": 6.727,
+    "nom": 0.917,
+    "none": 0.395,
+    "hit": 0.467,
+    "n": 30
+   },
+   "actor": {
+    "win": 15.76,
+    "nom": 0.255,
+    "none": 0.079,
+    "hit": 0.813,
+    "n": 32
+   },
+   "actress": {
+    "win": 7.227,
+    "nom": 0.552,
+    "none": 0.052,
+    "hit": 0.656,
+    "n": 32
+   },
+   "supActor": {
+    "win": 30.373,
+    "nom": 0.211,
+    "none": 0.133,
+    "hit": 0.844,
+    "n": 32
+   },
+   "supActress": {
+    "win": 68.294,
+    "nom": 0.108,
+    "none": 0.452,
+    "hit": 0.813,
+    "n": 32
+   }
+  },
+  "pga": {
+   "picture": {
+    "win": 17.907,
+    "nom": 0.352,
+    "none": 0.097,
+    "hit": 0.719,
+    "n": 32
+   },
+   "animated": {
+    "win": 12.849,
+    "nom": 0.491,
+    "none": 0.037,
+    "hit": 0.742,
+    "n": 31
+   },
+   "documentary": {
+    "win": 34.672,
+    "nom": 1.061,
+    "none": 0.355,
+    "hit": 0.448,
+    "n": 29
+   }
+  },
+  "ves": {
+   "picture": {
+    "win": 0.418,
+    "nom": 1.812,
+    "none": 1.047,
+    "hit": 0,
+    "n": 10
+   },
+   "animated": {
+    "win": 8.401,
+    "nom": 0.161,
+    "none": 0.368,
+    "hit": 0.75,
+    "n": 28
+   },
+   "cinematography": {
+    "win": 2.298,
+    "nom": 3.83,
+    "none": 0.953,
+    "hit": 0.04,
+    "n": 25
+   },
+   "vfx": {
+    "win": 2.233,
+    "nom": 0.582,
+    "none": 0.996,
+    "hit": 0.364,
+    "n": 22
+   }
+  },
+  "spirit": {
+   "picture": {
+    "win": 6.66,
+    "nom": 0.119,
+    "none": 0.78,
+    "hit": 0.344,
+    "n": 32
+   },
+   "director": {
+    "win": 2.629,
+    "nom": 0.464,
+    "none": 0.869,
+    "hit": 0.25,
+    "n": 32
+   },
+   "supActor": {
+    "win": 3.374,
+    "nom": 0.225,
+    "none": 0.831,
+    "hit": 0.292,
+    "n": 24
+   },
+   "supActress": {
+    "win": 6.373,
+    "nom": 0.546,
+    "none": 0.765,
+    "hit": 0.292,
+    "n": 24
+   },
+   "origScreenplay": {
+    "win": 2.72,
+    "nom": 0.773,
+    "none": 0.806,
+    "hit": 0.281,
+    "n": 32
+   },
+   "international": {
+    "win": 4.97,
+    "nom": 0.666,
+    "none": 0.647,
+    "hit": 0.406,
+    "n": 32
+   },
+   "documentary": {
+    "win": 2.619,
+    "nom": 0.045,
+    "none": 1.216,
+    "hit": 0.313,
+    "n": 32
+   },
+   "cinematography": {
+    "win": 0.351,
+    "nom": 3.866,
+    "none": 1.082,
+    "hit": 0.031,
+    "n": 32
+   },
+   "editing": {
+    "win": 1.571,
+    "nom": 0.347,
+    "none": 0.984,
+    "hit": 0.13,
+    "n": 23
+   }
+  },
+  "bafta": {
+   "picture": {
+    "win": 3.872,
+    "nom": 1.341,
+    "none": 0.258,
+    "hit": 0.344,
+    "n": 32
+   },
+   "director": {
+    "win": 8.868,
+    "nom": 0.569,
+    "none": 0.308,
+    "hit": 0.594,
+    "n": 32
+   },
+   "actor": {
+    "win": 22.765,
+    "nom": 0.281,
+    "none": 0.054,
+    "hit": 0.813,
+    "n": 32
+   },
+   "actress": {
+    "win": 17.923,
+    "nom": 0.195,
+    "none": 0.319,
+    "hit": 0.781,
+    "n": 32
+   },
+   "supActor": {
+    "win": 13.143,
+    "nom": 0.342,
+    "none": 0.12,
+    "hit": 0.781,
+    "n": 32
+   },
+   "supActress": {
+    "win": 8.342,
+    "nom": 0.258,
+    "none": 0.626,
+    "hit": 0.625,
+    "n": 32
+   },
+   "origScreenplay": {
+    "win": 5.584,
+    "nom": 0.695,
+    "none": 0.125,
+    "hit": 0.594,
+    "n": 32
+   },
+   "adaptScreenplay": {
+    "win": 9.782,
+    "nom": 0.231,
+    "none": 0.501,
+    "hit": 0.688,
+    "n": 32
+   },
+   "international": {
+    "win": 14.174,
+    "nom": 0.4,
+    "none": 0.593,
+    "hit": 0.5,
+    "n": 32
+   },
+   "animShort": {
+    "win": 1.757,
+    "nom": 0.351,
+    "none": 0.995,
+    "hit": 0.063,
+    "n": 32
+   },
+   "score": {
+    "win": 28.164,
+    "nom": 0.216,
+    "none": 0.297,
+    "hit": 0.781,
+    "n": 32
+   },
+   "sound": {
+    "win": 14.942,
+    "nom": 0.655,
+    "none": 0.18,
+    "hit": 0.813,
+    "n": 32
+   },
+   "production": {
+    "win": 6.03,
+    "nom": 0.545,
+    "none": 0.318,
+    "hit": 0.594,
+    "n": 32
+   },
+   "cinematography": {
+    "win": 8.749,
+    "nom": 0.531,
+    "none": 0.133,
+    "hit": 0.656,
+    "n": 32
+   },
+   "makeup": {
+    "win": 18.74,
+    "nom": 0.264,
+    "none": 0.361,
+    "hit": 0.719,
+    "n": 32
+   },
+   "costume": {
+    "win": 12.112,
+    "nom": 0.249,
+    "none": 0.477,
+    "hit": 0.719,
+    "n": 32
+   },
+   "editing": {
+    "win": 9.323,
+    "nom": 0.668,
+    "none": 0.106,
+    "hit": 0.625,
+    "n": 32
+   },
+   "vfx": {
+    "win": 24.552,
+    "nom": 0.306,
+    "none": 0.222,
+    "hit": 0.75,
+    "n": 32
+   },
+   "animated": {
+    "win": 9.114,
+    "nom": 0.594,
+    "none": 0.151,
+    "hit": 0.7,
+    "n": 30
+   },
+   "documentary": {
+    "win": 14.044,
+    "nom": 1.214,
+    "none": 0.175,
+    "hit": 0.64,
+    "n": 25
+   }
+  },
+  "globes": {
+   "director": {
+    "win": 6.891,
+    "nom": 0.749,
+    "none": 0.036,
+    "hit": 0.625,
+    "n": 32
+   },
+   "actor": {
+    "win": 3.342,
+    "nom": 0.339,
+    "none": 0.133,
+    "hit": 0.781,
+    "n": 32
+   },
+   "actress": {
+    "win": 3.359,
+    "nom": 0.297,
+    "none": 0.133,
+    "hit": 0.813,
+    "n": 32
+   },
+   "supActor": {
+    "win": 9.767,
+    "nom": 0.499,
+    "none": 0.133,
+    "hit": 0.677,
+    "n": 31
+   },
+   "supActress": {
+    "win": 9.313,
+    "nom": 0.48,
+    "none": 0.238,
+    "hit": 0.645,
+    "n": 31
+   },
+   "origScreenplay": {
+    "win": 2.857,
+    "nom": 1.587,
+    "none": 0.302,
+    "hit": 0.25,
+    "n": 32
+   },
+   "international": {
+    "win": 5.679,
+    "nom": 1.465,
+    "none": 0.184,
+    "hit": 0.387,
+    "n": 31
+   },
+   "score": {
+    "win": 19.328,
+    "nom": 0.436,
+    "none": 0.231,
+    "hit": 0.688,
+    "n": 32
+   },
+   "song": {
+    "win": 17.277,
+    "nom": 0.257,
+    "none": 0.397,
+    "hit": 0.656,
+    "n": 32
+   },
+   "animated": {
+    "win": 18.676,
+    "nom": 0.271,
+    "none": 0.063,
+    "hit": 0.821,
+    "n": 28
+   },
+   "picture": {
+    "win": 4.529,
+    "nom": 0.402,
+    "none": 0.467,
+    "hit": 0.714,
+    "n": 7
+   }
+  },
+  "dga": {
+   "director": {
+    "win": 44.069,
+    "nom": 0.151,
+    "none": 0.155,
+    "hit": 0.875,
+    "n": 32
+   }
+  },
+  "scripter": {
+   "adaptScreenplay": {
+    "win": 8.182,
+    "nom": 0.201,
+    "none": 0.701,
+    "hit": 0.625,
+    "n": 32
+   }
+  },
+  "annie": {
+   "animated": {
+    "win": 2.379,
+    "nom": 0.527,
+    "none": 0.169,
+    "hit": 0.667,
+    "n": 30
+   },
+   "animShort": {
+    "win": 2.375,
+    "nom": 0.71,
+    "none": 0.871,
+    "hit": 0.231,
+    "n": 26
+   }
+  },
+  "adg": {
+   "production": {
+    "win": 2.589,
+    "nom": 0.351,
+    "none": 0.143,
+    "hit": 0.8,
+    "n": 30
+   }
+  },
+  "asc": {
+   "cinematography": {
+    "win": 5.006,
+    "nom": 0.469,
+    "none": 0.681,
+    "hit": 0.548,
+    "n": 31
+   }
+  },
+  "cdg": {
+   "costume": {
+    "win": 2.232,
+    "nom": 0.62,
+    "none": 0.339,
+    "hit": 0.625,
+    "n": 32
+   }
+  },
+  "nbr": {
+   "picture": {
+    "win": 1.511,
+    "nom": 7.557,
+    "none": 0.899,
+    "hit": 0.207,
+    "n": 29
+   },
+   "director": {
+    "win": 0.621,
+    "nom": 3.852,
+    "none": 1.044,
+    "hit": 0.069,
+    "n": 29
+   },
+   "actor": {
+    "win": 0.889,
+    "nom": 3.852,
+    "none": 1.008,
+    "hit": 0.138,
+    "n": 29
+   },
+   "actress": {
+    "win": 1.993,
+    "nom": 3.852,
+    "none": 0.846,
+    "hit": 0.241,
+    "n": 29
+   },
+   "supActor": {
+    "win": 1.113,
+    "nom": 3.852,
+    "none": 0.958,
+    "hit": 0.207,
+    "n": 29
+   },
+   "supActress": {
+    "win": 1.57,
+    "nom": 3.852,
+    "none": 0.912,
+    "hit": 0.172,
+    "n": 29
+   },
+   "origScreenplay": {
+    "win": 2.018,
+    "nom": 3.852,
+    "none": 0.886,
+    "hit": 0.172,
+    "n": 29
+   },
+   "adaptScreenplay": {
+    "win": 0.693,
+    "nom": 3.464,
+    "none": 1.059,
+    "hit": 0.138,
+    "n": 29
+   },
+   "animated": {
+    "win": 3.908,
+    "nom": 3.656,
+    "none": 0.549,
+    "hit": 0.517,
+    "n": 29
+   },
+   "international": {
+    "win": 3.119,
+    "nom": 3.852,
+    "none": 0.778,
+    "hit": 0.276,
+    "n": 29
+   },
+   "documentary": {
+    "win": 4.88,
+    "nom": 3.852,
+    "none": 0.721,
+    "hit": 0.31,
+    "n": 29
+   },
+   "cinematography": {
+    "win": 2.568,
+    "nom": 3.71,
+    "none": 0.771,
+    "hit": 0.286,
+    "n": 14
+   }
+  },
+  "ace": {
+   "documentary": {
+    "win": 5.886,
+    "nom": 3.301,
+    "none": 0.423,
+    "hit": 0.364,
+    "n": 22
+   },
+   "editing": {
+    "win": 1.94,
+    "nom": 0.605,
+    "none": 0.601,
+    "hit": 0.591,
+    "n": 22
+   },
+   "animated": {
+    "win": 13.899,
+    "nom": 0.26,
+    "none": 0.234,
+    "hit": 0.8,
+    "n": 20
+   }
+  },
+  "cas": {
+   "sound": {
+    "win": 3.851,
+    "nom": 0.615,
+    "none": 0.637,
+    "hit": 0.593,
+    "n": 27
+   }
+  },
+  "wga": {
+   "origScreenplay": {
+    "win": 11.526,
+    "nom": 0.342,
+    "none": 0.539,
+    "hit": 0.593,
+    "n": 27
+   },
+   "adaptScreenplay": {
+    "win": 5.894,
+    "nom": 0.226,
+    "none": 0.859,
+    "hit": 0.64,
+    "n": 25
+   },
+   "documentary": {
+    "win": 11.491,
+    "nom": 0.766,
+    "none": 0.953,
+    "hit": 0.04,
+    "n": 25
+   }
+  },
+  "tiff": {
+   "picture": {
+    "win": 1.322,
+    "nom": 7.667,
+    "none": 0.941,
+    "hit": 0.111,
+    "n": 18
+   }
+  },
+  "muahs": {
+   "makeup": {
+    "win": 1.995,
+    "nom": 0.855,
+    "none": 0.359,
+    "hit": 0.625,
+    "n": 16
+   }
+  },
+  "mpse": {
+   "sound": {
+    "win": 2.804,
+    "nom": 0.673,
+    "none": 0.556,
+    "hit": 0.5,
+    "n": 12
+   }
+  }
+ },
+ "accuracy": {
+  "picture": {
+   "n": 21,
+   "hits": 12,
+   "recent": 11,
+   "recentHits": 6
+  },
+  "director": {
+   "n": 21,
+   "hits": 18,
+   "recent": 11,
+   "recentHits": 10
+  },
+  "actor": {
+   "n": 21,
+   "hits": 17,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "actress": {
+   "n": 21,
+   "hits": 17,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "supActor": {
+   "n": 21,
+   "hits": 17,
+   "recent": 11,
+   "recentHits": 10
+  },
+  "supActress": {
+   "n": 21,
+   "hits": 17,
+   "recent": 11,
+   "recentHits": 9
+  },
+  "origScreenplay": {
+   "n": 21,
+   "hits": 13,
+   "recent": 11,
+   "recentHits": 5
+  },
+  "adaptScreenplay": {
+   "n": 20,
+   "hits": 10,
+   "recent": 10,
+   "recentHits": 7
+  },
+  "animated": {
+   "n": 21,
+   "hits": 17,
+   "recent": 11,
+   "recentHits": 9
+  },
+  "international": {
+   "n": 20,
+   "hits": 12,
+   "recent": 11,
+   "recentHits": 7
+  },
+  "documentary": {
+   "n": 21,
+   "hits": 13,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "cinematography": {
+   "n": 21,
+   "hits": 13,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "editing": {
+   "n": 20,
+   "hits": 14,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "production": {
+   "n": 21,
+   "hits": 13,
+   "recent": 11,
+   "recentHits": 8
+  },
+  "costume": {
+   "n": 21,
+   "hits": 13,
+   "recent": 11,
+   "recentHits": 6
+  },
+  "makeup": {
+   "n": 18,
+   "hits": 16,
+   "recent": 10,
+   "recentHits": 9
+  },
+  "score": {
+   "n": 20,
+   "hits": 16,
+   "recent": 11,
+   "recentHits": 9
+  },
+  "song": {
+   "n": 15,
+   "hits": 12,
+   "recent": 8,
+   "recentHits": 6
+  },
+  "sound": {
+   "n": 10,
+   "hits": 7,
+   "recent": 6,
+   "recentHits": 4
+  },
+  "vfx": {
+   "n": 20,
+   "hits": 15,
+   "recent": 11,
+   "recentHits": 7
+  },
+  "casting": null,
+  "docShort": null,
+  "liveShort": null,
+  "animShort": {
+   "n": 12,
+   "hits": 4,
+   "recent": 7,
+   "recentHits": 2
+  }
+ },
+ "upsets": [
+  {
+   "year": 2023,
+   "cat": "makeup",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.002,
+   "favorite": "Elvis",
+   "favoriteP": 0.973,
+   "winner": "The Whale"
+  },
+  {
+   "year": 2020,
+   "cat": "director",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.006,
+   "favorite": "Sam Mendes (1917)",
+   "favoriteP": 0.993,
+   "winner": "Bong Joon Ho (Parasite)"
+  },
+  {
+   "year": 2024,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.008,
+   "favorite": "Spider-Man: Across the Spider-Verse",
+   "favoriteP": 0.992,
+   "winner": "The Boy and the Heron"
+  },
+  {
+   "year": 2015,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.01,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.914,
+   "winner": "Birdman or (The Unexpected Virtue of Ignorance)"
+  },
+  {
+   "year": 2008,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.011,
+   "favorite": "Sicko",
+   "favoriteP": 0.942,
+   "winner": "Taxi to the Dark Side"
+  },
+  {
+   "year": 2006,
+   "cat": "score",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.016,
+   "favorite": "Memoirs of a Geisha",
+   "favoriteP": 0.935,
+   "winner": "Brokeback Mountain"
+  },
+  {
+   "year": 2011,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.016,
+   "favorite": "Inception",
+   "favoriteP": 0.823,
+   "winner": "Alice in Wonderland"
+  },
+  {
+   "year": 2006,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.017,
+   "favorite": "Brokeback Mountain",
+   "favoriteP": 0.973,
+   "winner": "Crash"
+  },
+  {
+   "year": 2015,
+   "cat": "director",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.017,
+   "favorite": "Richard Linklater (Boyhood)",
+   "favoriteP": 0.974,
+   "winner": "Alejandro G. Iñárritu (Birdman or (The Unexpected Virtue of Ignorance))"
+  },
+  {
+   "year": 2010,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.019,
+   "favorite": "Up in the Air",
+   "favoriteP": 0.912,
+   "winner": "Precious: Based on the Novel 'Push' by Sapphire"
+  },
+  {
+   "year": 2007,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.023,
+   "favorite": "Little Miss Sunshine",
+   "favoriteP": 0.836,
+   "winner": "The Departed"
+  },
+  {
+   "year": 2025,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.023,
+   "favorite": "Emilia Pérez",
+   "favoriteP": 0.874,
+   "winner": "I'm Still Here"
+  },
+  {
+   "year": 2010,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.029,
+   "favorite": "A Prophet",
+   "favoriteP": 0.694,
+   "winner": "The Secret in Their Eyes"
+  },
+  {
+   "year": 2007,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.03,
+   "favorite": "Children of Men",
+   "favoriteP": 0.834,
+   "winner": "Pan's Labyrinth"
+  },
+  {
+   "year": 2025,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.031,
+   "favorite": "The Wild Robot",
+   "favoriteP": 0.966,
+   "winner": "Flow"
+  }
+ ],
+ "backtest": [
+  {
+   "year": 2005,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.035,
+   "favorite": "Sideways",
+   "favoriteP": 0.618,
+   "winner": "Million Dollar Baby"
+  },
+  {
+   "year": 2005,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.914,
+   "favorite": "Clint Eastwood (Million Dollar Baby)",
+   "favoriteP": 0.914,
+   "winner": "Clint Eastwood (Million Dollar Baby)"
+  },
+  {
+   "year": 2005,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.978,
+   "favorite": "Jamie Foxx (Ray)",
+   "favoriteP": 0.978,
+   "winner": "Jamie Foxx (Ray)"
+  },
+  {
+   "year": 2005,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.493,
+   "favorite": "Hilary Swank (Million Dollar Baby)",
+   "favoriteP": 0.493,
+   "winner": "Hilary Swank (Million Dollar Baby)"
+  },
+  {
+   "year": 2005,
+   "cat": "supActor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.087,
+   "favorite": "Clive Owen (Closer)",
+   "favoriteP": 0.765,
+   "winner": "Morgan Freeman (Million Dollar Baby)"
+  },
+  {
+   "year": 2005,
+   "cat": "supActress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.346,
+   "favorite": "Virginia Madsen (Sideways)",
+   "favoriteP": 0.537,
+   "winner": "Cate Blanchett (The Aviator)"
+  },
+  {
+   "year": 2005,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.666,
+   "favorite": "Eternal Sunshine of the Spotless Mind",
+   "favoriteP": 0.666,
+   "winner": "Eternal Sunshine of the Spotless Mind"
+  },
+  {
+   "year": 2005,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.247,
+   "favorite": "Million Dollar Baby",
+   "favoriteP": 0.405,
+   "winner": "Sideways"
+  },
+  {
+   "year": 2005,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.819,
+   "favorite": "The Incredibles",
+   "favoriteP": 0.819,
+   "winner": "The Incredibles"
+  },
+  {
+   "year": 2005,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.639,
+   "favorite": "The Sea Inside",
+   "favoriteP": 0.639,
+   "winner": "The Sea Inside"
+  },
+  {
+   "year": 2005,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.197,
+   "favorite": "Super Size Me",
+   "favoriteP": 0.212,
+   "winner": "Born into Brothels: Calcutta's Red Light Kids"
+  },
+  {
+   "year": 2005,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Mighty Times: The Children's March"
+  },
+  {
+   "year": 2005,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Wasp"
+  },
+  {
+   "year": 2005,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.128,
+   "favorite": "Lorenzo",
+   "favoriteP": 0.275,
+   "winner": "Ryan"
+  },
+  {
+   "year": 2005,
+   "cat": "score",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.184,
+   "favorite": null,
+   "favoriteP": 0.204,
+   "winner": "Finding Neverland"
+  },
+  {
+   "year": 2005,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.196,
+   "favorite": null,
+   "favoriteP": 0.216,
+   "winner": "The Motorcycle Diaries"
+  },
+  {
+   "year": 2005,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.425,
+   "favorite": "Ray",
+   "favoriteP": 0.425,
+   "winner": "The Incredibles / Ray"
+  },
+  {
+   "year": 2005,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.596,
+   "favorite": "The Aviator",
+   "favoriteP": 0.596,
+   "winner": "The Aviator"
+  },
+  {
+   "year": 2005,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.376,
+   "favorite": "The Aviator",
+   "favoriteP": 0.376,
+   "winner": "The Aviator"
+  },
+  {
+   "year": 2005,
+   "cat": "makeup",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.333,
+   "favorite": null,
+   "favoriteP": 0.333,
+   "winner": "Lemony Snicket's A Series of Unfortunate Events"
+  },
+  {
+   "year": 2005,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.139,
+   "favorite": "Lemony Snicket's A Series of Unfortunate Events",
+   "favoriteP": 0.369,
+   "winner": "The Aviator"
+  },
+  {
+   "year": 2005,
+   "cat": "editing",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.289,
+   "favorite": null,
+   "favoriteP": 0.289,
+   "winner": "The Aviator"
+  },
+  {
+   "year": 2005,
+   "cat": "vfx",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.34,
+   "favorite": null,
+   "favoriteP": 0.34,
+   "winner": "Spider-Man 2"
+  },
+  {
+   "year": 2006,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.017,
+   "favorite": "Brokeback Mountain",
+   "favoriteP": 0.973,
+   "winner": "Crash"
+  },
+  {
+   "year": 2006,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.998,
+   "favorite": "Ang Lee (Brokeback Mountain)",
+   "favoriteP": 0.998,
+   "winner": "Ang Lee (Brokeback Mountain)"
+  },
+  {
+   "year": 2006,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.982,
+   "favorite": "Philip Seymour Hoffman (Capote)",
+   "favoriteP": 0.982,
+   "winner": "Philip Seymour Hoffman (Capote)"
+  },
+  {
+   "year": 2006,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.915,
+   "favorite": "Reese Witherspoon (Walk the Line)",
+   "favoriteP": 0.915,
+   "winner": "Reese Witherspoon (Walk the Line)"
+  },
+  {
+   "year": 2006,
+   "cat": "supActor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.13,
+   "favorite": "Paul Giamatti (Cinderella Man)",
+   "favoriteP": 0.567,
+   "winner": "George Clooney (Syriana)"
+  },
+  {
+   "year": 2006,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.852,
+   "favorite": "Rachel Weisz (The Constant Gardener)",
+   "favoriteP": 0.852,
+   "winner": "Rachel Weisz (The Constant Gardener)"
+  },
+  {
+   "year": 2006,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.504,
+   "favorite": "Crash",
+   "favoriteP": 0.504,
+   "winner": "Crash"
+  },
+  {
+   "year": 2006,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.318,
+   "favorite": "Capote",
+   "favoriteP": 0.37,
+   "winner": "Brokeback Mountain"
+  },
+  {
+   "year": 2006,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.981,
+   "favorite": "Wallace & Gromit: The Curse of the Were-Rabbit",
+   "favoriteP": 0.981,
+   "winner": "Wallace & Gromit: The Curse of the Were-Rabbit"
+  },
+  {
+   "year": 2006,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.114,
+   "favorite": "Paradise Now",
+   "favoriteP": 0.471,
+   "winner": "Tsotsi"
+  },
+  {
+   "year": 2006,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.13,
+   "favorite": "Enron: The Smartest Guys in the Room",
+   "favoriteP": 0.462,
+   "winner": "March of the Penguins"
+  },
+  {
+   "year": 2006,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.25,
+   "favorite": null,
+   "favoriteP": 0.25,
+   "winner": "A Note of Triumph: The Golden Age of Norman Corwin"
+  },
+  {
+   "year": 2006,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Six Shooter"
+  },
+  {
+   "year": 2006,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.164,
+   "favorite": null,
+   "favoriteP": 0.226,
+   "winner": "The Moon and the Son: An Imagined Conversation"
+  },
+  {
+   "year": 2006,
+   "cat": "score",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.016,
+   "favorite": "Memoirs of a Geisha",
+   "favoriteP": 0.935,
+   "winner": "Brokeback Mountain"
+  },
+  {
+   "year": 2006,
+   "cat": "song",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.324,
+   "favorite": "Transamerica",
+   "favoriteP": 0.351,
+   "winner": "Hustle & Flow"
+  },
+  {
+   "year": 2006,
+   "cat": "sound",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.107,
+   "favorite": "Walk the Line",
+   "favoriteP": 0.439,
+   "winner": "King Kong / King Kong"
+  },
+  {
+   "year": 2006,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.123,
+   "favorite": "Harry Potter and the Goblet of Fire",
+   "favoriteP": 0.364,
+   "winner": "Memoirs of a Geisha"
+  },
+  {
+   "year": 2006,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.736,
+   "favorite": "Memoirs of a Geisha",
+   "favoriteP": 0.736,
+   "winner": "Memoirs of a Geisha"
+  },
+  {
+   "year": 2006,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.717,
+   "favorite": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+   "favoriteP": 0.717,
+   "winner": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe"
+  },
+  {
+   "year": 2006,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.678,
+   "favorite": "Memoirs of a Geisha",
+   "favoriteP": 0.678,
+   "winner": "Memoirs of a Geisha"
+  },
+  {
+   "year": 2006,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.173,
+   "favorite": "The Constant Gardener",
+   "favoriteP": 0.573,
+   "winner": "Crash"
+  },
+  {
+   "year": 2006,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.766,
+   "favorite": "King Kong",
+   "favoriteP": 0.766,
+   "winner": "King Kong"
+  },
+  {
+   "year": 2007,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.023,
+   "favorite": "Little Miss Sunshine",
+   "favoriteP": 0.836,
+   "winner": "The Departed"
+  },
+  {
+   "year": 2007,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.958,
+   "favorite": "Martin Scorsese (The Departed)",
+   "favoriteP": 0.958,
+   "winner": "Martin Scorsese (The Departed)"
+  },
+  {
+   "year": 2007,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Forest Whitaker (The Last King of Scotland)",
+   "favoriteP": 0.994,
+   "winner": "Forest Whitaker (The Last King of Scotland)"
+  },
+  {
+   "year": 2007,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.927,
+   "favorite": "Helen Mirren (The Queen)",
+   "favoriteP": 0.927,
+   "winner": "Helen Mirren (The Queen)"
+  },
+  {
+   "year": 2007,
+   "cat": "supActor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.048,
+   "favorite": "Eddie Murphy (Dreamgirls)",
+   "favoriteP": 0.909,
+   "winner": "Alan Arkin (Little Miss Sunshine)"
+  },
+  {
+   "year": 2007,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Jennifer Hudson (Dreamgirls)",
+   "favoriteP": 0.994,
+   "winner": "Jennifer Hudson (Dreamgirls)"
+  },
+  {
+   "year": 2007,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.381,
+   "favorite": "Little Miss Sunshine",
+   "favoriteP": 0.381,
+   "winner": "Little Miss Sunshine"
+  },
+  {
+   "year": 2007,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.106,
+   "favorite": "Children of Men",
+   "favoriteP": 0.498,
+   "winner": "The Departed"
+  },
+  {
+   "year": 2007,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.073,
+   "favorite": "Cars",
+   "favoriteP": 0.923,
+   "winner": "Happy Feet"
+  },
+  {
+   "year": 2007,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.272,
+   "favorite": "Pan's Labyrinth",
+   "favoriteP": 0.579,
+   "winner": "The Lives of Others"
+  },
+  {
+   "year": 2007,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.382,
+   "favorite": "An Inconvenient Truth",
+   "favoriteP": 0.382,
+   "winner": "An Inconvenient Truth"
+  },
+  {
+   "year": 2007,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.25,
+   "favorite": null,
+   "favoriteP": 0.25,
+   "winner": "The Blood of Yingzhou District"
+  },
+  {
+   "year": 2007,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "West Bank Story"
+  },
+  {
+   "year": 2007,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.179,
+   "favorite": "No Time for Nuts",
+   "favoriteP": 0.286,
+   "winner": "The Danish Poet"
+  },
+  {
+   "year": 2007,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.621,
+   "favorite": "Babel",
+   "favoriteP": 0.621,
+   "winner": "Babel"
+  },
+  {
+   "year": 2007,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.229,
+   "favorite": "An Inconvenient Truth",
+   "favoriteP": 0.229,
+   "winner": "An Inconvenient Truth"
+  },
+  {
+   "year": 2007,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.083,
+   "favorite": null,
+   "favoriteP": 0.168,
+   "winner": "Letters from Iwo Jima / Dreamgirls"
+  },
+  {
+   "year": 2007,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.409,
+   "favorite": "Pan's Labyrinth",
+   "favoriteP": 0.409,
+   "winner": "Pan's Labyrinth"
+  },
+  {
+   "year": 2007,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.03,
+   "favorite": "Children of Men",
+   "favoriteP": 0.834,
+   "winner": "Pan's Labyrinth"
+  },
+  {
+   "year": 2007,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.717,
+   "favorite": "Pan's Labyrinth",
+   "favoriteP": 0.717,
+   "winner": "Pan's Labyrinth"
+  },
+  {
+   "year": 2007,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.127,
+   "favorite": "Curse of the Golden Flower",
+   "favoriteP": 0.333,
+   "winner": "Marie Antoinette"
+  },
+  {
+   "year": 2007,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.16,
+   "favorite": "United 93",
+   "favoriteP": 0.526,
+   "winner": "The Departed"
+  },
+  {
+   "year": 2007,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.766,
+   "favorite": "Pirates of the Caribbean: Dead Man's Chest",
+   "favoriteP": 0.766,
+   "winner": "Pirates of the Caribbean: Dead Man's Chest"
+  },
+  {
+   "year": 2008,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.785,
+   "favorite": "No Country for Old Men",
+   "favoriteP": 0.785,
+   "winner": "No Country for Old Men"
+  },
+  {
+   "year": 2008,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.657,
+   "favorite": "Joel Coen (No Country for Old Men)",
+   "favoriteP": 0.657,
+   "winner": "Joel Coen (No Country for Old Men)"
+  },
+  {
+   "year": 2008,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.993,
+   "favorite": "Daniel Day-Lewis (There Will Be Blood)",
+   "favoriteP": 0.993,
+   "winner": "Daniel Day-Lewis (There Will Be Blood)"
+  },
+  {
+   "year": 2008,
+   "cat": "actress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.462,
+   "favorite": "Julie Christie (Away from Her)",
+   "favoriteP": 0.48,
+   "winner": "Marion Cotillard (La Vie en Rose)"
+  },
+  {
+   "year": 2008,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.992,
+   "favorite": "Javier Bardem (No Country for Old Men)",
+   "favoriteP": 0.992,
+   "winner": "Javier Bardem (No Country for Old Men)"
+  },
+  {
+   "year": 2008,
+   "cat": "supActress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.033,
+   "favorite": "Ruby Dee (American Gangster)",
+   "favoriteP": 0.641,
+   "winner": "Tilda Swinton (Michael Clayton)"
+  },
+  {
+   "year": 2008,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.751,
+   "favorite": "Juno",
+   "favoriteP": 0.751,
+   "winner": "Juno"
+  },
+  {
+   "year": 2008,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.198,
+   "favorite": "The Diving Bell and the Butterfly",
+   "favoriteP": 0.538,
+   "winner": "No Country for Old Men"
+  },
+  {
+   "year": 2008,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.999,
+   "favorite": "Ratatouille",
+   "favoriteP": 0.999,
+   "winner": "Ratatouille"
+  },
+  {
+   "year": 2008,
+   "cat": "international",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Counterfeiters"
+  },
+  {
+   "year": 2008,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.011,
+   "favorite": "Sicko",
+   "favoriteP": 0.942,
+   "winner": "Taxi to the Dark Side"
+  },
+  {
+   "year": 2008,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.25,
+   "favorite": null,
+   "favoriteP": 0.25,
+   "winner": "Freeheld"
+  },
+  {
+   "year": 2008,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Le Mozart des Pickpockets (The Mozart of Pickpockets)"
+  },
+  {
+   "year": 2008,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Peter & the Wolf"
+  },
+  {
+   "year": 2008,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.543,
+   "favorite": "Atonement",
+   "favoriteP": 0.543,
+   "winner": "Atonement"
+  },
+  {
+   "year": 2008,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.187,
+   "favorite": null,
+   "favoriteP": 0.209,
+   "winner": "Once"
+  },
+  {
+   "year": 2008,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.223,
+   "favorite": null,
+   "favoriteP": 0.223,
+   "winner": "The Bourne Ultimatum / The Bourne Ultimatum"
+  },
+  {
+   "year": 2008,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.133,
+   "favorite": "There Will Be Blood",
+   "favoriteP": 0.475,
+   "winner": "Sweeney Todd: The Demon Barber of Fleet Street"
+  },
+  {
+   "year": 2008,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.411,
+   "favorite": "There Will Be Blood",
+   "favoriteP": 0.411,
+   "winner": "There Will Be Blood"
+  },
+  {
+   "year": 2008,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.717,
+   "favorite": "La Vie en Rose",
+   "favoriteP": 0.717,
+   "winner": "La Vie en Rose"
+  },
+  {
+   "year": 2008,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.093,
+   "favorite": "La Vie en Rose",
+   "favoriteP": 0.542,
+   "winner": "Elizabeth: The Golden Age"
+  },
+  {
+   "year": 2008,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.652,
+   "favorite": "The Bourne Ultimatum",
+   "favoriteP": 0.652,
+   "winner": "The Bourne Ultimatum"
+  },
+  {
+   "year": 2008,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.766,
+   "favorite": "The Golden Compass",
+   "favoriteP": 0.766,
+   "winner": "The Golden Compass"
+  },
+  {
+   "year": 2009,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.947,
+   "favorite": "Slumdog Millionaire",
+   "favoriteP": 0.947,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.984,
+   "favorite": "Danny Boyle (Slumdog Millionaire)",
+   "favoriteP": 0.984,
+   "winner": "Danny Boyle (Slumdog Millionaire)"
+  },
+  {
+   "year": 2009,
+   "cat": "actor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.448,
+   "favorite": "Mickey Rourke (The Wrestler)",
+   "favoriteP": 0.495,
+   "winner": "Sean Penn (Milk)"
+  },
+  {
+   "year": 2009,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.741,
+   "favorite": "Kate Winslet (The Reader)",
+   "favoriteP": 0.741,
+   "winner": "Kate Winslet (The Reader)"
+  },
+  {
+   "year": 2009,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.992,
+   "favorite": "Heath Ledger (The Dark Knight)",
+   "favoriteP": 0.992,
+   "winner": "Heath Ledger (The Dark Knight)"
+  },
+  {
+   "year": 2009,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.736,
+   "favorite": "Penélope Cruz (Vicky Cristina Barcelona)",
+   "favoriteP": 0.736,
+   "winner": "Penélope Cruz (Vicky Cristina Barcelona)"
+  },
+  {
+   "year": 2009,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.544,
+   "favorite": "Milk",
+   "favoriteP": 0.544,
+   "winner": "Milk"
+  },
+  {
+   "year": 2009,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.903,
+   "favorite": "Slumdog Millionaire",
+   "favoriteP": 0.903,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.999,
+   "favorite": "WALL-E",
+   "favoriteP": 0.999,
+   "winner": "WALL-E"
+  },
+  {
+   "year": 2009,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.142,
+   "favorite": "The Class",
+   "favoriteP": 0.465,
+   "winner": "Departures"
+  },
+  {
+   "year": 2009,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.963,
+   "favorite": "Man on Wire",
+   "favoriteP": 0.963,
+   "winner": "Man on Wire"
+  },
+  {
+   "year": 2009,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.25,
+   "favorite": null,
+   "favoriteP": 0.25,
+   "winner": "Smile Pinki"
+  },
+  {
+   "year": 2009,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Toyland"
+  },
+  {
+   "year": 2009,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.202,
+   "favorite": null,
+   "favoriteP": 0.202,
+   "winner": "La Maison en Petits Cubes"
+  },
+  {
+   "year": 2009,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.931,
+   "favorite": "Slumdog Millionaire",
+   "favoriteP": 0.931,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.34,
+   "favorite": null,
+   "favoriteP": 0.34,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.355,
+   "favorite": null,
+   "favoriteP": 0.355,
+   "winner": "The Dark Knight / Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.413,
+   "favorite": "The Dark Knight",
+   "favoriteP": 0.429,
+   "winner": "The Curious Case of Benjamin Button"
+  },
+  {
+   "year": 2009,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.657,
+   "favorite": "Slumdog Millionaire",
+   "favoriteP": 0.657,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.731,
+   "favorite": "The Curious Case of Benjamin Button",
+   "favoriteP": 0.731,
+   "winner": "The Curious Case of Benjamin Button"
+  },
+  {
+   "year": 2009,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.652,
+   "favorite": "The Duchess",
+   "favoriteP": 0.652,
+   "winner": "The Duchess"
+  },
+  {
+   "year": 2009,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.562,
+   "favorite": "Slumdog Millionaire",
+   "favoriteP": 0.562,
+   "winner": "Slumdog Millionaire"
+  },
+  {
+   "year": 2009,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.754,
+   "favorite": "The Curious Case of Benjamin Button",
+   "favoriteP": 0.754,
+   "winner": "The Curious Case of Benjamin Button"
+  },
+  {
+   "year": 2010,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.79,
+   "favorite": "The Hurt Locker",
+   "favoriteP": 0.79,
+   "winner": "The Hurt Locker"
+  },
+  {
+   "year": 2010,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.947,
+   "favorite": "Kathryn Bigelow (The Hurt Locker)",
+   "favoriteP": 0.947,
+   "winner": "Kathryn Bigelow (The Hurt Locker)"
+  },
+  {
+   "year": 2010,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.831,
+   "favorite": "Jeff Bridges (Crazy Heart)",
+   "favoriteP": 0.831,
+   "winner": "Jeff Bridges (Crazy Heart)"
+  },
+  {
+   "year": 2010,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.439,
+   "favorite": "Sandra Bullock (The Blind Side)",
+   "favoriteP": 0.439,
+   "winner": "Sandra Bullock (The Blind Side)"
+  },
+  {
+   "year": 2010,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.968,
+   "favorite": "Christoph Waltz (Inglourious Basterds)",
+   "favoriteP": 0.968,
+   "winner": "Christoph Waltz (Inglourious Basterds)"
+  },
+  {
+   "year": 2010,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.98,
+   "favorite": "Mo'Nique (Precious: Based on the Novel 'Push' by Sapphire)",
+   "favoriteP": 0.98,
+   "winner": "Mo'Nique (Precious: Based on the Novel 'Push' by Sapphire)"
+  },
+  {
+   "year": 2010,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.686,
+   "favorite": "The Hurt Locker",
+   "favoriteP": 0.686,
+   "winner": "The Hurt Locker"
+  },
+  {
+   "year": 2010,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.019,
+   "favorite": "Up in the Air",
+   "favoriteP": 0.912,
+   "winner": "Precious: Based on the Novel 'Push' by Sapphire"
+  },
+  {
+   "year": 2010,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 1,
+   "favorite": "Up",
+   "favoriteP": 1,
+   "winner": "Up"
+  },
+  {
+   "year": 2010,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.029,
+   "favorite": "A Prophet",
+   "favoriteP": 0.694,
+   "winner": "The Secret in Their Eyes"
+  },
+  {
+   "year": 2010,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.975,
+   "favorite": "The Cove",
+   "favoriteP": 0.975,
+   "winner": "The Cove"
+  },
+  {
+   "year": 2010,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Music by Prudence"
+  },
+  {
+   "year": 2010,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The New Tenants"
+  },
+  {
+   "year": 2010,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Logorama"
+  },
+  {
+   "year": 2010,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.902,
+   "favorite": "Up",
+   "favoriteP": 0.902,
+   "winner": "Up"
+  },
+  {
+   "year": 2010,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.509,
+   "favorite": "Crazy Heart",
+   "favoriteP": 0.509,
+   "winner": "Crazy Heart"
+  },
+  {
+   "year": 2010,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.319,
+   "favorite": null,
+   "favoriteP": 0.319,
+   "winner": "The Hurt Locker / The Hurt Locker"
+  },
+  {
+   "year": 2010,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.81,
+   "favorite": "Avatar",
+   "favoriteP": 0.81,
+   "winner": "Avatar"
+  },
+  {
+   "year": 2010,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.159,
+   "favorite": "The Hurt Locker",
+   "favoriteP": 0.47,
+   "winner": "Avatar"
+  },
+  {
+   "year": 2010,
+   "cat": "makeup",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.095,
+   "favorite": "The Young Victoria",
+   "favoriteP": 0.785,
+   "winner": "Star Trek"
+  },
+  {
+   "year": 2010,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.609,
+   "favorite": "The Young Victoria",
+   "favoriteP": 0.609,
+   "winner": "The Young Victoria"
+  },
+  {
+   "year": 2010,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.596,
+   "favorite": "The Hurt Locker",
+   "favoriteP": 0.596,
+   "winner": "The Hurt Locker"
+  },
+  {
+   "year": 2010,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.708,
+   "favorite": "Avatar",
+   "favoriteP": 0.708,
+   "winner": "Avatar"
+  },
+  {
+   "year": 2011,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.627,
+   "favorite": "The King's Speech",
+   "favoriteP": 0.627,
+   "winner": "The King's Speech"
+  },
+  {
+   "year": 2011,
+   "cat": "director",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.09,
+   "favorite": "David Fincher (The Social Network)",
+   "favoriteP": 0.883,
+   "winner": "Tom Hooper (The King's Speech)"
+  },
+  {
+   "year": 2011,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.992,
+   "favorite": "Colin Firth (The King's Speech)",
+   "favoriteP": 0.992,
+   "winner": "Colin Firth (The King's Speech)"
+  },
+  {
+   "year": 2011,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.936,
+   "favorite": "Natalie Portman (Black Swan)",
+   "favoriteP": 0.936,
+   "winner": "Natalie Portman (Black Swan)"
+  },
+  {
+   "year": 2011,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.854,
+   "favorite": "Christian Bale (The Fighter)",
+   "favoriteP": 0.854,
+   "winner": "Christian Bale (The Fighter)"
+  },
+  {
+   "year": 2011,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.959,
+   "favorite": "Melissa Leo (The Fighter)",
+   "favoriteP": 0.959,
+   "winner": "Melissa Leo (The Fighter)"
+  },
+  {
+   "year": 2011,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.613,
+   "favorite": "The King's Speech",
+   "favoriteP": 0.613,
+   "winner": "The King's Speech"
+  },
+  {
+   "year": 2011,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.75,
+   "favorite": "The Social Network",
+   "favoriteP": 0.75,
+   "winner": "The Social Network"
+  },
+  {
+   "year": 2011,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.965,
+   "favorite": "Toy Story 3",
+   "favoriteP": 0.965,
+   "winner": "Toy Story 3"
+  },
+  {
+   "year": 2011,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.417,
+   "favorite": "In a Better World",
+   "favoriteP": 0.417,
+   "winner": "In a Better World"
+  },
+  {
+   "year": 2011,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.211,
+   "favorite": "Exit Through the Gift Shop",
+   "favoriteP": 0.449,
+   "winner": "Inside Job"
+  },
+  {
+   "year": 2011,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Strangers No More"
+  },
+  {
+   "year": 2011,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "God of Love"
+  },
+  {
+   "year": 2011,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Lost Thing"
+  },
+  {
+   "year": 2011,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.477,
+   "favorite": "The Social Network",
+   "favoriteP": 0.477,
+   "winner": "The Social Network"
+  },
+  {
+   "year": 2011,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.28,
+   "favorite": "Toy Story 3",
+   "favoriteP": 0.28,
+   "winner": "Toy Story 3"
+  },
+  {
+   "year": 2011,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.22,
+   "favorite": null,
+   "favoriteP": 0.22,
+   "winner": "Inception / Inception"
+  },
+  {
+   "year": 2011,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.016,
+   "favorite": "Inception",
+   "favoriteP": 0.823,
+   "winner": "Alice in Wonderland"
+  },
+  {
+   "year": 2011,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.332,
+   "favorite": "True Grit",
+   "favoriteP": 0.384,
+   "winner": "Inception"
+  },
+  {
+   "year": 2011,
+   "cat": "makeup",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.333,
+   "favorite": null,
+   "favoriteP": 0.333,
+   "winner": "The Wolfman"
+  },
+  {
+   "year": 2011,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.663,
+   "favorite": "Alice in Wonderland",
+   "favoriteP": 0.663,
+   "winner": "Alice in Wonderland"
+  },
+  {
+   "year": 2011,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.481,
+   "favorite": "The Social Network",
+   "favoriteP": 0.481,
+   "winner": "The Social Network"
+  },
+  {
+   "year": 2011,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.59,
+   "favorite": "Inception",
+   "favoriteP": 0.59,
+   "winner": "Inception"
+  },
+  {
+   "year": 2012,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.769,
+   "favorite": "The Artist",
+   "favoriteP": 0.769,
+   "winner": "The Artist"
+  },
+  {
+   "year": 2012,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.98,
+   "favorite": "Michel Hazanavicius (The Artist)",
+   "favoriteP": 0.98,
+   "winner": "Michel Hazanavicius (The Artist)"
+  },
+  {
+   "year": 2012,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.891,
+   "favorite": "Jean Dujardin (The Artist)",
+   "favoriteP": 0.891,
+   "winner": "Jean Dujardin (The Artist)"
+  },
+  {
+   "year": 2012,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.542,
+   "favorite": "Meryl Streep (The Iron Lady)",
+   "favoriteP": 0.542,
+   "winner": "Meryl Streep (The Iron Lady)"
+  },
+  {
+   "year": 2012,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Christopher Plummer (Beginners)",
+   "favoriteP": 0.994,
+   "winner": "Christopher Plummer (Beginners)"
+  },
+  {
+   "year": 2012,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.976,
+   "favorite": "Octavia Spencer (The Help)",
+   "favoriteP": 0.976,
+   "winner": "Octavia Spencer (The Help)"
+  },
+  {
+   "year": 2012,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.314,
+   "favorite": "The Artist",
+   "favoriteP": 0.371,
+   "winner": "Midnight in Paris"
+  },
+  {
+   "year": 2012,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.224,
+   "favorite": "Tinker Tailor Soldier Spy",
+   "favoriteP": 0.406,
+   "winner": "The Descendants"
+  },
+  {
+   "year": 2012,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Rango",
+   "favoriteP": 0.994,
+   "winner": "Rango"
+  },
+  {
+   "year": 2012,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.751,
+   "favorite": "A Separation",
+   "favoriteP": 0.751,
+   "winner": "A Separation"
+  },
+  {
+   "year": 2012,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.137,
+   "favorite": "Paradise Lost 3: Purgatory",
+   "favoriteP": 0.383,
+   "winner": "Undefeated"
+  },
+  {
+   "year": 2012,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Saving Face"
+  },
+  {
+   "year": 2012,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Shore"
+  },
+  {
+   "year": 2012,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.186,
+   "favorite": "A Morning Stroll",
+   "favoriteP": 0.257,
+   "winner": "The Fantastic Flying Books of Mr. Morris Lessmore"
+  },
+  {
+   "year": 2012,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.924,
+   "favorite": "The Artist",
+   "favoriteP": 0.924,
+   "winner": "The Artist"
+  },
+  {
+   "year": 2012,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.529,
+   "favorite": "The Muppets",
+   "favoriteP": 0.529,
+   "winner": "The Muppets"
+  },
+  {
+   "year": 2012,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.261,
+   "favorite": null,
+   "favoriteP": 0.261,
+   "winner": "Hugo / Hugo"
+  },
+  {
+   "year": 2012,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.857,
+   "favorite": "Hugo",
+   "favoriteP": 0.857,
+   "winner": "Hugo"
+  },
+  {
+   "year": 2012,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.115,
+   "favorite": "The Artist",
+   "favoriteP": 0.288,
+   "winner": "Hugo"
+  },
+  {
+   "year": 2012,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.71,
+   "favorite": "The Iron Lady",
+   "favoriteP": 0.71,
+   "winner": "The Iron Lady"
+  },
+  {
+   "year": 2012,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.506,
+   "favorite": "The Artist",
+   "favoriteP": 0.506,
+   "winner": "The Artist"
+  },
+  {
+   "year": 2012,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.048,
+   "favorite": "The Artist",
+   "favoriteP": 0.558,
+   "winner": "The Girl with the Dragon Tattoo"
+  },
+  {
+   "year": 2012,
+   "cat": "vfx",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.088,
+   "favorite": "Harry Potter and the Deathly Hallows – Part 2",
+   "favoriteP": 0.681,
+   "winner": "Hugo"
+  },
+  {
+   "year": 2013,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.54,
+   "favorite": "Argo",
+   "favoriteP": 0.54,
+   "winner": "Argo"
+  },
+  {
+   "year": 2013,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.31,
+   "favorite": "Ang Lee (Life of Pi)",
+   "favoriteP": 0.31,
+   "winner": "Ang Lee (Life of Pi)"
+  },
+  {
+   "year": 2013,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.984,
+   "favorite": "Daniel Day-Lewis (Lincoln)",
+   "favoriteP": 0.984,
+   "winner": "Daniel Day-Lewis (Lincoln)"
+  },
+  {
+   "year": 2013,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.448,
+   "favorite": "Jennifer Lawrence (Silver Linings Playbook)",
+   "favoriteP": 0.448,
+   "winner": "Jennifer Lawrence (Silver Linings Playbook)"
+  },
+  {
+   "year": 2013,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.533,
+   "favorite": "Christoph Waltz (Django Unchained)",
+   "favoriteP": 0.533,
+   "winner": "Christoph Waltz (Django Unchained)"
+  },
+  {
+   "year": 2013,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.97,
+   "favorite": "Anne Hathaway (Les Misérables)",
+   "favoriteP": 0.97,
+   "winner": "Anne Hathaway (Les Misérables)"
+  },
+  {
+   "year": 2013,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.639,
+   "favorite": "Django Unchained",
+   "favoriteP": 0.639,
+   "winner": "Django Unchained"
+  },
+  {
+   "year": 2013,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.367,
+   "favorite": "Silver Linings Playbook",
+   "favoriteP": 0.373,
+   "winner": "Argo"
+  },
+  {
+   "year": 2013,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.91,
+   "favorite": "Brave",
+   "favoriteP": 0.91,
+   "winner": "Brave"
+  },
+  {
+   "year": 2013,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.893,
+   "favorite": "Amour",
+   "favoriteP": 0.893,
+   "winner": "Amour"
+  },
+  {
+   "year": 2013,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.966,
+   "favorite": "Searching for Sugar Man",
+   "favoriteP": 0.966,
+   "winner": "Searching for Sugar Man"
+  },
+  {
+   "year": 2013,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Inocente"
+  },
+  {
+   "year": 2013,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Curfew"
+  },
+  {
+   "year": 2013,
+   "cat": "animShort",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.258,
+   "favorite": "Paperman",
+   "favoriteP": 0.258,
+   "winner": "Paperman"
+  },
+  {
+   "year": 2013,
+   "cat": "score",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.212,
+   "favorite": "Skyfall",
+   "favoriteP": 0.585,
+   "winner": "Life of Pi"
+  },
+  {
+   "year": 2013,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.54,
+   "favorite": "Skyfall",
+   "favoriteP": 0.54,
+   "winner": "Skyfall"
+  },
+  {
+   "year": 2013,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.343,
+   "favorite": "Les Misérables",
+   "favoriteP": 0.343,
+   "winner": "Skyfall / Zero Dark Thirty / Les Misérables"
+  },
+  {
+   "year": 2013,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.075,
+   "favorite": "Anna Karenina",
+   "favoriteP": 0.457,
+   "winner": "Lincoln"
+  },
+  {
+   "year": 2013,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.398,
+   "favorite": "Life of Pi",
+   "favoriteP": 0.398,
+   "winner": "Life of Pi"
+  },
+  {
+   "year": 2013,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.72,
+   "favorite": "Les Misérables",
+   "favoriteP": 0.72,
+   "winner": "Les Misérables"
+  },
+  {
+   "year": 2013,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.643,
+   "favorite": "Anna Karenina",
+   "favoriteP": 0.643,
+   "winner": "Anna Karenina"
+  },
+  {
+   "year": 2013,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.539,
+   "favorite": "Argo",
+   "favoriteP": 0.539,
+   "winner": "Argo"
+  },
+  {
+   "year": 2013,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.606,
+   "favorite": "Life of Pi",
+   "favoriteP": 0.606,
+   "winner": "Life of Pi"
+  },
+  {
+   "year": 2015,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.198,
+   "favorite": "Boyhood",
+   "favoriteP": 0.298,
+   "winner": "Birdman or (The Unexpected Virtue of Ignorance)"
+  },
+  {
+   "year": 2015,
+   "cat": "director",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.017,
+   "favorite": "Richard Linklater (Boyhood)",
+   "favoriteP": 0.974,
+   "winner": "Alejandro G. Iñárritu (Birdman or (The Unexpected Virtue of Ignorance))"
+  },
+  {
+   "year": 2015,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.899,
+   "favorite": "Eddie Redmayne (The Theory of Everything)",
+   "favoriteP": 0.899,
+   "winner": "Eddie Redmayne (The Theory of Everything)"
+  },
+  {
+   "year": 2015,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.969,
+   "favorite": "Julianne Moore (Still Alice)",
+   "favoriteP": 0.969,
+   "winner": "Julianne Moore (Still Alice)"
+  },
+  {
+   "year": 2015,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.997,
+   "favorite": "J. K. Simmons (Whiplash)",
+   "favoriteP": 0.997,
+   "winner": "J. K. Simmons (Whiplash)"
+  },
+  {
+   "year": 2015,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.997,
+   "favorite": "Patricia Arquette (Boyhood)",
+   "favoriteP": 0.997,
+   "winner": "Patricia Arquette (Boyhood)"
+  },
+  {
+   "year": 2015,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.01,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.914,
+   "winner": "Birdman or (The Unexpected Virtue of Ignorance)"
+  },
+  {
+   "year": 2015,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.477,
+   "favorite": "The Imitation Game",
+   "favoriteP": 0.477,
+   "winner": "The Imitation Game"
+  },
+  {
+   "year": 2015,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.187,
+   "favorite": "How to Train Your Dragon 2",
+   "favoriteP": 0.75,
+   "winner": "Big Hero 6"
+  },
+  {
+   "year": 2015,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.761,
+   "favorite": "Ida",
+   "favoriteP": 0.761,
+   "winner": "Ida"
+  },
+  {
+   "year": 2015,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.668,
+   "favorite": "Citizenfour",
+   "favoriteP": 0.668,
+   "winner": "Citizenfour"
+  },
+  {
+   "year": 2015,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Crisis Hotline: Veterans Press 1"
+  },
+  {
+   "year": 2015,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Phone Call"
+  },
+  {
+   "year": 2015,
+   "cat": "animShort",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.245,
+   "favorite": "Feast",
+   "favoriteP": 0.245,
+   "winner": "Feast"
+  },
+  {
+   "year": 2015,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.462,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.462,
+   "winner": "The Grand Budapest Hotel"
+  },
+  {
+   "year": 2015,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.511,
+   "favorite": "Selma",
+   "favoriteP": 0.511,
+   "winner": "Selma"
+  },
+  {
+   "year": 2015,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.325,
+   "favorite": "Whiplash",
+   "favoriteP": 0.325,
+   "winner": "American Sniper / Whiplash"
+  },
+  {
+   "year": 2015,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.852,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.852,
+   "winner": "The Grand Budapest Hotel"
+  },
+  {
+   "year": 2015,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.077,
+   "favorite": "Mr. Turner",
+   "favoriteP": 0.502,
+   "winner": "Birdman or (The Unexpected Virtue of Ignorance)"
+  },
+  {
+   "year": 2015,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.742,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.742,
+   "winner": "The Grand Budapest Hotel"
+  },
+  {
+   "year": 2015,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.692,
+   "favorite": "The Grand Budapest Hotel",
+   "favoriteP": 0.692,
+   "winner": "The Grand Budapest Hotel"
+  },
+  {
+   "year": 2015,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.515,
+   "favorite": "Whiplash",
+   "favoriteP": 0.515,
+   "winner": "Whiplash"
+  },
+  {
+   "year": 2015,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.629,
+   "favorite": "Interstellar",
+   "favoriteP": 0.629,
+   "winner": "Interstellar"
+  },
+  {
+   "year": 2016,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.477,
+   "favorite": "Spotlight",
+   "favoriteP": 0.477,
+   "winner": "Spotlight"
+  },
+  {
+   "year": 2016,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.778,
+   "favorite": "Alejandro G. Iñárritu (The Revenant)",
+   "favoriteP": 0.778,
+   "winner": "Alejandro G. Iñárritu (The Revenant)"
+  },
+  {
+   "year": 2016,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.97,
+   "favorite": "Leonardo DiCaprio (The Revenant)",
+   "favoriteP": 0.97,
+   "winner": "Leonardo DiCaprio (The Revenant)"
+  },
+  {
+   "year": 2016,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.958,
+   "favorite": "Brie Larson (Room)",
+   "favoriteP": 0.958,
+   "winner": "Brie Larson (Room)"
+  },
+  {
+   "year": 2016,
+   "cat": "supActor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.388,
+   "favorite": "Sylvester Stallone (Creed)",
+   "favoriteP": 0.453,
+   "winner": "Mark Rylance (Bridge of Spies)"
+  },
+  {
+   "year": 2016,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.617,
+   "favorite": "Alicia Vikander (The Danish Girl)",
+   "favoriteP": 0.617,
+   "winner": "Alicia Vikander (The Danish Girl)"
+  },
+  {
+   "year": 2016,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.898,
+   "favorite": "Spotlight",
+   "favoriteP": 0.898,
+   "winner": "Spotlight"
+  },
+  {
+   "year": 2016,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.918,
+   "favorite": "The Big Short",
+   "favoriteP": 0.918,
+   "winner": "The Big Short"
+  },
+  {
+   "year": 2016,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 1,
+   "favorite": "Inside Out",
+   "favoriteP": 1,
+   "winner": "Inside Out"
+  },
+  {
+   "year": 2016,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.665,
+   "favorite": "Son of Saul",
+   "favoriteP": 0.665,
+   "winner": "Son of Saul"
+  },
+  {
+   "year": 2016,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.943,
+   "favorite": "Amy",
+   "favoriteP": 0.943,
+   "winner": "Amy"
+  },
+  {
+   "year": 2016,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "A Girl in the River: The Price of Forgiveness"
+  },
+  {
+   "year": 2016,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Stutterer"
+  },
+  {
+   "year": 2016,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.182,
+   "favorite": "World of Tomorrow",
+   "favoriteP": 0.311,
+   "winner": "Bear Story"
+  },
+  {
+   "year": 2016,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.943,
+   "favorite": "The Hateful Eight",
+   "favoriteP": 0.943,
+   "winner": "The Hateful Eight"
+  },
+  {
+   "year": 2016,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.563,
+   "favorite": "Spectre",
+   "favoriteP": 0.563,
+   "winner": "Spectre"
+  },
+  {
+   "year": 2016,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.028,
+   "favorite": null,
+   "favoriteP": 0.387,
+   "winner": "Mad Max: Fury Road / Mad Max: Fury Road"
+  },
+  {
+   "year": 2016,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.78,
+   "favorite": "Mad Max: Fury Road",
+   "favoriteP": 0.78,
+   "winner": "Mad Max: Fury Road"
+  },
+  {
+   "year": 2016,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.569,
+   "favorite": "The Revenant",
+   "favoriteP": 0.569,
+   "winner": "The Revenant"
+  },
+  {
+   "year": 2016,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.73,
+   "favorite": "Mad Max: Fury Road",
+   "favoriteP": 0.73,
+   "winner": "Mad Max: Fury Road"
+  },
+  {
+   "year": 2016,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.674,
+   "favorite": "Mad Max: Fury Road",
+   "favoriteP": 0.674,
+   "winner": "Mad Max: Fury Road"
+  },
+  {
+   "year": 2016,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.395,
+   "favorite": "Mad Max: Fury Road",
+   "favoriteP": 0.395,
+   "winner": "Mad Max: Fury Road"
+  },
+  {
+   "year": 2016,
+   "cat": "vfx",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.052,
+   "favorite": "Star Wars: The Force Awakens",
+   "favoriteP": 0.805,
+   "winner": "Ex Machina"
+  },
+  {
+   "year": 2017,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.105,
+   "favorite": "La La Land",
+   "favoriteP": 0.793,
+   "winner": "Moonlight"
+  },
+  {
+   "year": 2017,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.868,
+   "favorite": "Damien Chazelle (La La Land)",
+   "favoriteP": 0.868,
+   "winner": "Damien Chazelle (La La Land)"
+  },
+  {
+   "year": 2017,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.802,
+   "favorite": "Casey Affleck (Manchester by the Sea)",
+   "favoriteP": 0.802,
+   "winner": "Casey Affleck (Manchester by the Sea)"
+  },
+  {
+   "year": 2017,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.885,
+   "favorite": "Emma Stone (La La Land)",
+   "favoriteP": 0.885,
+   "winner": "Emma Stone (La La Land)"
+  },
+  {
+   "year": 2017,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.8,
+   "favorite": "Mahershala Ali (Moonlight)",
+   "favoriteP": 0.8,
+   "winner": "Mahershala Ali (Moonlight)"
+  },
+  {
+   "year": 2017,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.978,
+   "favorite": "Viola Davis (Fences)",
+   "favoriteP": 0.978,
+   "winner": "Viola Davis (Fences)"
+  },
+  {
+   "year": 2017,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.534,
+   "favorite": "Manchester by the Sea",
+   "favoriteP": 0.534,
+   "winner": "Manchester by the Sea"
+  },
+  {
+   "year": 2017,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.334,
+   "favorite": "Lion",
+   "favoriteP": 0.389,
+   "winner": "Moonlight"
+  },
+  {
+   "year": 2017,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.927,
+   "favorite": "Zootopia",
+   "favoriteP": 0.927,
+   "winner": "Zootopia"
+  },
+  {
+   "year": 2017,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.301,
+   "favorite": "Toni Erdmann",
+   "favoriteP": 0.468,
+   "winner": "The Salesman"
+  },
+  {
+   "year": 2017,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.571,
+   "favorite": "O.J.: Made in America",
+   "favoriteP": 0.571,
+   "winner": "O.J.: Made in America"
+  },
+  {
+   "year": 2017,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The White Helmets"
+  },
+  {
+   "year": 2017,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Sing"
+  },
+  {
+   "year": 2017,
+   "cat": "animShort",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.238,
+   "favorite": "Piper",
+   "favoriteP": 0.238,
+   "winner": "Piper"
+  },
+  {
+   "year": 2017,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.93,
+   "favorite": "La La Land",
+   "favoriteP": 0.93,
+   "winner": "La La Land"
+  },
+  {
+   "year": 2017,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.385,
+   "favorite": null,
+   "favoriteP": 0.385,
+   "winner": "La La Land"
+  },
+  {
+   "year": 2017,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.208,
+   "favorite": null,
+   "favoriteP": 0.208,
+   "winner": "Arrival / Hacksaw Ridge"
+  },
+  {
+   "year": 2017,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.535,
+   "favorite": "La La Land",
+   "favoriteP": 0.535,
+   "winner": "La La Land"
+  },
+  {
+   "year": 2017,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.631,
+   "favorite": "La La Land",
+   "favoriteP": 0.631,
+   "winner": "La La Land"
+  },
+  {
+   "year": 2017,
+   "cat": "makeup",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.339,
+   "favorite": null,
+   "favoriteP": 0.339,
+   "winner": "Suicide Squad"
+  },
+  {
+   "year": 2017,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.061,
+   "favorite": "Jackie",
+   "favoriteP": 0.713,
+   "winner": "Fantastic Beasts and Where to Find Them"
+  },
+  {
+   "year": 2017,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.455,
+   "favorite": "Hacksaw Ridge",
+   "favoriteP": 0.455,
+   "winner": "Hacksaw Ridge"
+  },
+  {
+   "year": 2017,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.663,
+   "favorite": "The Jungle Book",
+   "favoriteP": 0.663,
+   "winner": "The Jungle Book"
+  },
+  {
+   "year": 2018,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.258,
+   "favorite": "Three Billboards Outside Ebbing, Missouri",
+   "favoriteP": 0.378,
+   "winner": "The Shape of Water"
+  },
+  {
+   "year": 2018,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.99,
+   "favorite": "Guillermo del Toro (The Shape of Water)",
+   "favoriteP": 0.99,
+   "winner": "Guillermo del Toro (The Shape of Water)"
+  },
+  {
+   "year": 2018,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.967,
+   "favorite": "Gary Oldman (Darkest Hour)",
+   "favoriteP": 0.967,
+   "winner": "Gary Oldman (Darkest Hour)"
+  },
+  {
+   "year": 2018,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.923,
+   "favorite": "Frances McDormand (Three Billboards Outside Ebbing, Missouri)",
+   "favoriteP": 0.923,
+   "winner": "Frances McDormand (Three Billboards Outside Ebbing, Missouri)"
+  },
+  {
+   "year": 2018,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.973,
+   "favorite": "Sam Rockwell (Three Billboards Outside Ebbing, Missouri)",
+   "favoriteP": 0.973,
+   "winner": "Sam Rockwell (Three Billboards Outside Ebbing, Missouri)"
+  },
+  {
+   "year": 2018,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.988,
+   "favorite": "Allison Janney (I, Tonya)",
+   "favoriteP": 0.988,
+   "winner": "Allison Janney (I, Tonya)"
+  },
+  {
+   "year": 2018,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.238,
+   "favorite": "Three Billboards Outside Ebbing, Missouri",
+   "favoriteP": 0.493,
+   "winner": "Get Out"
+  },
+  {
+   "year": 2018,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.925,
+   "favorite": "Call Me by Your Name",
+   "favoriteP": 0.925,
+   "winner": "Call Me by Your Name"
+  },
+  {
+   "year": 2018,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 1,
+   "favorite": "Coco",
+   "favoriteP": 1,
+   "winner": "Coco"
+  },
+  {
+   "year": 2018,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.259,
+   "favorite": "Loveless",
+   "favoriteP": 0.284,
+   "winner": "A Fantastic Woman"
+  },
+  {
+   "year": 2018,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.245,
+   "favorite": "Faces Places",
+   "favoriteP": 0.456,
+   "winner": "Icarus"
+  },
+  {
+   "year": 2018,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Heaven Is a Traffic Jam on the 405"
+  },
+  {
+   "year": 2018,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Silent Child"
+  },
+  {
+   "year": 2018,
+   "cat": "animShort",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.242,
+   "favorite": "Dear Basketball",
+   "favoriteP": 0.242,
+   "winner": "Dear Basketball"
+  },
+  {
+   "year": 2018,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.935,
+   "favorite": "The Shape of Water",
+   "favoriteP": 0.935,
+   "winner": "The Shape of Water"
+  },
+  {
+   "year": 2018,
+   "cat": "song",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.053,
+   "favorite": "The Greatest Showman",
+   "favoriteP": 0.672,
+   "winner": "Coco"
+  },
+  {
+   "year": 2018,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.305,
+   "favorite": null,
+   "favoriteP": 0.305,
+   "winner": "Dunkirk / Dunkirk"
+  },
+  {
+   "year": 2018,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.744,
+   "favorite": "The Shape of Water",
+   "favoriteP": 0.744,
+   "winner": "The Shape of Water"
+  },
+  {
+   "year": 2018,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.86,
+   "favorite": "Blade Runner 2049",
+   "favoriteP": 0.86,
+   "winner": "Blade Runner 2049"
+  },
+  {
+   "year": 2018,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.74,
+   "favorite": "Darkest Hour",
+   "favoriteP": 0.74,
+   "winner": "Darkest Hour"
+  },
+  {
+   "year": 2018,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.534,
+   "favorite": "Phantom Thread",
+   "favoriteP": 0.534,
+   "winner": "Phantom Thread"
+  },
+  {
+   "year": 2018,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.135,
+   "favorite": "Baby Driver",
+   "favoriteP": 0.399,
+   "winner": "Dunkirk"
+  },
+  {
+   "year": 2018,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.552,
+   "favorite": "Blade Runner 2049",
+   "favoriteP": 0.552,
+   "winner": "Blade Runner 2049"
+  },
+  {
+   "year": 2019,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.155,
+   "favorite": "Roma",
+   "favoriteP": 0.542,
+   "winner": "Green Book"
+  },
+  {
+   "year": 2019,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.998,
+   "favorite": "Alfonso Cuarón (Roma)",
+   "favoriteP": 0.998,
+   "winner": "Alfonso Cuarón (Roma)"
+  },
+  {
+   "year": 2019,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.887,
+   "favorite": "Rami Malek (Bohemian Rhapsody)",
+   "favoriteP": 0.887,
+   "winner": "Rami Malek (Bohemian Rhapsody)"
+  },
+  {
+   "year": 2019,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.609,
+   "favorite": "Olivia Colman (The Favourite)",
+   "favoriteP": 0.609,
+   "winner": "Olivia Colman (The Favourite)"
+  },
+  {
+   "year": 2019,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.989,
+   "favorite": "Mahershala Ali (Green Book)",
+   "favoriteP": 0.989,
+   "winner": "Mahershala Ali (Green Book)"
+  },
+  {
+   "year": 2019,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.952,
+   "favorite": "Regina King (If Beale Street Could Talk)",
+   "favoriteP": 0.952,
+   "winner": "Regina King (If Beale Street Could Talk)"
+  },
+  {
+   "year": 2019,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.077,
+   "favorite": "The Favourite",
+   "favoriteP": 0.57,
+   "winner": "Green Book"
+  },
+  {
+   "year": 2019,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.304,
+   "favorite": "BlacKkKlansman",
+   "favoriteP": 0.304,
+   "winner": "BlacKkKlansman"
+  },
+  {
+   "year": 2019,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 1,
+   "favorite": "Spider-Man: Into the Spider-Verse",
+   "favoriteP": 1,
+   "winner": "Spider-Man: Into the Spider-Verse"
+  },
+  {
+   "year": 2019,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.827,
+   "favorite": "Roma",
+   "favoriteP": 0.827,
+   "winner": "Roma"
+  },
+  {
+   "year": 2019,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.485,
+   "favorite": "RBG",
+   "favoriteP": 0.495,
+   "winner": "Free Solo"
+  },
+  {
+   "year": 2019,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Period. End of Sentence."
+  },
+  {
+   "year": 2019,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Skin"
+  },
+  {
+   "year": 2019,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.176,
+   "favorite": "Weekends",
+   "favoriteP": 0.297,
+   "winner": "Bao"
+  },
+  {
+   "year": 2019,
+   "cat": "score",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.125,
+   "favorite": "If Beale Street Could Talk",
+   "favoriteP": 0.282,
+   "winner": "Black Panther"
+  },
+  {
+   "year": 2019,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.829,
+   "favorite": "A Star Is Born",
+   "favoriteP": 0.829,
+   "winner": "A Star Is Born"
+  },
+  {
+   "year": 2019,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.336,
+   "favorite": null,
+   "favoriteP": 0.336,
+   "winner": "Bohemian Rhapsody / Bohemian Rhapsody"
+  },
+  {
+   "year": 2019,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.341,
+   "favorite": "The Favourite",
+   "favoriteP": 0.578,
+   "winner": "Black Panther"
+  },
+  {
+   "year": 2019,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.446,
+   "favorite": "Roma",
+   "favoriteP": 0.446,
+   "winner": "Roma"
+  },
+  {
+   "year": 2019,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.668,
+   "favorite": "Vice",
+   "favoriteP": 0.668,
+   "winner": "Vice"
+  },
+  {
+   "year": 2019,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.383,
+   "favorite": "The Favourite",
+   "favoriteP": 0.46,
+   "winner": "Black Panther"
+  },
+  {
+   "year": 2019,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.147,
+   "favorite": "Vice",
+   "favoriteP": 0.533,
+   "winner": "Bohemian Rhapsody"
+  },
+  {
+   "year": 2019,
+   "cat": "vfx",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.183,
+   "favorite": "Avengers: Infinity War",
+   "favoriteP": 0.305,
+   "winner": "First Man"
+  },
+  {
+   "year": 2020,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.187,
+   "favorite": "The Irishman",
+   "favoriteP": 0.359,
+   "winner": "Parasite"
+  },
+  {
+   "year": 2020,
+   "cat": "director",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.006,
+   "favorite": "Sam Mendes (1917)",
+   "favoriteP": 0.993,
+   "winner": "Bong Joon Ho (Parasite)"
+  },
+  {
+   "year": 2020,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.974,
+   "favorite": "Joaquin Phoenix (Joker)",
+   "favoriteP": 0.974,
+   "winner": "Joaquin Phoenix (Joker)"
+  },
+  {
+   "year": 2020,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.969,
+   "favorite": "Renée Zellweger (Judy)",
+   "favoriteP": 0.969,
+   "winner": "Renée Zellweger (Judy)"
+  },
+  {
+   "year": 2020,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.991,
+   "favorite": "Brad Pitt (Once Upon a Time in Hollywood)",
+   "favoriteP": 0.991,
+   "winner": "Brad Pitt (Once Upon a Time in Hollywood)"
+  },
+  {
+   "year": 2020,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.993,
+   "favorite": "Laura Dern (Marriage Story)",
+   "favoriteP": 0.993,
+   "winner": "Laura Dern (Marriage Story)"
+  },
+  {
+   "year": 2020,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.506,
+   "favorite": "Parasite",
+   "favoriteP": 0.506,
+   "winner": "Parasite"
+  },
+  {
+   "year": 2020,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.409,
+   "favorite": "Little Women",
+   "favoriteP": 0.469,
+   "winner": "Jojo Rabbit"
+  },
+  {
+   "year": 2020,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.933,
+   "favorite": "Toy Story 4",
+   "favoriteP": 0.933,
+   "winner": "Toy Story 4"
+  },
+  {
+   "year": 2020,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.91,
+   "favorite": "Parasite",
+   "favoriteP": 0.91,
+   "winner": "Parasite"
+  },
+  {
+   "year": 2020,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.686,
+   "favorite": "American Factory",
+   "favoriteP": 0.686,
+   "winner": "American Factory"
+  },
+  {
+   "year": 2020,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Learning to Skateboard in a Warzone (If You're a Girl)"
+  },
+  {
+   "year": 2020,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Neighbors' Window"
+  },
+  {
+   "year": 2020,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Hair Love"
+  },
+  {
+   "year": 2020,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.98,
+   "favorite": "Joker",
+   "favoriteP": 0.98,
+   "winner": "Joker"
+  },
+  {
+   "year": 2020,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.836,
+   "favorite": "Rocketman",
+   "favoriteP": 0.836,
+   "winner": "Rocketman"
+  },
+  {
+   "year": 2020,
+   "cat": "sound",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.214,
+   "favorite": null,
+   "favoriteP": 0.214,
+   "winner": "Ford v Ferrari / 1917"
+  },
+  {
+   "year": 2020,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.647,
+   "favorite": "Once Upon a Time in Hollywood",
+   "favoriteP": 0.647,
+   "winner": "Once Upon a Time in Hollywood"
+  },
+  {
+   "year": 2020,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.924,
+   "favorite": "1917",
+   "favoriteP": 0.924,
+   "winner": "1917"
+  },
+  {
+   "year": 2020,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.865,
+   "favorite": "Bombshell",
+   "favoriteP": 0.865,
+   "winner": "Bombshell"
+  },
+  {
+   "year": 2020,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.266,
+   "favorite": "Jojo Rabbit",
+   "favoriteP": 0.415,
+   "winner": "Little Women"
+  },
+  {
+   "year": 2020,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.399,
+   "favorite": "Ford v Ferrari",
+   "favoriteP": 0.399,
+   "winner": "Ford v Ferrari"
+  },
+  {
+   "year": 2020,
+   "cat": "vfx",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.363,
+   "favorite": "Avengers: Endgame",
+   "favoriteP": 0.42,
+   "winner": "1917"
+  },
+  {
+   "year": 2021,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.71,
+   "favorite": "Nomadland",
+   "favoriteP": 0.71,
+   "winner": "Nomadland"
+  },
+  {
+   "year": 2021,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.999,
+   "favorite": "Chloé Zhao (Nomadland)",
+   "favoriteP": 0.999,
+   "winner": "Chloé Zhao (Nomadland)"
+  },
+  {
+   "year": 2021,
+   "cat": "actor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.044,
+   "favorite": "Chadwick Boseman (Ma Rainey's Black Bottom)",
+   "favoriteP": 0.942,
+   "winner": "Anthony Hopkins (The Father)"
+  },
+  {
+   "year": 2021,
+   "cat": "actress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.301,
+   "favorite": "Carey Mulligan (Promising Young Woman)",
+   "favoriteP": 0.369,
+   "winner": "Frances McDormand (Nomadland)"
+  },
+  {
+   "year": 2021,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Daniel Kaluuya (Judas and the Black Messiah)",
+   "favoriteP": 0.994,
+   "winner": "Daniel Kaluuya (Judas and the Black Messiah)"
+  },
+  {
+   "year": 2021,
+   "cat": "supActress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.119,
+   "favorite": "Maria Bakalova (Borat Subsequent Moviefilm)",
+   "favoriteP": 0.496,
+   "winner": "Yuh-jung Youn (Minari)"
+  },
+  {
+   "year": 2021,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.945,
+   "favorite": "Promising Young Woman",
+   "favoriteP": 0.945,
+   "winner": "Promising Young Woman"
+  },
+  {
+   "year": 2021,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.23,
+   "favorite": "Nomadland",
+   "favoriteP": 0.477,
+   "winner": "The Father"
+  },
+  {
+   "year": 2021,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.998,
+   "favorite": "Soul",
+   "favoriteP": 0.998,
+   "winner": "Soul"
+  },
+  {
+   "year": 2021,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.614,
+   "favorite": "Another Round",
+   "favoriteP": 0.614,
+   "winner": "Another Round"
+  },
+  {
+   "year": 2021,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.947,
+   "favorite": "My Octopus Teacher",
+   "favoriteP": 0.947,
+   "winner": "My Octopus Teacher"
+  },
+  {
+   "year": 2021,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Colette"
+  },
+  {
+   "year": 2021,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "Two Distant Strangers"
+  },
+  {
+   "year": 2021,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "If Anything Happens I Love You"
+  },
+  {
+   "year": 2021,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.99,
+   "favorite": "Soul",
+   "favoriteP": 0.99,
+   "winner": "Soul"
+  },
+  {
+   "year": 2021,
+   "cat": "song",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.047,
+   "favorite": "The Life Ahead",
+   "favoriteP": 0.432,
+   "winner": "Judas and the Black Messiah"
+  },
+  {
+   "year": 2021,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.582,
+   "favorite": "Sound of Metal",
+   "favoriteP": 0.582,
+   "winner": "Sound of Metal"
+  },
+  {
+   "year": 2021,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.921,
+   "favorite": "Mank",
+   "favoriteP": 0.921,
+   "winner": "Mank"
+  },
+  {
+   "year": 2021,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.047,
+   "favorite": "Nomadland",
+   "favoriteP": 0.879,
+   "winner": "Mank"
+  },
+  {
+   "year": 2021,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.871,
+   "favorite": "Ma Rainey's Black Bottom",
+   "favoriteP": 0.871,
+   "winner": "Ma Rainey's Black Bottom"
+  },
+  {
+   "year": 2021,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.856,
+   "favorite": "Ma Rainey's Black Bottom",
+   "favoriteP": 0.856,
+   "winner": "Ma Rainey's Black Bottom"
+  },
+  {
+   "year": 2021,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.435,
+   "favorite": "Sound of Metal",
+   "favoriteP": 0.435,
+   "winner": "Sound of Metal"
+  },
+  {
+   "year": 2021,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.746,
+   "favorite": "Tenet",
+   "favoriteP": 0.746,
+   "winner": "Tenet"
+  },
+  {
+   "year": 2022,
+   "cat": "picture",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.227,
+   "favorite": "The Power of the Dog",
+   "favoriteP": 0.37,
+   "winner": "CODA"
+  },
+  {
+   "year": 2022,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.999,
+   "favorite": "Jane Campion (The Power of the Dog)",
+   "favoriteP": 0.999,
+   "winner": "Jane Campion (The Power of the Dog)"
+  },
+  {
+   "year": 2022,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.963,
+   "favorite": "Will Smith (King Richard)",
+   "favoriteP": 0.963,
+   "winner": "Will Smith (King Richard)"
+  },
+  {
+   "year": 2022,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.521,
+   "favorite": "Jessica Chastain (The Eyes of Tammy Faye)",
+   "favoriteP": 0.521,
+   "winner": "Jessica Chastain (The Eyes of Tammy Faye)"
+  },
+  {
+   "year": 2022,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.93,
+   "favorite": "Troy Kotsur (CODA)",
+   "favoriteP": 0.93,
+   "winner": "Troy Kotsur (CODA)"
+  },
+  {
+   "year": 2022,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.991,
+   "favorite": "Ariana DeBose (West Side Story)",
+   "favoriteP": 0.991,
+   "winner": "Ariana DeBose (West Side Story)"
+  },
+  {
+   "year": 2022,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.183,
+   "favorite": "Licorice Pizza",
+   "favoriteP": 0.427,
+   "winner": "Belfast"
+  },
+  {
+   "year": 2022,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.569,
+   "favorite": "CODA",
+   "favoriteP": 0.569,
+   "winner": "CODA"
+  },
+  {
+   "year": 2022,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.992,
+   "favorite": "Encanto",
+   "favoriteP": 0.992,
+   "winner": "Encanto"
+  },
+  {
+   "year": 2022,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.9,
+   "favorite": "Drive My Car",
+   "favoriteP": 0.9,
+   "winner": "Drive My Car"
+  },
+  {
+   "year": 2022,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.987,
+   "favorite": "Summer of Soul (...Or, When the Revolution Could Not Be Televised)",
+   "favoriteP": 0.987,
+   "winner": "Summer of Soul (...Or, When the Revolution Could Not Be Televised)"
+  },
+  {
+   "year": 2022,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Queen of Basketball"
+  },
+  {
+   "year": 2022,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Long Goodbye"
+  },
+  {
+   "year": 2022,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.183,
+   "favorite": "Bestia",
+   "favoriteP": 0.309,
+   "winner": "The Windshield Wiper"
+  },
+  {
+   "year": 2022,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.971,
+   "favorite": "Dune",
+   "favoriteP": 0.971,
+   "winner": "Dune"
+  },
+  {
+   "year": 2022,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.847,
+   "favorite": "No Time to Die",
+   "favoriteP": 0.847,
+   "winner": "No Time to Die"
+  },
+  {
+   "year": 2022,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.768,
+   "favorite": "Dune",
+   "favoriteP": 0.768,
+   "winner": "Dune"
+  },
+  {
+   "year": 2022,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.677,
+   "favorite": "Dune",
+   "favoriteP": 0.677,
+   "winner": "Dune"
+  },
+  {
+   "year": 2022,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.751,
+   "favorite": "Dune",
+   "favoriteP": 0.751,
+   "winner": "Dune"
+  },
+  {
+   "year": 2022,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.766,
+   "favorite": "The Eyes of Tammy Faye",
+   "favoriteP": 0.766,
+   "winner": "The Eyes of Tammy Faye"
+  },
+  {
+   "year": 2022,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.871,
+   "favorite": "Cruella",
+   "favoriteP": 0.871,
+   "winner": "Cruella"
+  },
+  {
+   "year": 2022,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.272,
+   "favorite": "Dune",
+   "favoriteP": 0.272,
+   "winner": "Dune"
+  },
+  {
+   "year": 2022,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.882,
+   "favorite": "Dune",
+   "favoriteP": 0.882,
+   "winner": "Dune"
+  },
+  {
+   "year": 2023,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.952,
+   "favorite": "Everything Everywhere All at Once",
+   "favoriteP": 0.952,
+   "winner": "Everything Everywhere All at Once"
+  },
+  {
+   "year": 2023,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.946,
+   "favorite": "Daniel Kwan (Everything Everywhere All at Once)",
+   "favoriteP": 0.946,
+   "winner": "Daniel Kwan (Everything Everywhere All at Once)"
+  },
+  {
+   "year": 2023,
+   "cat": "actor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.251,
+   "favorite": "Austin Butler (Elvis)",
+   "favoriteP": 0.6,
+   "winner": "Brendan Fraser (The Whale)"
+  },
+  {
+   "year": 2023,
+   "cat": "actress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.094,
+   "favorite": "Cate Blanchett (Tár)",
+   "favoriteP": 0.869,
+   "winner": "Michelle Yeoh (Everything Everywhere All at Once)"
+  },
+  {
+   "year": 2023,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.964,
+   "favorite": "Ke Huy Quan (Everything Everywhere All at Once)",
+   "favoriteP": 0.964,
+   "winner": "Ke Huy Quan (Everything Everywhere All at Once)"
+  },
+  {
+   "year": 2023,
+   "cat": "supActress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.265,
+   "favorite": "Angela Bassett (Black Panther: Wakanda Forever)",
+   "favoriteP": 0.552,
+   "winner": "Jamie Lee Curtis (Everything Everywhere All at Once)"
+  },
+  {
+   "year": 2023,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.405,
+   "favorite": "The Banshees of Inisherin",
+   "favoriteP": 0.485,
+   "winner": "Everything Everywhere All at Once"
+  },
+  {
+   "year": 2023,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.672,
+   "favorite": "Women Talking",
+   "favoriteP": 0.672,
+   "winner": "Women Talking"
+  },
+  {
+   "year": 2023,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.974,
+   "favorite": "Guillermo del Toro's Pinocchio",
+   "favoriteP": 0.974,
+   "winner": "Guillermo del Toro's Pinocchio"
+  },
+  {
+   "year": 2023,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.422,
+   "favorite": "All Quiet on the Western Front",
+   "favoriteP": 0.422,
+   "winner": "All Quiet on the Western Front"
+  },
+  {
+   "year": 2023,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.678,
+   "favorite": "Navalny",
+   "favoriteP": 0.678,
+   "winner": "Navalny"
+  },
+  {
+   "year": 2023,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Elephant Whisperers"
+  },
+  {
+   "year": 2023,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "An Irish Goodbye"
+  },
+  {
+   "year": 2023,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.117,
+   "favorite": "Ice Merchants",
+   "favoriteP": 0.32,
+   "winner": "The Boy, the Mole, the Fox and the Horse"
+  },
+  {
+   "year": 2023,
+   "cat": "score",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.372,
+   "favorite": "Babylon",
+   "favoriteP": 0.405,
+   "winner": "All Quiet on the Western Front"
+  },
+  {
+   "year": 2023,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.843,
+   "favorite": "RRR",
+   "favoriteP": 0.843,
+   "winner": "RRR"
+  },
+  {
+   "year": 2023,
+   "cat": "sound",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.304,
+   "favorite": "All Quiet on the Western Front",
+   "favoriteP": 0.411,
+   "winner": "Top Gun: Maverick"
+  },
+  {
+   "year": 2023,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.033,
+   "favorite": "Babylon",
+   "favoriteP": 0.891,
+   "winner": "All Quiet on the Western Front"
+  },
+  {
+   "year": 2023,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.392,
+   "favorite": "Elvis",
+   "favoriteP": 0.394,
+   "winner": "All Quiet on the Western Front"
+  },
+  {
+   "year": 2023,
+   "cat": "makeup",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.002,
+   "favorite": "Elvis",
+   "favoriteP": 0.973,
+   "winner": "The Whale"
+  },
+  {
+   "year": 2023,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.24,
+   "favorite": "Elvis",
+   "favoriteP": 0.54,
+   "winner": "Black Panther: Wakanda Forever"
+  },
+  {
+   "year": 2023,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.595,
+   "favorite": "Everything Everywhere All at Once",
+   "favoriteP": 0.595,
+   "winner": "Everything Everywhere All at Once"
+  },
+  {
+   "year": 2023,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.869,
+   "favorite": "Avatar: The Way of Water",
+   "favoriteP": 0.869,
+   "winner": "Avatar: The Way of Water"
+  },
+  {
+   "year": 2024,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.921,
+   "favorite": "Oppenheimer",
+   "favoriteP": 0.921,
+   "winner": "Oppenheimer"
+  },
+  {
+   "year": 2024,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.998,
+   "favorite": "Christopher Nolan (Oppenheimer)",
+   "favoriteP": 0.998,
+   "winner": "Christopher Nolan (Oppenheimer)"
+  },
+  {
+   "year": 2024,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.884,
+   "favorite": "Cillian Murphy (Oppenheimer)",
+   "favoriteP": 0.884,
+   "winner": "Cillian Murphy (Oppenheimer)"
+  },
+  {
+   "year": 2024,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.638,
+   "favorite": "Emma Stone (Poor Things)",
+   "favoriteP": 0.638,
+   "winner": "Emma Stone (Poor Things)"
+  },
+  {
+   "year": 2024,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.995,
+   "favorite": "Robert Downey Jr. (Oppenheimer)",
+   "favoriteP": 0.995,
+   "winner": "Robert Downey Jr. (Oppenheimer)"
+  },
+  {
+   "year": 2024,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.997,
+   "favorite": "Da'Vine Joy Randolph (The Holdovers)",
+   "favoriteP": 0.997,
+   "winner": "Da'Vine Joy Randolph (The Holdovers)"
+  },
+  {
+   "year": 2024,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.364,
+   "favorite": "The Holdovers",
+   "favoriteP": 0.395,
+   "winner": "Anatomy of a Fall"
+  },
+  {
+   "year": 2024,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.937,
+   "favorite": "American Fiction",
+   "favoriteP": 0.937,
+   "winner": "American Fiction"
+  },
+  {
+   "year": 2024,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.008,
+   "favorite": "Spider-Man: Across the Spider-Verse",
+   "favoriteP": 0.992,
+   "winner": "The Boy and the Heron"
+  },
+  {
+   "year": 2024,
+   "cat": "international",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.409,
+   "favorite": "The Zone of Interest",
+   "favoriteP": 0.409,
+   "winner": "The Zone of Interest"
+  },
+  {
+   "year": 2024,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.766,
+   "favorite": "20 Days in Mariupol",
+   "favoriteP": 0.766,
+   "winner": "20 Days in Mariupol"
+  },
+  {
+   "year": 2024,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Last Repair Shop"
+  },
+  {
+   "year": 2024,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Wonderful Story of Henry Sugar"
+  },
+  {
+   "year": 2024,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "War Is Over! Inspired by the Music of John and Yoko"
+  },
+  {
+   "year": 2024,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.984,
+   "favorite": "Oppenheimer",
+   "favoriteP": 0.984,
+   "winner": "Oppenheimer"
+  },
+  {
+   "year": 2024,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.463,
+   "favorite": null,
+   "favoriteP": 0.463,
+   "winner": "Barbie"
+  },
+  {
+   "year": 2024,
+   "cat": "sound",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.218,
+   "favorite": "Oppenheimer",
+   "favoriteP": 0.558,
+   "winner": "The Zone of Interest"
+  },
+  {
+   "year": 2024,
+   "cat": "production",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.35,
+   "favorite": "Barbie",
+   "favoriteP": 0.519,
+   "winner": "Poor Things"
+  },
+  {
+   "year": 2024,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.807,
+   "favorite": "Oppenheimer",
+   "favoriteP": 0.807,
+   "winner": "Oppenheimer"
+  },
+  {
+   "year": 2024,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.496,
+   "favorite": "Poor Things",
+   "favoriteP": 0.496,
+   "winner": "Poor Things"
+  },
+  {
+   "year": 2024,
+   "cat": "costume",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.251,
+   "favorite": "Barbie",
+   "favoriteP": 0.627,
+   "winner": "Poor Things"
+  },
+  {
+   "year": 2024,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.663,
+   "favorite": "Oppenheimer",
+   "favoriteP": 0.663,
+   "winner": "Oppenheimer"
+  },
+  {
+   "year": 2024,
+   "cat": "vfx",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.069,
+   "favorite": "The Creator",
+   "favoriteP": 0.354,
+   "winner": "Godzilla Minus One"
+  },
+  {
+   "year": 2025,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.612,
+   "favorite": "Anora",
+   "favoriteP": 0.612,
+   "winner": "Anora"
+  },
+  {
+   "year": 2025,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.557,
+   "favorite": "Sean Baker (Anora)",
+   "favoriteP": 0.557,
+   "winner": "Sean Baker (Anora)"
+  },
+  {
+   "year": 2025,
+   "cat": "actor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.774,
+   "favorite": "Adrien Brody (The Brutalist)",
+   "favoriteP": 0.774,
+   "winner": "Adrien Brody (The Brutalist)"
+  },
+  {
+   "year": 2025,
+   "cat": "actress",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.145,
+   "favorite": "Demi Moore (The Substance)",
+   "favoriteP": 0.739,
+   "winner": "Mikey Madison (Anora)"
+  },
+  {
+   "year": 2025,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.994,
+   "favorite": "Kieran Culkin (A Real Pain)",
+   "favoriteP": 0.994,
+   "winner": "Kieran Culkin (A Real Pain)"
+  },
+  {
+   "year": 2025,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.988,
+   "favorite": "Zoe Saldaña (Emilia Pérez)",
+   "favoriteP": 0.988,
+   "winner": "Zoe Saldaña (Emilia Pérez)"
+  },
+  {
+   "year": 2025,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.287,
+   "favorite": "A Real Pain",
+   "favoriteP": 0.41,
+   "winner": "Anora"
+  },
+  {
+   "year": 2025,
+   "cat": "adaptScreenplay",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.306,
+   "favorite": null,
+   "favoriteP": 0.306,
+   "winner": "Conclave"
+  },
+  {
+   "year": 2025,
+   "cat": "animated",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.031,
+   "favorite": "The Wild Robot",
+   "favoriteP": 0.966,
+   "winner": "Flow"
+  },
+  {
+   "year": 2025,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.023,
+   "favorite": "Emilia Pérez",
+   "favoriteP": 0.874,
+   "winner": "I'm Still Here"
+  },
+  {
+   "year": 2025,
+   "cat": "documentary",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.407,
+   "favorite": "No Other Land",
+   "favoriteP": 0.407,
+   "winner": "No Other Land"
+  },
+  {
+   "year": 2025,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Only Girl in the Orchestra"
+  },
+  {
+   "year": 2025,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "I'm Not a Robot"
+  },
+  {
+   "year": 2025,
+   "cat": "animShort",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.18,
+   "favorite": "Wander to Wonder",
+   "favoriteP": 0.279,
+   "winner": "In the Shadow of the Cypress"
+  },
+  {
+   "year": 2025,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.601,
+   "favorite": "The Brutalist",
+   "favoriteP": 0.601,
+   "winner": "The Brutalist"
+  },
+  {
+   "year": 2025,
+   "cat": "song",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.463,
+   "favorite": null,
+   "favoriteP": 0.463,
+   "winner": "Emilia Pérez"
+  },
+  {
+   "year": 2025,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.589,
+   "favorite": "Dune: Part Two",
+   "favoriteP": 0.589,
+   "winner": "Dune: Part Two"
+  },
+  {
+   "year": 2025,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.75,
+   "favorite": "Wicked",
+   "favoriteP": 0.75,
+   "winner": "Wicked"
+  },
+  {
+   "year": 2025,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.391,
+   "favorite": "The Brutalist",
+   "favoriteP": 0.391,
+   "winner": "The Brutalist"
+  },
+  {
+   "year": 2025,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.869,
+   "favorite": "The Substance",
+   "favoriteP": 0.869,
+   "winner": "The Substance"
+  },
+  {
+   "year": 2025,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.867,
+   "favorite": "Wicked",
+   "favoriteP": 0.867,
+   "winner": "Wicked"
+  },
+  {
+   "year": 2025,
+   "cat": "editing",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.132,
+   "favorite": "Conclave",
+   "favoriteP": 0.477,
+   "winner": "Anora"
+  },
+  {
+   "year": 2025,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.76,
+   "favorite": "Dune: Part Two",
+   "favoriteP": 0.76,
+   "winner": "Dune: Part Two"
+  },
+  {
+   "year": 2026,
+   "cat": "picture",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.88,
+   "favorite": "One Battle After Another",
+   "favoriteP": 0.88,
+   "winner": "One Battle After Another"
+  },
+  {
+   "year": 2026,
+   "cat": "director",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.987,
+   "favorite": "Paul Thomas Anderson (One Battle After Another)",
+   "favoriteP": 0.987,
+   "winner": "Paul Thomas Anderson (One Battle After Another)"
+  },
+  {
+   "year": 2026,
+   "cat": "actor",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.28,
+   "favorite": "Timothée Chalamet (Marty Supreme)",
+   "favoriteP": 0.509,
+   "winner": "Michael B. Jordan (Sinners)"
+  },
+  {
+   "year": 2026,
+   "cat": "actress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.931,
+   "favorite": "Jessie Buckley (Hamnet)",
+   "favoriteP": 0.931,
+   "winner": "Jessie Buckley (Hamnet)"
+  },
+  {
+   "year": 2026,
+   "cat": "supActor",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.626,
+   "favorite": "Sean Penn (One Battle After Another)",
+   "favoriteP": 0.626,
+   "winner": "Sean Penn (One Battle After Another)"
+  },
+  {
+   "year": 2026,
+   "cat": "supActress",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.926,
+   "favorite": "Amy Madigan (Weapons)",
+   "favoriteP": 0.926,
+   "winner": "Amy Madigan (Weapons)"
+  },
+  {
+   "year": 2026,
+   "cat": "origScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.831,
+   "favorite": "Sinners",
+   "favoriteP": 0.831,
+   "winner": "Sinners"
+  },
+  {
+   "year": 2026,
+   "cat": "adaptScreenplay",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.965,
+   "favorite": "One Battle After Another",
+   "favoriteP": 0.965,
+   "winner": "One Battle After Another"
+  },
+  {
+   "year": 2026,
+   "cat": "animated",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.991,
+   "favorite": "KPop Demon Hunters",
+   "favoriteP": 0.991,
+   "winner": "KPop Demon Hunters"
+  },
+  {
+   "year": 2026,
+   "cat": "international",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.093,
+   "favorite": "The Secret Agent",
+   "favoriteP": 0.801,
+   "winner": "Sentimental Value"
+  },
+  {
+   "year": 2026,
+   "cat": "documentary",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.246,
+   "favorite": "The Perfect Neighbor",
+   "favoriteP": 0.675,
+   "winner": "Mr Nobody Against Putin"
+  },
+  {
+   "year": 2026,
+   "cat": "docShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.25,
+   "favorite": null,
+   "favoriteP": 0.25,
+   "winner": "All the Empty Rooms"
+  },
+  {
+   "year": 2026,
+   "cat": "liveShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Singers / Two People Exchanging Saliva"
+  },
+  {
+   "year": 2026,
+   "cat": "animShort",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "The Girl Who Cried Pearls"
+  },
+  {
+   "year": 2026,
+   "cat": "score",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.991,
+   "favorite": "Sinners",
+   "favoriteP": 0.991,
+   "winner": "Sinners"
+  },
+  {
+   "year": 2026,
+   "cat": "song",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.843,
+   "favorite": "KPop Demon Hunters",
+   "favoriteP": 0.843,
+   "winner": "KPop Demon Hunters"
+  },
+  {
+   "year": 2026,
+   "cat": "sound",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.553,
+   "favorite": "F1",
+   "favoriteP": 0.553,
+   "winner": "F1"
+  },
+  {
+   "year": 2026,
+   "cat": "casting",
+   "signal": false,
+   "hit": false,
+   "winnerP": 0.2,
+   "favorite": null,
+   "favoriteP": 0.2,
+   "winner": "One Battle After Another"
+  },
+  {
+   "year": 2026,
+   "cat": "production",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.872,
+   "favorite": "Frankenstein",
+   "favoriteP": 0.872,
+   "winner": "Frankenstein"
+  },
+  {
+   "year": 2026,
+   "cat": "cinematography",
+   "signal": true,
+   "hit": false,
+   "winnerP": 0.219,
+   "favorite": "One Battle After Another",
+   "favoriteP": 0.566,
+   "winner": "Sinners"
+  },
+  {
+   "year": 2026,
+   "cat": "makeup",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.86,
+   "favorite": "Frankenstein",
+   "favoriteP": 0.86,
+   "winner": "Frankenstein"
+  },
+  {
+   "year": 2026,
+   "cat": "costume",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.865,
+   "favorite": "Frankenstein",
+   "favoriteP": 0.865,
+   "winner": "Frankenstein"
+  },
+  {
+   "year": 2026,
+   "cat": "editing",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.455,
+   "favorite": "One Battle After Another",
+   "favoriteP": 0.455,
+   "winner": "One Battle After Another"
+  },
+  {
+   "year": 2026,
+   "cat": "vfx",
+   "signal": true,
+   "hit": true,
+   "winnerP": 0.875,
+   "favorite": "Avatar: Fire and Ash",
+   "favoriteP": 0.875,
+   "winner": "Avatar: Fire and Ash"
+  }
+ ],
+ "hits": [
+  {
+   "year": 2005,
+   "by": {
+    "nyfcc": {
+     "actor": 0,
+     "actress": 0,
+     "animated": 1,
+     "cinematography": 0,
+     "director": 1,
+     "picture": 0,
+     "international": 0,
+     "origScreenplay": 1,
+     "supActor": 0,
+     "supActress": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "production": 1,
+     "score": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "song": 0,
+     "sound": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 0,
+     "song": 0,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "adg": {
+     "production": 0
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "picture": 0,
+     "actress": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "documentary": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "makeup": 0,
+     "score": 0,
+     "production": 1,
+     "sound": 1,
+     "vfx": 0,
+     "animShort": 0,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2006,
+   "by": {
+    "nyfcc": {
+     "actor": 0,
+     "actress": 1,
+     "animated": 1,
+     "cinematography": 0,
+     "director": 1,
+     "picture": 0,
+     "international": 0,
+     "origScreenplay": 0,
+     "supActor": 0,
+     "supActress": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "production": 0,
+     "score": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "song": 0,
+     "sound": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 0,
+     "song": 0
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 0,
+     "animated": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "picture": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 0,
+     "makeup": 1,
+     "score": 0,
+     "production": 0,
+     "sound": 0,
+     "vfx": 1,
+     "animShort": 0,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2007,
+   "by": {
+    "nyfcc": {
+     "actor": 1,
+     "actress": 1,
+     "animated": 1,
+     "cinematography": 0,
+     "director": 1,
+     "picture": 0,
+     "international": 0,
+     "origScreenplay": 0,
+     "supActor": 0,
+     "supActress": 1
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "production": 1,
+     "score": 0,
+     "international": 1,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "song": 0,
+     "sound": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "song": 0,
+     "score": 0,
+     "international": 0,
+     "animated": 0
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 0,
+     "animated": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "picture": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "documentary": 0,
+     "cinematography": 1,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "makeup": 1,
+     "score": 1,
+     "production": 0,
+     "sound": 0,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2008,
+   "by": {
+    "nbr": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "actor": 1,
+     "actress": 0,
+     "animated": 0,
+     "cinematography": 1,
+     "director": 1,
+     "picture": 1,
+     "international": 0,
+     "origScreenplay": 1,
+     "supActor": 1,
+     "supActress": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 1,
+     "production": 1,
+     "score": 0,
+     "documentary": 0,
+     "international": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "song": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "director": 0,
+     "origScreenplay": 0,
+     "song": 0,
+     "score": 1,
+     "international": 0,
+     "animated": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "documentary": 0
+    },
+    "adg": {
+     "production": 0
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "cas": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "picture": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0,
+     "director": 0,
+     "score": 0,
+     "production": 0,
+     "origScreenplay": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 1,
+     "makeup": 1,
+     "score": 0,
+     "production": 0,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2009,
+   "by": {
+    "nbr": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "international": 0,
+     "documentary": 1
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "cinematography": 1,
+     "production": 0,
+     "score": 1,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "international": 0,
+     "animated": 0,
+     "documentary": 0,
+     "song": 0
+    },
+    "globes": {
+     "picture": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "director": 1,
+     "origScreenplay": 0,
+     "song": 0,
+     "score": 1,
+     "international": 0,
+     "animated": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "adaptScreenplay": 1,
+     "origScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "documentary": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "animated": 1,
+     "picture": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "documentary": 1,
+     "cinematography": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2010,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 0,
+     "documentary": 1
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "production": 1,
+     "score": 0,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "makeup": 0,
+     "score": 0,
+     "song": 0,
+     "sound": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 1,
+     "animated": 1,
+     "international": 0
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "adaptScreenplay": 0,
+     "origScreenplay": 1,
+     "documentary": 1
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "ace": {
+     "editing": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "animated": 1,
+     "picture": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0,
+     "director": 0,
+     "score": 0,
+     "production": 0,
+     "origScreenplay": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 0,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2011,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 0,
+     "origScreenplay": 0,
+     "supActor": 0,
+     "supActress": 1
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "production": 0,
+     "score": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "makeup": 0,
+     "score": 0,
+     "song": 0,
+     "sound": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 0,
+     "animated": 1,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "adg": {
+     "production": 0
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "cas": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "animated": 0,
+     "picture": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 0,
+     "score": 0,
+     "production": 0,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2012,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "international": 1,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "production": 1,
+     "score": 0,
+     "international": 1,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "makeup": 0,
+     "score": 0,
+     "song": 0,
+     "sound": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 1,
+     "score": 1,
+     "song": 0,
+     "animated": 0,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 0,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 0,
+     "animated": 1,
+     "documentary": 0
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "ves": {
+     "picture": 0,
+     "animated": 1,
+     "cinematography": 1
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 0,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 0,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 0,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2013,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 1,
+     "documentary": 1
+    },
+    "nyfcc": {
+     "picture": 1,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 0,
+     "international": 1
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 1,
+     "production": 0,
+     "score": 0,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "score": 0,
+     "song": 0,
+     "makeup": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 1,
+     "score": 1,
+     "song": 1,
+     "animated": 1,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 0,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 0
+    },
+    "wga": {
+     "origScreenplay": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "adg": {
+     "production": 0
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "animated": 1,
+     "picture": 0,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 1
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 0,
+     "production": 0,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1
+    }
+   }
+  },
+  {
+   "year": 2014,
+   "by": {
+    "nbr": {},
+    "nyfcc": {},
+    "lafca": {},
+    "cca": {},
+    "globes": {},
+    "sag": {},
+    "pga": {},
+    "dga": {},
+    "wga": {},
+    "scripter": {},
+    "adg": {},
+    "cdg": {},
+    "cas": {},
+    "asc": {},
+    "ves": {},
+    "annie": {},
+    "spirit": {},
+    "bafta": {}
+   }
+  },
+  {
+   "year": 2015,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 1
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "production": 1,
+     "score": 0,
+     "international": 1,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "score": 0,
+     "song": 0,
+     "makeup": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 0,
+     "song": 1,
+     "animated": 0,
+     "international": 0
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 0,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "cas": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "animated": 1,
+     "picture": 0,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 1
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "documentary": 1,
+     "cinematography": 0,
+     "editing": 1,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 0,
+     "documentary": 1,
+     "international": 1
+    }
+   }
+  },
+  {
+   "year": 2016,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 1,
+     "documentary": 1
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "production": 1,
+     "score": 0,
+     "international": 1,
+     "documentary": 1
+    },
+    "cca": {
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "song": 0,
+     "makeup": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 1,
+     "animated": 1,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 0,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "cas": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "documentary": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 0,
+     "vfx": 0,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 1,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2017,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 1,
+     "documentary": 1
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "animated": 1,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "production": 0,
+     "score": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "production": 0,
+     "cinematography": 0,
+     "costume": 0,
+     "editing": 0,
+     "score": 0,
+     "song": 0,
+     "makeup": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 1,
+     "animated": 1,
+     "international": 0
+    },
+    "sag": {
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 0,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "cas": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "vfx": 1,
+     "animated": 0,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 1
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 1,
+     "costume": 0,
+     "editing": 1,
+     "makeup": 0,
+     "score": 1,
+     "production": 0,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2018,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "editing": 1,
+     "production": 0,
+     "score": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "costume": 0,
+     "production": 0,
+     "score": 0,
+     "song": 0,
+     "makeup": 0,
+     "vfx": 0
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 0,
+     "animated": 1,
+     "international": 0
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "animated": 1,
+     "documentary": 0
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "cas": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 1
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 0,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 0,
+     "international": 0
+    }
+   }
+  },
+  {
+   "year": 2019,
+   "by": {
+    "nbr": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 1,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "cinematography": 1,
+     "editing": 0,
+     "production": 1,
+     "score": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "cinematography": 1,
+     "production": 1,
+     "editing": 0,
+     "costume": 1,
+     "makeup": 1,
+     "vfx": 0,
+     "animated": 1,
+     "score": 0,
+     "song": 1,
+     "international": 1
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 1,
+     "score": 0,
+     "song": 1,
+     "animated": 1,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "ace": {
+     "editing": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 0,
+     "editing": 0,
+     "makeup": 0,
+     "score": 0,
+     "production": 0,
+     "sound": 1,
+     "vfx": 0,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1
+    }
+   }
+  },
+  {
+   "year": 2020,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 1,
+     "documentary": 0,
+     "cinematography": 1
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 1
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "production": 1,
+     "score": 0,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "cinematography": 1,
+     "editing": 0,
+     "costume": 0,
+     "production": 1,
+     "score": 1,
+     "song": 1,
+     "makeup": 1,
+     "vfx": 0,
+     "international": 1
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 1,
+     "animated": 0,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 0,
+     "animated": 1,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 0
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "ace": {
+     "editing": 0,
+     "animated": 1,
+     "documentary": 0
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "muahs": {
+     "makeup": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 0,
+     "sound": 1,
+     "vfx": 1,
+     "animated": 0,
+     "documentary": 0,
+     "international": 1,
+     "animShort": 0
+    }
+   }
+  },
+  {
+   "year": 2021,
+   "by": {
+    "tiff": {
+     "picture": 1
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 0,
+     "documentary": 0,
+     "cinematography": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "production": 1,
+     "score": 1,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "editing": 1,
+     "costume": 1,
+     "production": 1,
+     "score": 1,
+     "song": 0,
+     "makeup": 1,
+     "vfx": 1,
+     "international": 0
+    },
+    "globes": {
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 0,
+     "animated": 1,
+     "international": 0
+    },
+    "sag": {
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "ace": {
+     "editing": 0,
+     "animated": 1,
+     "documentary": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "mpse": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "documentary": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "animShort": 0,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1
+    }
+   }
+  },
+  {
+   "year": 2022,
+   "by": {
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 0,
+     "documentary": 1,
+     "cinematography": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "score": 0,
+     "production": 0,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "costume": 1,
+     "production": 1,
+     "score": 1,
+     "song": 1,
+     "makeup": 1,
+     "vfx": 1,
+     "animated": 0,
+     "international": 1
+    },
+    "globes": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 1,
+     "score": 1,
+     "song": 1,
+     "animated": 1,
+     "international": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 0
+    },
+    "ace": {
+     "editing": 0,
+     "animated": 1,
+     "documentary": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 0
+    },
+    "cas": {
+     "sound": 1
+    },
+    "mpse": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 1,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "documentary": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "international": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 1,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 0,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0
+    }
+   }
+  },
+  {
+   "year": 2023,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "documentary": 0,
+     "cinematography": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "animated": 0,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "score": 0,
+     "production": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 0,
+     "editing": 1,
+     "costume": 1,
+     "production": 0,
+     "score": 0,
+     "song": 1,
+     "makeup": 0,
+     "vfx": 1,
+     "animated": 1,
+     "international": 0
+    },
+    "globes": {
+     "international": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 0,
+     "song": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 1,
+     "documentary": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "documentary": 0,
+     "animated": 1
+    },
+    "adg": {
+     "production": 0
+    },
+    "cdg": {
+     "costume": 0
+    },
+    "muahs": {
+     "makeup": 0
+    },
+    "cas": {
+     "sound": 1
+    },
+    "mpse": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "vfx": 1,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 1,
+     "origScreenplay": 1,
+     "documentary": 0,
+     "international": 0,
+     "cinematography": 0,
+     "editing": 1
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1,
+     "cinematography": 1,
+     "costume": 0,
+     "editing": 1,
+     "makeup": 0,
+     "score": 1,
+     "production": 0,
+     "sound": 0,
+     "vfx": 1,
+     "animShort": 1
+    }
+   }
+  },
+  {
+   "year": 2024,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "documentary": 0,
+     "cinematography": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 1,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 0,
+     "director": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "score": 0,
+     "production": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "cinematography": 1,
+     "editing": 1,
+     "costume": 0,
+     "production": 0,
+     "score": 1,
+     "song": 1,
+     "makeup": 0,
+     "vfx": 0,
+     "animated": 0,
+     "international": 0
+    },
+    "globes": {
+     "picture": 1,
+     "animated": 1,
+     "international": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 1,
+     "origScreenplay": 1,
+     "score": 1,
+     "song": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 1
+    },
+    "pga": {
+     "picture": 1,
+     "animated": 0,
+     "documentary": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "documentary": 0,
+     "animated": 0
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 0
+    },
+    "cas": {
+     "sound": 0
+    },
+    "mpse": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 1
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 0,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 0,
+     "animShort": 0
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "international": 0,
+     "cinematography": 0,
+     "editing": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "animated": 1,
+     "documentary": 1,
+     "international": 1,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 0,
+     "animShort": 0
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 0,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 0,
+     "adaptScreenplay": 0,
+     "animated": 1,
+     "international": 0,
+     "documentary": 0,
+     "cinematography": 0
+    },
+    "nyfcc": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "animated": 1,
+     "cinematography": 0,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "score": 0,
+     "production": 0,
+     "international": 0,
+     "documentary": 1
+    },
+    "cca": {
+     "picture": 1,
+     "director": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "costume": 1,
+     "production": 1,
+     "score": 0,
+     "song": 1,
+     "makeup": 1,
+     "vfx": 1,
+     "animated": 0,
+     "international": 0
+    },
+    "globes": {
+     "picture": 0,
+     "animated": 1,
+     "international": 0,
+     "actor": 1,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "director": 0,
+     "origScreenplay": 0,
+     "score": 0,
+     "song": 1
+    },
+    "sag": {
+     "actor": 0,
+     "actress": 0,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "documentary": 0,
+     "animated": 0
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 0,
+     "documentary": 0,
+     "animated": 0
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 1
+    },
+    "cas": {
+     "sound": 0
+    },
+    "mpse": {
+     "sound": 1
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "vfx": 0,
+     "animated": 0,
+     "cinematography": 0
+    },
+    "annie": {
+     "animated": 1
+    },
+    "spirit": {
+     "picture": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "documentary": 1,
+     "international": 0,
+     "cinematography": 0,
+     "editing": 0
+    },
+    "bafta": {
+     "picture": 0,
+     "director": 0,
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "adaptScreenplay": 1,
+     "animated": 0,
+     "documentary": 0,
+     "international": 0,
+     "cinematography": 1,
+     "costume": 1,
+     "editing": 0,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "by": {
+    "tiff": {
+     "picture": 0
+    },
+    "nbr": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 0,
+     "animated": 0,
+     "international": 0,
+     "documentary": 0,
+     "cinematography": 1
+    },
+    "nyfcc": {
+     "picture": 1,
+     "director": 0,
+     "actor": 0,
+     "actress": 0,
+     "supActor": 0,
+     "supActress": 1,
+     "origScreenplay": 0,
+     "animated": 1,
+     "cinematography": 1,
+     "international": 0
+    },
+    "lafca": {
+     "picture": 1,
+     "director": 1,
+     "origScreenplay": 0,
+     "cinematography": 0,
+     "editing": 0,
+     "score": 0,
+     "production": 0,
+     "international": 0,
+     "documentary": 0
+    },
+    "cca": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 1,
+     "casting": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "cinematography": 0,
+     "editing": 0,
+     "costume": 1,
+     "production": 1,
+     "score": 1,
+     "song": 1,
+     "makeup": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animated": 1,
+     "international": 0
+    },
+    "globes": {
+     "picture": 1,
+     "animated": 1,
+     "international": 0,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 0,
+     "supActress": 0,
+     "director": 1,
+     "origScreenplay": 0,
+     "score": 1,
+     "song": 1
+    },
+    "sag": {
+     "actor": 1,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 1,
+     "picture": 0
+    },
+    "pga": {
+     "picture": 1,
+     "documentary": 0,
+     "animated": 1
+    },
+    "dga": {
+     "director": 1
+    },
+    "wga": {
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "documentary": 0
+    },
+    "scripter": {
+     "adaptScreenplay": 1
+    },
+    "ace": {
+     "editing": 1,
+     "documentary": 0,
+     "animated": 1
+    },
+    "adg": {
+     "production": 1
+    },
+    "cdg": {
+     "costume": 1
+    },
+    "muahs": {
+     "makeup": 1
+    },
+    "cas": {
+     "sound": 1
+    },
+    "mpse": {
+     "sound": 0
+    },
+    "asc": {
+     "cinematography": 0
+    },
+    "ves": {
+     "vfx": 1,
+     "animated": 1,
+     "cinematography": 0
+    },
+    "annie": {
+     "picture": 0,
+     "animated": 1
+    },
+    "spirit": {
+     "picture": 0,
+     "director": 0,
+     "origScreenplay": 0,
+     "documentary": 0,
+     "international": 0,
+     "cinematography": 0,
+     "editing": 0
+    },
+    "bafta": {
+     "picture": 1,
+     "director": 1,
+     "actor": 0,
+     "actress": 1,
+     "supActor": 1,
+     "supActress": 0,
+     "origScreenplay": 1,
+     "adaptScreenplay": 1,
+     "animated": 0,
+     "documentary": 1,
+     "international": 1,
+     "casting": 0,
+     "cinematography": 0,
+     "costume": 1,
+     "editing": 1,
+     "makeup": 1,
+     "score": 1,
+     "production": 1,
+     "sound": 1,
+     "vfx": 1,
+     "animShort": 0
+    }
+   }
+  }
+ ]
+}

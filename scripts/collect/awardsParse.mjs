@@ -11,7 +11,7 @@ export const clean = s => unlink(
     .replace(/\{\{(?:abbr|nowrap|lang\|[a-z-]+|nobold)\|([^|}]+)[^}]*\}\}/gi, '$1')
     .replace(/\{\{(?:flagicon|flag)[^}]*\}\}/gi, '')
     .replace(/\{\{[^{}]*\}\}/g, ''),
-).replace(/<[^>]+>/g, '').replace(/'''?/g, '').replace(/[‡†§*]/g, '').replace(/\s+/g, ' ').trim();
+).replace(/<[^>]+>/g, '').replace(/&nbsp;|&#160;/g, ' ').replace(/&amp;/g, '&').replace(/&ndash;/g, '–').replace(/'''?/g, '').replace(/[‡†§*]/g, '').replace(/\s+/g, ' ').trim();
 
 /** "[[Person]] – ''[[Film]]'' as Role" or "''[[Film]]'' – Producers" -> { film, people, role } */
 export function entry(line) {
@@ -101,6 +101,16 @@ export const OSCAR_CATS = [
 /** Which Oscar category a precursor's category speaks to (null = not tracked). */
 export function oscarCat(name, award) {
   const n = name.toLowerCase();
+  // Craft guilds name their categories after the kind of film ("Period Film"): the guild decides the Oscar category
+  const skip = /television|series|episode|commercial|short|student|documentar|music video|game|live performance|special/;
+  if (award === 'adg') return skip.test(n) || /animat/.test(n) ? null : 'production';
+  if (award === 'cdg') return skip.test(n) ? null : 'costume';
+  if (award === 'asc') return skip.test(n) || /spotlight|documentar/.test(n) ? null : 'cinematography';
+  if (award === 'cas') return skip.test(n) || /animat/.test(n) ? null : 'sound';
+  if (award === 'mpse') return skip.test(n) || /animat|music|foreign|international|non-english/.test(n) ? null : 'sound';
+  if (award === 'muahs') return skip.test(n) || /special make-?up/.test(n) && false ? null : /make-?up|hair/.test(n) ? 'makeup' : null;
+  // The DGA's categories are named after the kind of film ("Feature Film"): all of them are about directing
+  if (award === 'dga') return /first[- ]time|documentar|television|series|commercial|children/.test(n) ? null : /feature|motion picture|theatrical/.test(n) ? 'director' : null;
   if (/short/.test(n)) return /documentar/.test(n) ? 'docShort' : /animat/.test(n) ? 'animShort' : /live/.test(n) ? 'liveShort' : null;
   if (/student|first[- ]time|debut|breakthrough|lifetime|honorary|tribute|career|achievement award|humanitarian|vanguard|visionary|icon|spotlight|rising|newcomer|young|youth/.test(n) && !/outstanding achievement in|achievement in (?:sound|cinemato|direct)/.test(n)) return null;
   if (/animated|animation/.test(n)) return /feature|film|picture/.test(n) && !/(?:effects|character|storyboard|voice|music|editorial|writing|production design|direction)/.test(n) ? 'animated' : null;
@@ -131,14 +141,18 @@ export function oscarCat(name, award) {
 export function rowTables(w) {
   const out = [];
   for (const table of w.split(/\n\{\|/).slice(1).map(t => t.split(/\n\|\}/)[0])) {
-    const rows = table.split(/\n\|-[^\n]*/).map(r => r.split(/\n(?=[|!])/).map(c => c.replace(/^[|!]\s*/, '')).filter(c => c && !c.startsWith('class=') && !c.startsWith('+')));
+    // Cells one per line ("| a\n| b") or on one line ("| a || b")
+    const rows = table.split(/\n\|-[^\n]*/).map(r => r.split(/\n(?=[|!])/).flatMap(c => c.replace(/^[|!]\s*/, '').split(/\s*(?:\|\||!!)\s*/)).map(c => c.replace(/^\s*(?:style|scope|align|rowspan|colspan)="?[^|]*\|/, '').trim()).filter(c => c && !c.startsWith('class=') && !c.startsWith('+')));
     const head = rows.find(r => r.length >= 2 && /award|category|prize/i.test(r[0]) && /film|winner|recipient/i.test(r[1]));
     if (!head) continue;
     for (const r of rows) {
       if (r === head || r.length < 2 || isTv(r[0])) continue;
       const category = clean(r[0]);
-      const e = entry(`* ${r[1]}`);
-      const people = r[2] ? clean(r[2]) : e.people;
+      // The film is the italic cell; the people the first plain one
+      const filmCell = r.slice(1).find(c => /''/.test(c.replace(/'{3}/g, ''))) ?? r[1];
+      const e = entry(`* ${filmCell}`);
+      const plainCell = r.slice(1).find(c => c !== filmCell && !/^\d+$/.test(clean(c)));
+      const people = plainCell ? clean(plainCell) : e.people;
       if (category && (e.film || people)) out.push({ category, nominees: [{ ...e, people, winner: true }] });
     }
   }
@@ -173,4 +187,30 @@ export function scripterRows(w, year) {
     out.push({ film: e.film, people: clean(cells[1]), role: null, song: null, winner: /'''/.test(cells[0]) || /FAEB86/.test(r) });
   }
   return out.length ? [{ category: 'Film Adaptation', nominees: out }] : [];
+}
+
+/**
+ * Older pages: a bold label ('''Best Film:''', ;Best Film, ==== Best Film ====) followed by
+ * bullets. The bold first bullet (or each one, on winners-only critics lists) is the winner.
+ */
+export function labelBlocks(w) {
+  const out = [];
+  let cur = null;
+  for (const raw of w.split('\n')) {
+    const line = raw.trim();
+    const label = line.match(/^\*?\s*'{3}\s*([^'*][^']*?)\s*:?\s*'{3}\s*:?\s*$/) ?? line.match(/^;\s*(.+?)\s*:?$/) ?? line.match(/^={3,4}\s*(.+?)\s*={3,4}$/);
+    if (label) { cur = { category: clean(label[1]).replace(/:$/, ''), lines: [] }; out.push(cur); continue; }
+    if (!cur) continue;
+    if (/^\*/.test(line)) cur.lines.push(line);
+    else if (line && !/^\[\[File:|^<!--|^\{\{/.test(line)) cur = null;
+  }
+  return out.filter(b => b.lines.length && !isTv(b.category)).map(b => {
+    const nominees = b.lines.map(entry);
+    // Winners-only lists (critics): the first-level entries, or every entry when they are all at the same level
+    if (!nominees.some(n => n.winner)) {
+      const top = b.lines.some(l => /^\*(?!\*)/.test(l));
+      b.lines.forEach((l, i) => { if (!top || /^\*(?!\*)/.test(l)) nominees[i].winner = true; });
+    }
+    return { category: b.category, nominees: nominees.filter(e => e.film || e.people) };
+  });
 }

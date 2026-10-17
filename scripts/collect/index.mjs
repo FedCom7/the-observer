@@ -15,6 +15,7 @@ import { collectApple } from './apple.mjs';
 import { collectAc } from './ac.mjs';
 import { collectCycling } from './cycling.mjs';
 import { collectAwards } from './awards.mjs';
+import { collectAwardsHistory } from './awardsHistory.mjs';
 import { collectTeams } from './teams.mjs';
 import { collectTennis } from './tennis.mjs';
 import { collectWec } from './wec.mjs';
@@ -37,6 +38,7 @@ const JOBS = {
   ac: collectAc,
   cycling: collectCycling,
   awards: collectAwards,
+  'awards-history': collectAwardsHistory,
   teams: collectTeams,
   tennis: collectTennis,
 };

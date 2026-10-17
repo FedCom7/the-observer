@@ -4,6 +4,7 @@ import { Score } from '../components/common';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, fmt, hhmm } from '../core/time';
+import { AwardsTabs, ForecastScreen, RaceScreen, StudyScreen, TrackerScreen, useHistory, type AwardsTab } from './AwardsScreens';
 import { KIND_LABEL, PERSON_CATS, filmOf, personOf, sameContender, tmdbImg, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem, type TmdbFilm } from '../sources/awards';
 
 const GROUPS: { id: Award['group']; label: string; color: string }[] = [
@@ -27,6 +28,8 @@ const FESTIVAL_TOP = /^(?!.*(?:runner|international people|documentar|midnight|p
 export function AwardsPage() {
   const { awards: d, news, now } = useData();
   const [cat, setCat] = useState('picture');
+  const [tab, setTab] = useState<AwardsTab>('overview');
+  const hist = useHistory(tab !== 'overview');
   if (!d) return <Hero id="awards" dek="Loading the awards season…" />;
   const all = [...d.awards.flatMap(a => a.dates), ...d.oscarSteps].sort((a, b) => a.date.localeCompare(b.date));
   const next = all.filter(x => Date.parse(x.date) > now && x.award !== 'oscars' || (x.award === 'oscars' && Date.parse(x.date) > now && ['nominations', 'ceremony', 'shortlist', 'governors'].includes(x.kind))).slice(0, 1)[0];
@@ -42,7 +45,8 @@ export function AwardsPage() {
         {ceremony ? `the ${d.ceremonyYear - 1928}th Oscars ${nightOf(Date.parse(ceremony.date))}.` : ''}
         {bp ? ` Gold Derby's experts currently rank ${bp.name} first for Best Picture.` : ''}
       </>} />
-
+      <AwardsTabs tab={tab} set={setTab} />
+      {tab === 'tracker' ? <TrackerScreen d={d} h={hist} now={now} /> : tab === 'forecast' ? <ForecastScreen d={d} h={hist} now={now} /> : tab === 'race' ? <RaceScreen d={d} h={hist} /> : tab === 'study' ? <StudyScreen d={d} h={hist} /> : <>
       <section className="s-top">
         <div className="ocard s-next">
           <div className="lab">Next on the calendar</div>
@@ -150,6 +154,7 @@ export function AwardsPage() {
         </div>
         <div className="osrc">Nominees and winners from each edition's Wikipedia page, re-read as soon as the trade press reports an announcement · dates from the official sites, Gold Derby and Wikipedia · updated {dayShort(Date.parse(d.updated))} {hhmm(Date.parse(d.updated))}</div>
       </section>
+      </>}
     </>
   );
 }

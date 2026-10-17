@@ -27,7 +27,8 @@ export async function films(key, wanted, prev = {}, budget = 150) {
   let used = 0;
   for (const { title, years } of wanted) {
     const k = tkey(title);
-    if (!k || (out[k] && Date.now() - Date.parse(out[k].at) < FRESH) || used >= budget) continue;
+    // Records from before the alternative titles were kept are read again
+    if (!k || (out[k] && Date.now() - Date.parse(out[k].at) < FRESH && (out[k].aka || out[k].missing)) || used >= budget) continue;
     used++;
     try {
       let hit = null;
@@ -38,13 +39,15 @@ export async function films(key, wanted, prev = {}, budget = 150) {
         if (hit) break;
       }
       if (!hit) { out[k] = { at: new Date().toISOString(), missing: true }; continue; }
-      const d = await api(key, `/movie/${hit.id}`, { append_to_response: 'credits' });
+      const d = await api(key, `/movie/${hit.id}`, { append_to_response: 'credits,alternative_titles' });
       out[k] = {
         at: new Date().toISOString(), id: d.id, title: d.title, original: d.original_title !== d.title ? d.original_title : null,
         release: d.release_date || null, runtime: d.runtime || null, genres: (d.genres ?? []).map(g => g.name), overview: d.overview || null,
         poster: d.poster_path ?? null, backdrop: d.backdrop_path ?? null, countries: (d.production_countries ?? []).map(c => c.iso_3166_1),
         director: (d.credits?.crew ?? []).filter(c => c.job === 'Director').map(c => c.name).join(', ') || null,
         cast: (d.credits?.cast ?? []).slice(0, 6).map(c => ({ name: c.name, role: c.character, photo: c.profile_path ?? null })),
+        // Other names the film goes by ("The Black Ball" for "La bola negra"), to match it across sources
+        aka: [...new Set([title, ...(d.alternative_titles?.titles ?? []).filter(t => ['US', 'GB', 'CA', 'AU', 'IE'].includes(t.iso_3166_1)).map(t => t.title)])].filter(t => t !== d.title).slice(0, 8),
       };
     } catch (err) { if (!out[k]) out[k] = { at: new Date().toISOString(), missing: true, error: err.message.slice(0, 60) }; }
   }

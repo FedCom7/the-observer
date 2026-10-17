@@ -15,6 +15,7 @@ export interface Award {
   official?: { fetched: string; url: string } | null;
   news?: RadarItem[];
 }
+export interface MarketRow { name: string; p: number; vol?: number }
 export interface OddsRow { name: string; film: string | null; pct: number; was: number; fraction: string; winner: boolean }
 export interface AwardsData {
   season: number; ceremonyYear: number; updated: string; status: Record<string, string>;
@@ -23,10 +24,16 @@ export interface AwardsData {
   awards: Award[];
   radar?: RadarItem[];
   tmdb?: { films: Record<string, TmdbFilm>; people: Record<string, TmdbPerson> };
+  markets?: {
+    updated: string;
+    polymarket: Record<string, { winner?: MarketRow[]; nom?: MarketRow[] }>;
+    kalshi: Record<string, { winner?: MarketRow[]; nom?: MarketRow[] }>;
+    history: Record<string, Record<string, { d: string; v: Record<string, number> }[]>>;
+  } | null;
   odds: { league: string; stage: 'nominations' | 'winners'; url: string; updated: string; categories: Record<string, { experts?: OddsRow[]; users?: OddsRow[] }>; history: Record<string, { experts?: { d: string; v: Record<string, number> }[]; users?: { d: string; v: Record<string, number> }[] }> } | null;
 }
 
-export interface TmdbFilm { id?: number; title?: string; original?: string | null; release?: string | null; runtime?: number | null; genres?: string[]; overview?: string | null; poster?: string | null; backdrop?: string | null; countries?: string[]; director?: string | null; cast?: { name: string; role: string; photo: string | null }[]; missing?: boolean }
+export interface TmdbFilm { id?: number; title?: string; original?: string | null; aka?: string[]; release?: string | null; runtime?: number | null; genres?: string[]; overview?: string | null; poster?: string | null; backdrop?: string | null; countries?: string[]; director?: string | null; cast?: { name: string; role: string; photo: string | null }[]; missing?: boolean }
 export interface TmdbPerson { id?: number; name?: string; photo?: string | null; dept?: string | null; missing?: boolean }
 
 /** TMDB image URL (w92, w185, w342, w780…). */
@@ -69,5 +76,31 @@ export function sameContender(cat: string, n: Nominee, c: { name: string; film: 
 }
 
 /** TMDB record of a film or a person by name, if the collector found one. */
-export const filmOf = (d: AwardsData, title: string | null | undefined) => { const f = d.tmdb?.films[key(title)]; return f && !f.missing ? f : null; };
+const aliasCache = new WeakMap<object, Map<string, string>>();
+/** Every name a film goes by (TMDB title, original title, English titles) -> one canonical key. */
+function aliases(d: AwardsData) {
+  const films = d.tmdb?.films;
+  if (!films) return null;
+  let m = aliasCache.get(films);
+  if (!m) {
+    m = new Map();
+    for (const [k, f] of Object.entries(films)) {
+      if (f.missing) continue;
+      const canon = key(f.title) || k;
+      for (const name of [k, f.title, f.original, ...(f.aka ?? [])]) if (name && !m.has(key(name))) m.set(key(name), canon);
+    }
+    aliasCache.set(films, m);
+  }
+  return m;
+}
+/** Canonical key of a film title, so that "The Black Ball" and "La bola negra" are the same film. */
+export const filmKey = (d: AwardsData, title: string | null | undefined) => { const k = key(title); return aliases(d)?.get(k) ?? k; };
+
+export const filmOf = (d: AwardsData, title: string | null | undefined) => {
+  const films = d.tmdb?.films;
+  if (!films || !title) return null;
+  const k = filmKey(d, title);
+  const f = films[k] ?? Object.values(films).find(x => !x.missing && key(x.title) === k);
+  return f && !f.missing ? f : null;
+};
 export const personOf = (d: AwardsData, name: string | null | undefined) => { const p = d.tmdb?.people[key(name?.split(/,| and /)[0])]; return p && !p.missing ? p : null; };
