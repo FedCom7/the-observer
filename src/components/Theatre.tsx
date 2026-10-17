@@ -43,10 +43,11 @@ function useIss(): Iss | null {
 
 type View = 'atl' | 'world';
 
-export function Theatre({ open }: { open: (p: PassionId) => void }) {
+/** The map; `only` restricts it to one passion (the passion view of the terminal). */
+export function Theatre({ open, only, initial = 'atl' }: { open: (p: PassionId) => void; only?: PassionId; initial?: 'atl' | 'world' }) {
   const { events, now, orbit } = useData();
   const iss = useIss();
-  const [view, setView] = useState<View>('atl');
+  const [view, setView] = useState<View>(initial);
   const [size, setSize] = useState({ w: 800, h: 380 });
   const [tip, setTip] = useState<{ x: number; y: number; k: string; t: string; w: string } | null>(null);
   const box = useRef<HTMLDivElement>(null);
@@ -72,7 +73,8 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
     return { path: geoPath(p), proj: p };
   }, [size, view]);
 
-  const markers = events.filter(e => e.loc && (e.state === 'in' || (e.state === 'pre' && e.start - now < 14 * DAY)));
+  const markers = events.filter(e => e.loc && (!only || e.passion === only) && (e.state === 'in' || (e.state === 'pre' && e.start - now < (only ? 120 : 14) * DAY)));
+  const showIss = !only || only === 'space';
   const night = iss ? geoCircle().center([iss.sun[0] + 180, -iss.sun[1]]).radius(90)() : null;
   const labelled = new Set<string>();
 
@@ -85,7 +87,7 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
 
   return (
     <>
-      <div className="ph">Theatre
+      <div className="ph">Theatre{only ? ` · ${PASSION[only].name}` : ''}
         <div className="map-tools">
           {(['atl', 'world'] as View[]).map(v => (
             <button key={v} className="btn" aria-pressed={view === v} onClick={() => setView(v)}>{v === 'atl' ? 'Atlantic' : 'World'}</button>
@@ -98,7 +100,7 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
           <path d={path(geoGraticule10()) ?? ''} fill="none" stroke="var(--grid)" strokeWidth={0.6} />
           <path d={path(LAND) ?? ''} fill="var(--land)" stroke="var(--land-edge)" strokeWidth={0.7} />
           {night && <path d={path(night) ?? ''} fill="var(--night)" />}
-          {iss && iss.track.length > 1 && <path d={path({ type: 'LineString', coordinates: iss.track }) ?? ''} fill="none" stroke="#fff" strokeOpacity={0.35} strokeWidth={1} strokeDasharray="2 3" />}
+          {showIss && iss && iss.track.length > 1 && <path d={path({ type: 'LineString', coordinates: iss.track }) ?? ''} fill="none" stroke="#fff" strokeOpacity={0.35} strokeWidth={1} strokeDasharray="2 3" />}
           {markers.map(e => {
             const p = proj(e.loc!);
             if (!p) return null;
@@ -117,7 +119,7 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
               </g>
             );
           })}
-          {iss && (() => {
+          {showIss && iss && (() => {
             const p = proj(iss.pos);
             if (!p) return null;
             return (
@@ -132,7 +134,7 @@ export function Theatre({ open }: { open: (p: PassionId) => void }) {
         </svg>
         <div className="map-legend">
           <span><i style={{ background: 'var(--signal)' }} />Live</span>
-          <span><i style={{ background: 'var(--ink-2)' }} />Next 14 days</span>
+          <span><i style={{ background: 'var(--ink-2)' }} />{only ? 'Coming up' : 'Next 14 days'}</span>
           <span><i style={{ background: '#fff', boxShadow: '0 0 6px #fff' }} />ISS (live)</span>
           <span>Shaded: night</span>
         </div>

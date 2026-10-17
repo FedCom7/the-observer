@@ -5,7 +5,6 @@ import { SpoilerProvider } from './components/common';
 import { DataProvider } from './core/store';
 import './styles/app.css';
 import { ControlRoom } from './views/ControlRoom';
-import { PassionSheet } from './views/PassionSheet';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<ControlRoom />}>
-              <Route path="p/:id" element={<PassionSheet />} />
+              <Route path="p/:id" element={null} />
             </Route>
           </Routes>
         </BrowserRouter>

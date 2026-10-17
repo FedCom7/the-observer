@@ -1,5 +1,6 @@
-import { useLayoutEffect, useRef } from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useMatch, useNavigate } from 'react-router-dom';
+import { PassionTerminal } from './PassionTerminal';
 import { Score, Tag, Tbc, useSpoiler } from '../components/common';
 import { Theatre } from '../components/Theatre';
 import { CATS, PASSION, PASSIONS, catColor, passionColor } from '../core/passions';
@@ -22,7 +23,7 @@ const isMineGame = (e: ObsEvent) => Boolean(e.home?.mine || e.away?.mine);
  * Map and Live & latest together fill the screen: Live & latest takes the height of its two
  * rows of games, the theatre gets everything left down to the bottom of the window.
  */
-function useRoomFit() {
+function useRoomFit(dep?: string) {
   const ref = useRef<HTMLDivElement>(null);
   useLayoutEffect(() => {
     const el = ref.current;
@@ -44,18 +45,37 @@ function useRoomFit() {
     if (games) ro.observe(games);
     window.addEventListener('resize', fit);
     return () => { ro.disconnect(); window.removeEventListener('resize', fit); };
-  }, []);
+  }, [dep]);
   return ref;
 }
 
 export function ControlRoom() {
   const { events, now } = useData();
   const nav = useNavigate();
-  const open = (p: PassionId) => nav(`/p/${p}`);
+  // The passion shown in the terminal, if any; choosing the same one again goes back to the overview
+  const selected = useMatch('/p/:id')?.params.id as PassionId | undefined;
+  const current = selected && selected in PASSION ? selected : undefined;
+  const open = (p: PassionId) => nav(p === current ? '/' : `/p/${p}`);
+  useEffect(() => {
+    if (!current) return;
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && nav('/');
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [current, nav]);
   const live = events.filter(e => e.state === 'in');
   const next72 = events.filter(e => e.state === 'pre' && e.start > now && e.start - now < 72 * HOUR);
 
-  const room = useRoomFit();
+  const room = useRoomFit(current);
+
+  if (current) {
+    return (
+      <div className="room room-term" id="room">
+        <TopBar liveCount={live.length} next72={next72} />
+        <Rail live={live} open={open} active={current} />
+        <PassionTerminal id={current} open={open} />
+      </div>
+    );
+  }
 
   return (
     <>
@@ -72,7 +92,6 @@ export function ControlRoom() {
         <StandingsStrip open={open} />
         <Ticker />
       </div>
-      <Outlet />
     </>
   );
 }
@@ -105,13 +124,13 @@ function TopBar({ liveCount, next72 }: { liveCount: number; next72: ObsEvent[] }
   );
 }
 
-function Rail({ live, open }: { live: ObsEvent[]; open: (p: PassionId) => void }) {
+function Rail({ live, open, active }: { live: ObsEvent[]; open: (p: PassionId) => void; active?: PassionId }) {
   const liveP = new Set(live.map(e => e.passion));
   return (
-    <nav className="rail" aria-label="Open a passion">
-      <span className="rail-lab">OPEN</span>
+    <nav className="rail" aria-label="Show a passion">
+      <span className="rail-lab">{active ? 'SHOWING' : 'OPEN'}</span>
       {PASSIONS.map(p => (
-        <button key={p.id} className="pchip" onClick={() => open(p.id)}>
+        <button key={p.id} className="pchip" aria-pressed={p.id === active} title={p.id === active ? 'Back to the overview' : `Show ${p.name}`} onClick={() => open(p.id)}>
           {liveP.has(p.id) ? <span className="live-dot" /> : <i style={{ background: catColor(p.cat) }} />}
           {p.name}
         </button>

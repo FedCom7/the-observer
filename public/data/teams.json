@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T12:27:06.282Z",
+ "updated": "2026-10-17T12:57:54.074Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
@@ -19985,7 +19985,15 @@
      "pos": null,
      "seed": 14
     },
-    "stats": null,
+    "stats": {
+     "ppg": 14,
+     "ypg": 296.4,
+     "passYpg": 153.6,
+     "rushYpg": 126.6,
+     "third": 41.27,
+     "toDiff": -4,
+     "sacks": 4
+    },
     "allTime": {
      "wins": 57,
      "losses": 64,

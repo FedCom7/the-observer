@@ -314,3 +314,40 @@ a { color: inherit; text-decoration: none; }
 .orbit-list { padding: 8px 12px; display: grid; gap: 4px; font-size: 12px; color: var(--ink-2); }
 .orbit-big { font-family: var(--f-mono); font-size: 34px; font-weight: 600; padding: 10px 12px 0; }
 .olist .r .tag-live { color: #ff453a; font-weight: 600; }
+
+/* ===== One passion in the terminal: its page as dark panels under the top bar ===== */
+.room-term { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto auto; grid-template-areas: "top" "rail" "term"; }
+.term { grid-area: term; display: grid; gap: 8px; min-width: 0; }
+.term-map { grid-area: auto; height: clamp(320px, 44vh, 480px); }
+.pchip[aria-pressed="true"] { color: var(--ink); border-color: var(--now); background: rgba(41,151,255,.14); }
+/* The page's colours, taken from the terminal palette */
+:root .room .obs.term-body {
+  --o-bg: var(--bg); --o-card: var(--panel); --o-ink: var(--ink); --o-ink2: var(--ink-2); --o-ink3: var(--ink-3);
+  --o-line: var(--edge); --o-grid: var(--grid); --o-accent: #2997ff; --o-accent-soft: #0f2a47;
+  --oc-pol: #3987e5; --oc-mot: #d95926; --oc-spa: #199e70; --oc-usa: #c98500;
+  --oc-cul: #d55181; --oc-out: #2fa52f; --oc-tech: #9085e9; --oc-mil: #e66767;
+  --o-s1: #3987e5; --o-s2: #d95926; --o-s3: #199e70; --o-s4: #c98500; --o-other: #5a6370;
+  --o-dem: #3987e5; --o-rep: #e66767;
+  --o-h0: #18202a; --o-h1: #184f95; --o-h2: #2a78d6; --o-h3: #86b6ef;
+  --o-shadow: none; color-scheme: dark;
+}
+.term-body { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); column-gap: 8px; row-gap: 0; grid-auto-rows: 4px; grid-auto-flow: dense; align-items: start; color: var(--ink); font-size: 13px; }
+.term-body .ocard, .term-body .s-hero { margin-bottom: 8px; }
+/* The page's wrappers dissolve: each card becomes a panel of the grid */
+.term-body .s-top, .term-body .s-two, .term-body .s-two > div:not(.ocard) { display: contents !important; }
+.term-body .ocard { background: var(--panel); border: 1px solid var(--edge); border-radius: 10px; padding: 12px 14px; }
+.term-body .ocard h2 { font-size: 13px; letter-spacing: .02em; color: var(--ink); }
+.term-body .ocard .lab { font-size: 10px; letter-spacing: .12em; color: var(--ink-3); }
+.term-body .dek { font-family: var(--f-ui); font-size: 12px; color: var(--ink-3); margin-bottom: 8px; }
+/* Charts, card grids and tables take two columns; tables with many columns the whole row */
+@media (min-width: 900px) {
+  .term-body section.ocard:has(.ochart), .term-body .ocard:has(.cy-grid), .term-body .ocard:has(table.otable) { grid-column: span 2; }
+  .term-body .ocard:has(table.otable th:nth-child(8)) { grid-column: 1 / -1; }
+}
+/* The hero becomes a slim header across the top */
+.term-body .s-hero { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; padding: 4px 4px 2px; }
+.term-body .s-hero h1 { font-size: 22px; letter-spacing: -0.01em; }
+.term-body .s-hero p { font-family: var(--f-ui); font-size: 13px; color: var(--ink-2); margin: 0; max-width: none; flex: 1 1 400px; }
+.term-body .s-eyebrow { display: none; }
+.term-body .s-cd { font-family: var(--f-mono); font-size: 28px; }
+.term-body .kpi b { font-size: 20px; }

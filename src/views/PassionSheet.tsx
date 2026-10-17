@@ -39,6 +39,11 @@ const mineOf = (e: ObsEvent): [Side, Side] | null => {
   return null;
 };
 
+/** The page of a passion: dedicated pages where there is one, the generic page otherwise. */
+export function PassionBody({ id }: { id: PassionId }) {
+  return <>{id === 'elez' ? <ElectionsPage /> : id === 'mlb' ? <MlbPage /> : id === 'f1' ? <F1Page /> : id === 'nba' ? <NbaPage /> : id === 'cfb' ? <CfbPage /> : id === 'wec' ? <WecPage /> : id === 'royal' ? <RoyalPage /> : id === 'sci' ? <SkiPage /> : id === 'space' ? <SpacePage /> : id === 'dakar' ? <DakarPage /> : id === 'apple' ? <ApplePage /> : id === 'ac' ? <AcPage /> : id === 'cicl' ? <CyclingPage /> : id === 'awards' ? <AwardsPage /> : id === 'milan' || id === 'pats' || id === 'texas' ? <TeamPage id={id} /> : id === 'tennis' ? <TennisPage /> : id === 'nfl' ? <NflPage /> : <GenericPage id={id} />}</>;
+}
+
 export function PassionSheet() {
   const { id } = useParams();
   const nav = useNavigate();
