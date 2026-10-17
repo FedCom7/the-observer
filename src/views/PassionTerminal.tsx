@@ -1,5 +1,8 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
+import { SeasonStrip } from '../components/charts';
 import { Theatre } from '../components/Theatre';
+import { PASSION } from '../core/passions';
+import { useData } from '../core/store';
 import type { PassionId } from '../core/types';
 import { PassionBody } from './PassionSheet';
 
@@ -12,6 +15,7 @@ const MAP_PASSIONS: Partial<Record<PassionId, 'atl' | 'world'>> = { space: 'worl
  */
 export function PassionTerminal({ id, open }: { id: PassionId; open: (p: PassionId) => void }) {
   useEffect(() => { window.scrollTo({ top: 0 }); }, [id]);
+  const { now } = useData();
   const body = useMasonry(id);
   const map = MAP_PASSIONS[id];
   return (
@@ -19,6 +23,8 @@ export function PassionTerminal({ id, open }: { id: PassionId; open: (p: Passion
       {map && <section className="panel map term-map"><Theatre key={id} open={open} only={id} initial={map} /></section>}
       <div className="obs term-body" ref={body}>
         <PassionBody id={id} />
+        {/* When in the year this passion is busiest (it was on the generic page before the dedicated ones) */}
+        <div className="ocard"><div className="lab">The season ahead</div><SeasonStrip heat={PASSION[id].heat} now={now} /></div>
       </div>
     </div>
   );
