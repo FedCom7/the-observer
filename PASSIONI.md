@@ -30,6 +30,8 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 12 | Ciclismo | Stagione 2027 da gennaio; Sanremo 20 marzo, Giro dall'8 maggio | ✅ |
 | 13 | Elezioni americane | Midterm martedì 3 novembre | ✅ |
 | 14 | Premi del cinema | Governors Awards 15 novembre, Oscar 14 marzo | ✅ |
+| 15 | Milan, Patriots, Texas | Partite ogni settimana | ✅ |
+| 16 | Tennis, Grande Slam | Australian Open dal 17 gennaio | ✅ |
 
 ---
 
@@ -374,16 +376,54 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - per ogni categoria: quote di esperti e utenti con le variazioni, grafico dell'andamento, tabella dei precursori (★ vinto, ● nominato) e ultimi nominati;
 - vincitori dei festival, prossime date, notizie (Variety), griglia di tutti i premi con il loro stato.
 
+## AC Milan, New England Patriots, Texas Longhorns ✅
+**Interessi:**
+- prossima partita e diretta, come in tutta l'app;
+- nella pagina della squadra: la storia della squadra, la situazione attuale nelle competizioni e le statistiche dell'anno contro le rivali, storiche e più forti del momento.
+
+**Fonti (collector `teams`):**
+- **Storia completa:** gli elenchi stagione per stagione di Wikipedia.
+  - Milan dal 1899: divisione, piazzamento, punti, coppe e capocannoniere.
+  - Patriots dal 1960: record, piazzamento e playoff.
+  - Texas dal 1893: record, conferenza, bowl e ranking AP.
+- **Trophies:** per il Milan la tabella "Honours"; per Patriots e Texas contati dalle stagioni.
+- **Rivali:**
+  - storici: Inter, Juventus, Napoli, Roma per il Milan; Bills, Dolphins, Jets, Colts per i Patriots; Oklahoma, Texas A&M, Arkansas, Texas Tech per Texas;
+  - più forti dell'anno: i primi della classifica, i migliori record NFL e la top 4 AP, calcolati in automatico.
+- **Bilanci:** di tutta la storia dalle pagine Wikipedia delle rivalità, partita per partita dal 2001 dalle partite ESPN.
+- **Stagione in corso (ESPN):** classifica, record, gol o punti fatti e subiti; per il football anche yard, conversioni e turnover. Per il Milan anche ogni competizione: Serie A, Europa League, Coppa Italia.
+
+**Pagina:**
+- prossima partita o diretta, situazione attuale con la forma recente, vetrina dei trofei;
+- competizioni in corso;
+- grafico "attacco contro difesa" (fatti e subiti per partita) della squadra e dei rivali, con tabella di confronto;
+- grafico di tutta la storia: piazzamento per il Milan, percentuale di vittorie con i titoli in evidenza per Patriots e Texas;
+- scheda per ogni rivale: bilancio storico, bilancio dal 2001, ultime sfide;
+- albo dei trofei, calendario, notizie.
+
+## Tennis, tornei del Grande Slam ✅
+**Interessi:** solo maschile. Prossimo Slam con le date, tabellone, ranking ATP.
+
+**Fonti (collector `tennis`):**
+- date degli Slam dal calendario pubblico WTA (le date valgono anche per gli uomini);
+- tabellone maschile completo dell'ultimo Slam da ESPN, dal primo turno alla finale, con i punteggi set per set. Durante uno Slam il browser lo aggiorna ogni minuto;
+- ranking ATP, primi 100, da ESPN;
+- tutti i campioni Slam maschili dal 1877 da Wikipedia.
+
+**Pagina:**
+- prossimo Slam con conto alla rovescia, ultima finale, top 5 ATP;
+- calendario dei quattro Slam;
+- tabellone dagli ottavi alla finale, più tutti i turni con i punteggi;
+- ranking ATP (top 20) con le variazioni;
+- classifica di tutti i tempi dei titoli Slam, colorata per torneo;
+- campioni degli ultimi dieci anni, notizie.
+
 ---
 
 ## Da definire più avanti 💬
 Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a coprirle con le fonti attuali.
 
-- **AC Milan:** ESPN, tutte le competizioni, diretta, classifica.
-- **New England Patriots:** ESPN.
 - **NFL:** ESPN, partite in prima serata.
-- **Texas Longhorns:** ESPN.
-- **Tennis, tornei del Grande Slam:** API WTA, ESPN.
 
 ## Altre passioni da aggiungere
 - 

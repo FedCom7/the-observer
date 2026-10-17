@@ -11,16 +11,36 @@ export async function get(url, { browser = false, json = false } = {}) {
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-// Wikipedia asks API clients to send one request at a time; we queue them with a short gap
-// (600 ms) and back off when told to slow down (HTTP 429).
+// Wikipedia asks clients to send one request at a time; we queue them with a short gap
+// and back off when told to slow down (HTTP 429).
 let wikiQueue = Promise.resolve();
-function wikiGet(url) {
+
+/**
+ * Wikitext of a Wikipedia page (redirects followed). Returns null when the page does not exist yet.
+ * Read through index.php?action=raw: served from Wikipedia's cache, it is not throttled like the API.
+ */
+export async function wikitext(title, section, hops = 0) {
+  const params = new URLSearchParams({ title: title.replace(/ /g, '_'), action: 'raw' });
+  if (section !== undefined) params.set('section', String(section));
+  let w;
+  try { w = await wikiRaw(`https://en.wikipedia.org/w/index.php?${params}`); } catch (err) { if (String(err.message).startsWith('404')) return null; throw err; }
+  const redirect = w.match(/^#REDIRECT\s*\[\[([^\]|#]+)/i);
+  if (redirect) {
+    const to = redirect[1].trim();
+    // A redirect to a generic page means the edition page has not been written yet.
+    if (hops > 1 || !to.match(/\d{4}|\b\d+(st|nd|rd|th)\b|[IVXLC]{2,}/) && title.match(/\d{4}|\b\d+(st|nd|rd|th)\b/)) return null;
+    return wikitext(to, section, hops + 1);
+  }
+  return w;
+}
+
+function wikiRaw(url) {
   const run = async () => {
     for (let attempt = 0; ; attempt++) {
       try {
-        const j = await get(url, { json: true });
-        await sleep(600);
-        return j;
+        const t = await get(url);
+        await sleep(300);
+        return t;
       } catch (err) {
         if (!String(err.message).startsWith('429') || attempt >= 4) throw err;
         await sleep(2000 * 2 ** attempt);
@@ -30,18 +50,6 @@ function wikiGet(url) {
   const p = wikiQueue.then(run, run);
   wikiQueue = p.catch(() => {});
   return p;
-}
-
-/** Wikitext of a Wikipedia page (redirects followed). Returns null when the page does not exist yet. */
-export async function wikitext(title, section) {
-  const params = new URLSearchParams({ action: 'parse', page: title, prop: 'wikitext', redirects: '1', format: 'json', formatversion: '2' });
-  if (section !== undefined) params.set('section', String(section));
-  const j = await wikiGet(`https://en.wikipedia.org/w/api.php?${params}`);
-  if (j.error) return null;
-  const w = j.parse.wikitext;
-  // A redirect to a generic page means the edition page has not been written yet.
-  if (j.parse.redirects?.length && !j.parse.title.match(/\d{4}|\b\d+(st|nd|rd|th)\b|[IVXLC]{2,}/)) return null;
-  return w;
 }
 
 const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];

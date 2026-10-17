@@ -9,6 +9,8 @@ import { appleEvents, appleNews, loadApple, type AppleData } from '../sources/ap
 import { acEvents, loadAc, type AcData } from '../sources/ac';
 import { cyclingEvents, loadCycling, type CyclingData } from '../sources/cycling';
 import { awardsEvents, loadAwards, type AwardsData } from '../sources/awards';
+import { loadTeams, type TeamsData } from '../sources/teams';
+import { loadTennis, type TennisData } from '../sources/tennis';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
 import { mlbData, type MlbData } from '../sources/mlb';
 import { nbaData, type NbaData } from '../sources/nba';
@@ -43,6 +45,8 @@ interface Data {
   ac?: AcData;
   cycling?: CyclingData;
   awards?: AwardsData;
+  teams?: TeamsData;
+  tennis?: TennisData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -90,6 +94,8 @@ const SOURCES: Source[] = [
   { key: 'texas', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('texas', 'football', 'college-football', TEXAS)).map(e => ({ ...e, weight: 3 })) }) },
   { key: 'ap', every: HOUR, run: async () => ({ standings: { ap: await cfbRankings('cfb', TEXAS) } }) },
   { key: 'spacedata', every: 10 * MIN, run: async () => { const d = await loadSpace(); return { space: d, events: spaceEvents(d), orbit: orbitOf(d), news: nasaNews(d) }; } },
+  { key: 'teams', every: 15 * MIN, run: async () => ({ teams: await loadTeams() }) },
+  { key: 'tennis', every: 5 * MIN, run: async () => ({ tennis: await loadTennis() }) },
   { key: 'awards', every: 10 * MIN, run: async () => { const a = await loadAwards(); return { awards: a, events: awardsEvents(a) }; } },
   { key: 'cycling', every: 10 * MIN, run: async () => { const c = await loadCycling(); return { cycling: c, events: cyclingEvents(c) }; } },
   { key: 'ac', every: 10 * MIN, run: async () => { const a = await loadAc(); return { ac: a, events: acEvents(a) }; } },
@@ -197,6 +203,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let ac: AcData | undefined;
     let cycling: CyclingData | undefined;
     let awards: AwardsData | undefined;
+    let teams: TeamsData | undefined;
+    let tennis: TennisData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -221,6 +229,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.ac) ac = p.ac;
       if (p.cycling) cycling = p.cycling;
       if (p.awards) awards = p.awards;
+      if (p.teams) teams = p.teams;
+      if (p.tennis) tennis = p.tennis;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -247,6 +257,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
       ac,
       cycling,
       awards,
+      teams,
+      tennis,
     };
   }, [bySource, live]);
 

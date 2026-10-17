@@ -39,6 +39,8 @@ Nothing is typed in by hand. Two layers keep the data fresh:
 | Apple: keynotes, pre-order and in-store dates | apple.com/apple-events, Apple Newsroom press releases | collector `apple` |
 | America's Cup: regattas, standings, points and time of every race | americascup.com results feeds | collector `ac` |
 | Tennis Slams, Super Bowl, Election Day | WTA API, Wikipedia, rules | collector `calendar` |
+| Milan, Patriots, Texas: full history, trophies, rivals' all-time and recent records, this season vs rivals | Wikipedia season lists and rivalry pages, ESPN | collector `teams` |
+| Tennis: Slam dates, men's draw, ATP ranking, all-time champions | WTA calendar, ESPN, Wikipedia | collector `tennis` (draw live from the browser during a Slam) |
 | Awards season: dates of every award and Oscar step, nominees and winners, Oscar odds | Gold Derby (season calendar, public odds API), Wikipedia edition pages | collector `awards` |
 | Cycling: men's WorldTour, Worlds and Euros, stages with official times, official rankings, winners | UCI calendar API, ASO and RCS race sites, Wikipedia | collector `cycling` |
 | News for passions without an ESPN feed | RSS (Guardian, BBC, Royal Central, Variety, Politico, Cyclingnews, Ski Racing, ESPN, Sportscar365) and Google News searches | collector `news` |
