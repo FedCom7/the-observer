@@ -30,7 +30,10 @@ button { font: inherit; color: inherit; }
 .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
 
 .room { display: grid; gap: 8px; padding-inline: 12px; padding-block: 0 12px;
+  /* The theatre row has a fixed height, so Live & latest shows up without scrolling; T-minus scrolls inside it */
+  --theatre-h: clamp(340px, 46vh, 520px);
   grid-template-columns: 300px minmax(0, 1fr) 340px;
+  grid-template-rows: auto auto var(--theatre-h) auto auto auto;
   grid-template-areas:
     "top top top"
     "rail rail rail"
@@ -91,7 +94,8 @@ button { font: inherit; color: inherit; }
 .marker { cursor: pointer; }
 
 /* T-minus */
-.tminus { grid-area: tminus; }
+.tminus { grid-area: tminus; overflow-y: auto; scrollbar-width: thin; }
+.tminus .ph { position: sticky; top: 0; z-index: 1; background: var(--panel); }
 .tm-row { display: grid; grid-template-columns: 6px 1fr auto; gap: 10px; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--grid); }
 .tm-row i { width: 6px; height: 26px; border-radius: 2px; }
 .tm-row .t b { display: block; font-weight: 550; font-size: 12.5px; }
@@ -281,12 +285,13 @@ body.sheet-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { .sheet { animation: none; } }
 
 @media (max-width: 1280px) {
-  .room { grid-template-columns: minmax(0, 1fr) 320px; grid-template-areas: "top top" "rail rail" "map tminus" "live elex" "feed elex" "stand stand" "tick tick"; }
+  .room { grid-template-columns: minmax(0, 1fr) 320px; grid-template-rows: auto auto var(--theatre-h) repeat(4, auto); grid-template-areas: "top top" "rail rail" "map tminus" "live elex" "feed elex" "stand stand" "tick tick"; }
   .stand { grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
   .feed-list { max-height: 360px; }
 }
 @media (max-width: 820px) {
-  .room { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "rail" "map" "live" "tminus" "elex" "feed" "stand" "tick"; padding-inline: 16px; }
+  .room { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto var(--theatre-h) repeat(6, auto); grid-template-areas: "top" "rail" "map" "live" "tminus" "elex" "feed" "stand" "tick"; padding-inline: 16px; }
+  .tminus { max-height: 460px; }
   .clocks .clock:nth-child(n+4) { display: none; }
   .map svg { min-height: 240px; }
   .games { grid-template-columns: repeat(2, minmax(0, 1fr)); }
