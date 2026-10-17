@@ -21,6 +21,9 @@ import { collectWec } from './wec.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '../../public/data');
 
+// Local secrets (TMDB_KEY…) from .env; online they come from the workflow's secrets
+try { process.loadEnvFile(join(dirname(fileURLToPath(import.meta.url)), '../../.env')); } catch { /* no .env */ }
+
 const JOBS = {
   elections: collectElections,
   calendar: collectCalendar,

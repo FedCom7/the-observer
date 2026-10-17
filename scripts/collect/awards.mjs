@@ -8,6 +8,7 @@ import { readFile } from 'node:fs/promises';
 import { decode, get, infobox, iso, ordinal, parseDate, wikitext, zoned } from './lib.mjs';
 import { OSCAR_CATS, colonList, festivalCat, nomineeTables, oscarCat, rowTables, scripterRows } from './awardsParse.mjs';
 import { officialDates, radar } from './awardsWatch.mjs';
+import { films as tmdbFilms, people as tmdbPeople, tmdbKey } from './tmdb.mjs';
 
 const DAY = 86400e3;
 const now = Date.now();
@@ -20,8 +21,9 @@ const C = S + 1;
 const AWARDS = [
   { id: 'cannes', name: 'Cannes Film Festival', short: 'Cannes', group: 'festival', pages: [`${S} Cannes Film Festival`], mode: 'colon', tz: 'Europe/Paris' },
   { id: 'venice', name: 'Venice Film Festival', short: 'Venice', group: 'festival', pages: [`${ordinal(S - 1943)} Venice International Film Festival`], mode: 'colon', tz: 'Europe/Rome' },
-  { id: 'telluride', name: 'Telluride Film Festival', short: 'Telluride', group: 'festival', pages: [`${ordinal(S - 1973)} Telluride Film Festival`], mode: 'none', tz: 'America/Denver' },
+  { id: 'telluride', name: 'Telluride Film Festival', short: 'Telluride', group: 'festival', pages: [`${ordinal(S - 1973)} Telluride Film Festival`], mode: 'none', lineup: /Official selection|Lineup|Films|Main program/i, tz: 'America/Denver' },
   { id: 'tiff', name: 'Toronto International Film Festival', short: 'TIFF', group: 'festival', pages: [`${S} Toronto International Film Festival`], mode: 'colon', tz: 'America/Toronto' },
+  { id: 'nyff', name: 'New York Film Festival', short: 'NYFF', group: 'festival', pages: [`${S} New York Film Festival`], mode: 'none', lineup: /Main Slate/i, tz: 'America/New_York' },
   { id: 'gotham', name: 'Gotham Awards', short: 'Gotham', group: 'critics', pages: [`Gotham Independent Film Awards ${S}`, `${S} Gotham Awards`], tz: 'America/New_York' },
   { id: 'nbr', name: 'National Board of Review', short: 'NBR', group: 'critics', pages: [`National Board of Review Awards ${S}`], mode: 'auto', tz: 'America/New_York' },
   { id: 'nyfcc', name: 'New York Film Critics Circle', short: 'NYFCC', group: 'critics', pages: [`${S} New York Film Critics Circle Awards`], mode: 'auto', tz: 'America/New_York' },
@@ -30,6 +32,8 @@ const AWARDS = [
   { id: 'cca', name: "Critics' Choice Awards", short: 'Critics Choice', group: 'critics', pages: [`${ordinal(C - 1995)} Critics' Choice Awards`], tz: 'America/Los_Angeles' },
   { id: 'globes', name: 'Golden Globe Awards', short: 'Globes', group: 'major', pages: [`${ordinal(C - 1943)} Golden Globe Awards`], tz: 'America/Los_Angeles' },
   { id: 'nsfc', name: 'National Society of Film Critics', short: 'NSFC', group: 'critics', pages: [`${S} National Society of Film Critics Awards`], mode: 'auto', tz: 'America/New_York' },
+  // Sundance at the end of January (the coming edition once its page exists, else the one that opened this season)
+  { id: 'sundance', name: 'Sundance Film Festival', short: 'Sundance', group: 'festival', pages: [`${C} Sundance Film Festival`, `${S} Sundance Film Festival`], mode: 'colon', tz: 'America/Denver' },
   { id: 'dga', name: 'Directors Guild of America Awards', short: 'DGA', group: 'guild', pages: [`${ordinal(C - 1948)} Directors Guild of America Awards`], tz: 'America/Los_Angeles' },
   { id: 'ace', name: 'ACE Eddie Awards (editing)', short: 'ACE', group: 'guild', pages: [`American Cinema Editors Awards ${C}`], tz: 'America/Los_Angeles' },
   { id: 'wga', name: 'Writers Guild of America Awards', short: 'WGA', group: 'guild', pages: [`${ordinal(C - 1948)} Writers Guild of America Awards`], tz: 'America/Los_Angeles' },
@@ -132,10 +136,18 @@ async function readEdition(a, prev, force = false) {
     const section = (w.split(/\n==\s*(?:Official awards|Awards|Winners|Prizes)\s*==\s*\n/i)[1] ?? '').split(/\n==[^=]/)[0];
     // ...and of that, the main competition: the text up to its second sub-heading
     const subs = section.split(/\n(?====[^=])/);
-    const main = subs.slice(1).find(x => !/^===\s*[^=\n]*(?:tribute|honorary|lifetime|jur(?:y|ies))/i.test(x));
+    const main = subs.slice(1).find(x => !/^===\s*[^=\n]*(?:tribute|honorary|lifetime|juries|jury(?! prize))/i.test(x));
     const official = main ? `${subs[0]}\n${main}` : subs[0];
-    let cats = a.mode === 'none' ? [] : a.mode === 'scripter' ? scripterRows(w, S) : a.mode === 'colon' ? [...colonList(official), ...rowTables(official)] : nomineeTables(w);
+    let cats = a.mode === 'none' ? [] : a.mode === 'scripter' ? scripterRows(w, S) : a.mode === 'colon' ? [...colonList(official, a.group === 'festival'), ...rowTables(official)] : nomineeTables(w);
     if (a.mode === 'auto' && !cats.length) cats = colonList(w);
+    // Festivals without prizes: the films of the official programme
+    let lineup = null;
+    if (a.lineup) {
+      const parts = w.split(/\n(?===)/);
+      const sec = parts.filter(x => a.lineup.test(x.split('\n')[0])).join('\n');
+      const seen = new Set();
+      lineup = [...sec.matchAll(/''\[\[(?:([^|\]]*)\|)?([^\]]+)\]\]''/g)].map(m => m[2].trim()).filter(t => !seen.has(t) && seen.add(t)).slice(0, 40);
+    }
     // Festivals list sections ("In Competition", "Independent awards"): keep only the official prizes
     const categories = cats.map(c => ({ name: c.category, oscar: a.group === 'festival' ? festivalCat(c.category) : oscarCat(c.category, a.id), nominees: c.nominees.map(({ film, people, role, song, winner }) => ({ film, people, role, song, winner })) }))
       .filter((c, i, all) => all.findIndex(x => x.name === c.name) === i);
@@ -144,7 +156,7 @@ async function readEdition(a, prev, force = false) {
       span: range ? [iso(zoned(+range[1], +range[2], +range[3], 12, 0, a.tz)), iso(zoned(+range[4], +range[5], +range[6], 20, 0, a.tz))] : null,
       wikiDate: d ? iso(zoned(d.y, d.m, d.d, ...timeOf(a.id, 'ceremony'), a.tz)) : null,
       wikiAnnounced: announced ? (p => (p ? iso(zoned(p.y, p.m, p.d, ...timeOf(a.id, 'nominations'), a.tz)) : null))(parseDate(announced, S)) : null,
-      categories,
+      categories, lineup,
     };
   }
   // Not written yet: remember the attempt, so the six-hour pause applies to it too
@@ -272,8 +284,33 @@ export async function collectAwards() {
   const oscarSteps = cal.events.filter(e => e.award === 'oscars');
   oscarSteps.push({ award: 'oscars', kind: 'eligibility', title: `Eligibility period ends: films must open by December 31, ${S}`, date: iso(zoned(S, 12, 31, 23, 59, 'America/Los_Angeles')), approx: false });
 
+  // TMDB: posters, details and cast of every film in the season, photos of the people
+  let tmdb = prev.tmdb ?? { films: {}, people: {} };
+  const key = tmdbKey();
+  if (key) {
+    const PERSON = new Set(['actor', 'actress', 'supActor', 'supActress', 'director']);
+    const titles = new Set(), names = new Set();
+    for (const [cat, o] of Object.entries(gd?.categories ?? {})) for (const r of [...(o.experts ?? []), ...(o.users ?? [])]) {
+      if (PERSON.has(cat)) { names.add(r.name); if (r.film) titles.add(r.film); } else titles.add(r.name);
+    }
+    for (const a of awards) {
+      for (const c of a.edition?.categories ?? []) for (const n of c.nominees) {
+        if (n.film) titles.add(n.film);
+        if (c.oscar && PERSON.has(c.oscar) && n.people) names.add(n.people.split(/,| and /)[0].trim());
+      }
+      for (const t of a.edition?.lineup ?? []) titles.add(t);
+    }
+    try {
+      tmdb = {
+        films: await tmdbFilms(key, [...titles].map(t => ({ title: t, years: [S, C, S - 1] })), tmdb.films),
+        people: await tmdbPeople(key, [...names], tmdb.people),
+      };
+      status.tmdb = `${Object.values(tmdb.films).filter(f => !f.missing).length} films, ${Object.values(tmdb.people).filter(p => !p.missing).length} people`;
+    } catch (err) { status.tmdb = `failed: ${err.message.slice(0, 60)}`; }
+  } else status.tmdb = 'no key';
+
   return {
-    season: S, ceremonyYear: C, updated: new Date().toISOString(), status,
+    season: S, ceremonyYear: C, updated: new Date().toISOString(), status, tmdb,
     calendarUrl: cal.url, calendar: cal.events,
     oscarSteps: oscarSteps.sort((a, b) => a.date.localeCompare(b.date)),
     categories: OSCAR_CATS.map(([id, name]) => ({ id, name })),

@@ -11,7 +11,7 @@ export interface RadarItem { award: string; kind: 'nominations' | 'winners' | 'd
 export interface Award {
   id: string; name: string; short: string; group: AwardGroup; tz: string;
   dates: AwardDate[]; state: 'pending' | 'nominations' | 'winners';
-  edition: { page: string | null; url: string | null; categories: AwardCategory[]; span: [string, string] | null } | null;
+  edition: { page: string | null; url: string | null; categories: AwardCategory[]; span: [string, string] | null; lineup?: string[] | null } | null;
   official?: { fetched: string; url: string } | null;
   news?: RadarItem[];
 }
@@ -22,8 +22,15 @@ export interface AwardsData {
   categories: { id: string; name: string }[];
   awards: Award[];
   radar?: RadarItem[];
+  tmdb?: { films: Record<string, TmdbFilm>; people: Record<string, TmdbPerson> };
   odds: { league: string; stage: 'nominations' | 'winners'; url: string; updated: string; categories: Record<string, { experts?: OddsRow[]; users?: OddsRow[] }>; history: Record<string, { experts?: { d: string; v: Record<string, number> }[]; users?: { d: string; v: Record<string, number> }[] }> } | null;
 }
+
+export interface TmdbFilm { id?: number; title?: string; original?: string | null; release?: string | null; runtime?: number | null; genres?: string[]; overview?: string | null; poster?: string | null; backdrop?: string | null; countries?: string[]; director?: string | null; cast?: { name: string; role: string; photo: string | null }[]; missing?: boolean }
+export interface TmdbPerson { id?: number; name?: string; photo?: string | null; dept?: string | null; missing?: boolean }
+
+/** TMDB image URL (w92, w185, w342, w780…). */
+export const tmdbImg = (path: string | null | undefined, size = 'w185') => (path ? `https://image.tmdb.org/t/p/${size}${path}` : null);
 
 export const loadAwards = () => getJSON<AwardsData>('/data/awards.json', 10 * MIN);
 
@@ -60,3 +67,7 @@ export function sameContender(cat: string, n: Nominee, c: { name: string; film: 
   const nf = key(n.film), ns = key(n.song);
   return (Boolean(nf) && (nf === name || nf === film)) || (Boolean(ns) && ns === name);
 }
+
+/** TMDB record of a film or a person by name, if the collector found one. */
+export const filmOf = (d: AwardsData, title: string | null | undefined) => { const f = d.tmdb?.films[key(title)]; return f && !f.missing ? f : null; };
+export const personOf = (d: AwardsData, name: string | null | undefined) => { const p = d.tmdb?.people[key(name?.split(/,| and /)[0])]; return p && !p.missing ? p : null; };

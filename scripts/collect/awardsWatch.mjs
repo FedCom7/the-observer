@@ -18,6 +18,7 @@ export const FEEDS = [
 /** How each award is named in headlines. */
 export const ALIASES = {
   cannes: /\bCannes\b|Palme d'Or/i, venice: /\bVenice\b|Golden Lion/i, telluride: /\bTelluride\b/i, tiff: /\bTIFF\b|Toronto (?:International )?Film Festival|People's Choice Award/i,
+  nyff: /New York Film Festival|\bNYFF\b/i, sundance: /\bSundance\b/i,
   gotham: /\bGotham(?: Awards| Film Awards| Independent)/i, nbr: /National Board of Review|\bNBR\b/i, nyfcc: /New York Film Critics|\bNYFCC\b/i, lafca: /Los Angeles Film Critics|\bLAFCA\b/i,
   ccda: /Critics'? Choice Documentary/i, cca: /Critics'? Choice(?! Documentary)/i, globes: /Golden Globe/i, nsfc: /National Society of Film Critics|\bNSFC\b/i,
   dga: /\bDGA\b|Directors Guild/i, ace: /\bACE Eddie|American Cinema Editors|Eddie Awards/i, wga: /\bWGA\b|Writers Guild/i, ves: /\bVES Awards|Visual Effects Society/i,

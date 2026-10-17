@@ -4,7 +4,7 @@ import { Score } from '../components/common';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, fmt, hhmm } from '../core/time';
-import { KIND_LABEL, PERSON_CATS, sameContender, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem } from '../sources/awards';
+import { KIND_LABEL, PERSON_CATS, filmOf, personOf, sameContender, tmdbImg, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem, type TmdbFilm } from '../sources/awards';
 
 const GROUPS: { id: Award['group']; label: string; color: string }[] = [
   { id: 'festival', label: 'Festivals', color: 'var(--o-s3)' },
@@ -21,7 +21,7 @@ const nightOf = (t: number) => {
 };
 const when = (d: AwardDate) => `${d.approx ? '≈ ' : ''}${hhmm(Date.parse(d.date))}`;
 // The prizes worth showing from each festival
-const FESTIVAL_TOP = /^(?!.*(?:runner|international people|documentar|midnight|platform))(?:.*)(?:palme|grand prix|jury prize|best director|golden lion|silver lion|people's choice|volpi|best actor|best actress|prix d'interpr|screenplay)/i;
+const FESTIVAL_TOP = /^(?!.*(?:runner|international people|documentar|midnight|platform))(?:.*)(?:palme|grand prix|jury prize|best director|golden lion|silver lion|people's choice|volpi|best actor|best actress|prix d'interpr|screenplay|^u\.s\. dramatic|^world cinema dramatic|^u\.s\. documentary)/i;
 
 /** Movie awards season: every date to the Oscars, nominees and winners, and who is favoured. */
 export function AwardsPage() {
@@ -67,7 +67,7 @@ export function AwardsPage() {
           <div className="lab">Best Picture · Gold Derby experts</div>
           {(d.odds?.categories.picture?.experts ?? []).slice(0, 5).map((r, i) => (
             <div key={r.name} style={{ display: 'grid', gridTemplateColumns: '18px 1fr 52px', gap: 6, fontSize: 13, padding: '3px 0' }}>
-              <span style={{ color: 'var(--o-ink3)' }}>{i + 1}</span><b>{r.name}</b><Score><span style={{ textAlign: 'right', display: 'block' }}>{r.pct.toFixed(0)}%</span></Score>
+              <span style={{ color: 'var(--o-ink3)' }}>{i + 1}</span><span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><Thumb src={tmdbImg(filmOf(d, r.name)?.poster, 'w92')} h={22} /><b>{r.name}</b></span><Score><span style={{ textAlign: 'right', display: 'block' }}>{r.pct.toFixed(0)}%</span></Score>
             </div>
           ))}
           <div className="osrc">{d.odds?.stage === 'winners' ? 'Chance to win' : 'Chance of a nomination'} · <a href={d.odds?.url} target="_blank" rel="noreferrer">Gold Derby</a></div>
@@ -75,6 +75,8 @@ export function AwardsPage() {
       </section>
 
       <Announcements items={d.radar ?? []} byId={byId} now={now} />
+
+      <Contenders d={d} />
 
       <section className="ocard">
         <h2>The road to the {d.ceremonyYear - 1928}th Oscars</h2>
@@ -100,15 +102,16 @@ export function AwardsPage() {
       <section className="s-two">
         <div className="ocard">
           <h2>The festivals</h2>
-          <p className="dek">Where the season's contenders premiered and what they won.</p>
+          <p className="dek">Where the season's contenders premiered and what they won; Telluride and New York give no prizes, so their official programme is shown.</p>
           {d.awards.filter(a => a.group === 'festival').map(a => {
             const prizes = (a.edition?.categories ?? []).filter(c => FESTIVAL_TOP.test(c.name)).slice(0, 6);
             const span = a.dates[0];
             return (
               <div key={a.id} style={{ marginBottom: 14 }}>
                 <div className="lab">{a.name}{span ? ` · ${dayShort(Date.parse(span.date))}${span.end ? ` – ${dayShort(Date.parse(span.end))}` : ''}` : ''}</div>
-                {prizes.length ? prizes.map(p => <div key={p.name} style={{ display: 'grid', gridTemplateColumns: '170px 1fr', gap: 8, fontSize: 13, padding: '2px 0' }}><span style={{ color: 'var(--o-ink3)' }}>{p.name}</span><Score><b>{p.nominees[0].film ?? p.nominees[0].people}</b>{p.nominees[0].film && p.nominees[0].people ? <small style={{ color: 'var(--o-ink3)' }}> · {p.nominees[0].people}</small> : null}</Score></div>)
-                  : <small style={{ color: 'var(--o-ink3)' }}>{a.id === 'telluride' ? 'No competition: a showcase of premieres.' : 'No prizes yet.'}</small>}
+                {prizes.length ? prizes.map(p => <div key={p.name} style={{ display: 'grid', gridTemplateColumns: '170px 1fr', gap: 8, fontSize: 13, padding: '2px 0', alignItems: 'center' }}><span style={{ color: 'var(--o-ink3)' }}>{p.name}</span><Score><span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><Thumb src={tmdbImg(filmOf(d, p.nominees[0].film)?.poster, 'w92')} h={24} /><span><b>{p.nominees[0].film ?? p.nominees[0].people}</b>{p.nominees[0].film && p.nominees[0].people ? <small style={{ color: 'var(--o-ink3)' }}> · {p.nominees[0].people}</small> : null}</span></span></Score></div>)
+                  : a.edition?.lineup?.length ? <Lineup d={d} titles={a.edition.lineup} />
+                  : <small style={{ color: 'var(--o-ink3)' }}>No prizes yet.</small>}
               </div>
             );
           })}
@@ -229,6 +232,7 @@ function SeasonChart({ d, now }: { d: AwardsData; now: number }) {
               <line x1={l} x2={W - r} y1={cy} y2={cy} stroke="var(--o-grid)" strokeOpacity={0.5} />
               {dates.map(s => {
                 const t = Date.parse(s.date), past = t < now;
+                if (t < t0 || t > t1) return null;
                 const tip = `${a.name} · ${KIND_LABEL[s.kind] ?? s.kind} · ${dayLong(t)} ${when(s)} Rome`;
                 if (s.kind === 'festival' && s.end) return <rect key={s.date} x={x(t)} y={cy - 5} width={Math.max(6, x(Date.parse(s.end)) - x(t))} height={10} rx={3} fill={c} opacity={past ? 0.45 : 1}><title>{tip}</title></rect>;
                 const filled = s.kind === 'ceremony' || s.kind === 'festival';
@@ -264,7 +268,7 @@ function CategoryView({ d, cat, now }: { d: AwardsData; cat: string; now: number
         <div className="s-two" style={{ gap: 24 }}>
           <div style={{ minWidth: 0 }}>
             <div className="lab">Chance to {stage} · Gold Derby</div>
-            <OddsBars rows={contenders} experts={experts} users={users} person={PERSON_CATS.has(cat)} />
+            <OddsBars d={d} rows={contenders} experts={experts} users={users} person={PERSON_CATS.has(cat)} />
           </div>
           <div style={{ minWidth: 0 }}>
             <div className="lab">How the experts' odds moved</div>
@@ -280,7 +284,7 @@ function CategoryView({ d, cat, now }: { d: AwardsData; cat: string; now: number
             <thead><tr><th>Contender</th>{columns.map(c => <th key={c.a.id} className="n" title={c.cats.map(x => x.name).join(' · ')}>{c.a.short}</th>)}{oscarCat && <th className="n">Oscar</th>}</tr></thead>
             <tbody>{(contenders.length ? contenders : columns.flatMap(c => c.cats.flatMap(x => x.nominees.map(n => ({ name: (PERSON_CATS.has(cat) ? n.people : n.film) ?? '', film: n.film })))).filter((v, i, all) => v.name && all.findIndex(z => z.name === v.name) === i).slice(0, 15)).map(r => (
               <tr key={r.name}>
-                <td><b>{r.name}</b>{r.film && r.film !== r.name ? <small style={{ color: 'var(--o-ink3)' }}> · {r.film}</small> : null}</td>
+                <td><span style={{ display: 'flex', alignItems: 'center', gap: 6 }}><Thumb src={PERSON_CATS.has(cat) ? tmdbImg(personOf(d, r.name)?.photo, 'w92') : tmdbImg(filmOf(d, r.name)?.poster, 'w92')} h={24} round={PERSON_CATS.has(cat)} /><span><b>{r.name}</b>{r.film && r.film !== r.name ? <small style={{ color: 'var(--o-ink3)' }}> · {r.film}</small> : null}</span></span></td>
                 {columns.map(c => {
                   const hit = c.cats.flatMap(x => x.nominees).filter(n => sameContender(cat, n, r));
                   const won = hit.some(n => n.winner);
@@ -313,7 +317,7 @@ function CategoryView({ d, cat, now }: { d: AwardsData; cat: string; now: number
   );
 }
 
-function OddsBars({ rows, experts, users, person }: { rows: OddsRow[]; experts: OddsRow[]; users: OddsRow[]; person: boolean }) {
+function OddsBars({ d, rows, experts, users, person }: { d: AwardsData; rows: OddsRow[]; experts: OddsRow[]; users: OddsRow[]; person: boolean }) {
   const pctOf = (list: OddsRow[], n: string) => list.find(r => r.name === n)?.pct ?? null;
   return (
     <div style={{ display: 'grid', gap: 7 }}>
@@ -323,7 +327,7 @@ function OddsBars({ rows, experts, users, person }: { rows: OddsRow[]; experts: 
         const delta = ex ? ex.pct - ex.was : 0;
         return (
           <div key={r.name} style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1.2fr) minmax(0, 1fr) 64px', gap: 8, alignItems: 'center', fontSize: 12.5 }}>
-            <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}><b>{r.name}</b>{person && r.film ? <small style={{ color: 'var(--o-ink3)' }}> · {r.film}</small> : null}</div>
+            <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: 6 }}><Thumb src={person ? tmdbImg(personOf(d, r.name)?.photo, 'w92') : tmdbImg(filmOf(d, r.name)?.poster, 'w92')} h={26} round={person} /><span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}><b>{r.name}</b>{person && r.film ? <small style={{ color: 'var(--o-ink3)' }}> · {r.film}</small> : null}</span></div>
             <div style={{ display: 'grid', gap: 2 }}>
               <div style={{ height: 6, borderRadius: 3, width: `${e ?? 0}%`, background: 'var(--oc-cul)' }} />
               <div style={{ height: 6, borderRadius: 3, width: `${u ?? 0}%`, background: 'var(--o-other)' }} />
@@ -354,6 +358,77 @@ function OddsTrend({ history, names }: { history: { d: string; v: Record<string,
         {ends.map(e => <text key={e.n} x={W - r + 6} y={e.yy + 4} style={{ fontSize: 11, fill: 'var(--o-ink2)' }}>{e.n.length > 16 ? e.n.slice(0, 15) + '…' : e.n}</text>)}
         <text x={l} y={H - 4}>{dayShort(t0)}</text><text x={W - r} y={H - 4} textAnchor="end">{dayShort(t1)}</text>
       </svg>
+    </div>
+  );
+}
+
+/** A small poster (2:3) or a round portrait; a grey placeholder when TMDB has no image. */
+function Thumb({ src, h, round }: { src: string | null; h: number; round?: boolean }) {
+  const w = round ? h : Math.round(h * 0.67);
+  if (!src) return <span style={{ width: w, height: h, flex: 'none', borderRadius: round ? '50%' : 3, background: 'var(--o-grid)', display: 'inline-block' }} />;
+  return <img src={src} alt="" loading="lazy" style={{ width: w, height: h, flex: 'none', objectFit: 'cover', borderRadius: round ? '50%' : 3, background: 'var(--o-grid)' }} />;
+}
+
+/** The leading Best Picture contenders as posters; one click opens the film's card. */
+function Contenders({ d }: { d: AwardsData }) {
+  const rows = d.odds?.categories.picture?.experts?.slice(0, 10) ?? [];
+  const [pick, setPick] = useState<string | null>(null);
+  if (!rows.length || !d.tmdb) return null;
+  const sel = pick ?? rows[0].name;
+  const film = filmOf(d, sel);
+  return (
+    <section className="ocard">
+      <h2>The Best Picture contenders</h2>
+      <p className="dek">Gold Derby's experts' top ten, with their chance of a {d.odds?.stage === 'winners' ? 'win' : 'nomination'}. Click a poster for the film.</p>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(96px, 1fr))', gap: 10 }}>
+        {rows.map(r => {
+          const f = filmOf(d, r.name);
+          return (
+            <button key={r.name} onClick={() => setPick(r.name)} style={{ all: 'unset', cursor: 'pointer', display: 'grid', gap: 4, opacity: sel === r.name ? 1 : 0.8 }}>
+              <div style={{ position: 'relative', aspectRatio: '2 / 3', borderRadius: 6, overflow: 'hidden', background: 'var(--o-grid)', outline: sel === r.name ? '2px solid var(--oc-cul)' : 'none', outlineOffset: 2 }}>
+                {f?.poster && <img src={tmdbImg(f.poster, 'w185')!} alt={r.name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />}
+                <span style={{ position: 'absolute', right: 4, bottom: 4, background: 'rgba(0,0,0,.72)', color: '#fff', fontSize: 11, fontWeight: 700, padding: '1px 5px', borderRadius: 4 }}>{Math.round(r.pct)}%</span>
+              </div>
+              <span style={{ fontSize: 12, fontWeight: 600, lineHeight: 1.2 }}>{r.name}</span>
+            </button>
+          );
+        })}
+      </div>
+      {film && <FilmCard f={film} />}
+      <div className="osrc">Posters and details: TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</div>
+    </section>
+  );
+}
+
+function FilmCard({ f }: { f: TmdbFilm }) {
+  return (
+    <div style={{ display: 'grid', gridTemplateColumns: '120px minmax(0, 1fr)', gap: 16, marginTop: 16, alignItems: 'start' }}>
+      {f.poster ? <img src={tmdbImg(f.poster, 'w342')!} alt={f.title} style={{ width: 120, borderRadius: 8 }} /> : <div />}
+      <div style={{ minWidth: 0 }}>
+        <h3 style={{ margin: 0 }}>{f.title}{f.original ? <small style={{ color: 'var(--o-ink3)', fontWeight: 400 }}> · {f.original}</small> : null}</h3>
+        <div style={{ color: 'var(--o-ink3)', fontSize: 12.5, margin: '2px 0 8px' }}>{[f.director ? `Directed by ${f.director}` : null, f.release ? dayLong(Date.parse(f.release)) : null, f.runtime ? `${f.runtime} min` : null, f.genres?.slice(0, 3).join(', ')].filter(Boolean).join(' · ')}</div>
+        {f.overview && <p style={{ margin: '0 0 10px', fontSize: 13.5, lineHeight: 1.45, maxWidth: '70ch' }}>{f.overview}</p>}
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          {(f.cast ?? []).slice(0, 6).map(c => (
+            <div key={c.name} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12 }}>
+              <Thumb src={tmdbImg(c.photo, 'w92')} h={30} round />
+              <span><b>{c.name}</b><br /><small style={{ color: 'var(--o-ink3)' }}>{c.role}</small></span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/** A festival's programme (no prizes): the films, with their posters. */
+function Lineup({ d, titles }: { d: AwardsData; titles: string[] }) {
+  return (
+    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 2 }}>
+      {titles.slice(0, 24).map(t => {
+        const f = filmOf(d, t);
+        return <span key={t} title={f?.director ? `${t} · ${f.director}` : t} style={{ display: 'inline-flex', alignItems: 'center', gap: 5, fontSize: 12, border: '1px solid var(--o-line)', borderRadius: 4, padding: '2px 6px 2px 2px' }}><Thumb src={tmdbImg(f?.poster, 'w92')} h={22} />{t}</span>;
+      })}
     </div>
   );
 }

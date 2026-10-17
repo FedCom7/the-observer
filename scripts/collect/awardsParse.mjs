@@ -75,13 +75,13 @@ export function nomineeTables(w) {
 }
 
 /** "* Golden Lion: ''Film'' by Director" lines (festivals, critics groups). */
-export function colonList(w) {
+export function colonList(w, loose = false) {
   const out = [];
   for (const line of w.split('\n')) {
     const m = line.replace(/'''/g, '').match(/^\*+\s*((?:\[\[[^\]]*\]\]|[^:\n]){3,90}?)\s*:\s*(.+)$/);
     if (!m) continue;
     const category = clean(m[1]);
-    if (!/award|best|prize|lion|palme|golden|silver|grand|jury|special|people's choice|film|director|actor|actress|screenplay|cinematograph|score|performance|ensemble|picture/i.test(category) || isTv(category)) continue;
+    if ((!loose && !/award|best|prize|lion|palme|golden|silver|grand|jury|special|people's choice|film|director|actor|actress|screenplay|cinematograph|score|performance|ensemble|picture/i.test(category)) || isTv(category)) continue;
     const e = entry(`* ${m[2]}`);
     if (!e.film && !e.people) continue;
     out.push({ category, nominees: [{ ...e, people: e.people?.replace(/^by\s+|\s+for$/g, '') ?? null, winner: true }] });
