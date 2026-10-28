@@ -1,5 +1,7 @@
 import { BumpChart } from '../components/charts';
 import { Score, Tbc } from '../components/common';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { CFB_TABS, ConferencesScreen, HeismanScreen, HistoryScreen, HowScreen, PowerScreen, RankingsScreen, SeasonScreen, useCfbSeason } from './CfbScreens';
 import { Hero, Row } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, hhmm, isNight } from '../core/time';
@@ -10,6 +12,8 @@ const ROUNDS: CfpRound[] = ['First Round', 'Quarterfinal', 'Semifinal', 'Nationa
 /** College football: Top 25 race now, the 12-team playoff and every bowl later. */
 export function CfbPage() {
   const { cfb, events, news, now } = useData();
+  const [tab, setTab] = useTab(CFB_TABS);
+  const season = useCfbSeason(tab !== 'now');
   if (!cfb) return <Hero id="cfb" dek="Loading college football…" />;
   const matchups = events.filter(e => e.passion === 'cfb' && e.sub === 'Top 25 matchup' && e.start > now - 4 * 3600e3);
   const cfpGames = cfb.post.filter(g => g.cfp);
@@ -29,6 +33,15 @@ export function CfbPage() {
   return (
     <>
       <Hero id="cfb" dek={`Week ${cfb.week ?? ''} of the ${cfb.season} season. ${cfb.cfp ? 'The playoff committee has released its rankings.' : 'The first playoff committee rankings arrive in November.'} The 12-team playoff starts ${cfb.firstGame ? dayLong(cfb.firstGame) : 'in December'}.`} />
+      <ScreenTabs tabs={CFB_TABS} tab={tab} set={setTab} label="College football screens" />
+      {tab !== 'now' ? (!season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'rankings' ? <RankingsScreen d={season} />
+        : tab === 'conferences' ? <ConferencesScreen d={season} />
+        : tab === 'heisman' ? <HeismanScreen d={season} />
+        : tab === 'history' ? <HistoryScreen d={season} />
+        : <HowScreen d={season} />) : <>
       <section className="s-top">
         <div className="ocard s-next">
           <div className="lab">College Football Playoff</div>
@@ -100,6 +113,7 @@ export function CfbPage() {
         <div className="lab">Playoff calendar · Rome time</div>
         <div className="olist">{events.filter(e => e.passion === 'cfb' && e.sub?.startsWith('College Football Playoff')).map(e => <Row key={e.id} e={e} right={e.state === 'post' ? 'Final' : `in ${countdown(e.start - now)}`} />)}</div>
       </section>
+      </>}
     </>
   );
 }

@@ -13,16 +13,18 @@ export interface Rival {
 }
 export interface SoccerSeason { season: string; start: number; division: string; pld: number | null; w: number | null; d: number | null; l: number | null; gf: number | null; ga: number | null; pts: number | null; pos: number | null; champion: boolean; cup: string | null; cupWon: boolean; europe: { comp: string; result: string }[]; scorer: string | null; goals: number | null }
 export interface NflSeason { season: string; start: number; league: string; conference: string; division: string; finish: number | null; w: number | null; l: number | null; t: number | null; postseason: string | null; coach: string | null; champion: boolean; conferenceChampion: boolean; playoffs: boolean }
+/** MLB: champion = World Series, conferenceChampion = pennant */
+export interface MlbSeason { gb: string | null; divisionChampion: boolean; wildCard: boolean }
 export interface CfbSeason { season: string; start: number; coach: string | null; conference: string | null; w: number | null; l: number | null; t: number | null; confW: number | null; confL: number | null; confStanding: string | null; bowl: string | null; bowlResult: string | null; apRank: number | null; champion: boolean; conferenceChampion: boolean }
-export type Season = SoccerSeason & NflSeason & CfbSeason;
+export type Season = SoccerSeason & NflSeason & CfbSeason & MlbSeason;
 export interface Competition { name: string; phase: string | null; w: number; d: number; l: number; gf: number; ga: number; games: { date: string; opp: string; home: boolean; us: number | null; them: number | null }[] }
 export interface TeamData {
-  key: 'milan' | 'pats' | 'texas'; name: string; sport: 'soccer' | 'football'; league: string; id: string;
+  key: 'milan' | 'pats' | 'texas' | 'dodgers'; name: string; sport: 'soccer' | 'football' | 'baseball'; league: string; id: string;
   card: TeamCard | null; stats: FootballStats | null; competitions: Competition[] | null;
   history: Season[]; trophies: { type: string; competition: string; titles: number; seasons: string[] }[];
   espnSeasons: { season: number; w: number; d: number; l: number; pf: number; pa: number }[];
   rivals: Rival[];
 }
-export interface TeamsData { updated: string; milan: TeamData; pats: TeamData; texas: TeamData }
+export interface TeamsData { updated: string; milan: TeamData; pats: TeamData; texas: TeamData; dodgers?: TeamData }
 
-export const loadTeams = () => getJSON<TeamsData>('/data/teams.json', 15 * MIN);
+export const loadTeams = () => getJSON<TeamsData>(`${import.meta.env.BASE_URL}data/teams.json`, 15 * MIN);

@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState, type R
 import { cfbRankings, espnNews, liveSummary, nflDivision, scoreboard, soccerTable, teamSchedule } from '../sources/espn';
 import { f1Data, type F1Data } from '../sources/f1';
 import { cfbData, type CfbData } from '../sources/cfb';
+import { fashionEvents, loadFashion, type FashionData } from '../sources/fashion';
 import { loadRoyal, royalEvents, type RoyalData } from '../sources/royal';
 import { loadSki, skiEvents, type SkiData } from '../sources/ski';
 import { dakarEvents, loadDakar, type DakarData } from '../sources/dakar';
@@ -12,8 +13,11 @@ import { awardsEvents, loadAwards, type AwardsData } from '../sources/awards';
 import { loadTeams, type TeamsData } from '../sources/teams';
 import { loadTennis, type TennisData } from '../sources/tennis';
 import { loadWec, wecEvents, type WecData } from '../sources/wec';
-import { mlbData, type MlbData } from '../sources/mlb';
-import { nbaData, type NbaData } from '../sources/nba';
+import { footballEvents, loadFootball, type FootballData } from '../sources/football';
+import { loadOlympics, olympicsEvents, type OlympicsData } from '../sources/olympics';
+import { loadMore, moreEvents, type MoreData } from '../sources/more';
+import { mlbData, mlbStanding, type MlbData } from '../sources/mlb';
+import { nbaData, nbaStanding, type NbaData } from '../sources/nba';
 import type { InOrbit } from '../sources/space';
 import { loadSpace, nasaNews, orbitOf, spaceEvents, type SpaceData } from '../sources/spaceData';
 import type { ElectionData } from './elections';
@@ -23,7 +27,7 @@ import { HOUR, MIN } from './time';
 import type { NewsItem, ObsEvent, PassionId, SourceStatus, Standing } from './types';
 
 // ESPN team ids
-const MILAN = '103', PATRIOTS = '17', TEXAS = '251';
+const MILAN = '103', PATRIOTS = '17', TEXAS = '251', DODGERS = '19';
 
 interface Data {
   events: ObsEvent[];
@@ -37,6 +41,7 @@ interface Data {
   cfb?: CfbData;
   wec?: WecData;
   royal?: RoyalData;
+  fashion?: FashionData;
   nba?: NbaData;
   ski?: SkiData;
   space?: SpaceData;
@@ -47,6 +52,9 @@ interface Data {
   awards?: AwardsData;
   teams?: TeamsData;
   tennis?: TennisData;
+  football?: FootballData;
+  olympics?: OlympicsData;
+  more?: MoreData;
 }
 
 type Patch = Partial<Data> & { events?: ObsEvent[] };
@@ -61,7 +69,7 @@ interface Source {
 interface CollectedEvent { id: string; passion: PassionId; title: string; sub?: string; start: string; weight?: number; approxTime?: boolean; place?: string; loc?: [number, number]; link?: string }
 interface CollectedNews { id: string; passion: PassionId; title: string; source: string; time: string; url?: string }
 
-const collected = async <T,>(name: string) => getJSON<T>(`/data/${name}.json`, 5 * MIN);
+const collected = async <T,>(name: string) => getJSON<T>(`${import.meta.env.BASE_URL}data/${name}.json`, 5 * MIN);
 
 async function collectedCalendar(): Promise<ObsEvent[]> {
   const j = await collected<{ events: CollectedEvent[] }>('calendar');
@@ -83,7 +91,7 @@ const primetime = (e: ObsEvent) => {
 const SOURCES: Source[] = [
   { key: 'calendar', every: 10 * MIN, run: async () => ({ events: await collectedCalendar() }) },
   { key: 'feeds', every: 10 * MIN, run: async () => ({ news: await collectedNews() }) },
-  { key: 'elections', every: 2 * MIN, run: async () => ({ elections: await getJSON<ElectionData>('/data/elections.json', 2 * MIN) }) },
+  { key: 'elections', every: 2 * MIN, run: async () => ({ elections: await getJSON<ElectionData>(`${import.meta.env.BASE_URL}data/elections.json`, 2 * MIN) }) },
   // Election night: civicAPI and Open America straight from the browser, every minute (no requests outside the results window)
   { key: 'live', every: MIN, run: async () => { const l = await loadLive(); return l ? { live: l } : {}; } },
   { key: 'milan', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('milan', 'soccer', 'all', MILAN)).map(e => ({ ...e, weight: 3 })) }) },
@@ -103,13 +111,22 @@ const SOURCES: Source[] = [
   { key: 'dakar', every: 10 * MIN, run: async () => { const d = await loadDakar(); return { dakar: d, events: dakarEvents(d) }; } },
   { key: 'ski', every: 10 * MIN, run: async () => { const k = await loadSki(); return { ski: k, events: skiEvents(k) }; } },
   { key: 'royal', every: 10 * MIN, run: async () => { const r = await loadRoyal(); return { royal: r, events: royalEvents(r) }; } },
+  { key: 'fashion', every: 10 * MIN, run: async () => { const f = await loadFashion(); return { fashion: f, events: fashionEvents(f) }; } },
+  { key: 'football', every: 10 * MIN, run: async () => { const f = await loadFootball(); return { football: f, events: footballEvents(f) }; } },
+  { key: 'olympics', every: 30 * MIN, run: async () => { const o = await loadOlympics(); return { olympics: o, events: olympicsEvents(o) }; } },
+  { key: 'more', every: 10 * MIN, run: async () => { const m = await loadMore(); return { more: m, events: moreEvents(m) }; } },
   { key: 'wec', every: 2 * MIN, run: async () => { const w = await loadWec(); return { wec: w, events: wecEvents(w) }; } },
   { key: 'cfbdata', every: 10 * MIN, run: async () => { const c = await cfbData(); return { cfb: c.data, events: c.events }; } },
-  { key: 'mlb', every: 10 * MIN, run: async () => ({ events: (await scoreboard('mlb', 'baseball', 'mlb')).map(e => ({ ...e, weight: 2 })) }) },
-  { key: 'mlbdata', every: 10 * MIN, run: async () => { const m = await mlbData(); return { mlb: m, events: m.postseasonEvents }; } },
-  { key: 'dodgers', every: 30 * MIN, run: async () => ({ events: (await teamSchedule('mlb', 'baseball', 'mlb', '19')).map(e => ({ ...e, weight: 3 as const })) }) },
-  { key: 'nba', every: 15 * MIN, run: async () => ({ events: (await scoreboard('nba', 'basketball', 'nba')).map(e => ({ ...e, weight: 1 })) }) },
-  { key: 'nbadata', every: 10 * MIN, run: async () => { const n = await nbaData(); return { nba: n, events: n.events }; } },
+  // MLB and NBA: the regular season stays on their pages (they read the scoreboard themselves);
+  // the calendar gets the postseason games and the control room the state of the league.
+  { key: 'mlbdata', every: 10 * MIN, run: async () => { const m = await mlbData(); return { mlb: m, events: m.postseasonEvents, standings: { mlb: mlbStanding(m) } }; } },
+  { key: 'dodgers', every: 30 * MIN, run: async () => {
+      // The default schedule is the postseason once it starts: add the regular season for the season map
+      const [reg, post] = await Promise.all([teamSchedule('dodgers', 'baseball', 'mlb', DODGERS, '?seasontype=2'), teamSchedule('dodgers', 'baseball', 'mlb', DODGERS)]);
+      return { events: [...reg, ...post].map(e => ({ ...e, weight: 3 as const })) };
+    },
+  },
+  { key: 'nbadata', every: 10 * MIN, run: async () => { const n = await nbaData(); return { nba: n, events: n.events, standings: { nba: nbaStanding(n) } }; } },
   {
     key: 'f1', every: 60e3, run: async () => {
       const { data, events } = await f1Data();
@@ -124,10 +141,9 @@ const SOURCES: Source[] = [
         espnNews('nfl', 'football/nfl/news?limit=6'),
         espnNews('milan', 'soccer/ita.1/news?limit=20', h => /milan|rossoneri|allegri|serie a/i.test(h)),
         espnNews('texas', `football/college-football/news?team=${TEXAS}&limit=6`),
-        espnNews('mlb', 'baseball/mlb/news?limit=5'),
-        espnNews('mlb', 'baseball/mlb/news?team=19&limit=5'),
-        espnNews('nba', 'basketball/nba/news?limit=5'),
-        espnNews('nba', 'basketball/nba/news?team=13&limit=6'),
+        espnNews('mlb', 'baseball/mlb/news?limit=8'),
+        espnNews('dodgers', `baseball/mlb/news?team=${DODGERS}&limit=8`),
+        espnNews('nba', 'basketball/nba/news?limit=8'),
         espnNews('f1', 'racing/f1/news?limit=8'),
       ]);
       return { news: all.flatMap(r => (r.status === 'fulfilled' ? r.value : [])) };
@@ -148,6 +164,8 @@ function duration(e: ObsEvent) {
   if (e.passion === 'f1') return e.weight === 3 ? 2 * HOUR : HOUR;
   if (e.passion === 'elez') return 10 * HOUR;
   if (e.passion === 'cicl') return (/Stage|stage/.test(e.title) ? 5 : 6.5) * HOUR;
+  if (e.passion === 'more') return e.id.startsWith('more:wrc') ? 3.4 * 24 * HOUR : /500/.test(e.title) ? 3.5 * HOUR : /vendee/.test(e.id) ? HOUR : /Q2/.test(e.id) ? 25 * MIN : 50 * MIN;
+  if (e.passion === 'oly') return /ceremony/i.test(e.title) ? 4 * HOUR : 2 * 24 * HOUR;
   if (e.passion === 'wec') return e.weight === 3 ? (/24 Hours/.test(e.title) ? 24 : /8 Hours/.test(e.title) ? 8 : /1812/.test(e.title) ? 10 : 6) * HOUR : HOUR;
   return 3 * HOUR;
 }
@@ -195,6 +213,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let cfb: CfbData | undefined;
     let wec: WecData | undefined;
     let royal: RoyalData | undefined;
+    let fashion: FashionData | undefined;
     let nba: NbaData | undefined;
     let ski: SkiData | undefined;
     let space: SpaceData | undefined;
@@ -205,6 +224,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
     let awards: AwardsData | undefined;
     let teams: TeamsData | undefined;
     let tennis: TennisData | undefined;
+    let football: FootballData | undefined;
+    let olympics: OlympicsData | undefined;
+    let more: MoreData | undefined;
     Object.values(bySource).forEach(p => {
       p.events?.forEach(e => {
         const prev = events.get(e.id);
@@ -221,6 +243,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.cfb) cfb = p.cfb;
       if (p.wec) wec = p.wec;
       if (p.royal) royal = p.royal;
+      if (p.fashion) fashion = p.fashion;
       if (p.nba) nba = p.nba;
       if (p.ski) ski = p.ski;
       if (p.space) space = p.space;
@@ -231,6 +254,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
       if (p.awards) awards = p.awards;
       if (p.teams) teams = p.teams;
       if (p.tennis) tennis = p.tennis;
+      if (p.football) football = p.football;
+      if (p.olympics) olympics = p.olympics;
+      if (p.more) more = p.more;
     });
     Object.entries(live).forEach(([id, patch]) => {
       const e = events.get(id);
@@ -249,6 +275,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       cfb,
       wec,
       royal,
+      fashion,
       nba,
       ski,
       space,
@@ -259,6 +286,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
       awards,
       teams,
       tennis,
+      football,
+      olympics,
+      more,
     };
   }, [bySource, live]);
 

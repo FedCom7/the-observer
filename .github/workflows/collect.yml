@@ -31,6 +31,7 @@ jobs:
       - name: Run collectors
         env:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
+          CFBD_KEY: ${{ secrets.CFBD_KEY }}
         run: |
           if [ "${{ github.event.schedule }}" = "2,32,47 * * * *" ]; then node scripts/collect/index.mjs awards; else node scripts/collect/index.mjs; fi
         continue-on-error: true

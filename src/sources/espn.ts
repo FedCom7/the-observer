@@ -9,8 +9,11 @@ const V2 = 'https://site.api.espn.com/apis/v2/sports';
 
 const SOCCER = new Set(['soccer']);
 
+const logoOf = (t: any, rel: string): string | undefined => (t.logos ?? []).find((l: any) => l.rel?.includes(rel) && l.rel?.includes('full') && l.rel.length === 2)?.href ?? (rel === 'default' ? t.logo : undefined);
+
 function side(c: any, mineId?: string): Side {
   const t = c.team ?? {};
+  const rank = c.curatedRank?.current;
   const score = typeof c.score === 'object' ? c.score?.displayValue : c.score;
   return {
     abbr: t.abbreviation ?? '',
@@ -18,6 +21,10 @@ function side(c: any, mineId?: string): Side {
     score: score ?? undefined,
     winner: c.winner,
     mine: mineId !== undefined && String(t.id) === mineId,
+    id: t.id !== undefined ? String(t.id) : undefined,
+    logo: logoOf(t, 'default'),
+    logoDark: logoOf(t, 'dark'),
+    rank: rank && rank <= 25 ? rank : undefined,
   };
 }
 
@@ -61,8 +68,8 @@ export function toEvent(e: any, passion: PassionId, sport: string, league: strin
 }
 
 /** A team's full schedule. Soccer splits results and fixtures into two calls. */
-export async function teamSchedule(passion: PassionId, sport: string, league: string, teamId: string): Promise<ObsEvent[]> {
-  const base = `${SITE}/${sport}/${league}/teams/${teamId}/schedule`;
+export async function teamSchedule(passion: PassionId, sport: string, league: string, teamId: string, query = ''): Promise<ObsEvent[]> {
+  const base = `${SITE}/${sport}/${league}/teams/${teamId}/schedule${query}`;
   const urls = SOCCER.has(sport) ? [base, base + '?fixture=true'] : [base];
   const pages = await Promise.all(urls.map(u => getJSON<any>(u, 30 * MIN)));
   const seen = new Set<string>();

@@ -43,10 +43,13 @@ async function eventDetails(ev) {
     const t = text(r);
     const parts = t.split(' | ');
     const codexAt = parts.findIndex(p => /^\d{4}$/.test(p));
-    const name = parts[codexAt + 1] ?? '';
-    const cat = parts[codexAt + 3] ?? '';
+    // While a race runs or its results are checked FIS adds a status cell ("live", "review") before the name
+    let at0 = codexAt + 1;
+    while (parts[at0] && /^(live|review|under review|official|unofficial|provisional)( results)?$/i.test(parts[at0])) at0++;
+    const name = parts[at0] ?? '';
+    const cat = parts[at0 + 2] ?? '';
     // Gender cells are single letters (M / W) after the category; both present means a mixed team event
-    const after = parts.slice(codexAt + 2, codexAt + 8);
+    const after = parts.slice(at0 + 1, at0 + 7);
     const hasM = after.includes('M'), hasW = after.includes('W');
     const gender = hasM && !hasW ? 'men' : hasW && !hasM ? 'women' : /team|parallel/i.test(name) ? 'mixed' : hasM ? 'men' : 'women';
     if (/training/i.test(name) || cat === 'TRA') return []; // keep official races only

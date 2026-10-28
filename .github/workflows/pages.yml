@@ -1,0 +1,50 @@
+name: Deploy Pages
+
+# Builds the site for https://fedcom7.github.io/the-observer/ on every push,
+# and again after each data refresh (pushes made by the bot don't trigger workflows).
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ['Collect data']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Build
+        env:
+          PAGES_BASE: /the-observer/
+        run: |
+          npm run build
+          # Single-page app: unknown paths (/the-observer/p/nfl...) fall back to the app
+          cp dist/index.html dist/404.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

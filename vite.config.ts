@@ -36,6 +36,8 @@ function collectors(): Plugin {
   };
 }
 
+// GitHub Pages serves the site from /the-observer/ (set by the deploy workflow); locally it is the root
 export default defineConfig({
+  base: process.env.PAGES_BASE ?? '/',
   plugins: [react(), collectors()],
 });

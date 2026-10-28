@@ -12,6 +12,8 @@ export interface Award {
   id: string; name: string; short: string; group: AwardGroup; tz: string;
   dates: AwardDate[]; state: 'pending' | 'nominations' | 'winners';
   edition: { page: string | null; url: string | null; categories: AwardCategory[]; span: [string, string] | null; lineup?: string[] | null } | null;
+  /** Last year's categories, to lay out the cards before this year's are announced. */
+  template?: { page: string | null; fetched: string; categories: { name: string; oscar: string | null }[] } | null;
   official?: { fetched: string; url: string } | null;
   news?: RadarItem[];
 }
@@ -45,7 +47,16 @@ export interface TmdbPerson { id?: number; name?: string; photo?: string | null;
 /** TMDB image URL (w92, w185, w342, w780…). */
 export const tmdbImg = (path: string | null | undefined, size = 'w185') => (path ? `https://image.tmdb.org/t/p/${size}${path}` : null);
 
-export const loadAwards = () => getJSON<AwardsData>('/data/awards.json', 10 * MIN);
+export const loadAwards = () => getJSON<AwardsData>(`${import.meta.env.BASE_URL}data/awards.json`, 10 * MIN);
+
+export const GROUPS: { id: AwardGroup; label: string; color: string }[] = [
+  { id: 'festival', label: 'Festivals', color: 'var(--o-s3)' },
+  { id: 'critics', label: 'Critics', color: 'var(--o-s4)' },
+  { id: 'major', label: 'Globes & BAFTA', color: 'var(--o-s2)' },
+  { id: 'guild', label: 'Guilds', color: 'var(--o-s1)' },
+  { id: 'oscars', label: 'Oscars', color: 'var(--oc-cul)' },
+];
+export const colorOf = (g: AwardGroup) => GROUPS.find(x => x.id === g)!.color;
 
 export const KIND_LABEL: Record<string, string> = {
   nominations: 'nominations', ceremony: 'ceremony', longlist: 'longlist', shortlist: 'shortlists', festival: 'festival',

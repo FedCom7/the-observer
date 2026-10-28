@@ -1,4 +1,4 @@
-// My teams (AC Milan, New England Patriots, Texas Longhorns), all automatic:
+// My teams (AC Milan, New England Patriots, Texas Longhorns, Los Angeles Dodgers), all automatic:
 // - the whole history, season by season, from Wikipedia's "List of … seasons" pages, and
 //   the trophy count (Milan's honours table, the Patriots' and Texas's seasons);
 // - every game since 2001 from ESPN, for head-to-head records against the rivals;
@@ -7,7 +7,7 @@
 //   strongest teams of the moment, from ESPN.
 import { readFile } from 'node:fs/promises';
 import { get, wikitext } from './lib.mjs';
-import { cfbSeasons, grid, milanSeasons, nflSeasons, plain, rivalrySeries } from './teamsParse.mjs';
+import { cfbSeasons, grid, milanSeasons, mlbSeasons, nflSeasons, plain, rivalrySeries } from './teamsParse.mjs';
 
 const SITE = 'https://site.api.espn.com/apis/site/v2/sports';
 const V2 = 'https://site.api.espn.com/apis/v2/sports';
@@ -26,13 +26,19 @@ const TEAMS = {
     sport: 'football', league: 'college-football', id: '251', name: 'Texas Longhorns', us: 'Texas', seasonsPage: 'List of Texas Longhorns football seasons', parse: cfbSeasons,
     rivals: [{ id: '201', name: 'Oklahoma', page: 'Red River Rivalry', label: 'Red River Rivalry' }, { id: '245', name: 'Texas A&M', page: 'Texas–Texas A&M football rivalry', label: 'Lone Star Showdown' }, { id: '8', name: 'Arkansas', page: 'Arkansas–Texas football rivalry' }, { id: '2641', name: 'Texas Tech', page: 'Texas–Texas Tech football rivalry' }],
   },
+  dodgers: {
+    sport: 'baseball', league: 'mlb', id: '19', name: 'Los Angeles Dodgers', us: 'Dodgers', seasonsPage: 'List of Los Angeles Dodgers seasons', parse: mlbSeasons,
+    rivals: [{ id: '26', name: 'Giants', page: 'Dodgers–Giants rivalry' }, { id: '25', name: 'Padres', page: 'Dodgers–Padres rivalry' }, { id: '10', name: 'Yankees', page: 'Dodgers–Yankees rivalry', label: 'Twelve World Series' }, { id: '3', name: 'Angels', page: 'Freeway Series', label: 'Freeway Series' }],
+  },
 };
 
 const statOf = (stats, n) => stats?.find(s => s.name === n)?.value ?? null;
+const ordinal = n => `${n}${n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] ?? 'th'}`;
 
 /** One season of a team's games from ESPN: [{ date, opp, oppName, home, us, them, result, comp }] */
 async function espnSeason(t, season) {
-  const j = await get(`${SITE}/${t.sport}/${t.league}/teams/${t.id}/schedule?season=${season}`, { json: true });
+  // Baseball: in October the default schedule is the postseason only
+  const j = await get(`${SITE}/${t.sport}/${t.league}/teams/${t.id}/schedule?season=${season}${t.sport === 'baseball' ? '&seasontype=2' : ''}`, { json: true });
   return (j.events ?? []).map(e => {
     const c = e.competitions?.[0];
     const me = c?.competitors?.find(x => x.id === t.id), op = c?.competitors?.find(x => x.id !== t.id);
@@ -58,13 +64,19 @@ async function honours(page) {
   }).filter(h => h.competition && h.titles);
 }
 
-/** Trophy count from the seasons themselves (NFL and college football). */
+/** Trophy count from the seasons themselves (NFL, MLB and college football). */
 function trophiesFromSeasons(key, seasons) {
   const pick = f => seasons.filter(f).map(s => s.season);
   if (key === 'pats') return [
     { type: 'Championships', competition: 'Super Bowl', seasons: pick(s => s.champion) },
     { type: 'Championships', competition: 'AFC Championships', seasons: pick(s => s.conferenceChampion) },
     { type: 'Championships', competition: 'Division titles', seasons: pick(s => s.finish === 1 && s.playoffs) },
+    { type: 'Seasons', competition: 'Playoff appearances', seasons: pick(s => s.playoffs) },
+  ].map(h => ({ ...h, titles: h.seasons.length }));
+  if (key === 'dodgers') return [
+    { type: 'Championships', competition: 'World Series', seasons: pick(s => s.champion) },
+    { type: 'Championships', competition: 'NL pennants', seasons: pick(s => s.conferenceChampion) },
+    { type: 'Championships', competition: 'Division titles', seasons: pick(s => s.divisionChampion) },
     { type: 'Seasons', competition: 'Playoff appearances', seasons: pick(s => s.playoffs) },
   ].map(h => ({ ...h, titles: h.seasons.length }));
   return [
@@ -81,7 +93,8 @@ async function teamCard(t, id) {
   const st = tm.record?.items?.[0]?.stats ?? [];
   return {
     id, name: tm.displayName, short: tm.shortDisplayName ?? tm.name, abbr: tm.abbreviation, color: tm.color ? `#${tm.color}` : null, logo: tm.logos?.[0]?.href ?? null,
-    standing: tm.standingSummary ?? null, record: tm.record?.items?.[0]?.summary ?? null, rank: tm.rank ?? null,
+    // ESPN's summary for baseball can lag behind the division rank ("5th in NL West" for the leader)
+    standing: t.sport === 'baseball' && statOf(st, 'divisionRank') && tm.standingSummary ? tm.standingSummary.replace(/^\d+(st|nd|rd|th)/, ordinal(statOf(st, 'divisionRank'))) : tm.standingSummary ?? null, record: tm.record?.items?.[0]?.summary ?? null, rank: tm.rank ?? null,
     gp: statOf(st, 'gamesPlayed'), w: statOf(st, 'wins'), d: statOf(st, 'ties'), l: statOf(st, 'losses'), pf: statOf(st, 'pointsFor'), pa: statOf(st, 'pointsAgainst'),
     pts: t.sport === 'soccer' ? statOf(st, 'points') : null, pos: t.sport === 'soccer' ? statOf(st, 'rank') : null, seed: statOf(st, 'playoffSeed'),
   };
@@ -99,11 +112,16 @@ async function footballStats(t, id) {
   } catch { return null; }
 }
 
-/** The strongest teams of the moment: Serie A leaders, the NFL's best records, the AP top teams. */
+/** The strongest teams of the moment: Serie A leaders, the NFL's and MLB's best records, the AP top teams. */
 async function strongest(t, exclude) {
   if (t.sport === 'soccer') {
     const j = await get(`${V2}/soccer/${t.league}/standings`, { json: true });
     return (j.children?.[0]?.standings?.entries ?? j.standings?.entries ?? []).map(e => e.team.id).filter(id => !exclude.includes(id)).slice(0, 3);
+  }
+  if (t.league === 'mlb') {
+    const j = await get(`${V2}/baseball/mlb/standings`, { json: true });
+    const all = (j.children ?? []).flatMap(c => c.standings.entries).map(e => ({ id: e.team.id, wp: statOf(e.stats, 'winPercent') ?? 0, diff: statOf(e.stats, 'pointDifferential') ?? statOf(e.stats, 'differential') ?? 0 }));
+    return all.filter(x => !exclude.includes(x.id)).sort((a, b) => b.wp - a.wp || b.diff - a.diff).slice(0, 3).map(x => x.id);
   }
   if (t.league === 'nfl') {
     const j = await get(`${V2}/football/nfl/standings`, { json: true });

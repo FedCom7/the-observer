@@ -8,7 +8,7 @@ export interface SkiRace { raceid: string; eventid: string; category: 'WC' | 'WS
 export interface SkiStanding { name: string; nation: string; rank: number; points: number; DH: number | null; SG: number | null; GS: number | null; SL: number | null }
 export interface SkiData { updated: string; season: number; races: SkiRace[]; standings: { season: number; final: boolean; men: SkiStanding[]; women: SkiStanding[] }; worlds: { place: string; from: string; to: string } | null }
 
-export const loadSki = () => getJSON<SkiData>('/data/ski.json', 10 * MIN);
+export const loadSki = () => getJSON<SkiData>(`${import.meta.env.BASE_URL}data/ski.json`, 10 * MIN);
 
 const LOC: Record<string, [number, number]> = {
   Soelden: [11.0, 46.97], Levi: [24.8, 67.8], Gurgl: [11.03, 46.87], 'Copper Mountain': [-106.15, 39.5], 'Beaver Creek': [-106.52, 39.6], Killington: [-72.8, 43.62],

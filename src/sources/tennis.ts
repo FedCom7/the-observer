@@ -14,7 +14,7 @@ export interface TennisData {
   champions: { year: number; slam: string; name: string; country: string | null }[];
 }
 
-export const loadTennis = () => getJSON<TennisData>('/data/tennis.json', 5 * MIN);
+export const loadTennis = () => getJSON<TennisData>(`${import.meta.env.BASE_URL}data/tennis.json`, 5 * MIN);
 export const ROUNDS = ['Round 1', 'Round 2', 'Round 3', 'Round 4', 'Quarterfinal', 'Semifinal', 'Final'];
 
 interface EspnCompetitor { id: string; winner?: boolean; seed?: string; athlete?: { id?: string; displayName?: string; shortName?: string; flag?: { alt?: string } }; linescores?: { value: number; tiebreak?: number; winner?: boolean }[] }

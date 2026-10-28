@@ -1,9 +1,12 @@
 import { MultiLine, PointsBars } from '../components/charts';
 import { Score } from '../components/common';
 import { Hero, ocol } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
 import { useData } from '../core/store';
 import { countdown, dayLong, dayShort, hhmm } from '../core/time';
 import type { F1Race, F1Session } from '../sources/f1';
+import { useF1Season } from '../sources/f1Season';
+import { CircuitsScreen, DriversScreen, F1_TABS, HistoryScreen, HowScreen, PowerScreen, SeasonScreen } from './F1Screens';
 
 const COLORS = ['var(--o-s1)', 'var(--o-s2)', 'var(--o-s3)', 'var(--o-s4)', 'var(--oc-cul)', 'var(--oc-tech)'];
 const surname = (n: string) => n.split(' ').slice(-1)[0];
@@ -11,6 +14,8 @@ const surname = (n: string) => n.split(' ').slice(-1)[0];
 /** Formula 1: every session in Rome time, the running order, both championships. */
 export function F1Page() {
   const { f1, news, now } = useData();
+  const [tab, setTab] = useTab(F1_TABS);
+  const season = useF1Season(tab !== 'now');
   if (!f1) return <Hero id="f1" dek="Loading Formula 1…" />;
   const races = f1.races.filter(r => !r.cancelled);
   const raceStart = (r: F1Race) => r.sessions.find(s => s.key === 'Race')?.start ?? r.sessions[r.sessions.length - 1]?.start ?? 0;
@@ -38,6 +43,14 @@ export function F1Page() {
   return (
     <>
       <Hero id="f1" dek={`${weekend ? `${weekend.short} ${liveSession ? 'is live' : now >= (weekend.sessions[0]?.start ?? 0) ? 'this weekend' : 'is next'}: round ${races.indexOf(weekend) + 1} of ${races.length}. ` : ''}${p1 ? `${p1.name} leads ${p2 ? surname(p2.name) : ''} by ${gap} points with ${maxLeft} still available${gap > maxLeft ? ' — the title is decided' : gap > maxLeft - 25 ? ' and can clinch at the next race' : ''}.` : ''}`} />
+      <ScreenTabs tabs={F1_TABS} tab={tab} set={setTab} label="Formula 1 screens" />
+      {tab !== 'now' ? (!season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'drivers' ? <DriversScreen d={season} />
+        : tab === 'circuits' ? <CircuitsScreen d={season} />
+        : tab === 'history' ? <HistoryScreen d={season} />
+        : <HowScreen d={season} />) : <>
 
       <section className="s-top">
         <div className="ocard s-next">
@@ -128,6 +141,7 @@ export function F1Page() {
           <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
         </div>
       </section>
+      </>}
     </>
   );
 }

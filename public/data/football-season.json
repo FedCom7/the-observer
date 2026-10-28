@@ -1,0 +1,5541 @@
+{
+ "updated": "2026-10-28T05:38:34.795Z",
+ "elo": {
+  "table": [
+   {
+    "rank": 1,
+    "code": "ES",
+    "name": "Spain",
+    "rating": 2287,
+    "peak": 2287
+   },
+   {
+    "rank": 2,
+    "code": "AR",
+    "name": "Argentina",
+    "rating": 2175,
+    "peak": 2200
+   },
+   {
+    "rank": 3,
+    "code": "EN",
+    "name": "England",
+    "rating": 2146,
+    "peak": 2213
+   },
+   {
+    "rank": 4,
+    "code": "FR",
+    "name": "France",
+    "rating": 2104,
+    "peak": 2163
+   },
+   {
+    "rank": 5,
+    "code": "PT",
+    "name": "Portugal",
+    "rating": 2055,
+    "peak": 2060
+   },
+   {
+    "rank": 6,
+    "code": "BR",
+    "name": "Brazil",
+    "rating": 2001,
+    "peak": 2196
+   },
+   {
+    "rank": 7,
+    "code": "CO",
+    "name": "Colombia",
+    "rating": 1990,
+    "peak": 2069
+   },
+   {
+    "rank": 8,
+    "code": "CH",
+    "name": "Switzerland",
+    "rating": 1975,
+    "peak": 1975
+   },
+   {
+    "rank": 9,
+    "code": "NL",
+    "name": "Netherlands",
+    "rating": 1974,
+    "peak": 2153
+   },
+   {
+    "rank": 10,
+    "code": "BE",
+    "name": "Belgium",
+    "rating": 1956,
+    "peak": 2157
+   },
+   {
+    "rank": 11,
+    "code": "IT",
+    "name": "Italy",
+    "rating": 1910,
+    "peak": 2135
+   },
+   {
+    "rank": 12,
+    "code": "NO",
+    "name": "Norway",
+    "rating": 1900,
+    "peak": 1972
+   },
+   {
+    "rank": 13,
+    "code": "JP",
+    "name": "Japan",
+    "rating": 1897,
+    "peak": 1925
+   },
+   {
+    "rank": 14,
+    "code": "MA",
+    "name": "Morocco",
+    "rating": 1896,
+    "peak": 1923
+   },
+   {
+    "rank": 15,
+    "code": "DE",
+    "name": "Germany",
+    "rating": 1895,
+    "peak": 2222
+   },
+   {
+    "rank": 16,
+    "code": "MX",
+    "name": "Mexico",
+    "rating": 1868,
+    "peak": 1985
+   },
+   {
+    "rank": 17,
+    "code": "DK",
+    "name": "Denmark",
+    "rating": 1861,
+    "peak": 2074
+   },
+   {
+    "rank": 18,
+    "code": "HR",
+    "name": "Croatia",
+    "rating": 1856,
+    "peak": 2015
+   },
+   {
+    "rank": 19,
+    "code": "UY",
+    "name": "Uruguay",
+    "rating": 1851,
+    "peak": 2104
+   },
+   {
+    "rank": 20,
+    "code": "EC",
+    "name": "Ecuador",
+    "rating": 1849,
+    "peak": 1938
+   },
+   {
+    "rank": 21,
+    "code": "AT",
+    "name": "Austria",
+    "rating": 1841,
+    "peak": 2070
+   },
+   {
+    "rank": 22,
+    "code": "PY",
+    "name": "Paraguay",
+    "rating": 1836,
+    "peak": 1955
+   },
+   {
+    "rank": 23,
+    "code": "SN",
+    "name": "Senegal",
+    "rating": 1805,
+    "peak": 1879
+   },
+   {
+    "rank": 24,
+    "code": "GR",
+    "name": "Greece",
+    "rating": 1804,
+    "peak": 1932
+   },
+   {
+    "rank": 25,
+    "code": "US",
+    "name": "United States",
+    "rating": 1793,
+    "peak": 1890
+   },
+   {
+    "rank": 26,
+    "code": "AU",
+    "name": "Australia",
+    "rating": 1786,
+    "peak": 1876
+   },
+   {
+    "rank": 27,
+    "code": "RU",
+    "name": "Russia",
+    "rating": 1778,
+    "peak": 2085
+   },
+   {
+    "rank": 28,
+    "code": "SE",
+    "name": "Sweden",
+    "rating": 1774,
+    "peak": 2012
+   },
+   {
+    "rank": 29,
+    "code": "TR",
+    "name": "Turkey",
+    "rating": 1768,
+    "peak": 1910
+   },
+   {
+    "rank": 30,
+    "code": "DZ",
+    "name": "Algeria",
+    "rating": 1744,
+    "peak": 1807
+   },
+   {
+    "rank": 31,
+    "code": "CA",
+    "name": "Canada",
+    "rating": 1739,
+    "peak": 1841
+   },
+   {
+    "rank": 32,
+    "code": "IR",
+    "name": "Iran",
+    "rating": 1738,
+    "peak": 1853
+   },
+   {
+    "rank": 33,
+    "code": "VE",
+    "name": "Venezuela",
+    "rating": 1732,
+    "peak": 1829
+   },
+   {
+    "rank": 34,
+    "code": "KR",
+    "name": "South Korea",
+    "rating": 1730,
+    "peak": 1845
+   },
+   {
+    "rank": 35,
+    "code": "HU",
+    "name": "Hungary",
+    "rating": 1725,
+    "peak": 2234
+   },
+   {
+    "rank": 36,
+    "code": "UA",
+    "name": "Ukraine",
+    "rating": 1724,
+    "peak": 1873
+   },
+   {
+    "rank": 37,
+    "code": "CI",
+    "name": "Ivory Coast",
+    "rating": 1723,
+    "peak": 1863
+   },
+   {
+    "rank": 37,
+    "code": "CL",
+    "name": "Chile",
+    "rating": 1723,
+    "peak": 2040
+   },
+   {
+    "rank": 39,
+    "code": "SQ",
+    "name": "Scotland",
+    "rating": 1718,
+    "peak": 2104
+   },
+   {
+    "rank": 39,
+    "code": "SI",
+    "name": "Slovenia",
+    "rating": 1718,
+    "peak": 1777
+   },
+   {
+    "rank": 41,
+    "code": "EG",
+    "name": "Egypt",
+    "rating": 1716,
+    "peak": 1872
+   },
+   {
+    "rank": 42,
+    "code": "NG",
+    "name": "Nigeria",
+    "rating": 1711,
+    "peak": 1826
+   },
+   {
+    "rank": 42,
+    "code": "IE",
+    "name": "Ireland",
+    "rating": 1711,
+    "peak": 1918
+   },
+   {
+    "rank": 44,
+    "code": "KO",
+    "name": "Kosovo",
+    "rating": 1710,
+    "peak": 1737
+   },
+   {
+    "rank": 45,
+    "code": "CD",
+    "name": "DR Congo",
+    "rating": 1687,
+    "peak": 1782
+   },
+   {
+    "rank": 46,
+    "code": "PL",
+    "name": "Poland",
+    "rating": 1685,
+    "peak": 2084
+   },
+   {
+    "rank": 47,
+    "code": "RS",
+    "name": "Serbia",
+    "rating": 1683,
+    "peak": 2018
+   },
+   {
+    "rank": 48,
+    "code": "PE",
+    "name": "Peru",
+    "rating": 1681,
+    "peak": 1916
+   },
+   {
+    "rank": 48,
+    "code": "WA",
+    "name": "Wales",
+    "rating": 1681,
+    "peak": 1909
+   },
+   {
+    "rank": 50,
+    "code": "SK",
+    "name": "Slovakia",
+    "rating": 1678,
+    "peak": 1775
+   },
+   {
+    "rank": 51,
+    "code": "EI",
+    "name": "Northern Ireland",
+    "rating": 1672,
+    "peak": 1853
+   },
+   {
+    "rank": 51,
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "rating": 1672,
+    "peak": 1806
+   },
+   {
+    "rank": 53,
+    "code": "CZ",
+    "name": "Czechia",
+    "rating": 1656,
+    "peak": 2033
+   },
+   {
+    "rank": 54,
+    "code": "PA",
+    "name": "Panama",
+    "rating": 1654,
+    "peak": 1773
+   },
+   {
+    "rank": 55,
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "rating": 1645,
+    "peak": 1766
+   },
+   {
+    "rank": 56,
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "rating": 1639,
+    "peak": 1736
+   },
+   {
+    "rank": 57,
+    "code": "ML",
+    "name": "Mali",
+    "rating": 1629,
+    "peak": 1651
+   },
+   {
+    "rank": 58,
+    "code": "GE",
+    "name": "Georgia",
+    "rating": 1628,
+    "peak": 1754
+   },
+   {
+    "rank": 59,
+    "code": "CM",
+    "name": "Cameroon",
+    "rating": 1622,
+    "peak": 1850
+   },
+   {
+    "rank": 59,
+    "code": "JO",
+    "name": "Jordan",
+    "rating": 1622,
+    "peak": 1701
+   },
+   {
+    "rank": 61,
+    "code": "IL",
+    "name": "Israel",
+    "rating": 1619,
+    "peak": 1775
+   },
+   {
+    "rank": 62,
+    "code": "BO",
+    "name": "Bolivia",
+    "rating": 1613,
+    "peak": 1798
+   },
+   {
+    "rank": 63,
+    "code": "AL",
+    "name": "Albania",
+    "rating": 1612,
+    "peak": 1675
+   },
+   {
+    "rank": 64,
+    "code": "IS",
+    "name": "Iceland",
+    "rating": 1597,
+    "peak": 1841
+   },
+   {
+    "rank": 65,
+    "code": "ZA",
+    "name": "South Africa",
+    "rating": 1595,
+    "peak": 1847
+   },
+   {
+    "rank": 66,
+    "code": "CR",
+    "name": "Costa Rica",
+    "rating": 1587,
+    "peak": 1866
+   },
+   {
+    "rank": 67,
+    "code": "HT",
+    "name": "Haiti",
+    "rating": 1563,
+    "peak": 1674
+   },
+   {
+    "rank": 68,
+    "code": "AO",
+    "name": "Angola",
+    "rating": 1562,
+    "peak": 1629
+   },
+   {
+    "rank": 69,
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "rating": 1560,
+    "peak": 1692
+   },
+   {
+    "rank": 69,
+    "code": "CV",
+    "name": "Cape Verde",
+    "rating": 1560,
+    "peak": 1625
+   },
+   {
+    "rank": 71,
+    "code": "NZ",
+    "name": "New Zealand",
+    "rating": 1559,
+    "peak": 1642
+   },
+   {
+    "rank": 72,
+    "code": "RO",
+    "name": "Romania",
+    "rating": 1554,
+    "peak": 1944
+   },
+   {
+    "rank": 73,
+    "code": "IQ",
+    "name": "Iraq",
+    "rating": 1546,
+    "peak": 1740
+   },
+   {
+    "rank": 74,
+    "code": "JM",
+    "name": "Jamaica",
+    "rating": 1543,
+    "peak": 1700
+   },
+   {
+    "rank": 75,
+    "code": "BY",
+    "name": "Belarus",
+    "rating": 1537,
+    "peak": 1666
+   },
+   {
+    "rank": 76,
+    "code": "TN",
+    "name": "Tunisia",
+    "rating": 1533,
+    "peak": 1757
+   },
+   {
+    "rank": 76,
+    "code": "NM",
+    "name": "North Macedonia",
+    "rating": 1533,
+    "peak": 1667
+   },
+   {
+    "rank": 78,
+    "code": "FI",
+    "name": "Finland",
+    "rating": 1530,
+    "peak": 1757
+   },
+   {
+    "rank": 78,
+    "code": "HN",
+    "name": "Honduras",
+    "rating": 1530,
+    "peak": 1789
+   },
+   {
+    "rank": 80,
+    "code": "GT",
+    "name": "Guatemala",
+    "rating": 1524,
+    "peak": 1642
+   }
+  ],
+  "history": {
+   "IT": {
+    "name": "Italy",
+    "years": [
+     [
+      1990,
+      2017
+     ],
+     [
+      1991,
+      1971
+     ],
+     [
+      1992,
+      1980
+     ],
+     [
+      1993,
+      2000
+     ],
+     [
+      1994,
+      1986
+     ],
+     [
+      1995,
+      1991
+     ],
+     [
+      1996,
+      1976
+     ],
+     [
+      1997,
+      1976
+     ],
+     [
+      1998,
+      2021
+     ],
+     [
+      1999,
+      1929
+     ],
+     [
+      2000,
+      2016
+     ],
+     [
+      2001,
+      2017
+     ],
+     [
+      2002,
+      1878
+     ],
+     [
+      2003,
+      1924
+     ],
+     [
+      2004,
+      1907
+     ],
+     [
+      2005,
+      1939
+     ],
+     [
+      2006,
+      2019
+     ],
+     [
+      2007,
+      2031
+     ],
+     [
+      2008,
+      2004
+     ],
+     [
+      2009,
+      1956
+     ],
+     [
+      2010,
+      1831
+     ],
+     [
+      2011,
+      1885
+     ],
+     [
+      2012,
+      1910
+     ],
+     [
+      2013,
+      1906
+     ],
+     [
+      2014,
+      1885
+     ],
+     [
+      2015,
+      1870
+     ],
+     [
+      2016,
+      1942
+     ],
+     [
+      2017,
+      1905
+     ],
+     [
+      2018,
+      1888
+     ],
+     [
+      2019,
+      1968
+     ],
+     [
+      2020,
+      1997
+     ],
+     [
+      2021,
+      2030
+     ],
+     [
+      2022,
+      1973
+     ],
+     [
+      2023,
+      1937
+     ],
+     [
+      2024,
+      1930
+     ],
+     [
+      2025,
+      1859
+     ],
+     [
+      2026,
+      1910
+     ]
+    ]
+   },
+   "FR": {
+    "name": "France",
+    "years": [
+     [
+      1990,
+      1928
+     ],
+     [
+      1991,
+      2009
+     ],
+     [
+      1992,
+      1897
+     ],
+     [
+      1993,
+      1886
+     ],
+     [
+      1994,
+      1908
+     ],
+     [
+      1995,
+      1957
+     ],
+     [
+      1996,
+      2015
+     ],
+     [
+      1997,
+      2013
+     ],
+     [
+      1998,
+      2076
+     ],
+     [
+      1999,
+      2041
+     ],
+     [
+      2000,
+      2110
+     ],
+     [
+      2001,
+      2111
+     ],
+     [
+      2002,
+      1973
+     ],
+     [
+      2003,
+      2050
+     ],
+     [
+      2004,
+      1986
+     ],
+     [
+      2005,
+      1974
+     ],
+     [
+      2006,
+      2060
+     ],
+     [
+      2007,
+      2011
+     ],
+     [
+      2008,
+      1892
+     ],
+     [
+      2009,
+      1890
+     ],
+     [
+      2010,
+      1802
+     ],
+     [
+      2011,
+      1839
+     ],
+     [
+      2012,
+      1888
+     ],
+     [
+      2013,
+      1880
+     ],
+     [
+      2014,
+      1965
+     ],
+     [
+      2015,
+      1953
+     ],
+     [
+      2016,
+      2008
+     ],
+     [
+      2017,
+      1988
+     ],
+     [
+      2018,
+      2092
+     ],
+     [
+      2019,
+      2046
+     ],
+     [
+      2020,
+      2091
+     ],
+     [
+      2021,
+      2114
+     ],
+     [
+      2022,
+      2081
+     ],
+     [
+      2023,
+      2109
+     ],
+     [
+      2024,
+      2055
+     ],
+     [
+      2025,
+      2062
+     ],
+     [
+      2026,
+      2104
+     ]
+    ]
+   },
+   "ES": {
+    "name": "Spain",
+    "years": [
+     [
+      1990,
+      1937
+     ],
+     [
+      1991,
+      1827
+     ],
+     [
+      1992,
+      1831
+     ],
+     [
+      1993,
+      1913
+     ],
+     [
+      1994,
+      1997
+     ],
+     [
+      1995,
+      1988
+     ],
+     [
+      1996,
+      2026
+     ],
+     [
+      1997,
+      2041
+     ],
+     [
+      1998,
+      1979
+     ],
+     [
+      1999,
+      2007
+     ],
+     [
+      2000,
+      1962
+     ],
+     [
+      2001,
+      1967
+     ],
+     [
+      2002,
+      1996
+     ],
+     [
+      2003,
+      2005
+     ],
+     [
+      2004,
+      1966
+     ],
+     [
+      2005,
+      1958
+     ],
+     [
+      2006,
+      1884
+     ],
+     [
+      2007,
+      1964
+     ],
+     [
+      2008,
+      2100
+     ],
+     [
+      2009,
+      2094
+     ],
+     [
+      2010,
+      2115
+     ],
+     [
+      2011,
+      2116
+     ],
+     [
+      2012,
+      2148
+     ],
+     [
+      2013,
+      2102
+     ],
+     [
+      2014,
+      1952
+     ],
+     [
+      2015,
+      2001
+     ],
+     [
+      2016,
+      1978
+     ],
+     [
+      2017,
+      2030
+     ],
+     [
+      2018,
+      2011
+     ],
+     [
+      2019,
+      2028
+     ],
+     [
+      2020,
+      2050
+     ],
+     [
+      2021,
+      2037
+     ],
+     [
+      2022,
+      1997
+     ],
+     [
+      2023,
+      2034
+     ],
+     [
+      2024,
+      2178
+     ],
+     [
+      2025,
+      2172
+     ],
+     [
+      2026,
+      2287
+     ]
+    ]
+   },
+   "EN": {
+    "name": "England",
+    "years": [
+     [
+      1990,
+      1990
+     ],
+     [
+      1991,
+      1988
+     ],
+     [
+      1992,
+      1946
+     ],
+     [
+      1993,
+      1877
+     ],
+     [
+      1994,
+      1894
+     ],
+     [
+      1995,
+      1869
+     ],
+     [
+      1996,
+      1957
+     ],
+     [
+      1997,
+      2004
+     ],
+     [
+      1998,
+      1946
+     ],
+     [
+      1999,
+      1908
+     ],
+     [
+      2000,
+      1852
+     ],
+     [
+      2001,
+      1932
+     ],
+     [
+      2002,
+      1950
+     ],
+     [
+      2003,
+      1954
+     ],
+     [
+      2004,
+      1977
+     ],
+     [
+      2005,
+      1963
+     ],
+     [
+      2006,
+      1960
+     ],
+     [
+      2007,
+      1909
+     ],
+     [
+      2008,
+      1987
+     ],
+     [
+      2009,
+      1984
+     ],
+     [
+      2010,
+      1923
+     ],
+     [
+      2011,
+      1954
+     ],
+     [
+      2012,
+      1952
+     ],
+     [
+      2013,
+      1933
+     ],
+     [
+      2014,
+      1923
+     ],
+     [
+      2015,
+      1958
+     ],
+     [
+      2016,
+      1927
+     ],
+     [
+      2017,
+      1932
+     ],
+     [
+      2018,
+      1959
+     ],
+     [
+      2019,
+      1955
+     ],
+     [
+      2020,
+      1961
+     ],
+     [
+      2021,
+      2031
+     ],
+     [
+      2022,
+      1966
+     ],
+     [
+      2023,
+      2014
+     ],
+     [
+      2024,
+      2006
+     ],
+     [
+      2025,
+      2042
+     ],
+     [
+      2026,
+      2146
+     ]
+    ]
+   },
+   "DE": {
+    "name": "Germany",
+    "years": [
+     [
+      1990,
+      2082
+     ],
+     [
+      1991,
+      2089
+     ],
+     [
+      1992,
+      1993
+     ],
+     [
+      1993,
+      2014
+     ],
+     [
+      1994,
+      1999
+     ],
+     [
+      1995,
+      2032
+     ],
+     [
+      1996,
+      2081
+     ],
+     [
+      1997,
+      2070
+     ],
+     [
+      1998,
+      1977
+     ],
+     [
+      1999,
+      1886
+     ],
+     [
+      2000,
+      1882
+     ],
+     [
+      2001,
+      1869
+     ],
+     [
+      2002,
+      1935
+     ],
+     [
+      2003,
+      1879
+     ],
+     [
+      2004,
+      1881
+     ],
+     [
+      2005,
+      1891
+     ],
+     [
+      2006,
+      1976
+     ],
+     [
+      2007,
+      1943
+     ],
+     [
+      2008,
+      1966
+     ],
+     [
+      2009,
+      1961
+     ],
+     [
+      2010,
+      2067
+     ],
+     [
+      2011,
+      2082
+     ],
+     [
+      2012,
+      2051
+     ],
+     [
+      2013,
+      2085
+     ],
+     [
+      2014,
+      2133
+     ],
+     [
+      2015,
+      2068
+     ],
+     [
+      2016,
+      2037
+     ],
+     [
+      2017,
+      2108
+     ],
+     [
+      2018,
+      1937
+     ],
+     [
+      2019,
+      1964
+     ],
+     [
+      2020,
+      1955
+     ],
+     [
+      2021,
+      1962
+     ],
+     [
+      2022,
+      1955
+     ],
+     [
+      2023,
+      1885
+     ],
+     [
+      2024,
+      1971
+     ],
+     [
+      2025,
+      1910
+     ],
+     [
+      2026,
+      1895
+     ]
+    ]
+   },
+   "PT": {
+    "name": "Portugal",
+    "years": [
+     [
+      1990,
+      1807
+     ],
+     [
+      1991,
+      1795
+     ],
+     [
+      1992,
+      1796
+     ],
+     [
+      1993,
+      1828
+     ],
+     [
+      1994,
+      1865
+     ],
+     [
+      1995,
+      1864
+     ],
+     [
+      1996,
+      1887
+     ],
+     [
+      1997,
+      1885
+     ],
+     [
+      1998,
+      1905
+     ],
+     [
+      1999,
+      1911
+     ],
+     [
+      2000,
+      2017
+     ],
+     [
+      2001,
+      2008
+     ],
+     [
+      2002,
+      1930
+     ],
+     [
+      2003,
+      1919
+     ],
+     [
+      2004,
+      1904
+     ],
+     [
+      2005,
+      1910
+     ],
+     [
+      2006,
+      1896
+     ],
+     [
+      2007,
+      1879
+     ],
+     [
+      2008,
+      1822
+     ],
+     [
+      2009,
+      1874
+     ],
+     [
+      2010,
+      1898
+     ],
+     [
+      2011,
+      1901
+     ],
+     [
+      2012,
+      1904
+     ],
+     [
+      2013,
+      1931
+     ],
+     [
+      2014,
+      1910
+     ],
+     [
+      2015,
+      1919
+     ],
+     [
+      2016,
+      1930
+     ],
+     [
+      2017,
+      1994
+     ],
+     [
+      2018,
+      1959
+     ],
+     [
+      2019,
+      1986
+     ],
+     [
+      2020,
+      2038
+     ],
+     [
+      2021,
+      1972
+     ],
+     [
+      2022,
+      1998
+     ],
+     [
+      2023,
+      2032
+     ],
+     [
+      2024,
+      1993
+     ],
+     [
+      2025,
+      1976
+     ],
+     [
+      2026,
+      2055
+     ]
+    ]
+   },
+   "NL": {
+    "name": "Netherlands",
+    "years": [
+     [
+      1990,
+      1948
+     ],
+     [
+      1991,
+      1962
+     ],
+     [
+      1992,
+      1966
+     ],
+     [
+      1993,
+      1993
+     ],
+     [
+      1994,
+      1957
+     ],
+     [
+      1995,
+      1917
+     ],
+     [
+      1996,
+      1961
+     ],
+     [
+      1997,
+      1939
+     ],
+     [
+      1998,
+      1993
+     ],
+     [
+      1999,
+      1956
+     ],
+     [
+      2000,
+      1999
+     ],
+     [
+      2001,
+      1995
+     ],
+     [
+      2002,
+      2051
+     ],
+     [
+      2003,
+      1991
+     ],
+     [
+      2004,
+      1940
+     ],
+     [
+      2005,
+      1993
+     ],
+     [
+      2006,
+      1990
+     ],
+     [
+      2007,
+      1947
+     ],
+     [
+      2008,
+      2027
+     ],
+     [
+      2009,
+      2031
+     ],
+     [
+      2010,
+      2104
+     ],
+     [
+      2011,
+      2067
+     ],
+     [
+      2012,
+      1996
+     ],
+     [
+      2013,
+      2003
+     ],
+     [
+      2014,
+      2029
+     ],
+     [
+      2015,
+      1897
+     ],
+     [
+      2016,
+      1888
+     ],
+     [
+      2017,
+      1895
+     ],
+     [
+      2018,
+      1985
+     ],
+     [
+      2019,
+      2017
+     ],
+     [
+      2020,
+      1994
+     ],
+     [
+      2021,
+      1929
+     ],
+     [
+      2022,
+      2073
+     ],
+     [
+      2023,
+      1970
+     ],
+     [
+      2024,
+      1938
+     ],
+     [
+      2025,
+      1959
+     ],
+     [
+      2026,
+      1974
+     ]
+    ]
+   },
+   "AR": {
+    "name": "Argentina",
+    "years": [
+     [
+      1990,
+      1874
+     ],
+     [
+      1991,
+      1985
+     ],
+     [
+      1992,
+      2029
+     ],
+     [
+      1993,
+      1928
+     ],
+     [
+      1994,
+      1884
+     ],
+     [
+      1995,
+      1847
+     ],
+     [
+      1996,
+      1797
+     ],
+     [
+      1997,
+      1834
+     ],
+     [
+      1998,
+      1932
+     ],
+     [
+      1999,
+      1938
+     ],
+     [
+      2000,
+      2005
+     ],
+     [
+      2001,
+      2024
+     ],
+     [
+      2002,
+      1996
+     ],
+     [
+      2003,
+      2018
+     ],
+     [
+      2004,
+      2029
+     ],
+     [
+      2005,
+      1931
+     ],
+     [
+      2006,
+      1980
+     ],
+     [
+      2007,
+      2012
+     ],
+     [
+      2008,
+      1974
+     ],
+     [
+      2009,
+      1897
+     ],
+     [
+      2010,
+      1993
+     ],
+     [
+      2011,
+      1915
+     ],
+     [
+      2012,
+      2014
+     ],
+     [
+      2013,
+      2020
+     ],
+     [
+      2014,
+      2049
+     ],
+     [
+      2015,
+      2023
+     ],
+     [
+      2016,
+      2044
+     ],
+     [
+      2017,
+      1983
+     ],
+     [
+      2018,
+      1920
+     ],
+     [
+      2019,
+      1969
+     ],
+     [
+      2020,
+      1993
+     ],
+     [
+      2021,
+      2101
+     ],
+     [
+      2022,
+      2144
+     ],
+     [
+      2023,
+      2139
+     ],
+     [
+      2024,
+      2108
+     ],
+     [
+      2025,
+      2113
+     ],
+     [
+      2026,
+      2175
+     ]
+    ]
+   },
+   "BR": {
+    "name": "Brazil",
+    "years": [
+     [
+      1990,
+      1958
+     ],
+     [
+      1991,
+      1958
+     ],
+     [
+      1992,
+      1997
+     ],
+     [
+      1993,
+      1951
+     ],
+     [
+      1994,
+      2069
+     ],
+     [
+      1995,
+      2114
+     ],
+     [
+      1996,
+      2068
+     ],
+     [
+      1997,
+      2179
+     ],
+     [
+      1998,
+      2051
+     ],
+     [
+      1999,
+      2095
+     ],
+     [
+      2000,
+      2023
+     ],
+     [
+      2001,
+      1833
+     ],
+     [
+      2002,
+      2057
+     ],
+     [
+      2003,
+      1990
+     ],
+     [
+      2004,
+      1972
+     ],
+     [
+      2005,
+      2027
+     ],
+     [
+      2006,
+      2079
+     ],
+     [
+      2007,
+      2077
+     ],
+     [
+      2008,
+      2017
+     ],
+     [
+      2009,
+      2103
+     ],
+     [
+      2010,
+      2095
+     ],
+     [
+      2011,
+      2064
+     ],
+     [
+      2012,
+      2061
+     ],
+     [
+      2013,
+      2132
+     ],
+     [
+      2014,
+      2041
+     ],
+     [
+      2015,
+      2037
+     ],
+     [
+      2016,
+      2087
+     ],
+     [
+      2017,
+      2113
+     ],
+     [
+      2018,
+      2136
+     ],
+     [
+      2019,
+      2081
+     ],
+     [
+      2020,
+      2135
+     ],
+     [
+      2021,
+      2149
+     ],
+     [
+      2022,
+      2133
+     ],
+     [
+      2023,
+      2011
+     ],
+     [
+      2024,
+      1996
+     ],
+     [
+      2025,
+      1978
+     ],
+     [
+      2026,
+      2001
+     ]
+    ]
+   }
+  },
+  "italy": [
+   {
+    "date": "2026-10-05",
+    "home": "IT",
+    "away": "TR",
+    "hs": 3,
+    "as": 1,
+    "type": "ENA",
+    "venue": null,
+    "change": 13,
+    "after": 1910,
+    "opp": "Turkey"
+   },
+   {
+    "date": "2026-10-02",
+    "home": "FR",
+    "away": "IT",
+    "hs": 1,
+    "as": 1,
+    "type": "ENA",
+    "venue": null,
+    "change": -15,
+    "after": 1897,
+    "opp": "France"
+   },
+   {
+    "date": "2026-09-28",
+    "home": "TR",
+    "away": "IT",
+    "hs": 1,
+    "as": 4,
+    "type": "ENA",
+    "venue": null,
+    "change": -45,
+    "after": 1882,
+    "opp": "Turkey"
+   },
+   {
+    "date": "2026-09-25",
+    "home": "IT",
+    "away": "BE",
+    "hs": 0,
+    "as": 2,
+    "type": "ENA",
+    "venue": null,
+    "change": -32,
+    "after": 1837,
+    "opp": "Belgium"
+   },
+   {
+    "date": "2026-06-07",
+    "home": "GR",
+    "away": "IT",
+    "hs": 0,
+    "as": 1,
+    "type": "F",
+    "venue": null,
+    "change": -10,
+    "after": 1869,
+    "opp": "Greece"
+   },
+   {
+    "date": "2026-06-03",
+    "home": "LU",
+    "away": "IT",
+    "hs": 0,
+    "as": 1,
+    "type": "F",
+    "venue": null,
+    "change": -3,
+    "after": 1859,
+    "opp": "Luxembourg"
+   },
+   {
+    "date": "2026-03-31",
+    "home": "BA",
+    "away": "IT",
+    "hs": 1,
+    "as": 1,
+    "type": "WQ",
+    "venue": null,
+    "change": 10,
+    "after": 1856,
+    "opp": "Bosnia and Herzegovina"
+   },
+   {
+    "date": "2026-03-26",
+    "home": "IT",
+    "away": "EI",
+    "hs": 2,
+    "as": 0,
+    "type": "WQ",
+    "venue": null,
+    "change": 7,
+    "after": 1866,
+    "opp": "Northern Ireland"
+   },
+   {
+    "date": "2025-11-16",
+    "home": "IT",
+    "away": "NO",
+    "hs": 1,
+    "as": 4,
+    "type": "WQ",
+    "venue": null,
+    "change": -48,
+    "after": 1859,
+    "opp": "Norway"
+   },
+   {
+    "date": "2025-11-13",
+    "home": "MD",
+    "away": "IT",
+    "hs": 0,
+    "as": 2,
+    "type": "WQ",
+    "venue": null,
+    "change": -3,
+    "after": 1907,
+    "opp": "Moldova"
+   },
+   {
+    "date": "2025-10-14",
+    "home": "IT",
+    "away": "IL",
+    "hs": 3,
+    "as": 0,
+    "type": "WQ",
+    "venue": null,
+    "change": 7,
+    "after": 1904,
+    "opp": "Israel"
+   },
+   {
+    "date": "2025-10-11",
+    "home": "EE",
+    "away": "IT",
+    "hs": 1,
+    "as": 3,
+    "type": "WQ",
+    "venue": null,
+    "change": -5,
+    "after": 1897,
+    "opp": "Estonia"
+   },
+   {
+    "date": "2025-09-08",
+    "home": "IT",
+    "away": "IL",
+    "hs": 5,
+    "as": 4,
+    "type": "WQ",
+    "venue": "HU",
+    "change": 8,
+    "after": 1892,
+    "opp": "Israel"
+   },
+   {
+    "date": "2025-09-05",
+    "home": "IT",
+    "away": "EE",
+    "hs": 5,
+    "as": 0,
+    "type": "WQ",
+    "venue": null,
+    "change": 2,
+    "after": 1884,
+    "opp": "Estonia"
+   },
+   {
+    "date": "2025-06-09",
+    "home": "IT",
+    "away": "MD",
+    "hs": 2,
+    "as": 0,
+    "type": "WQ",
+    "venue": null,
+    "change": 1,
+    "after": 1882,
+    "opp": "Moldova"
+   },
+   {
+    "date": "2025-06-06",
+    "home": "NO",
+    "away": "IT",
+    "hs": 3,
+    "as": 0,
+    "type": "WQ",
+    "venue": null,
+    "change": 33,
+    "after": 1881,
+    "opp": "Norway"
+   },
+   {
+    "date": "2025-03-23",
+    "home": "DE",
+    "away": "IT",
+    "hs": 3,
+    "as": 3,
+    "type": "ENL",
+    "venue": null,
+    "change": -13,
+    "after": 1914,
+    "opp": "Germany"
+   },
+   {
+    "date": "2025-03-20",
+    "home": "IT",
+    "away": "DE",
+    "hs": 1,
+    "as": 2,
+    "type": "ENL",
+    "venue": null,
+    "change": -29,
+    "after": 1901,
+    "opp": "Germany"
+   },
+   {
+    "date": "2024-11-17",
+    "home": "IT",
+    "away": "FR",
+    "hs": 1,
+    "as": 3,
+    "type": "ENA",
+    "venue": null,
+    "change": -34,
+    "after": 1930,
+    "opp": "France"
+   },
+   {
+    "date": "2024-11-14",
+    "home": "BE",
+    "away": "IT",
+    "hs": 0,
+    "as": 1,
+    "type": "ENA",
+    "venue": null,
+    "change": -24,
+    "after": 1964,
+    "opp": "Belgium"
+   },
+   {
+    "date": "2024-10-14",
+    "home": "IT",
+    "away": "IL",
+    "hs": 4,
+    "as": 1,
+    "type": "ENA",
+    "venue": null,
+    "change": 4,
+    "after": 1940,
+    "opp": "Israel"
+   },
+   {
+    "date": "2024-10-10",
+    "home": "IT",
+    "away": "BE",
+    "hs": 2,
+    "as": 2,
+    "type": "ENA",
+    "venue": null,
+    "change": -7,
+    "after": 1936,
+    "opp": "Belgium"
+   },
+   {
+    "date": "2024-09-09",
+    "home": "IT",
+    "away": "IL",
+    "hs": 2,
+    "as": 1,
+    "type": "ENA",
+    "venue": "HU",
+    "change": 4,
+    "after": 1943,
+    "opp": "Israel"
+   },
+   {
+    "date": "2024-09-06",
+    "home": "FR",
+    "away": "IT",
+    "hs": 1,
+    "as": 3,
+    "type": "ENA",
+    "venue": null,
+    "change": -49,
+    "after": 1939,
+    "opp": "France"
+   },
+   {
+    "date": "2024-06-29",
+    "home": "CH",
+    "away": "IT",
+    "hs": 2,
+    "as": 0,
+    "type": "EC",
+    "venue": "DE",
+    "change": 46,
+    "after": 1890,
+    "opp": "Switzerland"
+   },
+   {
+    "date": "2024-06-24",
+    "home": "HR",
+    "away": "IT",
+    "hs": 1,
+    "as": 1,
+    "type": "EC",
+    "venue": "DE",
+    "change": 2,
+    "after": 1936,
+    "opp": "Croatia"
+   },
+   {
+    "date": "2024-06-20",
+    "home": "ES",
+    "away": "IT",
+    "hs": 1,
+    "as": 0,
+    "type": "EC",
+    "venue": "DE",
+    "change": 18,
+    "after": 1938,
+    "opp": "Spain"
+   },
+   {
+    "date": "2024-06-15",
+    "home": "IT",
+    "away": "AL",
+    "hs": 2,
+    "as": 1,
+    "type": "EC",
+    "venue": "DE",
+    "change": 7,
+    "after": 1956,
+    "opp": "Albania"
+   },
+   {
+    "date": "2024-06-09",
+    "home": "IT",
+    "away": "BA",
+    "hs": 1,
+    "as": 0,
+    "type": "F",
+    "venue": null,
+    "change": 1,
+    "after": 1949,
+    "opp": "Bosnia and Herzegovina"
+   },
+   {
+    "date": "2024-06-04",
+    "home": "IT",
+    "away": "TR",
+    "hs": 0,
+    "as": 0,
+    "type": "F",
+    "venue": null,
+    "change": -7,
+    "after": 1948,
+    "opp": "Turkey"
+   },
+   {
+    "date": "2024-03-24",
+    "home": "IT",
+    "away": "EC",
+    "hs": 2,
+    "as": 0,
+    "type": "F",
+    "venue": "US",
+    "change": 13,
+    "after": 1955,
+    "opp": "Ecuador"
+   },
+   {
+    "date": "2024-03-21",
+    "home": "IT",
+    "away": "VE",
+    "hs": 2,
+    "as": 1,
+    "type": "F",
+    "venue": "US",
+    "change": 5,
+    "after": 1942,
+    "opp": "Venezuela"
+   },
+   {
+    "date": "2023-11-20",
+    "home": "IT",
+    "away": "UA",
+    "hs": 0,
+    "as": 0,
+    "type": "EQ",
+    "venue": "DE",
+    "change": -6,
+    "after": 1937,
+    "opp": "Ukraine"
+   },
+   {
+    "date": "2023-11-17",
+    "home": "IT",
+    "away": "NM",
+    "hs": 5,
+    "as": 2,
+    "type": "EQ",
+    "venue": null,
+    "change": 4,
+    "after": 1943,
+    "opp": "North Macedonia"
+   },
+   {
+    "date": "2023-10-17",
+    "home": "EN",
+    "away": "IT",
+    "hs": 3,
+    "as": 1,
+    "type": "EQ",
+    "venue": null,
+    "change": 17,
+    "after": 1939,
+    "opp": "England"
+   },
+   {
+    "date": "2023-10-14",
+    "home": "IT",
+    "away": "MT",
+    "hs": 4,
+    "as": 0,
+    "type": "EQ",
+    "venue": null,
+    "change": 1,
+    "after": 1956,
+    "opp": "Malta"
+   },
+   {
+    "date": "2023-09-12",
+    "home": "IT",
+    "away": "UA",
+    "hs": 2,
+    "as": 1,
+    "type": "EQ",
+    "venue": null,
+    "change": 9,
+    "after": 1955,
+    "opp": "Ukraine"
+   },
+   {
+    "date": "2023-09-09",
+    "home": "NM",
+    "away": "IT",
+    "hs": 1,
+    "as": 1,
+    "type": "EQ",
+    "venue": null,
+    "change": 15,
+    "after": 1946,
+    "opp": "North Macedonia"
+   },
+   {
+    "date": "2023-06-18",
+    "home": "NL",
+    "away": "IT",
+    "hs": 2,
+    "as": 3,
+    "type": "ENL",
+    "venue": null,
+    "change": -36,
+    "after": 1961,
+    "opp": "Netherlands"
+   },
+   {
+    "date": "2023-06-15",
+    "home": "ES",
+    "away": "IT",
+    "hs": 2,
+    "as": 1,
+    "type": "ENL",
+    "venue": "NL",
+    "change": 24,
+    "after": 1925,
+    "opp": "Spain"
+   }
+  ]
+ },
+ "serieA": {
+  "season": 2026,
+  "teams": [
+   {
+    "id": "95",
+    "name": "Roma",
+    "games": [
+     {
+      "date": "2026-08-24 18:45:00",
+      "home": true,
+      "xg": 3.78,
+      "xga": 0.29,
+      "npxg": 3.78,
+      "npxga": 0.29,
+      "ppda": 8.2,
+      "ppdaAllowed": 19.1,
+      "deep": 8,
+      "deepAllowed": 3,
+      "gf": 4,
+      "ga": 0,
+      "xpts": 2.96,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-08-31 16:30:00",
+      "home": false,
+      "xg": 4.14,
+      "xga": 1.2,
+      "npxg": 4.14,
+      "npxga": 1.2,
+      "ppda": 6.5,
+      "ppdaAllowed": 21.9,
+      "deep": 20,
+      "deepAllowed": 1,
+      "gf": 4,
+      "ga": 0,
+      "xpts": 2.85,
+      "pts": 3,
+      "result": "w",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-09-05 18:45:00",
+      "home": true,
+      "xg": 3.54,
+      "xga": 0.77,
+      "npxg": 3.54,
+      "npxga": 0.77,
+      "ppda": 7.2,
+      "ppdaAllowed": 28.6,
+      "deep": 20,
+      "deepAllowed": 2,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.76,
+      "pts": 3,
+      "result": "w",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-09-14 16:30:00",
+      "home": false,
+      "xg": 2.33,
+      "xga": 0.71,
+      "npxg": 2.33,
+      "npxga": 0.71,
+      "ppda": 9.3,
+      "ppdaAllowed": 14.8,
+      "deep": 5,
+      "deepAllowed": 3,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.6,
+      "pts": 3,
+      "result": "w",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-09-19 16:00:00",
+      "home": true,
+      "xg": 2.31,
+      "xga": 2.59,
+      "npxg": 2.31,
+      "npxga": 2.59,
+      "ppda": 8,
+      "ppdaAllowed": 21.5,
+      "deep": 13,
+      "deepAllowed": 9,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 1.19,
+      "pts": 1,
+      "result": "d",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-10-11 10:30:00",
+      "home": false,
+      "xg": 1.14,
+      "xga": 1.85,
+      "npxg": 1.14,
+      "npxga": 1.85,
+      "ppda": 16.3,
+      "ppdaAllowed": 8,
+      "deep": 4,
+      "deepAllowed": 9,
+      "gf": 0,
+      "ga": 0,
+      "xpts": 0.87,
+      "pts": 1,
+      "result": "d",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-10-17 18:45:00",
+      "home": true,
+      "xg": 1.41,
+      "xga": 0.51,
+      "npxg": 1.41,
+      "npxga": 0.51,
+      "ppda": 8.8,
+      "ppdaAllowed": 15.5,
+      "deep": 11,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.17,
+      "pts": 3,
+      "result": "w",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-10-24 16:00:00",
+      "home": false,
+      "xg": 1.96,
+      "xga": 2.98,
+      "npxg": 1.96,
+      "npxga": 2.98,
+      "ppda": 8.5,
+      "ppdaAllowed": 14.4,
+      "deep": 16,
+      "deepAllowed": 4,
+      "gf": 3,
+      "ga": 3,
+      "xpts": 0.75,
+      "pts": 1,
+      "result": "d",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-10-27 19:45:00",
+      "home": true,
+      "xg": 3.85,
+      "xga": 2.48,
+      "npxg": 3.85,
+      "npxga": 1.72,
+      "ppda": 9.2,
+      "ppdaAllowed": 23.6,
+      "deep": 7,
+      "deepAllowed": 5,
+      "gf": 4,
+      "ga": 2,
+      "xpts": 2.2,
+      "pts": 3,
+      "result": "w",
+      "opp": "Cagliari"
+     }
+    ]
+   },
+   {
+    "id": "96",
+    "name": "Lazio",
+    "games": [
+     {
+      "date": "2026-08-24 16:30:00",
+      "home": false,
+      "xg": 0.81,
+      "xga": 2.06,
+      "npxg": 0.81,
+      "npxga": 2.06,
+      "ppda": 10.2,
+      "ppdaAllowed": 8.8,
+      "deep": 4,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 0.47,
+      "pts": 3,
+      "result": "w",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-08-30 18:45:00",
+      "home": true,
+      "xg": 2.11,
+      "xga": 0.74,
+      "npxg": 2.11,
+      "npxga": 0.74,
+      "ppda": 12,
+      "ppdaAllowed": 9.4,
+      "deep": 13,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 2.39,
+      "pts": 3,
+      "result": "w",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-09-07 18:45:00",
+      "home": false,
+      "xg": 1.98,
+      "xga": 0.8,
+      "npxg": 1.98,
+      "npxga": 0.8,
+      "ppda": 11.8,
+      "ppdaAllowed": 12,
+      "deep": 10,
+      "deepAllowed": 8,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.27,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-09-12 16:00:00",
+      "home": true,
+      "xg": 2.36,
+      "xga": 2.16,
+      "npxg": 2.36,
+      "npxga": 2.16,
+      "ppda": 16.7,
+      "ppdaAllowed": 9,
+      "deep": 6,
+      "deepAllowed": 7,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 1.55,
+      "pts": 1,
+      "result": "d",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-09-19 18:45:00",
+      "home": false,
+      "xg": 1.77,
+      "xga": 1.85,
+      "npxg": 1.01,
+      "npxga": 1.09,
+      "ppda": 14.5,
+      "ppdaAllowed": 14.8,
+      "deep": 8,
+      "deepAllowed": 5,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 1.32,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-10-11 13:00:00",
+      "home": true,
+      "xg": 2.22,
+      "xga": 1.3,
+      "npxg": 2.22,
+      "npxga": 1.3,
+      "ppda": 7.6,
+      "ppdaAllowed": 28.4,
+      "deep": 10,
+      "deepAllowed": 4,
+      "gf": 3,
+      "ga": 1,
+      "xpts": 2.03,
+      "pts": 3,
+      "result": "w",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-10-18 18:45:00",
+      "home": false,
+      "xg": 0.82,
+      "xga": 0.6,
+      "npxg": 0.82,
+      "npxga": 0.6,
+      "ppda": 16.7,
+      "ppdaAllowed": 9.5,
+      "deep": 4,
+      "deepAllowed": 8,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 1.55,
+      "pts": 3,
+      "result": "w",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-10-24 18:45:00",
+      "home": true,
+      "xg": 1.67,
+      "xga": 0.95,
+      "npxg": 1.67,
+      "npxga": 0.95,
+      "ppda": 7.6,
+      "ppdaAllowed": 17.3,
+      "deep": 13,
+      "deepAllowed": 5,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.89,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-10-27 17:30:00",
+      "home": false,
+      "xg": 4.36,
+      "xga": 1.07,
+      "npxg": 2.83,
+      "npxga": 1.07,
+      "ppda": 13,
+      "ppdaAllowed": 35.5,
+      "deep": 11,
+      "deepAllowed": 5,
+      "gf": 6,
+      "ga": 2,
+      "xpts": 2.9,
+      "pts": 3,
+      "result": "w",
+      "opp": "Sassuolo"
+     }
+    ]
+   },
+   {
+    "id": "97",
+    "name": "Bologna",
+    "games": [
+     {
+      "date": "2026-08-24 16:30:00",
+      "home": true,
+      "xg": 2.06,
+      "xga": 0.81,
+      "npxg": 2.06,
+      "npxga": 0.81,
+      "ppda": 8.8,
+      "ppdaAllowed": 10.2,
+      "deep": 4,
+      "deepAllowed": 4,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 2.34,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-08-31 18:45:00",
+      "home": false,
+      "xg": 1.24,
+      "xga": 0.18,
+      "npxg": 1.24,
+      "npxga": 0.18,
+      "ppda": 13.7,
+      "ppdaAllowed": 30.3,
+      "deep": 5,
+      "deepAllowed": 3,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 2.35,
+      "pts": 0,
+      "result": "l",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-09-06 16:00:00",
+      "home": true,
+      "xg": 3.01,
+      "xga": 1.84,
+      "npxg": 3.01,
+      "npxga": 1.84,
+      "ppda": 7.5,
+      "ppdaAllowed": 23.8,
+      "deep": 10,
+      "deepAllowed": 8,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 2.13,
+      "pts": 1,
+      "result": "d",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-09-13 16:00:00",
+      "home": false,
+      "xg": 0.17,
+      "xga": 2.25,
+      "npxg": 0.17,
+      "npxga": 2.25,
+      "ppda": 14.7,
+      "ppdaAllowed": 9.3,
+      "deep": 2,
+      "deepAllowed": 9,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 0.12,
+      "pts": 0,
+      "result": "l",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-09-19 13:00:00",
+      "home": true,
+      "xg": 0.7,
+      "xga": 0.96,
+      "npxg": 0.7,
+      "npxga": 0.96,
+      "ppda": 15.6,
+      "ppdaAllowed": 7.3,
+      "deep": 4,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.08,
+      "pts": 1,
+      "result": "d",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-10-11 13:00:00",
+      "home": false,
+      "xg": 2,
+      "xga": 1.21,
+      "npxg": 2,
+      "npxga": 1.21,
+      "ppda": 21.1,
+      "ppdaAllowed": 6.7,
+      "deep": 4,
+      "deepAllowed": 12,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.02,
+      "pts": 3,
+      "result": "w",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-10-17 16:00:00",
+      "home": true,
+      "xg": 1.77,
+      "xga": 3.6,
+      "npxg": 1.77,
+      "npxga": 3.6,
+      "ppda": 29.7,
+      "ppdaAllowed": 13,
+      "deep": 2,
+      "deepAllowed": 15,
+      "gf": 1,
+      "ga": 3,
+      "xpts": 0.37,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-10-24 13:00:00",
+      "home": false,
+      "xg": 1.78,
+      "xga": 0.24,
+      "npxg": 1.02,
+      "npxga": 0.24,
+      "ppda": 14.3,
+      "ppdaAllowed": 9.5,
+      "deep": 2,
+      "deepAllowed": 1,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.67,
+      "pts": 3,
+      "result": "w",
+      "opp": "Cagliari"
+     }
+    ]
+   },
+   {
+    "id": "98",
+    "name": "Juventus",
+    "games": [
+     {
+      "date": "2026-08-23 16:30:00",
+      "home": false,
+      "xg": 2.62,
+      "xga": 0.37,
+      "npxg": 2.62,
+      "npxga": 0.37,
+      "ppda": 5,
+      "ppdaAllowed": 9.9,
+      "deep": 12,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 2.76,
+      "pts": 3,
+      "result": "w",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-08-29 18:45:00",
+      "home": true,
+      "xg": 1.82,
+      "xga": 0.2,
+      "npxg": 1.82,
+      "npxga": 0.2,
+      "ppda": 6.3,
+      "ppdaAllowed": 17.4,
+      "deep": 16,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.62,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-09-06 18:45:00",
+      "home": true,
+      "xg": 1.69,
+      "xga": 0.09,
+      "npxg": 1.69,
+      "npxga": 0.09,
+      "ppda": 10.4,
+      "ppdaAllowed": 13.5,
+      "deep": 4,
+      "deepAllowed": 3,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 2.69,
+      "pts": 1,
+      "result": "d",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-09-13 18:45:00",
+      "home": false,
+      "xg": 1.18,
+      "xga": 0.96,
+      "npxg": 1.18,
+      "npxga": 0.96,
+      "ppda": 12.6,
+      "ppdaAllowed": 25.4,
+      "deep": 4,
+      "deepAllowed": 7,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 1.53,
+      "pts": 0,
+      "result": "l",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-09-20 16:00:00",
+      "home": true,
+      "xg": 1.92,
+      "xga": 0.49,
+      "npxg": 1.92,
+      "npxga": 0.49,
+      "ppda": 20.2,
+      "ppdaAllowed": 14.8,
+      "deep": 7,
+      "deepAllowed": 3,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.46,
+      "pts": 3,
+      "result": "w",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-10-11 18:45:00",
+      "home": false,
+      "xg": 2.38,
+      "xga": 0.81,
+      "npxg": 2.38,
+      "npxga": 0.81,
+      "ppda": 5.9,
+      "ppdaAllowed": 23.3,
+      "deep": 19,
+      "deepAllowed": 1,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 2.58,
+      "pts": 1,
+      "result": "d",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-10-18 18:45:00",
+      "home": true,
+      "xg": 0.6,
+      "xga": 0.82,
+      "npxg": 0.6,
+      "npxga": 0.82,
+      "ppda": 9.5,
+      "ppdaAllowed": 16.7,
+      "deep": 8,
+      "deepAllowed": 4,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 1.07,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-10-25 17:00:00",
+      "home": false,
+      "xg": 0.8,
+      "xga": 0.76,
+      "npxg": 0.8,
+      "npxga": 0.76,
+      "ppda": 8.6,
+      "ppdaAllowed": 12.9,
+      "deep": 6,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 1.4,
+      "pts": 3,
+      "result": "w",
+      "opp": "Lecce"
+     }
+    ]
+   },
+   {
+    "id": "99",
+    "name": "Udinese",
+    "games": [
+     {
+      "date": "2026-08-22 16:30:00",
+      "home": true,
+      "xg": 2.12,
+      "xga": 2.39,
+      "npxg": 2.12,
+      "npxga": 2.39,
+      "ppda": 11.8,
+      "ppdaAllowed": 9,
+      "deep": 7,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.22,
+      "pts": 1,
+      "result": "d",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": false,
+      "xg": 1.02,
+      "xga": 1.9,
+      "npxg": 1.02,
+      "npxga": 1.9,
+      "ppda": 13.5,
+      "ppdaAllowed": 14.3,
+      "deep": 8,
+      "deepAllowed": 6,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 0.73,
+      "pts": 3,
+      "result": "w",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-09-07 18:45:00",
+      "home": true,
+      "xg": 0.8,
+      "xga": 1.98,
+      "npxg": 0.8,
+      "npxga": 1.98,
+      "ppda": 12,
+      "ppdaAllowed": 11.8,
+      "deep": 8,
+      "deepAllowed": 10,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.52,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-09-14 18:45:00",
+      "home": false,
+      "xg": 1.29,
+      "xga": 3.69,
+      "npxg": 1.29,
+      "npxga": 3.69,
+      "ppda": 49,
+      "ppdaAllowed": 10.1,
+      "deep": 2,
+      "deepAllowed": 17,
+      "gf": 3,
+      "ga": 5,
+      "xpts": 0.2,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-09-19 13:00:00",
+      "home": true,
+      "xg": 1.85,
+      "xga": 0.64,
+      "npxg": 1.85,
+      "npxga": 0.64,
+      "ppda": 10.2,
+      "ppdaAllowed": 31.1,
+      "deep": 13,
+      "deepAllowed": 1,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 2.31,
+      "pts": 0,
+      "result": "l",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-10-12 18:45:00",
+      "home": false,
+      "xg": 0.57,
+      "xga": 2.38,
+      "npxg": 0.57,
+      "npxga": 2.38,
+      "ppda": 19.5,
+      "ppdaAllowed": 28.6,
+      "deep": 3,
+      "deepAllowed": 3,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.22,
+      "pts": 0,
+      "result": "l",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-10-18 10:30:00",
+      "home": true,
+      "xg": 0.59,
+      "xga": 4.36,
+      "npxg": 0.59,
+      "npxga": 4.36,
+      "ppda": 7.5,
+      "ppdaAllowed": 10.8,
+      "deep": 2,
+      "deepAllowed": 5,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 0.04,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-10-25 19:45:00",
+      "home": true,
+      "xg": 0.79,
+      "xga": 3.25,
+      "npxg": 0.79,
+      "npxga": 3.25,
+      "ppda": 12.2,
+      "ppdaAllowed": 8.5,
+      "deep": 4,
+      "deepAllowed": 9,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.15,
+      "pts": 0,
+      "result": "l",
+      "opp": "AC Milan"
+     }
+    ]
+   },
+   {
+    "id": "101",
+    "name": "Genoa",
+    "games": [
+     {
+      "date": "2026-08-22 18:45:00",
+      "home": true,
+      "xg": 0.5,
+      "xga": 1.16,
+      "npxg": 0.5,
+      "npxga": 1.16,
+      "ppda": 15.2,
+      "ppdaAllowed": 9.6,
+      "deep": 4,
+      "deepAllowed": 17,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.73,
+      "pts": 0,
+      "result": "l",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-08-30 18:45:00",
+      "home": false,
+      "xg": 0.74,
+      "xga": 2.11,
+      "npxg": 0.74,
+      "npxga": 2.11,
+      "ppda": 9.4,
+      "ppdaAllowed": 12,
+      "deep": 6,
+      "deepAllowed": 13,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 0.43,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-09-04 18:45:00",
+      "home": true,
+      "xg": 0.92,
+      "xga": 2.01,
+      "npxg": 0.92,
+      "npxga": 2.01,
+      "ppda": 28.5,
+      "ppdaAllowed": 20.1,
+      "deep": 5,
+      "deepAllowed": 10,
+      "gf": 1,
+      "ga": 4,
+      "xpts": 0.63,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-09-12 13:00:00",
+      "home": true,
+      "xg": 1.84,
+      "xga": 1.75,
+      "npxg": 1.08,
+      "npxga": 1.75,
+      "ppda": 7.3,
+      "ppdaAllowed": 6.2,
+      "deep": 2,
+      "deepAllowed": 9,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.47,
+      "pts": 1,
+      "result": "d",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-09-20 13:00:00",
+      "home": false,
+      "xg": 0.86,
+      "xga": 0.86,
+      "npxg": 0.86,
+      "npxga": 0.86,
+      "ppda": 6.3,
+      "ppdaAllowed": 11.2,
+      "deep": 1,
+      "deepAllowed": 1,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.32,
+      "pts": 0,
+      "result": "l",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-10-10 13:00:00",
+      "home": true,
+      "xg": 1.32,
+      "xga": 0.79,
+      "npxg": 1.32,
+      "npxga": 0.79,
+      "ppda": 8.5,
+      "ppdaAllowed": 6.2,
+      "deep": 4,
+      "deepAllowed": 13,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.85,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-10-17 18:45:00",
+      "home": false,
+      "xg": 0.51,
+      "xga": 1.41,
+      "npxg": 0.51,
+      "npxga": 1.41,
+      "ppda": 15.5,
+      "ppdaAllowed": 8.8,
+      "deep": 4,
+      "deepAllowed": 11,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.58,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-10-25 14:00:00",
+      "home": true,
+      "xg": 0.78,
+      "xga": 1.66,
+      "npxg": 0.78,
+      "npxga": 1.66,
+      "ppda": 14.7,
+      "ppdaAllowed": 17.4,
+      "deep": 1,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 0.68,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     }
+    ]
+   },
+   {
+    "id": "104",
+    "name": "Sassuolo",
+    "games": [
+     {
+      "date": "2026-08-23 18:45:00",
+      "home": false,
+      "xg": 2.7,
+      "xga": 0.92,
+      "npxg": 2.7,
+      "npxga": 0.92,
+      "ppda": 21.4,
+      "ppdaAllowed": 18.8,
+      "deep": 6,
+      "deepAllowed": 8,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 2.51,
+      "pts": 0,
+      "result": "l",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": true,
+      "xg": 1.55,
+      "xga": 1.5,
+      "npxg": 1.55,
+      "npxga": 1.5,
+      "ppda": 17.2,
+      "ppdaAllowed": 22.3,
+      "deep": 12,
+      "deepAllowed": 6,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.41,
+      "pts": 3,
+      "result": "w",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-09-06 16:00:00",
+      "home": false,
+      "xg": 1.84,
+      "xga": 3.01,
+      "npxg": 1.84,
+      "npxga": 3.01,
+      "ppda": 23.8,
+      "ppdaAllowed": 7.5,
+      "deep": 8,
+      "deepAllowed": 10,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 0.7,
+      "pts": 1,
+      "result": "d",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-09-13 18:45:00",
+      "home": true,
+      "xg": 0.96,
+      "xga": 1.18,
+      "npxg": 0.96,
+      "npxga": 1.18,
+      "ppda": 25.4,
+      "ppdaAllowed": 12.6,
+      "deep": 7,
+      "deepAllowed": 4,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 1.16,
+      "pts": 3,
+      "result": "w",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-09-18 18:45:00",
+      "home": false,
+      "xg": 2.27,
+      "xga": 1.61,
+      "npxg": 2.27,
+      "npxga": 0.85,
+      "ppda": 8.7,
+      "ppdaAllowed": 17,
+      "deep": 8,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.82,
+      "pts": 0,
+      "result": "l",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-10-11 16:00:00",
+      "home": true,
+      "xg": 1.34,
+      "xga": 1.87,
+      "npxg": 1.34,
+      "npxga": 1.87,
+      "ppda": 18.4,
+      "ppdaAllowed": 13.3,
+      "deep": 5,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 0.92,
+      "pts": 1,
+      "result": "d",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-10-16 18:45:00",
+      "home": false,
+      "xg": 1.82,
+      "xga": 2.94,
+      "npxg": 1.82,
+      "npxga": 2.94,
+      "ppda": 7.5,
+      "ppdaAllowed": 9.3,
+      "deep": 8,
+      "deepAllowed": 10,
+      "gf": 2,
+      "ga": 4,
+      "xpts": 0.67,
+      "pts": 0,
+      "result": "l",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-10-24 13:00:00",
+      "home": false,
+      "xg": 0.29,
+      "xga": 2.32,
+      "npxg": 0.29,
+      "npxga": 2.32,
+      "ppda": 22.1,
+      "ppdaAllowed": 9.8,
+      "deep": 7,
+      "deepAllowed": 9,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.15,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-10-27 17:30:00",
+      "home": true,
+      "xg": 1.07,
+      "xga": 4.36,
+      "npxg": 1.07,
+      "npxga": 2.83,
+      "ppda": 35.5,
+      "ppdaAllowed": 13,
+      "deep": 5,
+      "deepAllowed": 11,
+      "gf": 2,
+      "ga": 6,
+      "xpts": 0.06,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     }
+    ]
+   },
+   {
+    "id": "105",
+    "name": "Napoli",
+    "games": [
+     {
+      "date": "2026-08-22 18:45:00",
+      "home": false,
+      "xg": 1.16,
+      "xga": 0.5,
+      "npxg": 1.16,
+      "npxga": 0.5,
+      "ppda": 9.6,
+      "ppdaAllowed": 15.2,
+      "deep": 17,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 1.96,
+      "pts": 3,
+      "result": "w",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-08-30 16:30:00",
+      "home": true,
+      "xg": 1.03,
+      "xga": 1.1,
+      "npxg": 1.03,
+      "npxga": 1.1,
+      "ppda": 21,
+      "ppdaAllowed": 12,
+      "deep": 14,
+      "deepAllowed": 13,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.33,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-09-05 16:00:00",
+      "home": false,
+      "xg": 2.32,
+      "xga": 3.78,
+      "npxg": 2.32,
+      "npxga": 3.78,
+      "ppda": 20.4,
+      "ppdaAllowed": 6.9,
+      "deep": 8,
+      "deepAllowed": 15,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 0.55,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-09-13 16:00:00",
+      "home": true,
+      "xg": 2.25,
+      "xga": 0.17,
+      "npxg": 2.25,
+      "npxga": 0.17,
+      "ppda": 9.3,
+      "ppdaAllowed": 14.7,
+      "deep": 9,
+      "deepAllowed": 2,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 2.8,
+      "pts": 3,
+      "result": "w",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-09-20 10:30:00",
+      "home": false,
+      "xg": 2.13,
+      "xga": 1.06,
+      "npxg": 2.13,
+      "npxga": 1.06,
+      "ppda": 10.9,
+      "ppdaAllowed": 16.1,
+      "deep": 8,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 2.19,
+      "pts": 1,
+      "result": "d",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-10-10 18:45:00",
+      "home": true,
+      "xg": 3.53,
+      "xga": 0.79,
+      "npxg": 2.77,
+      "npxga": 0.79,
+      "ppda": 15.5,
+      "ppdaAllowed": 10,
+      "deep": 11,
+      "deepAllowed": 6,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 2.86,
+      "pts": 3,
+      "result": "w",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-10-17 13:00:00",
+      "home": false,
+      "xg": 2.56,
+      "xga": 0.68,
+      "npxg": 1.79,
+      "npxga": 0.68,
+      "ppda": 11.4,
+      "ppdaAllowed": 36.8,
+      "deep": 10,
+      "deepAllowed": 3,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 2.6,
+      "pts": 0,
+      "result": "l",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-10-24 16:00:00",
+      "home": true,
+      "xg": 2.98,
+      "xga": 1.96,
+      "npxg": 2.98,
+      "npxga": 1.96,
+      "ppda": 14.4,
+      "ppdaAllowed": 8.5,
+      "deep": 4,
+      "deepAllowed": 16,
+      "gf": 3,
+      "ga": 3,
+      "xpts": 2.06,
+      "pts": 1,
+      "result": "d",
+      "opp": "Roma"
+     }
+    ]
+   },
+   {
+    "id": "106",
+    "name": "Inter",
+    "games": [
+     {
+      "date": "2026-08-22 16:30:00",
+      "home": true,
+      "xg": 1.54,
+      "xga": 1.22,
+      "npxg": 1.54,
+      "npxga": 1.22,
+      "ppda": 12,
+      "ppdaAllowed": 18.9,
+      "deep": 9,
+      "deepAllowed": 1,
+      "gf": 4,
+      "ga": 1,
+      "xpts": 1.61,
+      "pts": 3,
+      "result": "w",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-08-30 18:45:00",
+      "home": false,
+      "xg": 3.97,
+      "xga": 0.32,
+      "npxg": 3.97,
+      "npxga": 0.32,
+      "ppda": 9.8,
+      "ppdaAllowed": 29.5,
+      "deep": 14,
+      "deepAllowed": 2,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 2.92,
+      "pts": 3,
+      "result": "w",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-09-05 16:00:00",
+      "home": true,
+      "xg": 3.78,
+      "xga": 2.32,
+      "npxg": 3.78,
+      "npxga": 2.32,
+      "ppda": 6.9,
+      "ppdaAllowed": 20.4,
+      "deep": 15,
+      "deepAllowed": 8,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 2.29,
+      "pts": 3,
+      "result": "w",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-09-14 18:45:00",
+      "home": true,
+      "xg": 3.69,
+      "xga": 1.29,
+      "npxg": 3.69,
+      "npxga": 1.29,
+      "ppda": 10.1,
+      "ppdaAllowed": 49,
+      "deep": 17,
+      "deepAllowed": 2,
+      "gf": 5,
+      "ga": 3,
+      "xpts": 2.71,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-09-19 16:00:00",
+      "home": false,
+      "xg": 2.59,
+      "xga": 2.31,
+      "npxg": 2.59,
+      "npxga": 2.31,
+      "ppda": 21.5,
+      "ppdaAllowed": 8,
+      "deep": 9,
+      "deepAllowed": 13,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 1.58,
+      "pts": 1,
+      "result": "d",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-10-10 16:00:00",
+      "home": true,
+      "xg": 2.9,
+      "xga": 0.41,
+      "npxg": 2.14,
+      "npxga": 0.41,
+      "ppda": 8.5,
+      "ppdaAllowed": 22.9,
+      "deep": 14,
+      "deepAllowed": 3,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 2.82,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-10-17 16:00:00",
+      "home": false,
+      "xg": 3.6,
+      "xga": 1.77,
+      "npxg": 3.6,
+      "npxga": 1.77,
+      "ppda": 13,
+      "ppdaAllowed": 29.7,
+      "deep": 15,
+      "deepAllowed": 2,
+      "gf": 3,
+      "ga": 1,
+      "xpts": 2.5,
+      "pts": 3,
+      "result": "w",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-10-25 11:30:00",
+      "home": true,
+      "xg": 2.75,
+      "xga": 0.28,
+      "npxg": 1.99,
+      "npxga": 0.28,
+      "ppda": 7.2,
+      "ppdaAllowed": 19,
+      "deep": 19,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.84,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     }
+    ]
+   },
+   {
+    "id": "107",
+    "name": "Atalanta",
+    "games": [
+     {
+      "date": "2026-08-23 18:45:00",
+      "home": true,
+      "xg": 0.92,
+      "xga": 2.7,
+      "npxg": 0.92,
+      "npxga": 2.7,
+      "ppda": 18.8,
+      "ppdaAllowed": 21.4,
+      "deep": 8,
+      "deepAllowed": 6,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 0.35,
+      "pts": 3,
+      "result": "w",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-08-31 18:45:00",
+      "home": true,
+      "xg": 0.18,
+      "xga": 1.24,
+      "npxg": 0.18,
+      "npxga": 1.24,
+      "ppda": 30.3,
+      "ppdaAllowed": 13.7,
+      "deep": 3,
+      "deepAllowed": 5,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 0.39,
+      "pts": 3,
+      "result": "w",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-09-05 18:45:00",
+      "home": false,
+      "xg": 0.77,
+      "xga": 3.54,
+      "npxg": 0.77,
+      "npxga": 3.54,
+      "ppda": 28.6,
+      "ppdaAllowed": 7.2,
+      "deep": 2,
+      "deepAllowed": 20,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.16,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-09-12 18:45:00",
+      "home": true,
+      "xg": 1.48,
+      "xga": 1.31,
+      "npxg": 1.48,
+      "npxga": 0.55,
+      "ppda": 14,
+      "ppdaAllowed": 27.7,
+      "deep": 11,
+      "deepAllowed": 3,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.43,
+      "pts": 0,
+      "result": "l",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-09-20 16:00:00",
+      "home": false,
+      "xg": 0.49,
+      "xga": 1.92,
+      "npxg": 0.49,
+      "npxga": 1.92,
+      "ppda": 14.8,
+      "ppdaAllowed": 20.2,
+      "deep": 3,
+      "deepAllowed": 7,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.36,
+      "pts": 0,
+      "result": "l",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-10-12 16:30:00",
+      "home": true,
+      "xg": 2.92,
+      "xga": 2.69,
+      "npxg": 2.92,
+      "npxga": 2.69,
+      "ppda": 14.3,
+      "ppdaAllowed": 10.5,
+      "deep": 5,
+      "deepAllowed": 9,
+      "gf": 3,
+      "ga": 1,
+      "xpts": 1.54,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-10-18 16:00:00",
+      "home": false,
+      "xg": 1.92,
+      "xga": 2.62,
+      "npxg": 1.92,
+      "npxga": 1.09,
+      "ppda": 22.1,
+      "ppdaAllowed": 19.8,
+      "deep": 7,
+      "deepAllowed": 6,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 0.86,
+      "pts": 0,
+      "result": "l",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-10-25 14:00:00",
+      "home": true,
+      "xg": 4.32,
+      "xga": 1.51,
+      "npxg": 3.56,
+      "npxga": 1.51,
+      "ppda": 9.1,
+      "ppdaAllowed": 5.8,
+      "deep": 12,
+      "deepAllowed": 15,
+      "gf": 4,
+      "ga": 4,
+      "xpts": 2.77,
+      "pts": 1,
+      "result": "d",
+      "opp": "Frosinone"
+     }
+    ]
+   },
+   {
+    "id": "110",
+    "name": "Fiorentina",
+    "games": [
+     {
+      "date": "2026-08-24 18:45:00",
+      "home": false,
+      "xg": 0.29,
+      "xga": 3.78,
+      "npxg": 0.29,
+      "npxga": 3.78,
+      "ppda": 19.1,
+      "ppdaAllowed": 8.2,
+      "deep": 3,
+      "deepAllowed": 8,
+      "gf": 0,
+      "ga": 4,
+      "xpts": 0.02,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": true,
+      "xg": 1.82,
+      "xga": 1.95,
+      "npxg": 1.82,
+      "npxga": 1.95,
+      "ppda": 4.4,
+      "ppdaAllowed": 6.7,
+      "deep": 15,
+      "deepAllowed": 7,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 1.28,
+      "pts": 0,
+      "result": "l",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-09-05 13:00:00",
+      "home": true,
+      "xg": 1.36,
+      "xga": 0.77,
+      "npxg": 1.36,
+      "npxga": 0.77,
+      "ppda": 15.1,
+      "ppdaAllowed": 8.6,
+      "deep": 3,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.83,
+      "pts": 0,
+      "result": "l",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-09-11 18:45:00",
+      "home": false,
+      "xg": 3.13,
+      "xga": 1.03,
+      "npxg": 3.13,
+      "npxga": 1.03,
+      "ppda": 17.3,
+      "ppdaAllowed": 6.3,
+      "deep": 16,
+      "deepAllowed": 6,
+      "gf": 4,
+      "ga": 2,
+      "xpts": 2.6,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-09-20 10:30:00",
+      "home": true,
+      "xg": 1.06,
+      "xga": 2.13,
+      "npxg": 1.06,
+      "npxga": 2.13,
+      "ppda": 16.1,
+      "ppdaAllowed": 10.9,
+      "deep": 4,
+      "deepAllowed": 8,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 0.6,
+      "pts": 1,
+      "result": "d",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-10-10 13:00:00",
+      "home": false,
+      "xg": 0.79,
+      "xga": 1.32,
+      "npxg": 0.79,
+      "npxga": 1.32,
+      "ppda": 6.2,
+      "ppdaAllowed": 8.5,
+      "deep": 13,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.85,
+      "pts": 0,
+      "result": "l",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-10-18 13:00:00",
+      "home": true,
+      "xg": 2.76,
+      "xga": 2.11,
+      "npxg": 2.76,
+      "npxga": 2.11,
+      "ppda": 14.1,
+      "ppdaAllowed": 8.2,
+      "deep": 7,
+      "deepAllowed": 1,
+      "gf": 1,
+      "ga": 3,
+      "xpts": 1.81,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-10-25 11:30:00",
+      "home": false,
+      "xg": 0.28,
+      "xga": 2.75,
+      "npxg": 0.28,
+      "npxga": 1.99,
+      "ppda": 19,
+      "ppdaAllowed": 7.2,
+      "deep": 4,
+      "deepAllowed": 19,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.1,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     }
+    ]
+   },
+   {
+    "id": "111",
+    "name": "AC Milan",
+    "games": [
+     {
+      "date": "2026-08-23 18:45:00",
+      "home": false,
+      "xg": 1.74,
+      "xga": 1.13,
+      "npxg": 1.74,
+      "npxga": 1.13,
+      "ppda": 17.6,
+      "ppdaAllowed": 18.7,
+      "deep": 9,
+      "deepAllowed": 2,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.81,
+      "pts": 3,
+      "result": "w",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-08-28 18:45:00",
+      "home": true,
+      "xg": 3.22,
+      "xga": 0.52,
+      "npxg": 3.22,
+      "npxga": 0.52,
+      "ppda": 11.9,
+      "ppdaAllowed": 11.5,
+      "deep": 8,
+      "deepAllowed": 2,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.84,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-09-06 18:45:00",
+      "home": false,
+      "xg": 0.09,
+      "xga": 1.69,
+      "npxg": 0.09,
+      "npxga": 1.69,
+      "ppda": 13.5,
+      "ppdaAllowed": 10.4,
+      "deep": 3,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 0.17,
+      "pts": 1,
+      "result": "d",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-09-12 16:00:00",
+      "home": false,
+      "xg": 2.16,
+      "xga": 2.36,
+      "npxg": 2.16,
+      "npxga": 2.36,
+      "ppda": 9,
+      "ppdaAllowed": 16.7,
+      "deep": 7,
+      "deepAllowed": 6,
+      "gf": 2,
+      "ga": 2,
+      "xpts": 1.21,
+      "pts": 1,
+      "result": "d",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-09-20 18:45:00",
+      "home": true,
+      "xg": 2.48,
+      "xga": 0.22,
+      "npxg": 2.48,
+      "npxga": 0.22,
+      "ppda": 12.4,
+      "ppdaAllowed": 15.2,
+      "deep": 6,
+      "deepAllowed": 2,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 2.83,
+      "pts": 3,
+      "result": "w",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-10-11 16:00:00",
+      "home": false,
+      "xg": 1.87,
+      "xga": 1.34,
+      "npxg": 1.87,
+      "npxga": 1.34,
+      "ppda": 13.3,
+      "ppdaAllowed": 18.4,
+      "deep": 6,
+      "deepAllowed": 5,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.81,
+      "pts": 1,
+      "result": "d",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-10-18 16:00:00",
+      "home": true,
+      "xg": 2.62,
+      "xga": 1.92,
+      "npxg": 1.09,
+      "npxga": 1.92,
+      "ppda": 19.8,
+      "ppdaAllowed": 22.1,
+      "deep": 6,
+      "deepAllowed": 7,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 1.91,
+      "pts": 3,
+      "result": "w",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-10-25 19:45:00",
+      "home": false,
+      "xg": 3.25,
+      "xga": 0.79,
+      "npxg": 3.25,
+      "npxga": 0.79,
+      "ppda": 8.5,
+      "ppdaAllowed": 12.2,
+      "deep": 9,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.77,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     }
+    ]
+   },
+   {
+    "id": "112",
+    "name": "Frosinone",
+    "games": [
+     {
+      "date": "2026-08-23 16:30:00",
+      "home": true,
+      "xg": 0.37,
+      "xga": 2.62,
+      "npxg": 0.37,
+      "npxga": 2.62,
+      "ppda": 9.9,
+      "ppdaAllowed": 5,
+      "deep": 4,
+      "deepAllowed": 12,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 0.16,
+      "pts": 0,
+      "result": "l",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": false,
+      "xg": 1.95,
+      "xga": 1.82,
+      "npxg": 1.95,
+      "npxga": 1.82,
+      "ppda": 6.7,
+      "ppdaAllowed": 4.4,
+      "deep": 7,
+      "deepAllowed": 15,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 1.47,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-09-06 13:00:00",
+      "home": true,
+      "xg": 1.79,
+      "xga": 2.44,
+      "npxg": 1.79,
+      "npxga": 2.44,
+      "ppda": 6.8,
+      "ppdaAllowed": 4.6,
+      "deep": 5,
+      "deepAllowed": 6,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 0.91,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-09-12 13:00:00",
+      "home": false,
+      "xg": 1.75,
+      "xga": 1.84,
+      "npxg": 1.75,
+      "npxga": 1.08,
+      "ppda": 6.2,
+      "ppdaAllowed": 7.3,
+      "deep": 9,
+      "deepAllowed": 2,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.28,
+      "pts": 1,
+      "result": "d",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-09-20 13:00:00",
+      "home": true,
+      "xg": 2.26,
+      "xga": 2.29,
+      "npxg": 2.26,
+      "npxga": 2.29,
+      "ppda": 8.3,
+      "ppdaAllowed": 5.2,
+      "deep": 5,
+      "deepAllowed": 16,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 1.38,
+      "pts": 3,
+      "result": "w",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-10-10 18:45:00",
+      "home": false,
+      "xg": 0.79,
+      "xga": 3.53,
+      "npxg": 0.79,
+      "npxga": 2.77,
+      "ppda": 10,
+      "ppdaAllowed": 15.5,
+      "deep": 6,
+      "deepAllowed": 11,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 0.09,
+      "pts": 0,
+      "result": "l",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-10-16 18:45:00",
+      "home": true,
+      "xg": 2.94,
+      "xga": 1.82,
+      "npxg": 2.94,
+      "npxga": 1.82,
+      "ppda": 9.3,
+      "ppdaAllowed": 7.5,
+      "deep": 10,
+      "deepAllowed": 8,
+      "gf": 4,
+      "ga": 2,
+      "xpts": 2.14,
+      "pts": 3,
+      "result": "w",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-10-25 14:00:00",
+      "home": false,
+      "xg": 1.51,
+      "xga": 4.32,
+      "npxg": 1.51,
+      "npxga": 3.56,
+      "ppda": 5.8,
+      "ppdaAllowed": 9.1,
+      "deep": 15,
+      "deepAllowed": 12,
+      "gf": 4,
+      "ga": 4,
+      "xpts": 0.17,
+      "pts": 1,
+      "result": "d",
+      "opp": "Atalanta"
+     }
+    ]
+   },
+   {
+    "id": "113",
+    "name": "Torino",
+    "games": [
+     {
+      "date": "2026-08-23 18:45:00",
+      "home": true,
+      "xg": 1.13,
+      "xga": 1.74,
+      "npxg": 1.13,
+      "npxga": 1.74,
+      "ppda": 18.7,
+      "ppdaAllowed": 17.6,
+      "deep": 2,
+      "deepAllowed": 9,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.94,
+      "pts": 0,
+      "result": "l",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": false,
+      "xg": 1.5,
+      "xga": 1.55,
+      "npxg": 1.5,
+      "npxga": 1.55,
+      "ppda": 22.3,
+      "ppdaAllowed": 17.2,
+      "deep": 6,
+      "deepAllowed": 12,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 1.32,
+      "pts": 0,
+      "result": "l",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-09-05 13:00:00",
+      "home": false,
+      "xg": 0.77,
+      "xga": 1.36,
+      "npxg": 0.77,
+      "npxga": 1.36,
+      "ppda": 8.6,
+      "ppdaAllowed": 15.1,
+      "deep": 4,
+      "deepAllowed": 3,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 0.86,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-09-14 16:30:00",
+      "home": true,
+      "xg": 0.71,
+      "xga": 2.33,
+      "npxg": 0.71,
+      "npxga": 2.33,
+      "ppda": 14.8,
+      "ppdaAllowed": 9.3,
+      "deep": 3,
+      "deepAllowed": 5,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.26,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-09-19 13:00:00",
+      "home": false,
+      "xg": 0.96,
+      "xga": 0.7,
+      "npxg": 0.96,
+      "npxga": 0.7,
+      "ppda": 7.3,
+      "ppdaAllowed": 15.6,
+      "deep": 6,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.58,
+      "pts": 1,
+      "result": "d",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-10-12 18:45:00",
+      "home": true,
+      "xg": 2.38,
+      "xga": 0.57,
+      "npxg": 2.38,
+      "npxga": 0.57,
+      "ppda": 28.6,
+      "ppdaAllowed": 19.5,
+      "deep": 3,
+      "deepAllowed": 3,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.67,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-10-19 18:45:00",
+      "home": false,
+      "xg": 1.33,
+      "xga": 1.27,
+      "npxg": 1.33,
+      "npxga": 1.27,
+      "ppda": 10.5,
+      "ppdaAllowed": 15.5,
+      "deep": 2,
+      "deepAllowed": 15,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 1.45,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-10-23 18:45:00",
+      "home": true,
+      "xg": 1.45,
+      "xga": 0.44,
+      "npxg": 1.45,
+      "npxga": 0.44,
+      "ppda": 16.4,
+      "ppdaAllowed": 15.6,
+      "deep": 8,
+      "deepAllowed": 5,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 2.21,
+      "pts": 3,
+      "result": "w",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-10-27 19:45:00",
+      "home": true,
+      "xg": 1.45,
+      "xga": 2.71,
+      "npxg": 1.45,
+      "npxga": 2.71,
+      "ppda": 27.6,
+      "ppdaAllowed": 11.8,
+      "deep": 0,
+      "deepAllowed": 13,
+      "gf": 1,
+      "ga": 3,
+      "xpts": 0.6,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     }
+    ]
+   },
+   {
+    "id": "116",
+    "name": "Cagliari",
+    "games": [
+     {
+      "date": "2026-08-22 18:45:00",
+      "home": false,
+      "xg": 1.26,
+      "xga": 1.03,
+      "npxg": 1.26,
+      "npxga": 1.03,
+      "ppda": 9.3,
+      "ppdaAllowed": 12.2,
+      "deep": 5,
+      "deepAllowed": 7,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 1.51,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-08-30 18:45:00",
+      "home": true,
+      "xg": 0.32,
+      "xga": 3.97,
+      "npxg": 0.32,
+      "npxga": 3.97,
+      "ppda": 29.5,
+      "ppdaAllowed": 9.8,
+      "deep": 2,
+      "deepAllowed": 14,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 0.05,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-09-07 16:30:00",
+      "home": true,
+      "xg": 1.92,
+      "xga": 0.45,
+      "npxg": 1.92,
+      "npxga": 0.45,
+      "ppda": 19.3,
+      "ppdaAllowed": 9.1,
+      "deep": 2,
+      "deepAllowed": 6,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 2.46,
+      "pts": 3,
+      "result": "w",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-09-12 18:45:00",
+      "home": false,
+      "xg": 1.31,
+      "xga": 1.48,
+      "npxg": 0.55,
+      "npxga": 1.48,
+      "ppda": 27.7,
+      "ppdaAllowed": 14,
+      "deep": 3,
+      "deepAllowed": 11,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.27,
+      "pts": 3,
+      "result": "w",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-09-19 13:00:00",
+      "home": false,
+      "xg": 0.64,
+      "xga": 1.85,
+      "npxg": 0.64,
+      "npxga": 1.85,
+      "ppda": 31.1,
+      "ppdaAllowed": 10.2,
+      "deep": 1,
+      "deepAllowed": 13,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 0.48,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-10-11 18:45:00",
+      "home": true,
+      "xg": 0.81,
+      "xga": 2.38,
+      "npxg": 0.81,
+      "npxga": 2.38,
+      "ppda": 23.3,
+      "ppdaAllowed": 5.9,
+      "deep": 1,
+      "deepAllowed": 19,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 0.27,
+      "pts": 1,
+      "result": "d",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-10-19 16:30:00",
+      "home": false,
+      "xg": 2.73,
+      "xga": 1.84,
+      "npxg": 2.73,
+      "npxga": 1.84,
+      "ppda": 7.6,
+      "ppdaAllowed": 12.2,
+      "deep": 8,
+      "deepAllowed": 7,
+      "gf": 0,
+      "ga": 4,
+      "xpts": 1.99,
+      "pts": 0,
+      "result": "l",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-10-24 13:00:00",
+      "home": true,
+      "xg": 0.24,
+      "xga": 1.78,
+      "npxg": 0.24,
+      "npxga": 1.02,
+      "ppda": 9.5,
+      "ppdaAllowed": 14.3,
+      "deep": 1,
+      "deepAllowed": 2,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.2,
+      "pts": 0,
+      "result": "l",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-10-27 19:45:00",
+      "home": false,
+      "xg": 2.48,
+      "xga": 3.85,
+      "npxg": 1.72,
+      "npxga": 3.85,
+      "ppda": 23.6,
+      "ppdaAllowed": 9.2,
+      "deep": 5,
+      "deepAllowed": 7,
+      "gf": 2,
+      "ga": 4,
+      "xpts": 0.63,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     }
+    ]
+   },
+   {
+    "id": "230",
+    "name": "Parma Calcio 1913",
+    "games": [
+     {
+      "date": "2026-08-22 18:45:00",
+      "home": true,
+      "xg": 1.03,
+      "xga": 1.26,
+      "npxg": 1.03,
+      "npxga": 1.26,
+      "ppda": 12.2,
+      "ppdaAllowed": 9.3,
+      "deep": 7,
+      "deepAllowed": 5,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 1.19,
+      "pts": 0,
+      "result": "l",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-08-29 18:45:00",
+      "home": false,
+      "xg": 0.2,
+      "xga": 1.82,
+      "npxg": 0.2,
+      "npxga": 1.82,
+      "ppda": 17.4,
+      "ppdaAllowed": 6.3,
+      "deep": 4,
+      "deepAllowed": 16,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.22,
+      "pts": 0,
+      "result": "l",
+      "opp": "Juventus"
+     },
+     {
+      "date": "2026-09-06 13:00:00",
+      "home": true,
+      "xg": 0.62,
+      "xga": 2.1,
+      "npxg": 0.62,
+      "npxga": 2.1,
+      "ppda": 13.2,
+      "ppdaAllowed": 13.1,
+      "deep": 9,
+      "deepAllowed": 3,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 0.38,
+      "pts": 1,
+      "result": "d",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-09-14 16:30:00",
+      "home": false,
+      "xg": 1.55,
+      "xga": 3.77,
+      "npxg": 1.55,
+      "npxga": 3.77,
+      "ppda": 20.9,
+      "ppdaAllowed": 8.6,
+      "deep": 3,
+      "deepAllowed": 16,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.28,
+      "pts": 0,
+      "result": "l",
+      "opp": "Como"
+     },
+     {
+      "date": "2026-09-20 13:00:00",
+      "home": true,
+      "xg": 0.86,
+      "xga": 0.86,
+      "npxg": 0.86,
+      "npxga": 0.86,
+      "ppda": 11.2,
+      "ppdaAllowed": 6.3,
+      "deep": 1,
+      "deepAllowed": 1,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.32,
+      "pts": 3,
+      "result": "w",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-10-10 16:00:00",
+      "home": false,
+      "xg": 0.41,
+      "xga": 2.9,
+      "npxg": 0.41,
+      "npxga": 2.14,
+      "ppda": 22.9,
+      "ppdaAllowed": 8.5,
+      "deep": 3,
+      "deepAllowed": 14,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 0.11,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-10-19 18:45:00",
+      "home": true,
+      "xg": 1.27,
+      "xga": 1.33,
+      "npxg": 1.27,
+      "npxga": 1.33,
+      "ppda": 15.5,
+      "ppdaAllowed": 10.5,
+      "deep": 15,
+      "deepAllowed": 2,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 1.26,
+      "pts": 0,
+      "result": "l",
+      "opp": "Torino"
+     },
+     {
+      "date": "2026-10-24 18:45:00",
+      "home": false,
+      "xg": 0.95,
+      "xga": 1.67,
+      "npxg": 0.95,
+      "npxga": 1.67,
+      "ppda": 17.3,
+      "ppdaAllowed": 7.6,
+      "deep": 5,
+      "deepAllowed": 13,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.86,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     }
+    ]
+   },
+   {
+    "id": "243",
+    "name": "Lecce",
+    "games": [
+     {
+      "date": "2026-08-23 16:30:00",
+      "home": false,
+      "xg": 2.45,
+      "xga": 3.19,
+      "npxg": 2.45,
+      "npxga": 3.19,
+      "ppda": 18.8,
+      "ppdaAllowed": 5.5,
+      "deep": 5,
+      "deepAllowed": 4,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 0.93,
+      "pts": 3,
+      "result": "w",
+      "opp": "Venezia"
+     },
+     {
+      "date": "2026-08-31 16:30:00",
+      "home": true,
+      "xg": 1.2,
+      "xga": 4.14,
+      "npxg": 1.2,
+      "npxga": 4.14,
+      "ppda": 21.9,
+      "ppdaAllowed": 6.5,
+      "deep": 1,
+      "deepAllowed": 20,
+      "gf": 0,
+      "ga": 4,
+      "xpts": 0.1,
+      "pts": 0,
+      "result": "l",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-09-07 16:30:00",
+      "home": false,
+      "xg": 0.45,
+      "xga": 1.92,
+      "npxg": 0.45,
+      "npxga": 1.92,
+      "ppda": 9.1,
+      "ppdaAllowed": 19.3,
+      "deep": 6,
+      "deepAllowed": 2,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 0.36,
+      "pts": 0,
+      "result": "l",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-09-13 13:00:00",
+      "home": true,
+      "xg": 1.95,
+      "xga": 3.09,
+      "npxg": 1.95,
+      "npxga": 3.09,
+      "ppda": 9.3,
+      "ppdaAllowed": 7.7,
+      "deep": 1,
+      "deepAllowed": 10,
+      "gf": 3,
+      "ga": 2,
+      "xpts": 0.67,
+      "pts": 3,
+      "result": "w",
+      "opp": "Monza"
+     },
+     {
+      "date": "2026-09-20 18:45:00",
+      "home": false,
+      "xg": 0.22,
+      "xga": 2.48,
+      "npxg": 0.22,
+      "npxga": 2.48,
+      "ppda": 15.2,
+      "ppdaAllowed": 12.4,
+      "deep": 2,
+      "deepAllowed": 6,
+      "gf": 0,
+      "ga": 3,
+      "xpts": 0.1,
+      "pts": 0,
+      "result": "l",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-10-11 13:00:00",
+      "home": true,
+      "xg": 1.21,
+      "xga": 2,
+      "npxg": 1.21,
+      "npxga": 2,
+      "ppda": 6.7,
+      "ppdaAllowed": 21.1,
+      "deep": 12,
+      "deepAllowed": 4,
+      "gf": 1,
+      "ga": 2,
+      "xpts": 0.75,
+      "pts": 0,
+      "result": "l",
+      "opp": "Bologna"
+     },
+     {
+      "date": "2026-10-18 10:30:00",
+      "home": false,
+      "xg": 4.36,
+      "xga": 0.59,
+      "npxg": 4.36,
+      "npxga": 0.59,
+      "ppda": 10.8,
+      "ppdaAllowed": 7.5,
+      "deep": 5,
+      "deepAllowed": 2,
+      "gf": 3,
+      "ga": 0,
+      "xpts": 2.94,
+      "pts": 3,
+      "result": "w",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-10-25 17:00:00",
+      "home": true,
+      "xg": 0.76,
+      "xga": 0.8,
+      "npxg": 0.76,
+      "npxga": 0.8,
+      "ppda": 12.9,
+      "ppdaAllowed": 8.6,
+      "deep": 4,
+      "deepAllowed": 6,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 1.24,
+      "pts": 0,
+      "result": "l",
+      "opp": "Juventus"
+     }
+    ]
+   },
+   {
+    "id": "265",
+    "name": "Venezia",
+    "games": [
+     {
+      "date": "2026-08-23 16:30:00",
+      "home": true,
+      "xg": 3.19,
+      "xga": 2.45,
+      "npxg": 3.19,
+      "npxga": 2.45,
+      "ppda": 5.5,
+      "ppdaAllowed": 18.8,
+      "deep": 4,
+      "deepAllowed": 5,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 1.85,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-08-28 18:45:00",
+      "home": false,
+      "xg": 0.52,
+      "xga": 3.22,
+      "npxg": 0.52,
+      "npxga": 3.22,
+      "ppda": 11.5,
+      "ppdaAllowed": 11.9,
+      "deep": 2,
+      "deepAllowed": 8,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 0.11,
+      "pts": 0,
+      "result": "l",
+      "opp": "AC Milan"
+     },
+     {
+      "date": "2026-09-06 13:00:00",
+      "home": false,
+      "xg": 2.44,
+      "xga": 1.79,
+      "npxg": 2.44,
+      "npxga": 1.79,
+      "ppda": 4.6,
+      "ppdaAllowed": 6.8,
+      "deep": 6,
+      "deepAllowed": 5,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 1.85,
+      "pts": 0,
+      "result": "l",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-09-11 18:45:00",
+      "home": true,
+      "xg": 1.03,
+      "xga": 3.13,
+      "npxg": 1.03,
+      "npxga": 3.13,
+      "ppda": 6.3,
+      "ppdaAllowed": 17.3,
+      "deep": 6,
+      "deepAllowed": 16,
+      "gf": 2,
+      "ga": 4,
+      "xpts": 0.28,
+      "pts": 0,
+      "result": "l",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-09-19 18:45:00",
+      "home": true,
+      "xg": 1.85,
+      "xga": 1.77,
+      "npxg": 1.09,
+      "npxga": 1.01,
+      "ppda": 14.8,
+      "ppdaAllowed": 14.5,
+      "deep": 5,
+      "deepAllowed": 8,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 1.39,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-10-12 16:30:00",
+      "home": false,
+      "xg": 2.69,
+      "xga": 2.92,
+      "npxg": 2.69,
+      "npxga": 2.92,
+      "ppda": 10.5,
+      "ppdaAllowed": 14.3,
+      "deep": 9,
+      "deepAllowed": 5,
+      "gf": 1,
+      "ga": 3,
+      "xpts": 1.25,
+      "pts": 0,
+      "result": "l",
+      "opp": "Atalanta"
+     },
+     {
+      "date": "2026-10-17 13:00:00",
+      "home": true,
+      "xg": 0.68,
+      "xga": 2.56,
+      "npxg": 0.68,
+      "npxga": 1.79,
+      "ppda": 36.8,
+      "ppdaAllowed": 11.4,
+      "deep": 3,
+      "deepAllowed": 10,
+      "gf": 1,
+      "ga": 0,
+      "xpts": 0.28,
+      "pts": 3,
+      "result": "w",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-10-25 14:00:00",
+      "home": false,
+      "xg": 1.66,
+      "xga": 0.78,
+      "npxg": 1.66,
+      "npxga": 0.78,
+      "ppda": 17.4,
+      "ppdaAllowed": 14.7,
+      "deep": 6,
+      "deepAllowed": 1,
+      "gf": 0,
+      "ga": 1,
+      "xpts": 2.07,
+      "pts": 0,
+      "result": "l",
+      "opp": "Genoa"
+     }
+    ]
+   },
+   {
+    "id": "271",
+    "name": "Monza",
+    "games": [
+     {
+      "date": "2026-08-22 16:30:00",
+      "home": false,
+      "xg": 1.22,
+      "xga": 1.54,
+      "npxg": 1.22,
+      "npxga": 1.54,
+      "ppda": 18.9,
+      "ppdaAllowed": 12,
+      "deep": 1,
+      "deepAllowed": 9,
+      "gf": 1,
+      "ga": 4,
+      "xpts": 1.1,
+      "pts": 0,
+      "result": "l",
+      "opp": "Inter"
+     },
+     {
+      "date": "2026-08-29 16:30:00",
+      "home": true,
+      "xg": 1.9,
+      "xga": 1.02,
+      "npxg": 1.9,
+      "npxga": 1.02,
+      "ppda": 14.3,
+      "ppdaAllowed": 13.5,
+      "deep": 6,
+      "deepAllowed": 8,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 2.05,
+      "pts": 0,
+      "result": "l",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-09-06 13:00:00",
+      "home": false,
+      "xg": 2.1,
+      "xga": 0.62,
+      "npxg": 2.1,
+      "npxga": 0.62,
+      "ppda": 13.1,
+      "ppdaAllowed": 13.2,
+      "deep": 3,
+      "deepAllowed": 9,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 2.45,
+      "pts": 1,
+      "result": "d",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-09-13 13:00:00",
+      "home": false,
+      "xg": 3.09,
+      "xga": 1.95,
+      "npxg": 3.09,
+      "npxga": 1.95,
+      "ppda": 7.7,
+      "ppdaAllowed": 9.3,
+      "deep": 10,
+      "deepAllowed": 1,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 2.14,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lecce"
+     },
+     {
+      "date": "2026-09-18 18:45:00",
+      "home": true,
+      "xg": 1.61,
+      "xga": 2.27,
+      "npxg": 0.85,
+      "npxga": 2.27,
+      "ppda": 17,
+      "ppdaAllowed": 8.7,
+      "deep": 6,
+      "deepAllowed": 8,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 0.95,
+      "pts": 3,
+      "result": "w",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-10-11 13:00:00",
+      "home": false,
+      "xg": 1.3,
+      "xga": 2.22,
+      "npxg": 1.3,
+      "npxga": 2.22,
+      "ppda": 28.4,
+      "ppdaAllowed": 7.6,
+      "deep": 4,
+      "deepAllowed": 10,
+      "gf": 1,
+      "ga": 3,
+      "xpts": 0.75,
+      "pts": 0,
+      "result": "l",
+      "opp": "Lazio"
+     },
+     {
+      "date": "2026-10-19 16:30:00",
+      "home": true,
+      "xg": 1.84,
+      "xga": 2.73,
+      "npxg": 1.84,
+      "npxga": 2.73,
+      "ppda": 12.2,
+      "ppdaAllowed": 7.6,
+      "deep": 7,
+      "deepAllowed": 8,
+      "gf": 4,
+      "ga": 0,
+      "xpts": 0.81,
+      "pts": 3,
+      "result": "w",
+      "opp": "Cagliari"
+     },
+     {
+      "date": "2026-10-23 18:45:00",
+      "home": false,
+      "xg": 0.44,
+      "xga": 1.45,
+      "npxg": 0.44,
+      "npxga": 1.45,
+      "ppda": 15.6,
+      "ppdaAllowed": 16.4,
+      "deep": 5,
+      "deepAllowed": 8,
+      "gf": 2,
+      "ga": 3,
+      "xpts": 0.53,
+      "pts": 0,
+      "result": "l",
+      "opp": "Torino"
+     }
+    ]
+   },
+   {
+    "id": "286",
+    "name": "Como",
+    "games": [
+     {
+      "date": "2026-08-22 16:30:00",
+      "home": false,
+      "xg": 2.39,
+      "xga": 2.12,
+      "npxg": 2.39,
+      "npxga": 2.12,
+      "ppda": 9,
+      "ppdaAllowed": 11.8,
+      "deep": 6,
+      "deepAllowed": 7,
+      "gf": 1,
+      "ga": 1,
+      "xpts": 1.54,
+      "pts": 1,
+      "result": "d",
+      "opp": "Udinese"
+     },
+     {
+      "date": "2026-08-30 16:30:00",
+      "home": false,
+      "xg": 1.1,
+      "xga": 1.03,
+      "npxg": 1.1,
+      "npxga": 1.03,
+      "ppda": 12,
+      "ppdaAllowed": 21,
+      "deep": 13,
+      "deepAllowed": 14,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 1.36,
+      "pts": 3,
+      "result": "w",
+      "opp": "Napoli"
+     },
+     {
+      "date": "2026-09-04 18:45:00",
+      "home": false,
+      "xg": 2.01,
+      "xga": 0.92,
+      "npxg": 2.01,
+      "npxga": 0.92,
+      "ppda": 20.1,
+      "ppdaAllowed": 28.5,
+      "deep": 10,
+      "deepAllowed": 5,
+      "gf": 4,
+      "ga": 1,
+      "xpts": 2.15,
+      "pts": 3,
+      "result": "w",
+      "opp": "Genoa"
+     },
+     {
+      "date": "2026-09-14 16:30:00",
+      "home": true,
+      "xg": 3.77,
+      "xga": 1.55,
+      "npxg": 3.77,
+      "npxga": 1.55,
+      "ppda": 8.6,
+      "ppdaAllowed": 20.9,
+      "deep": 16,
+      "deepAllowed": 3,
+      "gf": 2,
+      "ga": 1,
+      "xpts": 2.61,
+      "pts": 3,
+      "result": "w",
+      "opp": "Parma Calcio 1913"
+     },
+     {
+      "date": "2026-09-20 13:00:00",
+      "home": false,
+      "xg": 2.29,
+      "xga": 2.26,
+      "npxg": 2.29,
+      "npxga": 2.26,
+      "ppda": 5.2,
+      "ppdaAllowed": 8.3,
+      "deep": 16,
+      "deepAllowed": 5,
+      "gf": 0,
+      "ga": 2,
+      "xpts": 1.4,
+      "pts": 0,
+      "result": "l",
+      "opp": "Frosinone"
+     },
+     {
+      "date": "2026-10-11 10:30:00",
+      "home": true,
+      "xg": 1.85,
+      "xga": 1.14,
+      "npxg": 1.85,
+      "npxga": 1.14,
+      "ppda": 8,
+      "ppdaAllowed": 16.3,
+      "deep": 9,
+      "deepAllowed": 4,
+      "gf": 0,
+      "ga": 0,
+      "xpts": 1.87,
+      "pts": 1,
+      "result": "d",
+      "opp": "Roma"
+     },
+     {
+      "date": "2026-10-18 13:00:00",
+      "home": false,
+      "xg": 2.11,
+      "xga": 2.76,
+      "npxg": 2.11,
+      "npxga": 2.76,
+      "ppda": 8.2,
+      "ppdaAllowed": 14.1,
+      "deep": 1,
+      "deepAllowed": 7,
+      "gf": 3,
+      "ga": 1,
+      "xpts": 0.97,
+      "pts": 3,
+      "result": "w",
+      "opp": "Fiorentina"
+     },
+     {
+      "date": "2026-10-24 13:00:00",
+      "home": true,
+      "xg": 2.32,
+      "xga": 0.29,
+      "npxg": 2.32,
+      "npxga": 0.29,
+      "ppda": 9.8,
+      "ppdaAllowed": 22.1,
+      "deep": 9,
+      "deepAllowed": 7,
+      "gf": 2,
+      "ga": 0,
+      "xpts": 2.75,
+      "pts": 3,
+      "result": "w",
+      "opp": "Sassuolo"
+     },
+     {
+      "date": "2026-10-27 19:45:00",
+      "home": false,
+      "xg": 2.71,
+      "xga": 1.45,
+      "npxg": 2.71,
+      "npxga": 1.45,
+      "ppda": 11.8,
+      "ppdaAllowed": 27.6,
+      "deep": 13,
+      "deepAllowed": 0,
+      "gf": 3,
+      "ga": 1,
+      "xpts": 2.21,
+      "pts": 3,
+      "result": "w",
+      "opp": "Torino"
+     }
+    ]
+   }
+  ]
+ }
+}

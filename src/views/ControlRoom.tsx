@@ -1,6 +1,7 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import { useMatch, useNavigate } from 'react-router-dom';
 import { PassionTerminal } from './PassionTerminal';
+import { LiveWall } from './LiveWall';
 import { Score, Tag, Tbc, useSpoiler } from '../components/common';
 import { Theatre } from '../components/Theatre';
 import { CATS, PASSION, PASSIONS, catColor, passionColor } from '../core/passions';
@@ -55,17 +56,28 @@ export function ControlRoom() {
   // The passion shown in the terminal, if any; choosing the same one again goes back to the overview
   const selected = useMatch('/p/:id')?.params.id as PassionId | undefined;
   const current = selected && selected in PASSION ? selected : undefined;
+  const wall = Boolean(useMatch('/live'));
   const open = (p: PassionId) => nav(p === current ? '/' : `/p/${p}`);
   useEffect(() => {
-    if (!current) return;
+    if (!current && !wall) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && nav('/');
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [current, nav]);
+  }, [current, wall, nav]);
   const live = events.filter(e => e.state === 'in');
   const next72 = events.filter(e => e.state === 'pre' && e.start > now && e.start - now < 72 * HOUR);
 
   const room = useRoomFit(current);
+
+  if (wall) {
+    return (
+      <div className="room room-term" id="room">
+        <TopBar liveCount={live.length} next72={next72} wall />
+        <Rail live={live} open={open} wall />
+        <LiveWall open={open} />
+      </div>
+    );
+  }
 
   if (current) {
     return (
@@ -96,8 +108,9 @@ export function ControlRoom() {
   );
 }
 
-function TopBar({ liveCount, next72 }: { liveCount: number; next72: ObsEvent[] }) {
+function TopBar({ liveCount, next72, wall }: { liveCount: number; next72: ObsEvent[]; wall?: boolean }) {
   const { now, status } = useData();
+  const nav = useNavigate();
   const spoiler = useSpoiler();
   const tempo = Object.keys(CATS).map(c => [c, next72.filter(e => PASSION[e.passion].cat === c).length] as [CatId, number]);
   const failing = Object.entries(status).filter(([, s]) => !s.ok);
@@ -110,7 +123,9 @@ function TopBar({ liveCount, next72 }: { liveCount: number; next72: ObsEvent[] }
         ))}
       </div>
       <div className="spacer" />
-      <div className="stat"><small>LIVE NOW</small><b style={{ color: 'var(--signal)' }}>{liveCount}</b></div>
+      <button className="stat stat-btn" aria-pressed={wall} title={wall ? 'Back to the overview' : 'Open the live wall: today and tomorrow'} onClick={() => nav(wall ? '/' : '/live')}>
+        <small>LIVE NOW ›</small><b style={{ color: 'var(--signal)' }}>{liveCount}</b>
+      </button>
       <div className="stat"><small>NEXT 72H</small><b>{next72.length}</b></div>
       <div className="stat" title="Events in the next 72 hours, by category">
         <small>TEMPO 72H</small>
@@ -124,11 +139,15 @@ function TopBar({ liveCount, next72 }: { liveCount: number; next72: ObsEvent[] }
   );
 }
 
-function Rail({ live, open, active }: { live: ObsEvent[]; open: (p: PassionId) => void; active?: PassionId }) {
+function Rail({ live, open, active, wall }: { live: ObsEvent[]; open: (p: PassionId) => void; active?: PassionId; wall?: boolean }) {
   const liveP = new Set(live.map(e => e.passion));
+  const nav = useNavigate();
   return (
     <nav className="rail" aria-label="Show a passion">
-      <span className="rail-lab">{active ? 'SHOWING' : 'OPEN'}</span>
+      <span className="rail-lab">{active || wall ? 'SHOWING' : 'OPEN'}</span>
+      <button className="pchip pchip-live" aria-pressed={wall} title={wall ? 'Back to the overview' : 'Today and tomorrow, live'} onClick={() => nav(wall ? '/' : '/live')}>
+        <span className="live-dot" />Live wall
+      </button>
       {PASSIONS.map(p => (
         <button key={p.id} className="pchip" aria-pressed={p.id === active} title={p.id === active ? 'Back to the overview' : `Show ${p.name}`} onClick={() => open(p.id)}>
           {liveP.has(p.id) ? <span className="live-dot" /> : <i style={{ background: catColor(p.cat) }} />}
@@ -182,16 +201,16 @@ function TMinus({ open }: { open: (p: PassionId) => void }) {
   );
 }
 
-function GameCard({ e, open }: { e: ObsEvent; open: (p: PassionId) => void }) {
-  const fin = e.state === 'post';
+function GameCard({ e, now, open }: { e: ObsEvent; now: number; open: (p: PassionId) => void }) {
+  const fin = e.state === 'post', pre = e.state === 'pre';
   const teams = e.home && e.away ? [e.away, e.home] : null;
   return (
     <div className="game" data-p={e.passion} tabIndex={0} onClick={() => open(e.passion)} onKeyDown={k => k.key === 'Enter' && open(e.passion)}
       style={isMineGame(e) ? { boxShadow: 'inset 2px 0 0 var(--now)' } : undefined}>
-      <div className="gh"><Tag passion={e.passion} /><span className={`st${fin ? ' fin' : ''}`}>{fin ? `FINAL · ${dayShort(e.start)}` : e.clock ?? 'LIVE'}</span></div>
+      <div className="gh"><Tag passion={e.passion} /><span className={`st${fin ? ' fin' : pre ? ' next' : ''}`}>{fin ? `FINAL · ${dayShort(e.start)}` : pre ? `${dayShort(e.start)} ${e.approx ? '≈' : ''}${hhmm(e.start)} · T-${countdown(e.start - now)}` : e.clock ?? 'LIVE'}</span></div>
       {teams ? teams.map(t => (
         <div key={t.abbr + t.name} className={`team${fin && t.winner === false ? ' lose' : ''}`}>
-          <span>{t.name}</span><Score as="b">{t.score ?? '–'}</Score>
+          <span>{t.name}</span>{!pre && <Score as="b">{t.score ?? '–'}</Score>}
         </div>
       )) : (
         <>
@@ -204,19 +223,43 @@ function GameCard({ e, open }: { e: ObsEvent; open: (p: PassionId) => void }) {
   );
 }
 
+/** At most `max` events of each passion, in the order given. */
+const perPassion = (list: ObsEvent[], max: number, taken: Map<PassionId, number>) => list.filter(e => {
+  const n = taken.get(e.passion) ?? 0;
+  if (n >= max) return false;
+  taken.set(e.passion, n + 1);
+  return true;
+});
+
+/**
+ * Six cards across the passions: what is live (two per passion at most), what has just finished,
+ * then what comes next, then older results; one card per passion beyond the live ones, so no
+ * league fills the panel. Everything else is on the live wall.
+ */
+function pickBoard(events: ObsEvent[], now: number, slots = 6): ObsEvent[] {
+  const notable = (e: ObsEvent) => isMineGame(e) || (e.weight ?? 1) >= 2;
+  const taken = new Map<PassionId, number>();
+  const live = perPassion(events.filter(e => e.state === 'in'), 2, taken);
+  const shown = new Set(live.map(e => e.passion));
+  const once = (list: ObsEvent[]) => list.filter(e => (shown.has(e.passion) ? false : (shown.add(e.passion), true)));
+  const finals = events.filter(e => e.state === 'post' && notable(e)).sort((a, b) => b.start - a.start);
+  const fresh = once(finals.filter(e => now - e.start < 8 * HOUR));
+  const next = once(events.filter(e => e.state === 'pre' && e.start > now && e.start - now < 72 * HOUR && !e.tbc && notable(e)));
+  const older = once(finals.filter(e => now - e.start < 2 * DAY));
+  return [...live, ...fresh, ...next, ...older].slice(0, slots);
+}
+
 function LiveBoard({ open }: { open: (p: PassionId) => void }) {
   const { events, now } = useData();
-  const live = events.filter(e => e.state === 'in');
-  const recent = events
-    .filter(e => e.state === 'post' && now - e.start < 4 * DAY && (isMineGame(e) || (e.weight ?? 1) >= 2))
-    .sort((a, b) => b.start - a.start)
-    .slice(0, Math.max(0, 6 - live.length));
+  const nav = useNavigate();
+  const cards = pickBoard(events, now);
+  const n = (s: ObsEvent['state']) => cards.filter(e => e.state === s).length;
   return (
     <section className="panel live">
-      <div className="ph"><span className="live-dot" />Live &amp; latest<span className="meta">{live.length} live · {recent.length} final</span></div>
+      <div className="ph"><span className="live-dot" />Live, latest &amp; next<span className="meta">{n('in')} live · {n('post')} final · {n('pre')} next · <button className="lw-link" onClick={() => nav('/live')}>live wall ›</button></span></div>
       <div className="games">
-        {[...live, ...recent].map(e => <GameCard key={e.id} e={e} open={open} />)}
-        {live.length + recent.length === 0 && <div className="empty">Nothing live right now.</div>}
+        {cards.map(e => <GameCard key={e.id} e={e} now={now} open={open} />)}
+        {cards.length === 0 && <div className="empty">Nothing live or coming up.</div>}
       </div>
     </section>
   );
@@ -300,6 +343,8 @@ function StandingsStrip({ open }: { open: (p: PassionId) => void }) {
       <StandingTable s={standings.f1d} open={open} />
       <StandingTable s={standings.afceast} open={open} />
       <StandingTable s={standings.ap} open={open} />
+      <StandingTable s={standings.mlb} open={open} />
+      <StandingTable s={standings.nba} open={open} />
       <section className="panel" data-p="space" tabIndex={0} onClick={() => open('space')}>
         <div className="ph"><i style={{ width: 8, height: 8, borderRadius: 2, background: catColor('spa') }} />In orbit now<span className="meta">open ›</span></div>
         <div className="orbit-big">{orbit?.total ?? '–'}</div>

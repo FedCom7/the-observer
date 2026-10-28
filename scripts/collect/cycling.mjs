@@ -8,8 +8,11 @@
 //   countdown, the Giro stages, the podium of the last edition.
 // - Wikipedia: winners of every race (season table) and of the championships.
 // ProCyclingStats and FirstCycling sit behind a Cloudflare challenge and are not used.
-import { readFile } from 'node:fs/promises';
-import { decode, get, infobox, iso, parseDate, wikitext, zoned } from './lib.mjs';
+import { readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { UA, decode, get, infobox, iso, parseDate, wikitext, zoned } from './lib.mjs';
+import { nationalChampions, raceWiki, teamName } from './cyclingWiki.mjs';
 
 const DAY = 86400e3;
 const now = Date.now();
@@ -52,6 +55,14 @@ const RACES = [
   [/Dwars door/, 'Dwars door Vlaanderen', 1],
   [/Ronde Van Brugge/, 'Ronde van Brugge', 1],
   [/Bretagne Classic/, 'Bretagne Classic', 1],
+];
+
+// Start (or finish) town of the one-day classics, so the map tells them apart: [UCI name, lon, lat]
+const CLASSIC_LOC = [
+  [/Milano-Sanremo/, 7.78, 43.82], [/Ronde van Vlaanderen/, 4.4, 51.22], [/Paris-Roubaix/, 3.17, 50.69], [/Liège-Bastogne/, 5.57, 50.63], [/Il Lombardia/, 9.09, 45.81],
+  [/Strade Bianche/, 11.33, 43.32], [/Omloop/, 3.72, 51.05], [/E3 /, 3.35, 50.86], [/In Flanders Fields/, 3.2, 50.81], [/Amstel/, 5.83, 50.86], [/Flèche Wallonne/, 5.24, 50.52],
+  [/Dwars door/, 3.43, 50.89], [/Ronde Van Brugge/, 3.22, 51.21], [/Bretagne Classic/, -3.29, 47.93], [/Cyclassics/, 9.99, 53.55], [/San Sebastian|DSSK/, -1.98, 43.32],
+  [/Québec/, -71.21, 46.81], [/Montréal/, -73.57, 45.5], [/Cadel Evans/, 144.35, -38.15],
 ];
 
 // Country -> time zone and a point for the map (race start regions)
@@ -97,7 +108,9 @@ async function uciCalendar() {
     const def = RACES.find(([re]) => re.test(r.uciName));
     const [, name = r.uciName.replace(/\s*-\s*(Men|CIC)$/, ''), tier = 1, tag = null, site = null] = def ?? [];
     const kind = r.cls === 'CM' || r.cls === 'CC' ? 'champs' : r.cls.startsWith('1.') ? 'one-day' : 'stage';
-    const [tz, loc] = GEO[r.country] ?? ['Europe/Paris', null];
+    const [tz, countryLoc] = GEO[r.country] ?? ['Europe/Paris', null];
+    const own = CLASSIC_LOC.find(([re]) => re.test(r.uciName));
+    const loc = own ? [own[1], own[2]] : countryLoc;
     const [y, m, d] = r.startDate.split('-').map(Number);
     const [y2, m2, d2] = r.endDate.split('-').map(Number);
     // Usual local start: around 10:00 for a classic, early afternoon for a stage; marked approximate
@@ -234,6 +247,17 @@ async function asoRankings(race, prevR) {
   return { stage: latest, stageResult: h?.stageTop ?? [], gc: h?.gc ?? [], points, mountains, youth, teams, history: history.map(({ stage, winner, gc }) => ({ stage, winner, gc })) };
 }
 
+/** Starters of the current edition: [{ team, riders: [{ bib, rider, nat }] }]; null until the organiser publishes them. */
+async function asoStartlist(race) {
+  const html = await get(`${race.site}/riders`, { browser: true });
+  const year = Number(html.match(/<title>[^<]*?(\d{4})\s*<\/title>/)?.[1]);
+  const teams = html.split('<h3 class="list__heading">').slice(1).map(block => ({
+    team: decode(block.match(/<a [^>]*>([^<]+)<\/a>/)?.[1] ?? '').trim(),
+    riders: [...block.matchAll(/<span class="bib">(\d+)<\/span>[\s\S]*?flag--(\w+)"[\s\S]*?runner__link"[^>]*>\s*([^<]+?)\s*</g)].map(m => ({ bib: Number(m[1]), nat: m[2].toUpperCase(), rider: nameCase(decode(m[3])) })),
+  })).filter(t => t.team && t.riders.length);
+  return teams.length ? { year, teams } : null;
+}
+
 // Bump when the shape of the stored rankings changes, so finished races are read again
 const RANKINGS_V = 3;
 
@@ -271,12 +295,13 @@ async function wtWinners(y) {
   if (!w || !w.includes(`[[${y} `)) return [];
   const out = [];
   for (const row of w.split(/\n\|-/)) {
-    const head = row.match(/^\s*!\s*scope="row"\s*\|.*?\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/m);
+    const head = row.match(/^\s*!\s*scope="row"\s*\|.*?\[\[(?:([^|\]]*)\|)?([^\]]+)\]\]/m);
     const dateLine = row.split('\n').find(l => /^\|\s*\d{1,2}(?:\s*[–-]\s*\d{1,2})?\s+[A-Z]/.test(l) || /^\|\s*\d{1,2} [A-Z][a-z]+ [–-] \d/.test(l));
     if (!head || !dateLine) continue;
     const d = parseDate(dateLine, y);
     const winner = row.match(/flagathlete\|\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/i);
-    if (d && winner) out.push({ race: head[1].trim(), date: ymd(d.y, d.m, d.d), winner: winner[1].trim() });
+    // Races still to come have no winner yet but already have their page
+    if (d) out.push({ race: head[2].trim(), page: (head[1] ?? head[2]).trim(), date: ymd(d.y, d.m, d.d), winner: winner?.[1].trim() ?? null });
   }
   return out;
 }
@@ -289,7 +314,7 @@ async function champsWinners(race) {
     if (!w) continue;
     const d = parseDate(infobox(w, ['date', 'dates']) ?? '', race.year);
     const first = infobox(w, ['first']);
-    events.push({ title: label, date: d ? ymd(d.y, d.m, d.d) : null, winner: first ? wikiClean(first) : null, tier });
+    events.push({ title: label, date: d ? ymd(d.y, d.m, d.d) : null, winner: first ? wikiClean(first) : null, nat: infobox(w, ['first_nat']) ?? null, tier });
   }
   return events;
 }
@@ -316,11 +341,15 @@ export async function collectCycling() {
     const r0 = mine[0];
     try {
       const info = r0.org === 'aso' ? await asoSite(r0) : await rcsSite(r0);
+      if (r0.org === 'aso') info.startlist = await asoStartlist(r0).catch(() => null);
       if (/giroditalia/.test(site)) { info.stages = await giroStages().catch(() => []); info.edition = info.stages[0] ? Number(info.stages[0].date.slice(0, 4)) : null; }
       for (const r of mine) {
         const p = prevOf(r);
         if (info.countdown?.year === r.year) { r.start = info.countdown.start; r.approx = r.org === 'rcs'; }
         r.source = info.source;
+        // The organiser's page shows the latest edition: keep it only for the race of that year
+        if (info.startlist?.year === r.year) r.startlist = info.startlist.teams;
+        else if (p?.startlist) r.startlist = p.startlist;
         if (info.stages?.length && info.edition === r.year) {
           const near = Date.parse(r.start) - now < 60 * DAY && Date.parse(r.end) > now - 2 * DAY;
           r.stages = r.org === 'aso' && near ? await asoStageTimes(r, info.stages, p?.stages) : info.stages.map(s => ({ ...s, ...(p?.stages?.find(o => o.num === s.num && o.date === s.date && o.firstStart) ?? {}) }));
@@ -340,9 +369,48 @@ export async function collectCycling() {
       status[info.source] = 'ok';
     } catch (err) {
       status[site] = `failed: ${err.message.slice(0, 80)}`;
-      for (const r of mine) { const p = prevOf(r); if (p) Object.assign(r, { start: p.start, approx: p.approx, stages: p.stages, rankings: p.rankings, podium: p.podium }); }
+      for (const r of mine) { const p = prevOf(r); if (p) Object.assign(r, { start: p.start, approx: p.approx, stages: p.stages, rankings: p.rankings, podium: p.podium, startlist: p.startlist }); }
     }
   }));
+
+  // Wikipedia: the season table (winners, and the title of every race page), then each race page
+  let wiki = [];
+  try { wiki = (await Promise.all([wtWinners(Y), wtWinners(Y + 1)])).flat(); status.wikipedia = `${wiki.filter(x => x.winner).length} winners`; } catch (err) { status.wikipedia = `failed: ${err.message}`; }
+  const teamCodes = { ...(prev.teamCodes ?? {}) };
+  let pages = 0;
+  for (const r of races) {
+    if (r.kind === 'champs' || Date.parse(r.start) > now) continue;
+    const row = wiki.find(x => x.date === r.startDate);
+    const p = prevOf(r)?.wiki;
+    // A page is settled a few days after the race: keep what we have
+    if (p?.result?.length && Date.parse(r.end) < now - 4 * DAY && p.v === WIKI_V) { r.wiki = p; continue; }
+    if (!row) { if (p) r.wiki = p; continue; }
+    try {
+      const data = await raceWiki(row.page, r.year);
+      if (data) { r.wiki = { ...data, v: WIKI_V }; pages++; } else if (p) r.wiki = p;
+    } catch (err) { if (p) r.wiki = p; status[`wiki ${r.name}`] = err.message.slice(0, 80); }
+  }
+  // Team codes ("TVL men|2026") to names, once each
+  const codes = new Set();
+  const walk = x => { if (Array.isArray(x)) x.forEach(walk); else if (x && typeof x === 'object') for (const [k, v] of Object.entries(x)) { if (TEAM_KEY.test(k) && typeof v === 'string' && v.includes('|')) codes.add(v); else walk(v); } };
+  races.forEach(r => walk(r.wiki));
+  let nationals = prev.nationals ?? null;
+  try { const n = await nationalChampions(Y); if (n) { nationals = n; walk(n); } } catch (err) { status.nationals = err.message.slice(0, 80); }
+  for (const c of codes) { try { await teamName(c, teamCodes); } catch { /* keep the code */ } }
+  const name = c => (typeof c === 'string' && c.includes('|') ? teamCodes[c] ?? c.split('|')[0].replace(/ men$/, '') : c);
+  const fix = x => { if (Array.isArray(x)) x.forEach(fix); else if (x && typeof x === 'object') for (const [k, v] of Object.entries(x)) { if (TEAM_KEY.test(k)) x[k] = name(v); else fix(v); } };
+  races.forEach(r => r.wiki && fix(r.wiki));
+  if (nationals) fix(nationals);
+  status.wikiPages = `${pages} race pages read, ${Object.keys(teamCodes).length} teams`;
+
+  // Races without official data from the organiser: stages and rankings from Wikipedia
+  for (const r of races) {
+    const wk = r.wiki;
+    if (!wk) continue;
+    if (!r.stages?.length && wk.stages?.length) r.stages = wk.stages.map(({ winner, winnerNat, winnerTeam, ...s }) => s);
+    if (!r.rankings) r.rankings = wikiRankings(r, wk);
+    if (!r.podium?.length && wk.podium?.length) r.podium = wk.podium.map(x => ({ pos: x.pos, rider: x.rider, team: x.team, time: null, gap: null }));
+  }
 
   // Stage start times: official first start when the organiser publishes it, else ≈ local afternoon
   for (const r of races) {
@@ -357,8 +425,6 @@ export async function collectCycling() {
   }
 
   // Winners
-  let wiki = [];
-  try { wiki = (await Promise.all([wtWinners(Y), wtWinners(Y + 1)])).flat(); status.wikipedia = `${wiki.length} winners`; } catch (err) { status.wikipedia = `failed: ${err.message}`; }
   for (const r of races) {
     if (r.kind === 'champs') {
       try { r.events = await champsWinners(r); } catch { r.events = prevOf(r)?.events ?? []; }
@@ -373,5 +439,84 @@ export async function collectCycling() {
     r.winner = Date.parse(r.end) < now ? w?.winner ?? official?.rider ?? r.podium?.[0]?.rider ?? null : null;
   }
 
-  return { updated: new Date().toISOString(), status, races };
+  await geocodeStages(races, status);
+  return { updated: new Date().toISOString(), status, races, nationals, teamCodes };
+}
+
+const WIKI_V = 2;
+const TEAM_KEY = /^(team|winnerTeam|rrTeam|ittTeam)$/;
+
+/** Wikipedia classification rows in the shape of the organisers' rankings. */
+function wikiRankings(r, wk) {
+  const rank = rows => rows.map((x, i) => {
+    const t = x.time ?? '';
+    const gap = i > 0 && /^\+/.test(t.trim()) ? t.replace(/^\+\s*/, '+') : null;
+    const s = gapSecs(t);
+    return { pos: x.pos, rider: x.rider, team: x.team ?? '', time: i === 0 ? t : null, gap, gapS: i === 0 ? 0 : s, points: x.points ?? null };
+  });
+  const done = Date.parse(r.end) < now;
+  if (r.kind === 'one-day') return wk.result?.length ? { final: done, result: rank(wk.result), source: 'Wikipedia' } : undefined;
+  if (!wk.history?.length && !wk.result?.length) return undefined;
+  const winners = new Map((wk.stages ?? []).filter(s => !s.rest).map(s => [s.num, s.winner ? { pos: 1, rider: s.winner, team: s.winnerTeam ?? '', time: null, gap: null, gapS: 0, points: null } : s.winnerTeam ? { pos: 1, rider: null, team: s.winnerTeam, time: null, gap: null, gapS: 0, points: null } : null]));
+  const history = (wk.history ?? []).map(h => ({ stage: h.stage, winner: winners.get(h.stage) ?? null, gc: rank(h.gc) }));
+  const last = history[history.length - 1];
+  return {
+    final: done, stage: last?.stage ?? null, source: 'Wikipedia',
+    gc: wk.result?.length && done ? rank(wk.result) : last?.gc ?? rank(wk.result ?? []),
+    points: rank(wk.classes?.points ?? []), mountains: rank(wk.classes?.mountains ?? []), youth: rank(wk.classes?.youth ?? []),
+    history,
+  };
+}
+
+/** "+ 5' 22"" -> 322; the leader's total time is not a gap. */
+function gapSecs(t) {
+  if (!t || !/^\s*\+/.test(t)) return /s\.?\s*t/i.test(t ?? '') ? 0 : null;
+  const m = t.replace(/^[\s+]+/, '').replace(/[″]/g, '"').replace(/[′’]/g, "'").match(/(?:(\d+)\s*h)?\s*(?:(\d+)\s*')?\s*(?:(\d+)\s*")?/);
+  return m ? Number(m[1] ?? 0) * 3600 + Number(m[2] ?? 0) * 60 + Number(m[3] ?? 0) : null;
+}
+
+// ---------- Stage towns on the map (OpenStreetMap Nominatim, 1 request a second, answers cached in the repo) ----------
+const GEO_FILE = join(dirname(fileURLToPath(import.meta.url)), '../../public/data/cycling-geo.json');
+const COUNTRY_NAME = { BEL: 'Belgium', FRA: 'France', ITA: 'Italy', ESP: 'Spain', NED: 'Netherlands', GER: 'Germany', SUI: 'Switzerland', DEN: 'Denmark', POL: 'Poland', SLO: 'Slovenia', AUS: 'Australia', CAN: 'Canada', UAE: 'United Arab Emirates', CHN: 'China' };
+const km = (a, b) => { const R = 6371, d = Math.PI / 180, x = (b[0] - a[0]) * d * Math.cos((a[1] + b[1]) / 2 * d), y = (b[1] - a[1]) * d; return R * Math.hypot(x, y); };
+
+/** Adds `fromLoc` / `toLoc` ([lon, lat]) to the stages of the races under way or coming; towns far from their race are dropped. */
+async function geocodeStages(races, status) {
+  let geo = {};
+  try { geo = JSON.parse(await readFile(GEO_FILE, 'utf8')); } catch { /* first run */ }
+  let budget = Number(process.env.GEO_BUDGET ?? 150), last = 0, dirty = false;
+  const ask = async q => {
+    if (q in geo) return geo[q] || null;
+    if (budget <= 0) return null;
+    budget--;
+    const wait = 1100 - (Date.now() - last);
+    if (wait > 0) await new Promise(ok => setTimeout(ok, wait));
+    last = Date.now();
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&q=${encodeURIComponent(q)}`, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20e3) });
+      if (!res.ok) return null;
+      const j = await res.json();
+      geo[q] = j[0] ? [+(+j[0].lon).toFixed(4), +(+j[0].lat).toFixed(4)] : 0;
+      dirty = true;
+      return geo[q] || null;
+    } catch { return null; }
+  };
+  // "Falset . Costa Daurada" is the town and its region: ask for the town; then try the town alone (a stage can cross the border)
+  const find = async (raw, r, country) => {
+    const town = raw.split(/\s+[-.]\s+|\.\s*/)[0].trim();
+    return (await ask(`${town}, ${country ?? COUNTRY_NAME[r.country] ?? r.country}`)) ?? (await ask(town));
+  };
+  for (const r of races) {
+    if (!r.stages || r.year < Y) continue;
+    for (const s of r.stages) {
+      if (s.rest) continue;
+      for (const [k, town, country] of [['fromLoc', s.from, s.fromCountry], ['toLoc', s.to, s.toCountry]]) {
+        const p = town ? await find(town, r, country) : null;
+        // A wrong namesake can be a continent away: stage races stay within a few hundred km of their centre
+        if (p && (!r.loc || km(p, r.loc) < 1800)) s[k] = p;
+      }
+    }
+  }
+  if (dirty) await writeFile(GEO_FILE, JSON.stringify(geo, null, 1));
+  status.geocoding = `${Object.keys(geo).length} towns, ${budget} lookups left`;
 }

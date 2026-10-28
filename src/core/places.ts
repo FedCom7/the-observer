@@ -44,6 +44,8 @@ const CITIES: Record<string, [number, number]> = {
   'Lisbon': [-9.16, 38.75], 'Porto': [-8.58, 41.16], 'Amsterdam': [4.94, 52.31], 'Glasgow': [-4.21, 55.85],
   'Istanbul': [28.99, 41.07], 'Seville': [-5.97, 37.38], 'Lyon': [4.98, 45.77], 'Marseille': [5.4, 43.27],
   'Dortmund': [7.45, 51.49], 'Frankfurt': [8.65, 50.07], 'Brussels': [4.33, 50.83], 'Bruges': [3.18, 51.19],
+  'Jakarta': [106.8, -6.22], 'Wroclaw': [17.0, 51.14], 'Perth': [115.89, -31.95], 'Piraeus': [23.65, 37.94],
+  'Bournemouth': [-1.84, 50.74], 'Monza': [9.27, 45.58], 'Sofia': [23.33, 42.69],
   'Belgrade': [20.46, 44.78], 'Prague': [14.47, 50.07], 'Zagreb': [16.0, 45.81],
 };
 

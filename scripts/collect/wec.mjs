@@ -2,6 +2,7 @@
 // - fiawec.com race pages: schema.org JSON-LD with every session and its exact start time
 // - Al Kamel Systems (official timing): CSV classification of every session, hour by hour in races
 // - Wikipedia season page: championship standings with each round's result
+import { readFile } from 'node:fs/promises';
 import { get, wikitext } from './lib.mjs';
 
 const WEC = 'https://www.fiawec.com';
@@ -182,6 +183,20 @@ export async function collectWec() {
       if (!current) sessions = sessions.filter(s => s.kind === 'race').map(s => ({ ...s, final: true }));
       results[ev.round] = { event: ev.code.replace(/^\d+_/, ''), sessions };
     } catch { /* skip event */ }
+  }
+  // Since October 2026 the Al Kamel site is a new application the collector cannot read: fall back to the
+  // race classifications read from fiawec.com by the wec-season collector (Hypercar only).
+  if (!Object.values(results).some(r => r.sessions.length)) {
+    try {
+      const ws = JSON.parse(await readFile(new URL('../../public/data/wec-season.json', import.meta.url), 'utf8'));
+      for (const rd of ws.rounds ?? []) {
+        const s = rd.sessions.find(x => /^race$/i.test(x.name));
+        if (!s) continue;
+        const x = JSON.parse(await readFile(new URL(`../../public/data/wec-sessions/${ws.year}/${s.id}.json`, import.meta.url), 'utf8'));
+        const rows = x.rows.map(r => { const c = ws.cars?.[r.number]; return { pos: r.pos, number: r.number, team: r.team, vehicle: c?.vehicle ?? r.brand ?? '', cls: (c?.cls ?? 'Hypercar').toUpperCase(), drivers: c?.drivers ?? [], laps: r.laps, gap: r.gap === '-' ? '' : r.gap ?? '', time: r.time ?? '', status: r.pos ? 'Classified' : 'Not classified', bestLap: r.best ?? '' }; });
+        results[rd.round] = { event: rd.name, sessions: [{ session: 'Race', kind: 'race', hour: null, final: true, rows }] };
+      }
+    } catch { /* no fallback yet */ }
   }
   return { updated: new Date().toISOString(), season: year, races, results, standings: await standings(year).catch(() => null) };
 }

@@ -2,18 +2,21 @@
 // bracket rebuilt from the playoff teams' schedules (ESPN has no bracket endpoint
 // and rejects date ranges for baseball). ESPN JSON is untyped, read as `any`.
 import { getJSON } from '../core/fetcher';
-import { MIN } from '../core/time';
-import type { ObsEvent } from '../core/types';
+import { DAY, HOUR, MIN } from '../core/time';
+import type { ObsEvent, Standing } from '../core/types';
 import { toEvent } from './espn';
 
 const SITE = 'https://site.api.espn.com/apis/site/v2/sports/baseball/mlb';
 export const DODGERS = '19';
 
+/** diff: run differential over the season */
 export interface DivisionRow { id: string; abbr: string; name: string; w: number; l: number; gb: string; seed: number | null; clinch: string; diff: number; streak: string; mine: boolean }
 export interface Division { league: 'AL' | 'NL'; name: string; rows: DivisionRow[] }
 export interface SeasonGame { date: number; opp: string; home: boolean; rs: number; ra: number; win: boolean }
 export interface Series { key: string; league: 'AL' | 'NL' | 'MLB'; round: string; order: number; bestOf: number; teams: { id: string; abbr: string; wins: number; seed: number | null }[]; done: boolean; winner: string | null; next: number | null }
-export interface MlbData { season: number; divisions: Division[]; dodgers: SeasonGame[]; series: Series[]; postseasonEvents: ObsEvent[] }
+/** pre: before opening day · regular · post: October · off: after the World Series */
+export type Phase = 'pre' | 'regular' | 'post' | 'off';
+export interface MlbData { season: number; phase: Phase; week: number | null; regStart: number | null; regEnd: number | null; divisions: Division[]; dodgers: SeasonGame[]; series: Series[]; postseasonEvents: ObsEvent[] }
 
 const stat = (e: any, n: string) => e.stats?.find((s: any) => s.name === n)?.displayValue ?? '';
 
@@ -28,7 +31,8 @@ async function standings(): Promise<{ season: number; divisions: Division[] }> {
         rows: (d.standings?.entries ?? []).map((e: any) => ({
           id: String(e.team.id), abbr: e.team.abbreviation, name: e.team.shortDisplayName ?? e.team.displayName,
           w: Number(stat(e, 'wins')), l: Number(stat(e, 'losses')), gb: stat(e, 'gamesBehind'),
-          seed: Number(stat(e, 'playoffSeed')) || null, clinch: stat(e, 'clincher'), diff: Number(stat(e, 'differential')) || 0,
+          // ESPN's "differential" is per game: the total comes from runs scored and allowed
+          seed: Number(stat(e, 'playoffSeed')) || null, clinch: stat(e, 'clincher'), diff: (Number(stat(e, 'pointsFor')) || 0) - (Number(stat(e, 'pointsAgainst')) || 0),
           streak: stat(e, 'streak'), mine: String(e.team.id) === DODGERS,
         })).sort((a: DivisionRow, b: DivisionRow) => b.w - a.w || a.l - b.l),
       });
@@ -86,13 +90,23 @@ async function postseason(season: number, seeds: Map<string, number>, leagueOf: 
     series.set(key, s);
     // Skip "if necessary" games once the series is over.
     if (!(s.done && state === 'pre')) {
-      const ev = toEvent(e, 'mlb', 'baseball', 'mlb', DODGERS);
+      // The Dodgers' games belong to their page; every other playoff game to the MLB one
+      const mine = teams.some((t: any) => t.id === DODGERS);
+      const ev = toEvent(e, mine ? 'dodgers' : 'mlb', 'baseball', 'mlb', DODGERS);
       ev.sub = note;
-      ev.weight = r[1] === 'World Series' || teams.some((t: any) => t.id === DODGERS) ? 3 : 2;
+      ev.weight = r[1] === 'World Series' || mine ? 3 : 2;
       events.push(ev);
     }
   }
   return { series: [...series.values()].sort((a, b) => a.order - b.order || a.league.localeCompare(b.league)), events };
+}
+
+/** Opening day and the last day of the regular season. */
+async function regularSeason(season: number): Promise<{ start: number; end: number } | null> {
+  try {
+    const j = await getJSON<any>(`https://sports.core.api.espn.com/v2/sports/baseball/leagues/mlb/seasons/${season}/types/2`, 24 * HOUR);
+    return { start: Date.parse(j.startDate), end: Date.parse(j.endDate) };
+  } catch { return null; }
 }
 
 export async function mlbData(): Promise<MlbData> {
@@ -100,6 +114,39 @@ export async function mlbData(): Promise<MlbData> {
   const seeds = new Map<string, number>();
   const leagueOf = new Map<string, 'AL' | 'NL'>();
   divisions.forEach(d => d.rows.forEach(r => { leagueOf.set(r.id, d.league); if (r.seed && r.seed <= 6) seeds.set(r.id, r.seed); }));
-  const [dodgers, post] = await Promise.all([dodgersSeason(season), seeds.size ? postseason(season, seeds, leagueOf) : Promise.resolve({ series: [], events: [] })]);
-  return { season, divisions, dodgers, series: post.series, postseasonEvents: post.events };
+  const [dodgers, post, reg] = await Promise.all([dodgersSeason(season), seeds.size ? postseason(season, seeds, leagueOf) : Promise.resolve({ series: [], events: [] }), regularSeason(season)]);
+  const now = Date.now();
+  const ws = post.series.find(s => s.round === 'World Series');
+  const phase: Phase = ws?.done ? 'off' : post.series.length || (reg && now > reg.end) ? 'post' : reg && now < reg.start ? 'pre' : 'regular';
+  const week = phase === 'regular' && reg ? Math.floor((now - reg.start) / (7 * DAY)) + 1 : null;
+  return { season, phase, week, regStart: reg?.start ?? null, regEnd: reg?.end ?? null, divisions, dodgers, series: post.series, postseasonEvents: post.events };
+}
+
+const seriesLine = (s: Series) => {
+  const [a, b] = s.teams;
+  if (!a || !b) return '';
+  const lead = a.wins >= b.wins ? a : b, other = lead === a ? b : a;
+  return s.done ? `${lead.abbr} ${lead.wins}–${other.wins}` : a.wins === b.wins ? `${a.wins}–${b.wins}` : `${lead.abbr} ${lead.wins}–${other.wins}`;
+};
+
+/** The league at a glance for the control room: the best records in season, the series in October. */
+export function mlbStanding(m: MlbData): Standing {
+  if (m.series.length) {
+    // Latest round first, then the ones before it
+    const rounds = [...m.series].sort((a, b) => b.order - a.order);
+    const top = rounds[0];
+    const ws = rounds.find(s => s.round === 'World Series');
+    return {
+      passion: 'mlb', title: 'MLB', cols: ['Round', 'Series', 'Score'],
+      meta: m.phase === 'off' && ws ? `${ws.teams.find(t => t.id === ws.winner)?.abbr} won the World Series` : `Postseason · ${top.round}`,
+      rows: rounds.slice(0, 6).map(s => ({ rank: s.round === 'World Series' ? 'WS' : `${s.league === 'MLB' ? '' : s.league}${['WC', 'DS', 'CS'][s.order] ?? ''}`, name: s.teams.map(t => t.abbr).join(' – '), values: [seriesLine(s)], mine: s.teams.some(t => t.id === DODGERS) && !s.done })),
+    };
+  }
+  const all = m.divisions.flatMap(d => d.rows.map(r => ({ ...r, league: d.league })));
+  const best = all.sort((a, b) => b.w / Math.max(1, b.w + b.l) - a.w / Math.max(1, a.w + a.l)).slice(0, 6);
+  return {
+    passion: 'mlb', title: 'MLB', cols: ['#', 'Team', 'W-L'],
+    meta: m.phase === 'regular' && m.week ? `Week ${m.week} · regular season` : m.phase === 'pre' && m.regStart ? `Opening day ${new Date(m.regStart).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : 'Best records',
+    rows: best.map((r, i) => ({ rank: i + 1, name: `${r.name} · ${r.league}`, values: [`${r.w}-${r.l}`], mine: r.mine })),
+  };
 }

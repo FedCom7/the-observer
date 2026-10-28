@@ -1,100 +1,130 @@
-import { TrendLine, type TrendPoint } from '../components/charts';
+import { useEffect, useState } from 'react';
 import { Score } from '../components/common';
-import { Hero, Row, ocol } from '../components/sheet';
+import { LeagueGameGrid, useLeagueGames } from '../components/LeagueGames';
+import { Hero, Row } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
 import { useData } from '../core/store';
-import { DAY, countdown, dayLong, dayShort, hhmm } from '../core/time';
-import { LAKERS, type Conference, type Series } from '../sources/nba';
+import { countdown, dayLong, dayShort, hhmm } from '../core/time';
+import { nbaLeaders, type Conference, type NbaLeader, type Series } from '../sources/nba';
+import { useNbaSeason } from '../sources/nbaSeason';
+import { AwardsScreen, HistoryScreen, HowScreen, NBA_TABS, PlayersScreen, PowerScreen, SeasonScreen, TeamsScreen } from './NbaScreens';
 
 const ROUNDS = ['Play-In', 'First Round', 'Conference Semifinals', 'Conference Finals', 'NBA Finals'];
 const seasonLabel = (y: number) => `${y - 1}–${String(y).slice(2)}`;
+const pct = (r: { w: number; l: number }) => r.w / Math.max(1, r.w + r.l);
 
-/** NBA: the league at a glance, the Lakers in focus, playoffs and Finals when they come. */
+/** Per-game leaders, refreshed every 15 minutes. */
+function useLeaders() {
+  const [leaders, setLeaders] = useState<NbaLeader[] | null>(null);
+  useEffect(() => {
+    const load = () => nbaLeaders().then(setLeaders).catch(() => {});
+    load();
+    const t = setInterval(load, 15 * 60e3);
+    return () => clearInterval(t);
+  }, []);
+  return leaders;
+}
+
+/** The NBA, the whole league: tonight's games, the conference races, the leaders; playoffs and Finals when they come. */
 export function NbaPage() {
   const { nba, events, news, now } = useData();
+  const day = useLeagueGames('nba', now);
+  const leaders = useLeaders();
+  const [tab, setTab] = useTab(NBA_TABS);
+  const season = useNbaSeason(tab !== 'now');
   if (!nba) return <Hero id="nba" dek="Loading the NBA…" />;
-  const games = events.filter(e => e.passion === 'nba');
-  const lakersGames = games.filter(e => e.home?.mine || e.away?.mine).sort((a, b) => a.start - b.start);
-  const next = lakersGames.find(e => e.state !== 'post' && e.start > now - 3 * 3600e3);
-  const live = games.filter(e => e.state === 'in');
   const inPlayoffs = nba.series.length > 0;
   const bracketSeries = inPlayoffs ? nba.series : nba.last?.series ?? [];
   const bracketSeason = inPlayoffs ? nba.season : nba.last?.season ?? nba.season;
   const standings = nba.started ? nba.conferences : nba.last?.conferences ?? nba.conferences;
   const standingsSeason = nba.started ? nba.season : nba.last?.season ?? nba.season;
-  const me = nba.conferences.find(c => c.name === 'West')?.rows.find(r => r.mine);
-  const meLast = nba.last?.conferences.find(c => c.name === 'West')?.rows.find(r => r.mine);
   const finals = bracketSeries.find(s => s.round === 'NBA Finals');
   const champ = finals?.done ? finals.teams.find(t => t.id === finals.winner) : null;
-  const lakersExit = [...bracketSeries].reverse().find(s => s.teams.some(t => t.id === LAKERS));
+  const nameOf = (id?: string | null) => [...(nba.last?.conferences ?? []), ...nba.conferences].flatMap(c => c.rows).find(r => r.id === id)?.name ?? id ?? '';
+  const live = day?.today.filter(g => g.state === 'in') ?? [];
+  const next = day?.today.find(g => g.state === 'pre');
+  const teams = nba.conferences.flatMap(c => c.rows.map(r => ({ ...r, conf: c.name })));
+  const best = nba.started ? [...teams].sort((a, b) => pct(b) - pct(a) || b.diff - a.diff)[0] : null;
+  const unbeaten = nba.started ? teams.filter(r => r.l === 0 && r.w > 0).map(r => r.abbr) : [];
+  const winless = nba.started ? teams.filter(r => r.w === 0 && r.l > 0).map(r => r.abbr) : [];
+  const playoffGames = events.filter(e => e.passion === 'nba' && e.state !== 'post').slice(0, 8);
   const myNews = news.filter(n => n.passion === 'nba').slice(0, 8);
-  const nameOf = (id?: string) => [...(nba.last?.conferences ?? []), ...nba.conferences].flatMap(c => c.rows).find(r => r.id === id)?.name ?? id ?? '';
-  const lakersScore = (s: Series) => `${s.teams.find(t => t.id === LAKERS)?.wins}–${s.teams.find(t => t.id !== LAKERS)?.wins}`;
+  const spotlight = inPlayoffs ? [...nba.series].reverse().find(s => !s.done) ?? nba.series[nba.series.length - 1] : null;
 
-  let net = 0;
-  const trend: TrendPoint[] = nba.lakers.map((g, i) => {
-    net += g.win ? 1 : -1;
-    return { x: g.date, y: net, tip: `Game ${i + 1} · ${dayShort(g.date)} · ${g.win ? 'W' : 'L'} ${g.pf}–${g.pa} ${g.home ? 'vs' : '@'} ${g.opp} · ${net >= 0 ? '+' : ''}${net}` };
-  });
-
-  const dek = !nba.started
-    ? `The ${seasonLabel(nba.season)} season opens ${next ? `${dayLong(next.start)} with ${next.title}` : 'soon'}.${champ ? ` Last season the ${nameOf(champ.id)} won the title, ${finals!.teams.map(t => t.wins).sort((a, b) => b - a).join('–')} in the Finals.` : ''}${lakersExit ? ` The Lakers went out in the ${lakersExit.conf === 'NBA' ? '' : lakersExit.conf + ' '}${lakersExit.round.toLowerCase()}.` : ''}`
-    : me ? `The Lakers are ${me.w}–${me.l}, ${me.seed ? `#${me.seed} in the West` : ''}${me.streak ? ` (streak ${me.streak})` : ''}.` : '';
+  const dek = nba.phase === 'pre'
+    ? `The ${seasonLabel(nba.season)} season opens ${nba.regStart ? dayLong(nba.regStart) : 'soon'}.${champ ? ` The ${nameOf(champ.id)} are the champions, ${finals!.teams.map(t => t.wins).sort((a, b) => b - a).join('–')} in the Finals.` : ''}`
+    : nba.phase === 'off' && champ ? `The ${nameOf(champ.id)} won the ${seasonLabel(nba.season)} title, ${finals!.teams.map(t => t.wins).sort((a, b) => b - a).join('–')} in the Finals.`
+    : spotlight ? seriesSentence(spotlight, nameOf)
+    : <>Week {nba.week ?? '–'} of the {seasonLabel(nba.season)} regular season.{day ? ` ${day.today.length} games tonight.` : ''}{unbeaten.length ? ` Still unbeaten: ${unbeaten.join(', ')}.` : ''}{winless.length ? ` Still winless: ${winless.join(', ')}.` : ''}</>;
 
   return (
     <>
       <Hero id="nba" dek={dek} />
+      <ScreenTabs tabs={NBA_TABS} tab={tab} set={setTab} label="NBA screens" />
+      {tab !== 'now' ? (!season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} now={now} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'teams' ? <TeamsScreen d={season} />
+        : tab === 'players' ? <PlayersScreen d={season} />
+        : tab === 'awards' ? <AwardsScreen d={season} />
+        : tab === 'history' ? <HistoryScreen d={season} />
+        : <HowScreen d={season} />) : <>
       <section className="s-top">
-        {next ? (
-          <div className="ocard s-next">
-            <div className="lab">{next.state === 'in' ? <span style={{ color: '#ff453a' }}>● Lakers live · {next.clock}</span> : 'Next Lakers game'}</div>
+        <div className="ocard s-next">
+          <div className="lab">{live.length ? <span style={{ color: '#ff453a' }}>● Live now · {live.length}</span> : 'Next tip-off'}</div>
+          {live[0] ? <>
+            <Score as="div" className="s-cd">{live[0].away?.abbr} {live[0].away?.score} – {live[0].home?.score} {live[0].home?.abbr}</Score>
+            <div className="when" style={{ marginTop: 8 }}>{live[0].clock}{live[0].line.leaders ? ` · ${live[0].line.leaders}` : ''}</div>
+          </> : next ? <>
             <h3>{next.title}</h3>
-            <div className="when">{dayLong(next.start)} · {hhmm(next.start)} Rome{next.tv ? ` · ${next.tv}` : ''}{next.sub && !/Week/.test(next.sub) ? ` · ${next.sub}` : ''}</div>
-            {next.state === 'in'
-              ? <Score as="div" className="s-cd">{next.away?.abbr} {next.away?.score} – {next.home?.score} {next.home?.abbr}</Score>
-              : <div className="s-cd">{countdown(next.start - now)}<small>T-minus{new Date(next.start).getUTCHours() < 6 ? ' · night viewing' : ''}</small></div>}
-          </div>
-        ) : <div className="ocard"><div className="lab">Next Lakers game</div><div>Not scheduled.</div></div>}
-        <div className="ocard">
-          <div className="lab">Lakers {nba.started ? seasonLabel(nba.season) : `last season (${seasonLabel(nba.last?.season ?? nba.season - 1)})`}</div>
-          {(nba.started ? me : meLast) && (() => {
-            const r = (nba.started ? me : meLast)!;
-            return (
-              <div className="kpis">
-                <div className="kpi"><Score as="b">{r.w}–{r.l}</Score><span>Record</span></div>
-                <div className="kpi"><b>{r.seed ? `#${r.seed}` : '–'}</b><span>West seed</span></div>
-                <div className="kpi"><b>{r.diff > 0 ? '+' : ''}{r.diff}</b><span>Point diff. per game</span></div>
-              </div>
-            );
-          })()}
-          {!nba.started && lakersExit && <div className="osrc">Playoffs: out in the {lakersExit.round.toLowerCase()} vs the {nameOf(lakersExit.teams.find(t => t.id !== LAKERS)?.id)}, <Score>{lakersScore(lakersExit)}</Score></div>}
+            <div className="when">{dayLong(next.start)} · {hhmm(next.start)} Rome{next.tv ? ` · ${next.tv}` : ''}</div>
+            <div className="s-cd">{countdown(next.start - now)}<small>T-minus{new Date(next.start).getUTCHours() < 6 ? ' · night viewing' : ''}</small></div>
+          </> : <div>No game tonight.</div>}
         </div>
         <div className="ocard">
-          <div className="lab">{champ ? `${seasonLabel(bracketSeason)} champions` : 'Title race'}</div>
-          {champ ? <h3 style={{ margin: 0, fontSize: 28 }}><Score>{nameOf(champ.id)}</Score></h3> : <div>{standings[0]?.rows[0]?.name} lead the East, {standings[1]?.rows[0]?.name} the West.</div>}
-          {champ && finals && <div className="when">Finals vs {nameOf(finals.teams.find(t => t.id !== champ.id)?.id)}, <Score>{finals.teams.map(t => t.wins).sort((a, b) => b - a).join('–')}</Score></div>}
+          <div className="lab">{inPlayoffs ? 'Playoffs' : 'The season'}</div>
+          {spotlight ? <SeriesBox s={spotlight} big /> : (
+            <div className="kpis">
+              <div className="kpi"><b>{nba.week ?? '–'}</b><span>Week</span></div>
+              <div className="kpi"><b>{day?.today.length ?? '–'}</b><span>Games tonight</span></div>
+              <div className="kpi"><b>{teams.reduce((a, r) => a + r.w, 0)}</b><span>Games played</span></div>
+            </div>
+          )}
+        </div>
+        <div className="ocard">
+          <div className="lab">{best ? 'The best record' : champ ? `${seasonLabel(bracketSeason)} champions` : 'Title race'}</div>
+          {best ? <><h3 style={{ margin: 0 }}>{best.name}</h3><div className="kpis" style={{ marginTop: 8 }}>
+            <div className="kpi"><Score as="b">{best.w}–{best.l}</Score><span>{best.conf}</span></div>
+            <div className="kpi"><Score as="b">{best.diff > 0 ? '+' : ''}{best.diff}</Score><span>Point diff. per game</span></div>
+            <div className="kpi"><Score as="b">{best.streak || '–'}</Score><span>Streak</span></div>
+          </div></> : champ ? <>
+            <h3 style={{ margin: 0, fontSize: 28 }}><Score>{nameOf(champ.id)}</Score></h3>
+            {finals && <div className="when">Finals vs {nameOf(finals.teams.find(t => t.id !== champ.id)?.id)}, <Score>{finals.teams.map(t => t.wins).sort((a, b) => b - a).join('–')}</Score></div>}
+          </> : null}
         </div>
       </section>
 
-      {live.length > 0 && (
+      {inPlayoffs && (
         <section className="ocard">
-          <div className="lab"><span style={{ color: '#ff453a' }}>● Live now</span></div>
-          <div className="olist">{live.map(e => <Row key={e.id} e={e} right={<Score>{e.away?.abbr} {e.away?.score} – {e.home?.score} {e.home?.abbr} · {e.clock}</Score>} />)}</div>
-        </section>
-      )}
-
-      {bracketSeries.length > 0 && (
-        <section className="ocard">
-          <h2>{inPlayoffs ? 'The road to the Finals' : `How the ${seasonLabel(bracketSeason)} playoffs went`}</h2>
-          <p className="dek">Play-in, four best-of-seven rounds, the Finals. Seeds on the left, wins as filled dots.{inPlayoffs ? '' : ' This season\'s bracket appears in April.'}</p>
+          <h2>The road to the Finals</h2>
+          <p className="dek">Play-in, four best-of-seven rounds, the Finals. Seeds on the left, wins as filled dots.</p>
           <Bracket series={bracketSeries} />
         </section>
       )}
 
-      {trend.length > 1 && (
+      {playoffGames.length > 0 && (
         <section className="ocard">
-          <h2>The Lakers' season, game by game</h2>
-          <p className="dek">Wins minus losses after each game. Hover for the result.</p>
-          <TrendLine points={trend} color={ocol('nba')} unit="games over .500" />
+          <div className="lab">Playoff schedule · Rome time</div>
+          <div className="olist">{playoffGames.map(e => <Row key={e.id} e={e} right={e.state === 'in' ? <Score>{e.away?.abbr} {e.away?.score} – {e.home?.score} {e.home?.abbr}</Score> : `in ${countdown(e.start - now)}`} />)}</div>
+        </section>
+      )}
+
+      {day && day.today.length > 0 && (
+        <section className="ocard">
+          <h2>Tonight's games</h2>
+          <p className="dek">Tip-off in Rome time; the night up to 07:00 counts with the evening before. Live games refresh every 30 seconds with the top scorer of each side.</p>
+          <LeagueGameGrid games={day.today} />
+          <div className="osrc">Source: ESPN</div>
         </section>
       )}
 
@@ -106,40 +136,75 @@ export function NbaPage() {
         </div>
       </section>
 
-      <section className="s-two">
-        <div className="ocard">
-          <div className="lab">Lakers schedule · Rome time</div>
-          <div className="olist">
-            {lakersGames.filter(e => e.start > now - 5 * DAY).slice(0, 10).map(e => (
-              <Row key={e.id} e={e} past={e.state === 'post'} right={e.state === 'post' ? <Score>{e.away?.abbr} {e.away?.score}–{e.home?.score} {e.home?.abbr}</Score> : e.state === 'in' ? e.clock : `in ${countdown(e.start - now)}`} />
+      {leaders && leaders.length > 0 && nba.started && (
+        <section className="ocard">
+          <h2>Statistical leaders</h2>
+          <p className="dek">Per game, regular season.{nba.week && nba.week <= 3 ? ' Early in the season a single big night tops the list.' : ''}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 14 }}>
+            {leaders.map(c => (
+              <div key={c.cat}>
+                <div className="lab">{c.label}</div>
+                {c.rows.map((r, i) => <div key={r.name + i} style={{ display: 'grid', gridTemplateColumns: '14px 1fr auto', gap: 6, fontSize: 12.5, padding: '2px 0' }}><span style={{ color: 'var(--o-ink3)' }}>{i + 1}</span><span>{r.name} <small style={{ color: 'var(--o-ink3)' }}>{r.team}</small></span><Score><b>{r.value}</b></Score></div>)}
+              </div>
             ))}
           </div>
-        </div>
+          <div className="osrc">Source: ESPN</div>
+        </section>
+      )}
+
+      <section className="s-two">
+        {day && day.yesterday.length > 0 && (
+          <div className="ocard">
+            <div className="lab">Last night's results</div>
+            <LeagueGameGrid games={day.yesterday} />
+          </div>
+        )}
         <div className="ocard">
           <div className="lab">From the wire</div>
           <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
         </div>
       </section>
+
+      {!inPlayoffs && bracketSeries.length > 0 && (
+        <section className="ocard">
+          <h2>How the {seasonLabel(bracketSeason)} playoffs went</h2>
+          <p className="dek">Play-in, four best-of-seven rounds, the Finals. Seeds on the left, wins as filled dots. This season's bracket appears in April.</p>
+          <Bracket series={bracketSeries} />
+        </section>
+      )}
+      </>}
     </>
   );
 }
 
-function Dots({ n, of, color }: { n: number; of: number; color: string }) {
-  return <span style={{ display: 'inline-flex', gap: 3 }}>{Array.from({ length: of }, (_, i) => <i key={i} style={{ width: 9, height: 9, borderRadius: '50%', background: i < n ? color : 'transparent', boxShadow: i < n ? 'none' : 'inset 0 0 0 1.5px var(--o-line)' }} />)}</span>;
+function seriesSentence(s: Series, nameOf: (id?: string | null) => string) {
+  const [a, b] = s.teams;
+  if (!a || !b) return '';
+  const round = `${s.conf === 'NBA' ? 'NBA Finals' : `${s.conf} ${s.round}`}`;
+  const lead = a.wins >= b.wins ? a : b, other = lead === a ? b : a;
+  if (s.done) return `The ${nameOf(s.winner)} won the ${round} ${lead.wins}–${other.wins}.`;
+  const state = a.wins === b.wins ? `The ${nameOf(a.id)} and the ${nameOf(b.id)} are tied ${a.wins}–${b.wins} in the ${round}.` : `The ${nameOf(lead.id)} lead the ${nameOf(other.id)} ${lead.wins}–${other.wins} in the ${round}.`;
+  return `${state}${s.next ? ` Next game ${dayLong(s.next)} at ${hhmm(s.next)} Rome time.` : ''}`;
 }
 
-function SeriesBox({ s }: { s: Series }) {
+function Dots({ n, of }: { n: number; of: number }) {
+  return <span style={{ display: 'inline-flex', gap: 3 }}>{Array.from({ length: of }, (_, i) => <i key={i} style={{ width: 9, height: 9, borderRadius: '50%', background: i < n ? 'var(--o-ink2)' : 'transparent', boxShadow: i < n ? 'none' : 'inset 0 0 0 1.5px var(--o-line)' }} />)}</span>;
+}
+
+function SeriesBox({ s, big }: { s: Series; big?: boolean }) {
   const need = Math.ceil(s.bestOf / 2);
   return (
-    <div style={{ border: '1px solid var(--o-line)', borderRadius: 10, padding: '7px 10px', display: 'grid', gap: 4, fontFamily: 'var(--f-chart)' }}>
-      {s.round.startsWith('Play-In') && <div style={{ fontSize: 10.5, color: 'var(--o-ink3)' }}>{s.round.replace('Play-In · ', '')}</div>}
+    <div style={{ border: big ? 'none' : '1px solid var(--o-line)', borderRadius: 10, padding: big ? 0 : '7px 10px', display: 'grid', gap: 4, fontFamily: 'var(--f-chart)' }}>
+      {big && <div style={{ fontSize: 13, color: 'var(--o-ink2)' }}>{s.conf !== 'NBA' ? `${s.conf} · ` : ''}{s.round}</div>}
+      {s.round.startsWith('Play-In') && !big && <div style={{ fontSize: 10.5, color: 'var(--o-ink3)' }}>{s.round.replace('Play-In · ', '')}</div>}
       {s.teams.map(t => (
-        <div key={t.id} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, opacity: s.done && s.winner !== t.id ? 0.45 : 1 }}>
+        <div key={t.id} style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: big ? 18 : 13, opacity: s.done && s.winner !== t.id ? 0.45 : 1 }}>
           <span style={{ width: 16, color: 'var(--o-ink3)', fontSize: 11 }}>{t.seed ?? ''}</span>
-          <b style={{ width: 44, color: t.id === LAKERS ? 'var(--oc-usa)' : 'var(--o-ink)' }}>{t.abbr}</b>
-          <Score>{s.bestOf === 1 ? (s.done ? (s.winner === t.id ? 'W' : 'L') : '') : <Dots n={t.wins} of={need} color={t.id === LAKERS ? 'var(--oc-usa)' : 'var(--o-ink2)'} />}</Score>
+          <b style={{ width: big ? 60 : 44 }}>{t.abbr}</b>
+          <Score>{s.bestOf === 1 ? (s.done ? (s.winner === t.id ? 'W' : 'L') : '') : <Dots n={t.wins} of={need} />}</Score>
         </div>
       ))}
+      {big && s.next && <div className="osrc">Next game {dayShort(s.next)} {hhmm(s.next)} Rome</div>}
     </div>
   );
 }
@@ -174,15 +239,15 @@ function ConfTable({ c }: { c: Conference }) {
     <div style={{ minWidth: 0 }}>
       <div className="lab">{c.name}ern Conference</div>
       <table className="otable">
-        <thead><tr><th>#</th><th>Team</th><th className="n">W</th><th className="n">L</th><th className="n">GB</th><th className="n">L10</th></tr></thead>
+        <thead><tr><th>#</th><th>Team</th><th className="n">W</th><th className="n">L</th><th className="n">GB</th><th className="n">L10</th><th className="n">Strk</th></tr></thead>
         <tbody>
           {c.rows.map((r, i) => {
             const seed = r.seed ?? i + 1;
             const zone = seed <= 6 ? 'color-mix(in srgb, var(--oc-out) 12%, transparent)' : seed <= 10 ? 'color-mix(in srgb, var(--oc-usa) 12%, transparent)' : 'transparent';
             return (
-              <tr key={r.id} className={r.mine ? 'me' : ''} style={r.mine ? undefined : { background: zone }}>
+              <tr key={r.id} style={{ background: zone }}>
                 <td>{seed}</td><td>{r.name}{r.clinch ? <small style={{ color: 'var(--o-ink3)' }}> {r.clinch}</small> : null}</td>
-                <td className="n">{r.w}</td><td className="n">{r.l}</td><td className="n">{r.gb}</td><td className="n">{r.last10}</td>
+                <td className="n">{r.w}</td><td className="n">{r.l}</td><td className="n">{r.gb}</td><td className="n">{r.last10}</td><td className="n">{r.streak}</td>
               </tr>
             );
           })}
@@ -191,3 +256,4 @@ function ConfTable({ c }: { c: Conference }) {
     </div>
   );
 }
+

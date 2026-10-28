@@ -1,7 +1,9 @@
 import { PointsBars } from '../components/charts';
 import { Score, Tbc } from '../components/common';
 import { Hero, ocol } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
 import { useData } from '../core/store';
+import { CarsScreen, HowScreen, LeMansScreen, PowerScreen, SeasonScreen, WEC_TABS, useWecSeason } from './WecScreens';
 import { countdown, dayLong, dayShort, hhmm } from '../core/time';
 import { roundOf, type WecCrew, type WecRace, type WecResult, type WecRow, type WecTeam } from '../sources/wec';
 
@@ -10,6 +12,8 @@ const shortNames = (names: string[]) => names.map(n => n.split(' ').slice(-1)[0]
 /** FIA WEC and Le Mans: weekend schedule by session, official results, both championships. */
 export function WecPage() {
   const { wec, news, now } = useData();
+  const [tab, setTab] = useTab(WEC_TABS);
+  const wecSeason = useWecSeason(tab !== 'now');
   if (!wec) return <Hero id="wec" dek="Loading the World Endurance Championship…" />;
   const season = wec.races.filter(r => r.year === wec.season);
   const raceStart = (r: WecRace) => Date.parse(r.sessions.find(s => s.kind === 'race')?.start ?? r.end ?? r.start ?? '');
@@ -35,6 +39,12 @@ export function WecPage() {
   return (
     <>
       <Hero id="wec" dek={`${next ? `${weekend ? 'This weekend' : 'Next'}: ${next.name}, round ${roundOf(wec, next)} of ${season.length}. ` : ''}${manuf[0] ? `${manuf[0].name} leads the Hypercar manufacturers by ${(manuf[0].points ?? 0) - (manuf[1]?.points ?? 0)} points` : ''}${leader ? `; ${shortNames(leader.names)} lead the drivers.` : '.'}`} />
+      <ScreenTabs tabs={WEC_TABS} tab={tab} set={setTab} label="WEC screens" />
+      {tab !== 'now' ? (tab === 'how' ? <HowScreen /> : !wecSeason ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={wecSeason} />
+        : tab === 'power' ? <PowerScreen d={wecSeason} />
+        : tab === 'cars' ? <CarsScreen d={wecSeason} />
+        : <LeMansScreen d={wecSeason} />) : <>
 
       <section className="s-top">
         <div className="ocard s-next">
@@ -140,6 +150,7 @@ export function WecPage() {
           </div>
         </div>
       </section>
+      </>}
     </>
   );
 }

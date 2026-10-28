@@ -1,18 +1,30 @@
 import { useState } from 'react';
-import { useWidth } from '../components/charts';
-import { Score, Tbc } from '../components/common';
+import { TrendLine, useWidth, type TrendPoint } from '../components/charts';
+import { Score } from '../components/common';
+import { NextGame } from '../components/NextGame';
+import { SeasonMap } from '../components/SeasonMap';
 import { Hero, Row, ocol } from '../components/sheet';
+import { TrophyTimeline } from '../components/Trophies';
 import { useData } from '../core/store';
-import { DAY, countdown, dayLong, dayShort, hhmm, isNight } from '../core/time';
+import { DAY, countdown, dayLong, dayShort, hhmm } from '../core/time';
 import type { ObsEvent, Side } from '../core/types';
 import type { Rival, Season, TeamData } from '../sources/teams';
+import { DODGERS } from '../sources/mlb';
+import { Bracket, SeriesBox, seriesSentence } from './MlbPage';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { TeamScreens, teamTabs } from './TeamScreens';
 
-type TeamId = 'milan' | 'pats' | 'texas';
+type TeamId = 'milan' | 'pats' | 'texas' | 'dodgers';
 const GOLD = '#c9a227';
+/** Home grounds, for home games the schedule gives no coordinates for */
+const HOME: Record<TeamId, [number, number]> = { milan: [9.12, 45.48], pats: [-71.26, 42.09], texas: [-97.73, 30.28], dodgers: [-118.24, 34.07] };
+/** What a score counts, by sport */
+const UNIT = { soccer: 'goals', football: 'points', baseball: 'runs' } as const;
 
 const mineOf = (e: ObsEvent): [Side, Side] | null => (!e.home || !e.away ? null : e.home.mine ? [e.home, e.away] : e.away.mine ? [e.away, e.home] : null);
 const per = (v: number | null, gp: number | null) => (v == null || !gp ? null : v / gp);
 const f1 = (v: number | null) => (v == null ? '–' : v.toFixed(1));
+const f2 = (v: number | null) => (v == null ? '–' : v.toFixed(2));
 
 /** A team I follow: next game and live score, this season, the rivals, the whole history. */
 export function TeamPage({ id }: { id: TeamId }) {
@@ -25,11 +37,15 @@ export function TeamPage({ id }: { id: TeamId }) {
   const past = mine.filter(e => e.state === 'post').sort((a, b) => b.start - a.start);
   const next = upcoming[0];
   const myNews = news.filter(n => n.passion === id).slice(0, 8);
+  const tabs = teamTabs(id);
+  const [tab, setTab] = useTab(tabs);
+  const screens = tabs.length > 1;
   if (!t) return <Hero id={id} dek={next ? `Next: ${next.title}, ${dayLong(next.start)}.` : 'Loading the team…'} />;
   const soccer = t.sport === 'soccer';
+  const unit = UNIT[t.sport];
   const c = t.card;
   // The trophies that matter most first (Milan's honours table also lists Serie B and the Supercoppa)
-  const PRIORITY = [/^Serie A/, /Champions League|European Cup$|European Cup \//, /^Coppa Italia/, /Intercontinental|Club World/, /Super Bowl/, /AFC/, /Division/, /National/, /Conference/];
+  const PRIORITY = [/^Serie A/, /Champions League|European Cup$|European Cup \//, /^Coppa Italia/, /Intercontinental|Club World/, /Super Bowl/, /World Series/, /AFC/, /pennants/, /Division/, /National/, /Conference/];
   const titles = t.trophies.filter(h => h.type !== 'Seasons').sort((a, b) => (PRIORITY.findIndex(re => re.test(a.competition)) + 99) % 99 - (PRIORITY.findIndex(re => re.test(b.competition)) + 99) % 99).slice(0, 4);
 
   return (
@@ -39,15 +55,12 @@ export function TeamPage({ id }: { id: TeamId }) {
         {live ? `Live now: ${live.title}. ` : next ? `Next: ${next.title}, ${dayLong(next.start)} at ${hhmm(next.start)}. ` : ''}
         {titles[0] ? `${titles.map(h => `${h.titles} ${h.competition}`).slice(0, 2).join(', ')} in ${t.history.length} seasons.` : ''}
       </>} />
+      {screens && <ScreenTabs tabs={tabs} tab={tab} set={setTab} label={`${PASSION_NAME[id]} screens`} />}
+      {screens && tab !== 'now' ? <TeamScreens id={id} tab={tab} /> : <>
 
       <section className="s-top">
         {live ? <LiveCard e={live} /> : next ? (
-          <div className="ocard s-next">
-            <div className="lab">Next up</div>
-            <h3>{next.title}<Tbc e={next} /></h3>
-            <div className="when">{dayLong(next.start)} · {next.approx ? '≈ ' : ''}{hhmm(next.start)} Rome{next.tv ? ` · ${next.tv}` : ''}</div>
-            <div className="s-cd">{countdown(next.start - now)}<small>T-minus{isNight(next.start) ? ' · night viewing' : ''}</small></div>
-          </div>
+          <NextGame e={next} now={now} rival={t.rivals.find(r => r.id === (next.home?.mine ? next.away : next.home)?.id)} />
         ) : <div className="ocard"><div className="lab">Next up</div><div>Nothing scheduled.</div></div>}
         <div className="ocard">
           <div className="lab">This season</div>
@@ -55,7 +68,7 @@ export function TeamPage({ id }: { id: TeamId }) {
             <div className="kpis">
               <div className="kpi"><Score as="b">{soccer ? `${c.pos ?? '–'}${ord(c.pos)}` : c.record}</Score><span>{soccer ? 'Serie A' : c.standing}</span></div>
               <div className="kpi"><Score as="b">{soccer ? c.pts : id === 'texas' ? (ap ? `#${ap}` : 'NR') : c.seed ? `#${c.seed}` : '–'}</Score><span>{soccer ? 'Points' : id === 'texas' ? 'AP rank' : 'Playoff seed'}</span></div>
-              <div className="kpi"><Score as="b"><span style={{ fontSize: '0.8em', whiteSpace: 'nowrap' }}>{c.pf ?? '–'}–{c.pa ?? '–'}</span></Score><span>{soccer ? 'Goals for–against' : 'Points for–against'}</span></div>
+              <div className="kpi"><Score as="b"><span style={{ fontSize: '0.8em', whiteSpace: 'nowrap' }}>{c.pf ?? '–'}–{c.pa ?? '–'}</span></Score><span>{unit[0].toUpperCase() + unit.slice(1)} for–against</span></div>
             </div>
           )}
           <FormStrip games={past.slice(0, 10).reverse()} />
@@ -70,9 +83,17 @@ export function TeamPage({ id }: { id: TeamId }) {
 
       {soccer && t.competitions && <Competitions t={t} />}
 
+      {id === 'dodgers' && <DodgersSeason />}
+
+      <section className="ocard">
+        <h2>The season on the map</h2>
+        <p className="dek">Every game of the season, home and away. Filled dots are played, hollow ones are still to come, the pulsing one is next.</p>
+        <SeasonMap games={mine.filter(e => e.home && e.away)} next={next} home={HOME[id]} color={ocol(id)} />
+      </section>
+
       <section className="ocard">
         <h2>{t.name} and the rivals, this season</h2>
-        <p className="dek">{soccer ? 'Goals scored and conceded per game in Serie A' : 'Points scored and allowed per game'}: the further right and higher, the better. {t.card?.short ?? t.name} in color, the historic rivals in grey, the strongest teams of the moment outlined.</p>
+        <p className="dek">{soccer ? 'Goals scored and conceded per game in Serie A' : `${unit[0].toUpperCase() + unit.slice(1)} scored and allowed per game`}: the further right and higher, the better. {t.card?.short ?? t.name} in color, the historic rivals in grey, the strongest teams of the moment outlined.</p>
         <AttackDefense t={t} id={id} />
         <CompareTable t={t} />
         <div className="osrc">Source: ESPN, {soccer ? 'league games' : 'regular season'} to date</div>
@@ -80,16 +101,25 @@ export function TeamPage({ id }: { id: TeamId }) {
 
       <section className="ocard">
         <h2>{t.history.length} seasons of {t.card?.short ?? t.name}</h2>
-        <p className="dek">{soccer ? 'League finish every season since 1899: top-flight seasons on top, Serie B below; gold marks a title.' : id === 'pats' ? 'Winning percentage every season since 1960: playoff seasons in color, the six Super Bowl titles starred, a ring for the conference titles.' : 'Winning percentage every season since 1893: bowl seasons in color, the national titles starred.'}</p>
+        <p className="dek">{soccer ? 'League finish every season since 1899: top-flight seasons on top, Serie B below; gold marks a title.' : id === 'pats' ? 'Winning percentage every season since 1960: playoff seasons in color, the six Super Bowl titles starred, a ring for the conference titles.' : id === 'dodgers' ? `Winning percentage every season since ${t.history[0]?.start ?? 1883}, Brooklyn to Los Angeles: postseason seasons in color, the World Series titles starred, a ring for the other pennants.` : 'Winning percentage every season since 1893: bowl seasons in color, the national titles starred.'}</p>
         <HistoryChart t={t} id={id} />
         <div className="osrc">Source: Wikipedia season lists{soccer ? '' : ' · ESPN since 2001'}</div>
       </section>
 
+      {soccer && (
+        <section className="ocard">
+          <h2>Trophies, year by year</h2>
+          <p className="dek">Every title won since 1899, placed in the year its season began. Hover a year to see what was won.</p>
+          <TrophyTimeline honours={t.trophies} />
+          <div className="osrc">Source: Wikipedia honours tables</div>
+        </section>
+      )}
+
       <section className="ocard">
         <h2>The rivals</h2>
-        <p className="dek">All-time record from Wikipedia's rivalry pages where one exists; game by game from ESPN since 2001.</p>
+        <p className="dek">All-time record from Wikipedia's rivalry pages where one exists; game by game from ESPN since 2001{t.sport === 'baseball' ? ' (regular season)' : ''}.</p>
         <div className="cy-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))' }}>
-          {t.rivals.map(r => <RivalCard key={r.id} r={r} soccer={soccer} color={ocol(id)} />)}
+          {t.rivals.map(r => <RivalCard key={r.id} r={r} soccer={soccer} unit={unit} color={ocol(id)} />)}
         </div>
       </section>
 
@@ -118,9 +148,12 @@ export function TeamPage({ id }: { id: TeamId }) {
           )}
         </div>
       </section>
+      </>}
     </>
   );
 }
+
+const PASSION_NAME: Record<TeamId, string> = { milan: 'AC Milan', pats: 'Patriots', texas: 'Texas Longhorns', dodgers: 'Dodgers' };
 
 const ord = (n: number | null) => (n == null ? '' : n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] ?? 'th');
 
@@ -207,18 +240,19 @@ function AttackDefense({ t, id }: { t: TeamData; id: TeamId }) {
 }
 
 function CompareTable({ t }: { t: TeamData }) {
-  const soccer = t.sport === 'soccer';
+  const soccer = t.sport === 'soccer', baseball = t.sport === 'baseball';
   const rows = [{ name: t.card?.short ?? t.name, card: t.card, stats: t.stats, kind: 'me' }, ...t.rivals.map(r => ({ name: r.name, card: r.card, stats: r.stats, kind: r.kind }))];
   return (
     <div style={{ overflowX: 'auto', marginTop: 12 }}>
       <table className="otable">
-        <thead><tr><th>Team</th><th>Standing</th><th className="n">Record</th>{soccer ? <><th className="n">Pts</th><th className="n">GF</th><th className="n">GA</th></> : <><th className="n">PPG</th><th className="n">Allowed</th><th className="n">Yds/g</th><th className="n">TO diff</th></>}</tr></thead>
+        <thead><tr><th>Team</th><th>Standing</th><th className="n">Record</th>{soccer ? <><th className="n">Pts</th><th className="n">GF</th><th className="n">GA</th></> : baseball ? <><th className="n">Runs/g</th><th className="n">Allowed</th><th className="n">Run diff.</th></> : <><th className="n">PPG</th><th className="n">Allowed</th><th className="n">Yds/g</th><th className="n">TO diff</th></>}</tr></thead>
         <tbody>{rows.map(r => (
           <tr key={r.name} className={r.kind === 'me' ? 'me' : ''}>
             <td>{r.name}{r.kind === 'current' ? <small style={{ color: 'var(--o-ink3)' }}> · top now</small> : null}</td>
             <td><small>{r.card?.standing ?? '–'}</small></td>
             <td className="n"><Score>{soccer && r.card ? `${r.card.w}-${r.card.d}-${r.card.l}` : r.card?.record ?? '–'}</Score></td>
             {soccer ? <><td className="n"><b>{r.card?.pts ?? '–'}</b></td><td className="n">{r.card?.pf ?? '–'}</td><td className="n">{r.card?.pa ?? '–'}</td></>
+              : baseball ? <><td className="n">{f2(per(r.card?.pf ?? null, r.card?.gp ?? null))}</td><td className="n">{f2(per(r.card?.pa ?? null, r.card?.gp ?? null))}</td><td className="n">{r.card?.pf != null && r.card?.pa != null ? `${r.card.pf - r.card.pa > 0 ? '+' : ''}${r.card.pf - r.card.pa}` : '–'}</td></>
               : <><td className="n">{f1(per(r.card?.pf ?? null, r.card?.gp ?? null))}</td><td className="n">{f1(per(r.card?.pa ?? null, r.card?.gp ?? null))}</td><td className="n">{f1(r.stats?.ypg ?? null)}</td><td className="n">{r.stats?.toDiff ?? '–'}</td></>}
           </tr>
         ))}</tbody>
@@ -269,17 +303,17 @@ function HistoryChart({ t, id }: { t: TeamData; id: TeamId }) {
         {[0, 0.5, 1].map(v => <g key={v}><line x1={l} x2={W - r} y1={y(v)} y2={y(v)} stroke={v === 0.5 ? 'var(--o-ink3)' : 'var(--o-grid)'} strokeDasharray={v === 0.5 ? '3 3' : undefined} /><text x={l - 6} y={y(v) + 4} textAnchor="end">{Math.round(v * 100)}%</text></g>)}
         {decades.map(d => <text key={d} x={x(d)} y={H - 6} textAnchor="middle">{d}</text>)}
         {h.map(s => {
-          const v = wp(s), post = id === 'pats' ? s.playoffs : Boolean(s.bowl);
+          const v = wp(s), post = id === 'texas' ? Boolean(s.bowl) : s.playoffs;
           return (
             <g key={s.season} onPointerEnter={() => setHover(s)}>
               <rect x={x(s.start) - bw / 2} y={y(v)} width={bw} height={y(0) - y(v)} rx={Math.min(2, bw / 2)} fill={s.champion ? 'var(--o-ink)' : post ? ocol(id) : 'var(--o-other)'} opacity={hover && hover !== s ? 0.6 : 1} />
               {s.champion && <text x={x(s.start)} y={y(v) - 4} textAnchor="middle" style={{ fontSize: 11, fill: 'var(--o-ink)' }}>★</text>}
-              {s.conferenceChampion && id === 'pats' && !s.champion && <circle cx={x(s.start)} cy={y(v) - 6} r={3} fill="none" stroke={ocol(id)} strokeWidth={1.5} />}
+              {s.conferenceChampion && id !== 'texas' && !s.champion && <circle cx={x(s.start)} cy={y(v) - 6} r={3} fill="none" stroke={ocol(id)} strokeWidth={1.5} />}
             </g>
           );
         })}
       </svg>
-      <div className="olegend"><span><i style={{ background: ocol(id), height: 10 }} />{id === 'pats' ? 'Playoffs' : 'Bowl season'}</span><span><i style={{ background: 'var(--o-ink)', height: 10 }} />★ {id === 'pats' ? 'Super Bowl champions' : 'National champions'}</span>{id === 'pats' && <span><i style={{ border: `1.5px solid ${ocol(id)}`, width: 8, height: 8, borderRadius: 5 }} />AFC champions</span>}<span><i style={{ background: 'var(--o-other)', height: 10 }} />Other seasons</span></div>
+      <div className="olegend"><span><i style={{ background: ocol(id), height: 10 }} />{id === 'texas' ? 'Bowl season' : 'Playoffs'}</span><span><i style={{ background: 'var(--o-ink)', height: 10 }} />★ {id === 'pats' ? 'Super Bowl champions' : id === 'dodgers' ? 'World Series champions' : 'National champions'}</span>{id !== 'texas' && <span><i style={{ border: `1.5px solid ${ocol(id)}`, width: 8, height: 8, borderRadius: 5 }} />{id === 'pats' ? 'AFC champions' : 'NL pennant'}</span>}<span><i style={{ background: 'var(--o-other)', height: 10 }} />Other seasons</span></div>
       {hover && <SeasonTip s={hover} soccer={false} x={Math.min(x(hover.start) + 10, W - 230)} />}
     </div>
   );
@@ -305,7 +339,7 @@ function SeasonTip({ s, soccer, x }: { s: Season; soccer: boolean; x: number }) 
   );
 }
 
-function RivalCard({ r, soccer, color }: { r: Rival; soccer: boolean; color: string }) {
+function RivalCard({ r, soccer, unit, color }: { r: Rival; soccer: boolean; unit: string; color: string }) {
   const a = r.allTime;
   const s = r.since2001;
   const bar = (w: number, d: number, l: number) => {
@@ -324,15 +358,50 @@ function RivalCard({ r, soccer, color }: { r: Rival; soccer: boolean; color: str
       {a?.wins != null ? <>
         <div style={{ fontSize: 12, marginTop: 6 }}>All time · {a.total} games</div>
         {bar(a.wins, a.draws ?? 0, a.losses ?? 0)}
-        <Score><small style={{ textTransform: 'none', letterSpacing: 0 }}>{a.wins} wins{soccer || a.draws ? ` · ${a.draws} draws` : ''} · {a.losses} losses</small></Score>
+        <Score><small style={{ textTransform: 'none', letterSpacing: 0 }}>{a.wins} wins{soccer || a.draws ? ` · ${a.draws} ${soccer ? 'draws' : 'ties'}` : ''} · {a.losses} losses</small></Score>
       </> : null}
       <div style={{ fontSize: 12, marginTop: 6 }}>Since 2001 · {s.w + s.d + s.l} games</div>
-      {s.w + s.d + s.l > 0 ? <>{bar(s.w, s.d, s.l)}<Score><small style={{ textTransform: 'none', letterSpacing: 0 }}>{s.w}-{soccer ? `${s.d}-` : ''}{s.l} · {soccer ? 'goals' : 'points'} {s.gf}–{s.ga}</small></Score></> : <small style={{ textTransform: 'none', letterSpacing: 0 }}>No meetings</small>}
+      {s.w + s.d + s.l > 0 ? <>{bar(s.w, s.d, s.l)}<Score><small style={{ textTransform: 'none', letterSpacing: 0 }}>{s.w}-{soccer ? `${s.d}-` : ''}{s.l} · {unit} {s.gf}–{s.ga}</small></Score></> : <small style={{ textTransform: 'none', letterSpacing: 0 }}>No meetings</small>}
       {r.recent.length > 0 && (
         <div style={{ display: 'flex', gap: 3, marginTop: 8, flexWrap: 'wrap' }}>
           {r.recent.slice(0, 6).map(g => <span key={g.date} title={`${g.date} · ${g.home ? 'home' : 'away'} ${g.us}–${g.them}`} style={{ fontSize: 10.5, padding: '1px 5px', borderRadius: 3, color: '#fff', background: g.result === 'W' ? 'var(--o-s3)' : g.result === 'L' ? 'var(--o-s2)' : 'var(--o-other)' }}>{g.us}–{g.them}</span>)}
         </div>
       )}
     </div>
+  );
+}
+
+/** The Dodgers' year: October series by series, and the regular season game by game. */
+function DodgersSeason() {
+  const { mlb } = useData();
+  if (!mlb) return null;
+  const mine = mlb.series.filter(s => s.teams.some(t => t.id === DODGERS));
+  const last = mine[mine.length - 1];
+  let net = 0;
+  const trend: TrendPoint[] = mlb.dodgers.map((g, i) => {
+    net += g.win ? 1 : -1;
+    return { x: g.date, y: net, tip: `Game ${i + 1} · ${dayShort(g.date)} · ${g.win ? 'W' : 'L'} ${g.rs}–${g.ra} ${g.home ? 'vs' : '@'} ${g.opp} · ${net >= 0 ? '+' : ''}${net}` };
+  });
+  return (
+    <>
+      {mine.length > 0 && (
+        <section className="ocard">
+          <h2>The Dodgers in October</h2>
+          <p className="dek">{seriesSentence(mlb, last)}{last.done && last.winner !== DODGERS ? ' Their postseason is over.' : ''}</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 12 }}>
+            {mine.map(s => <div key={s.key}><div className="lab">{s.league !== 'MLB' ? `${s.league} ` : ''}{s.round}</div><SeriesBox s={s} /></div>)}
+          </div>
+          <details style={{ marginTop: 14 }}><summary className="lab" style={{ cursor: 'pointer' }}>The whole bracket</summary><Bracket series={mlb.series} /></details>
+        </section>
+      )}
+      {trend.length > 1 && (
+        <section className="ocard">
+          <h2>The {mlb.season} regular season, game by game</h2>
+          <p className="dek">Wins minus losses after each regular-season game. Hover for the result.</p>
+          <TrendLine points={trend} color={ocol('dodgers')} unit="games over .500" />
+          <div className="osrc">Source: ESPN</div>
+        </section>
+      )}
+    </>
   );
 }

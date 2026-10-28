@@ -1,10 +1,14 @@
 {
- "updated": "2026-10-17T13:32:27.277Z",
+ "updated": "2026-10-28T05:38:59.798Z",
+ "diaryFetched": "2026-10-28T02:57:02.323Z",
  "events": [
   {
    "id": "royal:trip:2026-9-9:Norway",
    "passion": "royal",
    "who": "Prince of Wales",
+   "people": [
+    "william"
+   ],
    "kind": "trip",
    "title": "Prince William in Oslo, Norway",
    "country": "Norway",
@@ -12,12 +16,20 @@
    "approxTime": true,
    "weight": 1,
    "link": "https://en.wikipedia.org/wiki/List_of_official_overseas_trips_made_by_William%2C_Prince_of_Wales",
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "loc": [
+    8.788,
+    61.153
+   ],
+   "place": "Norway"
   },
   {
    "id": "royal:state-visit-in:2026-10-20:Oman",
    "passion": "royal",
    "who": "The King",
+   "people": [
+    "king"
+   ],
    "kind": "state-visit-in",
    "title": "State visit to the UK: Oman",
    "country": "Oman",
@@ -25,12 +37,20 @@
    "approxTime": true,
    "weight": 2,
    "link": "https://en.wikipedia.org/wiki/List_of_state_visits_received_by_Charles_III",
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "loc": [
+    -0.6044,
+    51.4839
+   ],
+   "place": "Windsor Castle"
   },
   {
    "id": "royal:state-visit:2026-10-27:Bahamas",
    "passion": "royal",
    "who": "The King",
+   "people": [
+    "king"
+   ],
    "kind": "state-visit",
    "title": "The King's state visit to Bahamas",
    "country": "Bahamas",
@@ -38,12 +58,140 @@
    "approxTime": true,
    "weight": 2,
    "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "loc": [
+    -78,
+    24.774
+   ],
+   "place": "Bahamas"
+  },
+  {
+   "id": "royal:diary:2026-10-28:anne:n3fibg",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Honeypot House",
+   "role": "President, Carers Trust",
+   "detail": "President, Carers Trust, will visit Honeypot House, Exbury Road, Blackfield, Southampton, Hampshire",
+   "place": "Southampton, Hampshire",
+   "start": "2026-10-28T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.3329,
+    50.8977
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-28:richard:ukqx2z",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Present The King's Award for Enterprise: Promoting Opportuntiy to Enterprise East Group CIC at Cornell Court",
+   "role": "",
+   "detail": "will present The King's Award for Enterprise: Promoting Opportuntiy to Enterprise East Group CIC at Cornell Court, Smallbridge Rd, Saffron Walden CB11 3NS",
+   "place": "Smallbridge Rd, Saffron Walden CB11 3NS",
+   "start": "2026-10-28T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    0.2512,
+    52.0176
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-28:anne:b8dika",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Attend a Reception to open The Royal Marines Experience Museum",
+   "role": "Patron, National Museum of The Royal Navy",
+   "detail": "Patron, National Museum of The Royal Navy, will attend a Reception to open The Royal Marines Experience Museum, Boathouse 6, Portsmouth Historic Dockyard, Portsmouth, Hampshire",
+   "place": "Portsmouth, Hampshire",
+   "start": "2026-10-28T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.0759,
+    50.8167
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-28:richard:roijfz",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Visit Copped Hall",
+   "role": "",
+   "detail": "will visit Copped Hall, Epping, CM16 5HS",
+   "place": "Epping, CM16 5HS",
+   "start": "2026-10-28T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    0.0824,
+    51.6891
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-28:richard:1d1zllc",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Present The King's Award for Enterprise: Innovation to Plextek Engineering & Consulting",
+   "role": "",
+   "detail": "will present The King's Award for Enterprise: Innovation to Plextek Engineering & Consulting, London Rd, Great Chesterford, Saffron Walden, CB10 1NY",
+   "place": "Saffron Walden, CB10 1NY",
+   "start": "2026-10-28T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    0.2348,
+    52.0186
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
   },
   {
    "id": "royal:state-visit:2026-10-29:Guyana",
    "passion": "royal",
    "who": "The King",
+   "people": [
+    "king"
+   ],
    "kind": "state-visit",
    "title": "The King's state visit to Guyana",
    "country": "Guyana",
@@ -51,12 +199,187 @@
    "approxTime": true,
    "weight": 2,
    "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "loc": [
+    -58.642,
+    4.842
+   ],
+   "place": "Guyana"
+  },
+  {
+   "id": "royal:diary:2026-10-29:anne:1eqboy8",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Cadet Vocational College",
+   "role": "",
+   "detail": "will visit Cadet Vocational College, 3 Archipelago, Lyon Way, Camberley, Surrey",
+   "place": "Camberley, Surrey",
+   "start": "2026-10-29T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.7542,
+    51.3375
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-29:anne:1i0eh4k",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Attend the Laying Up of Colours of Queen Elizabeth II at Portsmouth Cathedral",
+   "role": "Commodore-in-Chief, Portsmouth",
+   "detail": "Commodore-in-Chief, Portsmouth, will attend the Laying Up of Colours of Queen Elizabeth II at Portsmouth Cathedral, High Street, Old Portsmouth, Portsmouth, Hampshire",
+   "place": "Portsmouth, Hampshire",
+   "start": "2026-10-29T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.0759,
+    50.8197
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-29:edward:f608b6",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a 50th Anniversary dinner at St. James's Palace",
+   "role": "President, The National Youth Music Theatre",
+   "detail": "President, The National Youth Music Theatre, will attend a 50th Anniversary dinner at St. James's Palace",
+   "start": "2026-10-29T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1413,
+    51.4998
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-30:anne:11kqx25",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Friends of Darwen Cemetery",
+   "role": "",
+   "detail": "will visit Friends of Darwen Cemetery, Cemetery Road, Darwen, Lancashire",
+   "place": "Darwen, Lancashire",
+   "start": "2026-10-30T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.4662,
+    53.6738
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-30:anne:1fs1vk6",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Herbet Parkinson Limited",
+   "role": "President, UK Fashion and Textile Association",
+   "detail": "President, UK Fashion and Textile Association, will visit Herbet Parkinson Limited, Harvest Mill, Monton Road, Darwen, Lancashire",
+   "place": "Darwen, Lancashire",
+   "start": "2026-10-30T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.471,
+    53.6931
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-30:anne:60h9tv",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Darwen Heritage Centre",
+   "role": "",
+   "detail": "will visit Darwen Heritage Centre, Holker House, Railway Road, Darwen, Lancashire",
+   "place": "Darwen, Lancashire",
+   "start": "2026-10-30T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.4674,
+    53.6979
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-10-30:anne:ntcp8i",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit Youth Zone Darwen to open its Youth Zone",
+   "role": "",
+   "detail": "will visit Youth Zone Darwen to open its Youth Zone, Darwen House, Railway Road, Darwen, Lancashire",
+   "place": "Darwen, Lancashire",
+   "start": "2026-10-30T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.484,
+    53.7468
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
   },
   {
    "id": "royal:state-visit:2026-11-1:Antigua and Barbuda",
    "passion": "royal",
    "who": "The King",
+   "people": [
+    "king"
+   ],
    "kind": "state-visit",
    "title": "The King's state visit to Antigua and Barbuda",
    "country": "Antigua and Barbuda",
@@ -64,7 +387,222 @@
    "approxTime": true,
    "weight": 2,
    "link": "https://en.wikipedia.org/wiki/List_of_state_visits_made_by_Charles_III",
-   "source": "Wikipedia"
+   "source": "Wikipedia",
+   "loc": [
+    -61.955,
+    17.223
+   ],
+   "place": "Antigua and Barbuda"
+  },
+  {
+   "passion": "royal",
+   "approxTime": true,
+   "id": "royal:curated:chogm-2026",
+   "who": "The King & The Queen",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "kind": "ceremony",
+   "title": "Commonwealth Heads of Government Meeting (CHOGM), Antigua and Barbuda",
+   "place": "St John’s, Antigua and Barbuda",
+   "loc": [
+    -61.845,
+    17.121
+   ],
+   "weight": 3,
+   "source": "Palace press release: Autumn Tour, 27 Oct–4 Nov 2026",
+   "link": "https://www.royal.uk/media-centre/press-releases",
+   "start": "2026-11-01T10:00:00.000Z"
+  },
+  {
+   "id": "royal:diary:2026-11-02:sophie:1vwweeg",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Attend the Global Summit for Eye Health in Antigua & Barbuda",
+   "role": "Global Ambassador, International Agency for the Prevention of Blindness",
+   "detail": "Global Ambassador, International Agency for the Prevention of Blindness, will attend the Global Summit for Eye Health in Antigua & Barbuda",
+   "start": "2026-11-02T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -61.9631,
+    17.2194
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-02:anne:1o2j1p2",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Princess Royal",
+   "people": [
+    "anne"
+   ],
+   "title": "Visit South Africa",
+   "role": "President, Royal Agricultural Society of the Commonwealth",
+   "detail": "President, Royal Agricultural Society of the Commonwealth, will visit South Africa",
+   "start": "2026-11-02T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    24.9902,
+    -28.8158
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-04:edward:n7uoas",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a Reception celebrating the 70th Anniversary of The Duke of Edinburgh's Award at the Royal Geographical Society",
+   "role": "Patron, The Ulysses Trust",
+   "detail": "Patron, The Ulysses Trust, will attend a Reception celebrating the 70th Anniversary of The Duke of Edinburgh's Award at the Royal Geographical Society, 1 Kensington Gore, London SW7",
+   "place": "1 Kensington Gore, London SW7",
+   "start": "2026-11-04T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1787,
+    51.4984
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-04:edward:xsntmq",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the London Youth Awards at Christ Church Spitalfields",
+   "role": "Patron",
+   "detail": "Patron, will attend the London Youth Awards at Christ Church Spitalfields, Commercial Street, London E1",
+   "place": "Commercial Street, London E1",
+   "start": "2026-11-04T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.0783,
+    51.5149
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-04:edward:1e40bcb",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Hold a dinner at St James's Palace to celebrate the 75th Anniversary of the Royal Festival Hall",
+   "role": "Patron, Southbank Centre",
+   "detail": "Patron, Southbank Centre, will hold a dinner at St James's Palace to celebrate the 75th Anniversary of the Royal Festival Hall",
+   "start": "2026-11-04T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1431,
+    51.4992
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-06:edward:1ualqsl",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Clare College in celebration of its 700 year anniversary",
+   "role": "",
+   "detail": "will visit Clare College in celebration of its 700 year anniversary, University of Cambridge, Trinity Lane, Cambridge",
+   "place": "Trinity Lane, Cambridge",
+   "start": "2026-11-06T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    0.106,
+    52.2017
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-06:edward:o5lqp3",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Dartford Grammar School in celebration of their 450th Anniversary",
+   "role": "",
+   "detail": "will visit Dartford Grammar School in celebration of their 450th Anniversary, Dartford, Kent",
+   "place": "Dartford, Kent",
+   "start": "2026-11-06T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    0.1992,
+    51.4421
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-07:richard+birgitte:1k4dmc1",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "title": "Attend the Royal British Legion Festival of Remembrance at the Royal Albert Hall",
+   "role": "",
+   "detail": "will attend the Royal British Legion Festival of Remembrance at the Royal Albert Hall",
+   "start": "2026-11-07T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1783,
+    51.4992
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
   },
   {
    "id": "royal:rule:festival:2026",
@@ -98,6 +636,896 @@
    "source": "Rule: second Sunday of November, two minutes' silence at 11:00"
   },
   {
+   "id": "royal:diary:2026-11-09:edward:13jb472",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Bristol Sweet Mart",
+   "role": "",
+   "detail": "will visit Bristol Sweet Mart, St Marks Road, Bristol",
+   "place": "St Marks Road, Bristol",
+   "start": "2026-11-09T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.5724,
+    51.4648
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-09:edward:1gj0zjr",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Easton Jamia Masjid",
+   "role": "",
+   "detail": "will visit Easton Jamia Masjid, St Marks Road, Bristol",
+   "place": "St Marks Road, Bristol",
+   "start": "2026-11-09T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.5646,
+    51.469
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-09:edward:6uptn2",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Siri Guru Singh Sabha Gurdwara",
+   "role": "",
+   "detail": "will visit Siri Guru Singh Sabha Gurdwara, 301 Church Road, St George, Bristol",
+   "place": "St George, Bristol",
+   "start": "2026-11-09T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.5525,
+    51.4616
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-09:edward:xdgod0",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a Multi-Faith Forum at St Mark's Baptist Church",
+   "role": "",
+   "detail": "will attend a Multi-Faith Forum at St Mark's Baptist Church, St Mark's Road, Bristol",
+   "place": "St Mark's Road, Bristol",
+   "start": "2026-11-09T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.573,
+    51.465
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-09:edward:1wloto9",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Bristol Bindi Temple",
+   "role": "",
+   "detail": "will visit Bristol Bindi Temple, 163b Church Road, Bristol",
+   "place": "163b Church Road, Bristol",
+   "start": "2026-11-09T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.558,
+    51.4609
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-10:richard:ps3v4i",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Visit the Northamptonshire Association for the Blind",
+   "role": "",
+   "detail": "will visit the Northamptonshire Association for the Blind, 1-2 Premier Court, Northampton",
+   "place": "1-2 Premier Court, Northampton",
+   "start": "2026-11-10T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.9037,
+    52.2349
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-10:richard:kl1s8x",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Officially open the Alfred East Art Gallery and Kettering Library",
+   "role": "",
+   "detail": "will officially open the Alfred East Art Gallery and Kettering Library, Sheep Street, Kettering",
+   "place": "Sheep Street, Kettering",
+   "start": "2026-11-10T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.7306,
+    52.3909
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-10:richard:487ood",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Officially open the Northampton School",
+   "role": "",
+   "detail": "will officially open the Northampton School, Thorpeville, Moulton, Northampton",
+   "place": "Moulton, Northampton",
+   "start": "2026-11-10T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.8705,
+    52.2328
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-11:richard+birgitte:1uhqq16",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "title": "Attend the Armistice Day Service at the Royal British Legion National Remembrance Gardens",
+   "role": "",
+   "detail": "will attend the Armistice Day Service at the Royal British Legion National Remembrance Gardens, Croxall Road, Alrewas, Staffordshire",
+   "place": "Alrewas, Staffordshire",
+   "start": "2026-11-11T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.7449,
+    52.7279
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-11:edward:irspcu",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the Grounds Management Association's SALTEX exhibition at the National Exhibition Centre",
+   "role": "",
+   "detail": "will attend the Grounds Management Association's SALTEX exhibition at the National Exhibition Centre, Bendigo Way, Birmingham",
+   "place": "Bendigo Way, Birmingham",
+   "start": "2026-11-11T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.7256,
+    52.452
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-11:edward:1bndh0j",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit the London Electric Vehicle Company",
+   "role": "",
+   "detail": "will visit the London Electric Vehicle Company, Ansty Park, Coventry",
+   "place": "Ansty Park, Coventry",
+   "start": "2026-11-11T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.4459,
+    52.4227
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-11:edward:9rv3s5",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a Concert at Coventry Cathedral",
+   "role": "Patron, City of Birmingham Symphony Orchestra",
+   "detail": "Patron, City of Birmingham Symphony Orchestra, will attend a Concert at Coventry Cathedral, Priority Street, Coventry",
+   "place": "Priority Street, Coventry",
+   "start": "2026-11-11T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.508,
+    52.4074
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-12:richard:1f1ngzl",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Attend a Reception at Cottons Centre",
+   "role": "Patron, Construction Youth Trust",
+   "detail": "Patron, Construction Youth Trust, will attend a Reception at Cottons Centre, Hay's Lane, London, SE1 2QG",
+   "place": "London, SE1 2QG",
+   "start": "2026-11-12T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.0929,
+    51.5006
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-12:edward:1ltx8pa",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Open the Propeller Stage at the University of Hertfordshire",
+   "role": "",
+   "detail": "will open the Propeller Stage at the University of Hertfordshire, College Lane, Hatfield",
+   "place": "College Lane, Hatfield",
+   "start": "2026-11-12T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.2363,
+    51.7535
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-12:edward:1d20mss",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a Dinner celebrating the 70th Anniversary of The Duke of Edinburgh's Award at Abbey Road Studios",
+   "role": "Trustee",
+   "detail": "Trustee, will attend a Dinner celebrating the 70th Anniversary of The Duke of Edinburgh's Award at Abbey Road Studios, 3 Abbey Road, London NW8",
+   "place": "3 Abbey Road, London NW8",
+   "start": "2026-11-12T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1753,
+    51.5319
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-12:edward:ehmpdl",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the Annual General Meeting at Greenhouse Sports",
+   "role": "President, Sport & Recreation Alliance",
+   "detail": "President, Sport & Recreation Alliance, will attend the Annual General Meeting at Greenhouse Sports, 88 Bell Street, London NW1",
+   "place": "88 Bell Street, London NW1",
+   "start": "2026-11-12T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1731,
+    51.5181
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:birthday:king:2026",
+   "passion": "royal",
+   "who": "The King",
+   "start": "2026-11-14T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "king"
+   ],
+   "sub": "78th birthday",
+   "title": "The King turns 78"
+  },
+  {
+   "passion": "royal",
+   "approxTime": true,
+   "id": "royal:curated:earthshot-2026",
+   "who": "The Prince of Wales",
+   "people": [
+    "william"
+   ],
+   "kind": "ceremony",
+   "title": "The Earthshot Prize Awards, Mumbai",
+   "place": "Mumbai, India",
+   "loc": [
+    72.8777,
+    19.076
+   ],
+   "weight": 3,
+   "source": "The Earthshot Prize (organisers)",
+   "link": "https://earthshotprize.org",
+   "start": "2026-11-17T10:00:00.000Z"
+  },
+  {
+   "id": "royal:diary:2026-11-18:richard:trutxh",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Attend the Nuffield Farming Annual Conference at the Royal Armouries Museum",
+   "role": "Patron, Nuffield Farming Scholarships Trust",
+   "detail": "Patron, Nuffield Farming Scholarships Trust, will attend the Nuffield Farming Annual Conference at the Royal Armouries Museum, Armouries Drive, Leeds",
+   "place": "Armouries Drive, Leeds",
+   "start": "2026-11-18T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -1.5332,
+    53.7912
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-18:edward:7nzbsn",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend a Dinner at the Castle Hotel Windsor",
+   "role": "Chairman of the Board of Trustees, The Duke of Edinburgh's International Award Foundation",
+   "detail": "Chairman of the Board of Trustees, The Duke of Edinburgh's International Award Foundation, will attend a Dinner at the Castle Hotel Windsor, 18 High Street, Windsor",
+   "place": "18 High Street, Windsor",
+   "start": "2026-11-18T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.6111,
+    51.4782
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-19:birgitte:1loy1t8",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Gloucester",
+   "people": [
+    "birgitte"
+   ],
+   "title": "Attend the Patrons' Evensong at St. James's Church",
+   "role": "Royal Patron, Cathedral Music Trust",
+   "detail": "Royal Patron, Cathedral Music Trust, will attend the Patrons' Evensong at St. James's Church, 197 Piccadilly, London W1",
+   "place": "197 Piccadilly, London W1",
+   "start": "2026-11-19T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -2.2355,
+    53.4788
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-19:edward:1xs75yj",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the The Duke of Edinburgh's International Award Foundation International Council Meeting at The Castle Hotel Windsor",
+   "role": "Chairman of the Board of Trustees",
+   "detail": "Chairman of the Board of Trustees, will attend the The Duke of Edinburgh's International Award Foundation International Council Meeting at The Castle Hotel Windsor, 18 High Street, Windsor",
+   "place": "18 High Street, Windsor",
+   "start": "2026-11-19T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.6138,
+    51.4764
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-19:edward:7kwup2",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the International Council at the Castle Hotel Windsor",
+   "role": "Chairman of the Board of Trustees, The Duke of Edinburgh's International Award Foundation",
+   "detail": "Chairman of the Board of Trustees, The Duke of Edinburgh's International Award Foundation, will attend the International Council at the Castle Hotel Windsor, 18 High Street, Windsor",
+   "place": "18 High Street, Windsor",
+   "start": "2026-11-19T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.6084,
+    51.4824
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-24:richard:1sbamsf",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Attend a Dinner at the London Museum",
+   "role": "Patron",
+   "detail": "Patron, will attend a Dinner at the London Museum, Smithfield General Market, West Poultry Avenue, London EC1",
+   "place": "West Poultry Avenue, London EC1",
+   "start": "2026-11-24T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.0927,
+    51.5223
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-24:edward:bof3f4",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Hold a Tea Party for The Not Forgotten Association at St James's Palace",
+   "role": "",
+   "detail": "will hold a Tea Party for The Not Forgotten Association at St James's Palace",
+   "start": "2026-11-24T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1422,
+    51.5004
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-25:richard:19vw4pp",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester",
+   "people": [
+    "richard"
+   ],
+   "title": "Unveil the newly restored York Watergate",
+   "role": "Patron, Heritage of London Trust",
+   "detail": "Patron, Heritage of London Trust, will unveil the newly restored York Watergate, Watergate Walk, London WC2",
+   "place": "Watergate Walk, London WC2",
+   "start": "2026-11-25T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1165,
+    51.5158
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-25:edward:k0oey2",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Attend the Childline 40th Anniversary Annual Family Dinner at the Tower of London. EC3",
+   "role": "Patron, National Society for the Prevention of Cruelty to Children",
+   "detail": "Patron, National Society for the Prevention of Cruelty to Children, will attend the Childline 40th Anniversary Annual Family Dinner at the Tower of London. EC3",
+   "start": "2026-11-25T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.0834,
+    51.5034
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-26:sophie:1mffzzu",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Attend The Duchess of Edinburgh Competition between Royal Air Force Wittering",
+   "role": "",
+   "detail": "will attend The Duchess of Edinburgh Competition between Royal Air Force Wittering, Peterborough, Royal Army Medical Service, 5th Battalion The Rifles, The Royal Irish Regiment, The Lincoln and Welland Regiment, The Corps of Royal and Mechanical Engineers, Royal Corps of Army Music and South Alberta Light Horse, of which Her Royal Highness is Deputy Colonel-in-Chief, Royal Colonel, Colonel in Chief, Colonel-in-Chief, Honorary Air Commodore respectively and HMS DARING, at the Royal Air Force Wittering, Peterborough",
+   "place": "at the Royal Air Force Wittering, Peterborough",
+   "start": "2026-11-26T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.249,
+    52.5678
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-29:richard+birgitte:1l6r1lv",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "title": "Attend the Advent Carol Service in St. Paul's Cathedral",
+   "role": "Patron, Friends of St. Paul's Cathedral",
+   "detail": "The Duke of Gloucester and The Duchess of Gloucester, Patron, Friends of St. Paul's Cathedral, will attend the Advent Carol Service in St. Paul's Cathedral, London EC4",
+   "place": "London EC4",
+   "start": "2026-11-29T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1066,
+    51.5096
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-11-30:sophie:8ipmv7",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Attend the Linking Environment and Farming (LEAF) Leadership Forum at The Farmers Club",
+   "role": "Patron",
+   "detail": "Patron, will attend the Linking Environment and Farming (LEAF) Leadership Forum at The Farmers Club, 3 Whitehall Court, London SW1",
+   "place": "3 Whitehall Court, London SW1",
+   "start": "2026-11-30T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1408,
+    51.4861
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-02:sophie:1iz2o09",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Visit The Lighthouse Woking",
+   "role": "Patron",
+   "detail": "Patron, will visit The Lighthouse Woking, Unit 4 Albion House Corner, High Street, Church Path, Woking",
+   "place": "Church Path, Woking",
+   "start": "2026-12-02T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.5553,
+    51.3186
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-02:edward:1pd7at3",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Transform Housing & Support's Woking Services",
+   "role": "",
+   "detail": "will visit Transform Housing & Support's Woking Services,The Crescent, Heathside Crescent, Woking",
+   "place": "Heathside Crescent, Woking",
+   "start": "2026-12-02T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.5613,
+    51.3155
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-02:edward:mq8xg5",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duke of Edinburgh",
+   "people": [
+    "edward"
+   ],
+   "title": "Visit Transform Housing & Support's Woking Services",
+   "role": "",
+   "detail": "will visit Transform Housing & Support's Woking Services,Pound House, 35-47 Board School Road, Woking",
+   "place": "35-47 Board School Road, Woking",
+   "start": "2026-12-02T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.56,
+    51.3199
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-03:sophie:1g386r",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Visit The Open University",
+   "role": "",
+   "detail": "will visit The Open University, Milton Keynes Campus, Walton Hall, Kents Hill, Milton Keynes",
+   "place": "Kents Hill, Milton Keynes",
+   "start": "2026-12-03T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.712,
+    52.0239
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-03:sophie:jkcm6l",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Edinburgh",
+   "people": [
+    "sophie"
+   ],
+   "title": "Attend the Buckinghamshire Sports Festival",
+   "role": "Patron, WheelPower",
+   "detail": "Patron, WheelPower, will attend the Buckinghamshire Sports Festival, and WheelPower Stoke Mandeville Hall of Fame Induction Ceremony at Stoke Mandeville Stadium, Guttann Road, Stoke Mandeville, Buckinghamshire",
+   "place": "Stoke Mandeville, Buckinghamshire",
+   "start": "2026-12-03T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.8946,
+    51.7835
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-08:birgitte:1tmwon",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Gloucester",
+   "people": [
+    "birgitte"
+   ],
+   "title": "Attend a Carol Service in the Parish and Ward Church of St. Botolph without Bishopsgate",
+   "role": "Royal Colonel, 7th Battalion The Rifles",
+   "detail": "Royal Colonel, 7th Battalion The Rifles, will attend a Carol Service in the Parish and Ward Church of St. Botolph without Bishopsgate, London EC2",
+   "place": "London EC2",
+   "start": "2026-12-08T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.0909,
+    51.5107
+   ],
+   "locPrecise": false,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:diary:2026-12-16:birgitte:pq5lkr",
+   "passion": "royal",
+   "kind": "engagement",
+   "who": "The Duchess of Gloucester",
+   "people": [
+    "birgitte"
+   ],
+   "title": "Attend the Metropolitan Police Carol Service in Westminster Abbey",
+   "role": "",
+   "detail": "will attend the Metropolitan Police Carol Service in Westminster Abbey, London SW1",
+   "place": "London SW1",
+   "start": "2026-12-16T10:00:00.000Z",
+   "approxTime": true,
+   "dayOnly": true,
+   "weight": 1,
+   "loc": [
+    -0.1372,
+    51.4948
+   ],
+   "locPrecise": true,
+   "link": "https://www.royal.uk/media-centre/future-engagements",
+   "source": "The Royal Diary (royal.uk)"
+  },
+  {
+   "id": "royal:birthday:alexandra:2026",
+   "passion": "royal",
+   "who": "Princess Alexandra",
+   "start": "2026-12-25T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "alexandra"
+   ],
+   "sub": "90th birthday",
+   "title": "Princess Alexandra turns 90"
+  },
+  {
    "id": "royal:rule:sandringham:2026",
    "passion": "royal",
    "who": "The Royal Family",
@@ -129,6 +1557,47 @@
    "source": "Rule: 25 December, 15:00 UK"
   },
   {
+   "id": "royal:birthday:catherine:2027",
+   "passion": "royal",
+   "who": "The Princess of Wales",
+   "start": "2027-01-09T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "catherine"
+   ],
+   "sub": "45th birthday",
+   "title": "Catherine turns 45"
+  },
+  {
+   "id": "royal:birthday:sophie:2027",
+   "passion": "royal",
+   "who": "The Duchess of Edinburgh",
+   "start": "2027-01-20T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "sophie"
+   ],
+   "sub": "62nd birthday",
+   "title": "Sophie turns 62"
+  },
+  {
+   "id": "royal:anniv:accession:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-02-06T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date: 6 February",
+   "kind": "anniversary",
+   "weight": 1,
+   "title": "Accession Day: 75th anniversary of Queen Elizabeth II’s accession"
+  },
+  {
    "id": "royal:rule:commonwealth:2027",
    "passion": "royal",
    "who": "The Royal Family",
@@ -143,6 +1612,36 @@
     51.499
    ],
    "source": "Rule: second Monday of March"
+  },
+  {
+   "id": "royal:birthday:edward:2027",
+   "passion": "royal",
+   "who": "The Duke of Edinburgh",
+   "start": "2027-03-10T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "edward"
+   ],
+   "sub": "63rd birthday",
+   "title": "Prince Edward turns 63"
+  },
+  {
+   "id": "royal:birthday:eugenie:2027",
+   "passion": "royal",
+   "who": "Princess Eugenie",
+   "start": "2027-03-23T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "eugenie"
+   ],
+   "sub": "37th birthday",
+   "title": "Princess Eugenie turns 37"
   },
   {
    "id": "royal:rule:maundy:2027",
@@ -170,6 +1669,92 @@
     51.484
    ],
    "source": "Rule: Easter Sunday"
+  },
+  {
+   "id": "royal:anniv:charles-camilla:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-04-09T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "anniversary",
+   "weight": 1,
+   "people": [
+    "king",
+    "queen"
+   ],
+   "title": "The King and Queen’s 22nd wedding anniversary"
+  },
+  {
+   "id": "royal:anniv:elizabeth-birth:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-04-21T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "anniversary",
+   "weight": 1,
+   "title": "Queen Elizabeth II would have turned 101"
+  },
+  {
+   "id": "royal:birthday:louis:2027",
+   "passion": "royal",
+   "who": "Prince Louis",
+   "start": "2027-04-23T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "louis"
+   ],
+   "sub": "9th birthday",
+   "title": "Prince Louis of Wales turns 9"
+  },
+  {
+   "id": "royal:anniv:wedding-wales:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-04-29T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "anniversary",
+   "weight": 1,
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "title": "The Prince and Princess of Wales’s 16th wedding anniversary"
+  },
+  {
+   "id": "royal:birthday:charlotte:2027",
+   "passion": "royal",
+   "who": "Princess Charlotte",
+   "start": "2027-05-02T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "charlotte"
+   ],
+   "sub": "12th birthday",
+   "title": "Princess Charlotte of Wales turns 12"
+  },
+  {
+   "id": "royal:anniv:coronation:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-05-06T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "anniversary",
+   "weight": 1,
+   "people": [
+    "king",
+    "queen"
+   ],
+   "title": "4th anniversary of the Coronation"
   },
   {
    "id": "royal:rule:trooping:2027",
@@ -223,6 +1808,111 @@
    "source": "Rule: Tuesday to Saturday ending the first Saturday from 18 June"
   },
   {
+   "id": "royal:birthday:birgitte:2027",
+   "passion": "royal",
+   "who": "The Duchess of Gloucester",
+   "start": "2027-06-20T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "birgitte"
+   ],
+   "sub": "81st birthday",
+   "title": "Birgitte turns 81"
+  },
+  {
+   "id": "royal:birthday:william:2027",
+   "passion": "royal",
+   "who": "The Prince of Wales",
+   "start": "2027-06-21T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "william"
+   ],
+   "sub": "45th birthday",
+   "title": "William turns 45"
+  },
+  {
+   "id": "royal:birthday:queen:2027",
+   "passion": "royal",
+   "who": "The Queen",
+   "start": "2027-07-17T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "queen"
+   ],
+   "sub": "80th birthday",
+   "title": "Queen Camilla turns 80"
+  },
+  {
+   "id": "royal:birthday:george:2027",
+   "passion": "royal",
+   "who": "Prince George",
+   "start": "2027-07-22T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "george"
+   ],
+   "sub": "14th birthday",
+   "title": "Prince George of Wales turns 14"
+  },
+  {
+   "id": "royal:birthday:beatrice:2027",
+   "passion": "royal",
+   "who": "Princess Beatrice",
+   "start": "2027-08-08T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "beatrice"
+   ],
+   "sub": "39th birthday",
+   "title": "Princess Beatrice turns 39"
+  },
+  {
+   "id": "royal:birthday:anne:2027",
+   "passion": "royal",
+   "who": "The Princess Royal",
+   "start": "2027-08-15T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "anne"
+   ],
+   "sub": "77th birthday",
+   "title": "Anne turns 77"
+  },
+  {
+   "id": "royal:birthday:richard:2027",
+   "passion": "royal",
+   "who": "The Duke of Gloucester",
+   "start": "2027-08-26T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "richard"
+   ],
+   "sub": "83rd birthday",
+   "title": "Prince Richard turns 83"
+  },
+  {
    "id": "royal:rule:braemar:2027",
    "passion": "royal",
    "who": "The Royal Family",
@@ -239,6 +1929,47 @@
    "source": "Rule: first Saturday of September"
   },
   {
+   "id": "royal:anniv:elizabeth-death:2027",
+   "passion": "royal",
+   "who": "The Royal Family",
+   "start": "2027-09-08T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "anniversary",
+   "weight": 1,
+   "title": "5th anniversary of the death of Queen Elizabeth II"
+  },
+  {
+   "id": "royal:birthday:harry:2027",
+   "passion": "royal",
+   "who": "The Duke of Sussex",
+   "start": "2027-09-15T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "harry"
+   ],
+   "sub": "43rd birthday",
+   "title": "Prince Harry turns 43"
+  },
+  {
+   "id": "royal:birthday:kent:2027",
+   "passion": "royal",
+   "who": "The Duke of Kent",
+   "start": "2027-10-09T08:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "kent"
+   ],
+   "sub": "92nd birthday",
+   "title": "Prince Edward turns 92"
+  },
+  {
    "id": "royal:rule:festival:2027",
    "passion": "royal",
    "who": "The Royal Family",
@@ -253,6 +1984,21 @@
     51.501
    ],
    "source": "Rule: Saturday before Remembrance Sunday"
+  },
+  {
+   "id": "royal:birthday:king:2027",
+   "passion": "royal",
+   "who": "The King",
+   "start": "2027-11-14T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 2,
+   "people": [
+    "king"
+   ],
+   "sub": "79th birthday",
+   "title": "The King turns 79"
   },
   {
    "id": "royal:rule:remembrance:2027",
@@ -304,28 +2050,2058 @@
  "alerts": [],
  "press": [
   {
-   "title": "Princess Anne set to visit East Lancashire later this month",
-   "source": "Lancashire Telegraph",
-   "time": "2026-10-04T07:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOMmdRaVRETGlXcGJMRTJHQWl3SlpvUElDSWxUVmpmal85ekRFOXhDaFFtYUlrd09raUVKc1pjYXRNeWdqcFVSNGFzMUw1My14ZWtnNW9UY2MtNzJwX29sYzEyNjdzTmpiWnlUWUtSVnRwRlZmWmctUk5FVWF6eUdKM2ZMNHhSbVZsZnp0V3JJb0x1eFlHUFQ4QnJvcUVwRzhs?oc=5"
-  },
-  {
-   "title": "King Charles and Queen Camilla to visit South Wales next week",
-   "source": "South Wales Argus",
-   "time": "2026-10-07T07:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVkVpZzJReHBMZWcxY2ZuNHZHMWhNcHgzNUhpWGY4dDZQMVBBU2o3RGxKRDAxdDBTTWtjdXFsMHRUVXlnU0ViZjh6dGlpdUhTV19vWmRsM1d3UUdGT2dick03cE56cHRsNXctZ29VbjBhYzNENE9BNmgwTDJNOGVSQ2phRVRZUGRDbFJ3N3pnc0tfdWtZdG1rMGdORlhpSU9pS3Vj?oc=5"
-  },
-  {
-   "title": "King Charles, Camilla & the Waleses will visit Aberfan next week",
-   "source": "Celebitchy",
-   "time": "2026-10-13T11:38:05.000Z",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPamFZcFlVZ3J1UGMwX2VIbXVxTW9XejRPS1hiOGJlTEh0N3JLalByWkwwa2dDbF90U3ctNnhRZjgtRlc0b2gweHZ6a2p1M2h6RmJTQm1RdFJnOVItZWNpUGgzT0tIX2tJQmRmb1Q0Zkd2R2x0TUFDWk9vZlRuNjhOdGpKTlJEdFp6TjVXYnVHSG9mRTA2YlgyZ1pLY1BNUQ?oc=5"
-  },
-  {
    "title": "King Charles, Queen Camilla set to attend a historic event in just hours: Details",
    "source": "Jang",
    "time": "2026-10-15T05:18:48.000Z",
    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZGViaEZZbTJ5Mnk3b0QxUWhoRVBlS18xODJYTXIwR01ON214T3dxSEdaWmtiNG4xZkNRWENvdEJiNkpISzVpaGpGOHIzNThPNzh1TEpCUWQ4b2txSDJNR2czSHV3X1BNNjN6VG9VWmo1MDRtMzFwSHJENENpa0R6emlvYThXQkhIU1M3cWFES1l4elpXMFB0OFgyaUxISENOV3hQbVlITVVMYVNxVDFEVXRNYw?oc=5"
+  }
+ ],
+ "recent": [
+  {
+   "id": "royal:cc:2026-10-26:kent:167c8p2",
+   "people": [
+    "kent"
+   ],
+   "who": "The Duke of Kent",
+   "start": "2026-10-26T19:00:00.000Z",
+   "title": "Attended a Concert commemorating His Royal Highness’s Fiftieth Year as Chancellor of the University of Surrey at Bellairs Theatre",
+   "role": "The Duke of Kent",
+   "detail": "The Duke of Kent this evening attended a Concert commemorating His Royal Highness’s Fiftieth Year as Chancellor of the University of Surrey at Bellairs Theatre, Guildford School of Acting, Stag Hill Campus, University of Surrey, Guildford, and was received by His Majesty’s Lord-Lieutenant of Surrey (Mrs. Neelam Devesher)",
+   "place": "University of Surrey, Guildford",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.5892,
+    51.2419
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-26:anne:1uvh76x",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-26T14:00:00.000Z",
+   "title": "The Princess Royal",
+   "role": "",
+   "detail": "The Princess Royal, Patron, accompanied by Vice Admiral Sir Tim Laurence, this afternoon visited Horsfall House, Windmill Road, Minchinhampton, Stroud, and was received by Mrs. Caroline Duckworth (Deputy Lieutenant of Gloucestershire)",
+   "place": "Patron",
+   "residence": "St. James's Palace",
+   "loc": [
+    -1.8392,
+    52.559
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-26:edward+sophie:esto8s",
+   "people": [
+    "edward",
+    "sophie"
+   ],
+   "who": "The Duke of Edinburgh & The Duchess of Edinburgh",
+   "start": "2026-10-26T12:00:00.000Z",
+   "title": "Attended a Reception at the Residence in Helsinki to mark its Centenary",
+   "role": "The Duke and Duchess of Edinburgh afterwards",
+   "detail": "The Duke and Duchess of Edinburgh afterwards attended a Reception at the Residence in Helsinki to mark its Centenary",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-26:edward+sophie:1tdat5z",
+   "people": [
+    "edward",
+    "sophie"
+   ],
+   "who": "The Duke of Edinburgh & The Duchess of Edinburgh",
+   "start": "2026-10-26T10:00:00.000Z",
+   "title": "Departed from Heathrow Airport",
+   "role": "The Duke and Duchess of Edinburgh",
+   "detail": "The Duke and Duchess of Edinburgh this morning departed from Heathrow Airport, London, for Finland and, having been received later upon arrival at Helsinki Airport by His Majesty’s Ambassador to the Republic of Finland (Her Excellency Ms. Laura Davies) and the Ambassador from the Republic of Finland to the Court of St. James’s (Mr. Teemu Turunen), undertook the following engagements in Helsinki, accompanied by His Majesty’s Ambassador",
+   "place": "having been received later upon arrival at Helsinki Airport by His Majesty’s Ambassador to the Republic of Finland (Her Excellency Ms. Laura Davies) and the Ambassador from the Republic of Finland to the Court of St. James’s (Mr. Teemu Turunen), undertook the following engagements in Helsinki",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-26:anne:ru0fwb",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-26T10:00:00.000Z",
+   "title": "Held a Management Team Meeting",
+   "role": "Guardian, Give Them A Sporting Chance",
+   "detail": "The Princess Royal, Guardian, Give Them A Sporting Chance, this morning held a Management Team Meeting",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-26:birgitte:w54ct4",
+   "people": [
+    "birgitte"
+   ],
+   "who": "The Duchess of Gloucester",
+   "start": "2026-10-26T10:00:00.000Z",
+   "title": "Received Mr. Noel Lamb upon relinquishing his appointment as Chairman of the Board of Trustees and Mr. James Stevenson upon assuming the appointment",
+   "role": "Chief Patron, Hope for Youth Northern Ireland",
+   "detail": "The Duchess of Gloucester, Chief Patron, Hope for Youth Northern Ireland, this morning received Mr. Noel Lamb upon relinquishing his appointment as Chairman of the Board of Trustees and Mr. James Stevenson upon assuming the appointment",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-23:anne:1dn5dad",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-23T13:00:00.000Z",
+   "title": "Opened Ingenza Limited’s inGenius Building",
+   "role": "The Princess Royal",
+   "detail": "The Princess Royal this afternoon opened Ingenza Limited’s inGenius Building, Edinburgh Technopole, Milton Bridge, and was received by His Majesty’s Lord-Lieutenant of Midlothian (Mrs. Sarah Barron)",
+   "place": "Edinburgh Technopole, Milton Bridge",
+   "residence": "St. James's Palace",
+   "loc": [
+    -3.1979,
+    55.8505
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-23:queen:tpuuw3",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-10-23T11:00:00.000Z",
+   "title": "Visited Marlborough Tiles",
+   "role": "Her Majesty afterwards",
+   "detail": "Her Majesty afterwards visited Marlborough Tiles, Elcot Lane, Marlborough, to mark its Ninetieth Anniversary and was received by Mr. Jonathan Sykes (Deputy Lieutenant of Wiltshire)",
+   "place": "Elcot Lane, Marlborough",
+   "residence": "Windsor Castle",
+   "loc": [
+    -1.7067,
+    51.4226
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-23:anne:1s0mq7a",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-23T11:00:00.000Z",
+   "title": "Attended a Conference at Moredun Research Institute",
+   "role": "Patron, Moredun Foundation, afterwards",
+   "detail": "Her Royal Highness, Patron, Moredun Foundation, afterwards attended a Conference at Moredun Research Institute, Pentlands Science Park, Bush Loan, Penicuik, Midlothian",
+   "place": "Penicuik, Midlothian",
+   "residence": "St. James's Palace",
+   "loc": [
+    -3.2191,
+    55.826
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-23:king:pln1fn",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-23T09:00:00.000Z",
+   "title": "Received Mr. William Straw upon relinquishing his appointment as Chief Executive Officer",
+   "role": "Royal Founding President, The King's Trust International",
+   "detail": "The King, Royal Founding President, The King's Trust International, this morning received Mr. William Straw upon relinquishing his appointment as Chief Executive Officer",
+   "residence": "Windsor Castle"
+  },
+  {
+   "id": "royal:cc:2026-10-23:queen:10q3p39",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-10-23T09:00:00.000Z",
+   "title": "Attended the Ending Violence Against Women and Girls Summit at Marlborough College",
+   "role": "The Queen",
+   "detail": "The Queen this morning attended the Ending Violence Against Women and Girls Summit at Marlborough College, Bath Road, Marlborough, and was received by His Majesty’s Lord-Lieutenant of Wiltshire (Dame Sarah Troughton)",
+   "place": "Bath Road, Marlborough",
+   "residence": "Windsor Castle",
+   "loc": [
+    -1.74,
+    51.4142
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-22:anne:fmxrd",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-22T18:00:00.000Z",
+   "title": "Attended the Patron’s Lecture and Reception at 8 John Adam Street",
+   "role": "Patron, the Royal Society for the encouragement of Arts, Manufactures and Commerce",
+   "detail": "The Princess Royal, Patron, the Royal Society for the encouragement of Arts, Manufactures and Commerce, this evening attended the Patron’s Lecture and Reception at 8 John Adam Street, London WC2, and was received by Mr. Steven Summers (Deputy Lieutenant of Greater London)",
+   "place": "London WC2",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1219,
+    51.5122
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-22:catherine:3fj4w0",
+   "people": [
+    "catherine"
+   ],
+   "who": "The Princess of Wales",
+   "start": "2026-10-22T13:00:00.000Z",
+   "title": "Visited Café 98",
+   "role": "Patron, East Anglia Children’s Hospices",
+   "detail": "Her Royal Highness, Patron, East Anglia Children’s Hospices, this afternoon visited Café 98, 114 Station Road, Hoveton, and was received by His Majesty’s Lord-Lieutenant of Norfolk (the Lady Dannatt)",
+   "place": "114 Station Road, Hoveton",
+   "residence": "Kensington Palace",
+   "loc": [
+    1.407,
+    52.7105
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-22:anne:14912ff",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-22T13:00:00.000Z",
+   "title": "Attended a Senior Fellows Luncheon Reception at Octavia House",
+   "role": "Patron, the Royal College of Emergency Medicine",
+   "detail": "The Princess Royal, Patron, the Royal College of Emergency Medicine, this afternoon attended a Senior Fellows Luncheon Reception at Octavia House, 54 Ayres Street, London SE1, and was received by Dr. Martin Griffiths (Deputy Lieutenant of Greater London)",
+   "place": "54 Ayres Street, London SE1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1167,
+    51.4941
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-22:anne:1xxmp6n",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-22T11:00:00.000Z",
+   "title": "His Majesty",
+   "role": "",
+   "detail": "His Majesty, escorted by Mr. Saj Huq (Chief Executive Officer of Plexal) and Ms. Shazia Hussain (Chief Executive Officer of London Legacy Development Corporation), received an overview of the Hear East complex and viewed work across the four key sectors of space, defence, technology, and energy and renewables",
+   "residence": "Windsor Castle"
+  },
+  {
+   "id": "royal:cc:2026-10-22:william:1m6rxwk",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-22T11:00:00.000Z",
+   "title": "Held a Meeting via telephone with Mr. Jonas Gahr Støre (Prime Minister of the Kingdom of Norway)",
+   "role": "His Royal Highness",
+   "detail": "His Royal Highness held a Meeting via telephone with Mr. Jonas Gahr Støre (Prime Minister of the Kingdom of Norway)",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-22:anne:13rl04",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-22T11:00:00.000Z",
+   "title": "Attended a National Council Meeting onboard HMS WELLINGTON",
+   "role": "Patron, Maritime UK, afterwards",
+   "detail": "Her Royal Highness, Patron, Maritime UK, afterwards attended a National Council Meeting onboard HMS WELLINGTON, Temple Stairs, Victoria Embankment, London WC2",
+   "place": "Victoria Embankment, London WC2",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1192,
+    51.5092
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-22:william:8tn7rd",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-22T09:00:00.000Z",
+   "title": "Held a Meeting at Windsor Castle",
+   "role": "President, United for Wildlife",
+   "detail": "The Prince of Wales, President, United for Wildlife, this morning held a Meeting at Windsor Castle",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6062,
+    51.4833
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-22:catherine:1fd7wp",
+   "people": [
+    "catherine"
+   ],
+   "who": "The Princess of Wales",
+   "start": "2026-10-22T09:00:00.000Z",
+   "title": "Visited Treehouse Hospice",
+   "role": "Patron, East Anglia Children’s Hospices",
+   "detail": "The Princess of Wales, Patron, East Anglia Children’s Hospices, this morning visited Treehouse Hospice, St. Augustine’s Gardens, Ipswich, and was received by His Majesty’s Lord-Lieutenant of Suffolk (Mr. Mark Pendlington)",
+   "place": "St. Augustine’s Gardens, Ipswich",
+   "residence": "Kensington Palace",
+   "loc": [
+    1.1977,
+    52.0429
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-22:edward:zdk9gw",
+   "people": [
+    "edward"
+   ],
+   "who": "The Duke of Edinburgh",
+   "start": "2026-10-22T09:00:00.000Z",
+   "title": "Held a Meeting",
+   "role": "Chairman, The Duke of Edinburgh’s International Award Foundation",
+   "detail": "The Duke of Edinburgh, Chairman, The Duke of Edinburgh’s International Award Foundation, this morning held a Meeting",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-21:king:1iyw8vp",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-21T18:00:00.000Z",
+   "title": "Attended a Reception to mark the Thirty Fifth Anniversary of the Revival of Everyman's Library at Spencer House",
+   "role": "The King",
+   "detail": "The King this evening attended a Reception to mark the Thirty Fifth Anniversary of the Revival of Everyman's Library at Spencer House, 27 St. James’s Place, London SW1, and was received by His Majesty's Lord-Lieutenant of Greater London (Sir Alastair King) and the Publisher of Everyman’s Library (Mr. David Campbell)",
+   "place": "27 St. James’s Place, London SW1",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1417,
+    51.4843
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-21:king+queen:10df43e",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-21T13:00:00.000Z",
+   "title": "Visited The Special Reconnaissance Regiment to mark the opening of the Regimental Headquarters and Mess",
+   "role": "Colonel-in-Chief",
+   "detail": "The King and The Queen, Colonel-in-Chief, this afternoon visited The Special Reconnaissance Regiment to mark the opening of the Regimental Headquarters and Mess",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-21:william:eabnwz",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-21T13:00:00.000Z",
+   "title": "Visited Ynysowen Community Primary School",
+   "role": "having been received by Mr. Edward Ough (Deputy Lieutenant of Mid Glamorgan)",
+   "detail": "The Prince of Wales, having been received by Mr. Edward Ough (Deputy Lieutenant of Mid Glamorgan), this afternoon visited Ynysowen Community Primary School, Aberfan Road, Aberfan, and officially unveiled a sculpture to commemorate the victims of the Aberfan Disaster on the occasion of the Disaster’s Sixtieth Anniversary",
+   "place": "Aberfan Road, Aberfan",
+   "residence": "Kensington Palace",
+   "loc": [
+    -3.3448,
+    51.6967
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-21:anne:1eer93n",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-21T13:00:00.000Z",
+   "title": "Received Commodore Alistair Halliday upon relinquishing his appointment as Chief Executive and Brigadier Matthew Bazeley upon assuming the appointment",
+   "role": "Patron, Forces Employment Charity",
+   "detail": "The Princess Royal, Patron, Forces Employment Charity, this afternoon received Commodore Alistair Halliday upon relinquishing his appointment as Chief Executive and Brigadier Matthew Bazeley upon assuming the appointment",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-21:richard:1w75xqg",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-10-21T13:00:00.000Z",
+   "title": "Attended a Lunch at the Reform Club",
+   "role": "Grand Prior, the Most Venerable Order of the Hospital of St. John of Jerusalem",
+   "detail": "The Duke of Gloucester, Grand Prior, the Most Venerable Order of the Hospital of St. John of Jerusalem, this afternoon attended a Lunch at the Reform Club, 104 Pall Mall, London SW1",
+   "place": "104 Pall Mall, London SW1",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.138,
+    51.5041
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-21:king+queen:1fagege",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-21T11:00:00.000Z",
+   "title": "Visited Aberfan",
+   "role": "with The Prince of Wales, today",
+   "detail": "The King and Queen, with The Prince of Wales, today visited Aberfan, Merthyr Tydfil, to mark the Sixtieth Anniversary of the Aberfan Disaster and were received at the Aberfan Memorial Garden by His Majesty's Lord-Lieutenant of Mid Glamorgan (Professor Peter Vaughan) and survivors of the Disaster",
+   "place": "Merthyr Tydfil",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -3.3489,
+    51.6911
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-21:anne:1u9010s",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-21T11:00:00.000Z",
+   "title": "Received Commandant Lisa Giles upon relinquishing her appointment as Commanding Officer and Commandant Suzanne Holmes upon assuming the appointment",
+   "role": "Commandant-in-Chief, First Aid Nursing Yeomanry (Princess Royal’s Volunteer Corps)",
+   "detail": "Her Royal Highness, Commandant-in-Chief, First Aid Nursing Yeomanry (Princess Royal’s Volunteer Corps), received Commandant Lisa Giles upon relinquishing her appointment as Commanding Officer and Commandant Suzanne Holmes upon assuming the appointment",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-21:anne:1eyvzbb",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-21T11:00:00.000Z",
+   "title": "Held a Reception at Frogmore House",
+   "role": "Former President, Royal Association of British Dairy Farmers",
+   "detail": "Her Royal Highness, Former President, Royal Association of British Dairy Farmers, later held a Reception at Frogmore House, Windsor Home Park",
+   "place": "Windsor Home Park",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.6017,
+    51.4833
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-21:birgitte:12tkf91",
+   "people": [
+    "birgitte"
+   ],
+   "who": "The Duchess of Gloucester",
+   "start": "2026-10-21T11:00:00.000Z",
+   "title": "Received Mr. Gary Shaughnessy upon relinquishing his appointment as Chairman of the Board of Trustees and Mrs. Kristina Murrin upon assuming the appointment",
+   "role": "Patron, Parkinson’s UK, today",
+   "detail": "The Duchess of Gloucester, Patron, Parkinson’s UK, today received Mr. Gary Shaughnessy upon relinquishing his appointment as Chairman of the Board of Trustees and Mrs. Kristina Murrin upon assuming the appointment",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-21:anne:1xlfc9j",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-21T09:00:00.000Z",
+   "title": "Received Mrs. Samantha Nicolson upon assuming her appointment as Chief Executive Officer",
+   "role": "Patron, the Royal Navy and Royal Marines Charity",
+   "detail": "The Princess Royal, Patron, the Royal Navy and Royal Marines Charity, this morning received Mrs. Samantha Nicolson upon assuming her appointment as Chief Executive Officer",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-20:anne:g5vimg",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-20T13:00:00.000Z",
+   "title": "Attended Transaid's Annual Showcase at Sidara",
+   "role": "Patron, Transaid",
+   "detail": "Her Royal Highness, Patron, Transaid, this afternoon attended Transaid's Annual Showcase at Sidara, 150 Holborn, London EC1, and was received by Mrs. Roxane Zand (Deputy Lieutenant of Greater London)",
+   "place": "150 Holborn, London EC1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1042,
+    51.5161
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-20:william:x9rmb6",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-20T11:00:00.000Z",
+   "title": "Travelled by car to the Royal Dais in Datchet Road",
+   "role": "Berkshire, on behalf of Their Majesties and",
+   "detail": "The Prince of Wales welcomed His Majesty at his residence in Wargrave, Berkshire, on behalf of Their Majesties and travelled by car to the Royal Dais in Datchet Road, Windsor, where The Sultan was met by The King and Queen",
+   "place": "Windsor",
+   "residence": "Windsor Castle",
+   "loc": [
+    -0.6104,
+    51.4821
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-20:william:8jy71b",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-20T11:00:00.000Z",
+   "title": "His Majesty",
+   "role": "",
+   "detail": "His Majesty, accompanied by Their Majesties with His Royal Highness and The Princess of Wales, drove in a Carriage Procession to Windsor Castle with a Sovereign's Escort of the Household Cavalry",
+   "residence": "Windsor Castle"
+  },
+  {
+   "id": "royal:cc:2026-10-20:king:cjfhyc",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-20T11:00:00.000Z",
+   "title": "The King's Troop Royal Horse Artillery marched past and the Sovereign's Escort of the Household Cavalry ranked past",
+   "role": "",
+   "detail": "The King's Troop Royal Horse Artillery marched past and the Sovereign's Escort of the Household Cavalry ranked past",
+   "residence": "Windsor Castle"
+  },
+  {
+   "id": "royal:cc:2026-10-20:king:1j8ic6h",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-20T11:00:00.000Z",
+   "title": "His Majesty's Body Guard of the Honourable Corps of Gentlemen at Arms",
+   "role": "",
+   "detail": "His Majesty's Body Guard of the Honourable Corps of Gentlemen at Arms, The King's Body Guard of the Yeomen of the Guard and the Military Knights of Windsor were on duty",
+   "place": "The King's Body Guard of the Yeomen of the Guard and the Military Knights of Windsor were on duty",
+   "residence": "Windsor Castle"
+  },
+  {
+   "id": "royal:cc:2026-10-20:anne:117qsln",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-20T09:00:00.000Z",
+   "title": "Chaired the Quarterly Meeting of the Court and attended a Luncheon",
+   "role": "Master, the Corporation of Trinity House",
+   "detail": "The Princess Royal, Master, the Corporation of Trinity House, this morning chaired the Quarterly Meeting of the Court and attended a Luncheon, Trinity House, Tower Hill, London EC3",
+   "place": "Tower Hill, London EC3",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.074,
+    51.5097
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-20:richard:1huykki",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-10-20T09:00:00.000Z",
+   "title": "Officially opened the Office at Leonard Hackett House",
+   "role": "Vice Royal Patron, the Almshouse Association",
+   "detail": "The Duke of Gloucester, Vice Royal Patron, the Almshouse Association, this morning officially opened the Office at Leonard Hackett House, 17-21 Victoria Street, Windsor, and was received by His Majesty’s Lord-Lieutenant of the Royal County of Berkshire (Mr. Andrew Try)",
+   "place": "17-21 Victoria Street, Windsor",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6066,
+    51.48
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-19:anne:t4ln76",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-19T18:00:00.000Z",
+   "title": "Attended a New Fellows’ Ceremony and Dinner at Drapers’ Hall",
+   "role": "Royal Fellow, the Royal Academy of Engineering",
+   "detail": "The Princess Royal, Royal Fellow, the Royal Academy of Engineering, this evening attended a New Fellows’ Ceremony and Dinner at Drapers’ Hall, Throgmorton Avenue, London EC2",
+   "place": "Throgmorton Avenue, London EC2",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.0899,
+    51.514
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-19:anne:73k0x6",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-19T13:00:00.000Z",
+   "title": "Visited the Learning Together (Side by Side) Programme at Shaftesbury Dolphin Court",
+   "role": "Patron, Shaftesbury",
+   "detail": "The Princess Royal, Patron, Shaftesbury, this afternoon visited the Learning Together (Side by Side) Programme at Shaftesbury Dolphin Court, 179 Eastern Esplanade, Thorpe Bay, and was received by His Majesty’s Lord-Lieutenant of Essex (Mrs. Jennifer Tolhurst)",
+   "place": "179 Eastern Esplanade, Thorpe Bay",
+   "residence": "St. James's Palace",
+   "loc": [
+    0.7628,
+    51.5395
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-19:richard:1sp72he",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-10-19T13:00:00.000Z",
+   "title": "Received Mr. Mohamed Elalfy (President) and Dr. David Verity (Surgeon)",
+   "role": "Patron, the Royal College of Ophthalmologists",
+   "detail": "The Duke of Gloucester, Patron, the Royal College of Ophthalmologists, this afternoon received Mr. Mohamed Elalfy (President) and Dr. David Verity (Surgeon)",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-19:anne:51tic3",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-19T11:00:00.000Z",
+   "title": "Opened new homes at Narley Field Road",
+   "role": "Patron, English Rural Housing Association",
+   "detail": "Her Royal Highness, Patron, English Rural Housing Association, later opened new homes at Narley Field Road, Manuden, Bishop’s Stortford, and was received by Dr. James Bettley (Vice Lord-Lieutenant of Essex)",
+   "place": "Manuden, Bishop’s Stortford",
+   "residence": "St. James's Palace",
+   "loc": [
+    0.1683,
+    51.9179
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-18:anne:1lwchwx",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-18T13:00:00.000Z",
+   "title": "Attended the Ninetieth Anniversary Harvest Service in Gloucester Cathedral",
+   "role": "Patron, Gloucestershire Federation of Young Farmers' Clubs",
+   "detail": "The Princess Royal, Patron, Gloucestershire Federation of Young Farmers' Clubs, this afternoon attended the Ninetieth Anniversary Harvest Service in Gloucester Cathedral and was received by Mr. Mark Hurrell (Deputy Lieutenant of Gloucestershire)",
+   "residence": "St. James's Palace",
+   "loc": [
+    -2.244,
+    51.8661
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-17:queen:1s9javl",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-10-17T13:00:00.000Z",
+   "title": "Attended British Champions Day at Ascot Racecourse",
+   "role": "The Queen",
+   "detail": "The Queen this afternoon attended British Champions Day at Ascot Racecourse, Berkshire",
+   "place": "Berkshire",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -1.0355,
+    51.4499
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-16:anne:sdq06x",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-16T13:00:00.000Z",
+   "title": "Attended the Household Cavalry's Centenary Dedication of the Guards Memorial",
+   "role": "Senior Colonel, Headquarters Household Division",
+   "detail": "Her Royal Highness, Senior Colonel, Headquarters Household Division, this afternoon attended the Household Cavalry's Centenary Dedication of the Guards Memorial, 69 Horse Guards Road, London SW1",
+   "place": "69 Horse Guards Road, London SW1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.139,
+    51.4843
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-16:anne:d56q68",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-16T09:00:00.000Z",
+   "title": "Attended a Beret Parade as Inspecting Officer",
+   "role": "Royal Patron",
+   "detail": "The Princess Royal, Royal Patron, this morning attended a Beret Parade as Inspecting Officer, Duke of York's Royal Military School, Guston, Dover, and was received by the Rt. Hon. Sir Hugh Robertson (Vice Lord-Lieutenant of Kent)",
+   "place": "Guston, Dover",
+   "residence": "St. James's Palace",
+   "loc": [
+    1.317,
+    51.1391
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-15:king+queen:1qszpuk",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-15T13:00:00.000Z",
+   "title": "Arrived at Cardiff Airport and drove to the Senedd Cymru - Welsh Parliament",
+   "role": "The King and Queen",
+   "detail": "The King and Queen this afternoon arrived at Cardiff Airport and drove to the Senedd Cymru - Welsh Parliament, Cardiff Bay, Cardiff, to attend the Opening of the Seventh Senedd and were received by Mrs. Josephine Homfray (Vice-Lord Lieutenant of South Glamorgan), the Llywydd - Presiding Officer for the Senedd (Mr. Huw Irranca-Davies MS), the First Minister of Wales (the Rt. Hon. Rhun ap Iorwerth MS) and the Lord Mayor of Cardiff (Councillor Michael Michael)",
+   "place": "Cardiff Bay, Cardiff",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -3.1668,
+    51.4622
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-15:william+catherine:1oy2i3t",
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "who": "The Prince of Wales & The Princess of Wales",
+   "start": "2026-10-15T13:00:00.000Z",
+   "title": "Visited the Duchy of Cornwall's Nansledan site near Newquay",
+   "role": "Duke and Duchess of Cornwall, Joint Patrons, the Royal Foundation of The Prince and Princess of Wales",
+   "detail": "The Prince and Princess of Wales, Duke and Duchess of Cornwall, Joint Patrons, the Royal Foundation of The Prince and Princess of Wales, this afternoon visited the Duchy of Cornwall's Nansledan site near Newquay, Cornwall",
+   "place": "Cornwall",
+   "residence": "Kensington Palace",
+   "loc": [
+    -4.6328,
+    50.4385
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-15:kent:5lk3tf",
+   "people": [
+    "kent"
+   ],
+   "who": "The Duke of Kent",
+   "start": "2026-10-15T13:00:00.000Z",
+   "title": "Held a Luncheon at St. James’s Palace",
+   "role": "Patron, Blood Cancer UK",
+   "detail": "The Duke of Kent, Patron, Blood Cancer UK, this afternoon held a Luncheon at St. James’s Palace",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.1414,
+    51.5021
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-15:king+queen:a63kz4",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-15T11:00:00.000Z",
+   "title": "The King and Queen",
+   "role": "",
+   "detail": "The King and Queen, escorted by the Llwydd - Presiding Officer and the First Minister, proceeded inside the Senedd and met Party Leaders before entering the Siambr/Chamber",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-15:king+queen:1gvszo",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-15T11:00:00.000Z",
+   "title": "Addressed the Members of the Senedd Cymru - Welsh Parliament and signed a Commemorative Parchment",
+   "role": "His Majesty",
+   "detail": "His Majesty addressed the Members of the Senedd Cymru - Welsh Parliament and signed a Commemorative Parchment, and the First Minister replied",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-15:anne:1hq99on",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-15T11:00:00.000Z",
+   "title": "Received by Colonel Simon Duckworth (a Lieutenant of the City of London)",
+   "role": "having been",
+   "detail": "Her Royal Highness, having been received by Colonel Simon Duckworth (a Lieutenant of the City of London), today attended a Reception for the Charity Commission for England and Wales and delivered the Keynote Address at the Annual Public Meeting, the Honourable Society of the Inner Temple, London EC4",
+   "place": "the Honourable Society of the Inner Temple, London EC4",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.0913,
+    51.5056
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-15:anne:1jsausu",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-15T09:00:00.000Z",
+   "title": "Attended the Society of British Neurological Surgeons’ One Hundredth Anniversary Conference at the Queen Elizabeth II Centre",
+   "role": "The Princess Royal",
+   "detail": "The Princess Royal this morning attended the Society of British Neurological Surgeons’ One Hundredth Anniversary Conference at the Queen Elizabeth II Centre, Broad Sanctuary, London SW1, and was received by His Majesty’s Lord-Lieutenant of Greater London (Sir Alastair King)",
+   "place": "Broad Sanctuary, London SW1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1346,
+    51.4975
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-14:king+queen:16nr4nd",
+   "people": [
+    "king",
+    "queen"
+   ],
+   "who": "The King & The Queen",
+   "start": "2026-10-14T18:00:00.000Z",
+   "title": "Held a Reception at Buckingham Palace to celebrate the Commonwealth Diaspora in advance of the Commonwealth Heads of Government Meeting in Antigua and Barbuda",
+   "role": "The King and Queen",
+   "detail": "The King and Queen this evening held a Reception at Buckingham Palace to celebrate the Commonwealth Diaspora in advance of the Commonwealth Heads of Government Meeting in Antigua and Barbuda",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1464,
+    51.4972
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-14:anne:1orwlqk",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-14T18:00:00.000Z",
+   "title": "Attended a Dinner at the Cavalry and Guards Club",
+   "role": "Member, the Blue Seal Club",
+   "detail": "The Princess Royal, Member, the Blue Seal Club, this evening attended a Dinner at the Cavalry and Guards Club, 127 Piccadilly, London W1",
+   "place": "127 Piccadilly, London W1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -2.2401,
+    53.4769
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-14:william:1orpj91",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-14T13:00:00.000Z",
+   "title": "Received Mr. Jesper Brodin (Chairman) and Mr. Jensen Huang (Founder",
+   "role": "Founder and President, the Earthshot Prize",
+   "detail": "His Royal Highness, Founder and President, the Earthshot Prize, this afternoon received Mr. Jesper Brodin (Chairman) and Mr. Jensen Huang (Founder, Nvidia Corporation)",
+   "place": "Nvidia Corporation)",
+   "residence": "Kensington Palace",
+   "loc": [
+    -5.9065,
+    54.6125
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-14:anne:7k704k",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-14T13:00:00.000Z",
+   "title": "Attended a Reception at the House of Lords",
+   "role": "Fellow, Council for Awards of Royal Agricultural Societies",
+   "detail": "The Princess Royal, Fellow, Council for Awards of Royal Agricultural Societies, this afternoon attended a Reception at the House of Lords, London SW1",
+   "place": "London SW1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1435,
+    51.4855
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-14:anne:6ng2b0",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-14T11:00:00.000Z",
+   "title": "Attended the 2026 Service",
+   "role": "Patron, the Annual National Service for Seafarers in St. Paul's Cathedral",
+   "detail": "Her Royal Highness, Patron, the Annual National Service for Seafarers in St. Paul's Cathedral, later attended the 2026 Service, London EC4",
+   "place": "London EC4",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.0949,
+    51.5062
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-14:william:1cnz3f8",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-14T09:00:00.000Z",
+   "title": "Met recipients of the Amos Bursary at Urban MBA",
+   "role": "The Prince of Wales",
+   "detail": "The Prince of Wales this morning met recipients of the Amos Bursary at Urban MBA, 3 Wenlock Street, London N1",
+   "place": "3 Wenlock Street, London N1",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.4864,
+    51.4783
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-13:queen:12hs111",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-10-13T18:00:00.000Z",
+   "title": "Attended a Reception in London",
+   "role": "President, Royal Osteoporosis Society",
+   "detail": "The Queen, President, Royal Osteoporosis Society, this evening attended a Reception in London",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1251,
+    51.5092
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-13:anne:lijg18",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-13T13:00:00.000Z",
+   "title": "Visited St. Agnes Head Station",
+   "role": "Royal Patron, National Coastwatch Institution",
+   "detail": "Her Royal Highness, Royal Patron, National Coastwatch Institution, this afternoon visited St. Agnes Head Station, West Polberro, St. Agnes, Cornwall, and subsequently attended a Reception at Driftwood Spars, St. Agnes",
+   "place": "St. Agnes, Cornwall",
+   "residence": "St. James's Palace",
+   "loc": [
+    -5.209,
+    50.2933
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-13:anne:w6sa1x",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-13T11:00:00.000Z",
+   "title": "Attended the Annual Presentation at China Fleet Country Club",
+   "role": "Patron, Naval Children’s Charity",
+   "detail": "The Princess Royal, Patron, Naval Children’s Charity, later attended the Annual Presentation at China Fleet Country Club, Saltash, Cornwall",
+   "place": "Saltash, Cornwall",
+   "residence": "St. James's Palace",
+   "loc": [
+    -4.2168,
+    50.4233
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-13:william:tx47wc",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-13T09:00:00.000Z",
+   "title": "Participated in a game of street cricket on the Mall",
+   "role": "Founder and President, the Earthshot Prize",
+   "detail": "The Prince of Wales, Founder and President, the Earthshot Prize, this morning participated in a game of street cricket on the Mall, London SW1, in advance of the 2026 Earthshot Prize Awards taking place in Mumbai, India, in November",
+   "place": "India, in November",
+   "residence": "Kensington Palace",
+   "loc": [
+    -2.3544,
+    54.1738
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-13:anne:t3wmn2",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-13T09:00:00.000Z",
+   "title": "Visited Newlyn Fishing Port",
+   "role": "Patron, Royal National Mission to Deep Sea Fishermen",
+   "detail": "The Princess Royal, Patron, Royal National Mission to Deep Sea Fishermen, this morning visited Newlyn Fishing Port, Newlyn, and was received by His Majesty’s Lord-Lieutenant of Cornwall (Colonel Sir Edward Bolitho)",
+   "place": "Newlyn",
+   "residence": "St. James's Palace",
+   "loc": [
+    -5.5518,
+    50.1045
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-13:kent:santba",
+   "people": [
+    "kent"
+   ],
+   "who": "The Duke of Kent",
+   "start": "2026-10-13T09:00:00.000Z",
+   "title": "Received Mr. Jonathan Spence (Pro Grand Master)",
+   "role": "Grand Master, United Grand Lodge of England",
+   "detail": "The Duke of Kent, Grand Master, United Grand Lodge of England, this morning received Mr. Jonathan Spence (Pro Grand Master)",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-12:william:1mjhhs3",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-12T13:00:00.000Z",
+   "title": "Received Mr. Jesper Brodin (Chairman) at Windsor Castle",
+   "role": "Founder and President, the Earthshot Prize",
+   "detail": "His Royal Highness, Founder and President, the Earthshot Prize, this afternoon received Mr. Jesper Brodin (Chairman) at Windsor Castle",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6071,
+    51.4821
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-12:anne:bp1y0k",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-12T13:00:00.000Z",
+   "title": "Held an Organising Committee Meeting",
+   "role": "President, National Equine Forum",
+   "detail": "The Princess Royal, President, National Equine Forum, this afternoon held an Organising Committee Meeting",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-12:william:1b19nkc",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-12T09:00:00.000Z",
+   "title": "Received Mr. William Bax (Secretary of the Duchy of Cornwall) and Mr. Hugo van Vredenburch (Lord Warden of the Stannaries) at Windsor Castle",
+   "role": "Duke of Cornwall",
+   "detail": "The Prince of Wales, Duke of Cornwall this morning received Mr. William Bax (Secretary of the Duchy of Cornwall) and Mr. Hugo van Vredenburch (Lord Warden of the Stannaries) at Windsor Castle",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6107,
+    51.4797
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-11:anne:n9ae99",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-11T13:00:00.000Z",
+   "title": "Attended the Laying Up of Colours in Canongate Kirk",
+   "role": "Royal Colonel, The Royal Scots Borderers, 1st Battalion The Royal Regiment of Scotland, and Deputy Colonel-in-Chief, The Royal Regiment of Scotland",
+   "detail": "The Princess Royal, Royal Colonel, The Royal Scots Borderers, 1st Battalion The Royal Regiment of Scotland, and Deputy Colonel-in-Chief, The Royal Regiment of Scotland, this afternoon attended the Laying Up of Colours in Canongate Kirk, Edinburgh, and was received by the Reverend Neil Gardner (Deputy Lieutenant of the City of Edinburgh)",
+   "place": "Edinburgh",
+   "residence": "St. James's Palace",
+   "loc": [
+    -3.1823,
+    55.9512
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-09:william+catherine:199e9xn",
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "who": "The Prince of Wales & The Princess of Wales",
+   "start": "2026-10-09T13:00:00.000Z",
+   "title": "Met signatories to Homewards’ “New Employment Opportunities Network” at the Commons",
+   "role": "Joint Patrons, the Royal Foundation of The Prince and Princess of Wales",
+   "detail": "The Prince and Princess of Wales, Joint Patrons, the Royal Foundation of The Prince and Princess of Wales, this afternoon met signatories to Homewards’ “New Employment Opportunities Network” at the Commons, 467A Ormeau Road, Belfast, and were received by Dr. Nigel Carr (Deputy Lieutenant of the County Borough of Belfast)",
+   "place": "467A Ormeau Road, Belfast",
+   "residence": "Kensington Palace",
+   "loc": [
+    -5.9126,
+    54.5715
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-09:anne:937k69",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-09T13:00:00.000Z",
+   "title": "Visited Moores House",
+   "role": "Patron, Retail Trust",
+   "detail": "Her Royal Highness, Patron, Retail Trust, this afternoon visited Moores House, 5 Walton Village, Liverpool, to mark its Twenty Fifth Anniversary and was received by His Majesty’s Lord-Lieutenant of Merseyside (Mr. Peter Oliver)",
+   "place": "5 Walton Village, Liverpool",
+   "residence": "St. James's Palace",
+   "loc": [
+    -2.9677,
+    53.4448
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-09:william+catherine:1rb38f9",
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "who": "The Prince of Wales & The Princess of Wales",
+   "start": "2026-10-09T11:00:00.000Z",
+   "title": "Met young people being supported into work at Ikea Belfast",
+   "role": "Joint Patrons, the Royal Foundation of The Prince and Princess of Wales",
+   "detail": "The Prince and Princess of Wales, Joint Patrons, the Royal Foundation of The Prince and Princess of Wales, later met young people being supported into work at Ikea Belfast, Holywood Exchange, 306 Airport Road, Belfast, and were received by Dr. Ann McGregor (Deputy Lieutenant of the County Borough of Belfast)",
+   "place": "306 Airport Road, Belfast",
+   "residence": "Kensington Palace",
+   "loc": [
+    -5.8668,
+    54.6184
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-09:anne:sw1lwn",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-09T11:00:00.000Z",
+   "title": "Visited the Walton Centre NHS Foundation Trust",
+   "role": "The Princess Royal",
+   "detail": "The Princess Royal later visited the Walton Centre NHS Foundation Trust, Lower Lane, Fazakerley, Liverpool, Merseyside",
+   "place": "Liverpool, Merseyside",
+   "residence": "St. James's Palace",
+   "loc": [
+    -2.9802,
+    53.4924
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-09:anne:5lkii6",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-09T09:00:00.000Z",
+   "title": "Attended the London Sports Medicine Summit at the Royal Institution",
+   "role": "The Princess Royal",
+   "detail": "The Princess Royal this morning attended the London Sports Medicine Summit at the Royal Institution, 21 Albemarle Street, London W1, and was received by Dr. Stuart Shilson (Deputy Lieutenant of Greater London)",
+   "place": "21 Albemarle Street, London W1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1523,
+    51.5193
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-09:richard+birgitte:6uixui",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "start": "2026-10-09T09:00:00.000Z",
+   "title": "Arrived at Heathrow Airport",
+   "role": "The Duke and Duchess of Gloucester",
+   "detail": "The Duke and Duchess of Gloucester this morning arrived at Heathrow Airport, London, from Botswana",
+   "place": "London, from Botswana",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-08:anne:1mvy3p8",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-08T18:00:00.000Z",
+   "title": "Attended the United Kingdom Awards Ceremony at Wembley Stadium",
+   "role": "Patron, British Quality Foundation",
+   "detail": "The Princess Royal, Patron, British Quality Foundation, this evening attended the United Kingdom Awards Ceremony at Wembley Stadium, Middlesex, and was received by Mr. Justin Packshaw (Deputy Lieutenant of Greater London)",
+   "place": "Middlesex",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.2601,
+    51.5425
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-08:richard:1lc3l6w",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-10-08T13:00:00.000Z",
+   "title": "Attended a Meeting at the InterContinental Hotel",
+   "role": "Grand Prior, the Most Venerable Order of the Hospital of St. John of Jerusalem",
+   "detail": "The Duke of Gloucester, Grand Prior, the Most Venerable Order of the Hospital of St. John of Jerusalem, this afternoon attended a Meeting at the InterContinental Hotel, Johannesburg O.R. Tambo International Airport, South Africa",
+   "place": "Johannesburg O.R. Tambo International Airport, South Africa",
+   "residence": "Kensington Palace",
+   "loc": [
+    -2.4875,
+    53.9075
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-08:richard+birgitte:njk954",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "start": "2026-10-08T09:00:00.000Z",
+   "title": "The Duke and Duchess of Gloucester",
+   "role": "",
+   "detail": "The Duke and Duchess of Gloucester, accompanied by the British High Commissioner to the Republic of Botswana (His Excellency Mr. Giles Enticknap), this morning planted a commemorative tree at the Residence in Gaborone to mark the Sixtieth Anniversary of Botswana’s Independence",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-08:william:lkoayy",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-08T09:00:00.000Z",
+   "title": "Held a Meeting related to the \"Homewards\" programme at Windsor Castle. His Royal Highness afterwards received the Rt. Hon. Dame Angela Eagle MP (Secretary of State for Environment",
+   "role": "Joint Patron, the Royal Foundation of The Prince and Princess of Wales",
+   "detail": "The Prince of Wales, Joint Patron, the Royal Foundation of The Prince and Princess of Wales, this morning held a Meeting related to the \"Homewards\" programme at Windsor Castle. His Royal Highness afterwards received the Rt. Hon. Dame Angela Eagle MP (Secretary of State for Environment, Food and Rural Affairs) at Windsor Castle. The Prince of Wales, Founder and President, the Earthshot Prize, this afternoon participated in the Earthshot Prize Council Judging via video link. The Princess of Wales, Joint Patron, the Royal Foundation of The Prince and Princess of Wales, this morning attended a Meeting with Ms. Melinda French Gates (Founder, Pivotal) at the offices of the Royal Foundation of The Prince and Princess of Wales in London",
+   "place": "this morning attended a Meeting with Ms. Melinda French Gates (Founder, Pivotal) at the offices of the Royal Foundation of The Prince and Princess of Wales in London",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6071,
+    51.4821
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-07:richard+birgitte:1sfij0x",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "start": "2026-10-07T18:00:00.000Z",
+   "title": "Attended a Reception and Dinner to mark the Sixtieth Anniversary of Botswana’s Independence",
+   "role": "The Duke and Duchess of Gloucester",
+   "detail": "The Duke and Duchess of Gloucester this evening attended a Reception and Dinner to mark the Sixtieth Anniversary of Botswana’s Independence, given by the British High Commissioner to the Republic of Botswana at the Residence in Gaborone",
+   "place": "given by the British High Commissioner to the Republic of Botswana at the Residence in Gaborone",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:kent:11wt0go",
+   "people": [
+    "kent"
+   ],
+   "who": "The Duke of Kent",
+   "start": "2026-10-07T18:00:00.000Z",
+   "title": "Attended the Autumn Tour Concert at Wigmore Hall",
+   "role": "Patron, International Musicians Seminar Prussia Cove",
+   "detail": "The Duke of Kent, Patron, International Musicians Seminar Prussia Cove, this evening attended the Autumn Tour Concert at Wigmore Hall, 36 Wigmore Street, London W1",
+   "place": "36 Wigmore Street, London W1",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.1523,
+    51.5187
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-07:edward:i3dbgr",
+   "people": [
+    "edward"
+   ],
+   "who": "The Duke of Edinburgh",
+   "start": "2026-10-07T13:00:00.000Z",
+   "title": "Held a Luncheon",
+   "role": "Chairman of the Board of Trustees, The Duke of Edinburgh’s International Award Foundation",
+   "detail": "The Duke of Edinburgh, Chairman of the Board of Trustees, The Duke of Edinburgh’s International Award Foundation, this afternoon held a Luncheon",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:anne:18rt8a",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-07T13:00:00.000Z",
+   "title": "The Princess Royal",
+   "role": "",
+   "detail": "The Princess Royal, accompanied by Vice Admiral Sir Tim Laurence, this afternoon attended a Reception given by His Majesty's Ambassador to the Kingdom of Norway (Her Excellency Ms. Jan Thompson) at the Residence in Oslo, Norway",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:anne:11smvm5",
+   "people": [
+    "anne"
+   ],
+   "who": "The Princess Royal",
+   "start": "2026-10-07T13:00:00.000Z",
+   "title": "Her Royal Highness",
+   "role": "",
+   "detail": "Her Royal Highness, accompanied by Admiral Laurence, this afternoon arrived at Bristol Airport from Norway",
+   "residence": "St. James's Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:richard:gzc6z3",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-10-07T13:00:00.000Z",
+   "title": "Visited the University Innovation Pod at the University of Botswana",
+   "role": "The Duke of Gloucester",
+   "detail": "The Duke of Gloucester this afternoon visited the University Innovation Pod at the University of Botswana",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:birgitte:11c3gix",
+   "people": [
+    "birgitte"
+   ],
+   "who": "The Duchess of Gloucester",
+   "start": "2026-10-07T13:00:00.000Z",
+   "title": "Visited the Anglican Cathedral of the Holy Cross Botswana",
+   "role": "The Duchess of Gloucester",
+   "detail": "The Duchess of Gloucester this afternoon visited the Anglican Cathedral of the Holy Cross Botswana",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:king:ejyu54",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "Attended the launch of Apple x King’s Trust Creative Labs",
+   "role": "Royal Founding Patron, The King's Trust, today",
+   "detail": "The King, Royal Founding Patron, The King's Trust, today attended the launch of Apple x King’s Trust Creative Labs, an industry-led education programme for young people supported by The King's Trust, in partnership with Apple, at the Headquarters of Apple (UK) Limited, 1 Battersea Power Station, Circus Road South, London SW8, and was received by His Majesty's Lord-Lieutenant of Greater London (Sir Kenneth Olisa), the Executive Chairman of Apple Incorporated (Mr. Timothy Cook) and the UK Chief Executive Officer of The King’s Trust (Mr. Jonathan Townsend)",
+   "place": "Circus Road South, London SW8",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1312,
+    51.4806
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-10-07:king:16484yl",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "His Majesty",
+   "role": "",
+   "detail": "His Majesty, escorted by the Executive Chairman, viewed a music creation workshop and spoke to participants",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:king:1b223nh",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "Received by Sir Elton John (Musician and King’s Trust Ambassador)",
+   "role": "having been",
+   "detail": "The King proceeded to the Apple Music Hall and, having been received by Sir Elton John (Musician and King’s Trust Ambassador), viewed a sound check and subsequently a musical performance",
+   "place": "viewed a sound check",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:queen:1kit2p",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "Received Dr. Ruth Scurr (Chairman) and Ms. Laura Greenfield (Director) at Clarence House",
+   "role": "Patron, the Royal Society of Literature of the United Kingdom, afterwards",
+   "detail": "The Queen, Patron, the Royal Society of Literature of the United Kingdom, afterwards received Dr. Ruth Scurr (Chairman) and Ms. Laura Greenfield (Director) at Clarence House",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1368,
+    51.5034
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-07:richard+birgitte:kmwugo",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "The Duke and Duchess of Gloucester",
+   "role": "",
+   "detail": "The Duke and Duchess of Gloucester, accompanied by the British High Commissioner to the Republic of Botswana (His Excellency Mr. Giles Enticknap), today carried out the following engagements in Gaborone, Botswana",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:richard+birgitte:akyg1s",
+   "people": [
+    "richard",
+    "birgitte"
+   ],
+   "who": "The Duke of Gloucester & The Duchess of Gloucester",
+   "start": "2026-10-07T11:00:00.000Z",
+   "title": "Visited the De Beers Sorting Facility at the Diamond Trading Company Botswana",
+   "role": "The Duke and Duchess of Gloucester afterwards",
+   "detail": "The Duke and Duchess of Gloucester afterwards visited the De Beers Sorting Facility at the Diamond Trading Company Botswana",
+   "residence": "Kensington Palace"
+  },
+  {
+   "id": "royal:cc:2026-10-07:king:z6yvof",
+   "people": [
+    "king"
+   ],
+   "who": "The King",
+   "start": "2026-10-07T09:00:00.000Z",
+   "title": "Held a Meeting at Clarence House",
+   "role": "Patron, The Queen’s Reading Room",
+   "detail": "Her Majesty, Patron, The Queen’s Reading Room, this morning held a Meeting at Clarence House",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1422,
+    51.501
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-07:william:zbk8n6",
+   "people": [
+    "william"
+   ],
+   "who": "The Prince of Wales",
+   "start": "2026-10-07T09:00:00.000Z",
+   "title": "Held an Investiture at Windsor Castle this morning",
+   "role": "on behalf of The King",
+   "detail": "The Prince of Wales, on behalf of The King, held an Investiture at Windsor Castle this morning",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.6053,
+    51.4845
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-07:catherine:1pfghx",
+   "people": [
+    "catherine"
+   ],
+   "who": "The Princess of Wales",
+   "start": "2026-10-07T09:00:00.000Z",
+   "title": "Received Mrs. Sarah Henwood (Chief Executive) at Windsor Castle",
+   "role": "Joint Patron, the Royal Foundation of The Prince and Princess of Wales",
+   "detail": "The Princess of Wales, Joint Patron, the Royal Foundation of The Prince and Princess of Wales, this morning received Mrs. Sarah Henwood (Chief Executive) at Windsor Castle",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.6044,
+    51.4827
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-10-07:sophie:1efjxj8",
+   "people": [
+    "sophie"
+   ],
+   "who": "The Duchess of Edinburgh",
+   "start": "2026-10-07T09:00:00.000Z",
+   "title": "Received His Majesty’s Lord-Lieutenant of Surrey (Mrs. Neelam Devesher)",
+   "role": "The Duchess of Edinburgh",
+   "detail": "The Duchess of Edinburgh this morning received His Majesty’s Lord-Lieutenant of Surrey (Mrs. Neelam Devesher)",
+   "residence": "St. James's Palace"
+  }
+ ],
+ "roster": [
+  {
+   "id": "king",
+   "name": "King Charles III",
+   "title": "The King",
+   "born": [
+    1948,
+    11,
+    14
+   ],
+   "working": true,
+   "role": "Head of State; Head of the Commonwealth",
+   "lead": "Sovereign since 8 September 2022",
+   "homes": "Buckingham Palace · Windsor Castle · Clarence House · Highgrove · Sandringham · Balmoral",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/King_Charles_III_%28July_2023%29.jpg/330px-King_Charles_III_%28July_2023%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "queen",
+   "name": "Queen Camilla",
+   "title": "The Queen",
+   "born": [
+    1947,
+    7,
+    17
+   ],
+   "working": true,
+   "role": "Consort of the King",
+   "lead": "Queen since 6 May 2023",
+   "homes": "With the King: Buckingham Palace · Windsor · Clarence House · Highgrove · Sandringham · Balmoral",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Queen_Camilla_in_Aotearoa_2019.jpg/330px-Queen_Camilla_in_Aotearoa_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "william",
+   "name": "William, Prince of Wales",
+   "title": "The Prince of Wales",
+   "born": [
+    1982,
+    6,
+    21
+   ],
+   "working": true,
+   "role": "Heir apparent; Duke of Cornwall and of Lancaster",
+   "lead": "First in line to the throne",
+   "homes": "Windsor Great Park · Anmer Hall (Norfolk) · Kensington Palace (office)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Prince_of_Wales_at_State_Banquet_2025-09-17_%280.75_crop%29.jpg/330px-Prince_of_Wales_at_State_Banquet_2025-09-17_%280.75_crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "catherine",
+   "name": "Catherine, Princess of Wales",
+   "title": "The Princess of Wales",
+   "born": [
+    1982,
+    1,
+    9
+   ],
+   "working": true,
+   "role": "Princess of Wales",
+   "lead": "Wife of the heir apparent",
+   "homes": "Windsor Great Park · Anmer Hall (Norfolk) · Kensington Palace (office)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Princess_of_Wales_at_State_Banquet_2025-09-17_%280.75_crop%29.jpg/330px-Princess_of_Wales_at_State_Banquet_2025-09-17_%280.75_crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "anne",
+   "name": "Anne, Princess Royal",
+   "title": "The Princess Royal",
+   "born": [
+    1950,
+    8,
+    15
+   ],
+   "working": true,
+   "role": "The King’s sister; the busiest royal for years",
+   "lead": "Patron of 300+ organisations",
+   "homes": "Gatcombe Park (Gloucestershire) · St James’s Palace (office)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Anne%2C_Princess_Royal_%282025%29_%28cropped%29.jpg/330px-Anne%2C_Princess_Royal_%282025%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "edward",
+   "name": "Prince Edward, Duke of Edinburgh",
+   "title": "The Duke of Edinburgh",
+   "born": [
+    1964,
+    3,
+    10
+   ],
+   "working": true,
+   "role": "The King’s brother; Duke of Edinburgh since March 2023",
+   "lead": "Runs the Duke of Edinburgh’s Award",
+   "homes": "Bagshot Park (Surrey) · Buckingham Palace (office)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Prince_Edward_2025.jpg/330px-Prince_Edward_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "sophie",
+   "name": "Sophie, Duchess of Edinburgh",
+   "title": "The Duchess of Edinburgh",
+   "born": [
+    1965,
+    1,
+    20
+   ],
+   "working": true,
+   "role": "Wife of the Duke of Edinburgh",
+   "lead": "Patron of charities for women, sight and conflict-related violence",
+   "homes": "Bagshot Park (Surrey) · Buckingham Palace (office)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/2025-03-11_Sophie%2C_Duchess_of_Edinburgh-46_%28cropped%29.jpg/330px-2025-03-11_Sophie%2C_Duchess_of_Edinburgh-46_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "richard",
+   "name": "Prince Richard, Duke of Gloucester",
+   "title": "The Duke of Gloucester",
+   "born": [
+    1944,
+    8,
+    26
+   ],
+   "working": true,
+   "role": "The King’s first cousin",
+   "lead": "Senior working royal by age after the King",
+   "homes": "Kensington Palace (Apartment 1)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Prince_Richard%2C_Duke_of_Gloucester_%282023%29_%28cropped%29.jpg/330px-Prince_Richard%2C_Duke_of_Gloucester_%282023%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "birgitte",
+   "name": "Birgitte, Duchess of Gloucester",
+   "title": "The Duchess of Gloucester",
+   "born": [
+    1946,
+    6,
+    20
+   ],
+   "working": true,
+   "role": "Wife of the Duke of Gloucester",
+   "lead": "",
+   "homes": "Kensington Palace (Apartment 1)",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Windsor_Castle_State_Banquet_2025-09-17-15-10-36_%28cropped%2C_Birgitte_detail%29.jpg/330px-Windsor_Castle_State_Banquet_2025-09-17-15-10-36_%28cropped%2C_Birgitte_detail%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "kent",
+   "name": "Prince Edward, Duke of Kent",
+   "title": "The Duke of Kent",
+   "born": [
+    1935,
+    10,
+    9
+   ],
+   "working": false,
+   "role": "The King’s first cousin; stepped back from public life in 2022",
+   "lead": "",
+   "homes": "Wren House, Kensington Palace",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Prince_Edward%2C_Duke_of_Kent_%28square_crop%29_2025-11-09.jpg/330px-Prince_Edward%2C_Duke_of_Kent_%28square_crop%29_2025-11-09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "alexandra",
+   "name": "Princess Alexandra",
+   "title": "Princess Alexandra",
+   "born": [
+    1936,
+    12,
+    25
+   ],
+   "working": false,
+   "role": "The King’s first cousin; retired from public engagements",
+   "lead": "",
+   "homes": "Thatched House Lodge, Richmond",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Princess_Alexandra_and_the_Mayor_Councillor_H%2C_Clafton_at_Ossett_%28cropped%29.jpg/330px-Princess_Alexandra_and_the_Mayor_Councillor_H%2C_Clafton_at_Ossett_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "george",
+   "name": "Prince George of Wales",
+   "title": "Prince George",
+   "born": [
+    2013,
+    7,
+    22
+   ],
+   "working": false,
+   "role": "Second in line to the throne",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Trooping_the_Colour_2023_%28GovPM_41%29_crop_2.jpg/330px-Trooping_the_Colour_2023_%28GovPM_41%29_crop_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "charlotte",
+   "name": "Princess Charlotte of Wales",
+   "title": "Princess Charlotte",
+   "born": [
+    2015,
+    5,
+    2
+   ],
+   "working": false,
+   "role": "Third in line to the throne",
+   "photo": null
+  },
+  {
+   "id": "louis",
+   "name": "Prince Louis of Wales",
+   "title": "Prince Louis",
+   "born": [
+    2018,
+    4,
+    23
+   ],
+   "working": false,
+   "role": "Fourth in line to the throne",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Prince_Louis_%28carriage_window_crop%29_2024_%28cropped%29.jpg/330px-Prince_Louis_%28carriage_window_crop%29_2024_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "harry",
+   "name": "Prince Harry, Duke of Sussex",
+   "title": "The Duke of Sussex",
+   "born": [
+    1984,
+    9,
+    15
+   ],
+   "working": false,
+   "role": "Fifth in line to the throne; left royal duties in 2020",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Prince_Harry_launching_the_2020_Invictus_Games_%28cropped%29.jpg/330px-Prince_Harry_launching_the_2020_Invictus_Games_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "beatrice",
+   "name": "Princess Beatrice",
+   "title": "Princess Beatrice",
+   "born": [
+    1988,
+    8,
+    8
+   ],
+   "working": false,
+   "role": "Granddaughter of Queen Elizabeth II",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_DSC_4716_%2845765938231%29_%28cropped%29.jpg/330px-Web_Summit_2018_-_Forum_-_Day_2%2C_November_7_DSC_4716_%2845765938231%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+   "id": "eugenie",
+   "name": "Princess Eugenie",
+   "title": "Princess Eugenie",
+   "born": [
+    1990,
+    3,
+    23
+   ],
+   "working": false,
+   "role": "Granddaughter of Queen Elizabeth II",
+   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Princess_Eugenie%2C_2017.jpg/330px-Princess_Eugenie%2C_2017.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  }
+ ],
+ "news": [
+  {
+   "title": "The King, The Queen and The Prince of Wales mark the 60th anniversary of the Aberfan Disaster",
+   "url": "https://www.royal.uk/aberfan-60",
+   "kind": "News",
+   "date": "2026-10-21",
+   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-10/PA-86257885.jpg.webp?h=609d3c08&itok=oDJ6HrDw",
+   "alt": "The King, The Queen and The Prince of Wales in Aberfan"
+  },
+  {
+   "title": "The King and Queen welcome The Sultan of Oman to Windsor Castle",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-21/the-king-and-queen-welcome-the-sultan-of-oman-to-windsor-castle",
+   "kind": "News",
+   "date": "2026-10-21",
+   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-10/PA-86248155.jpg.webp?h=a022d4da&itok=Sue66KpX",
+   "alt": "The King and The Sultan of Oman"
+  },
+  {
+   "title": "The King and Queen attend the Ceremonial Opening of the Seventh Senedd",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-15/the-king-and-queen-attend-the-ceremonial-opening-of-the-seventh-senedd",
+   "kind": "News",
+   "date": "2026-10-15",
+   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-10/55589869982_de457a4ebe_o_2.jpg.webp?h=b1fb5fce&itok=2vB7kOAA",
+   "alt": "The King and Queen arrive at the Senedd"
+  },
+  {
+   "title": "'The Book That Changed My Life' on BBC Two and iPlayer",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-10/the-book-that-changed-my-life-on-bbc-two-and-iplayer",
+   "kind": "News",
+   "date": "2026-10-10",
+   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-10/book-that-changed-my-life_clean.jpg.webp?h=14c0da70&itok=XFKSHtO3",
+   "alt": "The Book That Changed My Life"
+  },
+  {
+   "title": "The King's speech at the Omani State Visit",
+   "url": "https://www.royal.uk/omani-speech",
+   "kind": "Speech",
+   "date": "2026-10-21",
+   "image": null,
+   "alt": null
+  },
+  {
+   "title": "A Speech by The King at the opening of the Senedd in Cardiff",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-15/a-speech-by-the-king-at-the-opening-of-the-senedd-in-cardiff",
+   "kind": "Speech",
+   "date": "2026-10-15",
+   "image": null,
+   "alt": null
+  },
+  {
+   "title": "A message from Her Majesty The Queen delivered at the media preview screening of 'The Book That Saved My Life'",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-10/a-message-from-her-majesty-the-queen-delivered-at-the-media-preview",
+   "kind": "Speech",
+   "date": "2026-10-10",
+   "image": null,
+   "alt": null
+  },
+  {
+   "title": "The Duke and Duchess of Gloucester visit Botswana",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-09/the-duke-and-duchess-of-gloucester-visit-botswana",
+   "kind": "News",
+   "date": "2026-10-09",
+   "image": "https://www.royal.uk/sites/default/files/styles/large/public/images/2026-10/55577021749_9c997cc0b7_c.jpg.webp?itok=GXx-0MiZ",
+   "alt": "The Duke and Duchess meet His Excellency President Advocate Duma Boko"
+  },
+  {
+   "title": "The King joins the launch of Apple x King's Trust Creative Labs",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-08/the-king-joins-the-launch-of-apple-x-kings-trust-creative-labs",
+   "kind": "News",
+   "date": "2026-10-08",
+   "image": "https://www.royal.uk/sites/default/files/styles/large/public/images/2026-10/PA-86104464b_0.jpg.webp?itok=Ycq4hrXL",
+   "alt": "The King at Battersea Power Station"
+  },
+  {
+   "title": "The King and Queen will visit Antigua and Barbuda, and His Majesty will visit The Bahamas and Guyana",
+   "url": "https://www.royal.uk/news-and-activity/2026-10-02/the-king-and-queen-will-visit-antigua-and-barbuda-and-his-majesty-will",
+   "kind": "Press release",
+   "date": "2026-10-02",
+   "image": null,
+   "alt": null
+  },
+  {
+   "title": "The King meets the drivers of clean, renewable energy in Scotland",
+   "url": "https://www.royal.uk/news-and-activity/2026-09-22/the-king-meets-the-drivers-of-clean-renewable-energy-in-scotland",
+   "kind": "News",
+   "date": "2026-09-22",
+   "image": "https://www.royal.uk/sites/default/files/styles/large/public/images/2026-09/PA-85936022.jpg.webp?itok=gYeZawVO",
+   "alt": "The King in Scotland"
+  }
+ ],
+ "succession": [
+  "william",
+  "george",
+  "charlotte",
+  "louis",
+  "harry"
+ ],
+ "activity": {
+  "king": 14,
+  "queen": 11,
+  "william": 15,
+  "catherine": 6,
+  "anne": 36,
+  "edward": 4,
+  "sophie": 3,
+  "richard": 10,
+  "birgitte": 8,
+  "kent": 4,
+  "alexandra": 0
+ },
+ "whereabouts": {
+  "king": {
+   "seen": {
+    "t": "2026-10-21T18:00:00.000Z",
+    "title": "Attended a Reception to mark the Thirty Fifth Anniversary of the Revival of Everyman's Library at Spencer House",
+    "place": "27 St. James’s Place, London SW1",
+    "loc": [
+     -0.1417,
+     51.4843
+    ]
+   },
+   "residence": {
+    "t": "2026-10-23T11:00:00.000Z",
+    "name": "Windsor Castle"
+   }
+  },
+  "queen": {
+   "seen": {
+    "t": "2026-10-23T11:00:00.000Z",
+    "title": "Visited Marlborough Tiles",
+    "place": "Elcot Lane, Marlborough",
+    "loc": [
+     -1.7067,
+     51.4226
+    ]
+   },
+   "residence": {
+    "t": "2026-10-20T11:00:00.000Z",
+    "name": "Windsor Castle"
+   }
+  },
+  "william": {
+   "seen": {
+    "t": "2026-10-22T09:00:00.000Z",
+    "title": "Held a Meeting at Windsor Castle",
+    "loc": [
+     -0.6062,
+     51.4833
+    ]
+   }
+  },
+  "catherine": {
+   "seen": {
+    "t": "2026-10-22T13:00:00.000Z",
+    "title": "Visited Café 98",
+    "place": "114 Station Road, Hoveton",
+    "loc": [
+     1.407,
+     52.7105
+    ]
+   }
+  },
+  "anne": {
+   "seen": {
+    "t": "2026-10-26T14:00:00.000Z",
+    "title": "The Princess Royal",
+    "place": "Patron",
+    "loc": [
+     -1.8392,
+     52.559
+    ]
+   }
+  },
+  "edward": {
+   "seen": {
+    "t": "2026-10-26T10:00:00.000Z",
+    "title": "Departed from Heathrow Airport",
+    "place": "having been received later upon arrival at Helsinki Airport by His Majesty’s Ambassador to the Republic of Finland (Her Excellency Ms. Laura Davies) and the Ambassador from the Republic of Finland to the Court of St. James’s (Mr. Teemu Turunen), undertook the following engagements in Helsinki"
+   }
+  },
+  "sophie": {
+   "seen": {
+    "t": "2026-10-26T10:00:00.000Z",
+    "title": "Departed from Heathrow Airport",
+    "place": "having been received later upon arrival at Helsinki Airport by His Majesty’s Ambassador to the Republic of Finland (Her Excellency Ms. Laura Davies) and the Ambassador from the Republic of Finland to the Court of St. James’s (Mr. Teemu Turunen), undertook the following engagements in Helsinki"
+   }
+  },
+  "richard": {
+   "seen": {
+    "t": "2026-10-21T13:00:00.000Z",
+    "title": "Attended a Lunch at the Reform Club",
+    "place": "104 Pall Mall, London SW1",
+    "loc": [
+     -0.138,
+     51.5041
+    ]
+   }
+  },
+  "birgitte": {
+   "seen": {
+    "t": "2026-10-09T09:00:00.000Z",
+    "title": "Arrived at Heathrow Airport",
+    "place": "London, from Botswana"
+   }
+  },
+  "kent": {
+   "seen": {
+    "t": "2026-10-26T19:00:00.000Z",
+    "title": "Attended a Concert commemorating His Royal Highness’s Fiftieth Year as Chancellor of the University of Surrey at Bellairs Theatre",
+    "place": "University of Surrey, Guildford",
+    "loc": [
+     -0.5892,
+     51.2419
+    ]
+   }
+  }
+ },
+ "stays": [
+  {
+   "people": [
+    "king"
+   ],
+   "start": "2026-10-23T11:00:00.000Z",
+   "residence": "Windsor Castle"
+  },
+  {
+   "people": [
+    "king"
+   ],
+   "start": "2026-10-20T11:00:00.000Z",
+   "residence": "Windsor Castle"
+  },
+  {
+   "people": [
+    "king",
+    "queen"
+   ],
+   "start": "2026-10-20T11:00:00.000Z",
+   "residence": "Windsor Castle"
+  },
+  {
+   "people": [
+    "king"
+   ],
+   "start": "2026-10-19T11:00:00.000Z",
+   "residence": "Windsor Castle"
+  },
+  {
+   "people": [
+    "king",
+    "queen"
+   ],
+   "start": "2026-10-15T11:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "people": [
+    "king"
+   ],
+   "start": "2026-10-14T11:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "people": [
+    "king",
+    "queen"
+   ],
+   "start": "2026-10-14T11:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "people": [
+    "king"
+   ],
+   "start": "2026-10-07T11:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "people": [
+    "queen"
+   ],
+   "start": "2026-10-07T11:00:00.000Z",
+   "residence": "Buckingham Palace"
   }
  ]
 }

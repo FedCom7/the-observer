@@ -1,19 +1,19 @@
-// NBA from ESPN: conference standings with playoff and play-in zones, the Lakers'
+// NBA from ESPN: conference standings with playoff and play-in zones, the week of the
 // season, and the playoff bracket rebuilt from the seeded teams' schedules (this
 // season once it starts, last season's for context). ESPN JSON is untyped, read as `any`.
 import { getJSON } from '../core/fetcher';
 import { DAY, HOUR, MIN } from '../core/time';
-import type { ObsEvent } from '../core/types';
+import type { ObsEvent, Standing } from '../core/types';
 import { toEvent } from './espn';
 
 const SITE = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba';
-export const LAKERS = '13';
 
-export interface ConfRow { id: string; abbr: string; name: string; w: number; l: number; gb: string; seed: number | null; clinch: string; streak: string; last10: string; diff: number; mine: boolean }
+export interface ConfRow { id: string; abbr: string; name: string; w: number; l: number; gb: string; seed: number | null; clinch: string; streak: string; last10: string; diff: number }
 export interface Conference { name: 'East' | 'West'; rows: ConfRow[] }
-export interface Game { date: number; opp: string; home: boolean; pf: number; pa: number; win: boolean }
 export interface Series { key: string; conf: 'East' | 'West' | 'NBA'; round: string; order: number; bestOf: number; teams: { id: string; abbr: string; wins: number; seed: number | null }[]; done: boolean; winner: string | null; next: number | null }
-export interface NbaData { season: number; started: boolean; conferences: Conference[]; lakers: Game[]; series: Series[]; last: { season: number; conferences: Conference[]; series: Series[] } | null; events: ObsEvent[] }
+/** pre: before opening night · regular · post: play-in, playoffs and Finals · off: after the Finals */
+export type Phase = 'pre' | 'regular' | 'post' | 'off';
+export interface NbaData { season: number; started: boolean; phase: Phase; week: number | null; regStart: number | null; conferences: Conference[]; series: Series[]; last: { season: number; conferences: Conference[]; series: Series[] } | null; events: ObsEvent[] }
 
 const stat = (e: any, n: string) => e.stats?.find((s: any) => s.name === n)?.displayValue ?? '';
 
@@ -25,7 +25,7 @@ async function standings(season: number, ttl: number): Promise<Conference[]> {
       id: String(e.team.id), abbr: e.team.abbreviation, name: e.team.shortDisplayName ?? e.team.displayName,
       w: Number(stat(e, 'wins')) || 0, l: Number(stat(e, 'losses')) || 0, gb: stat(e, 'gamesBehind'),
       seed: Number(stat(e, 'playoffSeed')) || null, clinch: stat(e, 'clincher'), streak: stat(e, 'streak'),
-      last10: stat(e, 'Last Ten Games'), diff: Number(stat(e, 'differential')) || 0, mine: String(e.team.id) === LAKERS,
+      last10: stat(e, 'Last Ten Games'), diff: Number(stat(e, 'differential')) || 0,
     })).sort((a: ConfRow, b: ConfRow) => (a.seed ?? 99) - (b.seed ?? 99)),
   }));
 }
@@ -68,36 +68,28 @@ async function bracket(season: number, conferences: Conference[], ttl: number): 
     if (champ) { s.done = true; s.winner = champ.id; s.next = null; }
     series.set(key, s);
     if (!(s.done && state === 'pre')) {
-      const ev = toEvent(e, 'nba', 'basketball', 'nba', LAKERS);
+      const ev = toEvent(e, 'nba', 'basketball', 'nba');
       ev.sub = note;
-      ev.weight = r[1] === 'NBA Finals' || teams.some((t: any) => t.id === LAKERS) ? 3 : 2;
+      ev.weight = r[1] === 'NBA Finals' ? 3 : 2;
       events.push(ev);
     }
   }
   return { series: [...series.values()].sort((a, b) => a.order - b.order || a.conf.localeCompare(b.conf)), events };
 }
 
-async function lakersSeason(season: number): Promise<{ games: Game[]; events: ObsEvent[] }> {
-  const j = await getJSON<any>(`${SITE}/teams/${LAKERS}/schedule?season=${season}&seasontype=2`, 10 * MIN);
-  const games: Game[] = [];
-  const events: ObsEvent[] = [];
-  for (const e of j.events ?? []) {
-    const c = e.competitions?.[0];
-    const ev = toEvent(e, 'nba', 'basketball', 'nba', LAKERS);
-    ev.weight = 3;
-    events.push(ev);
-    if (c?.status?.type?.state !== 'post') continue;
-    const me = c.competitors.find((x: any) => String(x.team.id) === LAKERS), opp = c.competitors.find((x: any) => String(x.team.id) !== LAKERS);
-    games.push({ date: Date.parse(e.date), opp: opp?.team.abbreviation ?? '', home: me?.homeAway === 'home', pf: Number(me?.score?.value ?? me?.score?.displayValue), pa: Number(opp?.score?.value ?? opp?.score?.displayValue), win: Boolean(me?.winner) });
-  }
-  return { games, events };
+/** Opening night of the regular season. */
+async function regularStart(season: number): Promise<number | null> {
+  try {
+    const j = await getJSON<any>(`https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/seasons/${season}/types/2`, 24 * HOUR);
+    return Date.parse(j.startDate);
+  } catch { return null; }
 }
 
 export async function nbaData(): Promise<NbaData> {
   const board = await getJSON<any>(`${SITE}/scoreboard`, 10 * MIN);
   // ESPN names the 2026-27 season "2027"
   const season = Number(board.season?.year ?? board.leagues?.[0]?.season?.year ?? new Date().getFullYear() + 1);
-  const [conferences, lakers] = await Promise.all([standings(season, 10 * MIN), lakersSeason(season)]);
+  const [conferences, regStart] = await Promise.all([standings(season, 10 * MIN), regularStart(season)]);
   const started = conferences.some(c => c.rows.some(r => r.w + r.l > 0));
   // This season's playoffs only matter from April; otherwise show last season for context
   const month = new Date().getMonth();
@@ -108,9 +100,47 @@ export async function nbaData(): Promise<NbaData> {
     const b = await bracket(season - 1, lastConf, 24 * HOUR);
     last = { season: season - 1, conferences: lastConf, series: b.series };
   } catch { /* context only */ }
-  const recentWindow = Date.now() - 2 * DAY;
+  const finals = current.series.find(s => s.round === 'NBA Finals');
+  const phase: Phase = finals?.done ? 'off' : current.series.length ? 'post' : started || (regStart && Date.now() >= regStart) ? 'regular' : 'pre';
+  const week = phase === 'regular' && regStart ? Math.floor((Date.now() - regStart) / (7 * DAY)) + 1 : null;
+  // Only the play-in, playoff and Finals games go to the calendar: the regular season stays on the NBA page
+  return { season, started, phase, week, regStart, conferences, series: current.series, last, events: current.events };
+}
+
+const seriesLine = (s: Series) => {
+  const [a, b] = s.teams;
+  if (!a || !b) return '';
+  if (s.bestOf === 1) return s.done ? `${s.teams.find(t => t.id === s.winner)?.abbr} won` : '';
+  const lead = a.wins >= b.wins ? a : b, other = lead === a ? b : a;
+  return a.wins === b.wins && !s.done ? `${a.wins}–${b.wins}` : `${lead.abbr} ${lead.wins}–${other.wins}`;
+};
+
+/** The league at a glance for the control room: the conference leaders in season, the series in the playoffs. */
+export function nbaStanding(n: NbaData): Standing {
+  if (n.series.length) {
+    const rounds = [...n.series].sort((a, b) => b.order - a.order);
+    const finals = rounds.find(s => s.round === 'NBA Finals');
+    return {
+      passion: 'nba', title: 'NBA', cols: ['Round', 'Series', 'Score'],
+      meta: n.phase === 'off' && finals ? `${finals.teams.find(t => t.id === finals.winner)?.abbr} won the title` : `Playoffs · ${rounds[0].round.replace(/ · .*/, '')}`,
+      rows: rounds.slice(0, 6).map(s => ({ rank: s.conf === 'NBA' ? 'F' : s.conf[0], name: s.teams.map(t => t.abbr).join(' – '), values: [seriesLine(s)] })),
+    };
+  }
+  const label = (y: number) => `${y - 1}–${String(y).slice(2)}`;
+  const top = (['East', 'West'] as const).flatMap(c => (n.conferences.find(x => x.name === c)?.rows ?? []).slice(0, 3).map((r, i) => ({ rank: `${c[0]}${r.seed ?? i + 1}`, name: r.name, values: [`${r.w}-${r.l}`] })));
   return {
-    season, started, conferences, lakers: lakers.games, series: current.series, last,
-    events: [...lakers.events.filter(e => e.start > recentWindow - 60 * DAY), ...current.events],
+    passion: 'nba', title: 'NBA', cols: ['Seed', 'Team', 'W-L'],
+    meta: n.phase === 'regular' && n.week ? `Week ${n.week} · ${label(n.season)}` : n.regStart ? `Opening night ${new Date(n.regStart).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : label(n.season),
+    rows: top,
   };
+}
+
+export interface NbaLeader { cat: string; label: string; rows: { name: string; team: string; value: string }[] }
+const LEADER_CATS: [string, string][] = [['pointsPerGame', 'Points'], ['reboundsPerGame', 'Rebounds'], ['assistsPerGame', 'Assists'], ['3PointsMadePerGame', 'Threes made'], ['stealsPerGame', 'Steals'], ['blocksPerGame', 'Blocks']];
+
+/** Per-game leaders of the regular season. */
+export async function nbaLeaders(): Promise<NbaLeader[]> {
+  const j = await getJSON<any>('https://site.api.espn.com/apis/site/v3/sports/basketball/nba/leaders', 15 * MIN);
+  const cats: any[] = j.leaders?.categories ?? [];
+  return LEADER_CATS.map(([cat, label]) => ({ cat, label, rows: (cats.find(c => c.name === cat)?.leaders ?? []).slice(0, 5).map((l: any) => ({ name: l.athlete?.displayName ?? '', team: l.team?.abbreviation ?? '', value: l.displayValue })) })).filter(c => c.rows.length);
 }

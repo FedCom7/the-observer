@@ -6,8 +6,8 @@ import { awardTimes, contenderKey, evidence, forecastCategory, raceSeries, recor
 import { DAY, dayShort, fmt } from '../core/time';
 import { PERSON_CATS, filmOf, personOf, tmdbImg, type Award, type AwardsData } from '../sources/awards';
 
-export type AwardsTab = 'overview' | 'tracker' | 'forecast' | 'race' | 'study';
-const TABS: [AwardsTab, string][] = [['overview', 'Overview'], ['tracker', 'Tracker'], ['forecast', 'Forecast'], ['race', 'The race'], ['study', 'The study']];
+export type AwardsTab = 'overview' | 'events' | 'tracker' | 'forecast' | 'race' | 'study';
+const TABS: [AwardsTab, string][] = [['overview', 'Overview'], ['events', 'Events'], ['tracker', 'Tracker'], ['forecast', 'Forecast'], ['race', 'The race'], ['study', 'The study']];
 const MAIN = ['picture', 'director', 'actor', 'actress', 'supActor', 'supActress', 'origScreenplay', 'adaptScreenplay'];
 const SRC = { model: 'var(--o-ink)', gd: 'var(--oc-cul)', poly: 'var(--o-s1)', kalshi: 'var(--o-s3)', zz: 'var(--o-s4)' };
 const pct = (p: number | null | undefined) => (p == null ? '–' : `${Math.round(p * 100)}%`);
@@ -23,7 +23,7 @@ export function AwardsTabs({ tab, set }: { tab: AwardsTab; set: (t: AwardsTab) =
 /** The study (precursor weights, back-test), loaded only when a screen needs it. */
 export function useHistory(on: boolean) {
   const [h, setH] = useState<History | null>(null);
-  useEffect(() => { if (on && !h) getJSON<History>('/data/awards-history.json', 60 * 60e3).then(setH).catch(() => {}); }, [on, h]);
+  useEffect(() => { if (on && !h) getJSON<History>(`${import.meta.env.BASE_URL}data/awards-history.json`, 60 * 60e3).then(setH).catch(() => {}); }, [on, h]);
   return h;
 }
 

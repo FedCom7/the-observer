@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T13:32:23.402Z",
+ "updated": "2026-10-28T05:38:17.563Z",
  "season": 2027,
  "races": [
   {
@@ -10,11 +10,21 @@
    "country": "AUT",
    "discipline": "Giant Slalom",
    "gender": "women",
-   "start": "2026-10-24T08:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-10-24T08:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Vienna",
-   "runs": [],
-   "cancelled": false
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-10-24T08:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-10-24T11:30:00.000Z"
+    }
+   ],
+   "cancelled": false,
+   "results": []
   },
   {
    "raceid": "131578",
@@ -25,10 +35,20 @@
    "discipline": "Giant Slalom",
    "gender": "men",
    "start": "2026-10-25T09:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "Europe/Vienna",
-   "runs": [],
-   "cancelled": false
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-10-25T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-10-25T12:00:00.000Z"
+    }
+   ],
+   "cancelled": false,
+   "results": []
   },
   {
    "raceid": "131579",
@@ -38,10 +58,19 @@
    "country": "FIN",
    "discipline": "Slalom",
    "gender": "women",
-   "start": "2026-11-14T08:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-14T09:00:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Helsinki",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-14T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-14T12:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -52,10 +81,19 @@
    "country": "FIN",
    "discipline": "Slalom",
    "gender": "men",
-   "start": "2026-11-15T08:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-15T09:00:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Helsinki",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-15T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-15T12:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -1207,20 +1245,6 @@
    "cancelled": false
   },
   {
-   "raceid": "131683",
-   "eventid": "62936",
-   "category": "WC",
-   "place": "Narvik (TBC)",
-   "country": "NOR",
-   "discipline": "Downhill",
-   "gender": "women",
-   "start": "2027-03-12T10:00:00.000Z",
-   "approxTime": true,
-   "tz": "Europe/Oslo",
-   "runs": [],
-   "cancelled": false
-  },
-  {
    "raceid": "131748",
    "eventid": "62953",
    "category": "WC",
@@ -1231,20 +1255,6 @@
    "start": "2027-03-13T09:00:00.000Z",
    "approxTime": true,
    "tz": "Europe/Stockholm",
-   "runs": [],
-   "cancelled": false
-  },
-  {
-   "raceid": "131684",
-   "eventid": "62936",
-   "category": "WC",
-   "place": "Narvik (TBC)",
-   "country": "NOR",
-   "discipline": "Super G",
-   "gender": "women",
-   "start": "2027-03-13T10:30:00.000Z",
-   "approxTime": true,
-   "tz": "Europe/Oslo",
    "runs": [],
    "cancelled": false
   },
@@ -1376,509 +1386,509 @@
   }
  ],
  "standings": {
-  "season": 2026,
-  "final": true,
+  "season": 2027,
+  "final": false,
   "men": [
-   {
-    "name": "ODERMATT Marco",
-    "nation": "SUI",
-    "rank": 1,
-    "points": 1626,
-    "DH": 706,
-    "SG": 425,
-    "GS": 495,
-    "SL": null
-   },
    {
     "name": "PINHEIRO BRAATHEN Lucas",
     "nation": "BRA",
-    "rank": 2,
-    "points": 1058,
+    "rank": 1,
+    "points": 100,
     "DH": null,
     "SG": null,
-    "GS": 547,
-    "SL": 511
-   },
-   {
-    "name": "MCGRATH Atle Lie",
-    "nation": "NOR",
-    "rank": 3,
-    "points": 936,
-    "DH": null,
-    "SG": 22,
-    "GS": 330,
-    "SL": 584
+    "GS": 100,
+    "SL": null
    },
    {
     "name": "MEILLARD Loic",
     "nation": "SUI",
-    "rank": 4,
-    "points": 923,
-    "DH": null,
-    "SG": 45,
-    "GS": 486,
-    "SL": 392
-   },
-   {
-    "name": "KRISTOFFERSEN Henrik",
-    "nation": "NOR",
-    "rank": 5,
-    "points": 821,
+    "rank": 2,
+    "points": 80,
     "DH": null,
     "SG": null,
-    "GS": 318,
-    "SL": 503
+    "GS": 80,
+    "SL": null
    },
    {
-    "name": "HAUGAN Timon",
-    "nation": "NOR",
-    "rank": 6,
-    "points": 776,
-    "DH": null,
-    "SG": null,
-    "GS": 277,
-    "SL": 499
-   },
-   {
-    "name": "VON ALLMEN Franjo",
+    "name": "ODERMATT Marco",
     "nation": "SUI",
-    "rank": 7,
-    "points": 770,
-    "DH": 515,
-    "SG": 255,
-    "GS": null,
+    "rank": 3,
+    "points": 60,
+    "DH": null,
+    "SG": null,
+    "GS": 60,
     "SL": null
    },
    {
-    "name": "KRIECHMAYR Vincent",
-    "nation": "AUT",
-    "rank": 8,
-    "points": 731,
-    "DH": 382,
-    "SG": 347,
-    "GS": 2,
+    "name": "RADAMUS River",
+    "nation": "USA",
+    "rank": 4,
+    "points": 50,
+    "DH": null,
+    "SG": null,
+    "GS": 50,
     "SL": null
-   },
-   {
-    "name": "PARIS Dominik",
-    "nation": "ITA",
-    "rank": 9,
-    "points": 698,
-    "DH": 441,
-    "SG": 257,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "FRANZONI Giovanni",
-    "nation": "ITA",
-    "rank": 10,
-    "points": 663,
-    "DH": 378,
-    "SG": 285,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "SCHWARZ Marco",
-    "nation": "AUT",
-    "rank": 11,
-    "points": 613,
-    "DH": 2,
-    "SG": 183,
-    "GS": 339,
-    "SL": 89
    },
    {
     "name": "HAASER Raphael",
     "nation": "AUT",
-    "rank": 12,
-    "points": 531,
-    "DH": 96,
-    "SG": 301,
-    "GS": 134,
-    "SL": null
-   },
-   {
-    "name": "NOEL Clement",
-    "nation": "FRA",
-    "rank": 13,
-    "points": 520,
+    "rank": 5,
+    "points": 45,
     "DH": null,
     "SG": null,
-    "GS": null,
-    "SL": 520
-   },
-   {
-    "name": "MONNEY Alexis",
-    "nation": "SUI",
-    "rank": 14,
-    "points": 448,
-    "DH": 259,
-    "SG": 189,
-    "GS": null,
+    "GS": 45,
     "SL": null
    },
    {
-    "name": "ROGENTIN Stefan",
-    "nation": "SUI",
-    "rank": 15,
-    "points": 447,
-    "DH": 207,
-    "SG": 240,
-    "GS": null,
+    "name": "GRATZ Fabian",
+    "nation": "GER",
+    "rank": 6,
+    "points": 40,
+    "DH": null,
+    "SG": null,
+    "GS": 40,
+    "SL": null
+   },
+   {
+    "name": "VINATZER Alex",
+    "nation": "ITA",
+    "rank": 7,
+    "points": 36,
+    "DH": null,
+    "SG": null,
+    "GS": 36,
+    "SL": null
+   },
+   {
+    "name": "SOLBERG Eirik Hystad",
+    "nation": "NOR",
+    "rank": 8,
+    "points": 32,
+    "DH": null,
+    "SG": null,
+    "GS": 32,
+    "SL": null
+   },
+   {
+    "name": "ANGUENOT Leo",
+    "nation": "FRA",
+    "rank": 9,
+    "points": 29,
+    "DH": null,
+    "SG": null,
+    "GS": 29,
+    "SL": null
+   },
+   {
+    "name": "FEURSTEIN Patrick",
+    "nation": "AUT",
+    "rank": 10,
+    "points": 26,
+    "DH": null,
+    "SG": null,
+    "GS": 26,
     "SL": null
    },
    {
     "name": "BRENNSTEINER Stefan",
     "nation": "AUT",
-    "rank": 16,
-    "points": 431,
+    "rank": 11,
+    "points": 24,
     "DH": null,
     "SG": null,
-    "GS": 431,
+    "GS": 24,
     "SL": null
    },
    {
-    "name": "RASSAT Paco",
-    "nation": "FRA",
-    "rank": 17,
-    "points": 387,
+    "name": "CARRICK-SMITH Freddy",
+    "nation": "GBR",
+    "rank": 12,
+    "points": 22,
     "DH": null,
     "SG": null,
-    "GS": null,
-    "SL": 387
-   },
-   {
-    "name": "VINATZER Alex",
-    "nation": "ITA",
-    "rank": 18,
-    "points": 385,
-    "DH": null,
-    "SG": null,
-    "GS": 224,
-    "SL": 161
-   },
-   {
-    "name": "ALLEGRE Nils",
-    "nation": "FRA",
-    "rank": 19,
-    "points": 375,
-    "DH": 228,
-    "SG": 147,
-    "GS": null,
+    "GS": 22,
     "SL": null
    },
    {
-    "name": "COCHRAN-SIEGLE Ryan",
-    "nation": "USA",
-    "rank": 20,
-    "points": 342,
-    "DH": 214,
-    "SG": 128,
-    "GS": null,
+    "name": "FAVROT Thibaut",
+    "nation": "FRA",
+    "rank": 13,
+    "points": 20,
+    "DH": null,
+    "SG": null,
+    "GS": 20,
+    "SL": null
+   },
+   {
+    "name": "BAKKEVIG Rasmus",
+    "nation": "NOR",
+    "rank": 14,
+    "points": 18,
+    "DH": null,
+    "SG": null,
+    "GS": 18,
+    "SL": null
+   },
+   {
+    "name": "GRAMMEL Anton",
+    "nation": "GER",
+    "rank": 15,
+    "points": 16,
+    "DH": null,
+    "SG": null,
+    "GS": 16,
     "SL": null
    },
    {
     "name": "HALLBERG Eduard",
     "nation": "FIN",
-    "rank": 21,
-    "points": 339,
+    "rank": 16,
+    "points": 15,
     "DH": null,
     "SG": null,
-    "GS": null,
-    "SL": 339
-   },
-   {
-    "name": "CASSE Mattia",
-    "nation": "ITA",
-    "rank": 22,
-    "points": 302,
-    "DH": 163,
-    "SG": 139,
-    "GS": null,
+    "GS": 15,
     "SL": null
    },
    {
-    "name": "BABINSKY Stefan",
+    "name": "STURM Joshua",
     "nation": "AUT",
-    "rank": 23,
-    "points": 300,
-    "DH": 57,
-    "SG": 243,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "SCHIEDER Florian",
-    "nation": "ITA",
-    "rank": 24,
-    "points": 299,
-    "DH": 277,
-    "SG": 22,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "NEF Tanguy",
-    "nation": "SUI",
-    "rank": 25,
-    "points": 280,
+    "rank": 17,
+    "points": 14,
     "DH": null,
     "SG": null,
-    "GS": null,
-    "SL": 280
-   }
-  ],
-  "women": [
-   {
-    "name": "SHIFFRIN Mikaela",
-    "nation": "USA",
-    "rank": 1,
-    "points": 1410,
-    "DH": null,
-    "SG": 8,
-    "GS": 422,
-    "SL": 980
+    "GS": 14,
+    "SL": null
    },
    {
-    "name": "AICHER Emma",
+    "name": "KRANJEC Zan",
+    "nation": "SLO",
+    "rank": 18,
+    "points": 13,
+    "DH": null,
+    "SG": null,
+    "GS": 13,
+    "SL": null
+   },
+   {
+    "name": "ZUBCIC Filip",
+    "nation": "CRO",
+    "rank": 19,
+    "points": 12,
+    "DH": null,
+    "SG": null,
+    "GS": 12,
+    "SL": null
+   },
+   {
+    "name": "MAES Sam",
+    "nation": "BEL",
+    "rank": 20,
+    "points": 11,
+    "DH": null,
+    "SG": null,
+    "GS": 11,
+    "SL": null
+   },
+   {
+    "name": "SCHMID Alexander",
     "nation": "GER",
-    "rank": 2,
-    "points": 1323,
-    "DH": 453,
-    "SG": 354,
-    "GS": 135,
-    "SL": 381
+    "rank": 21,
+    "points": 10,
+    "DH": null,
+    "SG": null,
+    "GS": 10,
+    "SL": null
    },
    {
-    "name": "RAST Camille",
+    "name": "KRISTOFFERSEN Henrik",
+    "nation": "NOR",
+    "rank": 22,
+    "points": 9,
+    "DH": null,
+    "SG": null,
+    "GS": 9,
+    "SL": null
+   },
+   {
+    "name": "TUMLER Thomas",
     "nation": "SUI",
-    "rank": 3,
-    "points": 1049,
+    "rank": 23,
+    "points": 8,
     "DH": null,
     "SG": null,
-    "GS": 511,
-    "SL": 538
-   },
-   {
-    "name": "GOGGIA Sofia",
-    "nation": "ITA",
-    "rank": 4,
-    "points": 982,
-    "DH": 307,
-    "SG": 549,
-    "GS": 126,
-    "SL": null
-   },
-   {
-    "name": "ROBINSON Alice",
-    "nation": "NZL",
-    "rank": 5,
-    "points": 815,
-    "DH": 21,
-    "SG": 386,
-    "GS": 408,
-    "SL": null
-   },
-   {
-    "name": "MOLTZAN Paula",
-    "nation": "USA",
-    "rank": 6,
-    "points": 784,
-    "DH": null,
-    "SG": null,
-    "GS": 392,
-    "SL": 392
-   },
-   {
-    "name": "PIROVANO Laura",
-    "nation": "ITA",
-    "rank": 7,
-    "points": 745,
-    "DH": 536,
-    "SG": 201,
     "GS": 8,
     "SL": null
    },
    {
-    "name": "SCHEIB Julia",
-    "nation": "AUT",
-    "rank": 8,
-    "points": 732,
-    "DH": null,
-    "SG": 12,
-    "GS": 720,
-    "SL": null
-   },
-   {
-    "name": "HECTOR Sara",
-    "nation": "SWE",
-    "rank": 9,
-    "points": 692,
+    "name": "ELEZI CANNAFERINA Alban",
+    "nation": "FRA",
+    "rank": 24,
+    "points": 7,
     "DH": null,
     "SG": null,
-    "GS": 479,
-    "SL": 213
-   },
-   {
-    "name": "WEIDLE-WINKELMANN Kira",
-    "nation": "GER",
-    "rank": 10,
-    "points": 640,
-    "DH": 411,
-    "SG": 229,
-    "GS": null,
+    "GS": 7,
     "SL": null
    },
    {
-    "name": "HUETTER Cornelia",
-    "nation": "AUT",
-    "rank": 11,
-    "points": 620,
-    "DH": 376,
-    "SG": 244,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "VONN Lindsey",
-    "nation": "USA",
-    "rank": 12,
-    "points": 590,
-    "DH": 400,
-    "SG": 190,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "HOLDENER Wendy",
+    "name": "HAECHLER Lenz",
     "nation": "SUI",
-    "rank": 13,
-    "points": 580,
+    "rank": 25,
+    "points": 6,
     "DH": null,
     "SG": null,
-    "GS": 82,
-    "SL": 498
-   },
+    "GS": 6,
+    "SL": null
+   }
+  ],
+  "women": [
    {
-    "name": "LIE Kajsa Vickhoff",
-    "nation": "NOR",
-    "rank": 14,
-    "points": 577,
-    "DH": 258,
-    "SG": 289,
-    "GS": 30,
+    "name": "MOLTZAN Paula",
+    "nation": "USA",
+    "rank": 1,
+    "points": 100,
+    "DH": null,
+    "SG": null,
+    "GS": 100,
     "SL": null
    },
    {
     "name": "COLTURI Lara",
     "nation": "ALB",
-    "rank": 15,
-    "points": 535,
+    "rank": 2,
+    "points": 80,
     "DH": null,
     "SG": null,
-    "GS": 191,
-    "SL": 344
+    "GS": 80,
+    "SL": null
    },
    {
-    "name": "JOHNSON Breezy",
+    "name": "AICHER Emma",
+    "nation": "GER",
+    "rank": 3,
+    "points": 60,
+    "DH": null,
+    "SG": null,
+    "GS": 60,
+    "SL": null
+   },
+   {
+    "name": "HECTOR Sara",
+    "nation": "SWE",
+    "rank": 4,
+    "points": 50,
+    "DH": null,
+    "SG": null,
+    "GS": 50,
+    "SL": null
+   },
+   {
+    "name": "ZENERE Asja",
+    "nation": "ITA",
+    "rank": 5,
+    "points": 45,
+    "DH": null,
+    "SG": null,
+    "GS": 45,
+    "SL": null
+   },
+   {
+    "name": "RAST Camille",
+    "nation": "SUI",
+    "rank": 6,
+    "points": 40,
+    "DH": null,
+    "SG": null,
+    "GS": 40,
+    "SL": null
+   },
+   {
+    "name": "SHIFFRIN Mikaela",
+    "nation": "USA",
+    "rank": 7,
+    "points": 36,
+    "DH": null,
+    "SG": null,
+    "GS": 36,
+    "SL": null
+   },
+   {
+    "name": "ROBINSON Alice",
+    "nation": "NZL",
+    "rank": 8,
+    "points": 32,
+    "DH": null,
+    "SG": null,
+    "GS": 32,
+    "SL": null
+   },
+   {
+    "name": "GASIENICA-DANIEL Maryna",
+    "nation": "POL",
+    "rank": 9,
+    "points": 29,
+    "DH": null,
+    "SG": null,
+    "GS": 29,
+    "SL": null
+   },
+   {
+    "name": "GRITSCH Franziska",
+    "nation": "AUT",
+    "rank": 9,
+    "points": 29,
+    "DH": null,
+    "SG": null,
+    "GS": 29,
+    "SL": null
+   },
+   {
+    "name": "LJUTIC Zrinka",
+    "nation": "CRO",
+    "rank": 11,
+    "points": 24,
+    "DH": null,
+    "SG": null,
+    "GS": 24,
+    "SL": null
+   },
+   {
+    "name": "ALPHAND Estelle",
+    "nation": "SWE",
+    "rank": 12,
+    "points": 22,
+    "DH": null,
+    "SG": null,
+    "GS": 22,
+    "SL": null
+   },
+   {
+    "name": "HURT A J",
+    "nation": "USA",
+    "rank": 13,
+    "points": 20,
+    "DH": null,
+    "SG": null,
+    "GS": 20,
+    "SL": null
+   },
+   {
+    "name": "BOCOCK Elisabeth",
+    "nation": "USA",
+    "rank": 14,
+    "points": 18,
+    "DH": null,
+    "SG": null,
+    "GS": 18,
+    "SL": null
+   },
+   {
+    "name": "LOEVBLOM Hilma",
+    "nation": "SWE",
+    "rank": 15,
+    "points": 16,
+    "DH": null,
+    "SG": null,
+    "GS": 16,
+    "SL": null
+   },
+   {
+    "name": "HOLTMANN Mina Fuerst",
+    "nation": "NOR",
+    "rank": 16,
+    "points": 15,
+    "DH": null,
+    "SG": null,
+    "GS": 15,
+    "SL": null
+   },
+   {
+    "name": "O'BRIEN Nina",
     "nation": "USA",
     "rank": 16,
-    "points": 505,
-    "DH": 413,
-    "SG": 92,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "LEDECKA Ester",
-    "nation": "CZE",
-    "rank": 17,
-    "points": 493,
-    "DH": 209,
-    "SG": 284,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "SUTER Corinne",
-    "nation": "SUI",
-    "rank": 18,
-    "points": 482,
-    "DH": 257,
-    "SG": 225,
-    "GS": null,
-    "SL": null
-   },
-   {
-    "name": "TRUPPE Katharina",
-    "nation": "AUT",
-    "rank": 19,
-    "points": 441,
+    "points": 15,
     "DH": null,
     "SG": null,
-    "GS": null,
-    "SL": 441
+    "GS": 15,
+    "SL": null
    },
    {
-    "name": "MIRADOLI Romane",
-    "nation": "FRA",
+    "name": "DELLA MEA Lara",
+    "nation": "ITA",
+    "rank": 18,
+    "points": 13,
+    "DH": null,
+    "SG": null,
+    "GS": 13,
+    "SL": null
+   },
+   {
+    "name": "ARONSSON ELFMAN Hanna",
+    "nation": "SWE",
+    "rank": 19,
+    "points": 12,
+    "DH": null,
+    "SG": null,
+    "GS": 12,
+    "SL": null
+   },
+   {
+    "name": "HOLDENER Wendy",
+    "nation": "SUI",
     "rank": 20,
-    "points": 433,
-    "DH": 173,
-    "SG": 260,
-    "GS": null,
+    "points": 11,
+    "DH": null,
+    "SG": null,
+    "GS": 11,
+    "SL": null
+   },
+   {
+    "name": "STJERNESUND Thea Louise",
+    "nation": "NOR",
+    "rank": 20,
+    "points": 11,
+    "DH": null,
+    "SG": null,
+    "GS": 11,
     "SL": null
    },
    {
     "name": "DUERR Lena",
     "nation": "GER",
-    "rank": 21,
-    "points": 403,
+    "rank": 22,
+    "points": 9,
     "DH": null,
     "SG": null,
-    "GS": 157,
-    "SL": 246
-   },
-   {
-    "name": "GRENIER Valerie",
-    "nation": "CAN",
-    "rank": 22,
-    "points": 384,
-    "DH": 8,
-    "SG": 64,
-    "GS": 312,
+    "GS": 9,
     "SL": null
    },
    {
-    "name": "RAEDLER Ariane",
-    "nation": "AUT",
+    "name": "VLHOVA Petra",
+    "nation": "SVK",
     "rank": 23,
-    "points": 376,
-    "DH": 231,
-    "SG": 145,
-    "GS": null,
+    "points": 8,
+    "DH": null,
+    "SG": null,
+    "GS": 8,
     "SL": null
    },
    {
-    "name": "CURTONI Elena",
-    "nation": "ITA",
+    "name": "WILD Simone",
+    "nation": "SUI",
     "rank": 24,
-    "points": 360,
-    "DH": 94,
-    "SG": 266,
-    "GS": null,
+    "points": 7,
+    "DH": null,
+    "SG": null,
+    "GS": 7,
     "SL": null
    },
    {
-    "name": "ORTLIEB Nina",
-    "nation": "AUT",
-    "rank": 24,
-    "points": 360,
-    "DH": 258,
-    "SG": 102,
-    "GS": null,
+    "name": "GROB Stefanie",
+    "nation": "SUI",
+    "rank": 25,
+    "points": 6,
+    "DH": null,
+    "SG": null,
+    "GS": 6,
     "SL": null
    }
   ]

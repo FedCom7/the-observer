@@ -4,17 +4,10 @@ import { Score } from '../components/common';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, fmt, hhmm } from '../core/time';
+import { EventsScreen } from './AwardsEvents';
 import { AwardsTabs, ForecastScreen, RaceScreen, StudyScreen, TrackerScreen, useHistory, type AwardsTab } from './AwardsScreens';
-import { KIND_LABEL, PERSON_CATS, filmOf, personOf, sameContender, tmdbImg, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem, type TmdbFilm } from '../sources/awards';
+import { GROUPS, KIND_LABEL, PERSON_CATS, colorOf, filmOf, personOf, sameContender, tmdbImg, type Award, type AwardDate, type AwardsData, type OddsRow, type RadarItem, type TmdbFilm } from '../sources/awards';
 
-const GROUPS: { id: Award['group']; label: string; color: string }[] = [
-  { id: 'festival', label: 'Festivals', color: 'var(--o-s3)' },
-  { id: 'critics', label: 'Critics', color: 'var(--o-s4)' },
-  { id: 'major', label: 'Globes & BAFTA', color: 'var(--o-s2)' },
-  { id: 'guild', label: 'Guilds', color: 'var(--o-s1)' },
-  { id: 'oscars', label: 'Oscars', color: 'var(--oc-cul)' },
-];
-const colorOf = (g: Award['group']) => GROUPS.find(x => x.id === g)!.color;
 /** Shows that start after midnight in Rome: "the night between Sunday 14 and Monday 15 March, 00:00". */
 const nightOf = (t: number) => {
   const h = Number(fmt(t, { hour: 'numeric', hourCycle: 'h23' }));
@@ -29,7 +22,7 @@ export function AwardsPage() {
   const { awards: d, news, now } = useData();
   const [cat, setCat] = useState('picture');
   const [tab, setTab] = useState<AwardsTab>('overview');
-  const hist = useHistory(tab !== 'overview');
+  const hist = useHistory(tab !== 'overview' && tab !== 'events');
   if (!d) return <Hero id="awards" dek="Loading the awards season…" />;
   const all = [...d.awards.flatMap(a => a.dates), ...d.oscarSteps].sort((a, b) => a.date.localeCompare(b.date));
   const next = all.filter(x => Date.parse(x.date) > now && x.award !== 'oscars' || (x.award === 'oscars' && Date.parse(x.date) > now && ['nominations', 'ceremony', 'shortlist', 'governors'].includes(x.kind))).slice(0, 1)[0];
@@ -46,7 +39,7 @@ export function AwardsPage() {
         {bp ? ` Gold Derby's experts currently rank ${bp.name} first for Best Picture.` : ''}
       </>} />
       <AwardsTabs tab={tab} set={setTab} />
-      {tab === 'tracker' ? <TrackerScreen d={d} h={hist} now={now} /> : tab === 'forecast' ? <ForecastScreen d={d} h={hist} now={now} /> : tab === 'race' ? <RaceScreen d={d} h={hist} /> : tab === 'study' ? <StudyScreen d={d} h={hist} /> : <>
+      {tab === 'events' ? <EventsScreen d={d} now={now} /> : tab === 'tracker' ? <TrackerScreen d={d} h={hist} now={now} /> : tab === 'forecast' ? <ForecastScreen d={d} h={hist} now={now} /> : tab === 'race' ? <RaceScreen d={d} h={hist} /> : tab === 'study' ? <StudyScreen d={d} h={hist} /> : <>
       <section className="s-top">
         <div className="ocard s-next">
           <div className="lab">Next on the calendar</div>

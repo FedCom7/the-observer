@@ -1,9 +1,12 @@
 import { PointsBars, useWidth } from '../components/charts';
 import { Score } from '../components/common';
 import { Hero, ocol } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, fmt, hhmm } from '../core/time';
 import { discShort, type SkiRace, type SkiStanding } from '../sources/ski';
+import { useSkiSeason } from '../sources/skiSeason';
+import { AthletesScreen, HistoryScreen, HowScreen, PowerScreen, SKI_TABS, SeasonScreen, VenuesScreen, WorldsScreen } from './SkiScreens';
 
 const DISC_COLOR: Record<string, string> = { DH: 'var(--o-s1)', SG: 'var(--o-s3)', GS: 'var(--o-s2)', SL: 'var(--o-s4)', AC: 'var(--oc-tech)', PAR: 'var(--oc-cul)' };
 const nameCase = (n: string) => n.replace(/\b([A-ZÀ-Ý'-]{2,})\b/g, w => w[0] + w.slice(1).toLowerCase());
@@ -12,6 +15,8 @@ const gLabel = (g: SkiRace['gender']) => (g === 'men' ? 'Men' : g === 'women' ? 
 /** Alpine skiing: every race with official run times, the World Championships, the Cup standings. */
 export function SkiPage() {
   const { ski, news, now } = useData();
+  const [tab, setTab] = useTab(SKI_TABS);
+  const season = useSkiSeason(tab !== 'now');
   if (!ski) return <Hero id="sci" dek="Loading the World Cup…" />;
   const races = ski.races.filter(r => !r.cancelled);
   const upcoming = races.filter(r => Date.parse(r.start) > now - 3 * 3600e3);
@@ -30,6 +35,14 @@ export function SkiPage() {
   return (
     <>
       <Hero id="sci" dek={`${next ? `Next: ${next.place}, ${gLabel(next.gender).toLowerCase()}'s ${next.discipline.toLowerCase()} on ${dayLong(Date.parse(next.start))}. ` : ''}${ski.worlds && wFrom && wFrom > now ? `The World Championships in ${ski.worlds.place} start in ${Math.round((wFrom - now) / DAY)} days.` : ''}`} />
+      <ScreenTabs tabs={SKI_TABS} tab={tab} set={setTab} label="Alpine skiing screens" />
+      {tab !== 'now' ? (tab === 'how' ? <HowScreen /> : !season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} cal={ski} now={now} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'athletes' ? <AthletesScreen d={season} />
+        : tab === 'venues' ? <VenuesScreen d={season} cal={ski} />
+        : tab === 'worlds' ? <WorldsScreen d={season} cal={ski} now={now} />
+        : <HistoryScreen d={season} />) : <>
 
       <section className="s-top">
         <div className="ocard s-next">
@@ -124,6 +137,7 @@ export function SkiPage() {
         <div className="lab">From the wire</div>
         <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
       </section>
+      </>}
     </>
   );
 }

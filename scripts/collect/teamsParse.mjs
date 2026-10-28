@@ -105,6 +105,34 @@ export function nflSeasons(w) {
   });
 }
 
+/** MLB team: one row per season (level, league, division, finish, W-L, postseason), the colour or mark of a cell flags the titles. */
+export function mlbSeasons(w) {
+  const t = tables(w).find(x => /Finish/.test(x) && /Playoffs/.test(x) && /Wins/.test(x));
+  if (!t) return [];
+  const g = grid(t).filter(r => r[0]?.head && /^\d{4}$/.test(r[0].text) && !r[1]?.head);
+  return g.map(r => {
+    const post = r[9]?.text ?? '';
+    const flag = (c, mark, bg) => (c?.text ?? '').includes(mark) || bg.test(c?.bg ?? '');
+    // Titles are World Series titles; the 19th-century league titles (†) count as pennants
+    const champion = /Won World Series/i.test(post) || flag(r[1], '‡', /ffcccc/i);
+    return {
+      season: r[0].text, start: Number(r[0].text), league: (r[2]?.text ?? '').replace(/[*†‡^¤]/g, '').trim(), division: (r[3]?.text ?? '').replace(/[*†‡^¤]/g, '').trim() || null,
+      finish: ordinalNum(r[4]?.text), w: num(r[5]?.text), l: num(r[6]?.text), t: 0, gb: r[8]?.text || null,
+      postseason: post || null, awards: r[10]?.text || null, coach: null,
+      champion, conferenceChampion: champion || flag(r[2], '*', /ddffdd/i) || (flag(r[2], '†', /CCFFFF/i) && r[1]?.text !== 'N/A') || /World Series/i.test(post),
+      divisionChampion: flag(r[3], '^', /D0E7FF/i), wildCard: flag(r[3], '¤', /96CDCD/i),
+      playoffs: Boolean(post.trim()) || champion,
+    };
+  }).filter(s => s.w != null).reduce((out, s) => {
+    // 1981 was played in two halves, one row each
+    const prev = out.find(x => x.season === s.season);
+    if (!prev) return [...out, s];
+    for (const k of ['champion', 'conferenceChampion', 'divisionChampion', 'wildCard', 'playoffs']) prev[k] ||= s[k];
+    prev.w += s.w; prev.l += s.l; prev.postseason ||= s.postseason; prev.finish = Math.min(prev.finish ?? 99, s.finish ?? 99);
+    return out;
+  }, []);
+}
+
 /** College football: {{CFB Yearly Record Entry}} templates, one per season. */
 export function cfbSeasons(w) {
   const out = [];
@@ -132,9 +160,11 @@ export function cfbSeasons(w) {
 
 /** All-time series from a rivalry page's infobox: { wins, losses, draws, text } from our team's side. */
 export function rivalrySeries(w, us) {
-  const raw = infobox(w, ['all_time_series', 'series', 'alltime_record', 'all-time_series']) ?? '';
-  const total = num(plain(infobox(w, ['total_meetings', 'total', 'meetings', 'total_matches']) ?? '').replace(/,/g, ''));
-  let txt = raw.replace(/\{\{winning percentage\|(\d+)\|(\d+)(?:\|(\d+))?[^}]*\}\}/gi, (_, a, b, c) => `${a}–${b}${c ? `–${c}` : ''}`);
+  // Baseball pages count the record with {{winpct|1,300|1,294|17|record=y}} and the total with {{sum|547|441|1}}
+  const sum = s => s.replace(/\{\{sum((?:\|[\d,]+)+)\}\}/gi, (_, xs) => String(xs.split('|').filter(Boolean).reduce((a, x) => a + Number(x.replace(/,/g, '')), 0)));
+  const raw = infobox(w, ['all_time_series', 'series', 'alltime_record', 'all-time_series', 'regular_season']) ?? '';
+  const total = num(plain(sum(infobox(w, ['total_meetings', 'total', 'meetings', 'total_matches']) ?? '')).replace(/,/g, ''));
+  let txt = raw.replace(/\{\{(?:winning percentage|winpct)\|([\d,]+)\|([\d,]+)(?:\|([\d,]+))?[^}]*\}\}/gi, (_, a, b, c) => [a, b, c].filter(Boolean).map(x => x.replace(/,/g, '')).join('–'));
   txt = plain(txt);
   const usRe = new RegExp(us, 'i');
   // "Inter: 91 / Drawn: 71 / Milan: 84"

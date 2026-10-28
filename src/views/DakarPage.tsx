@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useWidth } from '../components/charts';
 import { Score } from '../components/common';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { DAKAR_TABS, HistoryScreen, HowScreen, PowerScreen, ResultsScreen, RouteScreen, useDakarSeason } from './DakarScreens';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { countdown, dayLong, dayShort } from '../core/time';
@@ -10,6 +12,8 @@ import type { DakarRow, DakarStage } from '../sources/dakar';
 export function DakarPage() {
   const { dakar, news, now } = useData();
   const [cat, setCat] = useState('Bikes');
+  const [tab, setTab] = useTab(DAKAR_TABS);
+  const ds = useDakarSeason(tab === 'power' || tab === 'history');
   if (!dakar) return <Hero id="dakar" dek="Loading the Dakar…" />;
   const stages = dakar.stages;
   const start = stages[0] ? Date.parse(stages[0].date) : null;
@@ -25,6 +29,11 @@ export function DakarPage() {
   return (
     <>
       <Hero id="dakar" dek={`Dakar ${dakar.edition}: ${stages.filter(s => !s.rest).length} days of racing in Saudi Arabia, ${total.toLocaleString('en-US')} km in all, ${special.toLocaleString('en-US')} km against the clock.${!running && start && start > now ? ` The prologue starts in ${Math.ceil((start - now) / 86400e3)} days.` : ''}`} />
+      <ScreenTabs tabs={DAKAR_TABS} tab={tab} set={setTab} label="Dakar screens" />
+      {tab !== 'now' ? (tab === 'results' ? <ResultsScreen dk={dakar} /> : tab === 'route' ? <RouteScreen dk={dakar} /> : tab === 'how' ? <HowScreen />
+        : !ds ? <section className="ocard"><p className="dek">Loading…</p></section>
+        : tab === 'power' ? <PowerScreen dk={dakar} s={ds} />
+        : <HistoryScreen s={ds} />) : <>
 
       <section className="s-top">
         <div className="ocard s-next">
@@ -78,6 +87,7 @@ export function DakarPage() {
         <div className="lab">From the wire</div>
         <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
       </section>
+      </>}
     </>
   );
 }

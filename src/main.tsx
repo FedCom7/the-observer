@@ -10,10 +10,11 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <DataProvider>
       <SpoilerProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
           <Routes>
             <Route path="/" element={<ControlRoom />}>
               <Route path="p/:id" element={null} />
+              <Route path="live" element={null} />
             </Route>
           </Routes>
         </BrowserRouter>

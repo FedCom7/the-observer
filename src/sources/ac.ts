@@ -7,7 +7,7 @@ export interface AcStanding { teamId: number; team: string; flag: string; total:
 export interface AcRace { id: string; regatta: string; name: string; status: string; start: string; teams: { team: string; position: number | null; points: number }[] }
 export interface AcData { updated: string; edition: string; regattas: { id: string; name: string; standings: AcStanding[] }[]; races: AcRace[] }
 
-export const loadAc = () => getJSON<AcData>('/data/ac.json', 10 * MIN);
+export const loadAc = () => getJSON<AcData>(`${import.meta.env.BASE_URL}data/ac.json`, 10 * MIN);
 
 export const acEvents = (d: AcData): ObsEvent[] => d.races.map(r => {
   const t = Date.parse(r.start), done = r.status === 'Finished' || t < Date.now() - 3 * 3600e3;

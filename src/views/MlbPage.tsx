@@ -1,74 +1,82 @@
-import { TrendLine, type TrendPoint } from '../components/charts';
+import { useWidth } from '../components/charts';
 import { Score } from '../components/common';
-import { Hero, Row, ocol } from '../components/sheet';
+import { LeagueGameGrid, useLeagueGames } from '../components/LeagueGames';
+import { Hero, Row } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { AwardsScreen, HistoryScreen, HowScreen, MLB_TABS, OffseasonScreen, PlayersScreen, PowerScreen, SeasonScreen, TeamsScreen, useMlbSeason } from './MlbScreens';
 import { useData } from '../core/store';
-import { DAY, countdown, dayLong, dayShort, hhmm } from '../core/time';
-import { DODGERS, type Division, type Series } from '../sources/mlb';
+import { countdown, dayLong, dayShort, hhmm } from '../core/time';
+import { DODGERS, type Division, type DivisionRow, type MlbData, type Series } from '../sources/mlb';
 
 const ROUNDS = ['Wild Card', 'Division Series', 'Championship Series', 'World Series'];
+const DIVS = ['East', 'Central', 'West'];
+const pct = (r: { w: number; l: number }) => r.w / Math.max(1, r.w + r.l);
+const nameOf = (m: MlbData | undefined, id?: string | null) => m?.divisions.flatMap(d => d.rows).find(r => r.id === id)?.name ?? '';
 
-/** MLB: the league at a glance, the Dodgers in focus, October front and centre when it comes. */
+/** MLB, the whole league: the day's games, the standings and the playoff picture in season, October front and centre when it comes. */
 export function MlbPage() {
-  const { mlb, events, news, now } = useData();
-  const games = events.filter(e => e.passion === 'mlb');
-  const dodgersGames = games.filter(e => e.home?.mine || e.away?.mine);
-  const next = dodgersGames.find(e => e.state !== 'post' && e.start > now - 4 * 3600e3);
-  const live = games.filter(e => e.state === 'in');
+  const { mlb, news, now } = useData();
+  const day = useLeagueGames('mlb', now);
+  const [tab, setTab] = useTab(MLB_TABS);
+  const season = useMlbSeason(tab !== 'now');
   const series = mlb?.series ?? [];
-  const mySeries = series.filter(s => s.teams.some(t => t.id === DODGERS));
-  const current = mySeries[mySeries.length - 1];
   const october = series.length > 0;
-  const nlWest = mlb?.divisions.find(d => d.league === 'NL' && d.name === 'West');
-  const me = nlWest?.rows.find(r => r.mine);
+  const ws = series.find(s => s.round === 'World Series');
+  // The series in the spotlight: the World Series, otherwise the latest round still going
+  const spotlight = ws ?? [...series].reverse().find(s => !s.done) ?? series[series.length - 1];
+  const live = day?.today.filter(g => g.state === 'in') ?? [];
+  const next = day?.today.find(g => g.state === 'pre');
+  const all = (mlb?.divisions ?? []).flatMap(d => d.rows.map(r => ({ ...r, league: d.league, div: d.name })));
+  const best = [...all].sort((a, b) => pct(b) - pct(a) || b.diff - a.diff)[0];
+  const upcoming = (mlb?.postseasonEvents ?? []).filter(e => e.state !== 'post').slice(0, 8);
   const myNews = news.filter(n => n.passion === 'mlb').slice(0, 8);
 
-  // Games above .500, game by game
-  let net = 0;
-  const trend: TrendPoint[] = (mlb?.dodgers ?? []).map((g, i) => {
-    net += g.win ? 1 : -1;
-    return { x: g.date, y: net, tip: `Game ${i + 1} · ${dayShort(g.date)} · ${g.win ? 'W' : 'L'} ${g.rs}–${g.ra} ${g.home ? 'vs' : '@'} ${g.opp} · ${net >= 0 ? '+' : ''}${net}` };
-  });
-
-  const dek = current
-    ? seriesSentence(current)
-    : me ? `The Dodgers finished ${me.w}–${me.l}, ${me.gb === '-' || me.gb === '0' ? 'first' : me.gb + ' games back'} in the NL West.` : 'Loading the league…';
+  const dek = !mlb ? 'Loading the league…'
+    : mlb.phase === 'off' && ws ? `The ${nameOf(mlb, ws.winner)} won the ${mlb.season} World Series, ${ws.teams.map(t => t.wins).sort((a, b) => b - a).join('–')} over the ${nameOf(mlb, ws.teams.find(t => t.id !== ws.winner)?.id)}.`
+    : october && spotlight ? seriesSentence(mlb, spotlight)
+    : mlb.phase === 'pre' && mlb.regStart ? `Opening day is ${dayLong(mlb.regStart)}.`
+    : `Week ${mlb.week ?? '–'} of the regular season.${best ? ` Best record: ${best.name}, ${best.w}–${best.l}.` : ''}${day ? ` ${day.today.length} games today.` : ''}`;
 
   return (
     <>
       <Hero id="mlb" dek={dek} />
+      <ScreenTabs tabs={MLB_TABS} tab={tab} set={setTab} label="MLB screens" />
+      {tab !== 'now' ? (tab === 'how' ? <HowScreen /> : !season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} now={now} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'teams' ? <TeamsScreen d={season} />
+        : tab === 'players' ? <PlayersScreen d={season} />
+        : tab === 'awards' ? <AwardsScreen d={season} />
+        : tab === 'offseason' ? <OffseasonScreen d={season} />
+        : <HistoryScreen d={season} />) : <>
       <section className="s-top">
-        {next ? (
-          <div className="ocard s-next">
-            <div className="lab">{next.state === 'in' ? <span style={{ color: '#ff453a' }}>● Dodgers live · {next.clock}</span> : 'Next Dodgers game'}</div>
+        <div className="ocard s-next">
+          <div className="lab">{live.length ? <span style={{ color: '#ff453a' }}>● Live now · {live.length}</span> : 'Next first pitch'}</div>
+          {live[0] ? <LiveLine g={live[0]} /> : next ? <>
             <h3>{next.title}</h3>
             <div className="when">{dayLong(next.start)} · {hhmm(next.start)} Rome{next.tv ? ` · ${next.tv}` : ''}{next.sub ? ` · ${next.sub}` : ''}</div>
-            {next.state === 'in'
-              ? <Score as="div" className="s-cd">{next.away?.abbr} {next.away?.score} – {next.home?.score} {next.home?.abbr}</Score>
-              : <div className="s-cd">{countdown(next.start - now)}<small>T-minus · night viewing</small></div>}
-          </div>
-        ) : <div className="ocard"><div className="lab">Next Dodgers game</div><div>{october && current?.done ? 'Season over.' : 'Not scheduled yet.'}</div></div>}
-        <div className="ocard">
-          <div className="lab">{october ? 'Dodgers in October' : 'Dodgers season'}</div>
-          {current ? <SeriesBox s={current} big /> : me ? <div className="kpis"><div className="kpi"><b>{me.w}–{me.l}</b><span>Record</span></div><div className="kpi"><b>{me.gb}</b><span>Games back</span></div><div className="kpi"><b>{me.streak}</b><span>Streak</span></div></div> : null}
+            <div className="s-cd">{countdown(next.start - now)}<small>T-minus</small></div>
+          </> : <div>{mlb?.phase === 'off' ? 'Season over. Spring training in February.' : 'No game today.'}</div>}
         </div>
         <div className="ocard">
-          <div className="lab">Regular season</div>
-          {me && (
+          <div className="lab">{october ? (mlb?.phase === 'off' ? 'World Series' : `Postseason · ${spotlight?.round}`) : 'The season'}</div>
+          {october && spotlight ? <SeriesBox s={spotlight} big /> : mlb && (
             <div className="kpis">
-              <div className="kpi"><b>{me.w}–{me.l}</b><span>Record</span></div>
-              <div className="kpi"><b>{me.seed ? `#${me.seed}` : '–'}</b><span>NL seed</span></div>
-              <div className="kpi"><b>{me.diff > 0 ? '+' : ''}{me.diff}</b><span>Run diff. per game</span></div>
+              <div className="kpi"><b>{mlb.week ?? '–'}</b><span>Week</span></div>
+              <div className="kpi"><b>{day?.today.length ?? '–'}</b><span>Games today</span></div>
+              <div className="kpi"><b>{mlb.regEnd ? Math.max(0, Math.ceil((mlb.regEnd - now) / 86400e3)) : '–'}</b><span>Days to October</span></div>
             </div>
           )}
         </div>
+        <div className="ocard">
+          <div className="lab">The best record</div>
+          {best && <><h3 style={{ margin: 0 }}>{best.name}</h3><div className="kpis" style={{ marginTop: 8 }}>
+            <div className="kpi"><Score as="b">{best.w}–{best.l}</Score><span>{best.league} {best.div}</span></div>
+            <div className="kpi"><Score as="b">{best.diff > 0 ? '+' : ''}{best.diff}</Score><span>Run diff.</span></div>
+            <div className="kpi"><Score as="b">{best.streak || '–'}</Score><span>Streak</span></div>
+          </div></>}
+        </div>
       </section>
-
-      {live.length > 0 && (
-        <section className="ocard">
-          <div className="lab"><span style={{ color: '#ff453a' }}>● Live now</span></div>
-          <div className="olist">{live.map(e => <Row key={e.id} e={e} right={<Score>{e.away?.abbr} {e.away?.score} – {e.home?.score} {e.home?.abbr} · {e.clock}</Score>} />)}</div>
-        </section>
-      )}
 
       {october && (
         <section className="ocard">
@@ -78,49 +86,79 @@ export function MlbPage() {
         </section>
       )}
 
-      {trend.length > 1 && (
+      {upcoming.length > 0 && (
         <section className="ocard">
-          <h2>The Dodgers' season, game by game</h2>
-          <p className="dek">Wins minus losses after each regular-season game. Hover for the result.</p>
-          <TrendLine points={trend} color={ocol('mlb')} unit="games over .500" />
+          <div className="lab">Postseason schedule · Rome time</div>
+          <div className="olist">{upcoming.map(e => <Row key={e.id} e={e} right={e.state === 'in' ? <Score>{e.away?.abbr} {e.away?.score} – {e.home?.score} {e.home?.abbr}</Score> : `in ${countdown(e.start - now)}`} />)}</div>
+        </section>
+      )}
+
+      {day && day.today.length > 0 && (
+        <section className="ocard">
+          <h2>Today's games</h2>
+          <p className="dek">First pitch in Rome time; the night up to 07:00 counts with the evening before. Live games refresh every 30 seconds with count, outs and runners.</p>
+          <LeagueGameGrid games={day.today} />
           <div className="osrc">Source: ESPN</div>
         </section>
       )}
 
+      {!october && all.length > 0 && <Picture all={all} />}
+
+      {all.some(r => r.w + r.l > 0) && (
+        <section className="ocard">
+          <h2>Run differential, all 30 teams</h2>
+          <p className="dek">Runs scored minus runs allowed{mlb?.phase === 'regular' ? ' so far' : ' over the regular season'}, the best single measure of how good a team has been. Grouped by division; American League in red, National League in blue.</p>
+          <DiffChart all={all} />
+          <div className="osrc">Source: ESPN standings</div>
+        </section>
+      )}
+
       <section className="ocard">
-        <h2>The league</h2>
-        <p className="dek">Final regular-season standings by division. Seeds 1–6 in each league made the postseason.</p>
+        <h2>The six divisions</h2>
+        <p className="dek">{mlb?.phase === 'regular' ? 'Standings to date.' : 'Final regular-season standings.'} The three division winners and three wild cards in each league reach the postseason; seeds in brackets.</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 18 }}>
-          {(mlb?.divisions ?? []).slice().sort((a, b) => (a.league === b.league ? 0 : a.league === 'NL' ? -1 : 1)).map(d => <DivisionTable key={d.league + d.name} d={d} />)}
+          {(mlb?.divisions ?? []).slice().sort((a, b) => (a.league === b.league ? DIVS.indexOf(a.name) - DIVS.indexOf(b.name) : a.league === 'AL' ? -1 : 1)).map(d => <DivisionTable key={d.league + d.name} d={d} />)}
         </div>
       </section>
 
       <section className="s-two">
-        <div className="ocard">
-          <div className="lab">Dodgers schedule · Rome time</div>
-          <div className="olist">
-            {dodgersGames.filter(e => e.start > now - 6 * DAY).slice(0, 10).map(e => (
-              <Row key={e.id} e={e} past={e.state === 'post'} right={e.state === 'post' ? <Score>{e.away?.abbr} {e.away?.score}–{e.home?.score} {e.home?.abbr}</Score> : e.state === 'in' ? e.clock : `in ${countdown(e.start - now)}`} />
-            ))}
+        {day && day.yesterday.length > 0 && (
+          <div className="ocard">
+            <div className="lab">Last night's results</div>
+            <LeagueGameGrid games={day.yesterday} />
           </div>
-        </div>
+        )}
         <div className="ocard">
           <div className="lab">From the wire</div>
           <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
         </div>
       </section>
+      </>}
     </>
   );
 }
 
-function seriesSentence(s: Series) {
-  const me = s.teams.find(t => t.id === DODGERS)!, opp = s.teams.find(t => t.id !== DODGERS)!;
-  if (s.done) return s.winner === DODGERS ? `The Dodgers won the ${s.round} ${me.wins}–${opp.wins} over ${opp.abbr}.` : `The Dodgers were eliminated ${opp.wins}–${me.wins} by ${opp.abbr} in the ${s.round}.`;
-  const verb = me.wins > opp.wins ? 'lead' : me.wins < opp.wins ? 'trail' : 'are tied with';
+function LiveLine({ g }: { g: { away?: { name: string; score?: string }; home?: { name: string; score?: string }; clock?: string; line: { situation?: string } } }) {
+  return (
+    <>
+      <Score as="div" className="s-cd">{g.away?.name} {g.away?.score} – {g.home?.score} {g.home?.name}</Score>
+      <div className="when" style={{ marginTop: 8 }}>{g.clock}{g.line.situation ? ` · ${g.line.situation}` : ''}</div>
+    </>
+  );
+}
+
+/** One sentence on a series, from the leader's side. */
+export function seriesSentence(m: MlbData, s: Series) {
+  const [a, b] = s.teams;
+  if (!a || !b) return '';
   const round = `${s.league === 'MLB' ? '' : s.league + ' '}${s.round}`;
-  const edge = me.wins === opp.wins ? `${me.wins}–${opp.wins}` : `${Math.max(me.wins, opp.wins)}–${Math.min(me.wins, opp.wins)}`;
-  const elimination = opp.wins === Math.ceil(s.bestOf / 2) - 1 ? ' One more loss ends their season.' : '';
-  return `The Dodgers ${verb} ${opp.abbr} ${edge} in the ${round}.${elimination}${s.next ? ` Next game ${dayShort(s.next)} at ${hhmm(s.next)} Rome time.` : ''}`;
+  const lead = a.wins >= b.wins ? a : b, other = lead === a ? b : a;
+  if (s.done) return `The ${nameOf(m, s.winner)} won the ${round} ${lead.wins}–${other.wins}.`;
+  const need = Math.ceil(s.bestOf / 2);
+  const state = a.wins === 0 && b.wins === 0 ? `The ${nameOf(m, a.id)} and the ${nameOf(m, b.id)} open the ${round}.`
+    : a.wins === b.wins ? `The ${nameOf(m, a.id)} and the ${nameOf(m, b.id)} are tied ${a.wins}–${b.wins} in the ${round}.`
+    : `The ${nameOf(m, lead.id)} lead the ${nameOf(m, other.id)} ${lead.wins}–${other.wins} in the ${round}.${lead.wins === need - 1 ? ' One more win takes it.' : ''}`;
+  return `${state}${s.next ? ` Next game ${dayLong(s.next)} at ${hhmm(s.next)} Rome time.` : ''}`;
 }
 
 function Dots({ n, of, color }: { n: number; of: number; color: string }) {
@@ -131,7 +169,7 @@ function Dots({ n, of, color }: { n: number; of: number; color: string }) {
   );
 }
 
-function SeriesBox({ s, big }: { s: Series; big?: boolean }) {
+export function SeriesBox({ s, big, mine = DODGERS }: { s: Series; big?: boolean; mine?: string }) {
   const need = Math.ceil(s.bestOf / 2);
   return (
     <div style={{ border: big ? 'none' : '1px solid var(--o-line)', borderRadius: 10, padding: big ? 0 : '8px 10px', display: 'grid', gap: 6, fontFamily: 'var(--f-chart)' }}>
@@ -141,8 +179,8 @@ function SeriesBox({ s, big }: { s: Series; big?: boolean }) {
         return (
           <div key={t.id} style={{ display: 'flex', alignItems: 'center', gap: 8, opacity: lost ? 0.45 : 1, fontSize: big ? 18 : 13 }}>
             <span style={{ width: 16, color: 'var(--o-ink3)', fontSize: 11 }}>{t.seed ?? ''}</span>
-            <b style={{ width: big ? 60 : 44, color: t.id === DODGERS ? 'var(--oc-usa)' : 'var(--o-ink)' }}>{t.abbr}</b>
-            <Score><Dots n={t.wins} of={need} color={t.id === DODGERS ? 'var(--oc-usa)' : 'var(--o-ink2)'} /></Score>
+            <b style={{ width: big ? 60 : 44, color: t.id === mine ? 'var(--oc-usa)' : 'var(--o-ink)' }}>{t.abbr}</b>
+            <Score><Dots n={t.wins} of={need} color={t.id === mine ? 'var(--oc-usa)' : 'var(--o-ink2)'} /></Score>
           </div>
         );
       })}
@@ -151,7 +189,7 @@ function SeriesBox({ s, big }: { s: Series; big?: boolean }) {
   );
 }
 
-function Bracket({ series }: { series: Series[] }) {
+export function Bracket({ series }: { series: Series[] }) {
   return (
     <div style={{ overflowX: 'auto' }}>
       <div style={{ display: 'grid', gridTemplateColumns: `repeat(${ROUNDS.length}, minmax(170px, 1fr))`, gap: 16, minWidth: 720 }}>
@@ -176,17 +214,73 @@ function Bracket({ series }: { series: Series[] }) {
   );
 }
 
+type Team = DivisionRow & { league: 'AL' | 'NL'; div: string };
+
+/** If the season ended today: three division winners and three wild cards per league. */
+function Picture({ all }: { all: Team[] }) {
+  return (
+    <section className="ocard">
+      <h2>If the season ended today</h2>
+      <p className="dek">Six teams per league: the three division leaders, then three wild cards. Seeds 1 and 2 skip the Wild Card Series.</p>
+      <div className="s-two" style={{ gap: 24 }}>
+        {(['AL', 'NL'] as const).map(lg => {
+          const teams = all.filter(r => r.league === lg);
+          const seeds = teams.filter(r => r.seed && r.seed <= 6).sort((a, b) => a.seed! - b.seed!);
+          const hunt = teams.filter(r => !r.seed || r.seed > 6).sort((a, b) => pct(b) - pct(a)).slice(0, 3);
+          const cut = seeds[seeds.length - 1];
+          return (
+            <div key={lg}>
+              <div className="lab">{lg === 'AL' ? 'American League' : 'National League'}</div>
+              <table className="otable"><tbody>
+                {seeds.map(r => <tr key={r.id} className={r.mine ? 'me' : ''}><td style={{ width: 24 }}><b>{r.seed}</b></td><td>{r.name}<small style={{ color: 'var(--o-ink3)' }}>{r.seed! <= 3 ? ` · ${r.div} leader` : ' · wild card'}{r.seed! <= 2 ? ' · bye' : ''}</small></td><td className="n"><Score>{r.w}–{r.l}</Score></td></tr>)}
+                {hunt.map(r => <tr key={r.id} className={r.mine ? 'me' : ''} style={{ color: 'var(--o-ink3)' }}><td /><td>{r.name} <small>· {cut ? `${((cut.w - r.w + r.l - cut.l) / 2).toFixed(1).replace('.0', '')} back` : 'in the hunt'}</small></td><td className="n">{r.w}–{r.l}</td></tr>)}
+              </tbody></table>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function DiffChart({ all }: { all: Team[] }) {
+  const [ref, W] = useWidth<HTMLDivElement>();
+  const order = (['AL', 'NL'] as const).flatMap(lg => DIVS.flatMap(d => all.filter(r => r.league === lg && r.div === d).sort((a, b) => b.diff - a.diff)));
+  const max = Math.max(10, ...order.map(r => Math.abs(r.diff)));
+  const H = 260, l = 38, b = 46, t = 10;
+  const band = (W - l) / Math.max(1, order.length), bw = Math.min(18, band * 0.7);
+  const y = (v: number) => t + ((max - v) / (2 * max)) * (H - t - b);
+  return (
+    <div ref={ref} className="ochart">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label="Run differential by team">
+        {[-max, 0, max].map(v => <g key={v}><line x1={l} x2={W} y1={y(v)} y2={y(v)} stroke={v === 0 ? 'var(--o-ink3)' : 'var(--o-grid)'} /><text x={l - 6} y={y(v) + 4} textAnchor="end">{v > 0 ? `+${Math.round(v)}` : Math.round(v)}</text></g>)}
+        {order.map((r, i) => {
+          const cx = l + band * i + band / 2;
+          const divStart = i === 0 || order[i - 1].div !== r.div || order[i - 1].league !== r.league;
+          return (
+            <g key={r.id}>
+              {divStart && <><line x1={l + band * i} x2={l + band * i} y1={t} y2={H - 14} stroke="var(--o-grid)" /><text x={l + band * i + 3} y={H - 4} style={{ fontSize: 10 }}>{r.league} {r.div}</text></>}
+              <rect x={cx - bw / 2} y={Math.min(y(r.diff), y(0))} width={bw} height={Math.abs(y(r.diff) - y(0))} rx={2} fill={r.league === 'AL' ? 'var(--o-rep)' : 'var(--o-dem)'}><title>{`${r.name} ${r.w}–${r.l} · ${r.diff > 0 ? '+' : ''}${r.diff}`}</title></rect>
+              <text x={cx} y={H - 22} textAnchor="middle" style={{ fontSize: 9.5, fill: 'var(--o-ink2)' }} transform={`rotate(-90 ${cx} ${H - 22})`}>{r.abbr}</text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
 function DivisionTable({ d }: { d: Division }) {
   return (
     <div>
       <div className="lab">{d.league} {d.name}</div>
       <table className="otable">
-        <thead><tr><th>Team</th><th className="n">W</th><th className="n">L</th><th className="n">GB</th><th className="n">Seed</th></tr></thead>
+        <thead><tr><th>Team</th><th className="n">W</th><th className="n">L</th><th className="n">GB</th><th className="n">Diff</th><th className="n">Strk</th></tr></thead>
         <tbody>
           {d.rows.map(r => (
             <tr key={r.id} className={r.mine ? 'me' : ''}>
-              <td>{r.name}{r.clinch ? <small style={{ color: 'var(--o-ink3)' }}> {r.clinch}</small> : null}</td>
-              <td className="n">{r.w}</td><td className="n">{r.l}</td><td className="n">{r.gb}</td><td className="n">{r.seed ?? ''}</td>
+              <td>{r.name}{r.seed ? <small style={{ color: 'var(--o-ink3)' }}> ({r.seed})</small> : null}</td>
+              <td className="n">{r.w}</td><td className="n">{r.l}</td><td className="n">{r.gb}</td><td className="n">{r.diff > 0 ? '+' : ''}{r.diff}</td><td className="n">{r.streak}</td>
             </tr>
           ))}
         </tbody>

@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useWidth } from '../components/charts';
-import { Score } from '../components/common';
+import { NflLogo, Score } from '../components/common';
 import { Hero } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
 import { useData } from '../core/store';
 import { countdown, dayLong, fmt, hhmm } from '../core/time';
+import { useNflSeason } from '../sources/nflData';
 import { nflLeaders, nflStandings, nflWeek, type NflGame, type NflLeader, type NflStandingRow, type NflWeek } from '../sources/nflLeague';
+import { HistoryScreen, HowScreen, LeadersScreen, NFL_TABS, PowerScreen, RaceScreen, SeasonScreen, TeamsScreen } from './NflScreens';
 
 const DIVS = ['East', 'North', 'South', 'West'];
 
@@ -45,6 +48,8 @@ export function NflPage() {
   const best = table ? [...table].sort((a, b) => b.pct - a.pct || b.diff - a.diff)[0] : null;
   const unbeaten = table?.filter(r => r.l === 0 && r.w > 0).map(r => r.abbr) ?? [];
   const winless = table?.filter(r => r.w === 0 && r.l > 0).map(r => r.abbr) ?? [];
+  const [tab, setTab] = useTab(NFL_TABS);
+  const season = useNflSeason(tab !== 'now');
   return (
     <>
       <Hero id="nfl" dek={<>
@@ -52,19 +57,28 @@ export function NflPage() {
         {live.length ? `${live.length} game${live.length > 1 ? 's' : ''} live now. ` : next ? `Next kickoff: ${next.away.short} at ${next.home.short}, ${dayLong(next.start)} ${hhmm(next.start)}. ` : ''}
         {unbeaten.length ? `Still unbeaten: ${unbeaten.join(', ')}. ` : ''}{winless.length ? `Still winless: ${winless.join(', ')}.` : ''}
       </>} />
+      <ScreenTabs tabs={NFL_TABS} tab={tab} set={setTab} label="NFL screens" />
 
+      {tab !== 'now' ? (!season ? <section className="ocard"><p className="dek">Loading the season…</p></section>
+        : tab === 'season' ? <SeasonScreen d={season} />
+        : tab === 'power' ? <PowerScreen d={season} />
+        : tab === 'teams' ? <TeamsScreen d={season} />
+        : tab === 'leaders' ? <LeadersScreen d={season} />
+        : tab === 'race' ? <RaceScreen d={season} />
+        : tab === 'history' ? <HistoryScreen d={season} />
+        : <HowScreen d={season} />) : <>
       <section className="s-top">
         <div className="ocard s-next">
           <div className="lab">{live.length ? <span style={{ color: '#ff453a' }}>● Live now</span> : 'Next kickoff'}</div>
           {live[0] ? <GameLine g={live[0]} big /> : next ? <>
-            <h3>{next.away.short} @ {next.home.short}</h3>
+            <h3><NflLogo abbr={next.away.abbr} />{next.away.short} @ <NflLogo abbr={next.home.abbr} />{next.home.short}</h3>
             <div className="when">{dayLong(next.start)} · {hhmm(next.start)} Rome{next.tv ? ` · ${next.tv}` : ''}</div>
             <div className="s-cd">{countdown(next.start - now)}<small>T-minus</small></div>
           </> : <div>No game scheduled this week.</div>}
         </div>
         <div className="ocard">
           <div className="lab">The best record</div>
-          {best && <><h3 style={{ margin: 0 }}>{best.name}</h3><div className="kpis" style={{ gridTemplateColumns: '1fr 1fr 1fr', marginTop: 8 }}>
+          {best && <><h3 style={{ margin: 0 }}><NflLogo abbr={best.abbr} />{best.name}</h3><div className="kpis" style={{ gridTemplateColumns: '1fr 1fr 1fr', marginTop: 8 }}>
             <div className="kpi"><Score as="b">{best.w}-{best.l}{best.t ? `-${best.t}` : ''}</Score><span>Record</span></div>
             <div className="kpi"><Score as="b">{best.diff > 0 ? '+' : ''}{best.diff}</Score><span>Point diff.</span></div>
             <div className="kpi"><Score as="b">{best.streak || '–'}</Score><span>Streak</span></div>
@@ -117,7 +131,7 @@ export function NflPage() {
               {leaders.map(c => (
                 <div key={c.cat}>
                   <div className="lab">{c.label}</div>
-                  {c.rows.map((r, i) => <div key={r.name} style={{ display: 'grid', gridTemplateColumns: '14px 1fr auto', gap: 6, fontSize: 12.5, padding: '2px 0' }}><span style={{ color: 'var(--o-ink3)' }}>{i + 1}</span><span>{r.name} <small style={{ color: 'var(--o-ink3)' }}>{r.team}</small></span><Score><b>{r.value}</b></Score></div>)}
+                  {c.rows.map((r, i) => <div key={r.name} style={{ display: 'grid', gridTemplateColumns: '14px 1fr auto', gap: 6, fontSize: 12.5, padding: '2px 0' }}><span style={{ color: 'var(--o-ink3)' }}>{i + 1}</span><span>{r.name} <small style={{ color: 'var(--o-ink3)' }}><NflLogo abbr={r.team} />{r.team}</small></span><Score><b>{r.value}</b></Score></div>)}
                 </div>
               ))}
             </div>
@@ -130,6 +144,7 @@ export function NflPage() {
           </div>
         )}
       </section>
+      </>}
     </>
   );
 }
@@ -143,7 +158,7 @@ const groupByDay = (games: NflGame[]) => {
 function GameLine({ g, big }: { g: NflGame; big?: boolean }) {
   const row = (t: NflGame['home'], other: NflGame['home']) => (
     <div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, fontWeight: t.winner || (g.state === 'in' && (t.score ?? 0) > (other.score ?? 0)) ? 700 : 400, color: g.state === 'post' && !t.winner ? 'var(--o-ink3)' : 'var(--o-ink)' }}>
-      <span>{g.possession === t.abbr ? '🏈 ' : ''}{big ? t.name : t.short} <small style={{ color: 'var(--o-ink3)' }}>{t.record}</small></span><Score><b>{g.state === 'pre' ? '' : t.score ?? ''}</b></Score>
+      <span><NflLogo abbr={t.abbr} />{g.possession === t.abbr ? '🏈 ' : ''}{big ? t.name : t.short} <small style={{ color: 'var(--o-ink3)' }}>{t.record}</small></span><Score><b>{g.state === 'pre' ? '' : t.score ?? ''}</b></Score>
     </div>
   );
   return (
@@ -161,7 +176,7 @@ function GameCard({ g }: { g: NflGame }) {
       <GameLine g={g} />
       {g.state !== 'pre' && g.home.lines.length > 0 && (
         <table style={{ width: '100%', fontSize: 11, marginTop: 6, color: 'var(--o-ink2)', fontVariantNumeric: 'tabular-nums' }}>
-          <tbody>{[g.away, g.home].map(t => <tr key={t.id}><td>{t.abbr}</td>{t.lines.map((v, i) => <td key={i} style={{ textAlign: 'right' }}>{v}</td>)}<td style={{ textAlign: 'right', fontWeight: 700 }}><Score>{t.score}</Score></td></tr>)}</tbody>
+          <tbody>{[g.away, g.home].map(t => <tr key={t.id}><td><NflLogo abbr={t.abbr} />{t.abbr}</td>{t.lines.map((v, i) => <td key={i} style={{ textAlign: 'right' }}>{v}</td>)}<td style={{ textAlign: 'right', fontWeight: 700 }}><Score>{t.score}</Score></td></tr>)}</tbody>
         </table>
       )}
       {g.state === 'in' && g.lastPlay && <div style={{ fontSize: 11.5, marginTop: 6, color: 'var(--o-ink2)' }}>{g.redZone ? <b style={{ color: '#ff453a' }}>Red zone · </b> : null}<Score>{g.lastPlay}</Score></div>}
@@ -184,8 +199,8 @@ function Playoffs({ table }: { table: NflStandingRow[] }) {
             <div key={conf}>
               <div className="lab">{conf}</div>
               <table className="otable"><tbody>
-                {seeds.map(r => <tr key={r.id}><td style={{ width: 24 }}><b>{r.seed}</b></td><td>{r.name}<small style={{ color: 'var(--o-ink3)' }}>{r.seed! <= 4 ? ` · ${r.div.replace(`${conf} `, '')} leader` : ' · wild card'}{r.seed === 1 ? ' · bye' : ''}</small></td><td className="n"><Score>{r.w}-{r.l}{r.t ? `-${r.t}` : ''}</Score></td></tr>)}
-                {hunt.map(r => <tr key={r.id} style={{ color: 'var(--o-ink3)' }}><td /><td>{r.name} <small>· in the hunt</small></td><td className="n">{r.w}-{r.l}</td></tr>)}
+                {seeds.map(r => <tr key={r.id}><td style={{ width: 24 }}><b>{r.seed}</b></td><td><NflLogo abbr={r.abbr} />{r.name}<small style={{ color: 'var(--o-ink3)' }}>{r.seed! <= 4 ? ` · ${r.div.replace(`${conf} `, '')} leader` : ' · wild card'}{r.seed === 1 ? ' · bye' : ''}</small></td><td className="n"><Score>{r.w}-{r.l}{r.t ? `-${r.t}` : ''}</Score></td></tr>)}
+                {hunt.map(r => <tr key={r.id} style={{ color: 'var(--o-ink3)' }}><td /><td><NflLogo abbr={r.abbr} />{r.name} <small>· in the hunt</small></td><td className="n">{r.w}-{r.l}</td></tr>)}
               </tbody></table>
             </div>
           );
@@ -233,7 +248,7 @@ function Divisions({ table }: { table: NflStandingRow[] }) {
             <table className="otable">
               <thead><tr><th>Team</th><th className="n">W-L</th><th className="n">PF</th><th className="n">PA</th><th className="n">Strk</th></tr></thead>
               <tbody>{table.filter(r => r.div === div).sort((a, b) => b.pct - a.pct || b.diff - a.diff).map(r => (
-                <tr key={r.id} className={r.abbr === 'NE' ? 'me' : ''}><td>{r.name.split(' ').slice(-1)[0]}{r.seed && r.seed <= 7 ? <small style={{ color: 'var(--o-ink3)' }}> ({r.seed})</small> : null}</td><td className="n"><Score>{r.w}-{r.l}{r.t ? `-${r.t}` : ''}</Score></td><td className="n">{r.pf}</td><td className="n">{r.pa}</td><td className="n">{r.streak}</td></tr>
+                <tr key={r.id} className={r.abbr === 'NE' ? 'me' : ''}><td><NflLogo abbr={r.abbr} />{r.name.split(' ').slice(-1)[0]}{r.seed && r.seed <= 7 ? <small style={{ color: 'var(--o-ink3)' }}> ({r.seed})</small> : null}</td><td className="n"><Score>{r.w}-{r.l}{r.t ? `-${r.t}` : ''}</Score></td><td className="n">{r.pf}</td><td className="n">{r.pa}</td><td className="n">{r.streak}</td></tr>
               ))}</tbody>
             </table>
           </div>

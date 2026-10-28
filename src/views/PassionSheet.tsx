@@ -8,6 +8,7 @@ import { F1Page } from './F1Page';
 import { MlbPage } from './MlbPage';
 import { NbaPage } from './NbaPage';
 import { RoyalPage } from './RoyalPage';
+import { FashionPage } from './FashionPage';
 import { SkiPage } from './SkiPage';
 import { SpacePage } from './SpacePage';
 import { DakarPage } from './DakarPage';
@@ -19,6 +20,9 @@ import { NflPage } from './NflPage';
 import { ApplePage } from './ApplePage';
 import { AcPage } from './AcPage';
 import { WecPage } from './WecPage';
+import { FootballPage } from './FootballPage';
+import { OlympicsPage } from './OlympicsPage';
+import { MorePage } from './MorePage';
 import { PASSION } from '../core/passions';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, hhmm, isNight } from '../core/time';
@@ -41,7 +45,7 @@ const mineOf = (e: ObsEvent): [Side, Side] | null => {
 
 /** The page of a passion: dedicated pages where there is one, the generic page otherwise. */
 export function PassionBody({ id }: { id: PassionId }) {
-  return <>{id === 'elez' ? <ElectionsPage /> : id === 'mlb' ? <MlbPage /> : id === 'f1' ? <F1Page /> : id === 'nba' ? <NbaPage /> : id === 'cfb' ? <CfbPage /> : id === 'wec' ? <WecPage /> : id === 'royal' ? <RoyalPage /> : id === 'sci' ? <SkiPage /> : id === 'space' ? <SpacePage /> : id === 'dakar' ? <DakarPage /> : id === 'apple' ? <ApplePage /> : id === 'ac' ? <AcPage /> : id === 'cicl' ? <CyclingPage /> : id === 'awards' ? <AwardsPage /> : id === 'milan' || id === 'pats' || id === 'texas' ? <TeamPage id={id} /> : id === 'tennis' ? <TennisPage /> : id === 'nfl' ? <NflPage /> : <GenericPage id={id} />}</>;
+  return <>{id === 'elez' ? <ElectionsPage /> : id === 'mlb' ? <MlbPage /> : id === 'f1' ? <F1Page /> : id === 'nba' ? <NbaPage /> : id === 'cfb' ? <CfbPage /> : id === 'wec' ? <WecPage /> : id === 'fashion' ? <FashionPage /> : id === 'royal' ? <RoyalPage /> : id === 'sci' ? <SkiPage /> : id === 'space' ? <SpacePage /> : id === 'dakar' ? <DakarPage /> : id === 'apple' ? <ApplePage /> : id === 'ac' ? <AcPage /> : id === 'cicl' ? <CyclingPage /> : id === 'awards' ? <AwardsPage /> : id === 'milan' || id === 'pats' || id === 'texas' || id === 'dodgers' ? <TeamPage id={id} /> : id === 'tennis' ? <TennisPage /> : id === 'nfl' ? <NflPage /> : id === 'wc' ? <FootballPage /> : id === 'oly' ? <OlympicsPage /> : id === 'more' ? <MorePage /> : <GenericPage id={id} />}</>;
 }
 
 export function PassionSheet() {
@@ -71,7 +75,7 @@ export function PassionSheet() {
         <span className="s-esc">esc</span>
       </div>
       <div className="s-wrap">
-        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'royal' ? <RoyalPage /> : passion.id === 'sci' ? <SkiPage /> : passion.id === 'space' ? <SpacePage /> : passion.id === 'dakar' ? <DakarPage /> : passion.id === 'apple' ? <ApplePage /> : passion.id === 'ac' ? <AcPage /> : passion.id === 'cicl' ? <CyclingPage /> : passion.id === 'awards' ? <AwardsPage /> : passion.id === 'milan' || passion.id === 'pats' || passion.id === 'texas' ? <TeamPage id={passion.id} /> : passion.id === 'tennis' ? <TennisPage /> : passion.id === 'nfl' ? <NflPage /> : <GenericPage id={passion.id} />}
+        {passion.id === 'elez' ? <ElectionsPage /> : passion.id === 'mlb' ? <MlbPage /> : passion.id === 'f1' ? <F1Page /> : passion.id === 'nba' ? <NbaPage /> : passion.id === 'cfb' ? <CfbPage /> : passion.id === 'wec' ? <WecPage /> : passion.id === 'fashion' ? <FashionPage /> : passion.id === 'royal' ? <RoyalPage /> : passion.id === 'sci' ? <SkiPage /> : passion.id === 'space' ? <SpacePage /> : passion.id === 'dakar' ? <DakarPage /> : passion.id === 'apple' ? <ApplePage /> : passion.id === 'ac' ? <AcPage /> : passion.id === 'cicl' ? <CyclingPage /> : passion.id === 'awards' ? <AwardsPage /> : passion.id === 'milan' || passion.id === 'pats' || passion.id === 'texas' || passion.id === 'dodgers' ? <TeamPage id={passion.id} /> : passion.id === 'tennis' ? <TennisPage /> : passion.id === 'nfl' ? <NflPage /> : passion.id === 'wc' ? <FootballPage /> : passion.id === 'oly' ? <OlympicsPage /> : passion.id === 'more' ? <MorePage /> : <GenericPage id={passion.id} />}
       </div>
     </div>
   );

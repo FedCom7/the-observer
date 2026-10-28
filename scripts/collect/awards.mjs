@@ -6,7 +6,7 @@
 //   category, with a daily history kept in the file.
 import { readFile } from 'node:fs/promises';
 import { decode, get, infobox, iso, ordinal, parseDate, wikitext, zoned } from './lib.mjs';
-import { OSCAR_CATS, colonList, festivalCat, nomineeTables, oscarCat, rowTables, scripterRows } from './awardsParse.mjs';
+import { OSCAR_CATS, colonList, festivalCat, labelBlocks, nomineeTables, oscarCat, rowTables, scripterRows } from './awardsParse.mjs';
 import { officialDates, radar } from './awardsWatch.mjs';
 import { films as tmdbFilms, people as tmdbPeople, tmdbKey } from './tmdb.mjs';
 import { analysts } from './awardsAnalysts.mjs';
@@ -21,40 +21,40 @@ const C = S + 1;
 
 /** Every award followed, in the order they usually happen. */
 const AWARDS = [
-  { id: 'cannes', name: 'Cannes Film Festival', short: 'Cannes', group: 'festival', pages: [`${S} Cannes Film Festival`], mode: 'colon', tz: 'Europe/Paris' },
-  { id: 'venice', name: 'Venice Film Festival', short: 'Venice', group: 'festival', pages: [`${ordinal(S - 1943)} Venice International Film Festival`], mode: 'colon', tz: 'Europe/Rome' },
-  { id: 'telluride', name: 'Telluride Film Festival', short: 'Telluride', group: 'festival', pages: [`${ordinal(S - 1973)} Telluride Film Festival`], mode: 'none', lineup: /Official selection|Lineup|Films|Main program/i, tz: 'America/Denver' },
-  { id: 'tiff', name: 'Toronto International Film Festival', short: 'TIFF', group: 'festival', pages: [`${S} Toronto International Film Festival`], mode: 'colon', tz: 'America/Toronto' },
-  { id: 'nyff', name: 'New York Film Festival', short: 'NYFF', group: 'festival', pages: [`${S} New York Film Festival`], mode: 'none', lineup: /Main Slate/i, tz: 'America/New_York' },
-  { id: 'gotham', name: 'Gotham Awards', short: 'Gotham', group: 'critics', pages: [`Gotham Independent Film Awards ${S}`, `${S} Gotham Awards`], tz: 'America/New_York' },
-  { id: 'nbr', name: 'National Board of Review', short: 'NBR', group: 'critics', pages: [`National Board of Review Awards ${S}`], mode: 'auto', tz: 'America/New_York' },
-  { id: 'nyfcc', name: 'New York Film Critics Circle', short: 'NYFCC', group: 'critics', pages: [`${S} New York Film Critics Circle Awards`], mode: 'auto', tz: 'America/New_York' },
-  { id: 'lafca', name: 'Los Angeles Film Critics Association', short: 'LAFCA', group: 'critics', pages: [`${S} Los Angeles Film Critics Association Awards`], mode: 'auto', tz: 'America/Los_Angeles' },
-  { id: 'ccda', name: "Critics' Choice Documentary Awards", short: 'CC Docs', group: 'critics', pages: [`${ordinal(S - 2015)} Critics' Choice Documentary Awards`], tz: 'America/Los_Angeles' },
-  { id: 'cca', name: "Critics' Choice Awards", short: 'Critics Choice', group: 'critics', pages: [`${ordinal(C - 1995)} Critics' Choice Awards`], tz: 'America/Los_Angeles' },
-  { id: 'globes', name: 'Golden Globe Awards', short: 'Globes', group: 'major', pages: [`${ordinal(C - 1943)} Golden Globe Awards`], tz: 'America/Los_Angeles' },
-  { id: 'nsfc', name: 'National Society of Film Critics', short: 'NSFC', group: 'critics', pages: [`${S} National Society of Film Critics Awards`], mode: 'auto', tz: 'America/New_York' },
+  { id: 'cannes', name: 'Cannes Film Festival', short: 'Cannes', group: 'festival', pages: (S, C) => [`${S} Cannes Film Festival`], mode: 'colon', tz: 'Europe/Paris' },
+  { id: 'venice', name: 'Venice Film Festival', short: 'Venice', group: 'festival', pages: (S, C) => [`${ordinal(S - 1943)} Venice International Film Festival`], mode: 'colon', tz: 'Europe/Rome' },
+  { id: 'telluride', name: 'Telluride Film Festival', short: 'Telluride', group: 'festival', pages: (S, C) => [`${ordinal(S - 1973)} Telluride Film Festival`], mode: 'none', lineup: /Official selection|Lineup|Films|Main program/i, tz: 'America/Denver' },
+  { id: 'tiff', name: 'Toronto International Film Festival', short: 'TIFF', group: 'festival', pages: (S, C) => [`${S} Toronto International Film Festival`], mode: 'colon', tz: 'America/Toronto' },
+  { id: 'nyff', name: 'New York Film Festival', short: 'NYFF', group: 'festival', pages: (S, C) => [`${S} New York Film Festival`], mode: 'none', lineup: /Main Slate/i, tz: 'America/New_York' },
+  { id: 'gotham', name: 'Gotham Awards', short: 'Gotham', group: 'critics', pages: (S, C) => [`Gotham Independent Film Awards ${S}`, `${S} Gotham Awards`], tz: 'America/New_York' },
+  { id: 'nbr', name: 'National Board of Review', short: 'NBR', group: 'critics', pages: (S, C) => [`National Board of Review Awards ${S}`], mode: 'auto', tz: 'America/New_York' },
+  { id: 'nyfcc', name: 'New York Film Critics Circle', short: 'NYFCC', group: 'critics', pages: (S, C) => [`${S} New York Film Critics Circle Awards`], mode: 'auto', tz: 'America/New_York' },
+  { id: 'lafca', name: 'Los Angeles Film Critics Association', short: 'LAFCA', group: 'critics', pages: (S, C) => [`${S} Los Angeles Film Critics Association Awards`], mode: 'auto', tz: 'America/Los_Angeles' },
+  { id: 'ccda', name: "Critics' Choice Documentary Awards", short: 'CC Docs', group: 'critics', pages: (S, C) => [`${ordinal(S - 2015)} Critics' Choice Documentary Awards`], tz: 'America/Los_Angeles' },
+  { id: 'cca', name: "Critics' Choice Awards", short: 'Critics Choice', group: 'critics', pages: (S, C) => [`${ordinal(C - 1995)} Critics' Choice Awards`], tz: 'America/Los_Angeles' },
+  { id: 'globes', name: 'Golden Globe Awards', short: 'Globes', group: 'major', pages: (S, C) => [`${ordinal(C - 1943)} Golden Globe Awards`], tz: 'America/Los_Angeles' },
+  { id: 'nsfc', name: 'National Society of Film Critics', short: 'NSFC', group: 'critics', pages: (S, C) => [`${S} National Society of Film Critics Awards`], mode: 'auto', tz: 'America/New_York' },
   // Sundance at the end of January (the coming edition once its page exists, else the one that opened this season)
-  { id: 'sundance', name: 'Sundance Film Festival', short: 'Sundance', group: 'festival', pages: [`${C} Sundance Film Festival`, `${S} Sundance Film Festival`], mode: 'colon', tz: 'America/Denver' },
-  { id: 'dga', name: 'Directors Guild of America Awards', short: 'DGA', group: 'guild', pages: [`${ordinal(C - 1948)} Directors Guild of America Awards`], tz: 'America/Los_Angeles' },
-  { id: 'ace', name: 'ACE Eddie Awards (editing)', short: 'ACE', group: 'guild', pages: [`American Cinema Editors Awards ${C}`], tz: 'America/Los_Angeles' },
-  { id: 'wga', name: 'Writers Guild of America Awards', short: 'WGA', group: 'guild', pages: [`${ordinal(C - 1948)} Writers Guild of America Awards`], tz: 'America/Los_Angeles' },
-  { id: 'ves', name: 'Visual Effects Society Awards', short: 'VES', group: 'guild', pages: [`${ordinal(C - 2002)} Visual Effects Society Awards`], tz: 'America/Los_Angeles' },
-  { id: 'csa', name: 'Artios Awards (casting)', short: 'CSA', group: 'guild', pages: [`${ordinal(C - 1985)} Artios Awards`], tz: 'America/Los_Angeles' },
-  { id: 'muahs', name: 'Make-Up Artists & Hair Stylists Guild', short: 'MUAHS', group: 'guild', pages: [`Make-Up Artists & Hair Stylists Guild Awards ${S}`], tz: 'America/Los_Angeles' },
-  { id: 'annie', name: 'Annie Awards (animation)', short: 'Annie', group: 'guild', pages: [`${ordinal(C - 1973)} Annie Awards`], tz: 'America/Los_Angeles' },
-  { id: 'bafta', name: 'BAFTA Film Awards', short: 'BAFTA', group: 'major', pages: [`${ordinal(C - 1947)} British Academy Film Awards`], tz: 'Europe/London' },
-  { id: 'cdg', name: 'Costume Designers Guild Awards', short: 'CDG', group: 'guild', pages: [`${ordinal(C - 1998)} Costume Designers Guild Awards`], tz: 'America/Los_Angeles' },
-  { id: 'pga', name: 'Producers Guild of America Awards', short: 'PGA', group: 'guild', pages: [`${ordinal(C - 1989)} Producers Guild of America Awards`], tz: 'America/Los_Angeles' },
-  { id: 'adg', name: 'Art Directors Guild Awards', short: 'ADG', group: 'guild', pages: [`Art Directors Guild Awards ${S}`], tz: 'America/Los_Angeles' },
-  { id: 'sag', name: 'Actor Awards (SAG-AFTRA)', short: 'Actor Awards', group: 'guild', pages: [`${ordinal(C - 1994)} Actor Awards`], tz: 'America/Los_Angeles' },
-  { id: 'cas', name: 'Cinema Audio Society Awards', short: 'CAS', group: 'guild', pages: [`Cinema Audio Society Awards ${S}`], tz: 'America/Los_Angeles' },
-  { id: 'spirit', name: 'Independent Spirit Awards', short: 'Spirit', group: 'critics', pages: [`${ordinal(C - 1985)} Independent Spirit Awards`], tz: 'America/Los_Angeles' },
-  { id: 'mpse', name: 'Golden Reel Awards (sound editing)', short: 'MPSE', group: 'guild', pages: [`Golden Reel Awards ${S}`], tz: 'America/Los_Angeles' },
-  { id: 'asc', name: 'American Society of Cinematographers', short: 'ASC', group: 'guild', pages: [`${S} American Society of Cinematographers Awards`], tz: 'America/Los_Angeles' },
-  { id: 'scripter', name: 'USC Scripter Awards (adaptation)', short: 'Scripter', group: 'guild', pages: ['USC Scripter Awards'], mode: 'scripter', tz: 'America/Los_Angeles' },
-  { id: 'scl', name: 'Society of Composers & Lyricists Awards', short: 'SCL', group: 'guild', pages: [`${ordinal(C - 2019)} Society of Composers & Lyricists Awards`], tz: 'America/Los_Angeles' },
-  { id: 'oscars', name: 'Academy Awards', short: 'Oscars', group: 'oscars', pages: [`${ordinal(C - 1928)} Academy Awards`], tz: 'America/Los_Angeles' },
+  { id: 'sundance', name: 'Sundance Film Festival', short: 'Sundance', group: 'festival', pages: (S, C) => [`${C} Sundance Film Festival`, `${S} Sundance Film Festival`], mode: 'colon', tz: 'America/Denver' },
+  { id: 'dga', name: 'Directors Guild of America Awards', short: 'DGA', group: 'guild', pages: (S, C) => [`${ordinal(C - 1948)} Directors Guild of America Awards`], tz: 'America/Los_Angeles' },
+  { id: 'ace', name: 'ACE Eddie Awards (editing)', short: 'ACE', group: 'guild', pages: (S, C) => [`American Cinema Editors Awards ${C}`], tz: 'America/Los_Angeles' },
+  { id: 'wga', name: 'Writers Guild of America Awards', short: 'WGA', group: 'guild', pages: (S, C) => [`${ordinal(C - 1948)} Writers Guild of America Awards`], tz: 'America/Los_Angeles' },
+  { id: 'ves', name: 'Visual Effects Society Awards', short: 'VES', group: 'guild', pages: (S, C) => [`${ordinal(C - 2002)} Visual Effects Society Awards`], tz: 'America/Los_Angeles' },
+  { id: 'csa', name: 'Artios Awards (casting)', short: 'CSA', group: 'guild', pages: (S, C) => [`${ordinal(C - 1985)} Artios Awards`], tz: 'America/Los_Angeles' },
+  { id: 'muahs', name: 'Make-Up Artists & Hair Stylists Guild', short: 'MUAHS', group: 'guild', pages: (S, C) => [`Make-Up Artists & Hair Stylists Guild Awards ${S}`], tz: 'America/Los_Angeles' },
+  { id: 'annie', name: 'Annie Awards (animation)', short: 'Annie', group: 'guild', pages: (S, C) => [`${ordinal(C - 1973)} Annie Awards`], tz: 'America/Los_Angeles' },
+  { id: 'bafta', name: 'BAFTA Film Awards', short: 'BAFTA', group: 'major', pages: (S, C) => [`${ordinal(C - 1947)} British Academy Film Awards`], tz: 'Europe/London' },
+  { id: 'cdg', name: 'Costume Designers Guild Awards', short: 'CDG', group: 'guild', pages: (S, C) => [`${ordinal(C - 1998)} Costume Designers Guild Awards`], tz: 'America/Los_Angeles' },
+  { id: 'pga', name: 'Producers Guild of America Awards', short: 'PGA', group: 'guild', pages: (S, C) => [`${ordinal(C - 1989)} Producers Guild of America Awards`], tz: 'America/Los_Angeles' },
+  { id: 'adg', name: 'Art Directors Guild Awards', short: 'ADG', group: 'guild', pages: (S, C) => [`Art Directors Guild Awards ${S}`], tz: 'America/Los_Angeles' },
+  { id: 'sag', name: 'Actor Awards (SAG-AFTRA)', short: 'Actor Awards', group: 'guild', pages: (S, C) => [`${ordinal(C - 1994)} Actor Awards`], tz: 'America/Los_Angeles' },
+  { id: 'cas', name: 'Cinema Audio Society Awards', short: 'CAS', group: 'guild', pages: (S, C) => [`Cinema Audio Society Awards ${S}`], tz: 'America/Los_Angeles' },
+  { id: 'spirit', name: 'Independent Spirit Awards', short: 'Spirit', group: 'critics', pages: (S, C) => [`${ordinal(C - 1985)} Independent Spirit Awards`], tz: 'America/Los_Angeles' },
+  { id: 'mpse', name: 'Golden Reel Awards (sound editing)', short: 'MPSE', group: 'guild', pages: (S, C) => [`Golden Reel Awards ${S}`], tz: 'America/Los_Angeles' },
+  { id: 'asc', name: 'American Society of Cinematographers', short: 'ASC', group: 'guild', pages: (S, C) => [`${S} American Society of Cinematographers Awards`], tz: 'America/Los_Angeles' },
+  { id: 'scripter', name: 'USC Scripter Awards (adaptation)', short: 'Scripter', group: 'guild', pages: (S, C) => ['USC Scripter Awards'], mode: 'scripter', tz: 'America/Los_Angeles' },
+  { id: 'scl', name: 'Society of Composers & Lyricists Awards', short: 'SCL', group: 'guild', pages: (S, C) => [`${ordinal(C - 2019)} Society of Composers & Lyricists Awards`], tz: 'America/Los_Angeles' },
+  { id: 'oscars', name: 'Academy Awards', short: 'Oscars', group: 'oscars', pages: (S, C) => [`${ordinal(C - 1928)} Academy Awards`], tz: 'America/Los_Angeles' },
 ];
 
 /** Each award's own site, read for explicitly announced dates (twice a day). */
@@ -121,12 +121,43 @@ async function seasonCalendar() {
 }
 
 // ---------- Wikipedia: nominees and winners ----------
+/** The categories of one edition's page, with nominees (winner flagged) and the Oscar each corresponds to. */
+function categoriesOf(a, w, year) {
+  // Festivals: only the official awards section (up to the next top-level heading)
+  const section = (w.split(/\n==\s*(?:Official awards|Awards|Winners|Prizes)\s*==\s*\n/i)[1] ?? '').split(/\n==[^=]/)[0];
+  // ...and of that, the main competition: the text up to its second sub-heading
+  const subs = section.split(/\n(?====[^=])/);
+  const main = subs.slice(1).find(x => !/^===\s*[^=\n]*(?:tribute|honorary|lifetime|juries|jury(?! prize))/i.test(x));
+  const official = main ? `${subs[0]}\n${main}` : subs[0];
+  let cats = a.mode === 'none' ? [] : a.mode === 'scripter' ? scripterRows(w, year) : a.mode === 'colon' ? [...colonList(official, a.group === 'festival'), ...rowTables(official)] : nomineeTables(w);
+  // Critics' winners lists: "Best Film: …" lines, or bold labels followed by bullets
+  if (a.mode === 'auto' && !cats.length) cats = colonList(w);
+  if (a.mode === 'auto' && !cats.length) cats = labelBlocks(w);
+  // Festivals list sections ("In Competition", "Independent awards"): keep only the official prizes
+  return cats.map(c => ({ name: c.category, oscar: a.group === 'festival' ? festivalCat(c.category) : oscarCat(c.category, a.id), nominees: c.nominees.map(({ film, people, role, song, winner }) => ({ film, people, role, song, winner })) }))
+    .filter((c, i, all) => c.name && !/[=|]/.test(c.name) && all.findIndex(x => x.name === c.name) === i);
+}
+
+/** Last year's categories (names only), to lay out the cards before this year's are announced. Read once a season. */
+async function readTemplate(a, prev) {
+  if (a.mode === 'none') return null;
+  // An edition not found is tried again the next day
+  if (prev?.categories.length || (prev && now - Date.parse(prev.fetched) < DAY)) return prev;
+  for (const page of a.pages(S - 1, C - 1)) {
+    const w = await wikitext(page);
+    if (!w) continue;
+    const categories = categoriesOf(a, w, S - 1).map(({ name, oscar }) => ({ name, oscar }));
+    if (categories.length) return { page, fetched: new Date().toISOString(), categories };
+  }
+  return { page: null, fetched: new Date().toISOString(), categories: [] };
+}
+
 async function readEdition(a, prev, force = false) {
   // Pages are re-read every six hours, on every run around their announcement days,
   // and at once when the news radar sees nominations or winners
   const hot = force || prev?.dates?.some(d => Math.abs(Date.parse(d.date) - now) < 2 * DAY);
   if (prev?.fetched && now - Date.parse(prev.fetched) < 6 * 3600e3 && !hot) return prev;
-  for (const page of a.pages) {
+  for (const page of a.pages(S, C)) {
     const w = await wikitext(page);
     if (!w) continue;
     const box = infobox(w, ['date', 'dates', 'ceremony_date', 'awarded_date']) ?? '';
@@ -134,14 +165,7 @@ async function readEdition(a, prev, force = false) {
     const range = (box + w.slice(0, 4000)).match(/\{\{Date range\|(\d{4})\|(\d{1,2})\|(\d{1,2})\|(\d{4})\|(\d{1,2})\|(\d{1,2})/i);
     const d = range ? null : parseDate(box, C);
     const announced = infobox(w, ['announced', 'nominations_announced', 'announcement_date']);
-    // Festivals: only the official awards section (up to the next top-level heading)
-    const section = (w.split(/\n==\s*(?:Official awards|Awards|Winners|Prizes)\s*==\s*\n/i)[1] ?? '').split(/\n==[^=]/)[0];
-    // ...and of that, the main competition: the text up to its second sub-heading
-    const subs = section.split(/\n(?====[^=])/);
-    const main = subs.slice(1).find(x => !/^===\s*[^=\n]*(?:tribute|honorary|lifetime|juries|jury(?! prize))/i.test(x));
-    const official = main ? `${subs[0]}\n${main}` : subs[0];
-    let cats = a.mode === 'none' ? [] : a.mode === 'scripter' ? scripterRows(w, S) : a.mode === 'colon' ? [...colonList(official, a.group === 'festival'), ...rowTables(official)] : nomineeTables(w);
-    if (a.mode === 'auto' && !cats.length) cats = colonList(w);
+    const categories = categoriesOf(a, w, S);
     // Festivals without prizes: the films of the official programme
     let lineup = null;
     if (a.lineup) {
@@ -150,9 +174,6 @@ async function readEdition(a, prev, force = false) {
       const seen = new Set();
       lineup = [...sec.matchAll(/''\[\[(?:([^|\]]*)\|)?([^\]]+)\]\]''/g)].map(m => m[2].trim()).filter(t => !seen.has(t) && seen.add(t)).slice(0, 40);
     }
-    // Festivals list sections ("In Competition", "Independent awards"): keep only the official prizes
-    const categories = cats.map(c => ({ name: c.category, oscar: a.group === 'festival' ? festivalCat(c.category) : oscarCat(c.category, a.id), nominees: c.nominees.map(({ film, people, role, song, winner }) => ({ film, people, role, song, winner })) }))
-      .filter((c, i, all) => all.findIndex(x => x.name === c.name) === i);
     return {
       page, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.replace(/ /g, '_'))}`, fetched: new Date().toISOString(),
       span: range ? [iso(zoned(+range[1], +range[2], +range[3], 12, 0, a.tz)), iso(zoned(+range[4], +range[5], +range[6], 20, 0, a.tz))] : null,
@@ -265,18 +286,23 @@ export async function collectAwards() {
     // the nominations themselves happened when the first article came out
     for (const n of news.filter(x => x.award === a.id)) {
       if (n.kind === 'date' && n.date) add(/nominat/i.test(n.title) ? 'nominations' : 'ceremony', { title: n.title, date: n.date, approx: true, source: n.source, url: n.url });
-      if (n.kind === 'nominations') {
+      // A "nominations are out" headline far from the calendar's nominations date is talk, not the announcement
+      const due = cal.events.find(x => x.award === a.id && x.kind === 'nominations');
+      if (n.kind === 'nominations' && !(due && Date.parse(due.date) - Date.parse(n.time) > 3 * DAY)) {
         const first = news.filter(x => x.award === a.id && x.kind === 'nominations').map(x => x.time).sort()[0];
         add('nominations', { title: n.title, date: first, approx: false, source: n.source, url: n.url });
         if (n.date) add('ceremony', { title: `${a.name} ceremony`, date: n.date, approx: true, source: n.source, url: n.url });
       }
     }
 
+    let template = old?.template ?? null;
+    if (!ed?.categories?.length) try { template = await readTemplate(a, template); } catch (err) { status[`${a.id}-template`] = err.message.slice(0, 50); }
+
     const cats = ed?.categories ?? [];
     const state = cats.some(c => c.nominees.some(n => n.winner)) ? 'winners' : cats.length ? 'nominations' : 'pending';
     const { pages, mode, ...meta } = a;
     void pages; void mode;
-    awards.push({ ...meta, dates: dates.sort((x, y) => x.date.localeCompare(y.date)), state, edition: ed, official, news: news.filter(n => n.award === a.id).slice(0, 5) });
+    awards.push({ ...meta, dates: dates.sort((x, y) => x.date.localeCompare(y.date)), state, edition: ed, template, official, news: news.filter(n => n.award === a.id).slice(0, 5) });
   }
 
   let gd = prev.odds ?? null;

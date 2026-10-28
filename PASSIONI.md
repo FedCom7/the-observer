@@ -16,11 +16,11 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 | Step | Passione | Perché adesso | Stato |
 |---|---|---|---|
-| 1 | MLB · focus Dodgers | Dodgers in NLCS ora, World Series dal 23 ottobre | ✅ |
+| 1 | MLB (generale) + pagina Dodgers | World Series Rays–Brewers dal 23 ottobre (Dodgers eliminati in NLCS) | ✅ |
 | 2 | College Football | Week 8 sabato 17; bowl e playoff a dicembre e gennaio | ✅ |
 | 3 | WEC e Le Mans | 6 Ore di Barcellona domenica 18, finale a Monza l'8 novembre | ✅ |
 | 4 | Famiglia reale | Visita di Stato dell'Oman martedì 20, viaggio ai Caraibi dal 27 | 🟨 |
-| 5 | NBA · focus Lakers | Inizio stagione regolare ~20–21 ottobre | ✅ |
+| 5 | NBA (generale) | Stagione regolare dal 20 ottobre | ✅ |
 | 6 | Formula 1 | GP di Austin 23–25 ottobre | ✅ |
 | 7 | Sci alpino | Sölden 24–25 ottobre; Mondiali a febbraio | ✅ |
 | 8 | Spazio | Lanci continui; Artemis | ✅ |
@@ -33,22 +33,43 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 | 15 | Milan, Patriots, Texas | Partite ogni settimana | ✅ |
 | 16 | Tennis, Grande Slam | Australian Open dal 17 gennaio | ✅ |
 | 17 | NFL | Partite ogni weekend | ✅ |
+| 18 | Settimane della moda (Big 4) | Uomo Milano 15–19 gennaio, Parigi 19–24; Couture 25–28; donna da febbraio | 🟨 |
+| 19 | Mondiali ed Europei (maschili) | Italia–Francia 12 novembre; sorteggio qualificazioni Euro 2028 il 6 dicembre | ✅ |
+| 20 | Olimpiadi (estive e invernali) | Los Angeles 14–30 luglio 2028, Alpi francesi 1–17 febbraio 2030 | ✅ |
+| 21 | Altri sport (MotoGP, F2, F3, WRC, Indy 500, Daytona 500, Vendée Globe) | MotoGP in Malesia dal 30 ottobre | ✅ |
 
 ---
 
 ## MLB ✅
-**Prossimo:** finali di Lega in corso (Dodgers in NLCS) · World Series da venerdì 23 ottobre
+**Prossimo:** World Series Rays–Brewers da venerdì 23 ottobre
 
 **Cosa mi interessa:**
-- **Stagione regolare:** vista generica per capire l'andamento della lega, con focus sui **Dodgers**.
-- **Playoff:** focus su playoff e **World Series**.
+- **Stagione regolare:** solo la situazione generale della lega (settimana, classifiche, corsa ai playoff). Niente partite in home.
+- **Playoff:** tutte le partite in calendario e in home, **World Series** in evidenza.
+- **Dodgers:** pagina dedicata a parte (vedi sotto).
 
-**Piano fonti:**
-- ESPN: classifiche di division e lega, calendario e risultati dei Dodgers, partita in diretta, tabellone dei playoff, notizie.
-- Pagina focus: andamento dei Dodgers partita per partita (vinte e perse e differenza dalla vetta), classifiche di division, tabellone playoff con le serie, World Series in evidenza.
+**Fatto (23 ottobre):** pagina generale come NFL e College Football, senza riquadri per una squadra: prossima partita o diretta, settimana della stagione o serie in corso, miglior record, partite di oggi e risultati di ieri (lette dalla pagina stessa dallo scoreboard ESPN), "se la stagione finisse oggi" (6 per lega), grafico della differenza tra punti fatti e subiti di tutte le 30 squadre, sei division, tabellone e calendario dei playoff, notizie. **Home:** le partite della stagione regolare non entrano più nel calendario; ci entrano solo quelle dei playoff. Un riquadro "MLB" nella fila delle classifiche mostra la settimana e i migliori record, a ottobre lo stato delle serie. Il Live wall continua a mostrare tutte le partite di oggi e domani. Fonte: solo ESPN.
 
-**Fatto (16 ottobre):** pagina dedicata con prossima partita dei Dodgers e conto alla rovescia, stato della serie (pallini delle vittorie), tabellone completo da Wild Card a World Series ricostruito dai calendari playoff delle 12 squadre, grafico NYT "partite sopra il 50%" della stagione, 6 classifiche di division, calendario Dodgers e notizie. Tutte le partite dei playoff entrano in calendario (Dodgers e World Series in evidenza). Fonte: solo ESPN.
-**Da fare a primavera:** in stagione regolare aggiungere la corsa alle Wild Card.
+---
+
+## Los Angeles Dodgers ✅
+**Cosa mi interessa:** una pagina squadra come Milan, Patriots e Texas.
+
+**Fatto (23 ottobre):** prossima partita o diretta, stagione (record, posizione, seed, punti fatti e subiti), forma, bacheca (9 World Series, 27 pennant, titoli di division, playoff), i Dodgers a ottobre serie per serie con il tabellone, l'andamento "partite sopra il 50%" della stagione regolare, mappa della stagione, confronto con rivali (Giants, Padres, Yankees, Angels) e squadre più forti del momento, storia dal 1883 (Wikipedia "List of Los Angeles Dodgers seasons"), precedenti con i rivali (Wikipedia e ESPN dal 2001), calendario e notizie. Le partite dei Dodgers restano in home tutto l'anno, come quelle dei Patriots.
+
+**Dodgers, schede (25 ottobre):** **Season** (corsa partita per partita rispetto alla NL, mese per mese, ottobre, margine di ogni partita) e **Power** (posizione in MLB in 13 metriche con le rivali di division, migliori battitori e lanciatori per WAR). Home invariata.
+
+**MLB, schede (25 ottobre):** la pagina generale resta la home ("Now"); in alto `season`, `power`, `teams`, `players`, `awards`, `offseason`, `history`, `how` (`/p/mlb?tab=…`).
+- **Season:** giorno per giorno con box score (parziali per inning, R/H/E, probabilità di vittoria, battuta e lancio) e la corsa di tutte le squadre partita per partita (vittorie meno sconfitte).
+- **Power:** punti segnati contro subiti, lineup (wRC+) contro staff (FIP), rotazione contro bullpen, tabella colorata delle 30 squadre (differenza punti, WAR, wRC+, OPS, potenza, disciplina, RISP, FIP, ERA partenti e bullpen, K/9, BB/9, HR/9, difesa, corsa sulle basi), situazioni (partite di un punto, extra inning, contro squadre vincenti, casa/trasferta, ultime 10, contro mancini e destri) e fortuna (vittorie rispetto all'atteso pitagorico).
+- **Teams:** scheda di ogni squadra con le rivali di division e i migliori giocatori per WAR.
+- **Players:** battitori (wRC+ contro WAR), partenti (WAR contro FIP), rilievi.
+- **Awards race:** mercati Kalshi quando aperti, leader di WAR per MVP e Cy Young di AL e NL.
+- **Off-season:** scambi, firme, svincoli e waiver degli ultimi 30 giorni.
+- **History:** World Series per franchigia (121 dal 1903), ogni stagione dal 2000 di tutte le squadre, elenco delle World Series.
+- **How it works:** formato, playoff, regole dal 2023, metriche (OPS, wRC+, WAR, FIP, record pitagorico).
+
+**Fonti nuove:** raccoglitore `scripts/collect/mlbSeason.mjs` → `public/data/mlb-season.json` (MLB Stats API: partite, classifiche con split, statistiche di squadra e giocatori con sabermetrics, transazioni; Kalshi; Wikipedia per le World Series). wRC+ di squadra, difesa e corsa sulle basi sono somme dei giocatori; il FIP di squadra è calcolato con la costante della lega.
 
 ---
 
@@ -64,6 +85,19 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - Pagina focus: tabellone a 12 squadre, calendario dei bowl, andamento del ranking settimana per settimana.
 
 **Fatto (16 ottobre):** in calendario tutte le 47 partite di postseason con orario reale: 36 bowl e le 11 del College Football Playoff (primo turno 19–20 dicembre, quarti a Fiesta, Cotton, Rose e Peach Bowl, semifinali a Orange e Sugar Bowl, finale a Las Vegas il 26 gennaio alle 01:30). Gli orari non ancora fissati sono segnati TBC. In calendario anche gli scontri della settimana tra squadre del Top 25. La pagina ha il tabellone a 12 squadre (si riempie dopo il Selection Sunday), il grafico in stile NYT dell'andamento del ranking AP (prime 10 più Texas), la classifica AP (e quella del comitato CFP da novembre), Texas in evidenza e notizie. Fonte: solo ESPN (anche l'API core per lo storico dei ranking).
+
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `rankings`, `conferences`, `heisman`, `history`, `how` (`/p/cfb?tab=…`).
+- **Season:** ogni partita FBS settimana per settimana (filtri: Top 25 e Texas, power four, tutte), con il ranking AP; aprendo una partita box score ESPN con probabilità di vittoria, drive e giocatori; bowl e playoff.
+- **Power:** SP+, EPA per azione, passaggio e corsa, success rate, esplosività, finalizzazione dei drive, linea offensiva, havoc, stuff rate, special teams; mappa attacco–difesa di tutte le 138 squadre, tabella colorata (top 40 o per conference), forza media delle conference, ranking AP contro SP+ (chi è sopravvalutato), probabilità di playoff secondo l'FPI.
+- **Rankings:** AP, Coaches e comitato settimana per settimana, top 25 con movimenti e voti al primo posto, i tre ranking a confronto.
+- **Conferences:** classifiche di ogni conference (record di conference e totale, punti, SP+, AP) e la finale di conference.
+- **Heisman:** il mercato Kalshi quando è aperto (ora non lo è), i quarterback per valore per azione e totale.
+- **History:** campioni dal 1998 (AP finale), per scuola e conference.
+- **How it works:** conference, calendario, playoff a 12, bowl, ranking e metriche.
+
+**Texas:** la pagina squadra ha ora anche **Season** (margini, ranking AP contro le rivali, calendario con box score) e **Power** (posizione tra tutte le FBS in 17 metriche con le tre squadre più forti, Texas dentro la SEC). La home della squadra è invariata.
+
+**Fonti nuove:** raccoglitore `scripts/collect/cfbSeason.mjs` → `public/data/cfb-season.json`: CollegeFootballData (partite, SP+, PPA, statistiche avanzate, ranking, quarterback, campioni), FPI di ESPN, Kalshi. La chiave gratuita CFBD ha 1.000 richieste al mese: il raccoglitore aggiorna al massimo ogni 12 ore (circa 7 richieste) e si ferma se ne restano meno di 100; il roster di Texas legge CFBD una volta al giorno.
 
 ---
 
@@ -87,6 +121,17 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Pagina:** programma del weekend con lo stato delle sessioni, ultima classifica ufficiale per classe con distacchi dal primo della classe, grafico punti degli equipaggi, griglia dei risultati gara per gara (oro, argento, bronzo), costruttori, LMGT3, vincitori della stagione, conto alla rovescia per Le Mans con il vincitore dell'anno prima.
 - **Nota:** il calendario Google che avevi non serve più, perché il sito ufficiale ha tutti gli orari.
 
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `cars`, `lemans`, `how` (`/p/wec?tab=…`).
+- **Season:** ogni sessione di ogni round (prove, qualifiche, hyperpole, gara) con la classifica: vettura, team, equipaggio, giri, tempo, distacco, velocità media, giro migliore e su che giro.
+- **Power:** chi ha la Hypercar più veloce: distacco medio in hyperpole contro il miglior giro in gara, tabelle round per round (hyperpole, giro di gara, miglior piazzamento del costruttore), con la spiegazione del BoP.
+- **Cars & crews:** tutte le vetture per modello con gli equipaggi, Hypercar e LMGT3.
+- **Le Mans:** il costruttore vincitore di ogni edizione dal 1923, vittorie per costruttore, i piloti più vincenti.
+- **How it works:** classi, durata, punti doppi a Le Mans, hyperpole, Balance of Performance.
+
+**Fonti nuove:** raccoglitore `scripts/collect/wecSeason.mjs` → `public/data/wec-season.json`, e ogni sessione in `public/data/wec-sessions/<anno>/<sessione>.json` (pagine pubbliche dei risultati di fiawec.com e delle singole auto; Wikipedia per Le Mans). Le pagine pubbliche mostrano la classe Hypercar; le altre classi si caricano solo con un'interazione dinamica della pagina.
+
+**Problema scoperto (25 ottobre):** il sito del timing Al Kamel (fiawec.alkamelsystems.com) è diventato una nuova applicazione con login, e il raccoglitore non può più leggerne i CSV: da allora `wec.json` non aveva più risultati e la sezione "ultimo risultato ufficiale" della home era vuota. Ora `wec.mjs` usa come riserva le classifiche di gara di fiawec.com (solo Hypercar). Il dettaglio ora per ora e le classi LMGT3 nella home non sono disponibili finché non si trova una fonte pubblica.
+
 ---
 
 ## Famiglia reale inglese 🟨
@@ -98,7 +143,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Eventi straordinari:** matrimoni, funerali ecc., **con orari**.
 
 **Piano fonti:**
-- Court Circular e diario ufficiale: royal.uk blocca le richieste automatiche, quindi va trovato un altro accesso, da verificare.
+- Court Circular e Royal Diary ufficiali: royal.uk blocca gli script (Cloudflare). Risolto (2026-10-20) leggendo le pagine con il lettore pubblico r.jina.ai, una volta ogni 3 ore. Il Diary arriva a ~8 settimane, senza orari. royalbase.com non c'entra (azienda di orchidee).
 - Wikipedia: visite di Stato ed eventi straordinari.
 - Regole fisse per le ricorrenze.
 - Eventuali calendari iCal.
@@ -122,20 +167,25 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 ---
 
 ## NBA ✅
-**Prossimo:** inizio stagione regolare, ~20–21 ottobre
+**Prossimo:** stagione regolare iniziata il 20 ottobre · play-in e playoff da aprile
 
 **Cosa mi interessa:**
-- **Stagione regolare:** vista generica per capire l'andamento della lega, con focus sui **Lakers**.
-- **Playoff:** focus su playoff e **Finals**.
+- **Stagione regolare:** solo la situazione generale della lega (settimana, classifiche, leader). Niente partite in home.
+- **Playoff e Finals:** tutte le partite in calendario e in home.
+- Nessuna squadra seguita in particolare (il focus sui Lakers è stato tolto).
 
-**Piano fonti:**
-- ESPN: classifiche di conference, calendario e risultati dei Lakers, diretta, tabellone dei playoff, notizie.
-- Pagina focus: andamento dei Lakers, classifica di conference con la zona play-in e playoff, tabellone, Finals in evidenza.
+**Fatto (23 ottobre):** pagina generale come NFL: prossima palla a due o diretta, settimana della stagione, miglior record, imbattute e a zero vittorie, partite di stanotte e risultati di ieri (scoreboard ESPN letto dalla pagina), classifiche di conference colorate per zona (1–6 playoff, 7–10 play-in), leader statistici per partita, notizie; da aprile tabellone e calendario dei playoff, prima il tabellone della stagione scorsa in fondo. **Home:** solo le partite di play-in, playoff e Finals; un riquadro "NBA" nella fila delle classifiche mostra la settimana e le prime tre di ogni conference, ai playoff lo stato delle serie. Il Live wall mostra ancora tutte le partite. Fonte: solo ESPN.
 
-**Fatto (16 ottobre):** solo ESPN.
-- **Calendario:** tutte le partite dei Lakers della stagione regolare (incluse quelle della NBA Cup) e, da aprile, tutte quelle di play-in, playoff e Finals.
-- **Pagina:** prossima partita dei Lakers con il conto alla rovescia (o il punteggio in diretta), il loro record e seed, i campioni in carica, le partite in diretta, il grafico NYT delle "partite sopra il 50%" dei Lakers, le classifiche di conference colorate per zona (1–6 playoff, 7–10 play-in), il tabellone dei playoff, il calendario e le notizie.
-- **Prima dell'inizio della stagione:** la pagina mostra il tabellone e le classifiche 2025–26 (campioni i Knicks, 4–1 sugli Spurs; Lakers eliminati da OKC). Il tabellone della stagione in corso compare da aprile.
+**Schede (24 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `teams`, `players`, `awards`, `history`, `how` (`/p/nba?tab=…`).
+- **Season:** giorno per giorno (giornata dalle 07:00 alle 07:00 di Roma), ogni partita apribile con parziali, probabilità di vittoria, statistiche di squadra e box score dei giocatori; griglia dei risultati squadra per squadra; classifica di conference settimana per settimana.
+- **Power:** tutto per 100 possessi. Mappa attacco–difesa (rating offensivo e difensivo), come segnano (eFG% contro palle perse), come giocano (ritmo contro quota di tiri da tre), tabella colorata delle 30 squadre con i "four factors" in attacco e difesa, zone di tiro (frequenza, percentuale realizzata e concessa: ferro, area, media distanza, triple dall'angolo e frontali), forza per quarto, nel clutch, in casa e in trasferta, riposati o al secondo giorno di back-to-back, forma sulle ultime 5, BPI contro rendimento reale.
+- **Teams:** scheda di ogni squadra con posizione nella lega in ogni metrica (con le rivali di division), mappa di tiro sul campo (attacco e difesa, precisione o frequenza), margini partita per partita, rotazione con TS% e usage.
+- **Players:** punti contro true shooting, leader per partita, tabella di tutti i giocatori regolari.
+- **Awards race:** chi vince il titolo secondo il mercato Kalshi e secondo il BPI di ESPN; corse a MVP, Rookie, Difensore, Sesto uomo, Most Improved, Clutch e Allenatore dell'anno (prezzi Kalshi), andamento settimanale dell'MVP.
+- **History:** titoli per franchigia (80 finali dal 1947), ogni stagione di tutte le squadre dal 2004–05, elenco delle finali.
+- **How it works:** date, formato, NBA Cup, play-in, playoff, regola delle 65 partite, lottery e significato delle metriche.
+
+**Fonti nuove:** raccoglitore `scripts/collect/nbaSeason.mjs` → `public/data/nba-season.json`. Legge una volta sola il box score di ogni partita finita (anche le coordinate dei tiri) e lo tiene in `public/data/nba-games/<stagione>/<giorno>.json`, un file per giornata che non si riscrive più. Poi ESPN BPI con lo storico settimanale, Kalshi per titolo e premi, Wikipedia per l'albo d'oro, classifiche ESPN dal 2005.
 
 ---
 
@@ -154,6 +204,16 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Calendario:** ogni sessione della stagione (prove, Sprint Qualifying, Sprint, qualifica, gara) con orario reale. Le gare cancellate (Bahrain, Arabia Saudita) vengono riconosciute ed escluse.
 - **Diretta:** stato delle sessioni e ordine in pista aggiornati ogni minuto.
 - **Pagina:** prossima sessione, ultima gara, campionato (punti, distacco, punti ancora disponibili), programma del weekend, ordine in diretta, grafico NYT dei punti accumulati gara per gara (top 6), classifiche piloti e costruttori, calendario con vincitori e pole, notizie.
+
+**Schede (24 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `drivers`, `circuits`, `history`, `how` (`/p/f1?tab=…`).
+- **Season:** ogni Gran Premio e ogni sessione. Prove e qualifiche: classifica con Q1/Q2/Q3, settori (i migliori in viola) e velocità massima. Gara e sprint: classifica con tempi, giro veloce, soste e gomme; grafico delle posizioni giro per giro; distacchi dal leader; strategie gomme; pit stop più veloci. Sotto: griglia di tutti i risultati della stagione e andamento dei due campionati.
+- **Power:** chi ha la macchina più veloce e dove. Qualifica contro passo gara, tabella colorata delle squadre (passo, settori, velocità massima, usura gomme per mescola, pit stop, partenze, rimonte, ritiri), forza per tipo di circuito (cittadino, veloce, di potenza, tecnico, misto), velocità di punta contro tempo sul giro, piloti (qualifica contro gara), gara per gara e sviluppo nel corso della stagione.
+- **Drivers & teams:** scheda di ogni pilota con foto, punti, vittorie, podi, pole, sfida con il compagno in qualifica e in gara, posizione tra i piloti in ogni metrica, gara per gara.
+- **Circuits:** il calendario; per ogni circuito tipo, lunghezza, curve, vincitore e pole di quest'anno, distacchi delle squadre lì, vincitori del passato e quante volte si vince dalla pole.
+- **History:** titoli piloti e costruttori, più vittorie per pilota e per squadra, quanto conta la pole decennio per decennio, tutti i campioni dal 1950.
+- **How it works:** punti, weekend normale e sprint, qualifiche, gomme, regolamento 2026 e significato delle metriche.
+
+**Fonti nuove:** raccoglitore `scripts/collect/f1Season.mjs` → `public/data/f1-season.json`, e ogni sessione finita in `public/data/f1-sessions/<anno>/<sessione>.json` (OpenF1: risultati, giri con settori e speed trap, stint, pit stop, safety car, classifiche dopo ogni gara; riletta per 6 ore dopo la fine per le penalità, poi non più). Storia da Jolpica (archivio Ergast): campioni e vincitori di ogni GP dal 1950, letti una volta. Il tipo di circuito, la lunghezza e le curve sono una tabella fissa nel raccoglitore.
 
 ---
 
@@ -178,6 +238,19 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Mondiali di Crans-Montana (1–14 febbraio 2027):** sezione dedicata con griglia giorno per giorno (donne sopra, uomini sotto, colore per disciplina) e conto alla rovescia.
 - **Pagina:** prossima gara con gli orari delle manche, calendario per località, ultimi risultati con gli azzurri evidenziati, classifiche e notizie.
 - **Nota:** il calendario iCal FIS che mi avevi dato contiene gli stessi dati ma senza orari; la pagina evento FIS li ha.
+
+**Schede (24 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `athletes`, `venues`, `worlds`, `history`, `how` (`/p/sci?tab=…`).
+- **Season:** risultato completo di ogni gara (tutti i classificati, prima e seconda manche con la posizione, tempo, distacco, punti, sci usati, chi è uscito), chi ha rimontato nella seconda manche, marche di sci nella top ten; calendario mese per mese con i podi; andamento della Coppa gara per gara.
+- **Power:** velocità contro tecnica (punti DH+SG contro GS+SL), top 40 per specialità, Coppa delle Nazioni per specialità e totale, punti per marca di sci. Finché la stagione ha meno di 6 gare per genere usa la classifica finale della stagione scorsa (si può cambiare).
+- **Athletes:** scheda di ogni atleta: posizione e punti per specialità, stagione precedente, coppe di cristallo vinte, gare di quest'anno.
+- **Venues:** tutte le località della stagione con le piste (per le classiche), gare con orari e podi.
+- **Crans-Montana 2027:** programma dei Mondiali con orari e risultati, e i favoriti per ogni gara (prime sei per punti di Coppa), italiani in evidenza.
+- **History:** coppe di cristallo dal 1967 (generale e per specialità), più titoli per atleta e per nazione, ogni stagione.
+- **How it works:** le specialità, i punti, la seconda manche, Mondiali e Olimpiadi.
+
+**Fonti nuove:** raccoglitore `scripts/collect/skiSeason.mjs` → `public/data/ski-season.json`, e ogni gara finita in `public/data/ski-races/<stagione>/<gara>.json` (FIS, riletta per 30 ore). Classifiche di Coppa e Coppa delle Nazioni per specialità, stagione in corso e precedente (FIS). Albo d'oro da Wikipedia.
+
+**Correzione (24 ottobre):** durante una gara in corso o in revisione FIS aggiunge una parola di stato e la disciplina veniva letta come "live" o "review" (successo oggi con il gigante di Sölden). Sistemato in `scripts/collect/ski.mjs`.
 
 ---
 
@@ -220,6 +293,15 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Classifiche ufficiali:** generale e di tappa per categoria (moto, auto, classic, ecc.), lette dai dati JSON della pagina classifiche, con tempi e distacchi. Durante la gara si aggiornano a ogni passaggio del raccoglitore (ogni ora online). Oggi mostrano l'edizione 2026: Benavides vince le moto per 2 secondi su Brabec, Al-Attiyah le auto.
 - **Pagina:** conto alla rovescia, leader, grafico del percorso tappa per tappa (speciale contro totale), classifiche con selettore di categoria, notizie.
 
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `results`, `power`, `route`, `history`, `how` (`/p/dakar?tab=…`).
+- **Last edition:** classifica finale 2026 per categoria (i primi dieci con tempi, distacchi, penalità) e l'ultima tappa.
+- **Manufacturers:** dove si sono piazzati i costruttori nella top ten, vittorie dal 1979 e negli ultimi dieci anni, il costruttore vincitore di ogni edizione (auto, moto, camion).
+- **Route 2027:** ogni giornata con speciale e trasferimento, partenza e arrivo.
+- **History:** i più vincenti, ogni vincitore diviso per epoca (Africa, Sud America, Arabia Saudita).
+- **How it works:** speciali, navigazione, tappe marathon, categorie.
+
+**Fonti nuove:** raccoglitore `scripts/collect/dakarSeason.mjs` → `public/data/dakar-season.json` (vincitori da Wikipedia, una volta a settimana). Le classifiche delle singole tappe precedenti non sono leggibili (ogni tappa ha una chiave generata dalla pagina): si usano la finale e l'ultima tappa.
+
 ---
 
 ## Apple ✅
@@ -239,6 +321,22 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Uscite di prodotti:** dai comunicati della Newsroom, letti nella sezione "Pricing and Availability". Per ogni prodotto: data di annuncio, apertura preordini, arrivo nei negozi e prezzo. Le date entrano in calendario. Oggi: Apple TV 4K nei negozi dal 13 novembre, HomePod mini dal 30 ottobre.
 - **Pagina:** prossimo keynote, prossimo prodotto in arrivo, storico keynote, calendario grafico delle uscite (annuncio, preordine, negozio), schede prodotto, Newsroom.
 
+**Fatto (22 ottobre):** la pagina diventa a schede (si aprono anche con `/p/apple?tab=events`, `products`, `software`, `newsroom`, `rumors`, `aapl`).
+- **Now:** countdown al prossimo evento (appena apple.com lo pubblica; altrimenti i giorni dall'ultimo), al prossimo momento di lancio (preordini o negozi) e alla trimestrale. *Launch board*: ogni prodotto annunciato con i passi annuncio → preordini → negozi e countdown live. Calendario grafico delle uscite, l'ultimo evento con i prodotti presentati (immagini da apple.com), Newsroom ufficiale accanto ai rumor.
+- **Events:** tutti i 110 eventi dal 1984 (Wikipedia, "List of Apple Inc. media events"), con tagline e cosa è stato presentato; grafico anno × mese che mostra il passaggio dai Macworld di gennaio all'evento iPhone di settembre.
+- **Products:** *product clock* stile Buyer's Guide: per 26 linee, giorni dall'ultimo aggiornamento contro il ciclo medio (Just updated, Mid-cycle, Due, Overdue) e i lanci in arrivo; tutte le uscite dal 2007 su una griglia (Wikipedia, "List of Apple products").
+- **Software:** versione pubblica e beta/RC in corso di ogni OS e di Xcode, timeline beta → release (feed releases di Apple Developer; lo storico si accumula da ora).
+- **Newsroom:** l'archivio completo dal 2000 (~2.560 articoli, `apple-archive.json`, letto per intero la prima volta e poi solo le pagine nuove), con tipo e argomento di ogni articolo: argomenti anno per anno, articoli per anno, ricerca.
+- **Rumours:** MacRumors e 9to5Mac, con i rumor separati dalle notizie, accanto a quello che Apple ha detto davvero.
+- **AAPL:** prezzo e 5 anni di chiusure (Nasdaq), data attesa della trimestrale con consenso EPS, effetto keynote sul titolo, fatturato di ogni trimestre dal 2001 letto dai comunicati "Apple reports … quarter results".
+
+**Fatto (22 ottobre, sera):**
+- **Eventi annunciati alla stampa:** Apple ora fa anche "launch experience" (13 ottobre "Welcome home" a New York, 28 ottobre "Pro and tell" a Los Angeles) che non compaiono su apple.com/apple-events. Il collector legge i titoli d'annuncio da Google News (non quelli con "expected", "reportedly" o domande) e conta un evento quando lo riportano due testate o una affidabile (9to5Mac, MacRumors, Bloomberg, CNBC, Reuters…). Data, tagline e città dai titoli, orario abituale 10:00 Pacific. Countdown in Now, evento nel calendario e, finché Wikipedia non lo aggiunge, nella storia.
+- **Mark Gurman:** i suoi articoli Bloomberg, i video e la newsletter/podcast Power On (via Google News) e le testate che lo citano nel titolo, in Rumours e in cima alla card rumor di Now.
+- **Bilancio Apple (AAPL):** dai depositi 10-Q e 10-K su SEC EDGAR dal 2016. Vendite per prodotto (iPhone, Services, Mac, iPad, Wearables; dal 2019) e per area (Americas, Europe, Greater China, Japan, Rest of Asia Pacific), con classifica dell'ultimo trimestre, crescita annua e ultimi 12 mesi; conto economico degli ultimi otto trimestri; margini lordo e operativo e peso dei Services; stato patrimoniale (cassa e titoli, debito, patrimonio netto). Il Q4 è l'anno meno i primi tre trimestri. La cache SEC sta in `apple-archive.json`; i depositi nuovi si leggono una volta ogni 12 ore.
+- **Inviti da appleinvites.com** (archivio di appassionati con ogni invito Apple, aggiornato in poche ore): immagine dell'invito, giorno d'invio, data dell'evento, cosa ha annunciato Apple, link al keynote su YouTube e Podcast, anche per tutte le WWDC. L'immagine compare sopra il countdown del prossimo evento e nell'ultimo evento; la scheda Events ha la galleria di tutti gli inviti, e la storia guadagna i "launch" che Wikipedia non elenca (4 marzo 2026, 19 febbraio 2025). Ha la precedenza sui titoli di Google News, che restano come riserva.
+- **Newsroom per tipo di notizia:** ogni articolo dell'archivio ha un gruppo (Nuovi prodotti, Software e funzioni, Servizi e intrattenimento, Eventi e keynote, Apple Store, Azienda e risultati, Pianeta e comunità, Storie, Altro). La ricerca usa tutta la larghezza e mostra una colonna per gruppo; un clic su un gruppo apre l'elenco completo.
+
 ---
 
 ## America's Cup ✅
@@ -257,6 +355,16 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Risultati 2026:** Luna Rossa vince entrambe le preliminari (63 punti a Cagliari, 71 a Napoli), New Zealand seconda.
 - **Pagina:** conto alla rovescia per il Match (10 luglio 2027), podi delle regate, grafico NYT dei punti accumulati prova per prova, classifiche finali, elenco prove con vincitori, notizie.
 
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `naples`, `history`, `how` (`/p/ac?tab=…`).
+- **Races:** il piazzamento di ogni barca in ogni prova delle regate preliminari (podi colorati), squadre in ordine finale.
+- **Power:** chi va più veloce: piazzamento medio contro quota di podi, vittorie di prova, costanza; equipaggi femminili e giovanili a parte.
+- **Naples 2027:** la 38ª edizione, il defender, la Louis Vuitton Cup, Luna Rossa, le barche AC75 e AC40.
+- **History:** tutte le sfide dal 1851 (vincitore, punteggio, sede), Coppe per nazione, quante volte ha vinto il defender.
+- **How it works:** sfida, Protocol, Match, regate preliminari, Louis Vuitton Cup.
+
+**Fonti nuove:** raccoglitore `scripts/collect/acHistory.mjs` → `public/data/ac-history.json` (Wikipedia, una volta a settimana).
+
+
 ## Ciclismo ✅
 **Interessi:** calendario UCI, solo uomini élite. WorldTour (classi 1.UWT e 2.UWT), con in evidenza Monumento e grandi giri e le altre corse più importanti; Mondiali (CM) ed Europei (CC). Niente Women's WorldTour né ProSeries.
 
@@ -267,19 +375,19 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
   - tappe con prima partenza e ultimo arrivo;
   - classifiche ufficiali: tappa, generale dopo ogni tappa, punti, montagna, giovani, squadre.
 - **Corse RCS** (Giro, Sanremo, Lombardia, Strade Bianche, Tirreno): orario dal conto alla rovescia del sito (≈), tappe del Giro, podio dell'ultima edizione. La cronotabella del Giro è un'immagine, quindi gli orari delle tappe del Giro restano ≈.
-- **Wikipedia:** vincitori di ogni corsa e di Mondiali ed Europei.
+- **Wikipedia:**
+  - vincitori di ogni corsa e di Mondiali ed Europei;
+  - pagina di ogni corsa dell'anno: podio, maglie con i loro colori, tappe con vincitori, classifiche finali, generale dopo ogni tappa, chi ha guidato ogni classifica tappa per tappa. Serve per le corse senza classifiche ufficiali leggibili (Giro e tutte le non ASO); per le ASO completa i dati. I codici squadra (`TVL men`) si traducono con i template "Cycling data";
+  - campioni nazionali di linea e cronometro dell'anno.
+- **OpenStreetMap Nominatim:** coordinate delle città di tappa per la mappa del percorso (in cache in `public/data/cycling-geo.json`).
 - **Notizie:** Cyclingnews.
 
 **Escluse:** ProCyclingStats e FirstCycling, bloccati da Cloudflare. Anche le loro "API" (first_cycling_api, Cycling_API) li leggono e si fermano allo stesso modo. API commerciali solo a pagamento. TheSportsDB in versione gratuita dà 5 eventi senza orari. Il calendario The Inner Ring (.ics) è manuale e senza orari.
 
-**Pagina:**
-- prossima corsa, prossima Monumento e prossimo grande giro con conto alla rovescia;
-- stagione a colpo d'occhio, con scelta dell'anno;
-- schede di Monumento e grandi giri;
-- grafico NYT dei distacchi in classifica generale tappa per tappa;
-- classifiche e vincitori di tappa;
-- percorso del grande giro con le tappe colorate per terreno;
-- albo dei vincitori e notizie.
+**Pagina** (schermate sopra la mappa: Season, Grand Tours, Monuments, Major classics, Week-long tours, Other races; durante una corsa si apre sulla sua):
+- **Season:** prossima corsa, Monumento e grande giro con conto alla rovescia; stagione a colpo d'occhio; numeri dell'anno, squadre e corridori con più vittorie; podi e maglie dei grandi giri con sotto i vincitori delle classiche; chi indossa le maglie speciali (iridata, europea, campioni nazionali); albo dei vincitori e notizie.
+- **Grand Tours:** un giro alla volta (Giro, Tour, Vuelta) con la mappa del percorso: classifica generale, grafico NYT dei distacchi, maglie, chi le ha indossate tappa per tappa, altre classifiche, tappe con vincitore e leader, percorso per terreno, start list.
+- **Le altre sezioni:** tutte le corse su una schermata, una scheda per corsa (ordine d'arrivo, o podio, maglie e vincitori di tappa), prossime corse, chi vince di più; la mappa mostra solo le corse della sezione.
 
 ## Elezioni americane ✅
 **Interessi:**
@@ -379,6 +487,7 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 
 **Schermate (schede sotto il titolo):**
 - **Overview:** la pagina descritta sopra.
+- **Events:** un Gantt con tutti gli eventi della stagione (barre per i festival, anello per le nomination, pallino per la cerimonia, ★/● se vincitori o nominati sono usciti). Cliccando un evento si apre sotto una card per ogni categoria: prima quelle che corrispondono a un Oscar, TV e teatro in fondo, in un gruppo che si apre a parte. Prima dell'annuncio le card seguono le categorie dell'edizione precedente (lette una volta a stagione da Wikipedia) e restano vuote, con la data delle nomination. Poi si riempiono con i nominati e infine con i vincitori, nascosti dallo spoiler shield.
 - **Tracker:** scheda in stile New York Times. Per categoria, ogni candidato contro ogni precursore, con colonne raggruppate (festival, critici e indipendenti, premi televisivi, guild) e ordinate per data. Pallino pieno = vinto, anello = nominato, puntino = escluso, tratteggio = non ancora annunciato. Una frase in apertura riassume chi guida, poi record e barra della previsione. Per premio, tutte le categorie con nominati e vincitori.
 - **Forecast:** tabella di tutte le categorie con il favorito dell'Observer, degli esperti Gold Derby, di Polymarket e di Kalshi, e quante fonti concordano. Per la categoria scelta, un dot plot delle quattro previsioni e le barre del "perché" (quanto pesa ogni precursore).
 - **The race:** la previsione rifatta dopo ogni annuncio della stagione (chi parte forte e cala, chi sale tardi), l'andamento giornaliero di Gold Derby, Polymarket e Kalshi, e chi è salito o sceso di più.
@@ -434,6 +543,16 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - classifica di tutti i tempi dei titoli Slam, colorata per torneo;
 - campioni degli ultimi dieci anni, notizie.
 
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `season`, `power`, `players`, `slams`, `how` (`/p/tennis?tab=…`).
+- **Season:** ogni Slam della stagione: tabellone dagli ottavi, il percorso del campione, tutte le partite turno per turno.
+- **Power:** Elo generale e per superficie (cemento, terra, erba) dei primi 40, terra contro erba (gli specialisti), ranking ATP contro Elo (chi è classificato troppo in alto o troppo in basso), tabella colorata.
+- **Players:** scheda di ogni giocatore: ranking, Elo per superficie, superficie migliore, Slam vinti, picco, risultati negli Slam dell'anno.
+- **The Slams:** ogni torneo con superficie e caratteristiche, chi l'ha vinto di più, nazioni dei campioni nell'era Open, ultimi 25 campioni.
+- **How it works:** il tabellone a 128, le teste di serie, i set, i punti, ranking ATP ed Elo.
+
+**Fonti nuove:** raccoglitore `scripts/collect/tennisSeason.mjs` → `public/data/tennis-season.json`: tabelloni completi degli Slam conclusi (ESPN, letti una volta), Elo di Tennis Abstract (aggiornato ogni settimana).
+
+
 ## NFL ✅
 **Interessi:** il riepilogo della stagione in corso e tutte le partite del weekend in diretta.
 
@@ -448,6 +567,54 @@ Stato: ⬜ da fare · 🟨 in corso · ✅ sistemata · 💬 da definire insieme
 - **Differenza punti:** grafico di tutte le 32 squadre, raggruppate per division.
 - **In basso:** classifiche delle 8 division (Patriots evidenziati), leader statistici, risultati della settimana precedente.
 
+**Schede (24 ottobre):** la pagina sopra resta la home ("Now"); in alto le schede, apribili anche con `/p/nfl?tab=season`, `power`, `teams`, `leaders`, `race`, `history`, `how`.
+- **Season:** ogni partita della stagione, settimana per settimana. Aprendo una partita: probabilità di vittoria azione per azione, statistiche di squadra, azioni da punti, ogni drive, migliori giocatori (ESPN, in diretta durante la partita). Sotto, la griglia dei risultati squadra per squadra (colore = margine) e la classifica di conference settimana per settimana.
+- **Power:** chi è più forte e in cosa. Mappa attacco–difesa (EPA per azione), come muovono la palla (passaggio contro corsa) e come la fermano, tabella colorata delle 32 squadre in 22 metriche (FPI, EPA, success rate, big play, terzi down, red zone, punti per drive, sack, palle perse, special teams), forza per quarto e nei finali punto a punto, forma sulle ultime tre partite, forza contro calendario affrontato.
+- **Teams:** scheda di ogni squadra: posizione nella lega in ogni metrica (con i rivali di division e la più forte), punti forti e deboli, margini partita per partita, attacco e difesa partita per partita, calendario con i box score.
+- **Leaders:** quarterback (EPA per dropback contro precisione oltre l'atteso) e i primi 10 ESPN in 14 categorie.
+- **Playoff race:** probabilità ESPN di playoff, division, finale di conference e Super Bowl; andamento settimana per settimana delle probabilità di titolo (si registra da questa settimana).
+- **History:** Super Bowl per franchigia, ogni stagione dal 2002 di tutte le squadre (percentuale di vittorie, seed, titoli), elenco dei 60 Super Bowl.
+- **How it works:** date della stagione, formato, calendario, playoff, regole (overtime, kickoff) e significato delle metriche.
+
+**Fonti nuove:** raccoglitore `scripts/collect/nfl.mjs` → `public/data/nfl.json`: tutte le partite (ESPN), play-by-play nflverse (EPA, scaricato al massimo ogni 3 ore), ESPN Football Power Index con lo storico settimanale, Wikipedia (Super Bowl), classifiche ESPN dal 2002.
+
+**Patriots:** la pagina squadra ha ora le schede **Season** (tutte le partite con box score, margini, attacco e difesa partita per partita, corsa nella division e nella AFC) e **Power** (posizione nella lega in ogni metrica, mappa attacco–difesa con rivali e migliori, forza per fase della partita contro la media, forma, confronto con la division). La home della squadra è invariata.
+
+**Patriots, Power più approfondita (24 ottobre):** scouting report automatico (le situazioni in cui attacco e difesa sono tra i migliori e i peggiori della lega); EPA per azione per down, zona del campo e schema (shotgun o sotto il centro, play action, motion, contro o con il blitz, QB fuori dalla tasca, screen, box leggero o affollato), con il confronto con le altre 31 squadre; mappa dei lanci sul campo (sinistra, centro, destra × corto, medio, profondo) e dei corridoi di corsa, in attacco e in difesa; come finiscono i drive rispetto alla media; stile (passaggi oltre l'atteso, shotgun, motion, play action, quarti down, blitz) ed esecuzione (QB colpito, drop, lanci da intercetto, penalità, havoc). Fonti: play-by-play nflverse e charting FTN (play action, motion, blitz, drop).
+
+---
+
+## Schede Roster delle squadre (24 ottobre)
+Milan, Patriots, Texas e Dodgers hanno la scheda **Roster** (`?tab=roster`). Raccoglitore `scripts/collect/rosters.mjs` → `public/data/rosters.json`, ogni squadra al massimo ogni 3 ore.
+- **Patriots:** depth chart (attacco, difesa, special teams) con foto e infortuni; snap giocati settimana per settimana; chi produce (EPA come passatore, corridore, ricevitore); ricevitori (quota di target contro EPA per target); difesa giocatore per giocatore; infortuni; roster completo con draft; età per reparto. Fonti: ESPN e nflverse.
+- **Texas:** leader di stagione, PPA (l'EPA del college) per giocatore, anni di esperienza per reparto, stati di provenienza, roster con hometown. Fonti: ESPN e CollegeFootballData (chiave `CFBD_KEY`: in locale nel `.env`, online va aggiunta ai secret di GitHub).
+- **Dodgers:** lineup (OPS contro presenze), staff (strikeout contro basi su ball per 9 inning), tabelle di battuta e lancio 2026, roster dei 40 con età e provenienza. Fonte: MLB Stats API.
+- **Milan:** finalizzazione (gol contro xG), chi costruisce le azioni (xG chain e build-up), profilo della rosa (età contro minuti), rosa completa con presenze, minuti, gol, xG, assist, xA, tiri, passaggi chiave, cartellini; età per reparto e nazionalità. Fonti: ESPN (Serie A) e Understat.
+
+---
+
+## Settimane della moda (Big 4) 🟨
+**Prossimo:** Milano Moda Uomo FW 2027-28, 15–19 gennaio 2027 · Parigi uomo 19–24 gennaio · Haute Couture Parigi 25–28 gennaio · donna: New York ~11–16 febbraio e Londra ~19–23 febbraio (date attese, non ancora annunciate), Milano 23 febbraio–1 marzo, Parigi 1–9 marzo.
+
+**Fonti ufficiali (gli organizzatori):**
+- **New York:** CFDA (fashioncalendar). Date dagli annunci ufficiali; il calendario sfilata per sfilata è a pagamento, quindi qui solo le date.
+- **Londra:** British Fashion Council, API del sito londonfashionweek.co.uk (programma completo, sfilate e presentazioni).
+- **Milano:** Camera Nazionale della Moda Italiana (cameramoda.it): prossime edizioni e calendario con orari e indirizzi.
+- **Parigi:** FHCM (fhcm.paris): prossime date e calendario finale di Paris Fashion Week e Haute Couture Week.
+- **Collezioni recensite:** WWD Runway (per città) e Vogue Runway (vogue.com/fashion-shows, una pagina per collezione; non indica la città, quindi si abbina per nome del brand a WWD).
+
+**Fatto (20 ottobre):** raccoglitore `scripts/collect/fashion.mjs`, pagina con prossime settimane, anno delle sfilate, programma per settimana e collezioni recensite.
+**Da fare:** foto delle sfilate, diretta streaming, Londra uomo/Firenze se servono.
+
+**Schede (25 ottobre):** la pagina resta la home ("Now"); in alto `cities`, `brands`, `collections`, `how` (`/p/fashion?tab=…`).
+- **Cities:** le settimane di ogni città con date e organizzatore; per ogni settimana con il calendario, quante sfilate e presentazioni partono ora per ora, giorno per giorno, e l'elenco completo.
+- **Brands:** quanto è grande ogni settimana (sfilate, presentazioni, maison), le maison più recensite, chi sfila in più città.
+- **Collections:** le collezioni recensite da WWD e Vogue Runway, stagione per stagione e città per città.
+- **How it works:** il calendario della moda, sfilate e presentazioni, chi organizza, cos'è l'Haute Couture.
+Nessuna fonte nuova: tutto da `fashion.json`. I direttori creativi non sono inclusi (cambiano spesso e non c'è una fonte strutturata affidabile).
+
+
+
 ---
 
 ## Da definire più avanti 💬
@@ -456,3 +623,86 @@ Passioni più complesse, da vedere insieme in seguito. Intanto l'app continua a 
 
 ## Altre passioni da aggiungere
 - 
+
+## Royal Family: diario ufficiale, working royal e mappa (2026-10-20)
+- **Royal Diary** (`royal.uk/media-centre/future-engagements`): tutti gli impegni futuri di ogni working royal con ruolo e luogo; il collector li legge, li geolocalizza (Nominatim, risposte in `public/data/royal-geo.json`) e li mette sulla mappa UK.
+- **Court Circular**: ultime tre settimane di impegni svolti (pallini vuoti sulla mappa, conteggio per persona).
+- **Roster** (`scripts/collect/royalPeople.mjs`): working royal, ritirati, ordine di successione (primi 5), compleanni e anniversari fissi. Da aggiornare a mano solo se Palazzo cambia titoli o ruoli.
+- **Curati**: CHOGM Antigua (1 nov 2026) ed Earthshot Prize Mumbai (17 nov 2026) in `CURATED` di `royal.mjs`.
+- Il calendario/home riceve solo gli eventi notevoli; la pagina Royal e la sua mappa leggono tutto.
+- Limiti: il Diary non ha orari e le agende di Re e Regina compaiono spesso a ridosso; i pin "sfumati" sono solo la città.
+
+
+**Schede (25 ottobre):** la pagina resta la home ("Now"); in alto `family`, `workload`, `travels`, `patronages`, `ceremonies` (`/p/royal?tab=…`).
+- **Family & succession:** i working royal con foto, età, ruolo e residenze; l'albero della famiglia di Elisabetta II con i coniugi; la linea di successione fino al 25° posto (dati fissi, da aggiornare solo per nascite, matrimoni o morti).
+- **Workload:** chi lavora di più e in cosa (visite, eventi, ricevimenti, udienze, forze armate, cerimonie, investiture…), settimana per settimana, in quali giorni, ultime voci del Court Circular.
+- **Travels:** viaggi all'estero e visite di Stato del Re, del Principe e della Principessa di Galles, anno per anno, paesi più visitati, visite di Stato ricevute.
+- **Patronages:** i patronati e i ruoli militari citati nel Court Circular, per persona e per settore.
+- **Ceremonies:** l'anno cerimoniale (Commonwealth Day, Maundy, Trooping, Garter, Ascot, Holyrood, Braemar, State Opening, Remembrance, Natale) con la prossima data, visite di Stato, investiture, udienze, garden party.
+
+**Fonti nuove:** raccoglitore `scripts/collect/royalArchive.mjs` → `public/data/royal-archive.json`. Archivia ogni voce del Court Circular letta dal raccoglitore royal in `public/data/royal-cc/<anno-mese>.json` (il Circular ufficiale copre solo le ultime settimane: lo storico cresce da qui in avanti, dal 4 ottobre 2026), classifica gli impegni e ricava i patronati dai ruoli; legge da Wikipedia tutti i viaggi e le visite di Stato.
+
+---
+
+## Mondiali ed Europei ✅
+**Cosa mi interessa:** solo il calcio maschile, Mondiali ed Europei: qualificazioni, partite, eventi. L'Italia in evidenza.
+
+**Fatto (24 ottobre):** pagina "World Cup & Euros".
+- **Italia:** prossima partita con conto alla rovescia, risultati e calendario (ESPN, in diretta); le partite dell'Italia vanno in home.
+- **Nations League:** gironi della Lega A, perché la classifica decide le urne del sorteggio delle qualificazioni a Euro 2028.
+- **Verso Euro 2028:** sorteggio (Belfast, 6 dicembre), finestre delle giornate, spareggi di marzo 2028, torneo (9 giugno – 9 luglio 2028), urne provvisorie, gironi appena sorteggiati, stadi. Fonte: Wikipedia.
+- **Mondiale 2030:** sedi, date, qualificate, formato delle qualificazioni per confederazione (testo da Wikipedia).
+- **Mondiale 2026:** tabellone dai sedicesimi alla finale (Spagna–Argentina 1–0 dts) e gironi, da ESPN.
+- **Albo d'oro** di Mondiali ed Europei.
+- **Home:** partite dell'Italia, sorteggio, partite d'apertura di Euro e Mondiale.
+
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `power`, `italy`, `history`, `how` (`/p/wc?tab=…`).
+- **Power:** le 40 nazionali più forti per Elo (eloratings.net), l'andamento di Italia e grandi nazioni dal 2000.
+- **Italy:** le ultime 40 partite con il risultato e quanti punti Elo hanno fatto guadagnare o perdere, record, miglior Elo dal 1990.
+- **History:** il vincitore di ogni edizione di Mondiali ed Europei come linea del tempo, decennio per decennio.
+- **How it works:** formato del Mondiale a 48 e dell'Europeo a 24, qualificazioni, Nations League.
+
+**Milan (pagina squadra):** nuove schede **Season** (xG fatti e subiti partita per partita, punti contro punti attesi, corsa al titolo giornata per giornata) e **Power** (posizione in Serie A in nove metriche Understat: xG, xG concessi, finalizzazione, portiere e difesa, pressing PPDA, ingressi in area, punti attesi, con Inter, Juventus, Napoli e Roma; mappa attacco–difesa e tabella di tutte le squadre). Home della squadra invariata.
+
+**Fonti nuove:** raccoglitore `scripts/collect/footballSeason.mjs` → `public/data/football-season.json` (eloratings.net; Understat per la Serie A).
+
+
+## Olimpiadi ✅
+**Cosa mi interessa:** estive e invernali nella stessa pagina; l'Italia e gli sport chiave nelle qualificazioni. Niente Paralimpiadi né Giochi giovanili.
+
+**Fatto (24 ottobre):** pagina "Olympic Games", tutta da Wikipedia (i titoli delle pagine si calcolano dall'anno).
+- **Prossimi Giochi:** Los Angeles 2028 e Alpi francesi 2030, conto alla rovescia alla cerimonia d'apertura; si passa dall'una all'altra con due bottoni.
+- **Italia:** posti già conquistati sport per sport e come (14 atleti in 3 sport a oggi).
+- **Qualificazioni negli sport chiave** (16 estivi, 13 invernali): nazioni qualificate, posti e quota italiana, prossimi eventi di qualificazione. Le pagine di Wikipedia per la maggior parte degli sport non esistono ancora: compaiono da sole quando vengono scritte.
+- **Programma** giorno per giorno di LA28 (sport × giorni, ori per giorno).
+- **Ultimi Giochi:** medagliere di Parigi 2024 e Milano Cortina 2026 e medaglie dell'Italia per sport, con gli ori.
+- **Home:** cerimonie d'apertura e chiusura, eventi di qualificazione (peso basso).
+
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `power`, `italy`, `history`, `how` (`/p/oly?tab=…`).
+- **Power:** dove l'Italia è forte: tutte le medaglie olimpiche sport per sport, estive e invernali.
+- **Italy at the Games:** medaglie e posto nel medagliere a ogni edizione dal 1896 (estive) e dal 1924 (invernali), le edizioni in casa evidenziate.
+- **All-time:** il medagliere di tutti i tempi (primi 30), estivo, invernale e complessivo.
+- **How it works:** Los Angeles 2028 (sport nuovi, qualificazioni) e Alpi francesi 2030.
+
+**Fonti nuove:** raccoglitore `scripts/collect/olympicsHistory.mjs` → `public/data/olympics-history.json` (Wikipedia, una volta a settimana).
+
+
+## Altri sport ✅
+**Cosa mi interessa:** WRC, 500 Miglia di Indianapolis, MotoGP, Formula 2 e 3, Vendée Globe, Daytona 500. Una pagina sola.
+
+**Fatto (24 ottobre):** pagina "More Sports".
+- **MotoGP:** API ufficiale (api.pulselive.motogp.com): ogni sessione delle tre classi con orario, vincitori di gara e sprint, classifica piloti, leader di Moto2 e Moto3, lotta per il titolo con i punti ancora disponibili.
+- **F2 e F3:** siti ufficiali, orari delle sessioni dai dati strutturati di ogni round e classifica con i punti gara per gara (grafico dei primi cinque).
+- **WRC:** wrc.com blocca i programmi automatici, quindi Wikipedia: calendario con fondo e vincitori, classifica piloti.
+- **Indy 500 e Daytona 500:** data da Wikipedia (regola di calendario come riserva), podi degli ultimi anni da ESPN.
+- **Vendée Globe:** vincitori e tempi di tutte le edizioni (Wikipedia); la partenza 2028 è la solita seconda domenica di novembre, segnata TBC finché l'organizzatore non la annuncia.
+- **Home:** gare (MotoGP peso 2, il resto peso 1), Indy, Daytona e partenza del Vendée in evidenza. Prove libere e qualifiche restano nella pagina.
+- **Notizie:** Motorsport.com per serie, Google News per il Vendée.
+
+**Schede (25 ottobre):** la pagina sopra resta la home ("Now"); in alto `motogp`, `feeder`, `wrc`, `classics`, `vendee` (`/p/more?tab=…`).
+- **MotoGP:** classifica completa di ogni Gran Premio, sprint e griglia (piloti, team, moto, giri, distacchi, velocità media, punti); i costruttori (punti, vittorie, miglior piazzamento round per round); piloti in sprint contro Gran Premio, qualifica contro rimonte; tabella dei piloti. Nuovo raccoglitore `scripts/collect/moreSeason.mjs` → `public/data/more-season.json` e ogni round in `public/data/motogp-events/<anno>/<evento>.json` (API ufficiale dei risultati).
+- **F2 & F3:** punti nelle sprint contro le feature race, tabella gara per gara.
+- **WRC:** vittorie per fondo e per squadra, calendario con i vincitori, classifica.
+- **Indy & Daytona:** podi degli ultimi anni, nazioni dei vincitori.
+- **Vendée Globe:** tempo del vincitore edizione per edizione, albo d'oro.
+

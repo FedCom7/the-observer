@@ -65,7 +65,8 @@ export function officialDates(html, S, C) {
   return found;
 }
 
-const NOT_NEWS = /predictions?|podcast|odds|could (?:score|land|win)|contention|consideration|campaign|race (?:for|heats)|frontrunner|power rank|ranked|review|trailer|box office|\beyes\b|history|hopes?|\bbid\b|\bpush\b|becomes|submission|submits|selected as|\bentry\b|the kind of|interview|talks|explains|how .* (?:won|got)/i;
+// Speculation is never an announcement: questions ("Which … Will Bring Her Another Oscar Nomination?"), could/should/might
+const NOT_NEWS = /\?\s*$|\b(?:which|would|could|should|might)\b|\bwill (?:bring|earn|get|land|win|score|lead)\b|predictions?|podcast|odds|could (?:score|land|win)|contention|consideration|campaign|race (?:for|heats)|frontrunner|power rank|ranked|review|trailer|box office|\beyes\b|history|hopes?|\bbid\b|\bpush\b|becomes|submission|submits|selected as|\bentry\b|the kind of|interview|talks|explains|how .* (?:won|got)/i;
 
 /** The latest awards headlines, each tied to an award and to what it announces. */
 export async function radar(S, C, awardIds) {

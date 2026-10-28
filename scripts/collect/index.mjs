@@ -19,6 +19,25 @@ import { collectAwardsHistory } from './awardsHistory.mjs';
 import { collectTeams } from './teams.mjs';
 import { collectTennis } from './tennis.mjs';
 import { collectWec } from './wec.mjs';
+import { collectFashion } from './fashion.mjs';
+import { collectFootball } from './football.mjs';
+import { collectOlympics } from './olympics.mjs';
+import { collectMore } from './more.mjs';
+import { collectNfl } from './nfl.mjs';
+import { collectRosters } from './rosters.mjs';
+import { collectNbaSeason } from './nbaSeason.mjs';
+import { collectF1Season } from './f1Season.mjs';
+import { collectSkiSeason } from './skiSeason.mjs';
+import { collectRoyalArchive } from './royalArchive.mjs';
+import { collectCfbSeason } from './cfbSeason.mjs';
+import { collectMlbSeason } from './mlbSeason.mjs';
+import { collectWecSeason } from './wecSeason.mjs';
+import { collectMoreSeason } from './moreSeason.mjs';
+import { collectTennisSeason } from './tennisSeason.mjs';
+import { collectDakarSeason } from './dakarSeason.mjs';
+import { collectAcHistory } from './acHistory.mjs';
+import { collectFootballSeason } from './footballSeason.mjs';
+import { collectOlympicsHistory } from './olympicsHistory.mjs';
 
 const OUT = join(dirname(fileURLToPath(import.meta.url)), '../../public/data');
 
@@ -41,6 +60,25 @@ const JOBS = {
   'awards-history': collectAwardsHistory,
   teams: collectTeams,
   tennis: collectTennis,
+  fashion: collectFashion,
+  football: collectFootball,
+  olympics: collectOlympics,
+  more: collectMore,
+  nfl: collectNfl,
+  rosters: collectRosters,
+  'nba-season': collectNbaSeason,
+  'f1-season': collectF1Season,
+  'ski-season': collectSkiSeason,
+  'royal-archive': collectRoyalArchive,
+  'cfb-season': collectCfbSeason,
+  'mlb-season': collectMlbSeason,
+  'wec-season': collectWecSeason,
+  'more-season': collectMoreSeason,
+  'tennis-season': collectTennisSeason,
+  'dakar-season': collectDakarSeason,
+  'ac-history': collectAcHistory,
+  'football-season': collectFootballSeason,
+  'olympics-history': collectOlympicsHistory,
 };
 
 export async function collect(only = Object.keys(JOBS)) {

@@ -55,4 +55,4 @@ export function wecEvents(d: WecData): ObsEvent[] {
   return out;
 }
 
-export const loadWec = () => getJSON<WecData>('/data/wec.json', 2 * MIN);
+export const loadWec = () => getJSON<WecData>(`${import.meta.env.BASE_URL}data/wec.json`, 2 * MIN);

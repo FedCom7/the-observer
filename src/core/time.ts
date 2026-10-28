@@ -25,3 +25,24 @@ export function countdown(ms: number): string {
 export const MIN = 60e3;
 export const HOUR = 3600e3;
 export const DAY = 86400e3;
+
+/** Epoch ms of a wall-clock time in Rome (DST-aware). */
+export function romeAt(y: number, m: number, d: number, h = 0): number {
+  const guess = Date.UTC(y, m - 1, d, h);
+  const p = new Intl.DateTimeFormat('en-US', { timeZone: ROME, year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(guess);
+  const v = (t: string) => Number(p.find(x => x.type === t)?.value);
+  const offset = Date.UTC(v('year'), v('month') - 1, v('day'), v('hour'), v('minute')) - guess;
+  return guess - offset;
+}
+
+/**
+ * Start of the "sports day" in Rome: 07:00. A game at 02:00 belongs to the evening before,
+ * as night viewing (see isNight), so the day runs from 07:00 to 07:00.
+ */
+export function sportsDay(now: number): number {
+  const [y, m, d] = fmt(now, { year: 'numeric', month: '2-digit', day: '2-digit' }).split('/').reverse().map(Number);
+  const start = romeAt(y, m, d, 7);
+  if (now >= start) return start;
+  const prev = new Date(Date.UTC(y, m - 1, d) - DAY);
+  return romeAt(prev.getUTCFullYear(), prev.getUTCMonth() + 1, prev.getUTCDate(), 7);
+}

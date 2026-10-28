@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useWidth } from '../components/charts';
 import { Score } from '../components/common';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { HowScreen, PlayersScreen, PowerScreen, SeasonScreen, SlamsScreen, TENNIS_TABS, useTennisSeason } from './TennisScreens';
 import { Hero } from '../components/sheet';
 import { useData } from '../core/store';
 import { DAY, countdown, dayLong, dayShort, hhmm } from '../core/time';
@@ -14,6 +16,8 @@ const ROUND_SHORT: Record<string, string> = { 'Round 1': 'R128', 'Round 2': 'R64
 export function TennisPage() {
   const { tennis: d, news, now } = useData();
   const live = useLiveDraw(d, now);
+  const [tab, setTab] = useTab(TENNIS_TABS);
+  const ts = useTennisSeason(tab !== 'now' && tab !== 'slams' && tab !== 'how');
   if (!d) return <Hero id="tennis" dek="Loading the Slams…" />;
   const slams = d.slams;
   const current = slams.find(s => Date.parse(s.start) <= now && now <= Date.parse(s.end) + DAY);
@@ -30,6 +34,11 @@ export function TennisPage() {
         {champ && d.draw?.slam ? `${champ.name} won the last one, the ${d.draw.slam.name} ${d.draw.slam.year}. ` : ''}
         {one ? `${one.name} is world No. 1 with ${one.points.toLocaleString('en-US')} points.` : ''}
       </>} />
+      <ScreenTabs tabs={TENNIS_TABS} tab={tab} set={setTab} label="Tennis screens" />
+      {tab !== 'now' ? (tab === 'slams' ? <SlamsScreen t={d} /> : tab === 'how' ? <HowScreen /> : !ts ? <section className="ocard"><p className="dek">Loading…</p></section>
+        : tab === 'season' ? <SeasonScreen s={ts} />
+        : tab === 'power' ? <PowerScreen s={ts} />
+        : <PlayersScreen s={ts} t={d} />) : <>
 
       <section className="s-top">
         <div className="ocard s-next">
@@ -83,6 +92,7 @@ export function TennisPage() {
           <div className="onews">{myNews.map(n => <a key={n.id} className="r" href={n.url} target="_blank" rel="noreferrer"><time>{dayShort(n.time)} · {n.source}</time><p>{n.title}</p></a>)}</div>
         </div>
       </section>
+      </>}
     </>
   );
 }

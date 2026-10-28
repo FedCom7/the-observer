@@ -1,9 +1,10 @@
-export type CatId = 'mil' | 'usa' | 'mot' | 'pol' | 'spa' | 'out' | 'cul' | 'tech';
+export type CatId = 'mil' | 'usa' | 'mot' | 'pol' | 'spa' | 'out' | 'cul' | 'tech' | 'int';
 
 export type PassionId =
-  | 'milan' | 'nfl' | 'pats' | 'cfb' | 'texas' | 'mlb' | 'nba'
+  | 'milan' | 'nfl' | 'pats' | 'cfb' | 'texas' | 'dodgers' | 'mlb' | 'nba'
   | 'f1' | 'wec' | 'dakar' | 'elez' | 'space'
-  | 'cicl' | 'sci' | 'tennis' | 'ac' | 'royal' | 'awards' | 'apple';
+  | 'cicl' | 'sci' | 'tennis' | 'ac' | 'royal' | 'awards' | 'apple' | 'fashion'
+  | 'wc' | 'oly' | 'more';
 
 export type EventState = 'pre' | 'in' | 'post';
 
@@ -14,6 +15,13 @@ export interface Side {
   winner?: boolean;
   /** true when this side is the team I follow */
   mine?: boolean;
+  /** ESPN team id */
+  id?: string;
+  /** crest on a light background / on a dark one */
+  logo?: string;
+  logoDark?: string;
+  /** ranking, when the source has one (college football) */
+  rank?: number;
 }
 
 export interface ObsEvent {

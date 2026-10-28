@@ -2,7 +2,14 @@
 // - State visits and official overseas trips: Wikipedia lists, which carry announced trips ahead
 // - The ceremonial year: rules derived from how the fixtures are set (Easter, Ascot week, ...)
 // - Extraordinary events (weddings, funerals, births): news alerts
+import { readFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { get, iso, parseDate, parseFeed, wikitext, zoned } from './lib.mjs';
+import { PEOPLE, SUCCESSION, familyDates } from './royalPeople.mjs';
+import { collectCircular, collectDiary, collectNews, countryLoc, saveGeo } from './royalDiary.mjs';
+
+const FILE = join(dirname(fileURLToPath(import.meta.url)), '../../public/data/royal.json');
 
 const Y = new Date().getUTCFullYear();
 const DAY = 86400e3;
@@ -40,7 +47,7 @@ async function travel() {
       const place = l.kind === 'trip' ? (cells.find((c, i) => i > cells.indexOf(dateCell) && c && !c.includes(country) && c.length < 40 && !/^\d+$/.test(c)) ?? '') : '';
       out.push({
         id: `royal:${l.kind}:${d.y}-${d.m}-${d.d}:${country}`,
-        passion: 'royal', who: l.who, kind: l.kind,
+        passion: 'royal', who: l.who, people: [l.who === 'The King' ? 'king' : l.who === 'Prince of Wales' ? 'william' : 'catherine'], kind: l.kind,
         title: l.title(country, place.replace(/,.*$/, '')), country,
         start: iso(start), approxTime: true, weight: l.kind.startsWith('state') ? 2 : 1,
         link: `https://en.wikipedia.org/wiki/${encodeURIComponent(l.page.replace(/ /g, '_'))}`, source: 'Wikipedia',
@@ -54,7 +61,16 @@ async function travel() {
     const key = `${e.start.slice(0, 10)}:${e.country}`;
     if (!seen.has(key)) { delete e._flagIdx; seen.set(key, e); }
   }
-  return [...seen.values()];
+  const trips = [...seen.values()];
+  // Pin each trip on its country
+  for (const e of trips) {
+    if (e.country === 'United Kingdom') continue;
+    // Hosting a visitor: the welcome is at Windsor Castle (or in London), not in the guest's country
+    if (e.kind === 'state-visit-in') { e.loc = [-0.6044, 51.4839]; e.place = 'Windsor Castle'; continue; }
+    const where = await countryLoc(e.country).catch(() => null);
+    if (where) { e.loc = where.loc; e.place = e.country; }
+  }
+  return trips;
 }
 
 // ---------- The Royal Watcher calendar (fan blog listing galas, state visits, weddings) ----------
@@ -152,11 +168,78 @@ async function pressAnnouncements() {
     .slice(0, 10);
 }
 
+// ---------- Announced by the Palace or the organisers, not (yet) in the Diary ----------
+// Facts checked against the Palace press release and the organisers; revisit when the date moves.
+const CURATED = [
+  { id: 'royal:curated:chogm-2026', who: 'The King & The Queen', people: ['king', 'queen'], kind: 'ceremony', title: 'Commonwealth Heads of Government Meeting (CHOGM), Antigua and Barbuda', date: [2026, 11, 1], place: 'St John’s, Antigua and Barbuda', loc: [-61.845, 17.121], weight: 3, source: 'Palace press release: Autumn Tour, 27 Oct–4 Nov 2026', link: 'https://www.royal.uk/media-centre/press-releases' },
+  { id: 'royal:curated:earthshot-2026', who: 'The Prince of Wales', people: ['william'], kind: 'ceremony', title: 'The Earthshot Prize Awards, Mumbai', date: [2026, 11, 17], place: 'Mumbai, India', loc: [72.8777, 19.076], weight: 3, source: 'The Earthshot Prize (organisers)', link: 'https://earthshotprize.org' },
+];
+
+function curated() {
+  return CURATED.map(({ date, ...c }) => ({ passion: 'royal', approxTime: true, ...c, start: iso(zoned(date[0], date[1], date[2], 10, 0, LONDON)) }))
+    .filter(e => Date.parse(e.start) > Date.now() - 2 * DAY);
+}
+
+/** Reuse the last reading of royal.uk while it is fresh: one pass every few hours is enough and kind to the site. */
+/** Portraits from Wikipedia (lead image of each person's page), kept once found. */
+async function portraits(prev) {
+  const known = Object.fromEntries((prev?.roster ?? []).filter(p => p.photo).map(p => [p.id, p.photo]));
+  const out = {};
+  for (const p of PEOPLE) {
+    if (known[p.id]) { out[p.id] = known[p.id]; continue; }
+    try {
+      const j = await get(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(p.wiki.replace(/ /g, '_'))}`, { json: true });
+      const src = j.thumbnail?.source;
+      if (src) out[p.id] = src;
+    } catch { /* no portrait: the page shows initials */ }
+  }
+  return out;
+}
+
+async function previous() {
+  try { return JSON.parse(await readFile(FILE, 'utf8')); } catch { return null; }
+}
+const FRESH = 3 * 3600e3;
+
 export async function collectRoyal() {
+  const prev = await previous();
+  const reuse = prev?.diaryFetched && Date.now() - Date.parse(prev.diaryFetched) < FRESH && !process.env.ROYAL_FORCE;
   const [trips, al, press, rw] = await Promise.all([travel().catch(() => []), alerts().catch(() => []), pressAnnouncements().catch(() => []), royalWatcher().catch(() => [])]);
+  let diary, recent, stays = [], diaryFetched = prev?.diaryFetched;
+  if (reuse) {
+    diary = prev.events.filter(e => e.kind === 'engagement');
+    recent = prev.recent ?? [];
+    stays = prev.stays ?? [];
+  } else {
+    // If royal.uk cannot be read, keep what we had rather than an empty diary
+    diary = await collectDiary().catch(err => { console.warn('royal diary:', err.message); return null; });
+    const cc = await collectCircular().catch(err => { console.warn('court circular:', err.message); return null; });
+    recent = cc?.recent ?? null;
+    stays = cc?.stays ?? prev?.stays ?? [];
+    if (diary?.length) diaryFetched = new Date().toISOString();
+    diary ??= (prev?.events ?? []).filter(e => e.kind === 'engagement');
+    recent ??= prev?.recent ?? [];
+  }
+  await saveGeo();
+  diary = diary.filter(e => Date.parse(e.start) > Date.now() - DAY);
   // The blog repeats state visits already known from Wikipedia: keep its entry only when the day is new.
   const days = new Set(trips.map(e => e.start.slice(0, 10)));
-  const extra = rw.filter(e => !days.has(e.start.slice(0, 10)));
-  const events = [...trips, ...extra, ...ceremonies()].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
-  return { updated: new Date().toISOString(), events, alerts: al, press };
+  const known = new Set([...trips, ...curated()].map(e => e.start.slice(0, 10)));
+  const extra = rw.filter(e => !days.has(e.start.slice(0, 10)) && !known.has(e.start.slice(0, 10)));
+  const events = [...trips, ...curated(), ...extra, ...ceremonies(), ...familyDates(zoned, iso), ...diary].sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+  // Court Circular over the last three weeks: how busy each person has been
+  const since = Date.now() - 21 * DAY;
+  const activity = Object.fromEntries(PEOPLE.filter(p => p.diary).map(p => [p.id, recent.filter(r => r.people.includes(p.id) && Date.parse(r.start) > since).length]));
+  const photos = await portraits(prev);
+  const roster = PEOPLE.map(({ id, name, title, born, working, role, lead, homes }) => ({ id, name, title, born, working, role, lead, homes, photo: photos[id] ?? null }));
+  // The Palace's own news, with photographs (one page read each run; the previous list if it fails)
+  const news = await collectNews().catch(err => { console.warn('royal news:', err.message); return prev?.news ?? []; });
+  // Where each royal was last seen (latest engagement with a place) and where the sovereign last held audiences
+  const whereabouts = {};
+  for (const p of PEOPLE.filter(x => x.diary)) {
+    const seen = recent.find(r => r.people.includes(p.id) && (r.place || r.loc));
+    const stay = stays.filter(x => x.people.includes(p.id)).sort((a, b) => Date.parse(b.start) - Date.parse(a.start))[0];
+    if (seen || stay) whereabouts[p.id] = { ...(seen ? { seen: { t: seen.start, title: seen.title, place: seen.place, loc: seen.loc } } : {}), ...(stay ? { residence: { t: stay.start, name: stay.residence } } : {}) };
+  }
+  return { updated: new Date().toISOString(), diaryFetched, events, alerts: al, press, recent: recent.filter(r => Date.parse(r.start) > Date.now() - 21 * DAY), roster, news, succession: SUCCESSION, activity, whereabouts, stays: stays.filter(x => Date.parse(x.start) > Date.now() - 21 * DAY) };
 }

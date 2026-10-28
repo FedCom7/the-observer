@@ -47,3 +47,14 @@ export function scoreLine(e: ObsEvent): string {
   if (!e.home || !e.away) return e.sub ?? '';
   return `${e.away.abbr || e.away.name} ${e.away.score ?? ''} · ${e.home.abbr || e.home.name} ${e.home.score ?? ''}`;
 }
+
+/** An NFL team's logo, sized to the text it sits in so it never makes a line or a cell taller. */
+export function NflLogo({ abbr }: { abbr: string }) {
+  const a = abbr.toLowerCase(), box = { height: '1.15em', width: '1.15em', objectFit: 'contain', verticalAlign: '-0.2em', margin: '-0.2em 0.4em -0.2em 0', flex: 'none' } as const;
+  return (
+    <>
+      <img className="lg-light" src={`https://a.espncdn.com/i/teamlogos/nfl/500/${a}.png`} alt="" style={box} loading="lazy" />
+      <img className="lg-dark" src={`https://a.espncdn.com/i/teamlogos/nfl/500-dark/${a}.png`} alt="" style={box} loading="lazy" />
+    </>
+  );
+}
