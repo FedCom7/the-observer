@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "ceremonyYear": 2027,
- "updated": "2026-10-28T12:41:34.678Z",
+ "updated": "2026-10-28T12:46:34.466Z",
  "status": {
   "calendar": "59 dates",
   "radar": "29 headlines",
@@ -11438,7 +11438,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "cannes",
+      "kind": "festival",
+      "title": "Cannes Film Festival",
+      "date": "2026-05-12T10:00:00.000Z",
+      "end": "2026-05-23T18:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -11588,7 +11599,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "venice",
+      "kind": "festival",
+      "title": "Venice Film Festival",
+      "date": "2026-09-02T10:00:00.000Z",
+      "end": "2026-09-12T18:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -11663,6 +11685,17 @@
      "Beau Geste",
      "Begotten",
      "Sawyer Avenue, Sunday Afternoon"
+    ],
+    "dates": [
+     {
+      "award": "telluride",
+      "kind": "festival",
+      "title": "Telluride Film Festival",
+      "date": "2026-09-04T18:00:00.000Z",
+      "end": "2026-09-08T02:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
     ]
    },
    "template": null,
@@ -12037,7 +12070,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "tiff",
+      "kind": "festival",
+      "title": "Toronto International Film Festival",
+      "date": "2026-09-10T16:00:00.000Z",
+      "end": "2026-09-21T00:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -12107,6 +12151,17 @@
      "Rose",
      "Tender Loving Care",
      "The Unknown"
+    ],
+    "dates": [
+     {
+      "award": "nyff",
+      "kind": "festival",
+      "title": "New York Film Festival",
+      "date": "2026-09-25T16:00:00.000Z",
+      "end": "2026-10-13T00:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
     ]
    },
    "template": null,
@@ -12141,7 +12196,7 @@
    "edition": {
     "page": "Gotham Independent Film Awards 2026",
     "url": "https://en.wikipedia.org/wiki/Gotham_Independent_Film_Awards_2026",
-    "fetched": "2026-10-28T12:40:33.781Z",
+    "fetched": "2026-10-28T12:46:32.686Z",
     "span": null,
     "wikiDate": "2026-11-30T23:00:00.000Z",
     "wikiAnnounced": null,
@@ -12822,7 +12877,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-10-28T12:40:34.390Z",
+    "fetched": "2026-10-28T12:46:33.801Z",
     "url": "https://www.thegotham.org/"
    },
    "news": [
@@ -12888,7 +12943,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nbr",
+      "kind": "ceremony",
+      "title": "National Board of Review (NBR) Awards Announced",
+      "date": "2026-12-02T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "National Board of Review Awards 2025",
@@ -12986,7 +13051,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nyfcc",
+      "kind": "ceremony",
+      "title": "New York Film Critics Circle (NYFCC) Awards Announced",
+      "date": "2026-12-01T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 New York Film Critics Circle Awards",
@@ -13080,7 +13155,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "lafca",
+      "kind": "ceremony",
+      "title": "Los Angeles Film Critics Association (LAFCA) Awards Announced",
+      "date": "2026-12-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 Los Angeles Film Critics Association Awards",
@@ -14007,7 +14092,26 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "ccda",
+      "kind": "nominations",
+      "title": "‘14th’ Leads Critics Choice Documentary Awards Nominations",
+      "date": "2026-10-13T16:00:00.000Z",
+      "approx": false,
+      "source": "The Hollywood Reporter",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/2026-critics-choice-documentary-awards-nominations-list-1236728472/"
+     },
+     {
+      "award": "ccda",
+      "kind": "ceremony",
+      "title": "Critics' Choice Documentary Awards",
+      "date": "2026-11-09T02:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": {
@@ -14067,7 +14171,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cca",
+      "kind": "nominations",
+      "title": "Critics Choice Association (CCA) Nominations Announced",
+      "date": "2026-12-04T16:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cca",
+      "kind": "ceremony",
+      "title": "Critics Choice Association (CCA) Awards Ceremony",
+      "date": "2027-01-04T00:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "31st Critics' Choice Awards",
@@ -14206,7 +14328,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "globes",
+      "kind": "nominations",
+      "title": "Golden Globes Nominations Announced",
+      "date": "2026-12-07T13:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "globes",
+      "kind": "ceremony",
+      "title": "Golden Globe Awards ceremony",
+      "date": "2027-01-11T01:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://goldenglobes.com/"
+     }
+    ]
    },
    "template": {
     "page": "83rd Golden Globe Awards",
@@ -14327,7 +14468,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nsfc",
+      "kind": "ceremony",
+      "title": "National Society of Film Critics (NSFC) Awards Announced",
+      "date": "2027-01-02T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 National Society of Film Critics Awards",
@@ -14448,7 +14599,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "sundance",
+      "kind": "festival",
+      "title": "Sundance Film Festival",
+      "date": "2026-01-22T19:00:00.000Z",
+      "end": "2026-02-02T03:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -14487,7 +14649,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "dga",
+      "kind": "nominations",
+      "title": "Directors Guild of America Awards nominations",
+      "date": "2027-01-07T17:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.dga.org/Awards/Annual.aspx"
+     },
+     {
+      "award": "dga",
+      "kind": "ceremony",
+      "title": "Directors Guild of America (DGA) Awards Ceremony",
+      "date": "2027-01-31T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "78th Directors Guild of America Awards",
@@ -14567,7 +14748,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "ace",
+      "kind": "nominations",
+      "title": "American Cinema Editors (ACE) Nominations Announced",
+      "date": "2027-01-14T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "ace",
+      "kind": "ceremony",
+      "title": "American Cinema Editors (ACE) Awards Ceremony",
+      "date": "2027-02-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "American Cinema Editors Awards 2026",
@@ -14641,7 +14840,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "wga",
+      "kind": "nominations",
+      "title": "Writers Guild of America (WGA) Nominations Announced",
+      "date": "2027-01-08T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "wga",
+      "kind": "ceremony",
+      "title": "Writers Guild of America (WGA) Awards Ceremony",
+      "date": "2027-02-14T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "78th Writers Guild of America Awards",
@@ -14743,7 +14960,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "ves",
+      "kind": "nominations",
+      "title": "Visual Effects Society (VES) Nominations Announced",
+      "date": "2027-01-19T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "ves",
+      "kind": "ceremony",
+      "title": "Visual Effects Society (VES) Awards Ceremony",
+      "date": "2027-02-18T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "24th Visual Effects Society Awards",
@@ -14854,7 +15089,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "csa",
+      "kind": "nominations",
+      "title": "Casting Society of America (CSA) Artios Nominations Announced for Film",
+      "date": "2026-12-16T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "csa",
+      "kind": "ceremony",
+      "title": "Casting Society of America (CSA) Artios Awards Ceremony",
+      "date": "2027-02-19T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "41st Artios Awards",
@@ -14968,7 +15221,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "muahs",
+      "kind": "nominations",
+      "title": "Make-Up Artists & Hair Stylists Guild (MUAHS) Nominations Announced",
+      "date": "2026-12-21T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "muahs",
+      "kind": "ceremony",
+      "title": "Make-Up Artists & Hair Stylists Guild (MUAHS) Awards Ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Make-Up Artists & Hair Stylists Guild Awards 2025",
@@ -15054,7 +15325,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "annie",
+      "kind": "nominations",
+      "title": "Annie Awards Nominations Announced",
+      "date": "2027-01-20T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "annie",
+      "kind": "ceremony",
+      "title": "Annie Awards Ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "53rd Annie Awards",
@@ -15176,7 +15465,33 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "bafta",
+      "kind": "longlist",
+      "title": "British Academy Film Awards (BAFTA) Longlists Announced",
+      "date": "2027-01-07T07:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "bafta",
+      "kind": "nominations",
+      "title": "British Academy Film Awards (BAFTA) Nominations Announced",
+      "date": "2027-01-19T07:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "bafta",
+      "kind": "ceremony",
+      "title": "British Academy Film Awards (BAFTA) Awards Ceremony",
+      "date": "2027-02-21T19:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "79th British Academy Film Awards",
@@ -15323,7 +15638,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cdg",
+      "kind": "nominations",
+      "title": "Costume Designers Guild (CDG) Nominations Announced",
+      "date": "2026-12-18T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cdg",
+      "kind": "ceremony",
+      "title": "Costume Designers Guild (CDG) Awards Ceremony",
+      "date": "2027-02-26T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "28th Costume Designers Guild Awards",
@@ -15385,7 +15718,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "pga",
+      "kind": "nominations",
+      "title": "Producers Guild of America (PGA) Nominations Announced for Movies and TV",
+      "date": "2027-01-08T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "pga",
+      "kind": "ceremony",
+      "title": "Producers Guild of America (PGA) Awards Ceremony",
+      "date": "2027-02-28T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "37th Producers Guild of America Awards",
@@ -15459,7 +15810,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "adg",
+      "kind": "nominations",
+      "title": "Art Directors Guild (ADG) Awards Nominations Announced",
+      "date": "2027-01-07T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "adg",
+      "kind": "ceremony",
+      "title": "Art Directors Guild (ADG) Awards Ceremony",
+      "date": "2027-02-28T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Art Directors Guild Awards 2025",
@@ -15519,7 +15888,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "sag",
+      "kind": "nominations",
+      "title": "Actor Awards (presented by SAG-AFTRA) Nominations Announced",
+      "date": "2027-01-06T14:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "sag",
+      "kind": "ceremony",
+      "title": "Actor Awards (SAG-AFTRA) ceremony",
+      "date": "2027-03-01T01:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.actorawards.org/"
+     }
+    ]
    },
    "template": {
     "page": "32nd Actor Awards",
@@ -15589,7 +15977,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cas",
+      "kind": "nominations",
+      "title": "Cinema Audio Society (CAS) Nominations Announced",
+      "date": "2027-01-12T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cas",
+      "kind": "ceremony",
+      "title": "Cinema Audio Society (CAS) Awards Ceremony",
+      "date": "2027-03-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Cinema Audio Society Awards 2025",
@@ -15639,7 +16045,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "spirit",
+      "kind": "ceremony",
+      "title": "Film Independent Spirit Awards Ceremony",
+      "date": "2027-03-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "41st Independent Spirit Awards",
@@ -15734,7 +16150,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "mpse",
+      "kind": "nominations",
+      "title": "Golden Reel Motion Picture Sound Editors (MPSE) Nominations Announced",
+      "date": "2027-01-11T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "mpse",
+      "kind": "ceremony",
+      "title": "Golden Reel Awards (sound editing) ceremony",
+      "date": "2027-03-08T02:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.mpse.org/"
+     }
+    ]
    },
    "template": {
     "page": "Golden Reel Awards 2025",
@@ -15840,7 +16275,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "asc",
+      "kind": "nominations",
+      "title": "American Society of Cinematographers (ASC) Nominations Announced",
+      "date": "2027-01-12T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "asc",
+      "kind": "ceremony",
+      "title": "American Society of Cinematographers (ASC) Awards Ceremony",
+      "date": "2027-03-08T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 American Society of Cinematographers Awards",
@@ -15900,7 +16353,26 @@
     "wikiDate": null,
     "wikiAnnounced": null,
     "categories": [],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "scripter",
+      "kind": "nominations",
+      "title": "USC Scripter Awards Nominations Announced",
+      "date": "2027-01-26T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "scripter",
+      "kind": "ceremony",
+      "title": "USC Scripter Awards (adaptation) ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://scripter.usc.edu/"
+     }
+    ]
    },
    "template": {
     "page": "USC Scripter Awards",
@@ -15954,7 +16426,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "scl",
+      "kind": "nominations",
+      "title": "Society of Composers and Lyricists (SCL) Nominations Announced",
+      "date": "2026-12-16T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "scl",
+      "kind": "ceremony",
+      "title": "Society of Composers and Lyricists (SCL) Awards Ceremony",
+      "date": "2027-02-05T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "7th Society of Composers & Lyricists Awards",
@@ -16017,7 +16507,17 @@
     "wikiDate": "2027-03-14T23:00:00.000Z",
     "wikiAnnounced": null,
     "categories": [],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "oscars",
+      "kind": "ceremony",
+      "title": "Academy Awards",
+      "date": "2027-03-14T23:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": {
     "page": "98th Academy Awards",

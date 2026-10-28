@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-28T05:38:12.510Z",
- "llAt": "2026-10-28T05:25:42.517Z",
- "llBlockedUntil": "2026-10-28T05:45:40.017Z",
+ "updated": "2026-10-28T12:47:52.322Z",
+ "llAt": "2026-10-28T12:47:52.322Z",
+ "llBlockedUntil": null,
  "crewed": [
   {
    "id": "a5556e79-a01f-48c6-b822-69bbadb4460d",
@@ -1221,17 +1221,6 @@
    "webcast": false
   },
   {
-   "id": "agenda:2b5v6h8jo7dhconju6dcskbaqb@google.com",
-   "name": "Undocking and reentry · Progress MS-34",
-   "type": "Undocking",
-   "date": "2026-11-22T11:00:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": true,
-   "source": "AstronauticAgenda"
-  },
-  {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
    "name": "Docking · Progress MS-36",
    "type": "Docking",
@@ -2410,7 +2399,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-10-27T21:24:05.690Z",
+  "at": "2026-10-28T12:47:30.228Z",
   "stats": {
    "total": 742,
    "successes": 727,
@@ -3232,20 +3221,6 @@
   ],
   "upcoming": [
    {
-    "id": "e2886a96-5ce9-4f45-872f-4e25a00be837",
-    "name": "Starlink Group 15-16",
-    "rocket": "Falcon 9",
-    "net": "2026-10-27T07:25:51Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Communications",
-    "kind": "Starlink",
-    "webcast": false
-   },
-   {
     "id": "57ce0a39-d035-4f16-a418-bd6108f78199",
     "name": "Starlink Group 15-18",
     "rocket": "Falcon 9",
@@ -3430,6 +3405,20 @@
    {
     "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
     "name": "SDA Tranche 1 Tracking Layer C",
+    "rocket": "Falcon 9",
+    "net": "2026-12-31T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+    "name": "SDA Tranche 1 Tracking Layer D",
     "rocket": "Falcon 9",
     "net": "2026-12-31T00:00:00Z",
     "status": "TBD",
@@ -3682,7 +3671,7 @@
   }
  ],
  "corps": {
-  "at": "2026-10-28T01:10:59.221Z",
+  "at": "2026-10-28T12:47:39.485Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4083,7 +4072,7 @@
   "next": null
  },
  "artemisFlow": {
-  "at": "2026-10-28T01:55:07.553Z",
+  "at": "2026-10-28T12:47:45.503Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4327,9 +4316,9 @@
     "label": "Crew named",
     "note": null,
     "status": "done",
-    "date": "2026-06-09T19:32:29.000Z",
-    "title": "Artemis III Crew Announced",
-    "url": "https://www.nasa.gov/image-article/artemis-iii-crew-announced/"
+    "date": "2026-06-09T16:12:02.000Z",
+    "title": "NASA Marches Toward Artemis III Mission in 2027, Names Crew Members",
+    "url": "https://www.nasa.gov/news-release/nasa-marches-toward-artemis-iii-mission-in-2027-names-crew-members/"
    },
    {
     "id": "training",
@@ -4357,9 +4346,9 @@
     "label": "Lander test flight",
     "note": null,
     "status": "active",
-    "date": "2024-02-28T18:29:06.000Z",
-    "title": "NASA, SpaceX Test Starship Lunar Lander Docking System",
-    "url": "https://www.nasa.gov/image-article/nasa-spacex-test-starship-lunar-lander-docking-system/"
+    "date": "2026-10-23T22:37:53.000Z",
+    "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+    "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/"
    },
    {
     "id": "t38",
@@ -4444,9 +4433,19 @@
   ],
   "log": [
    {
+    "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+    "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+    "time": "2026-10-23T22:37:53.000Z"
+   },
+   {
     "title": "NASA Shares Artemis Acceleration Plans for Moon Missions",
     "url": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/",
     "time": "2026-10-23T20:15:28.000Z"
+   },
+   {
+    "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions",
+    "url": "https://www.nasa.gov/news-release/nasa-to-discuss-artemis-acceleration-status-of-upcoming-moon-missions/",
+    "time": "2026-10-14T13:32:25.000Z"
    },
    {
     "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
@@ -4474,6 +4473,16 @@
     "time": "2026-08-20T15:13:51.000Z"
    },
    {
+    "title": "Pursuing a Dream of Working for NASA",
+    "url": "https://www.nasa.gov/centers-and-facilities/kennedy/pursuing-a-dream-of-working-for-nasa/",
+    "time": "2026-08-12T15:38:51.000Z"
+   },
+   {
+    "title": "NASA+ Debuts on discovery+, Coming Soon to HBO Max",
+    "url": "https://www.nasa.gov/news-release/nasa-debuts-on-discovery-coming-soon-to-hbo-max/",
+    "time": "2026-08-10T16:30:13.000Z"
+   },
+   {
     "title": "Artemis III Orion Crew and Service Modules Joined",
     "url": "https://www.nasa.gov/image-article/artemis-iii-orion-crew-and-service-models-joined/",
     "time": "2026-08-05T17:27:18.000Z"
@@ -4484,6 +4493,11 @@
     "time": "2026-08-05T17:00:56.000Z"
    },
    {
+    "title": "NASA, SpaceX Advance Wind Tunnel Tests for Starship Rocket",
+    "url": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-spacex-advance-wind-tunnel-tests-for-starship-rocket/",
+    "time": "2026-07-31T18:39:47.000Z"
+   },
+   {
     "title": "NASA’s Roman Telescope to Carry 1.35 Million Names to Deep Space",
     "url": "https://www.nasa.gov/image-article/nasas-roman-telescope-to-carry-1-35-million-names-to-deep-space/",
     "time": "2026-07-31T14:11:34.000Z"
@@ -4492,6 +4506,11 @@
     "title": "NASA Taps SpaceX’s Starlink to Deliver Artemis III Imagery from Orion",
     "url": "https://www.nasa.gov/blogs/missions/2026/07/16/nasa-taps-spacexs-starlink-to-deliver-artemis-iii-imagery-from-orion/",
     "time": "2026-07-16T21:26:04.000Z"
+   },
+   {
+    "title": "How NASA’s Artemis III Lander Test Will Pave Way for Moon Landings",
+    "url": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/how-nasas-artemis-iii-lander-test-will-pave-way-for-moon-landings/",
+    "time": "2026-07-15T18:50:52.000Z"
    },
    {
     "title": "NASA’s Artemis III Flight Hardware Stacks Up at Kennedy",
@@ -4514,9 +4533,24 @@
     "time": "2026-06-09T19:32:29.000Z"
    },
    {
+    "title": "NASA Marches Toward Artemis III Mission in 2027, Names Crew Members",
+    "url": "https://www.nasa.gov/news-release/nasa-marches-toward-artemis-iii-mission-in-2027-names-crew-members/",
+    "time": "2026-06-09T16:12:02.000Z"
+   },
+   {
     "title": "Final Artemis III SLS Booster Segments En Route to NASA Kennedy",
     "url": "https://www.nasa.gov/blogs/missions/2026/06/04/final-artemis-iii-sls-booster-segments-en-route-to-nasa-kennedy/",
     "time": "2026-06-04T16:53:48.000Z"
+   },
+   {
+    "title": "NASA to Announce Artemis III Crew, Provide Mission Progress Update",
+    "url": "https://www.nasa.gov/news-release/nasa-to-announce-artemis-iii-crew-provide-mission-progress-update/",
+    "time": "2026-05-26T21:33:04.000Z"
+   },
+   {
+    "title": "NASA Outlines Preliminary Artemis III Mission Plans",
+    "url": "https://www.nasa.gov/missions/artemis/artemis-3/nasa-outlines-preliminary-artemis-iii-mission-plans/",
+    "time": "2026-05-13T15:33:56.000Z"
    },
    {
     "title": "Artemis III Moon Rocket Core Stage on the Move",
@@ -4534,6 +4568,11 @@
     "time": "2026-04-27T19:33:20.000Z"
    },
    {
+    "title": "NASA Rolls Out Artemis III Moon Rocket Core Stage",
+    "url": "https://www.nasa.gov/news-release/nasa-rolls-out-artemis-iii-moon-rocket-core-stage/",
+    "time": "2026-04-20T20:31:57.000Z"
+   },
+   {
     "title": "NASA’s Mobile Launcher Arrives at Vehicle Assembly Building",
     "url": "https://www.nasa.gov/blogs/missions/2026/04/17/nasas-mobile-launcher-arrives-at-vehicle-assembly-building/",
     "time": "2026-04-17T15:59:01.000Z"
@@ -4542,75 +4581,12 @@
     "title": "NASA’s Mobile Launcher Rolls Ahead of Artemis III Preparation",
     "url": "https://www.nasa.gov/blogs/missions/2026/04/16/nasas-mobile-launcher-rolls-ahead-of-artemis-iii-preparation/",
     "time": "2026-04-16T12:33:08.000Z"
-   },
-   {
-    "title": "NASA Begins Processing Artemis III Moon Rocket at Kennedy",
-    "url": "https://www.nasa.gov/blogs/missions/2025/08/18/nasa-begins-processing-artemis-iii-moon-rocket-at-kennedy/",
-    "time": "2025-08-18T15:46:48.000Z"
-   },
-   {
-    "title": "Training for the Moo(n)",
-    "url": "https://www.nasa.gov/image-article/training-for-the-moon/",
-    "time": "2025-06-17T17:41:37.000Z"
-   },
-   {
-    "title": "NASA Marks Milestones for Artemis III Orion Spacecraft at Kennedy",
-    "url": "https://www.nasa.gov/blogs/missions/2025/05/28/nasa-marks-milestones-for-artemis-iii-orion-spacecraft-at-kennedy/",
-    "time": "2025-05-28T16:23:05.000Z"
-   },
-   {
-    "title": "All Hands for Artemis III",
-    "url": "https://www.nasa.gov/image-article/all-hands-for-artemis-iii/",
-    "time": "2025-04-24T19:18:27.000Z"
-   },
-   {
-    "title": "NASA’s Moon Seismometer Cleared for Construction",
-    "url": "https://www.nasa.gov/blogs/missions/2025/04/21/nasas-moon-seismometer-cleared-for-construction/",
-    "time": "2025-04-21T15:29:45.000Z"
-   },
-   {
-    "title": "Orion’s Artemis III European Service Module Joined with Crew Module Adapter",
-    "url": "https://www.nasa.gov/blogs/missions/2024/09/27/orions-artemis-iii-european-service-module-joined-with-crew-module-adapter/",
-    "time": "2024-09-27T12:54:30.000Z"
-   },
-   {
-    "title": "Starship Super Heavy Breezes Through Wind Tunnel Testing at NASA Ames",
-    "url": "https://www.nasa.gov/image-article/starship-super-heavy-breezes-through-wind-tunnel-testing-at-nasa-ames/",
-    "time": "2024-09-10T20:16:06.000Z"
-   },
-   {
-    "title": "Rocket Hardware for Future Artemis Flights Moved to Barge for Delivery to NASA’s Kennedy Space Center",
-    "url": "https://www.nasa.gov/blogs/missions/2024/08/30/rocket-hardware-for-future-artemis-flights-moved-to-barge-for-delivery-to-nasas-kennedy-space-center/",
-    "time": "2024-08-30T15:15:52.000Z"
-   },
-   {
-    "title": "I Am Artemis: Lauren Fisher",
-    "url": "https://www.nasa.gov/image-article/i-am-artemis-lauren-fisher/",
-    "time": "2024-05-09T19:22:37.000Z"
-   },
-   {
-    "title": "NASA, SpaceX Test Starship Lunar Lander Docking System",
-    "url": "https://www.nasa.gov/image-article/nasa-spacex-test-starship-lunar-lander-docking-system/",
-    "time": "2024-02-28T18:29:06.000Z"
    }
   ]
  },
  "agenda": {
-  "at": "2026-10-28T05:25:42.516Z",
+  "at": "2026-10-28T12:47:52.322Z",
   "items": [
-   {
-    "id": "agenda:4tv1b6b5mdnrogo7scvqn1cjo5@google.com",
-    "kind": "deep",
-    "name": "JUICE flyby #2 Terra",
-    "vehicle": null,
-    "station": null,
-    "eva": null,
-    "crewed": null,
-    "date": "2026-09-28T11:45:00.000Z",
-    "allDay": false,
-    "description": "",
-    "location": ""
-   },
    {
     "id": "agenda:6hh38chjc5gj6b9o68qm8b9kcgqj2bb1c8qmcbb361ij2cr26orm4o9n60@google.com",
     "kind": "landing",
@@ -4807,19 +4783,6 @@
     "location": ""
    },
    {
-    "id": "agenda:2b5v6h8jo7dhconju6dcskbaqb@google.com",
-    "kind": "undock",
-    "name": "Undocking and reentry · Progress MS-34",
-    "vehicle": "Progress MS-34",
-    "station": "ISS",
-    "eva": null,
-    "crewed": false,
-    "date": "2026-11-22T11:00:00.000Z",
-    "allDay": true,
-    "description": "",
-    "location": "Zvezda"
-   },
-   {
     "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
     "kind": "dock",
     "name": "Docking · Progress MS-36",
@@ -4830,7 +4793,7 @@
     "date": "2026-11-26T11:00:00.000Z",
     "allDay": true,
     "description": "",
-    "location": "Zvezda"
+    "location": "Rassvet"
    },
    {
     "id": "agenda:corm2dhp74ojeb9lc4om4b9kckpm2bb2c8pj8b9j6thjgdr46himacpj68@google.com",
@@ -4999,7 +4962,7 @@
     "date": "2027-06-17T10:00:00.000Z",
     "allDay": true,
     "description": "",
-    "location": "Zvezda"
+    "location": "Poisk"
    },
    {
     "id": "agenda:1jl4qqsloeol4ini8tk1qqi3ar@google.com",
