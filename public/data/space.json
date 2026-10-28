@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-28T18:51:27.830Z",
- "llAt": "2026-10-28T18:51:27.830Z",
+ "updated": "2026-10-28T23:12:41.069Z",
+ "llAt": "2026-10-28T23:12:41.069Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -158,9 +158,9 @@
     "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3.",
     "rocket": "Starship",
     "provider": "SpaceX",
-    "net": "2026-12-31T00:00:00Z",
-    "windowEnd": "2026-12-31T00:00:00Z",
-    "precision": "Quarter 4",
+    "net": "2026-11-30T00:00:00Z",
+    "windowEnd": "2026-11-30T00:00:00Z",
+    "precision": "Month",
     "tbc": true,
     "status": "TBD",
     "statusName": "To Be Determined",
@@ -2399,7 +2399,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-10-28T12:47:30.228Z",
+  "at": "2026-10-28T23:12:34.593Z",
   "stats": {
    "total": 742,
    "successes": 727,
@@ -3224,7 +3224,7 @@
     "id": "57ce0a39-d035-4f16-a418-bd6108f78199",
     "name": "Starlink Group 15-18",
     "rocket": "Falcon 9",
-    "net": "2026-10-30T04:02:00Z",
+    "net": "2026-10-31T03:48:00Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3238,7 +3238,7 @@
     "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
     "name": "USSF-432",
     "rocket": "Falcon 9",
-    "net": "2026-11-02T01:56:00Z",
+    "net": "2026-11-03T01:42:00Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3252,7 +3252,7 @@
     "id": "3cdb9dee-b5cb-406c-bbd1-06a219930fb7",
     "name": "Starlink Group 15-21",
     "rocket": "Falcon 9",
-    "net": "2026-11-05T02:35:00Z",
+    "net": "2026-11-06T02:21:00Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3260,6 +3260,20 @@
     "orbit": "LEO",
     "type": "Communications",
     "kind": "Starlink",
+    "webcast": false
+   },
+   {
+    "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
+    "name": "USSF-xxx (\"R-5\")",
+    "rocket": "Falcon 9",
+    "net": "2026-11-10T03:03:00Z",
+    "status": "TBC",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
     "webcast": false
    },
    {
@@ -3288,6 +3302,20 @@
     "orbit": "LEO",
     "type": "Government/Top Secret",
     "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+    "name": "Flight 15",
+    "rocket": "Starship",
+    "net": "2026-11-30T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Orbital Launch Pad 2",
+    "location": "SpaceX Starbase, TX, USA",
+    "orbit": "LEO",
+    "type": "Test Flight",
+    "kind": "Starship",
     "webcast": false
    },
    {
@@ -3401,34 +3429,6 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
-    "name": "SDA Tranche 1 Tracking Layer C",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
-    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
-    "name": "SDA Tranche 1 Tracking Layer D",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3520,16 +3520,22 @@
  },
  "news": [
   {
+   "title": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
+   "source": "NASA · News releases",
+   "time": "2026-10-28T21:50:01.000Z",
+   "url": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory/"
+  },
+  {
+   "title": "Artemis III SLS Core Stage Joins Boosters at Kennedy",
+   "source": "NASA · Artemis",
+   "time": "2026-10-28T18:59:44.000Z",
+   "url": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/"
+  },
+  {
    "title": "Astronauts Are Go For Thursday’s Power Upgrade Spacewalk",
    "source": "NASA · Space Station blog",
    "time": "2026-10-28T16:30:27.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/28/astronauts-are-go-for-thursdays-power-upgrade-spacewalk/"
-  },
-  {
-   "title": "NASA Invites Media to Crew Completion of Yearlong Mars Simulation",
-   "source": "NASA · News releases",
-   "time": "2026-10-27T19:27:22.000Z",
-   "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-crew-completion-of-yearlong-mars-simulation/"
   },
   {
    "title": "Spacewalk Preps, Robotics Jobs, and Science Duties Fill Tuesday Schedule",
@@ -3620,12 +3626,6 @@
    "source": "NASA · Artemis",
    "time": "2026-10-15T14:57:21.000Z",
    "url": "https://www.nasa.gov/missions/artemis/artemis-2/rigorous-analysis-confirms-nasas-artemis-ii-heat-shield-performance/"
-  },
-  {
-   "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions",
-   "source": "NASA · Artemis",
-   "time": "2026-10-14T13:32:25.000Z",
-   "url": "https://www.nasa.gov/news-release/nasa-to-discuss-artemis-acceleration-status-of-upcoming-moon-missions/"
   },
   {
    "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
@@ -4585,7 +4585,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-10-28T18:51:27.829Z",
+  "at": "2026-10-28T23:12:41.068Z",
   "items": [
    {
     "id": "agenda:5fgb5dosp2euco29ve4po9qami@google.com",

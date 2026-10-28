@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T18:49:49.817Z",
+ "updated": "2026-10-28T23:11:28.739Z",
  "season": 2026,
  "teams": [
   {
@@ -41515,13 +41515,13 @@
  ],
  "transactions": [
   {
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "type": "Signed as Free Agent",
-   "team": 138,
+   "team": 119,
    "from": null,
-   "to": 138,
-   "player": "Keddy Roa",
-   "text": "St. Louis Cardinals signed free agent RHP Keddy Roa to a minor league contract."
+   "to": 119,
+   "player": "Alberto Santos",
+   "text": "Los Angeles Dodgers signed free agent RHP Alberto Santos to a minor league contract."
   },
   {
    "date": "2026-10-27",
@@ -41531,6 +41531,15 @@
    "to": 117,
    "player": "Nelson Velázquez",
    "text": "Houston Astros released LF Nelson Velázquez."
+  },
+  {
+   "date": "2026-10-27",
+   "type": "Signed as Free Agent",
+   "team": 138,
+   "from": null,
+   "to": 138,
+   "player": "Keddy Roa",
+   "text": "St. Louis Cardinals signed free agent RHP Keddy Roa to a minor league contract."
   },
   {
    "date": "2026-10-27",
@@ -42110,141 +42119,6 @@
   }
  ],
  "markets": {
-  "KXMLBALCY": {
-   "label": "Pro Baseball American League Cy Young",
-   "rows": [
-    {
-     "name": "Cam Schlittler",
-     "p": 98.5
-    },
-    {
-     "name": "Pablo Lopez",
-     "p": 3
-    },
-    {
-     "name": "Luis Gil",
-     "p": 2
-    },
-    {
-     "name": "Bryce Miller",
-     "p": 1
-    },
-    {
-     "name": "Drew Rasmussen",
-     "p": 1
-    },
-    {
-     "name": "MacKenzie Gore",
-     "p": 1
-    },
-    {
-     "name": "Nathan Eovaldi",
-     "p": 1
-    },
-    {
-     "name": "Luis Castillo",
-     "p": 1
-    },
-    {
-     "name": "Yusei Kikuchi",
-     "p": 1
-    },
-    {
-     "name": "Shane Bieber",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
-   "rows": [
-    {
-     "name": "Pete Crow-Armstrong",
-     "p": 99.5
-    },
-    {
-     "name": "Shohei Ohtani",
-     "p": 1.5
-    },
-    {
-     "name": "Max Muncy",
-     "p": 1
-    },
-    {
-     "name": "Ketel Marte",
-     "p": 1
-    },
-    {
-     "name": "Willy Adames",
-     "p": 1
-    },
-    {
-     "name": "Oneil Cruz",
-     "p": 1
-    },
-    {
-     "name": "Fernando Tatis Jr.",
-     "p": 1
-    },
-    {
-     "name": "James Wood",
-     "p": 1
-    },
-    {
-     "name": "Yoshinobu Yamamoto",
-     "p": 1
-    },
-    {
-     "name": "Matt Olson",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLCY": {
-   "label": "Pro Baseball National League Cy Young",
-   "rows": [
-    {
-     "name": "Jacob Misiorowski",
-     "p": 98
-    },
-    {
-     "name": "Nick Lodolo",
-     "p": 1
-    },
-    {
-     "name": "Joe Musgrove",
-     "p": 1
-    },
-    {
-     "name": "Cristopher Sanchez",
-     "p": 1
-    },
-    {
-     "name": "Spencer Strider",
-     "p": 1
-    },
-    {
-     "name": "Kodai Senga",
-     "p": 1
-    },
-    {
-     "name": "Zack Wheeler",
-     "p": 1
-    },
-    {
-     "name": "Bryce Elder",
-     "p": 1
-    },
-    {
-     "name": "Hurston Waldrep",
-     "p": 1
-    },
-    {
-     "name": "Bubba Chandler",
-     "p": 1
-    }
-   ]
-  },
   "KXMLBALROTY": {
    "label": "Pro Baseball American League Rookie of the Year",
    "rows": [
@@ -42290,92 +42164,182 @@
     }
    ]
   },
-  "KXMLBALMVP": {
-   "label": "Pro Baseball American League MVP",
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
    "rows": [
     {
-     "name": "Yordan Álvarez",
-     "p": 96.5
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
     },
     {
-     "name": "Junior Caminero",
+     "name": "Shohei Ohtani",
      "p": 1.5
     },
     {
-     "name": "Cam Schlittler",
-     "p": 1.5
-    },
-    {
-     "name": "George Springer",
+     "name": "Max Muncy",
      "p": 1
     },
     {
-     "name": "Tie/Co-Winners",
+     "name": "Ketel Marte",
      "p": 1
     },
     {
-     "name": "Riley Greene",
+     "name": "Willy Adames",
      "p": 1
     },
     {
-     "name": "Josh Naylor",
+     "name": "Kyle Schwarber",
      "p": 1
     },
     {
-     "name": "Jarren Duran",
+     "name": "Rafael Devers",
      "p": 1
     },
     {
-     "name": "Roman Anthony",
+     "name": "Will Smith",
      "p": 1
     },
     {
-     "name": "Adley Rutschman",
+     "name": "Trea Turner",
+     "p": 1
+    },
+    {
+     "name": "Francisco Lindor",
      "p": 1
     }
    ]
   },
-  "KXMLBWSMVP": {
-   "label": "Pro Baseball Championship MVP",
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
    "rows": [
     {
-     "name": "Jackson Chourio",
-     "p": 49.5
+     "name": "Sal Stewart",
+     "p": 79.5
     },
     {
-     "name": "William Contreras",
-     "p": 27.5
+     "name": "Carson Benge",
+     "p": 16.5
     },
     {
-     "name": "Aaron Ashby",
-     "p": 11.5
+     "name": "Tie/Co-Winners",
+     "p": 4
     },
     {
-     "name": "Cooper Pratt",
-     "p": 5.7
+     "name": "Thomas White",
+     "p": 2
     },
     {
-     "name": "Jacob Misiorowski",
-     "p": 3.1
+     "name": "JJ Wetherholt",
+     "p": 2
     },
     {
-     "name": "Junior Caminero",
-     "p": 1.7
-    },
-    {
-     "name": "Chandler Simpson",
-     "p": 1.3
-    },
-    {
-     "name": "Yandy Díaz",
-     "p": 1.2
-    },
-    {
-     "name": "Mookie Betts",
+     "name": "Zac Veen",
      "p": 1
     },
     {
-     "name": "Freddie Freeman",
+     "name": "Charlie Condon",
+     "p": 1
+    },
+    {
+     "name": "Bryce Eldridge",
+     "p": 1
+    },
+    {
+     "name": "Konnor Griffin",
+     "p": 1
+    },
+    {
+     "name": "Bubba Chandler",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBNLCY": {
+   "label": "Pro Baseball National League Cy Young",
+   "rows": [
+    {
+     "name": "Jacob Misiorowski",
+     "p": 98
+    },
+    {
+     "name": "Jared Jones",
+     "p": 1
+    },
+    {
+     "name": "Logan Webb",
+     "p": 1
+    },
+    {
+     "name": "Joe Musgrove",
+     "p": 1
+    },
+    {
+     "name": "Nick Lodolo",
+     "p": 1
+    },
+    {
+     "name": "Cristopher Sanchez",
+     "p": 1
+    },
+    {
+     "name": "Zack Wheeler",
+     "p": 1
+    },
+    {
+     "name": "Spencer Strider",
+     "p": 1
+    },
+    {
+     "name": "Kodai Senga",
+     "p": 1
+    },
+    {
+     "name": "Bryce Elder",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALCY": {
+   "label": "Pro Baseball American League Cy Young",
+   "rows": [
+    {
+     "name": "Cam Schlittler",
+     "p": 98.5
+    },
+    {
+     "name": "Pablo Lopez",
+     "p": 3
+    },
+    {
+     "name": "Luis Gil",
+     "p": 2
+    },
+    {
+     "name": "Bryce Miller",
+     "p": 1
+    },
+    {
+     "name": "Drew Rasmussen",
+     "p": 1
+    },
+    {
+     "name": "MacKenzie Gore",
+     "p": 1
+    },
+    {
+     "name": "Nathan Eovaldi",
+     "p": 1
+    },
+    {
+     "name": "Yusei Kikuchi",
+     "p": 1
+    },
+    {
+     "name": "Shane Bieber",
+     "p": 1
+    },
+    {
+     "name": "Grayson Rodriguez",
      "p": 1
     }
    ]
