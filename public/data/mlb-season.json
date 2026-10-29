@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T16:54:47.327Z",
+ "updated": "2026-10-29T21:47:16.321Z",
  "season": 2026,
  "teams": [
   {
@@ -30538,7 +30538,7 @@
    "id": 643289,
    "name": "Mauricio Dubón",
    "team": 144,
-   "pos": "LF",
+   "pos": "2B",
    "pa": 619,
    "hr": 12,
    "sb": 10,
@@ -31374,7 +31374,7 @@
    "id": 545341,
    "name": "Randal Grichuk",
    "team": 145,
-   "pos": "DH",
+   "pos": "RF",
    "pa": 280,
    "hr": 15,
    "sb": 0,
@@ -31621,7 +31621,7 @@
    "id": 621438,
    "name": "Tyrone Taylor",
    "team": 112,
-   "pos": "LF",
+   "pos": "CF",
    "pa": 241,
    "hr": 11,
    "sb": 3,
@@ -32381,7 +32381,7 @@
    "id": 643396,
    "name": "Isiah Kiner-Falefa",
    "team": 111,
-   "pos": "2B",
+   "pos": "SS",
    "pa": 183,
    "hr": 2,
    "sb": 8,
@@ -32457,7 +32457,7 @@
    "id": 621493,
    "name": "Taylor Ward",
    "team": 136,
-   "pos": "DH",
+   "pos": "LF",
    "pa": 607,
    "hr": 7,
    "sb": 4,
@@ -32799,7 +32799,7 @@
    "id": 543807,
    "name": "George Springer",
    "team": 141,
-   "pos": "DH",
+   "pos": "RF",
    "pa": 517,
    "hr": 15,
    "sb": 12,
@@ -33084,7 +33084,7 @@
    "id": 624424,
    "name": "Michael Conforto",
    "team": 112,
-   "pos": "DH",
+   "pos": "LF",
    "pa": 314,
    "hr": 15,
    "sb": 1,
@@ -33122,7 +33122,7 @@
    "id": 500743,
    "name": "Miguel Rojas",
    "team": 119,
-   "pos": "2B",
+   "pos": "SS",
    "pa": 252,
    "hr": 4,
    "sb": 1,
@@ -33160,7 +33160,7 @@
    "id": 624641,
    "name": "Edmundo Sosa",
    "team": 143,
-   "pos": "LF",
+   "pos": "SS",
    "pa": 250,
    "hr": 9,
    "sb": 4,
@@ -33521,7 +33521,7 @@
    "id": 657041,
    "name": "Lane Thomas",
    "team": 144,
-   "pos": "LF",
+   "pos": "RF",
    "pa": 374,
    "hr": 11,
    "sb": 9,
@@ -34091,7 +34091,7 @@
    "id": 545121,
    "name": "Ildemaro Vargas",
    "team": 109,
-   "pos": "1B",
+   "pos": "2B",
    "pa": 486,
    "hr": 9,
    "sb": 3,
@@ -41525,6 +41525,1329 @@
  ],
  "transactions": [
   {
+   "date": "2026-10-29",
+   "type": "Claimed Off Waivers",
+   "team": 136,
+   "from": 137,
+   "to": 136,
+   "player": "Grant McCray",
+   "text": "Seattle Mariners claimed CF Grant McCray off waivers from San Francisco Giants."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Claimed Off Waivers",
+   "team": 120,
+   "from": 137,
+   "to": 120,
+   "player": "Braxton Roxby",
+   "text": "Washington Nationals claimed RHP Braxton Roxby off waivers from San Francisco Giants."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Trade",
+   "team": 111,
+   "from": 133,
+   "to": 111,
+   "player": "Jareth Rayo",
+   "text": "Athletics traded RHP Jareth Rayo to Boston Red Sox for LF Nate Eaton."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Kevin Gausman",
+   "text": "RHP Kevin Gausman elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Zac Gallen",
+   "text": "RHP Zac Gallen elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Michael Fulmer",
+   "text": "RHP Michael Fulmer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 115,
+   "from": null,
+   "to": 115,
+   "player": "Kyle Freeland",
+   "text": "LHP Kyle Freeland elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Paul Goldschmidt",
+   "text": "1B Paul Goldschmidt elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 118,
+   "from": null,
+   "to": 118,
+   "player": "Luke Maile",
+   "text": "C Luke Maile elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 139,
+   "from": null,
+   "to": 139,
+   "player": "Jorge Mateo",
+   "text": "SS Jorge Mateo elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "James McCann",
+   "text": "C James McCann elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 114,
+   "from": null,
+   "to": 114,
+   "player": "Nathaniel Lowe",
+   "text": "1B Nathaniel Lowe elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 142,
+   "from": null,
+   "to": 142,
+   "player": "A.J. Minter",
+   "text": "LHP A.J. Minter elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "Steven Okert",
+   "text": "LHP Steven Okert elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Casey Mize",
+   "text": "RHP Casey Mize elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Tommy Pham",
+   "text": "LF Tommy Pham elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "David Peterson",
+   "text": "LHP David Peterson elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Evan Phillips",
+   "text": "RHP Evan Phillips elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Martín Pérez",
+   "text": "LHP Martín Pérez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 139,
+   "from": null,
+   "to": 139,
+   "player": "Freddy Peralta",
+   "text": "RHP Freddy Peralta elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 115,
+   "from": null,
+   "to": 115,
+   "player": "Jose Quintana",
+   "text": "LHP Jose Quintana elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Trevor Rogers",
+   "text": "LHP Trevor Rogers elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 142,
+   "from": null,
+   "to": 142,
+   "player": "Taylor Rogers",
+   "text": "LHP Taylor Rogers elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Jake Rogers",
+   "text": "C Jake Rogers elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Trevor Richards",
+   "text": "RHP Trevor Richards elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Robbie Ray",
+   "text": "LHP Robbie Ray elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Brooks Raley",
+   "text": "LHP Brooks Raley elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 111,
+   "from": null,
+   "to": 111,
+   "player": "Patrick Sandoval",
+   "text": "LHP Patrick Sandoval elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 118,
+   "from": null,
+   "to": 118,
+   "player": "Josh Rojas",
+   "text": "3B Josh Rojas elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 115,
+   "from": null,
+   "to": 115,
+   "player": "Jordan Romano",
+   "text": "RHP Jordan Romano elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Amed Rosario",
+   "text": "SS Amed Rosario elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Miguel Rojas",
+   "text": "SS Miguel Rojas elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Dennis Santana",
+   "text": "RHP Dennis Santana elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 158,
+   "from": null,
+   "to": 158,
+   "player": "JoJo Romero",
+   "text": "LHP JoJo Romero elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Max Scherzer",
+   "text": "RHP Max Scherzer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Paul Sewald",
+   "text": "RHP Paul Sewald elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Dominic Smith",
+   "text": "1B Dominic Smith elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 134,
+   "from": null,
+   "to": 134,
+   "player": "Gregory Soto",
+   "text": "LHP Gregory Soto elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Tarik Skubal",
+   "text": "LHP Tarik Skubal elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "George Springer",
+   "text": "RF George Springer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 115,
+   "from": null,
+   "to": 115,
+   "player": "Tomoyuki Sugano",
+   "text": "RHP Tomoyuki Sugano elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "John Schreiber",
+   "text": "RHP John Schreiber elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Edmundo Sosa",
+   "text": "SS Edmundo Sosa elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Lane Thomas",
+   "text": "RF Lane Thomas elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Trent Thornton",
+   "text": "RHP Trent Thornton elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Tyrone Taylor",
+   "text": "CF Tyrone Taylor elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Seiya Suzuki",
+   "text": "RF Seiya Suzuki elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Rowdy Tellez",
+   "text": "1B Rowdy Tellez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Jameson Taillon",
+   "text": "RHP Jameson Taillon elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Brent Suter",
+   "text": "LHP Brent Suter elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Gleyber Torres",
+   "text": "2B Gleyber Torres elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "Christian Vázquez",
+   "text": "C Christian Vázquez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Justin Verlander",
+   "text": "RHP Justin Verlander elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Alex Vesia",
+   "text": "LHP Alex Vesia elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Ildemaro Vargas",
+   "text": "2B Ildemaro Vargas elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "Daulton Varsho",
+   "text": "CF Daulton Varsho elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Luis Urías",
+   "text": "2B Luis Urías elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Blake Treinen",
+   "text": "RHP Blake Treinen elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "LaMonte Wade Jr.",
+   "text": "1B LaMonte Wade Jr. elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 134,
+   "from": null,
+   "to": 134,
+   "player": "Kirby Yates",
+   "text": "RHP Kirby Yates elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Trevor Williams",
+   "text": "RHP Trevor Williams elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Ryan Yarbrough",
+   "text": "LHP Ryan Yarbrough elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 158,
+   "from": null,
+   "to": 158,
+   "player": "Brandon Woodruff",
+   "text": "RHP Brandon Woodruff elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "Taylor Ward",
+   "text": "LF Taylor Ward elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Jacob Waguespack",
+   "text": "RHP Jacob Waguespack elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Paul Blackburn",
+   "text": "RHP Paul Blackburn elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Ramón Laureano",
+   "text": "LF Ramón Laureano elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Eric Lauer",
+   "text": "LHP Eric Lauer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Adolis García",
+   "text": "RF Adolis García elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 108,
+   "from": null,
+   "to": 108,
+   "player": "Anthony Rendon",
+   "text": "3B Anthony Rendon elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Tyler Stephenson",
+   "text": "C Tyler Stephenson elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 137,
+   "from": null,
+   "to": 137,
+   "player": "JT Brubaker",
+   "text": "RHP JT Brubaker elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 108,
+   "from": null,
+   "to": 108,
+   "player": "Travis d'Arnaud",
+   "text": "C Travis d'Arnaud elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Nestor Cortes",
+   "text": "LHP Nestor Cortes elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "Enyel De Los Santos",
+   "text": "RHP Enyel De Los Santos elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Mauricio Dubón",
+   "text": "2B Mauricio Dubón elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 146,
+   "from": null,
+   "to": 146,
+   "player": "Pete Fairbanks",
+   "text": "RHP Pete Fairbanks elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Elias Díaz",
+   "text": "C Elias Díaz elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Erick Fedde",
+   "text": "RHP Erick Fedde elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Ryan Thompson",
+   "text": "RHP Ryan Thompson elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 108,
+   "from": null,
+   "to": 108,
+   "player": "Yoán Moncada",
+   "text": "3B Yoán Moncada elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Michael Conforto",
+   "text": "LF Michael Conforto elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "Hoby Milner",
+   "text": "LHP Hoby Milner elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 133,
+   "from": null,
+   "to": 133,
+   "player": "Brooks Kriske",
+   "text": "RHP Brooks Kriske elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 118,
+   "from": null,
+   "to": 118,
+   "player": "Jonathan India",
+   "text": "2B Jonathan India elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Brusdar Graterol",
+   "text": "RHP Brusdar Graterol elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "A.J. Puk",
+   "text": "LHP A.J. Puk elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Brock Burke",
+   "text": "LHP Brock Burke elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Brady Singer",
+   "text": "RHP Brady Singer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Burch Smith",
+   "text": "RHP Burch Smith elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 139,
+   "from": null,
+   "to": 139,
+   "player": "Gavin Lux",
+   "text": "LF Gavin Lux elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Keegan Akin",
+   "text": "LHP Keegan Akin elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 117,
+   "from": null,
+   "to": 117,
+   "player": "Bryan Abreu",
+   "text": "RHP Bryan Abreu elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Luis Arraez",
+   "text": "2B Luis Arraez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Tyler Alexander",
+   "text": "LHP Tyler Alexander elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "Randy Arozarena",
+   "text": "LF Randy Arozarena elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "José Alvarado",
+   "text": "LHP José Alvarado elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 158,
+   "from": null,
+   "to": 158,
+   "player": "Jake Bauers",
+   "text": "1B Jake Bauers elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Chris Bassitt",
+   "text": "RHP Chris Bassitt elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Shane Bieber",
+   "text": "RHP Shane Bieber elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "David Bednar",
+   "text": "RHP David Bednar elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Taylor Clarke",
+   "text": "RHP Taylor Clarke elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Aaron Civale",
+   "text": "RHP Aaron Civale elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Adrian Morejon",
+   "text": "LHP Adrian Morejon elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Sean Newcomb",
+   "text": "LHP Sean Newcomb elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 133,
+   "from": null,
+   "to": 133,
+   "player": "Mark Leiter Jr.",
+   "text": "RHP Mark Leiter Jr. elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Yimi García",
+   "text": "RHP Yimi García elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Luis Rengifo",
+   "text": "LF Luis Rengifo elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Jordan Montgomery",
+   "text": "LHP Jordan Montgomery elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Joe Jiménez",
+   "text": "RHP Joe Jiménez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Jason Adam",
+   "text": "RHP Jason Adam elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Signed as Free Agent",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Robinson Martínez",
+   "text": "Baltimore Orioles signed free agent RHP Robinson Martínez to a minor league contract."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "Victor Robles",
+   "text": "RF Victor Robles elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Patrick Corbin",
+   "text": "LHP Patrick Corbin elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 133,
+   "from": null,
+   "to": 133,
+   "player": "Jonah Heim",
+   "text": "C Jonah Heim elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Enrique Hernández",
+   "text": "CF Enrique Hernández elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Tim Hill",
+   "text": "LHP Tim Hill elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 114,
+   "from": null,
+   "to": 114,
+   "player": "Rhys Hoskins",
+   "text": "1B Rhys Hoskins elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Raisel Iglesias",
+   "text": "RHP Raisel Iglesias elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Shota Imanaga",
+   "text": "LHP Shota Imanaga elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Austin Hays",
+   "text": "LF Austin Hays elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 114,
+   "from": null,
+   "to": 114,
+   "player": "Austin Hedges",
+   "text": "C Austin Hedges elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 142,
+   "from": null,
+   "to": 142,
+   "player": "Ryan Jeffers",
+   "text": "C Ryan Jeffers elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Ha-Seong Kim",
+   "text": "SS Ha-Seong Kim elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 118,
+   "from": null,
+   "to": 118,
+   "player": "Craig Kimbrel",
+   "text": "RHP Craig Kimbrel elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 111,
+   "from": null,
+   "to": 111,
+   "player": "Isiah Kiner-Falefa",
+   "text": "SS Isiah Kiner-Falefa elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Tyler Kinley",
+   "text": "RHP Tyler Kinley elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Andrew Kittredge",
+   "text": "RHP Andrew Kittredge elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Jonathan Loáisiga",
+   "text": "RHP Jonathan Loáisiga elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Nicky Lopez",
+   "text": "2B Nicky Lopez elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 134,
+   "from": null,
+   "to": 134,
+   "player": "Brandon Lowe",
+   "text": "2B Brandon Lowe elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Tyler Mahle",
+   "text": "RHP Tyler Mahle elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 140,
+   "from": null,
+   "to": 140,
+   "player": "Jalen Beeks",
+   "text": "LHP Jalen Beeks elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Walker Buehler",
+   "text": "RHP Walker Buehler elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 119,
+   "from": null,
+   "to": 119,
+   "player": "Kris Bubic",
+   "text": "LHP Kris Bubic elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Alec Bohm",
+   "text": "3B Alec Bohm elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "J.P. Crawford",
+   "text": "SS J.P. Crawford elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Jack Flaherty",
+   "text": "RHP Jack Flaherty elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Ty France",
+   "text": "1B Ty France elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 108,
+   "from": null,
+   "to": 108,
+   "player": "Adam Frazier",
+   "text": "2B Adam Frazier elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 144,
+   "from": null,
+   "to": 144,
+   "player": "Kyle Farmer",
+   "text": "SS Kyle Farmer elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Ian Happ",
+   "text": "LF Ian Happ elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Trent Grisham",
+   "text": "CF Trent Grisham elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 114,
+   "from": null,
+   "to": 114,
+   "player": "Foster Griffin",
+   "text": "LHP Foster Griffin elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 145,
+   "from": null,
+   "to": 145,
+   "player": "Randal Grichuk",
+   "text": "RF Randal Grichuk elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Kevin Ginkel",
+   "text": "RHP Kevin Ginkel elected free agency."
+  },
+  {
+   "date": "2026-10-29",
+   "type": "Declared Free Agency",
+   "team": 147,
+   "from": null,
+   "to": 147,
+   "player": "Jazz Chisholm Jr.",
+   "text": "2B Jazz Chisholm Jr. elected free agency."
+  },
+  {
    "date": "2026-10-28",
    "type": "Signed as Free Agent",
    "team": 119,
@@ -41534,6 +42857,15 @@
    "text": "Los Angeles Dodgers signed free agent RHP Alberto Santos to a minor league contract."
   },
   {
+   "date": "2026-10-28",
+   "type": "Signed as Free Agent",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Victor Padilla",
+   "text": "Baltimore Orioles signed free agent RHP Victor Padilla to a minor league contract."
+  },
+  {
    "date": "2026-10-27",
    "type": "Signed as Free Agent",
    "team": 138,
@@ -41541,599 +42873,140 @@
    "to": 138,
    "player": "Keddy Roa",
    "text": "St. Louis Cardinals signed free agent RHP Keddy Roa to a minor league contract."
-  },
-  {
-   "date": "2026-10-27",
-   "type": "Released",
-   "team": 117,
-   "from": null,
-   "to": 117,
-   "player": "Nelson Velázquez",
-   "text": "Houston Astros released LF Nelson Velázquez."
-  },
-  {
-   "date": "2026-10-27",
-   "type": "Signed as Free Agent",
-   "team": 138,
-   "from": null,
-   "to": 138,
-   "player": "Yonewris Garcia",
-   "text": "St. Louis Cardinals signed free agent RHP Yonewris Garcia to a minor league contract."
-  },
-  {
-   "date": "2026-10-26",
-   "type": "Signed as Free Agent",
-   "team": 134,
-   "from": null,
-   "to": 134,
-   "player": "Rogner Betancourt",
-   "text": "Pittsburgh Pirates signed free agent LHP Rogner Betancourt to a minor league contract."
-  },
-  {
-   "date": "2026-10-26",
-   "type": "Signed as Free Agent",
-   "team": 134,
-   "from": null,
-   "to": 134,
-   "player": "Martin Gonzalez",
-   "text": "Pittsburgh Pirates signed free agent RHP Martin Gonzalez to a minor league contract."
-  },
-  {
-   "date": "2026-10-26",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Franklin Diaz",
-   "text": "Boston Red Sox signed free agent RHP Franklin Diaz to a minor league contract."
-  },
-  {
-   "date": "2026-10-26",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Obel Encarnacion",
-   "text": "Boston Red Sox signed free agent RHP Obel Encarnacion to a minor league contract."
-  },
-  {
-   "date": "2026-10-26",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Brayan Cordero",
-   "text": "Boston Red Sox signed free agent SS Brayan Cordero to a minor league contract."
-  },
-  {
-   "date": "2026-10-23",
-   "type": "Signed as Free Agent",
-   "team": 121,
-   "from": null,
-   "to": 121,
-   "player": "Jhon Vale",
-   "text": "New York Mets signed free agent C Jhon Vale to a minor league contract."
-  },
-  {
-   "date": "2026-10-23",
-   "type": "Signed as Free Agent",
-   "team": 114,
-   "from": null,
-   "to": 114,
-   "player": "Nerio Reyes",
-   "text": "Cleveland Guardians signed free agent LHP Nerio Reyes to a minor league contract."
-  },
-  {
-   "date": "2026-10-23",
-   "type": "Signed as Free Agent",
-   "team": 109,
-   "from": null,
-   "to": 109,
-   "player": "Luis Dionicio",
-   "text": "Arizona Diamondbacks signed free agent RHP Luis Dionicio to a minor league contract."
-  },
-  {
-   "date": "2026-10-22",
-   "type": "Signed as Free Agent",
-   "team": 118,
-   "from": null,
-   "to": 118,
-   "player": "Tomas Rivas",
-   "text": "Kansas City Royals signed free agent IF Tomas Rivas to a minor league contract."
-  },
-  {
-   "date": "2026-10-22",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Eliehiker Perdomo",
-   "text": "Chicago Cubs signed free agent RHP Eliehiker Perdomo to a minor league contract."
-  },
-  {
-   "date": "2026-10-22",
-   "type": "Signed as Free Agent",
-   "team": 139,
-   "from": null,
-   "to": 139,
-   "player": "Zair Tromp",
-   "text": "Tampa Bay Rays signed free agent LHP Zair Tromp to a minor league contract."
-  },
-  {
-   "date": "2026-10-21",
-   "type": "Signed as Free Agent",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "Alexis Medina",
-   "text": "San Diego Padres signed free agent RHP Alexis Medina to a minor league contract."
-  },
-  {
-   "date": "2026-10-21",
-   "type": "Signed as Free Agent",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "Lenyert Rios",
-   "text": "San Diego Padres signed free agent OF Lenyert Rios to a minor league contract."
-  },
-  {
-   "date": "2026-10-20",
-   "type": "Signed as Free Agent",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Euris Polanco",
-   "text": "Atlanta Braves signed free agent OF Euris Polanco to a minor league contract."
-  },
-  {
-   "date": "2026-10-20",
-   "type": "Signed as Free Agent",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Francis Cuevas",
-   "text": "Atlanta Braves signed free agent RHP Francis Cuevas to a minor league contract."
-  },
-  {
-   "date": "2026-10-15",
-   "type": "Signed as Free Agent",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "Tatsuya Nogami",
-   "text": "San Diego Padres signed free agent RHP Tatsuya Nogami to a minor league contract."
-  },
-  {
-   "date": "2026-10-15",
-   "type": "Signed as Free Agent",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Sebastian Enriquez",
-   "text": "Toronto Blue Jays signed free agent OF Sebastian Enriquez to a minor league contract."
-  },
-  {
-   "date": "2026-10-14",
-   "type": "Signed as Free Agent",
-   "team": 121,
-   "from": null,
-   "to": 121,
-   "player": "Randy Gutierrez",
-   "text": "New York Mets signed free agent RHP Randy Gutierrez to a minor league contract."
-  },
-  {
-   "date": "2026-10-13",
-   "type": "Signed as Free Agent",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "Connor Cooke",
-   "text": "Baltimore Orioles signed free agent RHP Connor Cooke to a minor league contract."
-  },
-  {
-   "date": "2026-10-12",
-   "type": "Signed as Free Agent",
-   "team": 109,
-   "from": null,
-   "to": 109,
-   "player": "Aramis Garcia",
-   "text": "Arizona Diamondbacks signed free agent C Aramis Garcia to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 118,
-   "from": null,
-   "to": 118,
-   "player": "Yambert Guerra",
-   "text": "Kansas City Royals signed free agent OF Yambert Guerra to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Jean Mayorga",
-   "text": "Boston Red Sox signed free agent LHP Jean Mayorga to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Juan Velasquez",
-   "text": "Boston Red Sox signed free agent RHP Juan Velasquez to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Farid Cijntje",
-   "text": "Boston Red Sox signed free agent SS Farid Cijntje to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Jesus Moreno",
-   "text": "Boston Red Sox signed free agent RHP Jesus Moreno to a minor league contract."
-  },
-  {
-   "date": "2026-10-09",
-   "type": "Signed as Free Agent",
-   "team": 118,
-   "from": null,
-   "to": 118,
-   "player": "Francisco Garcia",
-   "text": "Kansas City Royals signed free agent LHP Francisco Garcia to a minor league contract."
-  },
-  {
-   "date": "2026-10-08",
-   "type": "Signed as Free Agent",
-   "team": 119,
-   "from": null,
-   "to": 119,
-   "player": "Maikol Lora",
-   "text": "Los Angeles Dodgers signed free agent RHP Maikol Lora to a minor league contract."
-  },
-  {
-   "date": "2026-10-08",
-   "type": "Signed as Free Agent",
-   "team": 118,
-   "from": null,
-   "to": 118,
-   "player": "Xabiel Vasquez",
-   "text": "Kansas City Royals signed free agent RHP Xabiel Vasquez to a minor league contract."
-  },
-  {
-   "date": "2026-10-08",
-   "type": "Signed as Free Agent",
-   "team": 114,
-   "from": null,
-   "to": 114,
-   "player": "Anthony Alcantara",
-   "text": "Cleveland Guardians signed free agent RHP Anthony Alcantara to a minor league contract."
-  },
-  {
-   "date": "2026-10-07",
-   "type": "Signed as Free Agent",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Windel Encarnacion",
-   "text": "Toronto Blue Jays signed free agent RHP Windel Encarnacion to a minor league contract."
-  },
-  {
-   "date": "2026-10-06",
-   "type": "Signed as Free Agent",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Orangel Guanaguaney",
-   "text": "Toronto Blue Jays signed free agent OF Orangel Guanaguaney to a minor league contract."
-  },
-  {
-   "date": "2026-10-06",
-   "type": "Signed as Free Agent",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Cayro Hazel",
-   "text": "Toronto Blue Jays signed free agent SS Cayro Hazel to a minor league contract."
-  },
-  {
-   "date": "2026-10-05",
-   "type": "Signed as Free Agent",
-   "team": 140,
-   "from": null,
-   "to": 140,
-   "player": "Luis Gonzalez",
-   "text": "Texas Rangers signed free agent LHP Luis Gonzalez to a minor league contract."
-  },
-  {
-   "date": "2026-10-05",
-   "type": "Signed as Free Agent",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Logan Cummins",
-   "text": "Atlanta Braves signed free agent RHP Logan Cummins to a minor league contract."
-  },
-  {
-   "date": "2026-10-05",
-   "type": "Signed as Free Agent",
-   "team": 140,
-   "from": null,
-   "to": 140,
-   "player": "Juan Gonzalez",
-   "text": "Texas Rangers signed free agent LHP Juan Gonzalez to a minor league contract."
-  },
-  {
-   "date": "2026-10-05",
-   "type": "Signed as Free Agent",
-   "team": 140,
-   "from": null,
-   "to": 140,
-   "player": "Adrian Solorzano",
-   "text": "Texas Rangers signed free agent RHP Adrian Solorzano to a minor league contract."
-  },
-  {
-   "date": "2026-10-05",
-   "type": "Signed as Free Agent",
-   "team": 140,
-   "from": null,
-   "to": 140,
-   "player": "Angel Vicioso",
-   "text": "Texas Rangers signed free agent Angel Vicioso to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Claimed Off Waivers",
-   "team": 136,
-   "from": 113,
-   "to": 136,
-   "player": "Michael Toglia",
-   "text": "Seattle Mariners claimed 1B Michael Toglia off waivers from Cincinnati Reds."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Rodelvis Santiesteban",
-   "text": "Chicago Cubs signed free agent 2B Rodelvis Santiesteban to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Maykoll Jaspe",
-   "text": "Chicago Cubs signed free agent RHP Maykoll Jaspe to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Will Henderson",
-   "text": "Atlanta Braves signed free agent OF Will Henderson to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Luis Zapata",
-   "text": "Chicago Cubs signed free agent RHP Luis Zapata to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Manuel Cordero",
-   "text": "Chicago Cubs signed free agent LHP Manuel Cordero to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Elvin Cepeda",
-   "text": "Chicago Cubs signed free agent RHP Elvin Cepeda to a minor league contract."
-  },
-  {
-   "date": "2026-10-02",
-   "type": "Signed as Free Agent",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Sebastian Zorrilla",
-   "text": "Chicago Cubs signed free agent OF Sebastian Zorrilla to a minor league contract."
-  },
-  {
-   "date": "2026-10-01",
-   "type": "Trade",
-   "team": 138,
-   "from": 109,
-   "to": 138,
-   "player": "Brian Curley",
-   "text": "Arizona Diamondbacks traded RHP Brian Curley to St. Louis Cardinals. Player named later in the Lars Nootbaar trade."
-  },
-  {
-   "date": "2026-10-01",
-   "type": "Signed as Free Agent",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "Roel Ramírez",
-   "text": "San Diego Padres signed free agent RHP Roel Ramírez to a minor league contract."
-  },
-  {
-   "date": "2026-10-01",
-   "type": "Signed as Free Agent",
-   "team": 158,
-   "from": null,
-   "to": 158,
-   "player": "Orlando Noguera",
-   "text": "Milwaukee Brewers signed free agent RHP Orlando Noguera to a minor league contract."
-  },
-  {
-   "date": "2026-10-01",
-   "type": "Signed as Free Agent",
-   "team": 114,
-   "from": null,
-   "to": 114,
-   "player": "Elian Vasquez",
-   "text": "Cleveland Guardians signed free agent LHP Elian Vasquez to a minor league contract."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Signed as Free Agent",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Emilio Gotz",
-   "text": "Detroit Tigers signed free agent OF Emilio Gotz to a minor league contract."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Signed as Free Agent",
-   "team": 108,
-   "from": null,
-   "to": 108,
-   "player": "Isaac Francisco",
-   "text": "Los Angeles Angels signed free agent Isaac Francisco to a minor league contract."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Signed as Free Agent",
-   "team": 114,
-   "from": null,
-   "to": 114,
-   "player": "Ronald Ramirez",
-   "text": "Cleveland Guardians signed free agent RHP Ronald Ramirez to a minor league contract."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Declared Free Agency",
-   "team": 143,
-   "from": null,
-   "to": 143,
-   "player": "José Urquidy",
-   "text": "RHP José Urquidy elected free agency."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Declared Free Agency",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Elieser Hernández",
-   "text": "RHP Elieser Hernández elected free agency."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Signed as Free Agent",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Yunior Feliz",
-   "text": "Detroit Tigers signed free agent RHP Yunior Feliz to a minor league contract."
-  },
-  {
-   "date": "2026-09-30",
-   "type": "Signed as Free Agent",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "Jackson Rees",
-   "text": "Baltimore Orioles signed free agent RHP Jackson Rees to a minor league contract."
-  },
-  {
-   "date": "2026-09-29",
-   "type": "Signed as Free Agent",
-   "team": 146,
-   "from": null,
-   "to": 146,
-   "player": "Jose Colina",
-   "text": "Miami Marlins signed free agent C Jose Colina to a minor league contract."
-  },
-  {
-   "date": "2026-09-29",
-   "type": "Signed as Free Agent",
-   "team": 113,
-   "from": null,
-   "to": 113,
-   "player": "Wuilder Rodriguez",
-   "text": "Cincinnati Reds signed free agent LHP Wuilder Rodriguez to a minor league contract."
-  },
-  {
-   "date": "2026-09-29",
-   "type": "Signed as Free Agent",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Siwoo Kwon",
-   "text": "Toronto Blue Jays signed free agent RHP Siwoo Kwon to a minor league contract."
   }
  ],
  "markets": {
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
+  "KXMLBNLCY": {
+   "label": "Pro Baseball National League Cy Young",
    "rows": [
     {
-     "name": "Pete Crow-Armstrong",
-     "p": 99.5
+     "name": "Jacob Misiorowski",
+     "p": 98
     },
     {
-     "name": "Max Muncy",
+     "name": "Mason Miller",
      "p": 1
     },
     {
-     "name": "Geraldo Perdomo",
+     "name": "Joe Musgrove",
      "p": 1
     },
     {
-     "name": "Teoscar Hernández",
+     "name": "Roki Sasaki",
      "p": 1
     },
     {
-     "name": "Nico Hoerner",
+     "name": "Merrill Kelly",
      "p": 1
     },
     {
-     "name": "Ian Happ",
+     "name": "Shota Imanaga",
      "p": 1
     },
     {
-     "name": "Kyle Tucker",
+     "name": "Spencer Schwellenbach",
      "p": 1
     },
     {
-     "name": "Yoshinobu Yamamoto",
+     "name": "Brady Singer",
      "p": 1
     },
     {
-     "name": "Trea Turner",
+     "name": "Shohei Ohtani",
      "p": 1
     },
     {
-     "name": "Mookie Betts",
+     "name": "Spencer Strider",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Sal Stewart",
+     "p": 78.5
+    },
+    {
+     "name": "Carson Benge",
+     "p": 20
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 4
+    },
+    {
+     "name": "Thomas White",
+     "p": 2
+    },
+    {
+     "name": "Nolan McLean",
+     "p": 1
+    },
+    {
+     "name": "Rhett Lowder",
+     "p": 1
+    },
+    {
+     "name": "JR Ritchie",
+     "p": 1
+    },
+    {
+     "name": "Charlie Condon",
+     "p": 1
+    },
+    {
+     "name": "Hunter Barco",
+     "p": 1
+    },
+    {
+     "name": "Owen Caissie",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALMVP": {
+   "label": "Pro Baseball American League MVP",
+   "rows": [
+    {
+     "name": "Yordan Álvarez",
+     "p": 96.5
+    },
+    {
+     "name": "Cam Schlittler",
+     "p": 1.5
+    },
+    {
+     "name": "Junior Caminero",
+     "p": 1.5
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
+     "name": "Jarren Duran",
+     "p": 1
+    },
+    {
+     "name": "Adley Rutschman",
+     "p": 1
+    },
+    {
+     "name": "Ben Rice",
+     "p": 1
+    },
+    {
+     "name": "Julio Rodríguez",
+     "p": 1
+    },
+    {
+     "name": "Cody Bellinger",
+     "p": 1
+    },
+    {
+     "name": "Jo Adell",
      "p": 1
     }
    ]
@@ -42154,19 +43027,11 @@
      "p": 2
     },
     {
-     "name": "Jacob Degrom",
-     "p": 1
-    },
-    {
-     "name": "Carlos Rodon",
+     "name": "Sonny Gray",
      "p": 1
     },
     {
      "name": "Garrett Crochet",
-     "p": 1
-    },
-    {
-     "name": "George Kirby",
      "p": 1
     },
     {
@@ -42180,50 +43045,13 @@
     {
      "name": "Jack Flaherty",
      "p": 1
-    }
-   ]
-  },
-  "KXMLBNLCY": {
-   "label": "Pro Baseball National League Cy Young",
-   "rows": [
-    {
-     "name": "Jacob Misiorowski",
-     "p": 98.5
     },
     {
-     "name": "Mason Miller",
+     "name": "Kris Bubic",
      "p": 1
     },
     {
-     "name": "Joe Musgrove",
-     "p": 1
-    },
-    {
-     "name": "Nick Pivetta",
-     "p": 1
-    },
-    {
-     "name": "Hurston Waldrep",
-     "p": 1
-    },
-    {
-     "name": "Sean Manaea",
-     "p": 1
-    },
-    {
-     "name": "Roki Sasaki",
-     "p": 1
-    },
-    {
-     "name": "Merrill Kelly",
-     "p": 1
-    },
-    {
-     "name": "Shota Imanaga",
-     "p": 1
-    },
-    {
-     "name": "Jhoan Duran",
+     "name": "Yusei Kikuchi",
      "p": 1
     }
    ]
@@ -42233,7 +43061,7 @@
    "rows": [
     {
      "name": "Kevin McGonigle",
-     "p": 94.5
+     "p": 95.5
     },
     {
      "name": "Lazaro Montes",
@@ -42244,10 +43072,6 @@
      "p": 3
     },
     {
-     "name": "Munetaka Murakami",
-     "p": 2
-    },
-    {
      "name": "Parker Messick",
      "p": 1.5
     },
@@ -42256,64 +43080,68 @@
      "p": 1
     },
     {
-     "name": "Carter Jensen",
-     "p": 1
-    },
-    {
      "name": "Payton Tolle",
-     "p": 1
-    },
-    {
-     "name": "Brice Matthews",
      "p": 1
     },
     {
      "name": "Connelly Early",
      "p": 1
+    },
+    {
+     "name": "Gage Jump",
+     "p": 1
+    },
+    {
+     "name": "Trey Yesavage",
+     "p": 1
+    },
+    {
+     "name": "Chase DeLauter",
+     "p": 1
     }
    ]
   },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
    "rows": [
     {
-     "name": "Sal Stewart",
-     "p": 79.5
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
     },
     {
-     "name": "Carson Benge",
-     "p": 18.5
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 4
-    },
-    {
-     "name": "JJ Wetherholt",
-     "p": 2
-    },
-    {
-     "name": "Thomas White",
-     "p": 2
-    },
-    {
-     "name": "Bubba Chandler",
+     "name": "Teoscar Hernández",
      "p": 1
     },
     {
-     "name": "Nolan McLean",
+     "name": "Nico Hoerner",
      "p": 1
     },
     {
-     "name": "Jaxon Wiggins",
+     "name": "Kyle Tucker",
      "p": 1
     },
     {
-     "name": "Aidan Miller",
+     "name": "Yoshinobu Yamamoto",
      "p": 1
     },
     {
-     "name": "Quinn Mathews",
+     "name": "Mookie Betts",
+     "p": 1
+    },
+    {
+     "name": "Manny Machado",
+     "p": 1
+    },
+    {
+     "name": "Oneil Cruz",
+     "p": 1
+    },
+    {
+     "name": "Paul Skenes",
+     "p": 1
+    },
+    {
+     "name": "Caleb Durbin",
      "p": 1
     }
    ]
