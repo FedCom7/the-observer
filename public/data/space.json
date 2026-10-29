@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-29T02:26:18.864Z",
- "llAt": "2026-10-29T02:26:18.864Z",
+ "updated": "2026-10-29T09:53:47.670Z",
+ "llAt": "2026-10-29T09:53:47.670Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2399,7 +2399,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-10-28T23:12:34.593Z",
+  "at": "2026-10-29T09:53:26.351Z",
   "stats": {
    "total": 742,
    "successes": 727,
@@ -3305,6 +3305,20 @@
     "webcast": false
    },
    {
+    "id": "b0dc988c-ea4a-423f-81b6-6b0fbe7cc17c",
+    "name": "OneWeb 21",
+    "rocket": "Falcon 9",
+    "net": "2026-11-30T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Communications",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
     "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
     "name": "Flight 15",
     "rocket": "Starship",
@@ -3415,20 +3429,6 @@
     "type": "Communications",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
-    "name": "SDA Tranche 1 Tracking Layer A",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3519,6 +3519,12 @@
   ]
  },
  "news": [
+  {
+   "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
+   "source": "NASA · Artemis",
+   "time": "2026-10-29T02:49:59.000Z",
+   "url": "https://www.nasa.gov/centers-and-facilities/jpl/caltech-names-artemis-ii-commander-reid-wiseman-as-nasa-jpl-deputy/"
+  },
   {
    "title": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
    "source": "NASA · News releases",
@@ -3622,12 +3628,6 @@
    "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/"
   },
   {
-   "title": "Rigorous Analysis Confirms NASA’s Artemis II Heat Shield Performance",
-   "source": "NASA · Artemis",
-   "time": "2026-10-15T14:57:21.000Z",
-   "url": "https://www.nasa.gov/missions/artemis/artemis-2/rigorous-analysis-confirms-nasas-artemis-ii-heat-shield-performance/"
-  },
-  {
    "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
    "source": "NASA · Artemis blog",
    "time": "2026-10-13T18:44:03.000Z",
@@ -3671,7 +3671,7 @@
   }
  ],
  "corps": {
-  "at": "2026-10-29T02:26:04.670Z",
+  "at": "2026-10-29T09:53:35.537Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4072,7 +4072,7 @@
   "next": null
  },
  "artemisFlow": {
-  "at": "2026-10-29T02:26:11.549Z",
+  "at": "2026-10-29T09:53:40.955Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4585,7 +4585,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-10-29T02:26:18.863Z",
+  "at": "2026-10-29T09:53:47.669Z",
   "items": [
    {
     "id": "agenda:5fgb5dosp2euco29ve4po9qami@google.com",
