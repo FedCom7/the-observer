@@ -1,1 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#06080b"/><circle cx="32" cy="32" r="17" fill="none" stroke="#2997ff" stroke-width="3"/><circle cx="32" cy="32" r="5" fill="#ff453a"/><path d="M32 8v8M32 48v8M8 32h8M48 32h8" stroke="#a7b1bd" stroke-width="2.5" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="75%">
+      <stop offset="0" stop-color="#16202e"/>
+      <stop offset=".6" stop-color="#0a0e14"/>
+      <stop offset="1" stop-color="#040508"/>
+    </radialGradient>
+    <radialGradient id="iris" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#0b2a55"/>
+      <stop offset=".55" stop-color="#1c6fd6"/>
+      <stop offset=".85" stop-color="#2997ff"/>
+      <stop offset="1" stop-color="#7cc0ff"/>
+    </radialGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f7fb"/>
+      <stop offset="1" stop-color="#a7b1bd"/>
+    </linearGradient>
+    <clipPath id="eye"><path d="M76 256C128 170 186 128 256 128s128 42 180 128c-52 86-110 128-180 128S128 342 76 256Z"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- orbit -->
+  <ellipse cx="256" cy="256" rx="206" ry="206" fill="none" stroke="#2997ff" stroke-opacity=".16" stroke-width="3"/>
+  <circle cx="256" cy="50" r="7" fill="#2997ff" fill-opacity=".55"/>
+  <!-- eye -->
+  <path d="M76 256C128 170 186 128 256 128s128 42 180 128c-52 86-110 128-180 128S128 342 76 256Z" fill="#05070b"/>
+  <g clip-path="url(#eye)">
+    <circle cx="256" cy="256" r="96" fill="url(#iris)"/>
+    <g stroke="#bfe0ff" stroke-opacity=".28" stroke-width="3" stroke-linecap="round">
+      <path d="M256 176v26M256 310v26M176 256h26M310 256h26M199 199l18 18M295 295l18 18M313 199l-18 18M217 295l-18 18"/>
+    </g>
+    <circle cx="256" cy="256" r="44" fill="#03050a"/>
+    <circle cx="256" cy="256" r="16" fill="#ff453a"/>
+    <circle cx="226" cy="222" r="13" fill="#ffffff" fill-opacity=".85"/>
+  </g>
+  <path d="M76 256C128 170 186 128 256 128s128 42 180 128c-52 86-110 128-180 128S128 342 76 256Z" fill="none" stroke="url(#lid)" stroke-width="14" stroke-linejoin="round"/>
+</svg>

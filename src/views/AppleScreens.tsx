@@ -127,7 +127,7 @@ function InviteGallery({ events, onSel, sel }: { events: AppleHistoryEvent[]; on
         ))}
       </div>
       {!all && withArt.length > 18 && <button className="btn" onClick={() => setAll(true)} style={{ ...btn(false), marginTop: 10 }}>Show all {withArt.length}</button>}
-      <div className="osrc">Artwork: appleinvites.com, a fan archive of every Apple invitation.</div>
+      <div className="osrc">Artwork: appleinvitearchive.com, a fan archive of every Apple invitation.</div>
     </section>
   );
 }

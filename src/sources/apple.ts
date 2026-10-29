@@ -7,8 +7,8 @@ export interface AppleRelease { title: string; url: string; published: string; p
 export interface AppleKeynote { title: string; start: string; past: boolean }
 /** An event of Wikipedia's "List of Apple Inc. media events"; m and d are null when only the year or month is known. */
 export interface AppleHistoryEvent { title: string; kind: 'wwdc' | 'expo' | 'event'; y: number; m: number | null; d: number | null; date: string; tagline: string | null; summary: string; invite?: AppleInvite }
-/** An invitation from appleinvites.com: artwork, day it was sent, event date, what Apple announced, keynote video. */
-export interface AppleInvite { date: string; kind: 'event' | 'wwdc'; tagline: string | null; title: string; invited: string | null; location: string | null; image: string | null; announced: string | null; youtube: string | null; podcast: string | null }
+/** An invitation from appleinvitearchive.com: artwork, day it was sent, event date, what Apple announced, keynote video. */
+export interface AppleInvite { date: string; kind: 'event' | 'wwdc'; tagline: string | null; title: string; invited: string | null; location: string | null; image: string | null; announced: string | null; youtube: string | null; podcast: string | null; page?: string }
 export interface AppleLine { name: string; releases: { date: string; models: string[] }[] }
 export interface AppleBuild { os: string; version: string; stage: 'beta' | 'rc' | 'release'; n: number; build: string; time: string; url: string }
 export interface AppleRumor { title: string; url: string; time: string; source: string; rumor: boolean }
@@ -52,8 +52,8 @@ export const loadAppleArchive = () => getJSON<{ updated: string; stories: AppleS
 
 /** Short product name from a press release title ("Apple unveils the new Apple TV 4K, supercharged by…" -> "Apple TV 4K"). */
 export const productName = (title: string) => title
-  .replace(/^(Apple (unveils|announces|introduces|debuts)|Introducing|Meet|Say hello to)\s+(the\s+)?(all-new\s+|new\s+|next generation of\s+|a more powerful\s+)?/i, '')
-  .replace(/^the new /i, '').replace(/,.*$| — .*$| (?:are|is) available today$| featuring .*$| with (?:the |best-in-class |M\d).*$|, a new .*$/i, '').trim();
+  .replace(/^(Apple (unveils|announces|introduces|debuts)|Introducing|Meet|Say hello to)\s+(the\s+)?((?:all-new|new|next-generation|groundbreaking|revolutionary|breakthrough|powerful|more powerful|stunning|redesigned|reimagined|incredibly \w+|ultra-\w+|its (?:most|thinnest|lightest|fastest) \w+|a|an|the)\s+|next generation of\s+)*/i, '')
+  .replace(/^the new /i, '').replace(/,.*$| — .*$| (?:are|is) available today$| featuring .*$| powered by .*$| with (?:the |best-in-class |M\d).*$|, a new .*$/i, '').trim();
 
 /** Pacific-time keynote start of a past event from the history (10 a.m. PT is Apple's habit since 2008). */
 export const historyTime = (e: AppleHistoryEvent) => e.m && e.d ? Date.UTC(e.y, e.m - 1, e.d, 17) : Date.UTC(e.y, (e.m ?? 7) - 1, e.d ?? 1);
@@ -68,14 +68,14 @@ export function upcomingEvents(d: AppleData, now = Date.now()): AppleUpcoming[] 
     return { title: k.title, start: Date.parse(k.start), tagline: press?.tagline ?? null, city: press?.city ?? 'Cupertino', official: true, link: 'https://www.apple.com/apple-events/', sources: press?.sources ?? [] };
   });
   const dayOf = (t: number) => new Date(t).toISOString().slice(0, 10);
-  // appleinvites.com posts the invitation within hours; its artwork and tagline win
+  // appleinvitearchive.com posts the invitation within hours; its artwork and tagline win
   for (const inv of d.invites ?? []) {
     const start = Date.UTC(+inv.date.slice(0, 4), +inv.date.slice(5, 7) - 1, +inv.date.slice(8, 10), 17);
     if (start < now - 3 * 3600e3) continue;
     const same = out.find(o => dayOf(o.start) === inv.date);
     const press = d.pressEvents?.find(p => p.date === inv.date);
     if (same) { same.invite = inv; same.tagline = inv.tagline ?? same.tagline; continue; }
-    out.push({ title: inv.kind === 'wwdc' ? 'WWDC keynote' : press?.kind === 'experience' ? 'Apple launch experience' : 'Apple Event', start: press ? Date.parse(press.start) : start, tagline: inv.tagline, city: press?.city ?? inv.location, official: false, link: 'https://appleinvites.com/', sources: press?.sources ?? [], invite: inv });
+    out.push({ title: inv.kind === 'wwdc' ? 'WWDC keynote' : press?.kind === 'experience' || inv.title === 'Apple experience' ? 'Apple launch experience' : 'Apple Event', start: press ? Date.parse(press.start) : start, tagline: inv.tagline, city: press?.city ?? inv.location, official: false, link: inv.page ?? 'https://appleinvitearchive.com/', sources: press?.sources ?? [], invite: inv });
   }
   for (const p of d.pressEvents ?? []) {
     if (Date.parse(p.start) < now - 3 * 3600e3 || out.some(o => dayOf(o.start) === p.date)) continue;
@@ -100,7 +100,7 @@ export function fullHistory(d: AppleData): AppleHistoryEvent[] {
   for (const inv of invites) {
     if (all.some(e => e.date === inv.date) || Date.parse(inv.date) > Date.now()) continue;
     const [y, m, dd] = inv.date.split('-').map(Number);
-    all.push({ title: inv.title === 'Apple launch' ? 'Apple launch' : inv.kind === 'wwdc' ? inv.title : 'Apple event', kind: inv.kind, y, m, d: dd, date: inv.date, tagline: inv.tagline, summary: inv.announced ? `Apple announced: ${inv.announced}` : '', invite: inv });
+    all.push({ title: inv.title, kind: inv.kind, y, m, d: dd, date: inv.date, tagline: inv.tagline, summary: inv.announced ? `Apple announced: ${inv.announced}` : '', invite: inv });
   }
   return all.sort((a, b) => a.date.localeCompare(b.date));
 }

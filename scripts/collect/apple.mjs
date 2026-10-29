@@ -5,7 +5,7 @@
 // - the whole Newsroom archive and quarterly results (appleNewsroom.mjs), written to apple-archive.json;
 // - event history since 1984 and the product lines (appleWiki.mjs, Wikipedia, every 12 hours);
 // - OS betas and releases (Apple Developer releases feed), rumours (MacRumors, 9to5Mac) and Mark Gurman
-//   (Bloomberg, through Google News), event invitations (appleinvites.com, a fan archive of every
+//   (Bloomberg, through Google News), event invitations (appleinvitearchive.com, a fan archive of every
 //   invite, and Google News headlines for the ones it has not added yet),
 //   Apple's accounts by quarter, product and region (SEC filings, appleSec.mjs),
 //   AAPL price and the next earnings date (Nasdaq public API).
@@ -209,35 +209,60 @@ function isoDay(text) {
   return `${m[3]}-${String(month).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
 }
 
+const SHORT = 'JanFebMarAprMayJunJulAugSepOctNovDec';
+const INVITES = 'https://appleinvitearchive.com';
+
 /**
- * appleinvites.com: every Apple event invitation with its artwork, the day it was sent, the event
- * date, what Apple announced and the keynote video. A fan archive, updated within hours of an invite.
+ * appleinvitearchive.com (formerly appleinvites.com): every Apple event invitation with its artwork,
+ * the day it was sent, the event date, what Apple announced and the keynote video. A fan archive,
+ * updated within hours of an invite. The home page lists every event; the details come from each
+ * event's page, fetched once (and again while the event is recent, as the archive fills it in).
  */
-async function invites() {
-  const pages = await Promise.all(['https://appleinvites.com/', 'https://appleinvites.com/wwdc/'].map(u => get(u, { browser: true })));
+async function invites(prev = []) {
+  const html = await get(`${INVITES}/`, { browser: true });
+  const cached = new Map(prev.filter(i => i.page).map(i => [i.page, i]));
+  const cards = [];
+  for (const [, href, card] of html.matchAll(/<a href="(\/event\/[^"]+)" class="group block"([\s\S]*?)<\/a>/g)) {
+    const type = card.match(/data-type="([^"]+)"/)?.[1];
+    const head = plainText(card.match(/<h3[^>]*>([\s\S]*?)<\/h3>/)?.[1] ?? '');
+    // "Oct 28, 2026", "Jun 8–12, 2026", "Jun 28 – Jul 2, 2004": the first day
+    const dm = plainText(card.match(/<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/)?.[1] ?? '').match(/^(\w{3}) (\d{1,2})[\s\S]*?(\d{4})/);
+    if (!type || !head || !dm || !SHORT.includes(dm[1])) continue;
+    const date = `${dm[3]}-${String(SHORT.indexOf(dm[1]) / 3 + 1).padStart(2, '0')}-${dm[2].padStart(2, '0')}`;
+    const img = card.match(/<img src="([^"]+)"/)?.[1];
+    const tagline = head.replace(/\.$/, '');
+    const wwdc = type === 'wwdc', launch = type === 'launch';
+    cards.push({
+      date, kind: wwdc ? 'wwdc' : 'event', page: `${INVITES}${href}`,
+      tagline: launch || /^WWDC\d+$/i.test(tagline) ? null : tagline,
+      title: wwdc ? `WWDC${date.slice(2, 4)}` : launch ? 'Apple launch' : type === 'experience' ? 'Apple experience' : type === 'macworld' ? 'Macworld keynote' : 'Apple event',
+      image: img ? new URL(img, INVITES).href : null,
+    });
+  }
+  if (!cards.length) throw new Error('appleinvitearchive.com: no events found');
+  const details = async c => {
+    const old = cached.get(c.page);
+    if (old && (old.announced || Date.parse(c.date) < now - 60 * DAY)) return old;
+    const page = await get(c.page, { browser: true });
+    const field = label => plainText(page.match(new RegExp(`>${label}</dt>\\s*<dd[^>]*>([\\s\\S]*?)</dd>`))?.[1] ?? '');
+    const where = page.match(/>Location<\/dt>\s*<dd[^>]*>([\s\S]*?)<\/dd>(?:\s*<dd[^>]*>([\s\S]*?)<\/dd>)?/);
+    let sec = page.slice(page.indexOf('What was announced.'));
+    sec = sec.startsWith('What') ? sec.slice(0, sec.indexOf('<h2', 20) > 0 ? sec.indexOf('<h2', 20) : undefined) : '';
+    const products = [...sec.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>/g)].map(m => plainText(m[1])).filter(Boolean);
+    return {
+      ...c,
+      invited: isoDay(field('Invitation sent')),
+      location: where ? [where[1], where[2]].map(x => plainText(x ?? '')).filter(x => x && !/press only|livestream/i.test(x)).join(', ') || null : null,
+      announced: products.length ? `${products.join(', ')}.` : null,
+      youtube: page.match(/https:\/\/www\.youtube\.com\/watch\?v=[\w-]+/)?.[0] ?? null,
+      podcast: page.match(/https:\/\/podcasts\.apple\.com\/[^"\s]+/)?.[0]?.replace(/&amp;/g, '&') ?? null,
+    };
+  };
   const out = [];
-  pages.forEach((html, pi) => {
-    for (const card of html.replace(/<!--[\s\S]*?-->/g, '').split('<div class="card">').slice(1)) {
-      const field = label => card.match(new RegExp(`${label}</div>\\s*<p[^>]*>([\\s\\S]*?)</p>`))?.[1];
-      const title = plainText(card.match(/<h3 class="card-title">([\s\S]*?)<\/h3>/)?.[1] ?? '');
-      const date = isoDay(plainText(field('EVENT DATE') ?? ''));
-      if (!title || !date) continue;
-      const img = card.match(/<img\s+src="\s*([^"]+)"/)?.[1]?.trim();
-      const link = cls => card.match(new RegExp(`<a href="(http[^"]+)" class="${cls}"`))?.[1] ?? null;
-      const announced = plainText(field('WHAT APPLE ANNOUNCED') ?? '');
-      out.push({
-        date, kind: pi === 1 ? 'wwdc' : 'event',
-        tagline: pi === 1 || /^Apple Launch$/i.test(title) ? null : title.replace(/\.$/, ''),
-        title: pi === 1 ? title : /^Apple Launch$/i.test(title) ? 'Apple launch' : 'Apple event',
-        invited: isoDay(plainText(card.match(/<div class="title-category">([^<]*\d{4})<\/div>/)?.[1] ?? '')),
-        location: plainText(field('LOCATION') ?? '') || null,
-        image: img && !/not-found/.test(img) ? new URL(img, 'https://appleinvites.com/').href : null,
-        announced: announced && !/update later/i.test(announced) ? announced : null,
-        youtube: link('youtube'), podcast: link('podcast'),
-      });
-    }
-  });
-  return out.sort((a, b) => a.date.localeCompare(b.date));
+  // A few pages at a time, to be gentle with a fan site
+  for (let i = 0; i < cards.length; i += 6) out.push(...await Promise.all(cards.slice(i, i + 6).map(c => details(c).catch(() => cached.get(c.page) ?? { ...c, invited: null, location: null, announced: null, youtube: null, podcast: null }))));
+  // The same day twice (an event and a WWDC on one list): keep the first
+  return out.filter((e, i) => out.findIndex(o => o.date === e.date) === i).sort((a, b) => a.date.localeCompare(b.date));
 }
 
 const usd = s => Number(String(s).replace(/[$,]/g, ''));
@@ -295,7 +320,7 @@ export async function collectApple() {
     keep(stock, prev.stock ?? null),
     keep(gurman, prev.gurman ?? []),
     keep(() => pressEvents(prev.pressEvents), prev.pressEvents ?? []),
-    keep(invites, prev.invites ?? []),
+    keep(() => invites(prev.invites), prev.invites ?? []),
   ]);
   // Accounts: the SEC cache lives with the archive (it is large); a new filing arrives once a quarter
   let secCache = [];

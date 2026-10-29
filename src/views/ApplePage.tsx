@@ -66,12 +66,12 @@ function NowScreen({ d, now }: { d: AppleData; now: number }) {
           <div className="lab">{live ? 'Live now' : 'Next Apple event'}</div>
           {next ? (
             <>
-              {next.invite?.image && <a href="https://appleinvites.com/" target="_blank" rel="noreferrer"><img src={next.invite.image} alt={`Invitation: ${next.tagline ?? next.title}`} style={{ width: '100%', borderRadius: 12, marginBottom: 10, display: 'block', background: 'var(--o-grid)' }} /></a>}
+              {next.invite?.image && <a href={next.invite.page ?? 'https://appleinvitearchive.com/'} target="_blank" rel="noreferrer"><img src={next.invite.image} alt={`Invitation: ${next.tagline ?? next.title}`} style={{ width: '100%', borderRadius: 12, marginBottom: 10, display: 'block', background: 'var(--o-grid)' }} /></a>}
               <h3>{eventName(next)}</h3>
               <div className="when">{next.title} · {dayLong(next.start)} · {hhmm(next.start)} Rome{next.city ? ` · ${next.city}` : ''}</div>
               {live ? <a className="s-cd" href={next.link} target="_blank" rel="noreferrer" style={{ color: 'var(--o-accent)' }}>{next.official ? 'Watch on apple.com ›' : 'Follow the news ›'}</a>
                 : <div className="s-cd">{countdown(next.start - now)}<small>T-minus{next.official ? '' : ' · time as usual, 10 a.m. Pacific'}</small></div>}
-              {!next.official && <div className="osrc">{next.invite ? `Invitation sent ${next.invite.invited ? dayShort(Date.parse(next.invite.invited)) : ''} (appleinvites.com)` : 'Invitation'}{next.sources.length ? `, reported by ${[...new Set(next.sources.map(x => x.source))].slice(0, 3).join(', ')}` : ''}. Not on apple.com/apple-events yet.</div>}
+              {!next.official && <div className="osrc">{next.invite ? `Invitation sent ${next.invite.invited ? dayShort(Date.parse(next.invite.invited)) : ''} (appleinvitearchive.com)` : 'Invitation'}{next.sources.length ? `, reported by ${[...new Set(next.sources.map(x => x.source))].slice(0, 3).join(', ')}` : ''}. Not on apple.com/apple-events yet.</div>}
             </>
           ) : (
             <>
