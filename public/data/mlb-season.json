@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T15:53:49.809Z",
+ "updated": "2026-10-30T20:44:49.086Z",
  "season": 2026,
  "teams": [
   {
@@ -41525,6 +41525,15 @@
  ],
  "transactions": [
   {
+   "date": "2026-10-30",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Zach Eflin",
+   "text": "RHP Zach Eflin elected free agency."
+  },
+  {
    "date": "2026-10-29",
    "type": "Claimed Off Waivers",
    "team": 120,
@@ -42864,153 +42873,9 @@
    "to": 141,
    "player": "Patrick Corbin",
    "text": "LHP Patrick Corbin elected free agency."
-  },
-  {
-   "date": "2026-10-28",
-   "type": "Signed as Free Agent",
-   "team": 119,
-   "from": null,
-   "to": 119,
-   "player": "Alberto Santos",
-   "text": "Los Angeles Dodgers signed free agent RHP Alberto Santos to a minor league contract."
   }
  ],
  "markets": {
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
-   "rows": [
-    {
-     "name": "Pete Crow-Armstrong",
-     "p": 99.5
-    },
-    {
-     "name": "Teoscar Hernández",
-     "p": 1
-    },
-    {
-     "name": "Caleb Durbin",
-     "p": 1
-    },
-    {
-     "name": "Ozzie Albies",
-     "p": 1
-    },
-    {
-     "name": "Geraldo Perdomo",
-     "p": 1
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 1
-    },
-    {
-     "name": "Dansby Swanson",
-     "p": 1
-    },
-    {
-     "name": "Mookie Betts",
-     "p": 1
-    },
-    {
-     "name": "Kyle Schwarber",
-     "p": 1
-    },
-    {
-     "name": "Willy Adames",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALROTY": {
-   "label": "Pro Baseball American League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Kevin McGonigle",
-     "p": 95.5
-    },
-    {
-     "name": "Lazaro Montes",
-     "p": 4
-    },
-    {
-     "name": "Hagen Smith",
-     "p": 3
-    },
-    {
-     "name": "Munetaka Murakami",
-     "p": 2.5
-    },
-    {
-     "name": "Parker Messick",
-     "p": 2
-    },
-    {
-     "name": "Payton Tolle",
-     "p": 1
-    },
-    {
-     "name": "Sam Antonacci",
-     "p": 1
-    },
-    {
-     "name": "Travis Bazzana",
-     "p": 1
-    },
-    {
-     "name": "Trey Yesavage",
-     "p": 1
-    },
-    {
-     "name": "Carson Williams",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLCY": {
-   "label": "Pro Baseball National League Cy Young",
-   "rows": [
-    {
-     "name": "Jacob Misiorowski",
-     "p": 97.5
-    },
-    {
-     "name": "Kyle Harrison",
-     "p": 1
-    },
-    {
-     "name": "Joe Musgrove",
-     "p": 1
-    },
-    {
-     "name": "Roki Sasaki",
-     "p": 1
-    },
-    {
-     "name": "Merrill Kelly",
-     "p": 1
-    },
-    {
-     "name": "Shota Imanaga",
-     "p": 1
-    },
-    {
-     "name": "Spencer Strider",
-     "p": 1
-    },
-    {
-     "name": "Tyler Glasnow",
-     "p": 1
-    },
-    {
-     "name": "Chase Burns",
-     "p": 1
-    },
-    {
-     "name": "Shohei Ohtani",
-     "p": 1
-    }
-   ]
-  },
   "KXMLBALCY": {
    "label": "Pro Baseball American League Cy Young",
    "rows": [
@@ -43056,16 +42921,61 @@
     }
    ]
   },
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
+   "rows": [
+    {
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
+    },
+    {
+     "name": "Teoscar Hernández",
+     "p": 1
+    },
+    {
+     "name": "Ozzie Albies",
+     "p": 1
+    },
+    {
+     "name": "Geraldo Perdomo",
+     "p": 1
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
+     "name": "Dansby Swanson",
+     "p": 1
+    },
+    {
+     "name": "Willy Adames",
+     "p": 1
+    },
+    {
+     "name": "Alex Bregman",
+     "p": 1
+    },
+    {
+     "name": "James Wood",
+     "p": 1
+    },
+    {
+     "name": "Shohei Ohtani",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBNLROTY": {
    "label": "Pro Baseball National League Rookie of the Year",
    "rows": [
     {
      "name": "Sal Stewart",
-     "p": 88.5
+     "p": 90
     },
     {
      "name": "Carson Benge",
-     "p": 10.5
+     "p": 10
     },
     {
      "name": "Tie/Co-Winners",
@@ -43076,72 +42986,72 @@
      "p": 2
     },
     {
-     "name": "Joe Mack",
-     "p": 1
-    },
-    {
      "name": "Nolan McLean",
      "p": 1
     },
     {
-     "name": "Jhostnyxon Garcia",
+     "name": "Jaxon Wiggins",
      "p": 1
     },
     {
-     "name": "Bubba Chandler",
+     "name": "Joe Mack",
      "p": 1
     },
     {
-     "name": "Bryce Eldridge",
+     "name": "Ryan Waldschmidt",
      "p": 1
     },
     {
      "name": "Moises Ballesteros",
      "p": 1
+    },
+    {
+     "name": "Alex Freeland",
+     "p": 1
     }
    ]
   },
-  "KXMLBALMVP": {
-   "label": "Pro Baseball American League MVP",
+  "KXMLBALROTY": {
+   "label": "Pro Baseball American League Rookie of the Year",
    "rows": [
     {
-     "name": "Yordan Álvarez",
+     "name": "Kevin McGonigle",
      "p": 95.5
     },
     {
-     "name": "Junior Caminero",
-     "p": 1.5
+     "name": "Lazaro Montes",
+     "p": 4
     },
     {
-     "name": "Cam Schlittler",
-     "p": 1.5
+     "name": "Hagen Smith",
+     "p": 3
     },
     {
-     "name": "Trevor Story",
+     "name": "Parker Messick",
+     "p": 2.5
+    },
+    {
+     "name": "Carson Williams",
      "p": 1
     },
     {
-     "name": "Alejandro Kirk",
+     "name": "Max Clark",
      "p": 1
     },
     {
-     "name": "Tie/Co-Winners",
+     "name": "George Lombard Jr.",
      "p": 1
     },
     {
-     "name": "Jo Adell",
+     "name": "Chase DeLauter",
      "p": 1
     },
     {
-     "name": "Ceddanne Rafaela",
+     "name": "Colt Emerson",
      "p": 1
     },
     {
-     "name": "Josh Naylor",
-     "p": 1
-    },
-    {
-     "name": "Roman Anthony",
+     "name": "Connelly Early",
      "p": 1
     }
    ]
