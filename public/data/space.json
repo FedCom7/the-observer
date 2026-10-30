@@ -1,6 +1,6 @@
 {
- "updated": "2026-10-30T01:57:24.584Z",
- "llAt": "2026-10-30T01:57:24.584Z",
+ "updated": "2026-10-30T08:36:13.234Z",
+ "llAt": "2026-10-30T08:36:13.234Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2408,7 +2408,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-10-29T21:48:36.868Z",
+  "at": "2026-10-30T08:35:50.850Z",
   "stats": {
    "total": 742,
    "successes": 727,
@@ -3370,20 +3370,6 @@
     "webcast": false
    },
    {
-    "id": "ce1317de-ec94-4479-9b28-38ebf11f13ae",
-    "name": "Telesat Lightspeed 1",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Unknown Pad",
-    "location": "Cape Canaveral SFS, FL, USA",
-    "orbit": "LEO",
-    "type": "Communications",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
     "id": "d3bd7fb2-fac6-49fc-ae52-cee07d2fde67",
     "name": "Griffin Mission One",
     "rocket": "Falcon Heavy",
@@ -3436,6 +3422,20 @@
     "location": "Cape Canaveral SFS, FL, USA",
     "orbit": "GTO",
     "type": "Communications",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "2d0472b9-463d-49c8-afb1-7925e49a3368",
+    "name": "SDA Tranche 1 Tracking Layer A",
+    "rocket": "Falcon 9",
+    "net": "2026-12-31T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
    }
@@ -3539,18 +3539,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-10-29T19:17:00.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/spacewalkers-install-roll-out-solar-arrays-for-power-generation/"
-  },
-  {
-   "title": "Envía tu nombre a Titán a bordo de la misión Dragonfly de la NASA",
-   "source": "NASA · News releases",
-   "time": "2026-10-29T15:21:23.000Z",
-   "url": "https://www.nasa.gov/news-release/envia-tu-nombre-a-titan-a-bordo-de-la-mision-dragonfly-de-la-nasa/"
-  },
-  {
-   "title": "Send Your Name to Titan Aboard NASA’s Dragonfly Mission",
-   "source": "NASA · News releases",
-   "time": "2026-10-29T15:10:18.000Z",
-   "url": "https://www.nasa.gov/news-release/send-your-name-to-titan-aboard-nasas-dragonfly-mission/"
   },
   {
    "title": "Astronauts Begin Spacewalk to Install Roll-Out Solar Arrays",
@@ -3677,10 +3665,22 @@
    "source": "NASA · Artemis blog",
    "time": "2026-10-07T16:12:54.000Z",
    "url": "https://www.nasa.gov/blogs/missions/2026/10/07/nasa-releases-artemis-ii-lunar-science-data-images/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Closes Dragon Hatch, Preps for Departure",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-07T10:21:00.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-closes-dragon-hatch-preps-for-departure/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Saying Farewell, Closing Dragon Hatch Soon",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-07T10:01:13.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
   }
  ],
  "corps": {
-  "at": "2026-10-30T01:57:12.235Z",
+  "at": "2026-10-30T08:35:59.226Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4080,7 +4080,7 @@
   "next": null
  },
  "artemisFlow": {
-  "at": "2026-10-30T01:57:17.641Z",
+  "at": "2026-10-30T08:36:05.391Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4593,7 +4593,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-10-30T01:57:24.583Z",
+  "at": "2026-10-30T08:36:13.234Z",
   "items": [
    {
     "id": "agenda:5fgb5dosp2euco29ve4po9qami@google.com",
