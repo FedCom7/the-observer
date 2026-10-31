@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T00:45:02.454Z",
+ "updated": "2026-10-31T06:57:18.350Z",
  "season": 2026,
  "teams": [
   {
@@ -41527,11 +41527,20 @@
   {
    "date": "2026-10-30",
    "type": "Declared Free Agency",
-   "team": 110,
+   "team": 114,
    "from": null,
-   "to": 110,
-   "player": "Zach Eflin",
-   "text": "RHP Zach Eflin elected free agency."
+   "to": 114,
+   "player": "Shawn Armstrong",
+   "text": "RHP Shawn Armstrong elected free agency."
+  },
+  {
+   "date": "2026-10-30",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Michael King",
+   "text": "RHP Michael King elected free agency."
   },
   {
    "date": "2026-10-30",
@@ -41572,20 +41581,11 @@
   {
    "date": "2026-10-30",
    "type": "Declared Free Agency",
-   "team": 114,
+   "team": 110,
    "from": null,
-   "to": 114,
-   "player": "Shawn Armstrong",
-   "text": "RHP Shawn Armstrong elected free agency."
-  },
-  {
-   "date": "2026-10-30",
-   "type": "Declared Free Agency",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "Michael King",
-   "text": "RHP Michael King elected free agency."
+   "to": 110,
+   "player": "Zach Eflin",
+   "text": "RHP Zach Eflin elected free agency."
   },
   {
    "date": "2026-10-30",
@@ -42876,84 +42876,27 @@
   }
  ],
  "markets": {
-  "KXMLBALMVP": {
-   "label": "Pro Baseball American League MVP",
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
    "rows": [
     {
-     "name": "Yordan Álvarez",
-     "p": 96.5
+     "name": "Sal Stewart",
+     "p": 89.5
     },
     {
-     "name": "Cam Schlittler",
-     "p": 3
+     "name": "Carson Benge",
+     "p": 9.5
     },
     {
-     "name": "Junior Caminero",
-     "p": 1.5
+     "name": "Tie/Co-Winners",
+     "p": 4
     },
     {
-     "name": "Jarren Duran",
-     "p": 1
+     "name": "Thomas White",
+     "p": 2
     },
     {
-     "name": "Jose Altuve",
-     "p": 1
-    },
-    {
-     "name": "Adley Rutschman",
-     "p": 1
-    },
-    {
-     "name": "Josh Naylor",
-     "p": 1
-    },
-    {
-     "name": "Julio Rodríguez",
-     "p": 1
-    },
-    {
-     "name": "Zach Neto",
-     "p": 1
-    },
-    {
-     "name": "Aaron Judge",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLCY": {
-   "label": "Pro Baseball National League Cy Young",
-   "rows": [
-    {
-     "name": "Jacob Misiorowski",
-     "p": 98.5
-    },
-    {
-     "name": "Shota Imanaga",
-     "p": 1
-    },
-    {
-     "name": "Shohei Ohtani",
-     "p": 1
-    },
-    {
-     "name": "Matthew Boyd",
-     "p": 1
-    },
-    {
-     "name": "Yoshinobu Yamamoto",
-     "p": 1
-    },
-    {
-     "name": "Bryce Elder",
-     "p": 1
-    },
-    {
-     "name": "Mitch Keller",
-     "p": 1
-    },
-    {
-     "name": "Kyle Harrison",
+     "name": "Moises Ballesteros",
      "p": 1
     },
     {
@@ -42961,7 +42904,64 @@
      "p": 1
     },
     {
-     "name": "Brady Singer",
+     "name": "Chase Petty",
+     "p": 1
+    },
+    {
+     "name": "Jonah Tong",
+     "p": 1
+    },
+    {
+     "name": "Rhett Lowder",
+     "p": 1
+    },
+    {
+     "name": "Charlie Condon",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
+   "rows": [
+    {
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
+    },
+    {
+     "name": "Ozzie Albies",
+     "p": 1
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
+     "name": "Willy Adames",
+     "p": 1
+    },
+    {
+     "name": "Shohei Ohtani",
+     "p": 1
+    },
+    {
+     "name": "Bo Bichette",
+     "p": 1
+    },
+    {
+     "name": "Francisco Lindor",
+     "p": 1
+    },
+    {
+     "name": "Ian Happ",
+     "p": 1
+    },
+    {
+     "name": "Matt Olson",
+     "p": 1
+    },
+    {
+     "name": "James Wood",
      "p": 1
     }
    ]
@@ -43011,68 +43011,15 @@
     }
    ]
   },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
+  "KXMLBNLCY": {
+   "label": "Pro Baseball National League Cy Young",
    "rows": [
     {
-     "name": "Sal Stewart",
-     "p": 90
+     "name": "Jacob Misiorowski",
+     "p": 98.5
     },
     {
-     "name": "Carson Benge",
-     "p": 9.5
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 4
-    },
-    {
-     "name": "Thomas White",
-     "p": 2
-    },
-    {
-     "name": "Nolan McLean",
-     "p": 1
-    },
-    {
-     "name": "Jaxon Wiggins",
-     "p": 1
-    },
-    {
-     "name": "Moises Ballesteros",
-     "p": 1
-    },
-    {
-     "name": "Bubba Chandler",
-     "p": 1
-    },
-    {
-     "name": "Chase Petty",
-     "p": 1
-    },
-    {
-     "name": "Jonah Tong",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
-   "rows": [
-    {
-     "name": "Pete Crow-Armstrong",
-     "p": 99.5
-    },
-    {
-     "name": "Ozzie Albies",
-     "p": 1
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 1
-    },
-    {
-     "name": "Willy Adames",
+     "name": "Shota Imanaga",
      "p": 1
     },
     {
@@ -43080,23 +43027,76 @@
      "p": 1
     },
     {
-     "name": "Bo Bichette",
+     "name": "Matthew Boyd",
      "p": 1
     },
     {
-     "name": "Francisco Lindor",
+     "name": "Yoshinobu Yamamoto",
      "p": 1
     },
     {
-     "name": "Ian Happ",
+     "name": "Bryce Elder",
      "p": 1
     },
     {
-     "name": "Matt Olson",
+     "name": "Nick Lodolo",
      "p": 1
     },
     {
-     "name": "James Wood",
+     "name": "Mitch Keller",
+     "p": 1
+    },
+    {
+     "name": "Kyle Harrison",
+     "p": 1
+    },
+    {
+     "name": "Bubba Chandler",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALMVP": {
+   "label": "Pro Baseball American League MVP",
+   "rows": [
+    {
+     "name": "Yordan Álvarez",
+     "p": 96.5
+    },
+    {
+     "name": "Cam Schlittler",
+     "p": 2.5
+    },
+    {
+     "name": "Junior Caminero",
+     "p": 1.5
+    },
+    {
+     "name": "Jarren Duran",
+     "p": 1
+    },
+    {
+     "name": "Jose Altuve",
+     "p": 1
+    },
+    {
+     "name": "Julio Rodríguez",
+     "p": 1
+    },
+    {
+     "name": "Josh Naylor",
+     "p": 1
+    },
+    {
+     "name": "Zach Neto",
+     "p": 1
+    },
+    {
+     "name": "Aaron Judge",
+     "p": 1
+    },
+    {
+     "name": "Vladimir Guerrero Jr.",
      "p": 1
     }
    ]
