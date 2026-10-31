@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-31T18:30:27.865Z",
+ "updated": "2026-10-31T22:26:54.184Z",
  "pats": {
-  "at": "2026-10-31T18:30:27.865Z",
+  "at": "2026-10-31T22:26:54.184Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -707,6 +707,54 @@
     ]
    },
    {
+    "espn": "4698253",
+    "name": "Lan Larison",
+    "short": "L. Larison",
+    "jersey": "34",
+    "group": "offense",
+    "pos": "RB",
+    "posName": "Running Back",
+    "unit": "OFF",
+    "age": 25,
+    "ht": "5' 11\"",
+    "wt": "209 lbs",
+    "exp": 2,
+    "college": "UC Davis",
+    "from": "Caldwell, ID",
+    "state": "ID",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4698253.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2025
+    },
+    "depthPos": "RB",
+    "season": {
+     "games": 1,
+     "receptions": 2,
+     "targets": 2,
+     "receiving_yards": 9,
+     "receiving_epa": 0.076,
+     "receiving_yards_after_catch": 12,
+     "target_share": 0.01,
+     "air_yards_share": -0.001,
+     "wopr": 0.013,
+     "fantasy_points_ppr": 2.9
+    },
+    "snaps": [
+     {
+      "wk": 1,
+      "off": 0.04,
+      "def": 0,
+      "st": 0.27
+     }
+    ]
+   },
+   {
     "espn": "4372026",
     "name": "Cameron Latu",
     "short": "C. Latu",
@@ -897,6 +945,36 @@
       "st": 0
      }
     ]
+   },
+   {
+    "espn": "4369466",
+    "name": "Ryan Miller",
+    "short": "R. Miller",
+    "jersey": null,
+    "group": "offense",
+    "pos": "WR",
+    "posName": "Wide Receiver",
+    "unit": "OFF",
+    "age": 26,
+    "ht": "6' 2\"",
+    "wt": "221 lbs",
+    "exp": 3,
+    "college": "Furman",
+    "from": "Jackson, TN",
+    "state": "TN",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2023
+    },
+    "depthPos": "WR",
+    "season": null,
+    "snaps": []
    },
    {
     "espn": "4431465",
@@ -4210,36 +4288,6 @@
     "snaps": []
    },
    {
-    "espn": "4369466",
-    "name": "Ryan Miller",
-    "short": "R. Miller",
-    "jersey": null,
-    "group": "practiceSquad",
-    "pos": "WR",
-    "posName": "Wide Receiver",
-    "unit": "OFF",
-    "age": 26,
-    "ht": "6' 2\"",
-    "wt": "221 lbs",
-    "exp": 3,
-    "college": "Furman",
-    "from": "Jackson, TN",
-    "state": "TN",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
-    "status": "Practice Squad",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2023
-    },
-    "depthPos": "WR",
-    "season": null,
-    "snaps": []
-   },
-   {
     "espn": "4259186",
     "name": "Xavier Newman-Johnson",
     "short": "X. Newman-Johnson",
@@ -4604,7 +4652,8 @@
       "name": "Wide Receiver",
       "players": [
        "4047646",
-       "4613202"
+       "4613202",
+       "4361432"
       ]
      },
      {
@@ -4613,7 +4662,7 @@
       "name": "Wide Receiver",
       "players": [
        "4427095",
-       "2991662"
+       "4369466"
       ]
      },
      {
@@ -4622,7 +4671,7 @@
       "name": "Wide Receiver",
       "players": [
        "4695193",
-       "4361432"
+       "2991662"
       ]
      },
      {
@@ -4706,6 +4755,7 @@
        "4569173",
        "4432710",
        "4431431",
+       "4698253",
        "4676889"
       ]
      },
@@ -4722,7 +4772,7 @@
   ]
  },
  "texas": {
-  "at": "2026-10-30T20:44:49.085Z",
+  "at": "2026-10-31T22:26:54.184Z",
   "team": "TEX",
   "sport": "cfb",
   "season": 2026,
@@ -7705,7 +7755,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-10-31T18:30:27.865Z",
+  "at": "2026-10-31T22:26:54.184Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -8955,7 +9005,7 @@
   ]
  },
  "milan": {
-  "at": "2026-10-31T18:30:27.865Z",
+  "at": "2026-10-31T22:26:54.184Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
@@ -8998,8 +9048,8 @@
      "goalsConceded": 0
     },
     "xg": {
-     "games": 1,
-     "min": 1,
+     "games": 2,
+     "min": 2,
      "goals": 0,
      "xg": 0,
      "assists": 0,
@@ -9052,8 +9102,8 @@
      "goalsConceded": 11
     },
     "xg": {
-     "games": 9,
-     "min": 810,
+     "games": 10,
+     "min": 900,
      "goals": 0,
      "xg": 0,
      "assists": 0,
@@ -9062,8 +9112,8 @@
      "keyPasses": 0,
      "npg": 0,
      "npxg": 0,
-     "chain": 1.04,
-     "buildup": 1.04,
+     "chain": 1.46,
+     "buildup": 1.46,
      "yellow": 0,
      "red": 0
     }
@@ -9346,18 +9396,18 @@
      "goalsConceded": 11
     },
     "xg": {
-     "games": 9,
-     "min": 810,
+     "games": 10,
+     "min": 900,
      "goals": 0,
-     "xg": 0.82,
+     "xg": 1.14,
      "assists": 1,
      "xa": 0.39,
-     "shots": 7,
+     "shots": 8,
      "keyPasses": 2,
      "npg": 0,
-     "npxg": 0.82,
-     "chain": 4.98,
-     "buildup": 4.23,
+     "npxg": 1.14,
+     "chain": 5.73,
+     "buildup": 4.65,
      "yellow": 3,
      "red": 0
     }
@@ -9400,8 +9450,8 @@
      "goalsConceded": 1
     },
     "xg": {
-     "games": 1,
-     "min": 1,
+     "games": 2,
+     "min": 2,
      "goals": 0,
      "xg": 0,
      "assists": 0,
@@ -9454,8 +9504,8 @@
      "goalsConceded": 11
     },
     "xg": {
-     "games": 9,
-     "min": 791,
+     "games": 10,
+     "min": 881,
      "goals": 0,
      "xg": 0.83,
      "assists": 0,
@@ -9464,9 +9514,9 @@
      "keyPasses": 1,
      "npg": 0,
      "npxg": 0.83,
-     "chain": 4.5,
-     "buildup": 4.5,
-     "yellow": 2,
+     "chain": 4.93,
+     "buildup": 4.93,
+     "yellow": 3,
      "red": 0
     }
    },
@@ -9508,8 +9558,8 @@
      "goalsConceded": 5
     },
     "xg": {
-     "games": 7,
-     "min": 613,
+     "games": 8,
+     "min": 703,
      "goals": 1,
      "xg": 1.26,
      "assists": 0,
@@ -9518,8 +9568,8 @@
      "keyPasses": 5,
      "npg": 1,
      "npxg": 1.26,
-     "chain": 3.57,
-     "buildup": 3.5,
+     "chain": 4,
+     "buildup": 3.92,
      "yellow": 1,
      "red": 0
     }
@@ -9562,8 +9612,8 @@
      "goalsConceded": 4
     },
     "xg": {
-     "games": 5,
-     "min": 279,
+     "games": 6,
+     "min": 285,
      "goals": 0,
      "xg": 0.87,
      "assists": 0,
@@ -9616,18 +9666,18 @@
      "goalsConceded": 3
     },
     "xg": {
-     "games": 2,
-     "min": 121,
+     "games": 3,
+     "min": 205,
      "goals": 0,
      "xg": 0,
      "assists": 0,
-     "xa": 0,
+     "xa": 0.32,
      "shots": 0,
-     "keyPasses": 0,
+     "keyPasses": 1,
      "npg": 0,
      "npxg": 0,
-     "chain": 0.62,
-     "buildup": 0.62,
+     "chain": 0.94,
+     "buildup": 0.94,
      "yellow": 0,
      "red": 0
     }
@@ -9709,16 +9759,16 @@
      "goalsConceded": 0
     },
     "xg": {
-     "games": 7,
-     "min": 331,
+     "games": 8,
+     "min": 337,
      "goals": 4,
-     "xg": 1.6,
+     "xg": 1.61,
      "assists": 0,
      "xa": 0.45,
-     "shots": 11,
+     "shots": 12,
      "keyPasses": 3,
      "npg": 4,
-     "npxg": 1.6,
+     "npxg": 1.61,
      "chain": 2.66,
      "buildup": 0.96,
      "yellow": 1,
@@ -9802,18 +9852,18 @@
      "goalsConceded": 8
     },
     "xg": {
-     "games": 9,
-     "min": 568,
+     "games": 10,
+     "min": 658,
      "goals": 0,
-     "xg": 0,
+     "xg": 0.02,
      "assists": 2,
-     "xa": 0.95,
-     "shots": 0,
-     "keyPasses": 9,
+     "xa": 0.97,
+     "shots": 1,
+     "keyPasses": 10,
      "npg": 0,
-     "npxg": 0,
-     "chain": 4.81,
-     "buildup": 4.78,
+     "npxg": 0.02,
+     "chain": 5.25,
+     "buildup": 5.2,
      "yellow": 1,
      "red": 0
     }
@@ -9856,18 +9906,18 @@
      "goalsConceded": 6
     },
     "xg": {
-     "games": 7,
-     "min": 486,
-     "goals": 4,
-     "xg": 1.76,
+     "games": 8,
+     "min": 576,
+     "goals": 5,
+     "xg": 1.83,
      "assists": 3,
      "xa": 1.1,
-     "shots": 9,
+     "shots": 11,
      "keyPasses": 8,
-     "npg": 4,
-     "npxg": 1.76,
-     "chain": 3.45,
-     "buildup": 2.17,
+     "npg": 5,
+     "npxg": 1.83,
+     "chain": 4.2,
+     "buildup": 2.91,
      "yellow": 1,
      "red": 0
     }
@@ -9964,18 +10014,18 @@
      "goalsConceded": 5
     },
     "xg": {
-     "games": 6,
-     "min": 395,
-     "goals": 2,
-     "xg": 1.64,
+     "games": 7,
+     "min": 479,
+     "goals": 3,
+     "xg": 2.06,
      "assists": 1,
      "xa": 1.93,
-     "shots": 9,
+     "shots": 10,
      "keyPasses": 10,
-     "npg": 2,
-     "npxg": 1.64,
-     "chain": 4.33,
-     "buildup": 3.09,
+     "npg": 3,
+     "npxg": 2.06,
+     "chain": 5.07,
+     "buildup": 3.84,
      "yellow": 1,
      "red": 0
     }
@@ -10018,8 +10068,8 @@
      "goalsConceded": 6
     },
     "xg": {
-     "games": 7,
-     "min": 271,
+     "games": 8,
+     "min": 278,
      "goals": 0,
      "xg": 0.6,
      "assists": 0,
@@ -10072,8 +10122,8 @@
      "goalsConceded": 8
     },
     "xg": {
-     "games": 9,
-     "min": 594,
+     "games": 10,
+     "min": 677,
      "goals": 0,
      "xg": 0.66,
      "assists": 0,
@@ -10082,8 +10132,8 @@
      "keyPasses": 2,
      "npg": 0,
      "npxg": 0.66,
-     "chain": 2.73,
-     "buildup": 2.68,
+     "chain": 3.16,
+     "buildup": 3.1,
      "yellow": 0,
      "red": 0
     }
@@ -10165,16 +10215,16 @@
      "goalsConceded": 7
     },
     "xg": {
-     "games": 7,
-     "min": 331,
+     "games": 8,
+     "min": 337,
      "goals": 4,
-     "xg": 1.6,
+     "xg": 1.61,
      "assists": 0,
      "xa": 0.45,
-     "shots": 11,
+     "shots": 12,
      "keyPasses": 3,
      "npg": 4,
-     "npxg": 1.6,
+     "npxg": 1.61,
      "chain": 2.66,
      "buildup": 0.96,
      "yellow": 1,
@@ -10420,8 +10470,8 @@
      "goalsConceded": 11
     },
     "xg": {
-     "games": 9,
-     "min": 805,
+     "games": 10,
+     "min": 895,
      "goals": 2,
      "xg": 5.26,
      "assists": 1,
@@ -10474,8 +10524,8 @@
      "goalsConceded": 3
     },
     "xg": {
-     "games": 5,
-     "min": 180,
+     "games": 6,
+     "min": 181,
      "goals": 1,
      "xg": 0.65,
      "assists": 0,
@@ -10528,19 +10578,19 @@
      "goalsConceded": 3
     },
     "xg": {
-     "games": 5,
-     "min": 307,
-     "goals": 3,
-     "xg": 1.04,
-     "assists": 1,
-     "xa": 0.73,
-     "shots": 8,
-     "keyPasses": 3,
-     "npg": 3,
-     "npxg": 1.04,
-     "chain": 1.97,
+     "games": 6,
+     "min": 397,
+     "goals": 4,
+     "xg": 1.11,
+     "assists": 3,
+     "xa": 1.21,
+     "shots": 9,
+     "keyPasses": 5,
+     "npg": 4,
+     "npxg": 1.11,
+     "chain": 2.39,
      "buildup": 0.81,
-     "yellow": 0,
+     "yellow": 1,
      "red": 0
     }
    },
