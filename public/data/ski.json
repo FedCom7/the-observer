@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:57:36.525Z",
+ "updated": "2026-10-31T13:37:34.131Z",
  "season": 2027,
  "races": [
   {
@@ -104,10 +104,19 @@
    "country": "AUT",
    "discipline": "Slalom",
    "gender": "women",
-   "start": "2026-11-21T09:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-21T09:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Vienna",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-21T09:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-21T12:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -118,10 +127,19 @@
    "country": "AUT",
    "discipline": "Slalom",
    "gender": "men",
-   "start": "2026-11-22T09:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-22T09:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Vienna",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-22T09:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-22T12:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {

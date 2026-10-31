@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:57:57.349Z",
+ "updated": "2026-10-31T13:37:46.940Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3361,7 +3361,29 @@
       "start": "2026-11-01T07:00:00.000Z"
      }
     ],
-    "results": null
+    "results": {
+     "race": [],
+     "sprint": [
+      {
+       "pos": 1,
+       "name": "Pedro Acosta",
+       "nation": "ES",
+       "team": "Red Bull KTM Factory Racing"
+      },
+      {
+       "pos": 2,
+       "name": "Marc Marquez",
+       "nation": "ES",
+       "team": "Ducati Lenovo Team"
+      },
+      {
+       "pos": 3,
+       "name": "Marco Bezzecchi",
+       "nation": "IT",
+       "team": "Aprilia Racing"
+      }
+     ]
+    }
    },
    {
     "id": "3f3d3f5e-851c-42d2-887a-8ce8b41fa908",
@@ -3789,7 +3811,7 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 365,
+    "points": 374,
     "wins": 6,
     "podiums": 6,
     "sprintWins": 9
@@ -3813,7 +3835,7 @@
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 315,
+    "points": 322,
     "wins": 5,
     "podiums": 11,
     "sprintWins": 0
@@ -3825,10 +3847,10 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 263,
+    "points": 275,
     "wins": 1,
     "podiums": 6,
-    "sprintWins": 1
+    "sprintWins": 2
    },
    {
     "pos": 5,
@@ -3837,7 +3859,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 259,
+    "points": 265,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3849,7 +3871,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 252,
+    "points": 257,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3885,7 +3907,7 @@
     "nation": "IT",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 166,
+    "points": 170,
     "wins": 0,
     "podiums": 4,
     "sprintWins": 1
@@ -3909,30 +3931,30 @@
     "nation": "IT",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 122,
+    "points": 123,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
    },
    {
     "pos": 12,
-    "name": "Luca Marini",
-    "number": 10,
-    "nation": "IT",
-    "team": "Honda HRC Castrol",
-    "constructor": "Honda",
-    "points": 108,
+    "name": "Brad Binder",
+    "number": 33,
+    "nation": "ZA",
+    "team": "Red Bull KTM Factory Racing",
+    "constructor": "KTM",
+    "points": 111,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
    },
    {
     "pos": 13,
-    "name": "Brad Binder",
-    "number": 33,
-    "nation": "ZA",
-    "team": "Red Bull KTM Factory Racing",
-    "constructor": "KTM",
+    "name": "Luca Marini",
+    "number": 10,
+    "nation": "IT",
+    "team": "Honda HRC Castrol",
+    "constructor": "Honda",
     "points": 108,
     "wins": 0,
     "podiums": 0,
@@ -3945,7 +3967,7 @@
     "nation": "BR",
     "team": "Pro Honda LCR",
     "constructor": "Honda",
-    "points": 76,
+    "points": 78,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
