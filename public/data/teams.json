@@ -1,14 +1,12 @@
 {
- "updated": "2026-11-01T15:58:56.023Z",
+ "updated": "2026-11-01T20:28:24.629Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
   "sport": "soccer",
   "league": "ita.1",
   "id": "103",
-  "status": {
-   "history": "127 seasons"
-  },
+  "status": {},
   "card": {
    "id": "103",
    "name": "AC Milan",
@@ -13692,15 +13690,15 @@
      "color": "#74bde7",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
      "standing": "1st in Italian Serie A",
-     "record": "8-1-0",
+     "record": "9-1-0",
      "rank": null,
-     "gp": 9,
-     "w": 8,
+     "gp": 10,
+     "w": 9,
      "d": 1,
      "l": 0,
-     "pf": 22,
-     "pa": 7,
-     "pts": 25,
+     "pf": 24,
+     "pa": 8,
+     "pts": 28,
      "pos": 1,
      "seed": null
     },
@@ -13944,15 +13942,15 @@
      "color": "#FACF08",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
      "standing": "6th in Italian Serie A",
-     "record": "5-2-2",
+     "record": "6-2-2",
      "rank": null,
-     "gp": 9,
-     "w": 5,
+     "gp": 10,
+     "w": 6,
      "d": 2,
      "l": 2,
-     "pf": 22,
+     "pf": 24,
      "pa": 14,
-     "pts": 17,
+     "pts": 20,
      "pos": 6,
      "seed": null
     },
@@ -14043,9 +14041,7 @@
   "sport": "football",
   "league": "nfl",
   "id": "17",
-  "status": {
-   "history": "66 seasons"
-  },
+  "status": {},
   "card": {
    "id": "17",
    "name": "New England Patriots",
@@ -20854,9 +20850,7 @@
   "sport": "football",
   "league": "college-football",
   "id": "251",
-  "status": {
-   "history": "133 seasons"
-  },
+  "status": {},
   "card": {
    "id": "251",
    "name": "Texas Longhorns",
@@ -27307,96 +27301,6 @@
     "recent": []
    },
    {
-    "id": "194",
-    "name": "Ohio State",
-    "label": null,
-    "kind": "current",
-    "card": {
-     "id": "194",
-     "name": "Ohio State Buckeyes",
-     "short": "Ohio State",
-     "abbr": "OSU",
-     "color": "#ba0c2f",
-     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
-     "standing": "3rd in Big Ten",
-     "record": "6-2",
-     "rank": null,
-     "gp": 8,
-     "w": 6,
-     "d": 0,
-     "l": 2,
-     "pf": 293,
-     "pa": 124,
-     "pts": null,
-     "pos": null,
-     "seed": 3
-    },
-    "stats": {
-     "ppg": 36.625,
-     "ypg": 474.8,
-     "passYpg": 315.25,
-     "rushYpg": 159.5,
-     "third": 44.230766,
-     "toDiff": 8,
-     "sacks": 11
-    },
-    "allTime": null,
-    "page": null,
-    "since2001": {
-     "w": 2,
-     "d": 0,
-     "l": 2,
-     "gf": 63,
-     "ga": 83
-    },
-    "recent": [
-     {
-      "date": "2026-09-12",
-      "opp": "194",
-      "oppName": "Ohio State Buckeyes",
-      "home": true,
-      "us": 24,
-      "them": 23,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2026
-     },
-     {
-      "date": "2025-08-30",
-      "opp": "194",
-      "oppName": "Ohio State Buckeyes",
-      "home": false,
-      "us": 7,
-      "them": 14,
-      "result": "L",
-      "type": "Regular Season",
-      "season": 2025
-     },
-     {
-      "date": "2006-09-10",
-      "opp": "194",
-      "oppName": "Ohio State Buckeyes",
-      "home": true,
-      "us": 7,
-      "them": 24,
-      "result": "L",
-      "type": "Regular Season",
-      "season": 2006
-     },
-     {
-      "date": "2005-09-11",
-      "opp": "194",
-      "oppName": "Ohio State Buckeyes",
-      "home": false,
-      "us": 25,
-      "them": 22,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2005
-     }
-    ]
-   },
-   {
     "id": "61",
     "name": "Georgia",
     "label": null,
@@ -27474,6 +27378,51 @@
       "season": 2024
      }
     ]
+   },
+   {
+    "id": "254",
+    "name": "Utah",
+    "label": null,
+    "kind": "current",
+    "card": {
+     "id": "254",
+     "name": "Utah Utes",
+     "short": "Utah",
+     "abbr": "UTAH",
+     "color": "#be0000",
+     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+     "standing": "1st in Big 12",
+     "record": "8-0",
+     "rank": null,
+     "gp": 8,
+     "w": 8,
+     "d": 0,
+     "l": 0,
+     "pf": 311,
+     "pa": 127,
+     "pts": null,
+     "pos": null,
+     "seed": 1
+    },
+    "stats": {
+     "ppg": 38.875,
+     "ypg": 485.4,
+     "passYpg": 258.5,
+     "rushYpg": 226.9,
+     "third": 53.535355,
+     "toDiff": 1,
+     "sacks": 17
+    },
+    "allTime": null,
+    "page": null,
+    "since2001": {
+     "w": 0,
+     "d": 0,
+     "l": 0,
+     "gf": 0,
+     "ga": 0
+    },
+    "recent": []
    }
   ]
  },
@@ -27483,9 +27432,7 @@
   "sport": "baseball",
   "league": "mlb",
   "id": "19",
-  "status": {
-   "history": "143 seasons"
-  },
+  "status": {},
   "card": {
    "id": "19",
    "name": "Los Angeles Dodgers",

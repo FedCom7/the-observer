@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-01T15:58:55.892Z",
+ "updated": "2026-11-01T20:28:24.535Z",
  "pats": {
-  "at": "2026-11-01T15:58:55.892Z",
+  "at": "2026-11-01T20:28:24.535Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -995,7 +995,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431465.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 234,
@@ -1601,7 +1604,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4688779.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -1653,10 +1659,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916923.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 63,
@@ -1711,7 +1714,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4688366.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -1842,10 +1848,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4245273.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -2685,7 +2688,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4606666.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 171,
@@ -7756,7 +7762,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-01T15:58:55.892Z",
+  "at": "2026-11-01T20:28:24.535Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9006,7 +9012,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-01T15:58:55.892Z",
+  "at": "2026-11-01T20:28:24.535Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
