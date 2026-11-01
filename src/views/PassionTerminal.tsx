@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { SeasonStrip } from '../components/charts';
 import { Theatre } from '../components/Theatre';
@@ -12,8 +12,11 @@ import { CyclingMap } from './CyclingPage';
 /** Passions whose events happen in many places: the terminal keeps the map for them. */
 const MAP_PASSIONS: Partial<Record<PassionId, 'atl' | 'world'>> = { space: 'world', wec: 'world', dakar: 'world', cicl: 'world', sci: 'atl', f1: 'world', more: 'world' };
 
-/** Passions that happen in one country get a map of just that country. */
-const COUNTRY: Partial<Record<PassionId, string>> = { dakar: 'Saudi Arabia' };
+function DakarMap({ open }: { open: (p: PassionId) => void }) {
+  const { now, dakar } = useData();
+  const r = useMemo(() => (dakar ? dakarRoute(dakar, now) : null), [dakar, Math.floor(now / 3600e3)]);
+  return r && dakar ? <Theatre open={open} only="dakar" fit hosts={dakar.countries} route={r.stops} lines={r.lines} /> : null;
+}
 
 /**
  * One passion in the terminal: the same information as its page, laid out as dark panels
@@ -21,7 +24,7 @@ const COUNTRY: Partial<Record<PassionId, string>> = { dakar: 'Saudi Arabia' };
  */
 export function PassionTerminal({ id, open }: { id: PassionId; open: (p: PassionId) => void }) {
   useEffect(() => { window.scrollTo({ top: 0 }); }, [id]);
-  const { now, dakar } = useData();
+  const { now } = useData();
   const body = useMasonry(id);
   // Pages with screens (Space: ?tab=iss) keep the map on their overview only
   const [params] = useSearchParams();
@@ -31,7 +34,7 @@ export function PassionTerminal({ id, open }: { id: PassionId; open: (p: Passion
       <div className="obs term-body" ref={body}>
         <PassionBody id={id} />
         {/* The map sits in the middle column, with the panels on either side */}
-        {map && <section className="panel map term-map">{id === 'cicl' ? <CyclingMap open={open} /> : <Theatre key={id} open={open} only={id} initial={map} country={COUNTRY[id]} route={id === 'dakar' && dakar ? dakarRoute(dakar) : undefined} />}</section>}
+        {map && <section className="panel map term-map">{id === 'cicl' ? <CyclingMap open={open} /> : id === 'dakar' ? <DakarMap open={open} /> : <Theatre key={id} open={open} only={id} initial={map} />}</section>}
         {/* When in the year this passion is busiest (it was on the generic page before the dedicated ones) */}
         <div className="ocard"><div className="lab">The season ahead</div><SeasonStrip heat={PASSION[id].heat} now={now} /></div>
       </div>

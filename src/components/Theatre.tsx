@@ -43,8 +43,13 @@ function useIss(): Iss | null {
 
 type View = 'atl' | 'world';
 
-/** A numbered stop on a route drawn over a single-country map. */
-export interface RouteStop { label: string; loc: [number, number]; n?: string }
+/**
+ * A numbered stop on a route drawn over a single-country map. `transfer`: the leg into it is a
+ * transfer (dashed); `hot`: the next start, ringed.
+ */
+export interface RouteStop { label: string; loc: [number, number]; n?: string; transfer?: boolean; hot?: boolean }
+/** A traced stage on a route map: numbered at its middle, dimmed once run, stronger when next. */
+export interface RouteLine { n: string; coords: [number, number][]; dashed?: boolean; state: 'done' | 'next' | 'todo' }
 
 type CountryShapes = import('geojson').FeatureCollection<import('geojson').Geometry, { name: string }>;
 
@@ -68,13 +73,13 @@ function stops(route?: RouteStop[]): RouteStop[] {
   const by = new Map<string, RouteStop>();
   for (const r of route ?? []) {
     const o = by.get(r.label);
-    by.set(r.label, o ? { ...o, n: [o.n, r.n].filter(Boolean).join(', ') } : r);
+    by.set(r.label, o ? { ...o, n: [o.n, r.n].filter(Boolean).join(', '), hot: o.hot || r.hot } : r);
   }
   return [...by.values()];
 }
 
 /** The map; `only` restricts it to one passion (the passion view of the terminal). */
-export function Theatre({ open, only, initial = 'atl', country, route, fit, keep }: { open: (p: PassionId) => void; only?: PassionId; initial?: 'atl' | 'world'; country?: string; route?: RouteStop[]; fit?: boolean; keep?: Set<string> }) {
+export function Theatre({ open, only, initial = 'atl', country, route, fit, hosts, lines, keep }: { open: (p: PassionId) => void; only?: PassionId; initial?: 'atl' | 'world'; country?: string; route?: RouteStop[]; fit?: boolean; hosts?: string[]; lines?: RouteLine[]; keep?: Set<string> }) {
   const { events, now, orbit } = useData();
   const iss = useIss();
   const [view, setView] = useState<View>(initial);
@@ -102,7 +107,8 @@ export function Theatre({ open, only, initial = 'atl', country, route, fit, keep
       return { path: geoPath(m), proj: m };
     }
     if (fit && route?.length) {
-      const lons = route.map(r => r.loc[0]), lats = route.map(r => r.loc[1]);
+      const all = [...route.map(r => r.loc), ...(lines ?? []).flatMap(l => l.coords)];
+      const lons = all.map(q => q[0]), lats = all.map(q => q[1]);
       // Never tighter than a few degrees, so a single town still shows its surroundings
       const cx = (Math.min(...lons) + Math.max(...lons)) / 2, cy = (Math.min(...lats) + Math.max(...lats)) / 2;
       const hx = Math.max(2.5, (Math.max(...lons) - Math.min(...lons)) / 2), hy = Math.max(1.8, (Math.max(...lats) - Math.min(...lats)) / 2);
@@ -127,7 +133,7 @@ export function Theatre({ open, only, initial = 'atl', country, route, fit, keep
       if (top > 0) { const [tx, ty] = p.translate(); p.translate([tx, ty - top]); }
     } else p.fitExtent(pad, { type: 'Sphere' });
     return { path: geoPath(p), proj: p };
-  }, [size, view, country, home, fit, route, keep, events, only]);
+  }, [size, view, country, home, fit, route, lines, keep, events, only]);
 
   // Motor-racing views also show the rounds already run, one dot per circuit
   const withPast = only === 'f1' || only === 'wec' || only === 'cicl';
@@ -157,6 +163,10 @@ export function Theatre({ open, only, initial = 'atl', country, route, fit, keep
   const showIss = !local && (!only || only === 'space');
   const night = iss ? geoCircle().center([iss.sun[0] + 180, -iss.sun[1]]).radius(90)() : null;
   const labelled = new Set<string>();
+  const merged = stops(route);
+  const ink = only ? passionColor(only) : 'var(--signal)';
+  // Countries the route crosses stand out from their neighbours
+  const lit = (name: string) => (country ? name === country : !!hosts?.includes(name));
 
   const hover = (ev: React.PointerEvent, e: ObsEvent) => setTip({
     x: ev.clientX, y: ev.clientY,
@@ -179,16 +189,30 @@ export function Theatre({ open, only, initial = 'atl', country, route, fit, keep
           {local ? (
             <>
               <rect width={size.w} height={size.h} fill="var(--panel)" />
-              {countries?.features.map(f => <path key={f.properties.name} d={path(f) ?? ''} fill={f === home ? 'var(--land-hi, var(--land))' : 'var(--land)'} fillOpacity={f === home ? 1 : 0.55} stroke="var(--land-edge)" strokeWidth={f === home ? 1.2 : 0.6} />)}
-              {route && route.length > 1 && <path d={path({ type: 'LineString', coordinates: route.map(r => r.loc) }) ?? ''} fill="none" stroke={only ? passionColor(only) : 'var(--signal)'} strokeWidth={2} strokeLinejoin="round" strokeOpacity={0.85} />}
-              {stops(route).map(r => {
+              {countries?.features.map(f => <path key={f.properties.name} d={path(f) ?? ''} fill={lit(f.properties.name) ? 'var(--land-hi, var(--land))' : 'var(--land)'} fillOpacity={lit(f.properties.name) ? 1 : 0.55} stroke="var(--land-edge)" strokeWidth={lit(f.properties.name) ? 1.2 : 0.6} />)}
+              {lines?.map(l => <path key={`u${l.n}`} d={path({ type: 'LineString', coordinates: l.coords }) ?? ''} fill="none" stroke="var(--bg)" strokeWidth={l.state === 'next' ? 6 : 4.5} strokeLinejoin="round" strokeLinecap="round" strokeOpacity={l.dashed ? 0 : 0.7} />)}
+              {lines?.map(l => <path key={l.n} d={path({ type: 'LineString', coordinates: l.coords }) ?? ''} fill="none" stroke={ink} strokeWidth={l.state === 'next' ? 3 : 2} strokeLinejoin="round" strokeLinecap="round" strokeOpacity={l.state === 'done' ? 0.35 : l.dashed ? 0.7 : 0.95} strokeDasharray={l.dashed ? '2 5' : undefined} />)}
+              {!lines && route?.slice(1).map((r, i) => <path key={i} d={path({ type: 'LineString', coordinates: [route[i].loc, r.loc] }) ?? ''} fill="none" stroke={ink} strokeWidth={2} strokeLinecap="round" strokeOpacity={r.transfer ? 0.6 : 0.85} strokeDasharray={r.transfer ? '2 5' : undefined} />)}
+              {merged.map(r => {
                 const p = proj(r.loc);
                 if (!p) return null;
                 return (
                   <g key={r.label} className="marker" onPointerMove={ev => setTip({ x: ev.clientX, y: ev.clientY, k: only ? PASSION[only].name : '', t: r.label, w: r.n ?? '' })}>
-                    <circle cx={p[0]} cy={p[1]} r={4.5} fill={only ? passionColor(only) : 'var(--signal)'} stroke="var(--bg)" strokeWidth={1.5} />
-                    <text className="mk-label" x={p[0] + 9} y={p[1] + 3.5}>{fit && (route?.length ?? 0) > 8 ? r.n : <>{r.label}{r.n ? ` · ${r.n}` : ''}</>}</text>
+                    {r.hot && <circle className="ring" cx={p[0]} cy={p[1]} r={7} stroke={ink} />}
+                    <circle cx={p[0]} cy={p[1]} r={4.5} fill={ink} stroke="var(--bg)" strokeWidth={1.5} />
+                    <text className="mk-label" x={p[0] + 9} y={p[1] + 3.5}>{fit && merged.length > 8 ? r.n : <>{r.label}{r.n ? ` · ${r.n}` : ''}</>}</text>
                     <circle cx={p[0]} cy={p[1]} r={12} fill="transparent" />
+                  </g>
+                );
+              })}
+              {lines?.filter(l => !l.dashed).map(l => {
+                const p = proj(l.coords[Math.floor(l.coords.length / 2)]);
+                if (!p) return null;
+                const hot = l.state === 'next';
+                return (
+                  <g key={`b${l.n}`} opacity={l.state === 'done' ? 0.5 : 1} onPointerMove={ev => setTip({ x: ev.clientX, y: ev.clientY, k: only ? PASSION[only].name : '', t: l.n === 'P' ? 'Prologue' : `Stage ${l.n}`, w: hot ? 'Next stage' : l.state === 'done' ? 'Done' : '' })}>
+                    <circle cx={p[0]} cy={p[1]} r={7.5} fill={hot ? ink : 'var(--panel)'} stroke={ink} strokeWidth={1.4} />
+                    <text x={p[0]} y={p[1] + 3.2} textAnchor="middle" style={{ fontFamily: 'var(--f-mono)', fontSize: 9, fontWeight: 600, fill: hot ? 'var(--bg)' : 'var(--ink)' }}>{l.n}</text>
                   </g>
                 );
               })}

@@ -370,6 +370,8 @@ a { color: inherit; text-decoration: none; }
 /* The map is a panel of the grid, in the middle column once there is room for three */
 .term-body .term-map { grid-column: 1 / -1; grid-row: span 100; height: 392px; order: -1; margin-bottom: 8px; }
 .term-body .s-hero { order: -2; }
+/* The screen menu stays right under the title, above the map */
+.term-body > nav.ocard { order: -2; }
 @media (min-width: 1100px) {
   .term-body:has(.term-map) { grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr); }
   .term-body .term-map { grid-column: 2; grid-row: span 122; height: 488px; }
@@ -860,3 +862,91 @@ td.aw-fc > div { display: flex; align-items: center; gap: 8px; }
 @media (max-width: 900px) { .sp-lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .sp-lanes { grid-template-columns: minmax(0, 1fr); } }
 @media (min-width: 900px) { .term-body section.ocard:has(.sp-lanes) { grid-column: 1 / -1; } }
+
+/* ===== Dakar home: the route around the map ===== */
+.dk-stack { display: grid; gap: 18px; align-content: start; }
+.dk-strip { display: grid; gap: 3px; margin-top: 16px; }
+.dk-strip span { height: 24px; border-radius: 4px; display: grid; place-items: center; font-size: 10.5px; font-weight: 600; font-variant-numeric: tabular-nums; background: var(--o-grid); color: var(--o-ink2); }
+.dk-strip .off { background: transparent; border: 1px dashed var(--o-line); color: var(--o-ink3); font-weight: 500; }
+.dk-strip .done { opacity: .4; }
+.dk-strip .hot { background: var(--oc-mot); color: #fff; }
+.dk-ends { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--o-ink3); margin-top: 5px; }
+.dk-l .kpis { row-gap: 14px; }
+.dk-split { display: flex; height: 8px; border-radius: 3px; overflow: hidden; margin-top: 14px; }
+.dk-split i:first-child { background: var(--o-s4); }
+.dk-split i:last-child { background: color-mix(in srgb, var(--o-s4) 30%, var(--o-card)); }
+.dk-lead { display: grid; }
+.dk-lead > div { display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--o-line); }
+.dk-lead > div:first-child { border-top: 0; padding-top: 0; }
+.dk-lead i { align-self: stretch; border-radius: 2px; }
+.dk-lead small { color: var(--o-ink3); font-size: 11px; }
+.dk-lead span > small:first-child { display: block; text-transform: uppercase; letter-spacing: .08em; font-size: 10px; }
+.dk-lead .m { text-align: right; font-size: 11px; color: var(--o-ink3); line-height: 1.25; }
+.dk-lead .m b { color: var(--o-ink); font-size: 13px; font-variant-numeric: tabular-nums; }
+.dk-days > div { display: grid; grid-template-columns: 38px minmax(0, 1fr) 62px; gap: 8px; align-items: center; padding: 4px 6px; margin: 0 -6px; border-radius: 6px; font-size: 12px; }
+.dk-days > div.done { opacity: .45; }
+.dk-days > div.hot { background: var(--o-accent-soft); }
+.dk-days .d { display: grid; line-height: 1.15; }
+.dk-days .d b { font-variant-numeric: tabular-nums; }
+.dk-days .d small, .dk-days .b small { color: var(--o-ink3); font-size: 10.5px; }
+.dk-days .b { display: grid; gap: 2px; min-width: 0; }
+.dk-days .b small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dk-days .b em { font-style: normal; color: var(--o-ink3); font-size: 11.5px; border-top: 1px dashed var(--o-line); padding-top: 3px; }
+.dk-days .bar { display: flex; height: 12px; min-width: 6px; }
+.dk-days .bar i:first-child { background: var(--o-s4); border-radius: 2px 0 0 2px; }
+.dk-days .bar i:last-child { background: color-mix(in srgb, var(--o-s4) 30%, var(--o-card)); border-radius: 0 2px 2px 0; }
+.dk-days .k { text-align: right; color: var(--o-ink3); font-variant-numeric: tabular-nums; font-size: 11.5px; }
+.dk-days .k b { color: var(--o-ink); }
+.dk-gaps > div { display: grid; grid-template-columns: 22px minmax(90px, 160px) minmax(0, 1fr); gap: 10px; align-items: center; font-size: 12.5px; padding: 3px 0; }
+.dk-gaps .p { color: var(--o-ink3); text-align: right; font-variant-numeric: tabular-nums; }
+.dk-gaps .n { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dk-gaps .n small { color: var(--o-ink3); font-size: 10.5px; }
+.dk-gaps .g { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.dk-gaps .t { flex: 1; min-width: 0; display: flex; }
+.dk-gaps .t i { height: 12px; min-width: 2px; border-radius: 2px; }
+.dk-gaps .v { flex: none; width: 92px; text-align: right; font-variant-numeric: tabular-nums; color: var(--o-ink2); font-size: 11.5px; }
+.dk-gaps .w { font-variant-numeric: tabular-nums; font-weight: 600; }
+.dk-gaps .w small { font-weight: 400; color: var(--o-ink3); font-size: 10.5px; margin-left: 4px; text-transform: uppercase; letter-spacing: .06em; }
+.dk-gaps + .olegend { margin-top: 10px; }
+.dk-tiles { display: grid; gap: 2px; margin-bottom: 6px; }
+.dk-tiles span { height: 22px; border-radius: 2px; color: #fff; font-size: 8.5px; display: grid; place-items: center; font-variant-numeric: tabular-nums; }
+/* Terminal: the left stack and the day-by-day flank the map in the middle column */
+.term-body .dk-strip span { height: 20px; }
+@media (min-width: 900px) { .term-body .ocard.dk-wide { grid-column: span 2; } }
+@media (min-width: 1100px) {
+  .term-body .ocard.dk-l { grid-column: 1 !important; }
+  .term-body .ocard.dk-r { grid-column: 3 !important; }
+}
+.dk-hbar { display: grid; grid-template-columns: minmax(80px, 130px) 1fr 26px; gap: 8px; align-items: center; font-size: 12.5px; margin: 4px 0; }
+.dk-hbar > span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dk-hbar > span:nth-child(2) { display: flex; }
+.dk-hbar i { height: 10px; border-radius: 2px; min-width: 2px; }
+.dk-hbar b { text-align: right; font-variant-numeric: tabular-nums; }
+.dk-spells > div { display: flex; align-items: baseline; gap: 6px; font-size: 12.5px; padding: 6px 0; border-top: 1px solid var(--o-line); }
+.dk-spells > div:first-child { border-top: 0; }
+.dk-spells small { color: var(--o-ink3); font-size: 11px; }
+.dk-spells span:last-child { margin-left: auto; color: var(--o-ink2); font-variant-numeric: tabular-nums; font-size: 11.5px; white-space: nowrap; }
+.dk-att { display: grid; grid-template-columns: 100px 1fr 104px; gap: 8px; align-items: center; font-size: 12.5px; margin: 6px 0; }
+.dk-att .t { position: relative; height: 12px; }
+.dk-att .t i { position: absolute; inset: 0 auto 0 0; border-radius: 2px; }
+.dk-att .t i:first-child { background: color-mix(in srgb, var(--oc-mot) 22%, var(--o-card)); }
+.dk-att .t i:last-child { background: var(--oc-mot); }
+.dk-att small { color: var(--o-ink3); text-align: right; font-variant-numeric: tabular-nums; }
+.dk-att small b { color: var(--o-ink); }
+.dk-maps { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+.dk-map { border: 1px solid var(--o-line); border-radius: 10px; padding: 8px 10px 10px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.dk-map.hot { border-color: var(--oc-mot); box-shadow: inset 0 0 0 1px var(--oc-mot); }
+.dk-map .h { display: flex; justify-content: space-between; align-items: baseline; font-size: 12.5px; }
+.dk-map .h small, .dk-map > small { color: var(--o-ink3); font-size: 11px; }
+.dk-map > small b { color: var(--o-ink); }
+.dk-map svg { display: block; background: color-mix(in srgb, var(--o-grid) 35%, transparent); border-radius: 6px; }
+.dk-map .f { font-size: 12px; color: var(--o-ink2); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.dk-map .tag { font-size: 9.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--oc-mot); border: 1px solid var(--oc-mot); border-radius: 4px; padding: 0 4px; }
+.dk-map .bar { display: flex; height: 8px; min-width: 6px; margin-top: 2px; }
+.dk-map .bar i:first-child { background: var(--o-s4); border-radius: 2px 0 0 2px; }
+.dk-map .bar i:last-child { background: color-mix(in srgb, var(--o-s4) 30%, var(--o-card)); border-radius: 0 2px 2px 0; }
+.dk-eras { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 4px; }
+.dk-eras > div { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--o-line); border-radius: 10px; }
+.dk-eras b { font-size: 24px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.dk-eras small { color: var(--o-ink3); font-size: 11.5px; }
+.term-body .ocard.dk-full { grid-column: 1 / -1; }
