@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T22:26:54.186Z",
+ "updated": "2026-11-01T02:10:47.361Z",
  "season": 2026,
  "teams": [
   {
@@ -41530,15 +41530,6 @@
    "team": 113,
    "from": null,
    "to": 113,
-   "player": "Eugenio Suárez",
-   "text": "DH Eugenio Suárez elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
-   "team": 113,
-   "from": null,
-   "to": 113,
    "player": "Emilio Pagán",
    "text": "RHP Emilio Pagán elected free agency."
   },
@@ -41550,6 +41541,42 @@
    "to": 113,
    "player": "Pierce Johnson",
    "text": "RHP Pierce Johnson elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "José Barrero",
+   "text": "SS José Barrero elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Luis Robert Jr.",
+   "text": "CF Luis Robert Jr. elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Albert Suárez",
+   "text": "RHP Albert Suárez elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Eugenio Suárez",
+   "text": "DH Eugenio Suárez elected free agency."
   },
   {
    "date": "2026-10-30",
@@ -42846,36 +42873,54 @@
    "to": 112,
    "player": "David Peterson",
    "text": "LHP David Peterson elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 119,
-   "from": null,
-   "to": 119,
-   "player": "Evan Phillips",
-   "text": "RHP Evan Phillips elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Martín Pérez",
-   "text": "LHP Martín Pérez elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 139,
-   "from": null,
-   "to": 139,
-   "player": "Freddy Peralta",
-   "text": "RHP Freddy Peralta elected free agency."
   }
  ],
  "markets": {
+  "KXMLBALROTY": {
+   "label": "Pro Baseball American League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Kevin McGonigle",
+     "p": 95.5
+    },
+    {
+     "name": "Lazaro Montes",
+     "p": 4
+    },
+    {
+     "name": "Hagen Smith",
+     "p": 3
+    },
+    {
+     "name": "Parker Messick",
+     "p": 2
+    },
+    {
+     "name": "Payton Tolle",
+     "p": 1
+    },
+    {
+     "name": "Walbert Ureña",
+     "p": 1
+    },
+    {
+     "name": "Connelly Early",
+     "p": 1
+    },
+    {
+     "name": "Trey Yesavage",
+     "p": 1
+    },
+    {
+     "name": "Braden Montgomery",
+     "p": 1
+    },
+    {
+     "name": "Walker Jenkins",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBNLMVP": {
    "label": "Pro Baseball National League MVP",
    "rows": [
@@ -42929,10 +42974,6 @@
      "p": 98.5
     },
     {
-     "name": "Quinn Priester",
-     "p": 1
-    },
-    {
      "name": "Yoshinobu Yamamoto",
      "p": 1
     },
@@ -42957,101 +42998,15 @@
      "p": 1
     },
     {
-     "name": "Brandon Woodruff",
+     "name": "Bryce Elder",
      "p": 1
     },
     {
-     "name": "Spencer Schwellenbach",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALMVP": {
-   "label": "Pro Baseball American League MVP",
-   "rows": [
-    {
-     "name": "Yordan Álvarez",
-     "p": 96.5
-    },
-    {
-     "name": "Cam Schlittler",
-     "p": 2.5
-    },
-    {
-     "name": "Junior Caminero",
-     "p": 2
-    },
-    {
-     "name": "Jazz Chisholm Jr.",
+     "name": "Kodai Senga",
      "p": 1
     },
     {
-     "name": "Ben Rice",
-     "p": 1
-    },
-    {
-     "name": "Aaron Judge",
-     "p": 1
-    },
-    {
-     "name": "Jacob Wilson",
-     "p": 1
-    },
-    {
-     "name": "José Ramírez",
-     "p": 1
-    },
-    {
-     "name": "Trevor Story",
-     "p": 1
-    },
-    {
-     "name": "Jackson Holliday",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALROTY": {
-   "label": "Pro Baseball American League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Kevin McGonigle",
-     "p": 94.5
-    },
-    {
-     "name": "Lazaro Montes",
-     "p": 4
-    },
-    {
-     "name": "Hagen Smith",
-     "p": 3
-    },
-    {
-     "name": "Parker Messick",
-     "p": 2
-    },
-    {
-     "name": "Noah Schultz",
-     "p": 1
-    },
-    {
-     "name": "Payton Tolle",
-     "p": 1
-    },
-    {
-     "name": "Walbert Ureña",
-     "p": 1
-    },
-    {
-     "name": "Carson Williams",
-     "p": 1
-    },
-    {
-     "name": "Connelly Early",
-     "p": 1
-    },
-    {
-     "name": "Trey Yesavage",
+     "name": "Bubba Chandler",
      "p": 1
     }
    ]
@@ -43065,7 +43020,7 @@
     },
     {
      "name": "Carson Benge",
-     "p": 8.5
+     "p": 8
     },
     {
      "name": "Tie/Co-Winners",
@@ -43097,6 +43052,51 @@
     },
     {
      "name": "Zac Veen",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALMVP": {
+   "label": "Pro Baseball American League MVP",
+   "rows": [
+    {
+     "name": "Yordan Álvarez",
+     "p": 96.5
+    },
+    {
+     "name": "Cam Schlittler",
+     "p": 2.5
+    },
+    {
+     "name": "Junior Caminero",
+     "p": 2
+    },
+    {
+     "name": "Jazz Chisholm Jr.",
+     "p": 1
+    },
+    {
+     "name": "Jacob Wilson",
+     "p": 1
+    },
+    {
+     "name": "José Ramírez",
+     "p": 1
+    },
+    {
+     "name": "Trevor Story",
+     "p": 1
+    },
+    {
+     "name": "Brent Rooker",
+     "p": 1
+    },
+    {
+     "name": "Garrett Crochet",
+     "p": 1
+    },
+    {
+     "name": "Tarik Skubal",
      "p": 1
     }
    ]
