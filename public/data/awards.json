@@ -16715,7 +16715,17 @@
     "wikiDate": "2027-03-14T23:00:00.000Z",
     "wikiAnnounced": null,
     "categories": [],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "oscars",
+      "kind": "ceremony",
+      "title": "Academy Awards",
+      "date": "2027-03-14T23:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": {
     "page": "98th Academy Awards",
@@ -20080,8 +20090,8 @@
      {
       "name": "The Hunger Games: Sunrise on the Reaping",
       "film": null,
-      "pct": 2.2,
-      "was": 1.8,
+      "pct": 2.1,
+      "was": 1.7,
       "fraction": "50/1",
       "winner": false
      },
@@ -24945,7 +24955,7 @@
      {
       "d": "2026-11-01",
       "v": {
-       "La Bola Negra": 96.2,
+       "La Bola Negra": 96.1,
        "The Invite": 95.1,
        "The Odyssey": 94.9,
        "Project Hail Mary": 84.6,
@@ -26777,14 +26787,14 @@
       "v": {
        "The Odyssey": 97.2,
        "La Bola Negra": 93.9,
-       "Dune: Part Three": 89.5,
+       "Dune: Part Three": 89.3,
        "Sense and Sensibility": 81.2,
-       "Werwulf": 69.5,
-       "The Devil Wears Prada 2": 29.3,
+       "Werwulf": 69.4,
+       "The Devil Wears Prada 2": 29.4,
        "Wuthering Heights": 13.6,
-       "Michael": 8.6,
+       "Michael": 8.7,
        "Wild Horse Nine": 2.9,
-       "The Hunger Games: Sunrise on the Reaping": 2.2
+       "The Hunger Games: Sunrise on the Reaping": 2.1
       }
      },
      {
@@ -30940,6 +30950,11 @@
       "vol": 9396
      },
      {
+      "name": "Musk",
+      "p": 0.35,
+      "vol": 2688
+     },
+     {
       "name": "Tutu",
       "p": 0.2,
       "vol": 7860
@@ -30958,7 +30973,7 @@
      },
      {
       "name": "NAZA",
-      "p": 0.235,
+      "p": 0.24,
       "vol": 5148
      },
      {
@@ -30968,7 +30983,7 @@
      },
      {
       "name": "Nuisance Bear",
-      "p": 0.036,
+      "p": 0.035,
       "vol": 9188
      },
      {
@@ -31071,6 +31086,11 @@
       "name": "El Cuerpo de Cristo",
       "p": 0.139,
       "vol": 209
+     },
+     {
+      "name": "God is Shy",
+      "p": 0.142,
+      "vol": 2539
      },
      {
       "name": "With Tapes and Toasts in the Car",
@@ -31220,6 +31240,309 @@
      }
     ]
    },
+   "docShort": {
+    "winner": [
+     {
+      "name": "The Tuners",
+      "p": 0.37,
+      "vol": 4858
+     },
+     {
+      "name": "A Derailment",
+      "p": 0.285,
+      "vol": 5382
+     },
+     {
+      "name": "Water Cooler",
+      "p": 0.22,
+      "vol": 291
+     },
+     {
+      "name": "The Baddest Speechwriter of All",
+      "p": 0.18,
+      "vol": 537
+     },
+     {
+      "name": "We're Fine",
+      "p": 0.069,
+      "vol": 2932
+     },
+     {
+      "name": "Oh Whale",
+      "p": 0.032,
+      "vol": 80
+     },
+     {
+      "name": "A Short Documentary About a Giant Pencil",
+      "p": 0.02,
+      "vol": 181
+     },
+     {
+      "name": "A Wolf in the Suburbs",
+      "p": 0.02,
+      "vol": 114
+     },
+     {
+      "name": "Listen",
+      "p": 0.017,
+      "vol": 195
+     },
+     {
+      "name": "One Last Order",
+      "p": 0.015,
+      "vol": 110
+     }
+    ],
+    "nom": [
+     {
+      "name": "The Baddest Speechwriter of All",
+      "p": 0.645,
+      "vol": 1044
+     },
+     {
+      "name": "A Derailment",
+      "p": 0.575,
+      "vol": 4201
+     },
+     {
+      "name": "One Last Order",
+      "p": 0.465,
+      "vol": 4449
+     },
+     {
+      "name": "A Short Documentary About a Giant Pencil",
+      "p": 0.435,
+      "vol": 4224
+     },
+     {
+      "name": "Water Cooler",
+      "p": 0.425,
+      "vol": 3859
+     },
+     {
+      "name": "We're Fine",
+      "p": 0.36,
+      "vol": 9360
+     },
+     {
+      "name": "Listen",
+      "p": 0.355,
+      "vol": 6749
+     },
+     {
+      "name": "A Wolf in the Suburbs",
+      "p": 0.33,
+      "vol": 1829
+     },
+     {
+      "name": "Oh Whale",
+      "p": 0.325,
+      "vol": 8751
+     },
+     {
+      "name": "The Tuners",
+      "p": 0.32,
+      "vol": 5356
+     }
+    ]
+   },
+   "animated": {
+    "nom": [
+     {
+      "name": "Wildwood",
+      "p": 0.895,
+      "vol": 4309
+     },
+     {
+      "name": "Toy Story 5",
+      "p": 0.89,
+      "vol": 3823
+     },
+     {
+      "name": "Ray Gunn",
+      "p": 0.66,
+      "vol": 7076
+     },
+     {
+      "name": "Forgotten Island",
+      "p": 0.575,
+      "vol": 8589
+     },
+     {
+      "name": "Hoppers",
+      "p": 0.535,
+      "vol": 4228
+     },
+     {
+      "name": "Iron Boy",
+      "p": 0.525,
+      "vol": 3983
+     },
+     {
+      "name": "Tangles",
+      "p": 0.49,
+      "vol": 6800
+     },
+     {
+      "name": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "p": 0.25,
+      "vol": 613
+     },
+     {
+      "name": "Minions & Monsters",
+      "p": 0.105,
+      "vol": 4096
+     }
+    ],
+    "winner": [
+     {
+      "name": "Wildwood",
+      "p": 0.815,
+      "vol": 42704
+     },
+     {
+      "name": "Tangles",
+      "p": 0.07,
+      "vol": 3503
+     },
+     {
+      "name": "Toy Story 5",
+      "p": 0.051,
+      "vol": 17425
+     },
+     {
+      "name": "Forgotten Island",
+      "p": 0.024,
+      "vol": 3705
+     },
+     {
+      "name": "Ray Gunn",
+      "p": 0.021,
+      "vol": 3971
+     }
+    ]
+   },
+   "editing": {
+    "nom": [
+     {
+      "name": "The Black Ball",
+      "p": 0.987,
+      "vol": 943
+     },
+     {
+      "name": "The Odyssey",
+      "p": 0.96,
+      "vol": 2026
+     },
+     {
+      "name": "You Can See Everything",
+      "p": 0.92,
+      "vol": 8232
+     },
+     {
+      "name": "Wild Horse Nine",
+      "p": 0.685,
+      "vol": 3980
+     },
+     {
+      "name": "The Invite",
+      "p": 0.603,
+      "vol": 3343
+     },
+     {
+      "name": "Dune: Part Three",
+      "p": 0.55,
+      "vol": 9102
+     },
+     {
+      "name": "Elsinore",
+      "p": 0.41,
+      "vol": 9988
+     },
+     {
+      "name": "Project Hail Mary",
+      "p": 0.335,
+      "vol": 6895
+     },
+     {
+      "name": "Digger",
+      "p": 0.195,
+      "vol": 7903
+     },
+     {
+      "name": "Fjord",
+      "p": 0.175,
+      "vol": 3330
+     },
+     {
+      "name": "Ink",
+      "p": 0.135,
+      "vol": 4062
+     },
+     {
+      "name": "Club Kid",
+      "p": 0.13,
+      "vol": 11054
+     },
+     {
+      "name": "The Debut",
+      "p": 0.1,
+      "vol": 8820
+     }
+    ],
+    "winner": [
+     {
+      "name": "The Odyssey",
+      "p": 0.375,
+      "vol": 2086
+     },
+     {
+      "name": "The Black Ball",
+      "p": 0.345,
+      "vol": 3487
+     },
+     {
+      "name": "You Can See Everything",
+      "p": 0.198,
+      "vol": 2070
+     },
+     {
+      "name": "Dune: Part Three",
+      "p": 0.071,
+      "vol": 3581
+     },
+     {
+      "name": "Wild Horse Nine",
+      "p": 0.029,
+      "vol": 554
+     },
+     {
+      "name": "The Invite",
+      "p": 0.009,
+      "vol": 283
+     },
+     {
+      "name": "Project Hail Mary",
+      "p": 0.006,
+      "vol": 348
+     },
+     {
+      "name": "The Debut",
+      "p": 0.006,
+      "vol": 464
+     },
+     {
+      "name": "Elsinore",
+      "p": 0.005,
+      "vol": 293
+     },
+     {
+      "name": "Ink",
+      "p": 0.005,
+      "vol": 273
+     }
+    ]
+   },
    "sound": {
     "nom": [
      {
@@ -31259,7 +31582,7 @@
      },
      {
       "name": "Whalefall",
-      "p": 0.305,
+      "p": 0.3,
       "vol": 1220
      },
      {
@@ -32178,7 +32501,7 @@
      {
       "name": "The Invite",
       "p": 0.055,
-      "vol": 8097
+      "vol": 8621
      }
     ],
     "winner": [
@@ -35058,15 +35381,15 @@
       "d": "2026-11-01",
       "v": {
        "The Odyssey": 0.65,
-       "The Black Ball": 0.159,
-       "Wuthering Heights": 0.072,
+       "The Black Ball": 0.164,
+       "Wuthering Heights": 0.086,
        "Dune: Part Three": 0.072,
-       "Sense and Sensibility": 0.07,
-       "Wild Horse Nine": 0.069,
+       "Sense and Sensibility": 0.068,
+       "Wild Horse Nine": 0.059,
        "Werwulf": 0.044,
        "I Love Boosters": 0.01,
        "The Devil Wears Prada 2": 0.006,
-       "Michael": 0.005
+       "The Further Mis-Adventures of Cliff Booth": 0.005
       }
      },
      {
@@ -35744,7 +36067,7 @@
        "Samantha Morton": 0.042,
        "Mariana di Girolamo": 0.016,
        "Inde Navarrette": 0.014,
-       "Zendaya": 0.011
+       "Zendaya": 0.01
       }
      },
      {
