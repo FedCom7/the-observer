@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T02:11:16.384Z",
+ "updated": "2026-11-01T09:12:30.765Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3238,7 +3238,7 @@
     ],
     "start": "2026-10-30T00:00:00.000Z",
     "end": "2026-11-01T10:00:00.000Z",
-    "status": "CURRENT",
+    "status": "FINISHED",
     "sessions": [
      {
       "cls": "Moto3",
@@ -3362,7 +3362,26 @@
      }
     ],
     "results": {
-     "race": [],
+     "race": [
+      {
+       "pos": 1,
+       "name": "Marc Marquez",
+       "nation": "ES",
+       "team": "Ducati Lenovo Team"
+      },
+      {
+       "pos": 2,
+       "name": "Pedro Acosta",
+       "nation": "ES",
+       "team": "Red Bull KTM Factory Racing"
+      },
+      {
+       "pos": 3,
+       "name": "Alex Marquez",
+       "nation": "ES",
+       "team": "BK8 Gresini Racing MotoGP"
+      }
+     ],
      "sprint": [
       {
        "pos": 1,
@@ -3811,9 +3830,9 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 374,
-    "wins": 6,
-    "podiums": 6,
+    "points": 399,
+    "wins": 7,
+    "podiums": 7,
     "sprintWins": 9
    },
    {
@@ -3835,7 +3854,7 @@
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 322,
+    "points": 332,
     "wins": 5,
     "podiums": 11,
     "sprintWins": 0
@@ -3847,9 +3866,9 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 275,
+    "points": 295,
     "wins": 1,
-    "podiums": 6,
+    "podiums": 7,
     "sprintWins": 2
    },
    {
@@ -3859,7 +3878,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 265,
+    "points": 278,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3871,7 +3890,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 257,
+    "points": 265,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3895,9 +3914,9 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 181,
+    "points": 197,
     "wins": 1,
-    "podiums": 2,
+    "podiums": 3,
     "sprintWins": 1
    },
    {
@@ -3907,13 +3926,25 @@
     "nation": "IT",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 170,
+    "points": 173,
     "wins": 0,
     "podiums": 4,
     "sprintWins": 1
    },
    {
     "pos": 10,
+    "name": "Enea Bastianini",
+    "number": 23,
+    "nation": "IT",
+    "team": "Red Bull KTM Tech3",
+    "constructor": "KTM",
+    "points": 134,
+    "wins": 0,
+    "podiums": 0,
+    "sprintWins": 0
+   },
+   {
+    "pos": 11,
     "name": "Fermin Aldeguer",
     "number": 54,
     "nation": "ES",
@@ -3925,25 +3956,13 @@
     "sprintWins": 0
    },
    {
-    "pos": 11,
-    "name": "Enea Bastianini",
-    "number": 23,
-    "nation": "IT",
-    "team": "Red Bull KTM Tech3",
-    "constructor": "KTM",
-    "points": 123,
-    "wins": 0,
-    "podiums": 0,
-    "sprintWins": 0
-   },
-   {
     "pos": 12,
     "name": "Brad Binder",
     "number": 33,
     "nation": "ZA",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 111,
+    "points": 118,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -3955,13 +3974,25 @@
     "nation": "IT",
     "team": "Honda HRC Castrol",
     "constructor": "Honda",
-    "points": 108,
+    "points": 117,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
    },
    {
     "pos": 14,
+    "name": "Fabio Quartararo",
+    "number": 20,
+    "nation": "FR",
+    "team": "Monster Energy Yamaha MotoGP Team",
+    "constructor": "Yamaha",
+    "points": 79,
+    "wins": 0,
+    "podiums": 0,
+    "sprintWins": 0
+   },
+   {
+    "pos": 15,
     "name": "Diogo Moreira",
     "number": 11,
     "nation": "BR",
@@ -3973,25 +4004,13 @@
     "sprintWins": 0
    },
    {
-    "pos": 15,
-    "name": "Fabio Quartararo",
-    "number": 20,
-    "nation": "FR",
-    "team": "Monster Energy Yamaha MotoGP Team",
-    "constructor": "Yamaha",
-    "points": 74,
-    "wins": 0,
-    "podiums": 0,
-    "sprintWins": 0
-   },
-   {
     "pos": 16,
     "name": "Franco Morbidelli",
     "number": 21,
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 59,
+    "points": 65,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4039,7 +4058,7 @@
     "nation": "ES",
     "team": "Monster Energy Yamaha MotoGP Team",
     "constructor": "Yamaha",
-    "points": 25,
+    "points": 29,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4063,7 +4082,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 12,
+    "points": 14,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4075,7 +4094,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 10,
+    "points": 11,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4197,7 +4216,7 @@
     "nation": "ES",
     "team": "LIQUI MOLY Dynavolt Intact GP",
     "constructor": "Kalex",
-    "points": 265.5,
+    "points": 276.5,
     "wins": 5,
     "podiums": 10,
     "sprintWins": 0
@@ -4209,7 +4228,7 @@
     "nation": "ES",
     "team": "BLU CRU Pramac Yamaha Moto2",
     "constructor": "Boscoscuro",
-    "points": 260,
+    "points": 273,
     "wins": 4,
     "podiums": 9,
     "sprintWins": 0
@@ -4219,35 +4238,35 @@
     "name": "Ivan Ortola",
     "number": 4,
     "nation": "ES",
-    "team": "QJMOTOR - JP Financial - MSI",
+    "team": "QJMOTOR - MSI",
     "constructor": "Kalex",
-    "points": 191.5,
+    "points": 199.5,
     "wins": 2,
     "podiums": 4,
     "sprintWins": 0
    },
    {
     "pos": 4,
-    "name": "Daniel Holgado",
-    "number": 96,
-    "nation": "ES",
-    "team": "CFMOTO Power Electronics Aspar Team",
+    "name": "David Alonso",
+    "number": 80,
+    "nation": "CO",
+    "team": "CFMOTO RCB Aspar Team",
     "constructor": "Kalex",
-    "points": 170,
-    "wins": 1,
+    "points": 191,
+    "wins": 2,
     "podiums": 5,
     "sprintWins": 0
    },
    {
     "pos": 5,
-    "name": "David Alonso",
-    "number": 80,
-    "nation": "CO",
-    "team": "CFMOTO Power Electronics Aspar Team",
+    "name": "Daniel Holgado",
+    "number": 96,
+    "nation": "ES",
+    "team": "CFMOTO RCB Aspar Team",
     "constructor": "Kalex",
-    "points": 166,
+    "points": 190,
     "wins": 1,
-    "podiums": 4,
+    "podiums": 6,
     "sprintWins": 0
    }
   ],
@@ -4259,9 +4278,9 @@
     "nation": "ES",
     "team": "CFMOTO Gaviota Aspar Team",
     "constructor": "KTM",
-    "points": 351,
-    "wins": 10,
-    "podiums": 15,
+    "points": 376,
+    "wins": 11,
+    "podiums": 16,
     "sprintWins": 0
    },
    {
@@ -4271,7 +4290,7 @@
     "nation": "ES",
     "team": "Liqui Moly Dynavolt Intact GP",
     "constructor": "KTM",
-    "points": 217,
+    "points": 228,
     "wins": 3,
     "podiums": 8,
     "sprintWins": 0
@@ -4283,7 +4302,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Ajo",
     "constructor": "KTM",
-    "points": 198,
+    "points": 205,
     "wins": 2,
     "podiums": 6,
     "sprintWins": 0
@@ -4295,9 +4314,9 @@
     "nation": "ES",
     "team": "Red Bull KTM Ajo",
     "constructor": "KTM",
-    "points": 189,
+    "points": 205,
     "wins": 0,
-    "podiums": 7,
+    "podiums": 8,
     "sprintWins": 0
    },
    {
@@ -4307,7 +4326,7 @@
     "nation": "ES",
     "team": "Leopard Racing",
     "constructor": "Honda",
-    "points": 148,
+    "points": 157,
     "wins": 0,
     "podiums": 2,
     "sprintWins": 0
