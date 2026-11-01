@@ -345,7 +345,9 @@ export async function collectCycling() {
       if (/giroditalia/.test(site)) { info.stages = await giroStages().catch(() => []); info.edition = info.stages[0] ? Number(info.stages[0].date.slice(0, 4)) : null; }
       for (const r of mine) {
         const p = prevOf(r);
-        if (info.countdown?.year === r.year) { r.start = info.countdown.start; r.approx = r.org === 'rcs'; }
+        // The home countdown can point at other events (the route presentation in the autumn): trust it only near the UCI date
+        const cdOk = info.countdown?.year === r.year && Math.abs(Date.parse(info.countdown.start) - Date.parse(r.startDate)) < 3 * DAY;
+        if (cdOk) { r.start = info.countdown.start; r.approx = r.org === 'rcs'; }
         r.source = info.source;
         // The organiser's page shows the latest edition: keep it only for the race of that year
         if (info.startlist?.year === r.year) r.startlist = info.startlist.teams;
@@ -354,7 +356,7 @@ export async function collectCycling() {
           const near = Date.parse(r.start) - now < 60 * DAY && Date.parse(r.end) > now - 2 * DAY;
           r.stages = r.org === 'aso' && near ? await asoStageTimes(r, info.stages, p?.stages) : info.stages.map(s => ({ ...s, ...(p?.stages?.find(o => o.num === s.num && o.date === s.date && o.firstStart) ?? {}) }));
         }
-        if (info.podium && r.year < Y + 1 && Date.parse(r.end) < now && info.countdown?.year !== r.year) r.podium = info.podium;
+        if (info.podium && r.year < Y + 1 && Date.parse(r.end) < now && !cdOk) r.podium = info.podium;
         // Official rankings: the site shows the latest edition held, i.e. its most recent race that has started
         const latestHeld = mine.filter(x => Date.parse(x.start) < now + 3600e3).pop();
         if (p?.rankings?.final && p.rankings.v === RANKINGS_V) r.rankings = p.rankings;
