@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T09:11:54.301Z",
+ "updated": "2026-11-01T15:58:55.893Z",
  "season": 2026,
  "teams": [
   {
@@ -41530,8 +41530,8 @@
    "team": 110,
    "from": null,
    "to": 110,
-   "player": "Albert Suárez",
-   "text": "RHP Albert Suárez elected free agency."
+   "player": "José Barrero",
+   "text": "SS José Barrero elected free agency."
   },
   {
    "date": "2026-10-31",
@@ -41539,26 +41539,8 @@
    "team": 113,
    "from": null,
    "to": 113,
-   "player": "Eugenio Suárez",
-   "text": "DH Eugenio Suárez elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "José Barrero",
-   "text": "SS José Barrero elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "Luis Robert Jr.",
-   "text": "CF Luis Robert Jr. elected free agency."
+   "player": "Emilio Pagán",
+   "text": "RHP Emilio Pagán elected free agency."
   },
   {
    "date": "2026-10-31",
@@ -41575,8 +41557,26 @@
    "team": 113,
    "from": null,
    "to": 113,
-   "player": "Emilio Pagán",
-   "text": "RHP Emilio Pagán elected free agency."
+   "player": "Eugenio Suárez",
+   "text": "DH Eugenio Suárez elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Albert Suárez",
+   "text": "RHP Albert Suárez elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Luis Robert Jr.",
+   "text": "CF Luis Robert Jr. elected free agency."
   },
   {
    "date": "2026-10-30",
@@ -42876,6 +42876,96 @@
   }
  ],
  "markets": {
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Sal Stewart",
+     "p": 86.5
+    },
+    {
+     "name": "Carson Benge",
+     "p": 9.5
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 4
+    },
+    {
+     "name": "Thomas White",
+     "p": 2
+    },
+    {
+     "name": "Justin Crawford",
+     "p": 1
+    },
+    {
+     "name": "Jonah Tong",
+     "p": 1
+    },
+    {
+     "name": "JR Ritchie",
+     "p": 1
+    },
+    {
+     "name": "T.J. Rumfield",
+     "p": 1
+    },
+    {
+     "name": "Owen Caissie",
+     "p": 1
+    },
+    {
+     "name": "Quinn Mathews",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALCY": {
+   "label": "Pro Baseball American League Cy Young",
+   "rows": [
+    {
+     "name": "Cam Schlittler",
+     "p": 99
+    },
+    {
+     "name": "Pablo Lopez",
+     "p": 3
+    },
+    {
+     "name": "Luis Gil",
+     "p": 2
+    },
+    {
+     "name": "Yusei Kikuchi",
+     "p": 1
+    },
+    {
+     "name": "Shane Bieber",
+     "p": 1
+    },
+    {
+     "name": "Grayson Rodriguez",
+     "p": 1
+    },
+    {
+     "name": "Aroldis Chapman",
+     "p": 1
+    },
+    {
+     "name": "Brayan Bello",
+     "p": 1
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
+     "name": "Luis Castillo",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBALROTY": {
    "label": "Pro Baseball American League Rookie of the Year",
    "rows": [
@@ -42892,12 +42982,12 @@
      "p": 3
     },
     {
-     "name": "Parker Messick",
+     "name": "Munetaka Murakami",
      "p": 2
     },
     {
-     "name": "Munetaka Murakami",
-     "p": 1.5
+     "name": "Parker Messick",
+     "p": 2
     },
     {
      "name": "Payton Tolle",
@@ -42921,51 +43011,6 @@
     }
    ]
   },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Sal Stewart",
-     "p": 83.5
-    },
-    {
-     "name": "Carson Benge",
-     "p": 14
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 4
-    },
-    {
-     "name": "Thomas White",
-     "p": 2
-    },
-    {
-     "name": "Justin Crawford",
-     "p": 1
-    },
-    {
-     "name": "JR Ritchie",
-     "p": 1
-    },
-    {
-     "name": "T.J. Rumfield",
-     "p": 1
-    },
-    {
-     "name": "Hunter Barco",
-     "p": 1
-    },
-    {
-     "name": "Charlie Condon",
-     "p": 1
-    },
-    {
-     "name": "Zac Veen",
-     "p": 1
-    }
-   ]
-  },
   "KXMLBNLCY": {
    "label": "Pro Baseball National League Cy Young",
    "rows": [
@@ -42974,15 +43019,15 @@
      "p": 98.5
     },
     {
+     "name": "Zack Wheeler",
+     "p": 1
+    },
+    {
      "name": "Yoshinobu Yamamoto",
      "p": 1
     },
     {
      "name": "Freddy Peralta",
-     "p": 1
-    },
-    {
-     "name": "Zack Wheeler",
      "p": 1
     },
     {
@@ -42998,15 +43043,15 @@
      "p": 1
     },
     {
+     "name": "Cristopher Sanchez",
+     "p": 1
+    },
+    {
      "name": "Bryce Elder",
      "p": 1
     },
     {
      "name": "Kodai Senga",
-     "p": 1
-    },
-    {
-     "name": "Bubba Chandler",
      "p": 1
     }
    ]

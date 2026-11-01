@@ -1,12 +1,14 @@
 {
- "updated": "2026-11-01T09:11:54.443Z",
+ "updated": "2026-11-01T15:58:56.023Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
   "sport": "soccer",
   "league": "ita.1",
   "id": "103",
-  "status": {},
+  "status": {
+   "history": "127 seasons"
+  },
   "card": {
    "id": "103",
    "name": "AC Milan",
@@ -14,7 +16,7 @@
    "abbr": "MIL",
    "color": "#e4002b",
    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
-   "standing": "4th in Italian Serie A",
+   "standing": "5th in Italian Serie A",
    "record": "6-3-1",
    "rank": null,
    "gp": 10,
@@ -24,7 +26,7 @@
    "pf": 21,
    "pa": 12,
    "pts": 21,
-   "pos": 4,
+   "pos": 5,
    "seed": null
   },
   "stats": null,
@@ -392,7 +394,7 @@
     ]
    }
   ],
-  "historyAt": "2026-10-31T13:37:57.262Z",
+  "historyAt": "2026-11-01T15:59:45.102Z",
   "history": [
    {
     "season": "1899–1900",
@@ -13100,11 +13102,11 @@
     },
     "stats": null,
     "allTime": {
-     "wins": 84,
+     "wins": 85,
      "losses": 91,
      "draws": 71,
-     "total": 246,
-     "text": "Inter: 91 / Drawn: 71 / Milan: 84"
+     "total": 247,
+     "text": "Inter: 91 / Drawn: 71 / Milan: 85"
     },
     "page": "Derby della Madonnina",
     "since2001": {
@@ -13837,17 +13839,17 @@
      "abbr": "COMO",
      "color": "#4169E1",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-     "standing": "5th in Italian Serie A",
-     "record": "6-2-1",
+     "standing": "4th in Italian Serie A",
+     "record": "7-2-1",
      "rank": null,
-     "gp": 9,
-     "w": 6,
+     "gp": 10,
+     "w": 7,
      "d": 2,
      "l": 1,
-     "pf": 17,
+     "pf": 18,
      "pa": 8,
-     "pts": 20,
-     "pos": 5,
+     "pts": 23,
+     "pos": 4,
      "seed": null
     },
     "stats": null,
@@ -14041,7 +14043,9 @@
   "sport": "football",
   "league": "nfl",
   "id": "17",
-  "status": {},
+  "status": {
+   "history": "66 seasons"
+  },
   "card": {
    "id": "17",
    "name": "New England Patriots",
@@ -14072,7 +14076,7 @@
    "sacks": 17
   },
   "competitions": null,
-  "historyAt": "2026-10-31T13:38:05.655Z",
+  "historyAt": "2026-11-01T15:59:52.843Z",
   "history": [
    {
     "season": "1960",
@@ -20850,7 +20854,9 @@
   "sport": "football",
   "league": "college-football",
   "id": "251",
-  "status": {},
+  "status": {
+   "history": "133 seasons"
+  },
   "card": {
    "id": "251",
    "name": "Texas Longhorns",
@@ -20872,16 +20878,16 @@
    "seed": 5
   },
   "stats": {
-   "ppg": 30.714,
-   "ypg": 370.4,
-   "passYpg": 224.28572,
-   "rushYpg": 146.1,
-   "third": 39.17526,
+   "ppg": 30.75,
+   "ypg": 359.1,
+   "passYpg": 223.75,
+   "rushYpg": 135.4,
+   "third": 39.63964,
    "toDiff": 0,
-   "sacks": 19
+   "sacks": 26
   },
   "competitions": null,
-  "historyAt": "2026-10-31T13:38:09.955Z",
+  "historyAt": "2026-11-01T15:59:56.562Z",
   "history": [
    {
     "season": "1893",
@@ -26677,13 +26683,13 @@
      "seed": 11
     },
     "stats": {
-     "ppg": 21.571,
-     "ypg": 333.7,
-     "passYpg": 228.14285,
-     "rushYpg": 105.6,
-     "third": 35.353535,
+     "ppg": 22,
+     "ypg": 336.9,
+     "passYpg": 230.125,
+     "rushYpg": 106.8,
+     "third": 36.206894,
      "toDiff": -2,
-     "sacks": 22
+     "sacks": 23
     },
     "allTime": {
      "wins": 65,
@@ -27001,12 +27007,12 @@
      "seed": 15
     },
     "stats": {
-     "ppg": 21,
-     "ypg": 343,
-     "passYpg": 231.42857,
-     "rushYpg": 111.6,
-     "third": 42.424244,
-     "toDiff": 0,
+     "ppg": 19.625,
+     "ypg": 336.1,
+     "passYpg": 231.125,
+     "rushYpg": 105,
+     "third": 43.103447,
+     "toDiff": -2,
      "sacks": 10
     },
     "allTime": {
@@ -27119,13 +27125,13 @@
      "seed": 3
     },
     "stats": {
-     "ppg": 35.857,
-     "ypg": 419.1,
-     "passYpg": 229.42857,
-     "rushYpg": 189.7,
-     "third": 38.372093,
-     "toDiff": -1,
-     "sacks": 21
+     "ppg": 35.625,
+     "ypg": 425.8,
+     "passYpg": 218.75,
+     "rushYpg": 207,
+     "third": 38.235294,
+     "toDiff": -2,
+     "sacks": 26
     },
     "allTime": {
      "wins": 55,
@@ -27281,13 +27287,13 @@
      "seed": 1
     },
     "stats": {
-     "ppg": 49,
-     "ypg": 551.9,
-     "passYpg": 340.7143,
-     "rushYpg": 211.1,
+     "ppg": 47.625,
+     "ypg": 534.9,
+     "passYpg": 332.375,
+     "rushYpg": 202.5,
      "third": 54.545456,
-     "toDiff": 4,
-     "sacks": 20
+     "toDiff": 5,
+     "sacks": 24
     },
     "allTime": null,
     "page": null,
@@ -27326,13 +27332,13 @@
      "seed": 3
     },
     "stats": {
-     "ppg": 39.286,
-     "ypg": 476.3,
-     "passYpg": 323.14285,
-     "rushYpg": 153.1,
-     "third": 44.31818,
+     "ppg": 36.625,
+     "ypg": 474.8,
+     "passYpg": 315.25,
+     "rushYpg": 159.5,
+     "third": 44.230766,
      "toDiff": 8,
-     "sacks": 10
+     "sacks": 11
     },
     "allTime": null,
     "page": null,
@@ -27416,13 +27422,13 @@
      "seed": 1
     },
     "stats": {
-     "ppg": 43,
-     "ypg": 469.9,
-     "passYpg": 272.14285,
-     "rushYpg": 197.7,
-     "third": 53.947372,
-     "toDiff": 5,
-     "sacks": 22
+     "ppg": 41,
+     "ypg": 450.9,
+     "passYpg": 250.75,
+     "rushYpg": 200.1,
+     "third": 51.648354,
+     "toDiff": 6,
+     "sacks": 26
     },
     "allTime": null,
     "page": null,
@@ -27477,7 +27483,9 @@
   "sport": "baseball",
   "league": "mlb",
   "id": "19",
-  "status": {},
+  "status": {
+   "history": "143 seasons"
+  },
   "card": {
    "id": "19",
    "name": "Los Angeles Dodgers",
@@ -27500,7 +27508,7 @@
   },
   "stats": null,
   "competitions": null,
-  "historyAt": "2026-10-31T13:38:13.384Z",
+  "historyAt": "2026-11-01T15:59:59.382Z",
   "history": [
    {
     "season": "1883",
