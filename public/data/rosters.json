@@ -83,7 +83,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
     "status": "Active",
     "injury": {
-     "status": "Questionable",
+     "status": "Out",
      "detail": null
     },
     "stats": null,
@@ -458,7 +458,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4432710.png",
     "status": "Active",
     "injury": {
-     "status": "Questionable",
+     "status": "Out",
      "detail": null
     },
     "stats": null,
@@ -799,6 +799,54 @@
     ]
    },
    {
+    "espn": "4698253",
+    "name": "Lan Larison",
+    "short": "L. Larison",
+    "jersey": "34",
+    "group": "offense",
+    "pos": "RB",
+    "posName": "Running Back",
+    "unit": "OFF",
+    "age": 25,
+    "ht": "5' 11\"",
+    "wt": "209 lbs",
+    "exp": 2,
+    "college": "UC Davis",
+    "from": "Caldwell, ID",
+    "state": "ID",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4698253.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2025
+    },
+    "depthPos": "RB",
+    "season": {
+     "games": 1,
+     "receptions": 2,
+     "targets": 2,
+     "receiving_yards": 9,
+     "receiving_epa": 0.076,
+     "receiving_yards_after_catch": 12,
+     "target_share": 0.01,
+     "air_yards_share": -0.001,
+     "wopr": 0.013,
+     "fantasy_points_ppr": 2.9
+    },
+    "snaps": [
+     {
+      "wk": 1,
+      "off": 0.04,
+      "def": 0,
+      "st": 0.27
+     }
+    ]
+   },
+   {
     "espn": "4372026",
     "name": "Cameron Latu",
     "short": "C. Latu",
@@ -1038,6 +1086,36 @@
       "st": 0
      }
     ]
+   },
+   {
+    "espn": "4369466",
+    "name": "Ryan Miller",
+    "short": "R. Miller",
+    "jersey": "11",
+    "group": "offense",
+    "pos": "WR",
+    "posName": "Wide Receiver",
+    "unit": "OFF",
+    "age": 26,
+    "ht": "6' 2\"",
+    "wt": "217 lbs",
+    "exp": 3,
+    "college": "Furman",
+    "from": "Jackson, TN",
+    "state": "TN",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2023
+    },
+    "depthPos": "WR",
+    "season": null,
+    "snaps": []
    },
    {
     "espn": "4431465",
@@ -1753,7 +1831,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916923.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 63,
@@ -1953,7 +2034,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4245273.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -4923,7 +5007,8 @@
       "name": "Wide Receiver",
       "players": [
        "4047646",
-       "4613202"
+       "4613202",
+       "4361432"
       ]
      },
      {
@@ -4932,7 +5017,7 @@
       "name": "Wide Receiver",
       "players": [
        "4427095",
-       "2991662"
+       "4369466"
       ]
      },
      {
@@ -4941,7 +5026,7 @@
       "name": "Wide Receiver",
       "players": [
        "4695193",
-       "4361432"
+       "2991662"
       ]
      },
      {

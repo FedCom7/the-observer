@@ -4144,7 +4144,7 @@
     "paint": 48.2,
     "fb": 16.8
    },
-   "reb": 0.515,
+   "reb": 0.512,
    "quarters": [
     -4.6,
     4.5,
@@ -4621,6 +4621,11 @@
      "freq": 0.35,
      "pct": 0.571,
      "att": 252
+    },
+    "rim": {
+     "freq": 0.372,
+     "pct": 0.594,
+     "att": 202
     },
     "paint": {
      "freq": 0.107,
@@ -5557,6 +5562,9 @@
    },
    "home": {
     "net": 13.5
+   },
+   "away": {
+    "net": 8.3
    },
    "away": {
     "net": 8.3
@@ -8110,6 +8118,16 @@
      "freq": 0.113,
      "pct": 0.352,
      "att": 71
+    },
+    "rim": {
+     "freq": 0.312,
+     "pct": 0.591,
+     "att": 164
+    },
+    "corner3": {
+     "freq": 0.107,
+     "pct": 0.304,
+     "att": 56
     },
     "paint": {
      "freq": 0.169,
@@ -15491,6 +15509,32 @@
    "pm": -14,
    "fgm": 10,
    "fga": 20,
+   "tpm": 3,
+   "tpa": 13,
+   "ftm": 6,
+   "fta": 11,
+   "ts": 0.584,
+   "usg": 10.6
+  },
+  {
+   "id": "4277919",
+   "name": "Mo Bamba",
+   "pos": "C",
+   "team": "UTAH",
+   "g": 3,
+   "gs": 0,
+   "min": 56,
+   "pts": 28,
+   "reb": 15,
+   "oreb": 5,
+   "ast": 2,
+   "stl": 1,
+   "blk": 5,
+   "tov": 2,
+   "pf": 2,
+   "pm": 9,
+   "fgm": 13,
+   "fga": 16,
    "tpm": 0,
    "tpa": 2,
    "ftm": 8,
@@ -17091,7 +17135,7 @@
    "team": "PHI",
    "g": 5,
    "gs": 0,
-   "min": 35,
+   "min": 39,
    "pts": 12,
    "reb": 5,
    "oreb": 0,
@@ -17637,7 +17681,7 @@
    "team": "SAC",
    "g": 6,
    "gs": 0,
-   "min": 42,
+   "min": 39,
    "pts": 8,
    "reb": 3,
    "oreb": 1,
@@ -18159,16 +18203,16 @@
    "gs": 0,
    "min": 7,
    "pts": 6,
-   "reb": 2,
+   "reb": 3,
    "oreb": 0,
-   "ast": 1,
+   "ast": 0,
    "stl": 0,
    "blk": 0,
    "tov": 0,
    "pf": 0,
    "pm": 8,
    "fgm": 3,
-   "fga": 5,
+   "fga": 6,
    "tpm": 0,
    "tpa": 0,
    "ftm": 0,
@@ -18512,7 +18556,7 @@
    "ftm": 0,
    "fta": 0,
    "ts": 1,
-   "usg": 9.5
+   "usg": 9.4
   },
   {
    "id": "2993874",
@@ -18729,7 +18773,7 @@
    "team": "WSH",
    "g": 5,
    "gs": 0,
-   "min": 15,
+   "min": 18,
    "pts": 4,
    "reb": 0,
    "oreb": 0,
@@ -18980,7 +19024,7 @@
    "ftm": 0,
    "fta": 0,
    "ts": 0.333,
-   "usg": 15.5
+   "usg": 15.4
   },
   {
    "id": "4594326",
@@ -19018,13 +19062,39 @@
    "min": 3,
    "pts": 2,
    "reb": 1,
-   "oreb": 1,
+   "oreb": 0,
+   "ast": 0,
+   "stl": 1,
+   "blk": 0,
+   "tov": 0,
+   "pf": 0,
+   "pm": -4,
+   "fgm": 1,
+   "fga": 3,
+   "tpm": 0,
+   "tpa": 2,
+   "ftm": 0,
+   "fta": 0,
+   "ts": 0.333,
+   "usg": 20.8
+  },
+  {
+   "id": "4432185",
+   "name": "Micah Peavy",
+   "pos": "G",
+   "team": "OKC",
+   "g": 2,
+   "gs": 0,
+   "min": 19,
+   "pts": 2,
+   "reb": 1,
+   "oreb": 0,
    "ast": 0,
    "stl": 0,
    "blk": 0,
    "tov": 1,
    "pf": 2,
-   "pm": -4,
+   "pm": -10,
    "fgm": 1,
    "fga": 1,
    "tpm": 0,
@@ -19052,9 +19122,9 @@
    "pf": 0,
    "pm": 9,
    "fgm": 1,
-   "fga": 1,
+   "fga": 2,
    "tpm": 0,
-   "tpa": 0,
+   "tpa": 1,
    "ftm": 0,
    "fta": 0,
    "ts": 1,
@@ -19188,7 +19258,7 @@
    "ftm": 0,
    "fta": 0,
    "ts": 0.333,
-   "usg": 22.8
+   "usg": 22.7
   },
   {
    "id": "4897449",
@@ -19639,7 +19709,7 @@
    "team": "LAL",
    "g": 1,
    "gs": 0,
-   "min": 1,
+   "min": 2,
    "pts": 0,
    "reb": 1,
    "oreb": 0,
@@ -19648,9 +19718,9 @@
    "blk": 0,
    "tov": 0,
    "pf": 0,
-   "pm": 1,
+   "pm": -1,
    "fgm": 0,
-   "fga": 0,
+   "fga": 1,
    "tpm": 0,
    "tpa": 0,
    "ftm": 0,
@@ -19735,6 +19805,32 @@
    "fta": 0,
    "ts": 0,
    "usg": 35.4
+  },
+  {
+   "id": "4711297",
+   "name": "Justin Edwards",
+   "pos": "F",
+   "team": "PHI",
+   "g": 2,
+   "gs": 0,
+   "min": 2,
+   "pts": 0,
+   "reb": 1,
+   "oreb": 1,
+   "ast": 0,
+   "stl": 0,
+   "blk": 0,
+   "tov": 0,
+   "pf": 1,
+   "pm": -5,
+   "fgm": 0,
+   "fga": 1,
+   "tpm": 0,
+   "tpa": 0,
+   "ftm": 0,
+   "fta": 0,
+   "ts": 0,
+   "usg": 21.4
   },
   {
    "id": "4870564",
@@ -19884,13 +19980,13 @@
    "pf": 0,
    "pm": -1,
    "fgm": 0,
-   "fga": 0,
+   "fga": 1,
    "tpm": 0,
-   "tpa": 0,
+   "tpa": 1,
    "ftm": 0,
    "fta": 0,
-   "ts": null,
-   "usg": 0
+   "ts": 0,
+   "usg": 7.1
   },
   {
    "id": "5113969",
@@ -19905,18 +20001,44 @@
    "oreb": 0,
    "ast": 0,
    "stl": 0,
-   "blk": 0,
-   "tov": 0,
+   "blk": 1,
+   "tov": 1,
    "pf": 0,
    "pm": -8,
    "fgm": 0,
-   "fga": 0,
+   "fga": 1,
    "tpm": 0,
    "tpa": 0,
    "ftm": 0,
    "fta": 0,
-   "ts": null,
-   "usg": 0
+   "ts": 0,
+   "usg": 27.5
+  },
+  {
+   "id": "5177362",
+   "name": "Riley Minix",
+   "pos": "F",
+   "team": "CLE",
+   "g": 1,
+   "gs": 0,
+   "min": 6,
+   "pts": 0,
+   "reb": 3,
+   "oreb": 3,
+   "ast": 0,
+   "stl": 0,
+   "blk": 0,
+   "tov": 0,
+   "pf": 0,
+   "pm": -4,
+   "fgm": 0,
+   "fga": 3,
+   "tpm": 0,
+   "tpa": 2,
+   "ftm": 0,
+   "fta": 0,
+   "ts": 0,
+   "usg": 20.8
   },
   {
    "id": "5170947",
@@ -20032,7 +20154,7 @@
    "projW": 59.5,
    "projL": 22.5,
    "playoffs": 100,
-   "top6": 99.8,
+   "top6": 99.9,
    "playIn": 0.2,
    "seed1": 0.5,
    "semis": 80.6,
@@ -20099,6 +20221,25 @@
    "sosRem": 5,
    "sos": 25,
    "lottery": 11.3
+  },
+  "OKC": {
+   "bpi": 5.9,
+   "rank": 3,
+   "off": 1,
+   "def": 4.9,
+   "projW": 54.9,
+   "projL": 27.1,
+   "playoffs": 99.6,
+   "top6": 97.8,
+   "playIn": 2.2,
+   "seed1": 0.2,
+   "semis": 71,
+   "confFinal": 39.9,
+   "finals": 20.8,
+   "title": 12,
+   "sosRem": 8,
+   "sos": 18,
+   "lottery": 11
   },
   "BOS": {
    "bpi": 5.2,
@@ -20527,7 +20668,7 @@
    "projL": 59.2,
    "playoffs": 0,
    "top6": 0,
-   "playIn": 0.3,
+   "playIn": 3.2,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
@@ -20565,7 +20706,7 @@
    "projL": 60.6,
    "playoffs": 0,
    "top6": 0,
-   "playIn": 0.2,
+   "playIn": 0,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
@@ -21028,9 +21169,9 @@
     },
     {
      "name": "Houston",
-     "p": 7.5,
-     "bid": 7,
-     "ask": 8
+     "p": 6.5,
+     "bid": 6,
+     "ask": 7
     },
     {
      "name": "New York",
@@ -21057,7 +21198,7 @@
      "ask": 4
     },
     {
-     "name": "Los Angeles L",
+     "name": "Detroit",
      "p": 3.5,
      "bid": 3,
      "ask": 4
@@ -21069,13 +21210,13 @@
      "ask": 4
     },
     {
-     "name": "Cleveland",
+     "name": "Portland",
      "p": 2.5,
      "bid": 2,
      "ask": 3
     },
     {
-     "name": "Miami",
+     "name": "Cleveland",
      "p": 2.5,
      "bid": 2,
      "ask": 3
@@ -21094,6 +21235,12 @@
     },
     {
      "name": "Indiana",
+     "p": 1.5,
+     "bid": 1,
+     "ask": 2
+    },
+    {
+     "name": "Miami",
      "p": 1.5,
      "bid": 1,
      "ask": 2
@@ -21236,9 +21383,15 @@
     },
     {
      "name": "Zach Edey",
-     "p": 4,
+     "p": 5.5,
      "bid": 2,
-     "ask": 6
+     "ask": 9
+    },
+    {
+     "name": "Walker Kessler",
+     "p": 5,
+     "bid": 3,
+     "ask": 7
     },
     {
      "name": "Anthony Davis",
