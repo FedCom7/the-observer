@@ -1,10 +1,10 @@
 {
  "season": 2026,
  "ceremonyYear": 2027,
- "updated": "2026-11-02T15:35:26.682Z",
+ "updated": "2026-11-02T18:18:03.834Z",
  "status": {
-  "calendar": "60 dates",
-  "radar": "18 headlines",
+  "calendar": "61 dates",
+  "radar": "15 headlines",
   "lafca-official": "fetch failed",
   "adg-official": "fetch failed",
   "spirit-official": "403 https://www.filmindependent.org/spirit-awards/",
@@ -10927,6 +10927,13 @@
    "approx": true
   },
   {
+   "award": "gotham",
+   "kind": "ceremony",
+   "title": "Gotham Film Awards Ceremony",
+   "date": "2026-11-30T23:00:00.000Z",
+   "approx": true
+  },
+  {
    "award": "nyfcc",
    "kind": "ceremony",
    "title": "New York Film Critics Circle (NYFCC) Awards Announced",
@@ -11619,7 +11626,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "cannes",
+      "kind": "festival",
+      "title": "Cannes Film Festival",
+      "date": "2026-05-12T10:00:00.000Z",
+      "end": "2026-05-23T18:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -11759,7 +11777,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "venice",
+      "kind": "festival",
+      "title": "Venice Film Festival",
+      "date": "2026-09-02T10:00:00.000Z",
+      "end": "2026-09-12T18:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -11834,6 +11863,17 @@
      "Beau Geste",
      "Begotten",
      "Sawyer Avenue, Sunday Afternoon"
+    ],
+    "dates": [
+     {
+      "award": "telluride",
+      "kind": "festival",
+      "title": "Telluride Film Festival",
+      "date": "2026-09-04T18:00:00.000Z",
+      "end": "2026-09-08T02:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
     ]
    },
    "template": null,
@@ -12208,7 +12248,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "tiff",
+      "kind": "festival",
+      "title": "Toronto International Film Festival",
+      "date": "2026-09-10T16:00:00.000Z",
+      "end": "2026-09-21T00:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -12278,6 +12329,17 @@
      "Rose",
      "Tender Loving Care",
      "The Unknown"
+    ],
+    "dates": [
+     {
+      "award": "nyff",
+      "kind": "festival",
+      "title": "New York Film Festival",
+      "date": "2026-09-25T16:00:00.000Z",
+      "end": "2026-10-13T00:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
     ]
    },
    "template": null,
@@ -12302,10 +12364,10 @@
     {
      "award": "gotham",
      "kind": "ceremony",
-     "title": "Gotham Awards",
+     "title": "Gotham Film Awards Ceremony",
      "date": "2026-11-30T23:00:00.000Z",
      "approx": true,
-     "source": "Wikipedia"
+     "source": "Gold Derby"
     }
    ],
    "state": "nominations",
@@ -12944,7 +13006,25 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "gotham",
+      "kind": "nominations",
+      "title": "Gotham Film Awards Nominations Announced",
+      "date": "2026-10-27T13:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "gotham",
+      "kind": "ceremony",
+      "title": "Gotham Awards",
+      "date": "2026-11-30T23:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": {
     "page": "Gotham Independent Film Awards 2025",
@@ -12993,7 +13073,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:05.387Z",
+    "fetched": "2026-11-02T18:17:40.925Z",
     "url": "https://www.thegotham.org/"
    },
    "news": [
@@ -13032,7 +13112,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nbr",
+      "kind": "ceremony",
+      "title": "National Board of Review (NBR) Awards Announced",
+      "date": "2026-12-02T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "National Board of Review Awards 2025",
@@ -13101,7 +13191,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:05.649Z",
+    "fetched": "2026-11-02T18:17:45.115Z",
     "url": "https://nationalboardofreview.org/"
    },
    "news": []
@@ -13130,7 +13220,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nyfcc",
+      "kind": "ceremony",
+      "title": "New York Film Critics Circle (NYFCC) Awards Announced",
+      "date": "2026-12-01T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 New York Film Critics Circle Awards",
@@ -13195,7 +13295,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:06.154Z",
+    "fetched": "2026-11-02T18:17:45.347Z",
     "url": "https://www.nyfcc.com/"
    },
    "news": []
@@ -13224,7 +13324,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "lafca",
+      "kind": "ceremony",
+      "title": "Los Angeles Film Critics Association (LAFCA) Awards Announced",
+      "date": "2026-12-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 Los Angeles Film Critics Association Awards",
@@ -14151,11 +14261,30 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "ccda",
+      "kind": "nominations",
+      "title": "’14th’ Leads 2026 Critics Choice Documentary Award Nominations",
+      "date": "2026-10-13T16:00:00.000Z",
+      "approx": false,
+      "source": "IndieWire",
+      "url": "https://www.indiewire.com/awards/results/critics-choice-documentary-awards-2026-nominations-14th-1235221592/"
+     },
+     {
+      "award": "ccda",
+      "kind": "ceremony",
+      "title": "Critics' Choice Documentary Awards",
+      "date": "2026-11-09T02:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": {
-    "fetched": "2026-11-02T05:50:06.576Z",
+    "fetched": "2026-11-02T18:17:45.883Z",
     "url": "https://www.criticschoice.com/"
    },
    "news": [
@@ -14202,7 +14331,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cca",
+      "kind": "nominations",
+      "title": "Critics Choice Association (CCA) Nominations Announced",
+      "date": "2026-12-04T16:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cca",
+      "kind": "ceremony",
+      "title": "Critics Choice Association (CCA) Awards Ceremony",
+      "date": "2027-01-04T00:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "31st Critics' Choice Awards",
@@ -14303,7 +14450,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:06.601Z",
+    "fetched": "2026-11-02T18:17:45.972Z",
     "url": "https://www.criticschoice.com/"
    },
    "news": [
@@ -14360,7 +14507,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "globes",
+      "kind": "nominations",
+      "title": "Golden Globes Nominations Announced",
+      "date": "2026-12-07T13:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "globes",
+      "kind": "ceremony",
+      "title": "Golden Globe Awards ceremony",
+      "date": "2027-01-11T01:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://goldenglobes.com/"
+     }
+    ]
    },
    "template": {
     "page": "83rd Golden Globe Awards",
@@ -14429,7 +14595,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:06.792Z",
+    "fetched": "2026-11-02T18:17:46.060Z",
     "url": "https://goldenglobes.com/",
     "ceremony": {
      "date": "2027-01-11T01:00:00.000Z",
@@ -14437,6 +14603,15 @@
     }
    },
    "news": [
+    {
+     "award": "globes",
+     "kind": "news",
+     "title": "Golden Globes: ‘Club Kid’ Submitted as Drama (Exclusive)",
+     "url": "https://www.hollywoodreporter.com/movies/movie-news/golden-globes-club-kid-submitted-drama-1236745986/",
+     "source": "The Hollywood Reporter",
+     "time": "2026-11-02T17:40:15.000Z",
+     "date": null
+    },
     {
      "award": "globes",
      "kind": "news",
@@ -14472,7 +14647,17 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "nsfc",
+      "kind": "ceremony",
+      "title": "National Society of Film Critics (NSFC) Awards Announced",
+      "date": "2027-01-02T23:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 National Society of Film Critics Awards",
@@ -14493,7 +14678,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:06.971Z",
+    "fetched": "2026-11-02T18:17:46.116Z",
     "url": "https://nationalsocietyoffilmcritics.com/"
    },
    "news": []
@@ -14593,7 +14778,18 @@
       ]
      }
     ],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "sundance",
+      "kind": "festival",
+      "title": "Sundance Film Festival",
+      "date": "2026-01-22T19:00:00.000Z",
+      "end": "2026-02-02T03:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": null,
    "official": null,
@@ -14632,7 +14828,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "dga",
+      "kind": "nominations",
+      "title": "Directors Guild of America Awards nominations",
+      "date": "2027-01-07T17:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.dga.org/Awards/Annual.aspx"
+     },
+     {
+      "award": "dga",
+      "kind": "ceremony",
+      "title": "Directors Guild of America (DGA) Awards Ceremony",
+      "date": "2027-01-31T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "78th Directors Guild of America Awards",
@@ -14661,7 +14876,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:07.418Z",
+    "fetched": "2026-11-02T18:17:46.688Z",
     "url": "https://www.dga.org/Awards/Annual.aspx",
     "nominations": {
      "date": "2027-01-07T17:00:00.000Z",
@@ -14712,7 +14927,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "ace",
+      "kind": "nominations",
+      "title": "American Cinema Editors (ACE) Nominations Announced",
+      "date": "2027-01-14T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "ace",
+      "kind": "ceremony",
+      "title": "American Cinema Editors (ACE) Awards Ceremony",
+      "date": "2027-02-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "American Cinema Editors Awards 2026",
@@ -14749,7 +14982,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:13.489Z",
+    "fetched": "2026-11-02T18:17:55.230Z",
     "url": "https://americancinemaeditors.org/eddie-awards/"
    },
    "news": [
@@ -14796,7 +15029,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "wga",
+      "kind": "nominations",
+      "title": "Writers Guild of America (WGA) Nominations Announced",
+      "date": "2027-01-08T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "wga",
+      "kind": "ceremony",
+      "title": "Writers Guild of America (WGA) Awards Ceremony",
+      "date": "2027-02-14T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "78th Writers Guild of America Awards",
@@ -14861,7 +15112,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:13.775Z",
+    "fetched": "2026-11-02T18:17:55.429Z",
     "url": "https://awards.wga.org/"
    },
    "news": []
@@ -14898,7 +15149,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "ves",
+      "kind": "nominations",
+      "title": "Visual Effects Society (VES) Nominations Announced",
+      "date": "2027-01-19T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "ves",
+      "kind": "ceremony",
+      "title": "Visual Effects Society (VES) Awards Ceremony",
+      "date": "2027-02-18T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "24th Visual Effects Society Awards",
@@ -15009,7 +15278,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "csa",
+      "kind": "nominations",
+      "title": "Casting Society of America (CSA) Artios Nominations Announced for Film",
+      "date": "2026-12-16T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "csa",
+      "kind": "ceremony",
+      "title": "Casting Society of America (CSA) Artios Awards Ceremony",
+      "date": "2027-02-19T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "41st Artios Awards",
@@ -15086,7 +15373,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:14.317Z",
+    "fetched": "2026-11-02T18:17:55.822Z",
     "url": "https://www.castingsociety.com/"
    },
    "news": []
@@ -15123,7 +15410,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "muahs",
+      "kind": "nominations",
+      "title": "Make-Up Artists & Hair Stylists Guild (MUAHS) Nominations Announced",
+      "date": "2026-12-21T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "muahs",
+      "kind": "ceremony",
+      "title": "Make-Up Artists & Hair Stylists Guild (MUAHS) Awards Ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Make-Up Artists & Hair Stylists Guild Awards 2025",
@@ -15172,7 +15477,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:16.011Z",
+    "fetched": "2026-11-02T18:17:57.091Z",
     "url": "https://www.local706.org/"
    },
    "news": []
@@ -15209,7 +15514,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "annie",
+      "kind": "nominations",
+      "title": "Annie Awards Nominations Announced",
+      "date": "2027-01-20T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "annie",
+      "kind": "ceremony",
+      "title": "Annie Awards Ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "53rd Annie Awards",
@@ -15286,7 +15609,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:16.495Z",
+    "fetched": "2026-11-02T18:17:57.284Z",
     "url": "https://annieawards.org/"
    },
    "news": []
@@ -15331,7 +15654,33 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "bafta",
+      "kind": "longlist",
+      "title": "British Academy Film Awards (BAFTA) Longlists Announced",
+      "date": "2027-01-07T07:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "bafta",
+      "kind": "nominations",
+      "title": "British Academy Film Awards (BAFTA) Nominations Announced",
+      "date": "2027-01-19T07:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "bafta",
+      "kind": "ceremony",
+      "title": "British Academy Film Awards (BAFTA) Awards Ceremony",
+      "date": "2027-02-21T19:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "79th British Academy Film Awards",
@@ -15478,7 +15827,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cdg",
+      "kind": "nominations",
+      "title": "Costume Designers Guild (CDG) Nominations Announced",
+      "date": "2026-12-18T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cdg",
+      "kind": "ceremony",
+      "title": "Costume Designers Guild (CDG) Awards Ceremony",
+      "date": "2027-02-26T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "28th Costume Designers Guild Awards",
@@ -15503,7 +15870,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:17.240Z",
+    "fetched": "2026-11-02T18:17:58.278Z",
     "url": "https://www.costumedesignersguild.com/"
    },
    "news": []
@@ -15540,7 +15907,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "pga",
+      "kind": "nominations",
+      "title": "Producers Guild of America (PGA) Nominations Announced for Movies and TV",
+      "date": "2027-01-08T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "pga",
+      "kind": "ceremony",
+      "title": "Producers Guild of America (PGA) Awards Ceremony",
+      "date": "2027-02-28T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "37th Producers Guild of America Awards",
@@ -15577,7 +15962,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:18.218Z",
+    "fetched": "2026-11-02T18:17:58.975Z",
     "url": "https://producersguild.org/pga-awards/"
    },
    "news": []
@@ -15614,7 +15999,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "adg",
+      "kind": "nominations",
+      "title": "Art Directors Guild (ADG) Awards Nominations Announced",
+      "date": "2027-01-07T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "adg",
+      "kind": "ceremony",
+      "title": "Art Directors Guild (ADG) Awards Ceremony",
+      "date": "2027-02-28T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Art Directors Guild Awards 2025",
@@ -15674,7 +16077,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "sag",
+      "kind": "nominations",
+      "title": "Actor Awards (presented by SAG-AFTRA) Nominations Announced",
+      "date": "2027-01-06T14:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "sag",
+      "kind": "ceremony",
+      "title": "Actor Awards (SAG-AFTRA) ceremony",
+      "date": "2027-03-01T01:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.actorawards.org/"
+     }
+    ]
    },
    "template": {
     "page": "32nd Actor Awards",
@@ -15703,7 +16125,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:18.658Z",
+    "fetched": "2026-11-02T18:17:59.741Z",
     "url": "https://www.actorawards.org/",
     "ceremony": {
      "date": "2027-03-01T01:00:00.000Z",
@@ -15744,7 +16166,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "cas",
+      "kind": "nominations",
+      "title": "Cinema Audio Society (CAS) Nominations Announced",
+      "date": "2027-01-12T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "cas",
+      "kind": "ceremony",
+      "title": "Cinema Audio Society (CAS) Awards Ceremony",
+      "date": "2027-03-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "Cinema Audio Society Awards 2025",
@@ -15765,7 +16205,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:19.045Z",
+    "fetched": "2026-11-02T18:18:00.151Z",
     "url": "https://cinemaaudiosociety.org/cas-awards/"
    },
    "news": []
@@ -15802,7 +16242,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "spirit",
+      "kind": "nominations",
+      "title": "Film Independent Spirit Awards Nominations Announced",
+      "date": "2026-12-02T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "spirit",
+      "kind": "ceremony",
+      "title": "Film Independent Spirit Awards Ceremony",
+      "date": "2027-03-07T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "41st Independent Spirit Awards",
@@ -15862,17 +16320,7 @@
     "fetched": "2026-10-27T22:35:51.773Z",
     "url": "https://www.filmindependent.org/spirit-awards/"
    },
-   "news": [
-    {
-     "award": "spirit",
-     "kind": "news",
-     "title": "Roman Coppola to Serve as Creative Consultant of 2027 Film Independent Spirit Awards",
-     "url": "https://awardswatch.com/roman-coppola-to-serve-as-creative-consultant-of-2027-film-independent-spirit-awards/",
-     "source": "AwardsWatch",
-     "time": "2026-10-29T15:32:07.000Z",
-     "date": null
-    }
-   ]
+   "news": []
   },
   {
    "id": "mpse",
@@ -15907,7 +16355,26 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "mpse",
+      "kind": "nominations",
+      "title": "Golden Reel Motion Picture Sound Editors (MPSE) Nominations Announced",
+      "date": "2027-01-11T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "mpse",
+      "kind": "ceremony",
+      "title": "Golden Reel Awards (sound editing) ceremony",
+      "date": "2027-03-08T02:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://www.mpse.org/"
+     }
+    ]
    },
    "template": {
     "page": "Golden Reel Awards 2025",
@@ -15972,7 +16439,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:20.341Z",
+    "fetched": "2026-11-02T18:18:00.788Z",
     "url": "https://www.mpse.org/",
     "ceremony": {
      "date": "2027-03-08T02:00:00.000Z",
@@ -16013,7 +16480,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "asc",
+      "kind": "nominations",
+      "title": "American Society of Cinematographers (ASC) Nominations Announced",
+      "date": "2027-01-12T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "asc",
+      "kind": "ceremony",
+      "title": "American Society of Cinematographers (ASC) Awards Ceremony",
+      "date": "2027-03-08T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "2025 American Society of Cinematographers Awards",
@@ -16034,7 +16519,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:20.823Z",
+    "fetched": "2026-11-02T18:18:02.131Z",
     "url": "https://theasc.com/asc-awards"
    },
    "news": []
@@ -16073,7 +16558,26 @@
     "wikiDate": null,
     "wikiAnnounced": null,
     "categories": [],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "scripter",
+      "kind": "nominations",
+      "title": "USC Scripter Awards Nominations Announced",
+      "date": "2027-01-26T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "scripter",
+      "kind": "ceremony",
+      "title": "USC Scripter Awards (adaptation) ceremony",
+      "date": "2027-02-21T02:00:00.000Z",
+      "approx": true,
+      "source": "official site",
+      "url": "https://scripter.usc.edu/"
+     }
+    ]
    },
    "template": {
     "page": "USC Scripter Awards",
@@ -16086,7 +16590,7 @@
     ]
    },
    "official": {
-    "fetched": "2026-11-02T05:50:21.615Z",
+    "fetched": "2026-11-02T18:18:03.196Z",
     "url": "https://scripter.usc.edu/",
     "ceremony": {
      "date": "2027-02-21T02:00:00.000Z",
@@ -16127,7 +16631,25 @@
     "span": null,
     "wikiDate": null,
     "wikiAnnounced": null,
-    "categories": []
+    "categories": [],
+    "dates": [
+     {
+      "award": "scl",
+      "kind": "nominations",
+      "title": "Society of Composers and Lyricists (SCL) Nominations Announced",
+      "date": "2026-12-16T17:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     },
+     {
+      "award": "scl",
+      "kind": "ceremony",
+      "title": "Society of Composers and Lyricists (SCL) Awards Ceremony",
+      "date": "2027-02-05T02:00:00.000Z",
+      "approx": true,
+      "source": "Gold Derby"
+     }
+    ]
    },
    "template": {
     "page": "7th Society of Composers & Lyricists Awards",
@@ -16190,7 +16712,17 @@
     "wikiDate": "2027-03-14T23:00:00.000Z",
     "wikiAnnounced": null,
     "categories": [],
-    "lineup": null
+    "lineup": null,
+    "dates": [
+     {
+      "award": "oscars",
+      "kind": "ceremony",
+      "title": "Academy Awards",
+      "date": "2027-03-14T23:00:00.000Z",
+      "approx": true,
+      "source": "Wikipedia"
+     }
+    ]
    },
    "template": {
     "page": "98th Academy Awards",
@@ -16299,6 +16831,15 @@
     {
      "award": "oscars",
      "kind": "news",
+     "title": "‘The Odyssey,’ ‘Behemoth!,’ and ‘Michael’ lead Hollywood Music in Media Awards nominations — are Oscars next?",
+     "url": "https://www.goldderby.com/film/2026/hollywood-music-in-media-awards-2026-nominations/",
+     "source": "Gold Derby",
+     "time": "2026-11-02T16:00:00.000Z",
+     "date": null
+    },
+    {
+     "award": "oscars",
+     "kind": "news",
      "title": "Sandra Hüller Makes Surprise Move to Supporting for ‘Fatherland,’ Setting Up Possible Double Oscar Nom With ‘Rose’ (EXCLUSIVE)",
      "url": "https://variety.com/2026/film/awards/sandra-huller-fatherland-supporting-actress-oscars-1236937000/",
      "source": "Variety",
@@ -16321,15 +16862,6 @@
      "url": "https://www.awardsdaily.com/2026/10/30/2027-oscar-predictions-you-can-see-everything-and-the-hive-mind/",
      "source": "Awards Daily",
      "time": "2026-10-30T14:16:44.000Z",
-     "date": null
-    },
-    {
-     "award": "oscars",
-     "kind": "news",
-     "title": "Oscar-Nominated Director Evgeny Afineevsky on Finding Hope in the Horrors of the Russian War Against Ukraine with New Film ‘Ash and Crayons’ [VIDEO INTERVIEW]",
-     "url": "https://awardswatch.com/oscar-nominated-director-evgeny-afineevsky-on-finding-hope-in-the-horrors-of-the-russian-war-against-ukraine-with-new-film-ash-and-crayons-video-interview/",
-     "source": "AwardsWatch",
-     "time": "2026-10-29T17:26:31.000Z",
      "date": null
     },
     {
@@ -28579,18 +29111,18 @@
   }
  },
  "markets": {
-  "updated": "2026-11-02T15:35:26.676Z",
+  "updated": "2026-11-02T18:18:03.830Z",
   "polymarket": {
    "editing": {
     "nom": [
      {
       "name": "The Black Ball",
-      "p": 0.965,
+      "p": 0.966,
       "vol": 1894
      },
      {
       "name": "The Odyssey",
-      "p": 0.96,
+      "p": 0.961,
       "vol": 2026
      },
      {
@@ -28599,19 +29131,24 @@
       "vol": 4000
      },
      {
+      "name": "Project Hail Mary",
+      "p": 0.64,
+      "vol": 10371
+     },
+     {
+      "name": "You Can See Everything",
+      "p": 0.615,
+      "vol": 11186
+     },
+     {
       "name": "Dune: Part Three",
       "p": 0.605,
       "vol": 9102
      },
      {
       "name": "The Invite",
-      "p": 0.582,
+      "p": 0.581,
       "vol": 3343
-     },
-     {
-      "name": "You Can See Everything",
-      "p": 0.56,
-      "vol": 11186
      },
      {
       "name": "Elsinore",
@@ -28619,14 +29156,14 @@
       "vol": 10205
      },
      {
-      "name": "Project Hail Mary",
-      "p": 0.455,
-      "vol": 9957
+      "name": "The Debut",
+      "p": 0.27,
+      "vol": 9537
      },
      {
-      "name": "The Debut",
-      "p": 0.305,
-      "vol": 9537
+      "name": "Fjord",
+      "p": 0.255,
+      "vol": 5436
      },
      {
       "name": "Digger",
@@ -28634,19 +29171,14 @@
       "vol": 8495
      },
      {
-      "name": "Fjord",
-      "p": 0.18,
-      "vol": 3983
-     },
-     {
-      "name": "Ink",
-      "p": 0.135,
-      "vol": 4062
-     },
-     {
       "name": "Club Kid",
       "p": 0.13,
       "vol": 11054
+     },
+     {
+      "name": "Ink",
+      "p": 0.105,
+      "vol": 8736
      }
     ],
     "winner": [
@@ -28657,7 +29189,7 @@
      },
      {
       "name": "The Black Ball",
-      "p": 0.28,
+      "p": 0.27,
       "vol": 3665
      },
      {
@@ -28667,7 +29199,7 @@
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.084,
+      "p": 0.083,
       "vol": 3601
      },
      {
@@ -28702,159 +29234,104 @@
      }
     ]
    },
-   "origScreenplay": {
+   "international": {
     "nom": [
      {
-      "name": "The Debut",
-      "p": 0.922,
-      "vol": 3126
-     },
-     {
-      "name": "Wild Horse Nine",
-      "p": 0.88,
-      "vol": 2452
-     },
-     {
-      "name": "Club Kid",
-      "p": 0.55,
-      "vol": 9035
+      "name": "The Black Ball",
+      "p": 0.955,
+      "vol": 3763
      },
      {
       "name": "Fjord",
-      "p": 0.47,
-      "vol": 2885
+      "p": 0.885,
+      "vol": 9018
      },
      {
-      "name": "Obsession",
-      "p": 0.445,
-      "vol": 16003
+      "name": "All of a Sudden",
+      "p": 0.853,
+      "vol": 1484
      },
      {
-      "name": "Elsinore",
+      "name": "Possible Love",
+      "p": 0.665,
+      "vol": 5552
+     },
+     {
+      "name": "Minotaur",
+      "p": 0.545,
+      "vol": 12223
+     },
+     {
+      "name": "Fatherland",
+      "p": 0.46,
+      "vol": 2572
+     },
+     {
+      "name": "Rose",
       "p": 0.385,
-      "vol": 4249
+      "vol": 4695
      },
      {
-      "name": "Behemoth!",
-      "p": 0.28,
-      "vol": 1635
+      "name": "Coward",
+      "p": 0.19,
+      "vol": 8479
      },
      {
-      "name": "Teenage Sex and Death at Camp Miasma",
-      "p": 0.145,
-      "vol": 4659
-     },
-     {
-      "name": "The Drama",
-      "p": 0.145,
-      "vol": 8614
-     },
-     {
-      "name": "Digger",
-      "p": 0.125,
-      "vol": 15427
-     },
-     {
-      "name": "Josephine",
-      "p": 0.1,
-      "vol": 335
-     },
-     {
-      "name": "The Invite",
-      "p": 0.051,
-      "vol": 685
-     },
-     {
-      "name": "The Black Ball",
-      "p": 0.046,
-      "vol": 3114
-     },
-     {
-      "name": "A Place in Hell",
-      "p": 0.039,
-      "vol": 571
-     },
-     {
-      "name": "Forgotten Island",
-      "p": 0.037,
-      "vol": 7642
+      "name": "The Dreamed Adventure",
+      "p": 0.19,
+      "vol": 7265
      }
     ],
     "winner": [
      {
-      "name": "Wild Horse Nine",
-      "p": 0.63,
-      "vol": 31051
+      "name": "The Black Ball",
+      "p": 0.815,
+      "vol": 30125
      },
      {
-      "name": "The Debut",
-      "p": 0.22,
-      "vol": 3273
+      "name": "All of a Sudden",
+      "p": 0.048,
+      "vol": 1795
      },
      {
-      "name": "Club Kid",
-      "p": 0.07,
-      "vol": 571
-     },
-     {
-      "name": "Obsession",
-      "p": 0.065,
-      "vol": 993
+      "name": "Possible Love",
+      "p": 0.044,
+      "vol": 1808
      },
      {
       "name": "Fjord",
-      "p": 0.064,
-      "vol": 2813
+      "p": 0.042,
+      "vol": 2365
      },
      {
-      "name": "Elsinore",
-      "p": 0.06,
-      "vol": 878
+      "name": "Fatherland",
+      "p": 0.038,
+      "vol": 2026
      },
      {
-      "name": "Digger",
-      "p": 0.049,
-      "vol": 3434
+      "name": "Minotaur",
+      "p": 0.024,
+      "vol": 2529
      },
      {
-      "name": "The Drama",
-      "p": 0.035,
-      "vol": 59
-     },
-     {
-      "name": "The Invite",
-      "p": 0.032,
-      "vol": 120
-     },
-     {
-      "name": "Josephine",
-      "p": 0.03,
-      "vol": 59
-     },
-     {
-      "name": "Teenage Sex and Death at Camp Miasma",
-      "p": 0.027,
-      "vol": 102
-     },
-     {
-      "name": "The Odyssey",
-      "p": 0.026,
-      "vol": 81
-     },
-     {
-      "name": "A Place in Hell",
+      "name": "Sheep in the Box",
       "p": 0.006,
-      "vol": 122
+      "vol": 1478
      },
      {
-      "name": "The Adventures of Cliff Booth",
+      "name": "Rose",
       "p": 0.006,
-      "vol": 168
+      "vol": 1451
      },
      {
-      "name": "Forgotten Island",
+      "name": "The Man I Love",
       "p": 0.005,
-      "vol": 142
+      "vol": 1301
+     },
+     {
+      "name": "The Beloved",
+      "p": 0.005,
+      "vol": 2178
      }
     ]
    },
@@ -28872,7 +29349,7 @@
      },
      {
       "name": "Once Upon a Time in Harlem",
-      "p": 0.74,
+      "p": 0.75,
       "vol": 6411
      },
      {
@@ -28887,18 +29364,18 @@
      },
      {
       "name": "One in a Million",
-      "p": 0.33,
-      "vol": 9215
+      "p": 0.32,
+      "vol": 9263
+     },
+     {
+      "name": "Nuisance Bear",
+      "p": 0.315,
+      "vol": 18306
      },
      {
       "name": "Musk",
       "p": 0.315,
       "vol": 2689
-     },
-     {
-      "name": "Nuisance Bear",
-      "p": 0.31,
-      "vol": 18306
      },
      {
       "name": "Tutu",
@@ -28907,14 +29384,14 @@
      },
      {
       "name": "Sometimes, I Imagine Them All at a Party",
-      "p": 0.045,
-      "vol": 11596
+      "p": 0.08,
+      "vol": 11874
      }
     ],
     "winner": [
      {
       "name": "You Can See Everything",
-      "p": 0.63,
+      "p": 0.655,
       "vol": 10184
      },
      {
@@ -28959,6 +29436,92 @@
      }
     ]
    },
+   "song": {
+    "nom": [
+     {
+      "name": "La Nieve - The Black Ball",
+      "p": 0.91,
+      "vol": 5762
+     },
+     {
+      "name": "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut",
+      "p": 0.862,
+      "vol": 6590
+     },
+     {
+      "name": "By Any Means - By Any Means",
+      "p": 0.73,
+      "vol": 974
+     },
+     {
+      "name": "I Knew It, I Knew You - Toy Story 5",
+      "p": 0.67,
+      "vol": 7904
+     },
+     {
+      "name": "How to Write a Song About You - Power Ballad",
+      "p": 0.66,
+      "vol": 5608
+     },
+     {
+      "name": "Let Me Sell You a Dream - Musk",
+      "p": 0.475,
+      "vol": 6514
+     },
+     {
+      "name": "When I'm Home - The Odyssey",
+      "p": 0.43,
+      "vol": 4471
+     },
+     {
+      "name": "Runway - The Devil Wears Prada 2",
+      "p": 0.35,
+      "vol": 12903
+     },
+     {
+      "name": "Your God is Sleeping - Behemoth!",
+      "p": 0.215,
+      "vol": 5930
+     },
+     {
+      "name": "Too Much to Ask - Ray Gunn",
+      "p": 0.092,
+      "vol": 5172
+     },
+     {
+      "name": "Chains of Love - Wuthering Heights",
+      "p": 0.037,
+      "vol": 20305
+     }
+    ],
+    "winner": [
+     {
+      "name": "La Nieve - The Black Ball",
+      "p": 0.565,
+      "vol": 7763
+     },
+     {
+      "name": "I Knew It, I Knew You - Toy Story 5",
+      "p": 0.22,
+      "vol": 1532
+     },
+     {
+      "name": "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut",
+      "p": 0.215,
+      "vol": 5349
+     },
+     {
+      "name": "Let Me Sell You a Dream - Musk",
+      "p": 0.03,
+      "vol": 1035
+     },
+     {
+      "name": "Runway - The Devil Wears Prada 2",
+      "p": 0.007,
+      "vol": 801
+     }
+    ]
+   },
    "animShort": {
     "nom": [
      {
@@ -28968,32 +29531,32 @@
      },
      {
       "name": "El Cuerpo de Cristo",
-      "p": 0.495,
+      "p": 0.5,
       "vol": 10747
      },
      {
       "name": "God is Shy",
-      "p": 0.475,
-      "vol": 5993
+      "p": 0.4,
+      "vol": 6444
      },
      {
       "name": "Paper Trail",
-      "p": 0.405,
+      "p": 0.385,
       "vol": 5068
      },
      {
       "name": "Because Today is Saturday",
-      "p": 0.37,
+      "p": 0.345,
       "vol": 2997
      },
      {
       "name": "With Tapes and Toasts in the Car",
-      "p": 0.305,
-      "vol": 8300
+      "p": 0.32,
+      "vol": 8400
      },
      {
       "name": "What We Leave Behind",
-      "p": 0.295,
+      "p": 0.305,
       "vol": 2713
      },
      {
@@ -29008,7 +29571,7 @@
      },
      {
       "name": "Water Girl",
-      "p": 0.26,
+      "p": 0.265,
       "vol": 8211
      },
      {
@@ -29020,18 +29583,18 @@
     "winner": [
      {
       "name": "Dog Alone",
-      "p": 0.338,
+      "p": 0.315,
       "vol": 5718
      },
      {
-      "name": "El Cuerpo de Cristo",
-      "p": 0.213,
-      "vol": 175
+      "name": "God is Shy",
+      "p": 0.162,
+      "vol": 2689
      },
      {
-      "name": "God is Shy",
-      "p": 0.165,
-      "vol": 2689
+      "name": "El Cuerpo de Cristo",
+      "p": 0.155,
+      "vol": 175
      },
      {
       "name": "Paper Trail",
@@ -29045,7 +29608,7 @@
      },
      {
       "name": "What We Leave Behind",
-      "p": 0.066,
+      "p": 0.059,
       "vol": 283
      },
      {
@@ -29055,7 +29618,7 @@
      },
      {
       "name": "Saba",
-      "p": 0.043,
+      "p": 0.042,
       "vol": 2276
      },
      {
@@ -29072,6 +29635,162 @@
       "name": "Dollhouse Elephant",
       "p": 0.006,
       "vol": 825
+     }
+    ]
+   },
+   "origScreenplay": {
+    "nom": [
+     {
+      "name": "The Debut",
+      "p": 0.922,
+      "vol": 3126
+     },
+     {
+      "name": "Wild Horse Nine",
+      "p": 0.88,
+      "vol": 2452
+     },
+     {
+      "name": "Club Kid",
+      "p": 0.55,
+      "vol": 9035
+     },
+     {
+      "name": "Fjord",
+      "p": 0.47,
+      "vol": 2885
+     },
+     {
+      "name": "Obsession",
+      "p": 0.445,
+      "vol": 16003
+     },
+     {
+      "name": "Elsinore",
+      "p": 0.345,
+      "vol": 4249
+     },
+     {
+      "name": "Behemoth!",
+      "p": 0.3,
+      "vol": 1635
+     },
+     {
+      "name": "Teenage Sex and Death at Camp Miasma",
+      "p": 0.145,
+      "vol": 4659
+     },
+     {
+      "name": "The Drama",
+      "p": 0.145,
+      "vol": 8614
+     },
+     {
+      "name": "Digger",
+      "p": 0.125,
+      "vol": 15432
+     },
+     {
+      "name": "Josephine",
+      "p": 0.1,
+      "vol": 335
+     },
+     {
+      "name": "The Black Ball",
+      "p": 0.046,
+      "vol": 3114
+     },
+     {
+      "name": "The Invite",
+      "p": 0.039,
+      "vol": 685
+     },
+     {
+      "name": "A Place in Hell",
+      "p": 0.038,
+      "vol": 571
+     },
+     {
+      "name": "Forgotten Island",
+      "p": 0.037,
+      "vol": 7642
+     }
+    ],
+    "winner": [
+     {
+      "name": "Wild Horse Nine",
+      "p": 0.625,
+      "vol": 31070
+     },
+     {
+      "name": "The Debut",
+      "p": 0.219,
+      "vol": 3273
+     },
+     {
+      "name": "Club Kid",
+      "p": 0.066,
+      "vol": 571
+     },
+     {
+      "name": "Obsession",
+      "p": 0.065,
+      "vol": 993
+     },
+     {
+      "name": "Elsinore",
+      "p": 0.06,
+      "vol": 878
+     },
+     {
+      "name": "Fjord",
+      "p": 0.056,
+      "vol": 2813
+     },
+     {
+      "name": "Digger",
+      "p": 0.053,
+      "vol": 3434
+     },
+     {
+      "name": "The Drama",
+      "p": 0.035,
+      "vol": 59
+     },
+     {
+      "name": "The Invite",
+      "p": 0.032,
+      "vol": 120
+     },
+     {
+      "name": "Josephine",
+      "p": 0.03,
+      "vol": 59
+     },
+     {
+      "name": "Teenage Sex and Death at Camp Miasma",
+      "p": 0.027,
+      "vol": 102
+     },
+     {
+      "name": "The Odyssey",
+      "p": 0.026,
+      "vol": 81
+     },
+     {
+      "name": "The Black Ball",
+      "p": 0.007,
+      "vol": 165
+     },
+     {
+      "name": "A Place in Hell",
+      "p": 0.006,
+      "vol": 122
+     },
+     {
+      "name": "The Adventures of Cliff Booth",
+      "p": 0.006,
+      "vol": 168
      }
     ]
    },
@@ -29104,7 +29823,7 @@
      },
      {
       "name": "Wild Horse Nine",
-      "p": 0.37,
+      "p": 0.4,
       "vol": 5133
      },
      {
@@ -29115,11 +29834,11 @@
      {
       "name": "Behemoth!",
       "p": 0.17,
-      "vol": 29481
+      "vol": 29506
      },
      {
       "name": "Whalefall",
-      "p": 0.086,
+      "p": 0.088,
       "vol": 3365
      },
      {
@@ -29170,105 +29889,19 @@
       "vol": 132
      },
      {
-      "name": "Whalefall",
-      "p": 0.048,
-      "vol": 233
-     },
-     {
       "name": "Disclosure Day",
       "p": 0.033,
       "vol": 609
      },
      {
       "name": "The Adventures of Cliff Booth",
-      "p": 0.026,
+      "p": 0.025,
       "vol": 241
-     }
-    ]
-   },
-   "song": {
-    "nom": [
-     {
-      "name": "La Nieve - The Black Ball",
-      "p": 0.9,
-      "vol": 5762
      },
      {
-      "name": "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut",
-      "p": 0.886,
-      "vol": 5652
-     },
-     {
-      "name": "By Any Means - By Any Means",
-      "p": 0.705,
-      "vol": 974
-     },
-     {
-      "name": "How to Write a Song About You - Power Ballad",
-      "p": 0.68,
-      "vol": 5608
-     },
-     {
-      "name": "I Knew It, I Knew You - Toy Story 5",
-      "p": 0.66,
-      "vol": 7904
-     },
-     {
-      "name": "Let Me Sell You a Dream - Musk",
-      "p": 0.505,
-      "vol": 6514
-     },
-     {
-      "name": "When I'm Home - The Odyssey",
-      "p": 0.43,
-      "vol": 4471
-     },
-     {
-      "name": "Runway - The Devil Wears Prada 2",
-      "p": 0.345,
-      "vol": 12903
-     },
-     {
-      "name": "Your God is Sleeping - Behemoth!",
-      "p": 0.145,
-      "vol": 5303
-     },
-     {
-      "name": "Too Much to Ask - Ray Gunn",
-      "p": 0.095,
-      "vol": 5172
-     },
-     {
-      "name": "Chains of Love - Wuthering Heights",
-      "p": 0.037,
-      "vol": 20305
-     }
-    ],
-    "winner": [
-     {
-      "name": "La Nieve - The Black Ball",
-      "p": 0.535,
-      "vol": 7763
-     },
-     {
-      "name": "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut",
-      "p": 0.23,
-      "vol": 5349
-     },
-     {
-      "name": "I Knew It, I Knew You - Toy Story 5",
-      "p": 0.22,
-      "vol": 1532
-     },
-     {
-      "name": "Let Me Sell You a Dream - Musk",
-      "p": 0.03,
-      "vol": 1035
-     },
-     {
-      "name": "Runway - The Devil Wears Prada 2",
-      "p": 0.007,
-      "vol": 801
+      "name": "Whalefall",
+      "p": 0.018,
+      "vol": 233
      }
     ]
    },
@@ -29281,28 +29914,33 @@
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.865,
+      "p": 0.87,
       "vol": 9082
      },
      {
       "name": "The Odyssey",
-      "p": 0.86,
+      "p": 0.85,
       "vol": 7161
      },
      {
-      "name": "The Black Ball",
-      "p": 0.515,
-      "vol": 9591
+      "name": "Godzilla Minus Zero",
+      "p": 0.5,
+      "vol": 1791
      },
      {
       "name": "Disclosure Day",
-      "p": 0.495,
+      "p": 0.485,
       "vol": 9
      },
      {
-      "name": "Godzilla Minus Zero",
+      "name": "The Black Ball",
       "p": 0.47,
-      "vol": 1791
+      "vol": 9591
+     },
+     {
+      "name": "The Mosquito Bowl",
+      "p": 0.37,
+      "vol": 1766
      },
      {
       "name": "Michael",
@@ -29316,13 +29954,8 @@
      },
      {
       "name": "Whalefall",
-      "p": 0.3,
+      "p": 0.305,
       "vol": 1220
-     },
-     {
-      "name": "The Mosquito Bowl",
-      "p": 0.295,
-      "vol": 1766
      },
      {
       "name": "Behemoth!",
@@ -29332,7 +29965,7 @@
      {
       "name": "The End of Oak Street",
       "p": 0.19,
-      "vol": 7732
+      "vol": 7756
      },
      {
       "name": "Digger",
@@ -29348,22 +29981,22 @@
     "winner": [
      {
       "name": "The Odyssey",
-      "p": 0.42,
+      "p": 0.405,
       "vol": 3820
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.38,
+      "p": 0.37,
       "vol": 1592
      },
      {
       "name": "Disclosure Day",
-      "p": 0.121,
+      "p": 0.197,
       "vol": 98
      },
      {
       "name": "Werwulf",
-      "p": 0.111,
+      "p": 0.097,
       "vol": 173
      },
      {
@@ -29373,7 +30006,7 @@
      },
      {
       "name": "Behemoth!",
-      "p": 0.044,
+      "p": 0.043,
       "vol": 105
      },
      {
@@ -29383,12 +30016,12 @@
      },
      {
       "name": "Project Hail Mary",
-      "p": 0.033,
+      "p": 0.032,
       "vol": 110
      },
      {
       "name": "The End of Oak Street",
-      "p": 0.021,
+      "p": 0.02,
       "vol": 81
      },
      {
@@ -29408,104 +30041,79 @@
      }
     ]
    },
-   "international": {
+   "animated": {
     "nom": [
      {
-      "name": "The Black Ball",
-      "p": 0.949,
-      "vol": 3763
+      "name": "Wildwood",
+      "p": 0.905,
+      "vol": 4340
      },
      {
-      "name": "Fjord",
-      "p": 0.85,
-      "vol": 6940
+      "name": "Toy Story 5",
+      "p": 0.89,
+      "vol": 3836
      },
      {
-      "name": "All of a Sudden",
-      "p": 0.845,
-      "vol": 1484
+      "name": "Ray Gunn",
+      "p": 0.68,
+      "vol": 7086
      },
      {
-      "name": "Possible Love",
-      "p": 0.665,
-      "vol": 4186
+      "name": "Iron Boy",
+      "p": 0.59,
+      "vol": 5764
      },
      {
-      "name": "Minotaur",
-      "p": 0.535,
-      "vol": 12223
+      "name": "Tangles",
+      "p": 0.56,
+      "vol": 7267
      },
      {
-      "name": "Rose",
+      "name": "Hoppers",
+      "p": 0.505,
+      "vol": 4324
+     },
+     {
+      "name": "Forgotten Island",
       "p": 0.49,
-      "vol": 4695
+      "vol": 9077
      },
      {
-      "name": "Fatherland",
-      "p": 0.47,
-      "vol": 2572
+      "name": "Shaun the Sheep: The Beast of Mossy Bottom",
+      "p": 0.25,
+      "vol": 613
      },
      {
-      "name": "The Dreamed Adventure",
-      "p": 0.2,
-      "vol": 5485
-     },
-     {
-      "name": "Coward",
-      "p": 0.15,
-      "vol": 8479
+      "name": "Minions & Monsters",
+      "p": 0.1,
+      "vol": 5570
      }
     ],
     "winner": [
      {
-      "name": "The Black Ball",
-      "p": 0.815,
-      "vol": 30125
+      "name": "Wildwood",
+      "p": 0.785,
+      "vol": 43420
      },
      {
-      "name": "All of a Sudden",
-      "p": 0.049,
-      "vol": 1795
+      "name": "Tangles",
+      "p": 0.057,
+      "vol": 3548
      },
      {
-      "name": "Possible Love",
-      "p": 0.044,
-      "vol": 1808
+      "name": "Toy Story 5",
+      "p": 0.032,
+      "vol": 17425
      },
      {
-      "name": "Fjord",
-      "p": 0.043,
-      "vol": 2365
+      "name": "Ray Gunn",
+      "p": 0.026,
+      "vol": 4067
      },
      {
-      "name": "Fatherland",
-      "p": 0.038,
-      "vol": 2026
-     },
-     {
-      "name": "Minotaur",
+      "name": "Forgotten Island",
       "p": 0.024,
-      "vol": 2529
-     },
-     {
-      "name": "Sheep in the Box",
-      "p": 0.006,
-      "vol": 1478
-     },
-     {
-      "name": "Rose",
-      "p": 0.006,
-      "vol": 1451
-     },
-     {
-      "name": "The Man I Love",
-      "p": 0.005,
-      "vol": 1301
-     },
-     {
-      "name": "The Beloved",
-      "p": 0.005,
-      "vol": 2178
+      "vol": 3705
      }
     ]
    },
@@ -29518,33 +30126,28 @@
      },
      {
       "name": "The Black Ball",
-      "p": 0.805,
-      "vol": 2695
+      "p": 0.815,
+      "vol": 2795
      },
      {
       "name": "Wild Horse Nine",
-      "p": 0.735,
+      "p": 0.72,
       "vol": 781
      },
      {
       "name": "The Debut",
-      "p": 0.41,
+      "p": 0.43,
       "vol": 6188
      },
      {
-      "name": "Project Hail Mary",
+      "name": "Obsession",
       "p": 0.31,
-      "vol": 1620
+      "vol": 2215
      },
      {
       "name": "Being Heumann",
       "p": 0.305,
       "vol": 2526
-     },
-     {
-      "name": "Obsession",
-      "p": 0.305,
-      "vol": 2215
      },
      {
       "name": "Fjord",
@@ -29557,13 +30160,18 @@
       "vol": 2988
      },
      {
+      "name": "Project Hail Mary",
+      "p": 0.26,
+      "vol": 1620
+     },
+     {
       "name": "All of a Sudden",
       "p": 0.22,
       "vol": 3637
      },
      {
       "name": "The Invite",
-      "p": 0.195,
+      "p": 0.19,
       "vol": 11254
      },
      {
@@ -29582,9 +30190,9 @@
       "vol": 1487
      },
      {
-      "name": "Clarissa",
+      "name": "Saturn Return",
       "p": 0.065,
-      "vol": 424
+      "vol": 476
      }
     ],
     "winner": [
@@ -29595,7 +30203,7 @@
      },
      {
       "name": "Wild Horse Nine",
-      "p": 0.247,
+      "p": 0.252,
       "vol": 3427
      },
      {
@@ -29620,7 +30228,7 @@
      },
      {
       "name": "Being Heumann",
-      "p": 0.009,
+      "p": 0.008,
       "vol": 709
      },
      {
@@ -29655,82 +30263,6 @@
      }
     ]
    },
-   "animated": {
-    "nom": [
-     {
-      "name": "Wildwood",
-      "p": 0.905,
-      "vol": 4340
-     },
-     {
-      "name": "Toy Story 5",
-      "p": 0.89,
-      "vol": 3836
-     },
-     {
-      "name": "Ray Gunn",
-      "p": 0.675,
-      "vol": 7086
-     },
-     {
-      "name": "Tangles",
-      "p": 0.585,
-      "vol": 7267
-     },
-     {
-      "name": "Iron Boy",
-      "p": 0.54,
-      "vol": 5764
-     },
-     {
-      "name": "Forgotten Island",
-      "p": 0.51,
-      "vol": 8918
-     },
-     {
-      "name": "Hoppers",
-      "p": 0.505,
-      "vol": 4324
-     },
-     {
-      "name": "Shaun the Sheep: The Beast of Mossy Bottom",
-      "p": 0.25,
-      "vol": 613
-     },
-     {
-      "name": "Minions & Monsters",
-      "p": 0.105,
-      "vol": 5570
-     }
-    ],
-    "winner": [
-     {
-      "name": "Wildwood",
-      "p": 0.785,
-      "vol": 43420
-     },
-     {
-      "name": "Tangles",
-      "p": 0.064,
-      "vol": 3548
-     },
-     {
-      "name": "Toy Story 5",
-      "p": 0.032,
-      "vol": 17425
-     },
-     {
-      "name": "Ray Gunn",
-      "p": 0.026,
-      "vol": 4067
-     },
-     {
-      "name": "Forgotten Island",
-      "p": 0.024,
-      "vol": 3705
-     }
-    ]
-   },
    "supActress": {
     "nom": [
      {
@@ -29745,33 +30277,28 @@
      },
      {
       "name": "Samantha Morton",
-      "p": 0.715,
+      "p": 0.72,
       "vol": 4533
      },
      {
       "name": "Tao Okamoto",
-      "p": 0.61,
+      "p": 0.6,
       "vol": 654
      },
      {
       "name": "Amanda Seyfried",
       "p": 0.6,
-      "vol": 35916
+      "vol": 35918
      },
      {
       "name": "Olivia Colman",
-      "p": 0.52,
+      "p": 0.445,
       "vol": 4944
      },
      {
       "name": "Kate O'Flynn",
-      "p": 0.485,
+      "p": 0.43,
       "vol": 3009
-     },
-     {
-      "name": "Gemma Chan",
-      "p": 0.32,
-      "vol": 3213
      },
      {
       "name": "Sandra Hüller",
@@ -29780,8 +30307,13 @@
      },
      {
       "name": "Mariana di Girolamo",
-      "p": 0.285,
+      "p": 0.3,
       "vol": 8266
+     },
+     {
+      "name": "Gemma Chan",
+      "p": 0.235,
+      "vol": 3213
      },
      {
       "name": "Merritt Wever",
@@ -29790,13 +30322,8 @@
      },
      {
       "name": "Margaret Qualley",
-      "p": 0.084,
-      "vol": 208
-     },
-     {
-      "name": "Betty Gilpin",
       "p": 0.082,
-      "vol": 2029
+      "vol": 208
      },
      {
       "name": "Parker Posey",
@@ -29804,15 +30331,20 @@
       "vol": 15667
      },
      {
+      "name": "Betty Gilpin",
+      "p": 0.079,
+      "vol": 2029
+     },
+     {
       "name": "Zendaya",
-      "p": 0.06,
+      "p": 0.07,
       "vol": 7458
      }
     ],
     "winner": [
      {
       "name": "Anne Hathaway",
-      "p": 0.515,
+      "p": 0.51,
       "vol": 36066
      },
      {
@@ -29862,147 +30394,16 @@
      }
     ]
    },
-   "actor": {
-    "nom": [
-     {
-      "name": "John Malkovich",
-      "p": 0.925,
-      "vol": 8147
-     },
-     {
-      "name": "Matt Damon",
-      "p": 0.919,
-      "vol": 12384
-     },
-     {
-      "name": "Andrew Scott",
-      "p": 0.865,
-      "vol": 14038
-     },
-     {
-      "name": "Tom Cruise",
-      "p": 0.53,
-      "vol": 36378
-     },
-     {
-      "name": "Anthony Ippolito",
-      "p": 0.5,
-      "vol": 9701
-     },
-     {
-      "name": "Ryan Gosling",
-      "p": 0.495,
-      "vol": 10410
-     },
-     {
-      "name": "John Turturro",
-      "p": 0.48,
-      "vol": 9472
-     },
-     {
-      "name": "Robert Pattinson",
-      "p": 0.27,
-      "vol": 16173
-     },
-     {
-      "name": "Timothée Chalamet",
-      "p": 0.185,
-      "vol": 21102
-     },
-     {
-      "name": "Pedro Pascal",
-      "p": 0.158,
-      "vol": 14362
-     },
-     {
-      "name": "Sebastian Stan",
-      "p": 0.155,
-      "vol": 7111
-     },
-     {
-      "name": "Jaafar Jackson",
-      "p": 0.15,
-      "vol": 15560
-     },
-     {
-      "name": "Sam Rockwell",
-      "p": 0.063,
-      "vol": 9517
-     },
-     {
-      "name": "Adam Driver",
-      "p": 0.051,
-      "vol": 2456
-     },
-     {
-      "name": "Javier Bardem",
-      "p": 0.051,
-      "vol": 654
-     }
-    ],
-    "winner": [
-     {
-      "name": "John Malkovich",
-      "p": 0.464,
-      "vol": 25036
-     },
-     {
-      "name": "Matt Damon",
-      "p": 0.17,
-      "vol": 47893
-     },
-     {
-      "name": "Andrew Scott",
-      "p": 0.155,
-      "vol": 26261
-     },
-     {
-      "name": "Tom Cruise",
-      "p": 0.11,
-      "vol": 31690
-     },
-     {
-      "name": "Robert Pattinson",
-      "p": 0.037,
-      "vol": 13099
-     },
-     {
-      "name": "Timothée Chalamet",
-      "p": 0.034,
-      "vol": 13703
-     },
-     {
-      "name": "Anthony Ippolito",
-      "p": 0.017,
-      "vol": 6681
-     },
-     {
-      "name": "John Turturro",
-      "p": 0.015,
-      "vol": 10080
-     },
-     {
-      "name": "Ryan Gosling",
-      "p": 0.013,
-      "vol": 10858
-     },
-     {
-      "name": "Jeremy Strong",
-      "p": 0.005,
-      "vol": 10644
-     }
-    ]
-   },
    "actress": {
     "nom": [
      {
       "name": "Julianne Moore",
-      "p": 0.97,
+      "p": 0.969,
       "vol": 2577
      },
      {
       "name": "Inde Navarrette",
-      "p": 0.805,
+      "p": 0.81,
       "vol": 7265
      },
      {
@@ -30012,7 +30413,7 @@
      },
      {
       "name": "Sandra Hüller",
-      "p": 0.655,
+      "p": 0.635,
       "vol": 5422
      },
      {
@@ -30027,7 +30428,7 @@
      },
      {
       "name": "Lily Gladstone",
-      "p": 0.406,
+      "p": 0.365,
       "vol": 719
      },
      {
@@ -30037,7 +30438,7 @@
      },
      {
       "name": "Zendaya",
-      "p": 0.21,
+      "p": 0.234,
       "vol": 3091
      },
      {
@@ -30047,7 +30448,7 @@
      },
      {
       "name": "Emily Blunt",
-      "p": 0.105,
+      "p": 0.104,
       "vol": 3077
      },
      {
@@ -30056,19 +30457,19 @@
       "vol": 690
      },
      {
+      "name": "Dakota Johnson",
+      "p": 0.071,
+      "vol": 398
+     },
+     {
       "name": "Michelle Williams",
-      "p": 0.073,
+      "p": 0.07,
       "vol": 898
      },
      {
       "name": "Daisy Edgar-Jones",
       "p": 0.069,
       "vol": 1852
-     },
-     {
-      "name": "Anne Hathaway",
-      "p": 0.069,
-      "vol": 3206
      }
     ],
     "winner": [
@@ -30114,104 +30515,134 @@
      }
     ]
    },
-   "docShort": {
-    "winner": [
-     {
-      "name": "Water Cooler",
-      "p": 0.258,
-      "vol": 291
-     },
-     {
-      "name": "The Baddest Speechwriter of All",
-      "p": 0.234,
-      "vol": 537
-     },
-     {
-      "name": "The Tuners",
-      "p": 0.195,
-      "vol": 6274
-     },
-     {
-      "name": "A Derailment",
-      "p": 0.155,
-      "vol": 7362
-     },
-     {
-      "name": "We're Fine",
-      "p": 0.077,
-      "vol": 2932
-     },
-     {
-      "name": "A Wolf in the Suburbs",
-      "p": 0.044,
-      "vol": 114
-     },
-     {
-      "name": "Oh Whale",
-      "p": 0.03,
-      "vol": 80
-     },
-     {
-      "name": "A Short Documentary About a Giant Pencil",
-      "p": 0.02,
-      "vol": 181
-     },
-     {
-      "name": "One Last Order",
-      "p": 0.015,
-      "vol": 110
-     }
-    ],
+   "actor": {
     "nom": [
      {
-      "name": "A Derailment",
-      "p": 0.55,
-      "vol": 4301
+      "name": "John Malkovich",
+      "p": 0.92,
+      "vol": 8152
      },
      {
-      "name": "One Last Order",
-      "p": 0.525,
-      "vol": 4549
+      "name": "Matt Damon",
+      "p": 0.919,
+      "vol": 12384
      },
      {
-      "name": "The Baddest Speechwriter of All",
-      "p": 0.515,
-      "vol": 1084
+      "name": "Andrew Scott",
+      "p": 0.865,
+      "vol": 14038
      },
      {
-      "name": "Water Cooler",
-      "p": 0.455,
-      "vol": 3859
+      "name": "Tom Cruise",
+      "p": 0.53,
+      "vol": 36378
      },
      {
-      "name": "A Short Documentary About a Giant Pencil",
-      "p": 0.45,
-      "vol": 4224
+      "name": "Anthony Ippolito",
+      "p": 0.5,
+      "vol": 9701
      },
      {
-      "name": "Oh Whale",
-      "p": 0.43,
-      "vol": 8963
+      "name": "Ryan Gosling",
+      "p": 0.495,
+      "vol": 10410
      },
      {
-      "name": "A Wolf in the Suburbs",
-      "p": 0.38,
-      "vol": 1829
+      "name": "John Turturro",
+      "p": 0.48,
+      "vol": 9472
      },
      {
-      "name": "The Tuners",
-      "p": 0.355,
-      "vol": 5923
+      "name": "Robert Pattinson",
+      "p": 0.27,
+      "vol": 16173
      },
      {
-      "name": "Listen",
-      "p": 0.275,
-      "vol": 6749
+      "name": "Timothée Chalamet",
+      "p": 0.18,
+      "vol": 21102
      },
      {
-      "name": "We're Fine",
-      "p": 0.245,
-      "vol": 9380
+      "name": "Pedro Pascal",
+      "p": 0.158,
+      "vol": 14362
+     },
+     {
+      "name": "Sebastian Stan",
+      "p": 0.155,
+      "vol": 7111
+     },
+     {
+      "name": "Jaafar Jackson",
+      "p": 0.15,
+      "vol": 15560
+     },
+     {
+      "name": "Sam Rockwell",
+      "p": 0.063,
+      "vol": 9517
+     },
+     {
+      "name": "Josh O'Connor",
+      "p": 0.048,
+      "vol": 225
+     },
+     {
+      "name": "Adam Driver",
+      "p": 0.046,
+      "vol": 2456
+     }
+    ],
+    "winner": [
+     {
+      "name": "John Malkovich",
+      "p": 0.463,
+      "vol": 25082
+     },
+     {
+      "name": "Matt Damon",
+      "p": 0.175,
+      "vol": 47893
+     },
+     {
+      "name": "Andrew Scott",
+      "p": 0.16,
+      "vol": 26361
+     },
+     {
+      "name": "Tom Cruise",
+      "p": 0.11,
+      "vol": 31690
+     },
+     {
+      "name": "Robert Pattinson",
+      "p": 0.036,
+      "vol": 13099
+     },
+     {
+      "name": "Timothée Chalamet",
+      "p": 0.034,
+      "vol": 13703
+     },
+     {
+      "name": "Anthony Ippolito",
+      "p": 0.017,
+      "vol": 6681
+     },
+     {
+      "name": "John Turturro",
+      "p": 0.015,
+      "vol": 10080
+     },
+     {
+      "name": "Ryan Gosling",
+      "p": 0.013,
+      "vol": 10858
+     },
+     {
+      "name": "Jeremy Strong",
+      "p": 0.005,
+      "vol": 10644
      }
     ]
    },
@@ -30230,17 +30661,17 @@
      {
       "name": "Wild Horse Nine",
       "p": 0.88,
-      "vol": 10576
+      "vol": 10587
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.83,
+      "p": 0.82,
       "vol": 20690
      },
      {
       "name": "You Can See Everything",
-      "p": 0.815,
-      "vol": 43983
+      "p": 0.82,
+      "vol": 44006
      },
      {
       "name": "Project Hail Mary",
@@ -30259,8 +30690,8 @@
      },
      {
       "name": "I Play Rocky",
-      "p": 0.53,
-      "vol": 10586
+      "p": 0.54,
+      "vol": 10748
      },
      {
       "name": "All of a Sudden",
@@ -30301,13 +30732,13 @@
      },
      {
       "name": "You Can See Everything",
-      "p": 0.194,
-      "vol": 50032
+      "p": 0.191,
+      "vol": 50354
      },
      {
       "name": "La Bola Negra",
       "p": 0.125,
-      "vol": 39117
+      "vol": 39122
      },
      {
       "name": "Dune: Part Three",
@@ -30323,228 +30754,112 @@
       "name": "Wild Horse Nine",
       "p": 0.005,
       "vol": 37079
-     }
-    ]
-   },
-   "liveShort": {
-    "winner": [
-     {
-      "name": "Agapito",
-      "p": 0.205,
-      "vol": 4725
      },
      {
-      "name": "Spilled Milk",
-      "p": 0.095,
-      "vol": 5021
-     },
-     {
-      "name": "Mary is Missing",
-      "p": 0.09,
-      "vol": 351
-     },
-     {
-      "name": "32B",
-      "p": 0.053,
-      "vol": 330
-     },
-     {
-      "name": "Meeting Your Maker",
-      "p": 0.053,
-      "vol": 333
-     },
-     {
-      "name": "The Man That I Wave At",
-      "p": 0.052,
-      "vol": 2272
-     },
-     {
-      "name": "Nightfaces",
-      "p": 0.025,
-      "vol": 5664
-     },
-     {
-      "name": "Pale Sun",
-      "p": 0.021,
-      "vol": 380
-     },
-     {
-      "name": "The Birthday Gift",
-      "p": 0.017,
-      "vol": 734
-     },
-     {
-      "name": "Magan's Fare",
-      "p": 0.011,
-      "vol": 585
-     }
-    ],
-    "nom": [
-     {
-      "name": "Nightfaces",
-      "p": 0.51,
-      "vol": 4504
-     },
-     {
-      "name": "Pale Sun",
-      "p": 0.495,
-      "vol": 20
-     },
-     {
-      "name": "Meeting Your Maker",
-      "p": 0.375,
-      "vol": 5833
-     },
-     {
-      "name": "Magan's Fare",
-      "p": 0.355,
-      "vol": 7664
-     },
-     {
-      "name": "Mary is Missing",
-      "p": 0.335,
-      "vol": 3550
-     },
-     {
-      "name": "Agapito",
-      "p": 0.31,
-      "vol": 7269
-     },
-     {
-      "name": "The Birthday Gift",
-      "p": 0.13,
-      "vol": 4706
-     },
-     {
-      "name": "Spilled Milk",
-      "p": 0.085,
-      "vol": 5461
-     },
-     {
-      "name": "32B",
-      "p": 0.061,
-      "vol": 7415
-     },
-     {
-      "name": "The Man That I Wave At",
-      "p": 0.055,
-      "vol": 11711
-     }
-    ]
-   },
-   "makeup": {
-    "winner": [
-     {
-      "name": "Werwulf",
-      "p": 0.528,
-      "vol": 11826
-     },
-     {
-      "name": "Digger",
-      "p": 0.14,
-      "vol": 6853
-     },
-     {
-      "name": "The Odyssey",
-      "p": 0.13,
-      "vol": 5169
-     },
-     {
-      "name": "Wicker",
-      "p": 0.095,
-      "vol": 1380
-     },
-     {
-      "name": "Madden",
-      "p": 0.038,
-      "vol": 568
-     },
-     {
-      "name": "Clayface",
-      "p": 0.028,
-      "vol": 564
-     },
-     {
-      "name": "Dune: Part Three",
-      "p": 0.015,
-      "vol": 6686
-     },
-     {
-      "name": "UNABOMBER",
-      "p": 0.006,
-      "vol": 395
-     },
-     {
-      "name": "I Love Boosters",
+      "name": "Artificial",
       "p": 0.005,
-      "vol": 733
+      "vol": 17335
+     }
+    ]
+   },
+   "docShort": {
+    "winner": [
+     {
+      "name": "Water Cooler",
+      "p": 0.269,
+      "vol": 296
+     },
+     {
+      "name": "The Baddest Speechwriter of All",
+      "p": 0.234,
+      "vol": 537
+     },
+     {
+      "name": "Oh Whale",
+      "p": 0.206,
+      "vol": 80
+     },
+     {
+      "name": "The Tuners",
+      "p": 0.195,
+      "vol": 6274
+     },
+     {
+      "name": "A Derailment",
+      "p": 0.165,
+      "vol": 7432
+     },
+     {
+      "name": "We're Fine",
+      "p": 0.076,
+      "vol": 2932
+     },
+     {
+      "name": "A Wolf in the Suburbs",
+      "p": 0.041,
+      "vol": 114
+     },
+     {
+      "name": "A Short Documentary About a Giant Pencil",
+      "p": 0.02,
+      "vol": 181
+     },
+     {
+      "name": "One Last Order",
+      "p": 0.015,
+      "vol": 110
      }
     ],
     "nom": [
      {
-      "name": "Werwulf",
-      "p": 0.86,
-      "vol": 3442
+      "name": "A Derailment",
+      "p": 0.555,
+      "vol": 4301
      },
      {
-      "name": "The Odyssey",
-      "p": 0.73,
-      "vol": 3414
+      "name": "One Last Order",
+      "p": 0.53,
+      "vol": 4549
      },
      {
-      "name": "Digger",
-      "p": 0.64,
-      "vol": 2968
+      "name": "The Baddest Speechwriter of All",
+      "p": 0.515,
+      "vol": 1084
      },
      {
-      "name": "Dune: Part Three",
-      "p": 0.55,
-      "vol": 2536
+      "name": "Water Cooler",
+      "p": 0.455,
+      "vol": 3859
      },
      {
-      "name": "Wicker",
-      "p": 0.52,
-      "vol": 3475
+      "name": "A Short Documentary About a Giant Pencil",
+      "p": 0.43,
+      "vol": 4224
      },
      {
-      "name": "Rose",
-      "p": 0.46,
-      "vol": 2018
+      "name": "Oh Whale",
+      "p": 0.375,
+      "vol": 8963
      },
      {
-      "name": "Clayface",
-      "p": 0.395,
-      "vol": 130
+      "name": "A Wolf in the Suburbs",
+      "p": 0.34,
+      "vol": 1829
      },
      {
-      "name": "Michael",
-      "p": 0.365,
-      "vol": 2978
+      "name": "The Tuners",
+      "p": 0.34,
+      "vol": 5923
      },
      {
-      "name": "Madden",
-      "p": 0.345,
-      "vol": 12225
+      "name": "Listen",
+      "p": 0.25,
+      "vol": 6749
      },
      {
-      "name": "I Love Boosters",
-      "p": 0.295,
-      "vol": 2809
-     },
-     {
-      "name": "The Social Reckoning",
+      "name": "We're Fine",
       "p": 0.245,
-      "vol": 1930
-     },
-     {
-      "name": "Cry to Heaven",
-      "p": 0.053,
-      "vol": 3193
-     },
-     {
-      "name": "UNABOMBER",
-      "p": 0.045,
-      "vol": 261
+      "vol": 9380
      }
     ]
    },
@@ -30552,7 +30867,7 @@
     "nom": [
      {
       "name": "Christopher Nolan",
-      "p": 0.966,
+      "p": 0.967,
       "vol": 2111
      },
      {
@@ -30562,12 +30877,12 @@
      },
      {
       "name": "Javier Ambrossi",
-      "p": 0.705,
-      "vol": 1391
+      "p": 0.81,
+      "vol": 1899
      },
      {
       "name": "Martin McDonagh",
-      "p": 0.645,
+      "p": 0.655,
       "vol": 2624
      },
      {
@@ -30577,7 +30892,7 @@
      },
      {
       "name": "Nathan Fielder",
-      "p": 0.582,
+      "p": 0.583,
       "vol": 5306
      },
      {
@@ -30592,7 +30907,7 @@
      },
      {
       "name": "Jesse Eisenberg",
-      "p": 0.245,
+      "p": 0.23,
       "vol": 618
      },
      {
@@ -30602,22 +30917,22 @@
      },
      {
       "name": "Alejandro González Iñárritu",
-      "p": 0.17,
+      "p": 0.16,
       "vol": 2509
      },
      {
       "name": "Cristian Mungiu",
-      "p": 0.15,
+      "p": 0.155,
       "vol": 3676
      },
      {
       "name": "Peter Farrelly",
-      "p": 0.138,
+      "p": 0.142,
       "vol": 470
      },
      {
       "name": "Christopher Miller",
-      "p": 0.135,
+      "p": 0.14,
       "vol": 2092
      },
      {
@@ -30634,12 +30949,12 @@
      },
      {
       "name": "Denis Villeneuve",
-      "p": 0.155,
+      "p": 0.15,
       "vol": 13126
      },
      {
       "name": "Javier Calvo or Javier Ambrossi",
-      "p": 0.14,
+      "p": 0.145,
       "vol": 1789
      },
      {
@@ -30649,7 +30964,7 @@
      },
      {
       "name": "Olivia Wilde",
-      "p": 0.051,
+      "p": 0.05,
       "vol": 1200
      },
      {
@@ -30684,12 +30999,234 @@
      }
     ]
    },
+   "liveShort": {
+    "winner": [
+     {
+      "name": "Agapito",
+      "p": 0.205,
+      "vol": 4725
+     },
+     {
+      "name": "Spilled Milk",
+      "p": 0.095,
+      "vol": 5021
+     },
+     {
+      "name": "Mary is Missing",
+      "p": 0.075,
+      "vol": 351
+     },
+     {
+      "name": "32B",
+      "p": 0.052,
+      "vol": 330
+     },
+     {
+      "name": "The Man That I Wave At",
+      "p": 0.052,
+      "vol": 2272
+     },
+     {
+      "name": "Meeting Your Maker",
+      "p": 0.051,
+      "vol": 333
+     },
+     {
+      "name": "Nightfaces",
+      "p": 0.025,
+      "vol": 5664
+     },
+     {
+      "name": "Pale Sun",
+      "p": 0.022,
+      "vol": 380
+     },
+     {
+      "name": "The Birthday Gift",
+      "p": 0.019,
+      "vol": 734
+     },
+     {
+      "name": "Magan's Fare",
+      "p": 0.011,
+      "vol": 585
+     }
+    ],
+    "nom": [
+     {
+      "name": "Pale Sun",
+      "p": 0.52,
+      "vol": 20
+     },
+     {
+      "name": "Nightfaces",
+      "p": 0.51,
+      "vol": 4504
+     },
+     {
+      "name": "Meeting Your Maker",
+      "p": 0.405,
+      "vol": 5833
+     },
+     {
+      "name": "Magan's Fare",
+      "p": 0.355,
+      "vol": 7664
+     },
+     {
+      "name": "Mary is Missing",
+      "p": 0.335,
+      "vol": 3550
+     },
+     {
+      "name": "Agapito",
+      "p": 0.31,
+      "vol": 7269
+     },
+     {
+      "name": "The Birthday Gift",
+      "p": 0.13,
+      "vol": 4706
+     },
+     {
+      "name": "Spilled Milk",
+      "p": 0.085,
+      "vol": 5461
+     },
+     {
+      "name": "32B",
+      "p": 0.06,
+      "vol": 7415
+     },
+     {
+      "name": "The Man That I Wave At",
+      "p": 0.055,
+      "vol": 11711
+     }
+    ]
+   },
+   "makeup": {
+    "winner": [
+     {
+      "name": "Werwulf",
+      "p": 0.539,
+      "vol": 11846
+     },
+     {
+      "name": "The Odyssey",
+      "p": 0.15,
+      "vol": 5189
+     },
+     {
+      "name": "Digger",
+      "p": 0.14,
+      "vol": 6853
+     },
+     {
+      "name": "Wicker",
+      "p": 0.096,
+      "vol": 1380
+     },
+     {
+      "name": "Clayface",
+      "p": 0.085,
+      "vol": 564
+     },
+     {
+      "name": "Madden",
+      "p": 0.02,
+      "vol": 568
+     },
+     {
+      "name": "Dune: Part Three",
+      "p": 0.015,
+      "vol": 6686
+     },
+     {
+      "name": "UNABOMBER",
+      "p": 0.006,
+      "vol": 395
+     },
+     {
+      "name": "I Love Boosters",
+      "p": 0.005,
+      "vol": 733
+     }
+    ],
+    "nom": [
+     {
+      "name": "Werwulf",
+      "p": 0.86,
+      "vol": 3442
+     },
+     {
+      "name": "The Odyssey",
+      "p": 0.73,
+      "vol": 3414
+     },
+     {
+      "name": "Digger",
+      "p": 0.635,
+      "vol": 2968
+     },
+     {
+      "name": "Dune: Part Three",
+      "p": 0.55,
+      "vol": 2536
+     },
+     {
+      "name": "Wicker",
+      "p": 0.52,
+      "vol": 3475
+     },
+     {
+      "name": "Clayface",
+      "p": 0.38,
+      "vol": 130
+     },
+     {
+      "name": "Rose",
+      "p": 0.375,
+      "vol": 2018
+     },
+     {
+      "name": "Michael",
+      "p": 0.365,
+      "vol": 2978
+     },
+     {
+      "name": "Madden",
+      "p": 0.32,
+      "vol": 12225
+     },
+     {
+      "name": "I Love Boosters",
+      "p": 0.27,
+      "vol": 2809
+     },
+     {
+      "name": "The Social Reckoning",
+      "p": 0.245,
+      "vol": 1930
+     },
+     {
+      "name": "Cry to Heaven",
+      "p": 0.053,
+      "vol": 3193
+     },
+     {
+      "name": "UNABOMBER",
+      "p": 0.048,
+      "vol": 261
+     }
+    ]
+   },
    "production": {
     "nom": [
      {
       "name": "The Odyssey",
-      "p": 0.943,
-      "vol": 9632
+      "p": 0.899,
+      "vol": 9663
      },
      {
       "name": "The Black Ball",
@@ -30698,7 +31235,7 @@
      },
      {
       "name": "Project Hail Mary",
-      "p": 0.805,
+      "p": 0.81,
       "vol": 4393
      },
      {
@@ -30718,12 +31255,12 @@
      },
      {
       "name": "Wuthering Heights",
-      "p": 0.525,
-      "vol": 2994
+      "p": 0.46,
+      "vol": 3026
      },
      {
       "name": "The Further Mis-Adventures of Cliff Booth",
-      "p": 0.34,
+      "p": 0.335,
       "vol": 12984
      },
      {
@@ -30745,22 +31282,22 @@
     "winner": [
      {
       "name": "The Odyssey",
-      "p": 0.67,
+      "p": 0.65,
       "vol": 7061
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.28,
+      "p": 0.285,
       "vol": 2720
      },
      {
       "name": "Wildwood",
-      "p": 0.046,
+      "p": 0.048,
       "vol": 948
      },
      {
       "name": "The Black Ball",
-      "p": 0.016,
+      "p": 0.015,
       "vol": 692
      },
      {
@@ -30799,7 +31336,7 @@
      },
      {
       "name": "Edward Norton",
-      "p": 0.52,
+      "p": 0.51,
       "vol": 6378
      },
      {
@@ -30824,8 +31361,13 @@
      },
      {
       "name": "John Goodman",
-      "p": 0.129,
+      "p": 0.128,
       "vol": 11417
+     },
+     {
+      "name": "Antonio Banderas",
+      "p": 0.108,
+      "vol": 52
      },
      {
       "name": "Skyler Gisondo",
@@ -30833,19 +31375,14 @@
       "vol": 824
      },
      {
-      "name": "Jeremy Strong",
-      "p": 0.068,
-      "vol": 2109
-     },
-     {
       "name": "Channing Tatum",
-      "p": 0.063,
+      "p": 0.07,
       "vol": 193
      },
      {
-      "name": "Robert De Niro",
-      "p": 0.056,
-      "vol": 842
+      "name": "Jeremy Strong",
+      "p": 0.068,
+      "vol": 2109
      }
     ],
     "winner": [
@@ -30861,8 +31398,8 @@
      },
      {
       "name": "Guitarricadelafuente",
-      "p": 0.201,
-      "vol": 3028
+      "p": 0.203,
+      "vol": 3047
      },
      {
       "name": "Robert Pattinson",
@@ -30876,12 +31413,12 @@
      },
      {
       "name": "Sam Rockwell",
-      "p": 0.049,
-      "vol": 6945
+      "p": 0.047,
+      "vol": 7018
      },
      {
       "name": "John Leguizamo",
-      "p": 0.046,
+      "p": 0.047,
       "vol": 833
      },
      {
@@ -30930,7 +31467,7 @@
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.84,
+      "p": 0.825,
       "vol": 2830
      },
      {
@@ -30940,7 +31477,7 @@
      },
      {
       "name": "Fatherland",
-      "p": 0.51,
+      "p": 0.54,
       "vol": 1425
      },
      {
@@ -30954,14 +31491,14 @@
       "vol": 7555
      },
      {
+      "name": "Obsession",
+      "p": 0.235,
+      "vol": 1452
+     },
+     {
       "name": "The Further Mis-Adventures of Cliff Booth",
       "p": 0.22,
       "vol": 363
-     },
-     {
-      "name": "Obsession",
-      "p": 0.21,
-      "vol": 1452
      },
      {
       "name": "Josephine",
@@ -30977,22 +31514,22 @@
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.36,
+      "p": 0.35,
       "vol": 7538
      },
      {
       "name": "Project Hail Mary",
-      "p": 0.154,
+      "p": 0.129,
       "vol": 2813
      },
      {
       "name": "Werwulf",
-      "p": 0.124,
+      "p": 0.121,
       "vol": 1056
      },
      {
       "name": "Digger",
-      "p": 0.101,
+      "p": 0.099,
       "vol": 1238
      }
     ]
@@ -31011,12 +31548,12 @@
      },
      {
       "name": "Godzilla Minus Zero",
-      "p": 0.711,
+      "p": 0.734,
       "vol": 9376
      },
      {
       "name": "The Odyssey",
-      "p": 0.68,
+      "p": 0.675,
       "vol": 2640
      },
      {
@@ -31043,23 +31580,18 @@
      },
      {
       "name": "Godzilla Minus Zero",
-      "p": 0.056,
+      "p": 0.054,
       "vol": 742
      },
      {
       "name": "The Odyssey",
-      "p": 0.05,
+      "p": 0.04,
       "vol": 962
      },
      {
       "name": "Spider-Man: Brand New Day",
-      "p": 0.03,
+      "p": 0.028,
       "vol": 549
-     },
-     {
-      "name": "Avengers: Doomsday",
-      "p": 0.011,
-      "vol": 591
      }
     ]
    },
@@ -31067,12 +31599,12 @@
     "nom": [
      {
       "name": "The Odyssey",
-      "p": 0.903,
+      "p": 0.9,
       "vol": 1421
      },
      {
       "name": "The Invite",
-      "p": 0.884,
+      "p": 0.886,
       "vol": 1803
      },
      {
@@ -31087,7 +31619,7 @@
      },
      {
       "name": "All of a Sudden",
-      "p": 0.55,
+      "p": 0.555,
       "vol": 2142
      },
      {
@@ -31097,7 +31629,7 @@
      },
      {
       "name": "Ink",
-      "p": 0.32,
+      "p": 0.39,
       "vol": 3310
      },
      {
@@ -31112,17 +31644,17 @@
      },
      {
       "name": "The Social Reckoning",
-      "p": 0.111,
+      "p": 0.102,
       "vol": 911
      },
      {
       "name": "Toy Story 5",
-      "p": 0.086,
+      "p": 0.09,
       "vol": 7552
      },
      {
       "name": "Wildwood",
-      "p": 0.054,
+      "p": 0.052,
       "vol": 1876
      },
      {
@@ -31145,7 +31677,7 @@
      {
       "name": "The Black Ball",
       "p": 0.44,
-      "vol": 26229
+      "vol": 26245
      },
      {
       "name": "The Invite",
@@ -31159,7 +31691,7 @@
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.047,
+      "p": 0.076,
       "vol": 931
      },
      {
@@ -31208,12 +31740,12 @@
      },
      {
       "name": "The Black Ball",
-      "p": 0.784,
+      "p": 0.793,
       "vol": 3268
      },
      {
       "name": "Dune: Part Three",
-      "p": 0.635,
+      "p": 0.655,
       "vol": 2402
      },
      {
@@ -31233,7 +31765,7 @@
      },
      {
       "name": "Wuthering Heights",
-      "p": 0.44,
+      "p": 0.465,
       "vol": 4606
      },
      {
@@ -31243,12 +31775,12 @@
      },
      {
       "name": "Digger",
-      "p": 0.355,
+      "p": 0.35,
       "vol": 7287
      },
      {
       "name": "Michael",
-      "p": 0.28,
+      "p": 0.295,
       "vol": 4396
      },
      {
@@ -31270,12 +31802,12 @@
      },
      {
       "name": "The Black Ball",
-      "p": 0.171,
+      "p": 0.17,
       "vol": 822
      },
      {
       "name": "Wuthering Heights",
-      "p": 0.099,
+      "p": 0.097,
       "vol": 244
      },
      {
@@ -31316,14 +31848,14 @@
     "winner": [
      {
       "name": "The Odyssey",
-      "p": 0.59
-     },
-     {
-      "name": "You Can See Everything",
-      "p": 0.16
+      "p": 0.6
      },
      {
       "name": "The Black Ball",
+      "p": 0.15
+     },
+     {
+      "name": "You Can See Everything",
       "p": 0.14
      },
      {
@@ -31389,12 +31921,12 @@
       "p": 0.89
      },
      {
-      "name": "Dune: Part Three",
+      "name": "You Can See Everything",
       "p": 0.82
      },
      {
-      "name": "You Can See Everything",
-      "p": 0.81
+      "name": "Dune: Part Three",
+      "p": 0.82
      },
      {
       "name": "The Debut",
@@ -31410,11 +31942,11 @@
      },
      {
       "name": "Artificial",
-      "p": 0.53
+      "p": 0.55
      },
      {
       "name": "I Play Rocky",
-      "p": 0.48
+      "p": 0.53
      },
      {
       "name": "All of a Sudden",
@@ -31422,7 +31954,7 @@
      },
      {
       "name": "Obsession",
-      "p": 0.35
+      "p": 0.34
      },
      {
       "name": "Elsinore",
@@ -31433,8 +31965,8 @@
       "p": 0.27
      },
      {
-      "name": "Digger",
-      "p": 0.27
+      "name": "Wildwood",
+      "p": 0.26
      }
     ]
    },
@@ -31454,7 +31986,7 @@
      },
      {
       "name": "Javier Calvo and Javier Ambrossi",
-      "p": 0.1
+      "p": 0.07
      },
      {
       "name": "Andrew Haigh",
@@ -31510,7 +32042,7 @@
      },
      {
       "name": "Matt Damon",
-      "p": 0.16
+      "p": 0.15
      },
      {
       "name": "Andrew Scott",
@@ -31522,7 +32054,7 @@
      },
      {
       "name": "Tom Cruise",
-      "p": 0.06
+      "p": 0.07
      },
      {
       "name": "Timothée Chalamet",
@@ -31646,7 +32178,7 @@
      },
      {
       "name": "John Leguizamo",
-      "p": 0.12
+      "p": 0.11
      },
      {
       "name": "John Goodman",
@@ -31698,7 +32230,7 @@
     "winner": [
      {
       "name": "Anne Hathaway",
-      "p": 0.47
+      "p": 0.5
      },
      {
       "name": "Amanda Seyfried",
@@ -31881,11 +32413,12 @@
       "d": "2026-11-02",
       "v": {
        "The Odyssey": 0.56,
-       "You Can See Everything": 0.194,
+       "You Can See Everything": 0.191,
        "La Bola Negra": 0.125,
        "Dune: Part Three": 0.095,
        "Digger": 0.032,
-       "Wild Horse Nine": 0.005
+       "Wild Horse Nine": 0.005,
+       "Artificial": 0.005
       }
      }
     ],
@@ -32045,13 +32578,13 @@
       "v": {
        "Agapito": 0.205,
        "Spilled Milk": 0.095,
-       "Mary is Missing": 0.09,
-       "32B": 0.053,
-       "Meeting Your Maker": 0.053,
+       "Mary is Missing": 0.075,
+       "32B": 0.052,
        "The Man That I Wave At": 0.052,
+       "Meeting Your Maker": 0.051,
        "Nightfaces": 0.025,
-       "Pale Sun": 0.021,
-       "The Birthday Gift": 0.017,
+       "Pale Sun": 0.022,
+       "The Birthday Gift": 0.019,
        "Magan's Fare": 0.011
       }
      }
@@ -32200,7 +32733,7 @@
      {
       "d": "2026-11-02",
       "v": {
-       "You Can See Everything": 0.63,
+       "You Can See Everything": 0.655,
        "NAZA": 0.235,
        "Nuisance Bear": 0.037,
        "American Doctor": 0.036,
@@ -32359,9 +32892,9 @@
       "d": "2026-11-02",
       "v": {
        "The Odyssey": 0.3,
-       "The Black Ball": 0.28,
+       "The Black Ball": 0.27,
        "You Can See Everything": 0.247,
-       "Dune: Part Three": 0.084,
+       "Dune: Part Three": 0.083,
        "Wild Horse Nine": 0.029,
        "The Invite": 0.009,
        "Project Hail Mary": 0.006,
@@ -32524,12 +33057,12 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Werwulf": 0.528,
+       "Werwulf": 0.539,
+       "The Odyssey": 0.15,
        "Digger": 0.14,
-       "The Odyssey": 0.13,
-       "Wicker": 0.095,
-       "Madden": 0.038,
-       "Clayface": 0.028,
+       "Wicker": 0.096,
+       "Clayface": 0.085,
+       "Madden": 0.02,
        "Dune: Part Three": 0.015,
        "UNABOMBER": 0.006,
        "I Love Boosters": 0.005
@@ -32666,9 +33199,9 @@
      {
       "d": "2026-11-02",
       "v": {
-       "La Nieve - The Black Ball": 0.535,
-       "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut": 0.23,
+       "La Nieve - The Black Ball": 0.565,
        "I Knew It, I Knew You - Toy Story 5": 0.22,
+       "This City May Have Chewed Me Up (But It Hasn't Spit Me Out) - The Debut": 0.215,
        "Let Me Sell You a Dream - Musk": 0.03,
        "Runway - The Devil Wears Prada 2": 0.007
       }
@@ -32821,9 +33354,9 @@
        "The Black Ball": 0.101,
        "Project Hail Mary": 0.059,
        "Wild Horse Nine": 0.054,
-       "Whalefall": 0.048,
        "Disclosure Day": 0.033,
-       "The Adventures of Cliff Booth": 0.026
+       "The Adventures of Cliff Booth": 0.025,
+       "Whalefall": 0.018
       }
      }
     ],
@@ -32954,10 +33487,10 @@
      {
       "d": "2026-11-02",
       "v": {
-       "The Odyssey": 0.67,
-       "Dune: Part Three": 0.28,
-       "Wildwood": 0.046,
-       "The Black Ball": 0.016,
+       "The Odyssey": 0.65,
+       "Dune: Part Three": 0.285,
+       "Wildwood": 0.048,
+       "The Black Ball": 0.015,
        "Digger": 0.013
       }
      }
@@ -33116,13 +33649,13 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Wild Horse Nine": 0.63,
-       "The Debut": 0.22,
-       "Club Kid": 0.07,
+       "Wild Horse Nine": 0.625,
+       "The Debut": 0.219,
+       "Club Kid": 0.066,
        "Obsession": 0.065,
-       "Fjord": 0.064,
        "Elsinore": 0.06,
-       "Digger": 0.049,
+       "Fjord": 0.056,
+       "Digger": 0.053,
        "The Drama": 0.035,
        "The Invite": 0.032,
        "Josephine": 0.03
@@ -33283,11 +33816,11 @@
      {
       "d": "2026-11-02",
       "v": {
-       "John Malkovich": 0.464,
-       "Matt Damon": 0.17,
-       "Andrew Scott": 0.155,
+       "John Malkovich": 0.463,
+       "Matt Damon": 0.175,
+       "Andrew Scott": 0.16,
        "Tom Cruise": 0.11,
-       "Robert Pattinson": 0.037,
+       "Robert Pattinson": 0.036,
        "Timothée Chalamet": 0.034,
        "Anthony Ippolito": 0.017,
        "John Turturro": 0.015,
@@ -33452,11 +33985,11 @@
       "v": {
        "Paul Giamatti": 0.34,
        "Andrew Garfield": 0.22,
-       "Guitarricadelafuente": 0.201,
+       "Guitarricadelafuente": 0.203,
        "Robert Pattinson": 0.082,
        "John Goodman": 0.049,
-       "Sam Rockwell": 0.049,
-       "John Leguizamo": 0.046,
+       "Sam Rockwell": 0.047,
+       "John Leguizamo": 0.047,
        "Edward Norton": 0.039,
        "Tom Holland": 0.022,
        "Steve Buscemi": 0.01
@@ -33612,8 +34145,8 @@
       "d": "2026-11-02",
       "v": {
        "The Odyssey": 0.65,
-       "The Black Ball": 0.171,
-       "Wuthering Heights": 0.099,
+       "The Black Ball": 0.17,
+       "Wuthering Heights": 0.097,
        "Dune: Part Three": 0.087,
        "Sense and Sensibility": 0.071,
        "Wild Horse Nine": 0.066,
@@ -33778,7 +34311,7 @@
        "The Black Ball": 0.44,
        "The Invite": 0.22,
        "The Odyssey": 0.215,
-       "Dune: Part Three": 0.047,
+       "Dune: Part Three": 0.076,
        "All of a Sudden": 0.024,
        "Project Hail Mary": 0.023,
        "The Social Reckoning": 0.014,
@@ -34080,14 +34613,14 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Dog Alone": 0.338,
-       "El Cuerpo de Cristo": 0.213,
-       "God is Shy": 0.165,
+       "Dog Alone": 0.315,
+       "God is Shy": 0.162,
+       "El Cuerpo de Cristo": 0.155,
        "Paper Trail": 0.121,
        "With Tapes and Toasts in the Car": 0.116,
-       "What We Leave Behind": 0.066,
+       "What We Leave Behind": 0.059,
        "Because Today is Saturday": 0.046,
-       "Saba": 0.043,
+       "Saba": 0.042,
        "Water Girl": 0.033,
        "Please": 0.007
       }
@@ -34246,7 +34779,7 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Anne Hathaway": 0.515,
+       "Anne Hathaway": 0.51,
        "Amanda Seyfried": 0.215,
        "Penélope Cruz": 0.11,
        "Kate O'Flynn": 0.064,
@@ -34414,10 +34947,10 @@
       "d": "2026-11-02",
       "v": {
        "Christopher Nolan": 0.59,
-       "Denis Villeneuve": 0.155,
-       "Javier Calvo or Javier Ambrossi": 0.14,
+       "Denis Villeneuve": 0.15,
+       "Javier Calvo or Javier Ambrossi": 0.145,
        "Lance Oppenheim": 0.111,
-       "Olivia Wilde": 0.051,
+       "Olivia Wilde": 0.05,
        "Phil Lord or Christopher Miller": 0.019,
        "Martin McDonagh": 0.015,
        "Alejandro G. Iñárritu": 0.015,
@@ -34532,7 +35065,7 @@
       "d": "2026-11-02",
       "v": {
        "Wildwood": 0.785,
-       "Tangles": 0.064,
+       "Tangles": 0.057,
        "Toy Story 5": 0.032,
        "Ray Gunn": 0.026,
        "Forgotten Island": 0.024
@@ -34694,12 +35227,12 @@
       "d": "2026-11-02",
       "v": {
        "The Odyssey": 0.485,
-       "Wild Horse Nine": 0.247,
+       "Wild Horse Nine": 0.252,
        "La Bola Negra": 0.244,
        "Dune: Part Three": 0.152,
        "Obsession": 0.045,
        "UNABOMBER": 0.022,
-       "Being Heumann": 0.009,
+       "Being Heumann": 0.008,
        "Fjord": 0.006,
        "The Debut": 0.006,
        "The Invite": 0.006
@@ -34860,15 +35393,15 @@
      {
       "d": "2026-11-02",
       "v": {
-       "The Odyssey": 0.42,
-       "Dune: Part Three": 0.38,
-       "Disclosure Day": 0.121,
-       "Werwulf": 0.111,
+       "The Odyssey": 0.405,
+       "Dune: Part Three": 0.37,
+       "Disclosure Day": 0.197,
+       "Werwulf": 0.097,
        "Godzilla Minus Zero": 0.079,
-       "Behemoth!": 0.044,
+       "Behemoth!": 0.043,
        "The Mosquito Bowl": 0.034,
-       "Project Hail Mary": 0.033,
-       "The End of Oak Street": 0.021,
+       "Project Hail Mary": 0.032,
+       "The End of Oak Street": 0.02,
        "Digger": 0.018
       }
      }
@@ -35026,13 +35559,13 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Water Cooler": 0.258,
+       "Water Cooler": 0.269,
        "The Baddest Speechwriter of All": 0.234,
+       "Oh Whale": 0.206,
        "The Tuners": 0.195,
-       "A Derailment": 0.155,
-       "We're Fine": 0.077,
-       "A Wolf in the Suburbs": 0.044,
-       "Oh Whale": 0.03,
+       "A Derailment": 0.165,
+       "We're Fine": 0.076,
+       "A Wolf in the Suburbs": 0.041,
        "A Short Documentary About a Giant Pencil": 0.02,
        "One Last Order": 0.015
       }
@@ -35178,9 +35711,9 @@
       "d": "2026-11-02",
       "v": {
        "The Black Ball": 0.815,
-       "All of a Sudden": 0.049,
+       "All of a Sudden": 0.048,
        "Possible Love": 0.044,
-       "Fjord": 0.043,
+       "Fjord": 0.042,
        "Fatherland": 0.038,
        "Minotaur": 0.024,
        "Sheep in the Box": 0.006,
@@ -35295,10 +35828,10 @@
       "d": "2026-11-02",
       "v": {
        "The Odyssey": 0.5,
-       "Dune: Part Three": 0.36,
-       "Project Hail Mary": 0.154,
-       "Werwulf": 0.124,
-       "Digger": 0.101
+       "Dune: Part Three": 0.35,
+       "Project Hail Mary": 0.129,
+       "Werwulf": 0.121,
+       "Digger": 0.099
       }
      }
     ],
@@ -35414,10 +35947,9 @@
       "v": {
        "Dune: Part Three": 0.525,
        "Project Hail Mary": 0.25,
-       "Godzilla Minus Zero": 0.056,
-       "The Odyssey": 0.05,
-       "Spider-Man: Brand New Day": 0.03,
-       "Avengers: Doomsday": 0.011
+       "Godzilla Minus Zero": 0.054,
+       "The Odyssey": 0.04,
+       "Spider-Man: Brand New Day": 0.028
       }
      }
     ]
@@ -35577,9 +36109,9 @@
      {
       "d": "2026-11-02",
       "v": {
-       "The Odyssey": 0.59,
-       "You Can See Everything": 0.16,
-       "The Black Ball": 0.14,
+       "The Odyssey": 0.6,
+       "The Black Ball": 0.15,
+       "You Can See Everything": 0.14,
        "Dune: Part Three": 0.09,
        "Wild Horse Nine": 0.02,
        "Artificial": 0.02,
@@ -35747,7 +36279,7 @@
        "Christopher Nolan": 0.57,
        "Nathan Fielder": 0.22,
        "Denis Villeneuve": 0.14,
-       "Javier Calvo and Javier Ambrossi": 0.1,
+       "Javier Calvo and Javier Ambrossi": 0.07,
        "Andrew Haigh": 0.04,
        "Joel Coen": 0.03,
        "Olivia Wilde": 0.02,
@@ -35912,10 +36444,10 @@
       "d": "2026-11-02",
       "v": {
        "John Malkovich": 0.48,
-       "Matt Damon": 0.16,
+       "Matt Damon": 0.15,
        "Andrew Scott": 0.15,
        "Anthony Ippolito": 0.08,
-       "Tom Cruise": 0.06,
+       "Tom Cruise": 0.07,
        "Timothée Chalamet": 0.03,
        "Robert Pattinson": 0.03,
        "Yura Borisov": 0.01,
@@ -36245,7 +36777,7 @@
      {
       "d": "2026-11-02",
       "v": {
-       "Anne Hathaway": 0.47,
+       "Anne Hathaway": 0.5,
        "Amanda Seyfried": 0.29,
        "Penélope Cruz": 0.12,
        "Kate O'Flynn": 0.08,
@@ -36415,7 +36947,7 @@
        "Paul Giamatti": 0.35,
        "Andrew Garfield": 0.23,
        "Guitarricadelafuente": 0.15,
-       "John Leguizamo": 0.12,
+       "John Leguizamo": 0.11,
        "John Goodman": 0.06,
        "Sam Rockwell": 0.04,
        "Robert Pattinson": 0.04,
@@ -36434,6 +36966,24 @@
   "reads": []
  },
  "radar": [
+  {
+   "award": "globes",
+   "kind": "news",
+   "title": "Golden Globes: ‘Club Kid’ Submitted as Drama (Exclusive)",
+   "url": "https://www.hollywoodreporter.com/movies/movie-news/golden-globes-club-kid-submitted-drama-1236745986/",
+   "source": "The Hollywood Reporter",
+   "time": "2026-11-02T17:40:15.000Z",
+   "date": null
+  },
+  {
+   "award": "oscars",
+   "kind": "news",
+   "title": "‘The Odyssey,’ ‘Behemoth!,’ and ‘Michael’ lead Hollywood Music in Media Awards nominations — are Oscars next?",
+   "url": "https://www.goldderby.com/film/2026/hollywood-music-in-media-awards-2026-nominations/",
+   "source": "Gold Derby",
+   "time": "2026-11-02T16:00:00.000Z",
+   "date": null
+  },
   {
    "award": "oscars",
    "kind": "news",
@@ -36471,15 +37021,6 @@
    "date": null
   },
   {
-   "award": "oscars",
-   "kind": "news",
-   "title": "Oscar-Nominated Director Evgeny Afineevsky on Finding Hope in the Horrors of the Russian War Against Ukraine with New Film ‘Ash and Crayons’ [VIDEO INTERVIEW]",
-   "url": "https://awardswatch.com/oscar-nominated-director-evgeny-afineevsky-on-finding-hope-in-the-horrors-of-the-russian-war-against-ukraine-with-new-film-ash-and-crayons-video-interview/",
-   "source": "AwardsWatch",
-   "time": "2026-10-29T17:26:31.000Z",
-   "date": null
-  },
-  {
    "award": "cca",
    "kind": "news",
    "title": "Janelle James to Host Critics Choice Awards",
@@ -36495,15 +37036,6 @@
    "url": "https://www.hollywoodreporter.com/movies/movie-news/janelle-james-2027-critics-choice-awards-host-1236742240/",
    "source": "The Hollywood Reporter",
    "time": "2026-10-29T16:00:00.000Z",
-   "date": null
-  },
-  {
-   "award": "spirit",
-   "kind": "news",
-   "title": "Roman Coppola to Serve as Creative Consultant of 2027 Film Independent Spirit Awards",
-   "url": "https://awardswatch.com/roman-coppola-to-serve-as-creative-consultant-of-2027-film-independent-spirit-awards/",
-   "source": "AwardsWatch",
-   "time": "2026-10-29T15:32:07.000Z",
    "date": null
   },
   {
@@ -36525,15 +37057,6 @@
    "date": null
   },
   {
-   "award": "oscars",
-   "kind": "news",
-   "title": "Academy CEO Bill Kramer Makes the Case for a More Global Oscars at Tokyo Film Festival",
-   "url": "https://www.hollywoodreporter.com/movies/movie-news/academy-oscars-bill-kramer-tokyo-film-festival-1236741651/",
-   "source": "The Hollywood Reporter",
-   "time": "2026-10-28T08:37:31.000Z",
-   "date": null
-  },
-  {
    "award": "dga",
    "kind": "news",
    "title": "‘You Can See Everything’ Ruled Ineligible for DGA Feature Prize, Will Compete Only in Documentary Category",
@@ -36549,24 +37072,6 @@
    "url": "https://www.indiewire.com/awards/results/gotham-film-awards-2026-nominations-1235223895/",
    "source": "IndieWire",
    "time": "2026-10-27T16:30:00.000Z",
-   "date": null
-  },
-  {
-   "award": "oscars",
-   "kind": "news",
-   "title": "India’s Oscar Entry ‘Gondhal’ Unveils Global Trailer (EXCLUSIVE)",
-   "url": "https://variety.com/2026/film/awards/india-oscar-entry-gondhal-global-trailer-1236931634/",
-   "source": "Variety",
-   "time": "2026-10-26T22:03:48.000Z",
-   "date": null
-  },
-  {
-   "award": "oscars",
-   "kind": "nominations",
-   "title": "From ‘Hoop Dreams’ to ‘Flee’: The 20 Documentaries That Deserved a Best Picture Oscar Nomination",
-   "url": "https://variety.com/lists/documentaries-best-picture-oscar-nominations-snubs/",
-   "source": "Variety",
-   "time": "2026-10-25T23:55:15.000Z",
    "date": null
   },
   {
