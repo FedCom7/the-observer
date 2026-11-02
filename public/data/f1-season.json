@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T15:58:55.892Z",
+ "updated": "2026-11-02T00:39:23.140Z",
  "year": 2026,
  "meetings": [
   {
@@ -900,7 +900,7 @@
      "key": 11404,
      "name": "Race",
      "start": "2026-11-01T20:00:00+00:00",
-     "done": false
+     "done": true
     }
    ],
    "round": 19
@@ -1259,6 +1259,16 @@
    "colour": "#ED1131",
    "photo": "https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/1col/image.png"
   },
+  "50": {
+   "n": 50,
+   "code": "HIR",
+   "name": "Ryo HIRAKAWA",
+   "first": null,
+   "last": null,
+   "team": null,
+   "colour": null,
+   "photo": null
+  },
   "55": {
    "n": 55,
    "code": "SAI",
@@ -1391,11 +1401,17 @@
     41
    ]
   },
+  "null": {
+   "name": null,
+   "colour": null,
+   "drivers": [
+    50
+   ]
+  },
   "Haas F1 Team": {
    "name": "Haas F1 Team",
    "colour": "#9C9FA2",
    "drivers": [
-    31,
     87
    ]
   }
@@ -29168,6 +29184,255 @@
      "points": null
     }
    ]
+  },
+  {
+   "key": 11404,
+   "name": "Race",
+   "meeting": 1298,
+   "results": [
+    {
+     "n": 3,
+     "pos": 1,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8428.772,
+     "gap": 0,
+     "points": 25
+    },
+    {
+     "n": 44,
+     "pos": 2,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8429.571,
+     "gap": 0.799,
+     "points": 18
+    },
+    {
+     "n": 12,
+     "pos": 3,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8432.778,
+     "gap": 4.006,
+     "points": 15
+    },
+    {
+     "n": 16,
+     "pos": 4,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8439.479,
+     "gap": 10.707,
+     "points": 12
+    },
+    {
+     "n": 1,
+     "pos": 5,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8440.55,
+     "gap": 11.778,
+     "points": 10
+    },
+    {
+     "n": 63,
+     "pos": 6,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8441.035,
+     "gap": 12.263,
+     "points": 8
+    },
+    {
+     "n": 81,
+     "pos": 7,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8448.247,
+     "gap": 19.475,
+     "points": 6
+    },
+    {
+     "n": 43,
+     "pos": 8,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8448.976,
+     "gap": 20.204,
+     "points": 4
+    },
+    {
+     "n": 30,
+     "pos": 9,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8449.671,
+     "gap": 20.899,
+     "points": 2
+    },
+    {
+     "n": 10,
+     "pos": 10,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8450.255,
+     "gap": 21.483,
+     "points": 1
+    },
+    {
+     "n": 5,
+     "pos": 11,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8450.813,
+     "gap": 22.041,
+     "points": 0
+    },
+    {
+     "n": 6,
+     "pos": 12,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8451.275,
+     "gap": 22.503,
+     "points": 0
+    },
+    {
+     "n": 50,
+     "pos": 13,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8454.145,
+     "gap": 25.373,
+     "points": 0
+    },
+    {
+     "n": 23,
+     "pos": 14,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8456.334,
+     "gap": 27.562,
+     "points": 0
+    },
+    {
+     "n": 55,
+     "pos": 15,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8457.41,
+     "gap": 28.638,
+     "points": 0
+    },
+    {
+     "n": 27,
+     "pos": 16,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8458.749,
+     "gap": 29.977,
+     "points": 0
+    },
+    {
+     "n": 11,
+     "pos": 17,
+     "laps": 71,
+     "dnf": false,
+     "dns": false,
+     "dsq": false,
+     "time": 8459.467,
+     "gap": 30.695,
+     "points": 0
+    },
+    {
+     "n": 41,
+     "pos": null,
+     "laps": 58,
+     "dnf": true,
+     "dns": false,
+     "dsq": false,
+     "time": null,
+     "gap": null,
+     "points": 0
+    },
+    {
+     "n": 87,
+     "pos": null,
+     "laps": 47,
+     "dnf": true,
+     "dns": false,
+     "dsq": false,
+     "time": null,
+     "gap": null,
+     "points": 0
+    },
+    {
+     "n": 77,
+     "pos": null,
+     "laps": 42,
+     "dnf": true,
+     "dns": false,
+     "dsq": false,
+     "time": null,
+     "gap": null,
+     "points": 0
+    },
+    {
+     "n": 18,
+     "pos": null,
+     "laps": 5,
+     "dnf": true,
+     "dns": false,
+     "dsq": false,
+     "time": null,
+     "gap": null,
+     "points": 0
+    },
+    {
+     "n": 14,
+     "pos": null,
+     "laps": 5,
+     "dnf": true,
+     "dns": false,
+     "dsq": false,
+     "time": null,
+     "gap": null,
+     "points": 0
+    }
+   ]
   }
  ],
  "champ": [
@@ -33386,29 +33651,213 @@
      0
     ]
    ]
+  },
+  {
+   "key": 11404,
+   "name": "Race",
+   "meeting": 1298,
+   "drivers": [
+    [
+     12,
+     1,
+     380
+    ],
+    [
+     3,
+     2,
+     261
+    ],
+    [
+     44,
+     3,
+     259
+    ],
+    [
+     63,
+     4,
+     250
+    ],
+    [
+     16,
+     5,
+     245
+    ],
+    [
+     1,
+     6,
+     221
+    ],
+    [
+     81,
+     7,
+     150
+    ],
+    [
+     6,
+     8,
+     105
+    ],
+    [
+     30,
+     9,
+     79
+    ],
+    [
+     10,
+     10,
+     43
+    ],
+    [
+     41,
+     11,
+     38
+    ],
+    [
+     43,
+     12,
+     31
+    ],
+    [
+     87,
+     13,
+     23
+    ],
+    [
+     27,
+     14,
+     13
+    ],
+    [
+     5,
+     15,
+     10
+    ],
+    [
+     31,
+     16,
+     7
+    ],
+    [
+     14,
+     17,
+     7
+    ],
+    [
+     55,
+     18,
+     7
+    ],
+    [
+     23,
+     19,
+     5
+    ],
+    [
+     22,
+     20,
+     1
+    ],
+    [
+     18,
+     21,
+     0
+    ],
+    [
+     77,
+     22,
+     0
+    ],
+    [
+     50,
+     23,
+     0
+    ],
+    [
+     11,
+     24,
+     0
+    ]
+   ],
+   "teams": [
+    [
+     "Mercedes",
+     1,
+     630
+    ],
+    [
+     "Ferrari",
+     2,
+     504
+    ],
+    [
+     "Red Bull Racing",
+     3,
+     380
+    ],
+    [
+     "McLaren",
+     4,
+     371
+    ],
+    [
+     "Racing Bulls",
+     5,
+     104
+    ],
+    [
+     "Alpine",
+     6,
+     74
+    ],
+    [
+     "Haas F1 Team",
+     7,
+     30
+    ],
+    [
+     "Audi",
+     8,
+     23
+    ],
+    [
+     "Williams",
+     9,
+     12
+    ],
+    [
+     "Aston Martin",
+     10,
+     7
+    ],
+    [
+     "Cadillac",
+     11,
+     0
+    ]
+   ]
   }
  ],
  "power": {
   "teams": {
    "McLaren": {
     "quali": 0.416,
-    "race": 0.589,
+    "race": 0.593,
     "s1": 0.499,
     "s2": 0.407,
     "s3": 0.69,
     "speed": -8.2,
     "deg": {
      "MEDIUM": {
-      "slope": 0.046,
-      "n": 39
+      "slope": 0.047,
+      "n": 40
      },
      "HARD": {
       "slope": 0.071,
       "n": 32
      },
      "SOFT": {
-      "slope": 0.058,
-      "n": 11
+      "slope": 0.059,
+      "n": 15
      },
      "INTERMEDIATE": {
       "slope": 0.024,
@@ -33417,10 +33866,10 @@
     },
     "pit": 2.75,
     "pitN": 10,
-    "start": -0.23,
-    "gained": -0.34,
+    "start": -0.2,
+    "gained": -0.19,
     "dnf": 8,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 0.481,
      "mixed": 0.533,
@@ -33501,29 +33950,30 @@
       "race": 0.218
      },
      "19": {
-      "quali": 0.28
+      "quali": 0.28,
+      "race": 0.69
      }
     }
    },
    "Red Bull Racing": {
     "quali": 0.548,
-    "race": 0.653,
+    "race": 0.627,
     "s1": 0.672,
     "s2": 0.755,
     "s3": 0.585,
-    "speed": -8.9,
+    "speed": -8.8,
     "deg": {
      "MEDIUM": {
       "slope": 0.071,
-      "n": 35
+      "n": 37
      },
      "HARD": {
       "slope": 0.056,
       "n": 27
      },
      "SOFT": {
-      "slope": 0.021,
-      "n": 19
+      "slope": 0.022,
+      "n": 22
      },
      "INTERMEDIATE": {
       "slope": 0.031,
@@ -33535,7 +33985,7 @@
     "start": null,
     "gained": null,
     "dnf": 7,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 0.378,
      "mixed": 0.712,
@@ -33617,29 +34067,30 @@
       "race": 0.262
      },
      "19": {
-      "quali": 0.233
+      "quali": 0.233,
+      "race": 0.023
      }
     }
    },
    "Audi": {
     "quali": 1.752,
-    "race": 1.932,
+    "race": 1.933,
     "s1": 2.039,
     "s2": 1.907,
     "s3": 1.606,
-    "speed": -8.5,
+    "speed": -8.4,
     "deg": {
      "MEDIUM": {
-      "slope": 0.045,
-      "n": 30
+      "slope": 0.046,
+      "n": 32
      },
      "HARD": {
       "slope": 0.055,
       "n": 25
      },
      "SOFT": {
-      "slope": 0.069,
-      "n": 20
+      "slope": 0.058,
+      "n": 23
      },
      "INTERMEDIATE": {
       "slope": -0.056,
@@ -33648,10 +34099,10 @@
     },
     "pit": 2.6,
     "pitN": 9,
-    "start": -1.64,
-    "gained": 1,
+    "start": -1.52,
+    "gained": 0.85,
     "dnf": 9,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 2.221,
      "mixed": 1.627,
@@ -33733,29 +34184,30 @@
       "race": 2.184
      },
      "19": {
-      "quali": 1.035
+      "quali": 1.035,
+      "race": 1.972
      }
     }
    },
    "Alpine": {
     "quali": 1.518,
-    "race": 1.794,
+    "race": 1.788,
     "s1": 1.52,
     "s2": 1.776,
     "s3": 1.618,
-    "speed": -5.2,
+    "speed": -5.1,
     "deg": {
      "HARD": {
       "slope": 0.048,
       "n": 33
      },
      "SOFT": {
-      "slope": 0.084,
-      "n": 10
+      "slope": 0.051,
+      "n": 14
      },
      "MEDIUM": {
-      "slope": 0.053,
-      "n": 34
+      "slope": 0.054,
+      "n": 36
      },
      "INTERMEDIATE": {
       "slope": -0.104,
@@ -33764,10 +34216,10 @@
     },
     "pit": 2.9,
     "pitN": 13,
-    "start": 0.78,
+    "start": 0.75,
     "gained": 0.95,
     "dnf": 6,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 1.586,
      "mixed": 1.371,
@@ -33849,37 +34301,38 @@
       "race": 1.198
      },
      "19": {
-      "quali": 0.835
+      "quali": 0.835,
+      "race": 1.651
      }
     }
    },
    "Cadillac": {
     "quali": 4.216,
-    "race": 3.379,
+    "race": 3.341,
     "s1": 4.1,
     "s2": 4.572,
     "s3": 4.144,
-    "speed": -13.7,
+    "speed": -13.6,
     "deg": {
      "HARD": {
       "slope": 0.071,
       "n": 19
      },
      "SOFT": {
-      "slope": 0.016,
-      "n": 18
+      "slope": 0.018,
+      "n": 21
      },
      "MEDIUM": {
-      "slope": 0.068,
-      "n": 22
+      "slope": 0.071,
+      "n": 24
      }
     },
     "pit": 4.2,
     "pitN": 17,
-    "start": 1.27,
+    "start": 1.43,
     "gained": 2.84,
-    "dnf": 17,
-    "starts": 48,
+    "dnf": 18,
+    "starts": 50,
     "byType": {
      "street": 4.502,
      "mixed": 4.235,
@@ -33960,29 +34413,30 @@
       "race": 3.841
      },
      "19": {
-      "quali": 3.386
+      "quali": 3.386,
+      "race": 2.518
      }
     }
    },
    "Mercedes": {
     "quali": 0.069,
-    "race": 0.152,
+    "race": 0.166,
     "s1": 0.252,
     "s2": 0.285,
     "s3": 0.149,
     "speed": -5.7,
     "deg": {
      "MEDIUM": {
-      "slope": 0.051,
-      "n": 40
+      "slope": 0.053,
+      "n": 41
      },
      "HARD": {
       "slope": 0.066,
       "n": 34
      },
      "SOFT": {
-      "slope": 0.042,
-      "n": 11
+      "slope": 0.056,
+      "n": 15
      },
      "INTERMEDIATE": {
       "slope": 0.01,
@@ -33991,10 +34445,10 @@
     },
     "pit": 2.6,
     "pitN": 13,
-    "start": -1.49,
-    "gained": -0.56,
+    "start": -1.47,
+    "gained": -0.57,
     "dnf": 5,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 0.076,
      "mixed": 0.105,
@@ -34076,7 +34530,8 @@
       "race": 0
      },
      "19": {
-      "quali": 0.012
+      "quali": 0.012,
+      "race": 0.506
      }
     }
    },
@@ -34086,7 +34541,7 @@
     "s1": 4.152,
     "s2": 4.331,
     "s3": 3.973,
-    "speed": -15.9,
+    "speed": -15.8,
     "deg": {
      "HARD": {
       "slope": 0.049,
@@ -34107,10 +34562,10 @@
     },
     "pit": 2.8,
     "pitN": 12,
-    "start": 1.05,
+    "start": 0.93,
     "gained": 3.08,
-    "dnf": 19,
-    "starts": 48,
+    "dnf": 21,
+    "starts": 50,
     "byType": {
      "street": 3.973,
      "mixed": 3.48,
@@ -34196,23 +34651,23 @@
    },
    "Ferrari": {
     "quali": 0.342,
-    "race": 0.327,
+    "race": 0.314,
     "s1": 0.384,
     "s2": 0.4,
     "s3": 0.53,
     "speed": -7.6,
     "deg": {
      "MEDIUM": {
-      "slope": 0.058,
-      "n": 36
+      "slope": 0.06,
+      "n": 38
      },
      "HARD": {
       "slope": 0.071,
       "n": 31
      },
      "SOFT": {
-      "slope": 0.091,
-      "n": 24
+      "slope": 0.09,
+      "n": 28
      },
      "INTERMEDIATE": {
       "slope": 0.084,
@@ -34221,10 +34676,10 @@
     },
     "pit": 2.5,
     "pitN": 15,
-    "start": 0.57,
-    "gained": 0.16,
+    "start": 0.54,
+    "gained": 0.11,
     "dnf": 4,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 0.439,
      "mixed": 0.331,
@@ -34306,21 +34761,22 @@
       "race": 0.331
      },
      "19": {
-      "quali": 0
+      "quali": 0,
+      "race": 0
      }
     }
    },
    "Williams": {
     "quali": 2.846,
-    "race": 2.494,
+    "race": 2.482,
     "s1": 2.656,
     "s2": 3.276,
     "s3": 2.779,
     "speed": -7.1,
     "deg": {
      "SOFT": {
-      "slope": 0.063,
-      "n": 26
+      "slope": 0.059,
+      "n": 31
      },
      "HARD": {
       "slope": 0.076,
@@ -34337,10 +34793,10 @@
     },
     "pit": 3.15,
     "pitN": 16,
-    "start": 0.95,
-    "gained": 1.22,
+    "start": 0.91,
+    "gained": 1.21,
     "dnf": 11,
-    "starts": 48,
+    "starts": 50,
     "byType": {
      "street": 2.968,
      "mixed": 2.873,
@@ -34422,29 +34878,30 @@
       "race": 2.338
      },
      "19": {
-      "quali": 2.623
+      "quali": 2.623,
+      "race": 2.201
      }
     }
    },
    "Racing Bulls": {
     "quali": 1.455,
-    "race": 1.892,
+    "race": 1.877,
     "s1": 1.639,
     "s2": 1.677,
     "s3": 1.317,
     "speed": -7.2,
     "deg": {
      "MEDIUM": {
-      "slope": 0.068,
-      "n": 35
+      "slope": 0.067,
+      "n": 36
      },
      "HARD": {
       "slope": 0.049,
       "n": 29
      },
      "SOFT": {
-      "slope": 0.004,
-      "n": 17
+      "slope": 0.008,
+      "n": 20
      },
      "INTERMEDIATE": {
       "slope": -0.03,
@@ -34453,10 +34910,10 @@
     },
     "pit": 2.9,
     "pitN": 11,
-    "start": 0.95,
+    "start": 0.98,
     "gained": 1.74,
-    "dnf": 4,
-    "starts": 48,
+    "dnf": 5,
+    "starts": 50,
     "byType": {
      "street": 1.836,
      "mixed": 1.684,
@@ -34538,17 +34995,18 @@
       "race": 1.349
      },
      "19": {
-      "quali": 0.673
+      "quali": 0.673,
+      "race": 1.525
      }
     }
    },
    "Haas F1 Team": {
     "quali": 2.332,
-    "race": 2.217,
+    "race": 2.209,
     "s1": 2.525,
     "s2": 2.512,
     "s3": 2.308,
-    "speed": -8.7,
+    "speed": -8.6,
     "deg": {
      "MEDIUM": {
       "slope": 0.058,
@@ -34560,7 +35018,7 @@
      },
      "SOFT": {
       "slope": 0.06,
-      "n": 12
+      "n": 13
      },
      "INTERMEDIATE": {
       "slope": -0.02,
@@ -34569,10 +35027,10 @@
     },
     "pit": 3.9,
     "pitN": 11,
-    "start": 1.51,
+    "start": 1.52,
     "gained": 2.02,
-    "dnf": 6,
-    "starts": 48,
+    "dnf": 7,
+    "starts": 49,
     "byType": {
      "street": 2.334,
      "mixed": 2.047,
@@ -34654,7 +35112,8 @@
       "race": 2.128
      },
      "19": {
-      "quali": 1.742
+      "quali": 1.742,
+      "race": 2.019
      }
     }
    }
@@ -34662,15 +35121,15 @@
   "drivers": {
    "1": {
     "quali": 0.466,
-    "race": 0.661,
-    "start": 0,
-    "gained": 0.2,
+    "race": 0.662,
+    "start": -0.09,
+    "gained": 0.24,
     "h2hQ": [
      12,
      7
     ],
     "h2hR": [
-     8,
+     9,
      4
     ],
     "avgFinish": 4.3,
@@ -34679,41 +35138,41 @@
    },
    "3": {
     "quali": 1.733,
-    "race": 0.603,
-    "start": -0.67,
-    "gained": 0.1,
+    "race": 0.578,
+    "start": -0.55,
+    "gained": 0.24,
     "h2hQ": [
      13,
      4
     ],
     "h2hR": [
-     12,
+     13,
      1
     ],
-    "avgFinish": 4.3,
+    "avgFinish": 4.1,
     "avgQuali": 4.8,
     "dnf": 4
    },
    "5": {
     "quali": 2.14,
     "race": 2.216,
-    "start": -1.68,
-    "gained": 0.45,
+    "start": -1.52,
+    "gained": 0.52,
     "h2hQ": [
      9,
      10
     ],
     "h2hR": [
-     4,
+     5,
      8
     ],
-    "avgFinish": 11.9,
+    "avgFinish": 11.8,
     "avgQuali": 12.8,
     "dnf": 3
    },
    "6": {
     "quali": 9.826,
-    "race": 1.328,
+    "race": 1.33,
     "start": null,
     "gained": null,
     "h2hQ": [
@@ -34722,24 +35181,24 @@
     ],
     "h2hR": [
      1,
-     10
+     11
     ],
-    "avgFinish": 6.2,
+    "avgFinish": 6.6,
     "avgQuali": null,
     "dnf": 3
    },
    "10": {
     "quali": 1.701,
-    "race": 1.931,
-    "start": 0.48,
-    "gained": 0.32,
+    "race": 1.92,
+    "start": 0.29,
+    "gained": 0.26,
     "h2hQ": [
      15,
      4
     ],
     "h2hR": [
      9,
-     5
+     6
     ],
     "avgFinish": 9.8,
     "avgQuali": 10.1,
@@ -34747,9 +35206,9 @@
    },
    "11": {
     "quali": 4.335,
-    "race": 3.402,
-    "start": 1.95,
-    "gained": 3.18,
+    "race": 3.364,
+    "start": 2.14,
+    "gained": 3.17,
     "h2hQ": [
      11,
      8
@@ -34764,15 +35223,15 @@
    },
    "12": {
     "quali": 0.306,
-    "race": 0.19,
-    "start": -1.04,
-    "gained": -0.21,
+    "race": 0.203,
+    "start": -0.96,
+    "gained": -0.12,
     "h2hQ": [
      11,
      8
     ],
     "h2hR": [
-     11,
+     12,
      5
     ],
     "avgFinish": 3.3,
@@ -34782,7 +35241,7 @@
    "14": {
     "quali": 4.125,
     "race": 3.45,
-    "start": 1.09,
+    "start": 0.96,
     "gained": 3.25,
     "h2hQ": [
      15,
@@ -34794,29 +35253,29 @@
     ],
     "avgFinish": 14.8,
     "avgQuali": 18.6,
-    "dnf": 7
+    "dnf": 8
    },
    "16": {
     "quali": 0.448,
-    "race": 0.418,
-    "start": 0.74,
-    "gained": 0.09,
+    "race": 0.4,
+    "start": 0.79,
+    "gained": 0.04,
     "h2hQ": [
      10,
      9
     ],
     "h2hR": [
      8,
-     7
+     8
     ],
-    "avgFinish": 4.6,
+    "avgFinish": 4.5,
     "avgQuali": 4.2,
     "dnf": 3
    },
    "18": {
     "quali": 6.357,
     "race": 3.868,
-    "start": 1,
+    "start": 0.9,
     "gained": 2.8,
     "h2hQ": [
      2,
@@ -34828,7 +35287,7 @@
     ],
     "avgFinish": 15.2,
     "avgQuali": 20.1,
-    "dnf": 12
+    "dnf": 13
    },
    "22": {
     "quali": 2.283,
@@ -34849,41 +35308,41 @@
    },
    "23": {
     "quali": 3.217,
-    "race": 2.827,
-    "start": 1.1,
-    "gained": 1.13,
+    "race": 2.801,
+    "start": 1.09,
+    "gained": 1.18,
     "h2hQ": [
      3,
      15
     ],
     "h2hR": [
-     5,
+     6,
      5
     ],
-    "avgFinish": 15.3,
+    "avgFinish": 15.2,
     "avgQuali": 16.8,
     "dnf": 8
    },
    "27": {
     "quali": 2.002,
-    "race": 2.006,
-    "start": -1.59,
-    "gained": 1.65,
+    "race": 2.004,
+    "start": -1.52,
+    "gained": 1.22,
     "h2hQ": [
      10,
      9
     ],
     "h2hR": [
      8,
-     4
+     5
     ],
-    "avgFinish": 10.9,
+    "avgFinish": 11.2,
     "avgQuali": 12.3,
     "dnf": 6
    },
    "30": {
     "quali": 1.61,
-    "race": 1.919,
+    "race": 1.904,
     "start": 1.59,
     "gained": 2.05,
     "h2hQ": [
@@ -34917,8 +35376,8 @@
    },
    "41": {
     "quali": 1.762,
-    "race": 2.156,
-    "start": 0.1,
+    "race": 2.128,
+    "start": 0.18,
     "gained": 1.19,
     "h2hQ": [
      9,
@@ -34930,45 +35389,45 @@
     ],
     "avgFinish": 10.1,
     "avgQuali": 11,
-    "dnf": 3
+    "dnf": 4
    },
    "43": {
     "quali": 2.093,
-    "race": 2.146,
-    "start": 1.09,
-    "gained": 1.65,
+    "race": 2.129,
+    "start": 1.21,
+    "gained": 1.71,
     "h2hQ": [
      4,
      15
     ],
     "h2hR": [
-     5,
+     6,
      9
     ],
-    "avgFinish": 11.3,
+    "avgFinish": 11.1,
     "avgQuali": 12.9,
     "dnf": 4
    },
    "44": {
     "quali": 0.47,
-    "race": 0.527,
-    "start": 0.39,
-    "gained": 0.22,
+    "race": 0.513,
+    "start": 0.29,
+    "gained": 0.17,
     "h2hQ": [
      9,
      10
     ],
     "h2hR": [
-     7,
+     8,
      8
     ],
-    "avgFinish": 4.1,
+    "avgFinish": 4,
     "avgQuali": 4.1,
     "dnf": 1
    },
    "50": {
     "quali": 3.194,
-    "race": null,
+    "race": 2.648,
     "start": null,
     "gained": null,
     "h2hQ": [
@@ -34986,32 +35445,32 @@
    "55": {
     "quali": 2.944,
     "race": 2.672,
-    "start": 0.83,
-    "gained": 1.29,
+    "start": 0.75,
+    "gained": 1.23,
     "h2hQ": [
      15,
      3
     ],
     "h2hR": [
      5,
-     5
+     6
     ],
-    "avgFinish": 14,
+    "avgFinish": 14.1,
     "avgQuali": 15.2,
     "dnf": 3
    },
    "63": {
     "quali": 0.26,
-    "race": 0.532,
-    "start": -1.95,
-    "gained": -0.95,
+    "race": 0.534,
+    "start": -2,
+    "gained": -1.09,
     "h2hQ": [
      8,
      11
     ],
     "h2hR": [
      5,
-     11
+     12
     ],
     "avgFinish": 5.2,
     "avgQuali": 3.5,
@@ -35019,8 +35478,8 @@
    },
    "77": {
     "quali": 4.622,
-    "race": 4.058,
-    "start": 0.65,
+    "race": 4.02,
+    "start": 0.79,
     "gained": 2.43,
     "h2hQ": [
      8,
@@ -35032,29 +35491,29 @@
     ],
     "avgFinish": 17.2,
     "avgQuali": 20.3,
-    "dnf": 11
+    "dnf": 12
    },
    "81": {
     "quali": 0.592,
-    "race": 0.886,
-    "start": -0.45,
-    "gained": -0.86,
+    "race": 0.885,
+    "start": -0.3,
+    "gained": -0.59,
     "h2hQ": [
      7,
      12
     ],
     "h2hR": [
      4,
-     8
+     9
     ],
-    "avgFinish": 6.3,
+    "avgFinish": 6.4,
     "avgQuali": 6.1,
     "dnf": 4
    },
    "87": {
     "quali": 2.519,
-    "race": 2.407,
-    "start": 0.82,
+    "race": 2.39,
+    "start": 0.87,
     "gained": 1.58,
     "h2hQ": [
      14,
@@ -35066,7 +35525,7 @@
     ],
     "avgFinish": 12.5,
     "avgQuali": 14.7,
-    "dnf": 5
+    "dnf": 6
    }
   }
  },
