@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:49:43.002Z",
+ "updated": "2026-11-03T23:16:41.941Z",
  "wikiAt": "2026-11-03T17:49:43.002Z",
  "keynotes": [
   {
@@ -155,7 +155,7 @@
    "preorder": "2026-10-16T12:00:00.000Z",
    "available": "2026-10-23T06:00:00.000Z",
    "price": "$1,999 (U.S.)",
-   "image": "https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/tile/Apple-iPhone-Duo-opening-iPhone-Duo-260909-lp.jpg.og.jpg?202610310036",
+   "image": "https://www.apple.com/newsroom/images/2026/09/apple-unveils-iphone-duo/tile/Apple-iPhone-Duo-opening-iPhone-Duo-260909-lp.jpg.og.jpg?202610310035",
    "summary": null
   },
   {
@@ -175,7 +175,7 @@
    "preorder": "2026-09-09T13:00:00.000Z",
    "available": "2026-09-18T06:00:00.000Z",
    "price": "$399 (U.S.)",
-   "image": "https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/tile/Apple-Watch-Series-12-2up-260909-lp.jpg.og.jpg?202610310045",
+   "image": "https://www.apple.com/newsroom/images/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/tile/Apple-Watch-Series-12-2up-260909-lp.jpg.og.jpg?202610310036",
    "summary": null
   },
   {
@@ -205,11 +205,19 @@
    "preorder": "2026-08-25T13:00:00.000Z",
    "available": "2026-08-25T13:00:00.000Z",
    "price": "$899 (U.S.)",
-   "image": "https://www.apple.com/newsroom/images/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/tile/Apple-Mac-mini-hero-260825-lp.jpg.og.jpg?202608271401",
+   "image": "https://www.apple.com/newsroom/images/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/tile/Apple-Mac-mini-hero-260825-lp.jpg.og.jpg?202608271400",
    "summary": null
   }
  ],
  "news": [
+  {
+   "title": "Redesigned Health app expands language support",
+   "url": "https://www.apple.com/newsroom/2026/11/redesigned-health-app-expands-language-support/",
+   "time": "2026-11-03T18:24:58.012Z",
+   "kind": "QUICK READ",
+   "summary": "Apple announced expanded language support for the redesigned Health app, bringing personalized health insights to millions of people worldwide.",
+   "image": "https://www.apple.com/newsroom/images/2026/11/redesigned-health-app-expands-language-support/tile/Apple-Health-app-language-expansion.jpg.og.jpg"
+  },
   {
    "title": "Apple reports fourth quarter results",
    "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
@@ -361,14 +369,6 @@
    "kind": "UPDATE",
    "summary": "Today, Indie Games Week lights up the App Store with a celebration of the catalog of imaginative games made by independent teams with big dreams.",
    "image": "https://www.apple.com/newsroom/images/2026/10/app-store-indie-games-week-kicks-off-today/tile/Apple-App-Store-Indie-Games-Week-01-lp.jpg.og.jpg"
-  },
-  {
-   "title": "Apple, The King’s Trust launch initiative to empower young creatives",
-   "url": "https://www.apple.com/newsroom/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives/",
-   "time": "2026-10-07T21:01:58.215Z",
-   "kind": "UPDATE",
-   "summary": "Apple and The King’s Trust are building on their longstanding partnership by launching an immersive new education program to help young people move into the world of work.",
-   "image": "https://www.apple.com/newsroom/images/2026/10/apple-the-kings-trust-launch-initiative-to-empower-young-creatives/tile/Apple-x-Kings-Trust-Creative-Labs-Prophet-Guillory-His-Majesty-The-King-and-Tim-Cook-greet-cohort-lp.jpg.og.jpg"
   }
  ],
  "history": [
@@ -2936,6 +2936,69 @@
  "software": [
   {
    "os": "Xcode",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "27C5020n",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026g"
+  },
+  {
+   "os": "iOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "24C5037i",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026a"
+  },
+  {
+   "os": "iPadOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "24C5037i",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026b"
+  },
+  {
+   "os": "macOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "26C5035r",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026c"
+  },
+  {
+   "os": "tvOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "24K5286g",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026d"
+  },
+  {
+   "os": "visionOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "24N5286r",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026e"
+  },
+  {
+   "os": "watchOS",
+   "version": "27.3",
+   "stage": "beta",
+   "n": 1,
+   "build": "24S5284h",
+   "time": "2026-11-03T18:00:00.000Z",
+   "url": "https://developer.apple.com/news/releases/?id=11032026f"
+  },
+  {
+   "os": "Xcode",
    "version": "27.2",
    "stage": "release",
    "n": 1,
@@ -3342,16 +3405,282 @@
  ],
  "rumors": [
   {
-   "title": "Hands-On: The OLED iPad Mini is Almost an iPad Pro Mini",
-   "url": "https://www.macrumors.com/2026/11/03/oled-ipad-mini-hands-on/",
-   "time": "2026-11-03T17:40:47.000Z",
+   "title": "macOS 27.3 adds native Markdown rendering to Quick Look",
+   "url": "https://9to5mac.com/2026/11/03/macos-27-3-adds-native-markdown-rendering-to-quick-look/",
+   "time": "2026-11-03T23:11:22.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iPhone Jailbreak Gets Past Lockdown Mode and Survives an Update",
+   "url": "https://www.macrumors.com/2026/11/03/iphone-jailbreak-lockdown-mode/",
+   "time": "2026-11-03T22:20:33.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Apple now explicitly bans employees from using confidential information in prediction markets",
+   "url": "https://9to5mac.com/2026/11/03/apple-now-explicitly-bans-employees-from-using-confidential-information-in-prediction-markets/",
+   "time": "2026-11-03T21:58:58.000Z",
+   "source": "9to5Mac",
+   "rumor": true
+  },
+  {
+   "title": "9to5Mac Daily: November 3, 2026 – Apple reports Q4 earnings",
+   "url": "https://9to5mac.com/2026/11/03/daily-november-3-2026/",
+   "time": "2026-11-03T21:30:02.000Z",
+   "source": "9to5Mac",
+   "rumor": true
+  },
+  {
+   "title": "Don’t miss this scary-good deal: make your wireless bill less frightening this Halloween",
+   "url": "https://9to5mac.com/2026/11/03/dont-miss-this-scary-good-deal-make-your-wireless-bill-less-frightening-this-halloween/",
+   "time": "2026-11-03T21:27:24.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iPadOS 27.3 Expands Siri Mode to Camera App",
+   "url": "https://www.macrumors.com/2026/11/03/ipados-27-3-siri-mode-in-camera-app/",
+   "time": "2026-11-03T21:07:21.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Xcode 27.3 adds GitHub Copilot to its built-in coding assistant",
+   "url": "https://9to5mac.com/2026/11/03/xcode-27-3-adds-github-copilot-to-its-built-in-coding-assistant/",
+   "time": "2026-11-03T21:04:18.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 Adding New StandBy Mode Features to iPhone 11 and Newer",
+   "url": "https://www.macrumors.com/2026/11/03/ios-27-3-new-standby-features-on-more-iphones/",
+   "time": "2026-11-03T20:32:45.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Veterans Day Apple Watch Activity Challenge Launches November 11",
+   "url": "https://www.macrumors.com/2026/11/03/apple-watch-veterans-day-challenge-2026/",
+   "time": "2026-11-03T20:18:29.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 brings the iPhone Duo’s revamped StandBy to other iPhones",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-brings-the-iphone-duos-revamped-standby-to-other-iphones/",
+   "time": "2026-11-03T20:14:38.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Apple Watch Challenge set for Veterans Day",
+   "url": "https://9to5mac.com/2026/11/03/apple-watch-challenge-set-for-veterans-day/",
+   "time": "2026-11-03T20:12:15.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 expands Siri AI to these new languages",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-expands-siri-ai-to-these-new-languages/",
+   "time": "2026-11-03T19:51:07.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 Adds Vertical Tabs and Adaptive Dark Mode to Safari",
+   "url": "https://www.macrumors.com/2026/11/03/ios-27-3-safari/",
+   "time": "2026-11-03T19:47:50.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Best Early Black Friday Mac Deals: Save Hundreds on MacBook Air, Mac Mini, and More",
+   "url": "https://www.macrumors.com/2026/11/03/best-early-black-friday-mac-2026/",
+   "time": "2026-11-03T19:40:00.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Apple Fitness+ Gets Gym Strength Plans in iOS 27.3",
+   "url": "https://www.macrumors.com/2026/11/03/apple-fitness-plus-gym-strength/",
+   "time": "2026-11-03T19:35:33.000Z",
+   "source": "MacRumors",
+   "rumor": true
+  },
+  {
+   "title": "iOS 27.3 brings Apple Intelligence features to China",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-brings-apple-intelligence-features-to-china/",
+   "time": "2026-11-03T19:31:26.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Apple Releases New AirPods Beta Firmware",
+   "url": "https://www.macrumors.com/2026/11/03/airpods-beta-firmware-9b5045a/",
+   "time": "2026-11-03T19:29:37.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Developers can now create advanced ‘app skills’ for Siri AI",
+   "url": "https://9to5mac.com/2026/11/03/developers-can-now-create-advanced-app-skills-for-siri-ai/",
+   "time": "2026-11-03T19:25:48.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 Beta Brings Apple Intelligence to China",
+   "url": "https://www.macrumors.com/2026/11/03/ios-27-3-apple-intelligence-china-2/",
+   "time": "2026-11-03T19:25:00.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "watchOS 27.3 Brings Live Rewind and Siri Recap to Apple Watch",
+   "url": "https://www.macrumors.com/2026/11/03/watchos-27-3-audio-intelligence/",
+   "time": "2026-11-03T19:22:24.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 expands Siri AI with many new capabilities across Apple apps",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-expands-siri-ai-with-many-new-capabilities-across-apple-apps/",
+   "time": "2026-11-03T19:19:40.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iPhone Duo Gets Reachability in iOS 27.3 Beta",
+   "url": "https://www.macrumors.com/2026/11/03/iphone-duo-reachability-ios-27-3/",
+   "time": "2026-11-03T19:19:02.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 introduces new iPhone Duo feature for one-handed use",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-introduces-new-iphone-duo-feature-for-one-handed-use/",
+   "time": "2026-11-03T19:09:11.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Siri AI Gets More Capable in iOS 27.3",
+   "url": "https://www.macrumors.com/2026/11/03/ios-27-3-siri-ai/",
+   "time": "2026-11-03T19:06:26.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Everything new in iOS 27.3 beta 1 so far",
+   "url": "https://9to5mac.com/2026/11/03/everything-new-in-ios-27-3-beta-1-so-far/",
+   "time": "2026-11-03T19:05:31.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 Beta Brings Back Apple's Redesigned Health App",
+   "url": "https://www.macrumors.com/2026/11/03/ios-27-3-health-app/",
+   "time": "2026-11-03T19:03:23.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "watchOS 27.3 beta adds new Siri Recap and Live Rewind features for Apple Watch",
+   "url": "https://9to5mac.com/2026/11/03/watchos-27-3-beta-adds-new-siri-recap-and-live-rewind-features-for-apple-watch/",
+   "time": "2026-11-03T18:56:25.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 and macOS 27.3 add Vertical Tabs, Adaptive Dark Mode, and more to Safari",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-and-macos-27-3-add-vertical-tabs-adaptive-dark-mode-and-more-to-safari/",
+   "time": "2026-11-03T18:51:53.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iOS 27.3 adds all-new Apple Health app, details here",
+   "url": "https://9to5mac.com/2026/11/03/ios-27-3-adds-all-new-apple-health-app-details-here/",
+   "time": "2026-11-03T18:45:17.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "iPad Mini 8 Reviewer Dissatisfied With Apple's Excuse for Lack of 120Hz Display",
+   "url": "https://www.macrumors.com/2026/11/03/ipad-mini-8-review-highlights-lack-of-120hz/",
+   "time": "2026-11-03T18:42:36.000Z",
    "source": "MacRumors",
    "rumor": false
   },
   {
    "title": "iPad Mini 8 Review Claims Battery Life is Way Better Than Apple Says",
    "url": "https://www.macrumors.com/2026/11/03/ipad-mini-8-review-finds-longer-battery-life/",
-   "time": "2026-11-03T17:22:12.000Z",
+   "time": "2026-11-03T18:30:05.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "First macOS Sequoia 15.8.3 and macOS Tahoe 26.7.3 RCs now available",
+   "url": "https://9to5mac.com/2026/11/03/first-macos-sequoia-15-8-3-and-macos-tahoe-26-7-3-rcs-now-available/",
+   "time": "2026-11-03T18:29:08.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Apple announces Fitness+ Gym Strength program with personalized workout plans",
+   "url": "https://9to5mac.com/2026/11/03/apple-announces-fitness-gym-strength-program-with-personalized-workout-plans/",
+   "time": "2026-11-03T18:26:16.000Z",
+   "source": "9to5Mac",
+   "rumor": true
+  },
+  {
+   "title": "watchOS 27.3, iPadOS 27.3, and more now available in beta",
+   "url": "https://9to5mac.com/2026/11/03/watchos-27-3-ipados-27-3-and-more-now-available-in-beta/",
+   "time": "2026-11-03T18:12:50.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Apple Releases First macOS Golden Gate 27.3 Beta",
+   "url": "https://www.macrumors.com/2026/11/03/apple-releases-first-macos-golden-gate-27-3-beta/",
+   "time": "2026-11-03T18:10:20.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "macOS 27.3 Golden Gate beta 1 now available, here’s what to expect",
+   "url": "https://9to5mac.com/2026/11/03/macos-27-3-golden-gate-beta-1-now-available-heres-what-to-expect/",
+   "time": "2026-11-03T18:10:18.000Z",
+   "source": "9to5Mac",
+   "rumor": true
+  },
+  {
+   "title": "Apple Seeds First iOS 27.3 Beta",
+   "url": "https://www.macrumors.com/2026/11/03/apple-seeds-first-ios-27-3-beta/",
+   "time": "2026-11-03T18:09:10.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Apple releases first iOS 27.3 developer beta for iPhone",
+   "url": "https://9to5mac.com/2026/11/03/apple-releases-first-ios-27-3-developer-beta-for-iphone/",
+   "time": "2026-11-03T18:08:48.000Z",
+   "source": "9to5Mac",
+   "rumor": false
+  },
+  {
+   "title": "Apple Releases First watchOS 27.3, tvOS 27.3 and visionOS 27.3 Betas",
+   "url": "https://www.macrumors.com/2026/11/03/apple-watchos-27-3-beta-1/",
+   "time": "2026-11-03T18:07:00.000Z",
+   "source": "MacRumors",
+   "rumor": false
+  },
+  {
+   "title": "Hands-On: The OLED iPad Mini is Almost an iPad Pro Mini",
+   "url": "https://www.macrumors.com/2026/11/03/oled-ipad-mini-hands-on/",
+   "time": "2026-11-03T17:40:47.000Z",
    "source": "MacRumors",
    "rumor": false
   },
@@ -3361,20 +3690,6 @@
    "time": "2026-11-03T16:59:21.000Z",
    "source": "MacRumors",
    "rumor": false
-  },
-  {
-   "title": "Apple Store in UK Permanently Closing Later This Month",
-   "url": "https://www.macrumors.com/2026/11/03/apple-store-in-uk-permanently-closing/",
-   "time": "2026-11-03T16:56:37.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "iPhone Duo Could Take Nearly 30% of Foldable Market in 2027",
-   "url": "https://www.macrumors.com/2026/11/03/iphone-duo-could-take-30-percent-of-market/",
-   "time": "2026-11-03T16:47:34.000Z",
-   "source": "MacRumors",
-   "rumor": true
   },
   {
    "title": "iPhone 18 will have two upgrades inspired by ‘Pro’ models, per leak",
@@ -3391,39 +3706,11 @@
    "rumor": false
   },
   {
-   "title": "Will Apple Ever Merge iPadOS and macOS? John Ternus Responds",
-   "url": "https://www.macrumors.com/2026/11/03/john-ternus-on-ipados-and-macos-merging/",
-   "time": "2026-11-03T16:20:16.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
    "title": "iOS 27.2 adds two new features I’ve been really loving",
    "url": "https://9to5mac.com/2026/11/03/ios-27-2-adds-two-new-features-ive-been-really-loving/",
    "time": "2026-11-03T16:07:41.000Z",
    "source": "9to5Mac",
    "rumor": false
-  },
-  {
-   "title": "Apple Watch Automatically Identifies Songs Playing Around You",
-   "url": "https://www.macrumors.com/how-to/apple-watch-music-recognition-shazam/",
-   "time": "2026-11-03T16:02:14.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Best Early Black Friday Mac Deals: Save Hundreds on MacBook Air, Mac Mini, and More",
-   "url": "https://www.macrumors.com/2026/11/03/best-early-black-friday-mac-2026/",
-   "time": "2026-11-03T15:55:58.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "iPhone 18 Rumored to Get Larger Battery and Potential Price Increase",
-   "url": "https://www.macrumors.com/2026/11/03/iphone-18-rumored-to-get-larger-battery/",
-   "time": "2026-11-03T15:50:21.000Z",
-   "source": "MacRumors",
-   "rumor": true
   },
   {
    "title": "Apple Wallet driver’s licenses coming to three new states soon",
@@ -3447,24 +3734,10 @@
    "rumor": false
   },
   {
-   "title": "tvOS 27.2.1 and macOS 27.2.1 Likely Coming Soon",
-   "url": "https://www.macrumors.com/2026/11/03/tvos-and-macos-27-2-1-likely-coming-soon/",
-   "time": "2026-11-03T14:56:07.000Z",
-   "source": "MacRumors",
-   "rumor": true
-  },
-  {
    "title": "T-Mobile launches 5-gigabit fiber for $90/mo with 10-year price guarantee",
    "url": "https://9to5mac.com/2026/11/03/t-mobile-launches-5-gigabit-fiber-for-90-mo-with-10-year-price-guarantee/",
    "time": "2026-11-03T14:50:01.000Z",
    "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple's Annual R&D Spending Jumps by More Than $11 Billion",
-   "url": "https://www.macrumors.com/2026/11/03/apples-annual-rd-spending-jumps/",
-   "time": "2026-11-03T14:22:23.000Z",
-   "source": "MacRumors",
    "rumor": false
   },
   {
@@ -3475,228 +3748,18 @@
    "rumor": false
   },
   {
-   "title": "MacBook Neo Gets Rare $30 Amazon Discount",
-   "url": "https://www.macrumors.com/2026/11/03/macbook-neo-30-discount/",
-   "time": "2026-11-03T14:12:46.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
    "title": "New iPad mini hands-on: Refreshed design, OLED display,  more",
    "url": "https://9to5mac.com/2026/11/03/new-ipad-mini-a20-pro-review/",
    "time": "2026-11-03T14:00:09.000Z",
    "source": "9to5Mac",
    "rumor": false
-  },
-  {
-   "title": "MKBHD Switches Back to iPhone 18 Pro After Testing iPhone Duo",
-   "url": "https://www.macrumors.com/2026/11/03/mkbhd-switches-back-to-iphone-18-pro/",
-   "time": "2026-11-03T13:10:45.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Apple CEO John Ternus criticized for ‘scripted’ approach to first earnings call",
-   "url": "https://9to5mac.com/2026/11/03/apple-ceo-john-ternus-criticized-for-scripted-approach-to-first-earnings-call/",
-   "time": "2026-11-03T12:54:08.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple earnings suggest the iPhone 18 launch strategy is really working",
-   "url": "https://9to5mac.com/2026/11/03/apple-earnings-suggest-the-iphone-18-launch-strategy-is-really-working/",
-   "time": "2026-11-03T12:29:25.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple Explores Cheaper Way to Make New MacBook Pro's OLED Tech",
-   "url": "https://www.macrumors.com/2026/11/03/apple-exploring-next-gen-oled-tech-macs/",
-   "time": "2026-11-03T11:47:44.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Apple @ Work Podcast: How rising Apple costs are reshaping the trade-in market",
-   "url": "https://9to5mac.com/2026/11/03/how-rising-apple-costs-are-reshaping-the-trade-in-market/",
-   "time": "2026-11-03T11:00:00.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple Released the iPhone X Nine Years Ago Today",
-   "url": "https://www.macrumors.com/2026/11/03/apple-released-iphone-x-nine-years-ago-today/",
-   "time": "2026-11-03T08:58:51.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "SCOTUS sets hearing date for Apple’s appeal in Epic Games case",
-   "url": "https://9to5mac.com/2026/11/02/scotus-sets-hearing-date-for-apples-appeal-in-epic-games-case/",
-   "time": "2026-11-03T03:00:42.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple recently notified users in 99 countries of potential mercenary spyware attacks",
-   "url": "https://9to5mac.com/2026/11/02/apple-recently-notified-users-in-99-countries-of-potential-mercenary-spyware-attacks/",
-   "time": "2026-11-03T02:19:39.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple to require 18+ age ratings for dating apps and AI romantic companions",
-   "url": "https://9to5mac.com/2026/11/02/apple-to-require-18-age-ratings-for-dating-apps-and-ai-romantic-companions/",
-   "time": "2026-11-03T01:28:51.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple stock drops nearly 3% after hours following Q4 2026 results",
-   "url": "https://9to5mac.com/2026/11/02/apple-stock-drops-nearly-3-after-hours-following-q4-2026-results/",
-   "time": "2026-11-03T01:07:40.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple Requiring Developers to Disclose Location Sharing and Dating Features in Apps",
-   "url": "https://www.macrumors.com/2026/11/02/apple-developer-dating-app-requirement/",
-   "time": "2026-11-03T00:43:57.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Apple's Q4 2026 Earnings Call Takeaways",
-   "url": "https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/",
-   "time": "2026-11-03T00:26:58.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Apple Dodges Question on More Price Hikes as Memory Costs Climb",
-   "url": "https://www.macrumors.com/2026/11/02/apple-memory-costs-increase-december/",
-   "time": "2026-11-03T00:02:11.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "Apple forecasts its biggest revenue quarter ever despite supply constraints",
-   "url": "https://9to5mac.com/2026/11/02/apple-forecasts-its-biggest-revenue-quarter-ever-despite-supply-constraints/",
-   "time": "2026-11-02T23:38:32.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple says memory costs and Siri AI will weigh on holiday quarter profit margins",
-   "url": "https://9to5mac.com/2026/11/02/apple-says-memory-costs-and-siri-ai-will-weigh-on-holiday-quarter-profit-margins/",
-   "time": "2026-11-02T23:08:58.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "9to5Mac Daily: November 2, 2026 – What’s next for the Mac and iPad",
-   "url": "https://9to5mac.com/2026/11/02/daily-november-2-2026/",
-   "time": "2026-11-02T22:40:40.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple spent a record $45.77 billion on R&D in fiscal 2026, up 32%",
-   "url": "https://9to5mac.com/2026/11/02/apple-spent-a-record-45-77-billion-on-rd-in-fiscal-2026-up-32/",
-   "time": "2026-11-02T22:16:51.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple CEO Ternus Says iPhone Duo Shortages Have No End Date in Sight",
-   "url": "https://www.macrumors.com/2026/11/02/iphone-duo-shortages-no-end/",
-   "time": "2026-11-02T22:03:23.000Z",
-   "source": "MacRumors",
-   "rumor": false
-  },
-  {
-   "title": "John Ternus addresses iPhone Duo supply constraints, display issue",
-   "url": "https://9to5mac.com/2026/11/02/john-ternus-addresses-iphone-duo-supply-constraints-display-issue/",
-   "time": "2026-11-02T21:47:30.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Apple Reports 4Q 2026 Results: $30.7B Profit on $114.5B Revenue",
-   "url": "https://www.macrumors.com/2026/11/02/apple-4q-2026-earnings/",
-   "time": "2026-11-02T21:38:09.000Z",
-   "source": "MacRumors",
-   "rumor": true
-  },
-  {
-   "title": "Apple reports Q4 2026 earnings: $114.5 billion in revenue, up 12% [Charts]",
-   "url": "https://9to5mac.com/2026/11/02/apple-reports-q4-2026-earnings/",
-   "time": "2026-11-02T21:32:54.000Z",
-   "source": "9to5Mac",
-   "rumor": true
-  },
-  {
-   "title": "Apple releases new tvOS 27.2 build ahead of updated Apple TV 4K launch [U]",
-   "url": "https://9to5mac.com/2026/11/02/apple-releases-new-tvos-27-2-build-ahead-of-updated-apple-tv-4k-launch/",
-   "time": "2026-11-02T20:45:00.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "OpenAI is retiring ChatGPT Classic app, will soon combine Chat and Work tabs in new app",
-   "url": "https://9to5mac.com/2026/11/02/openai-is-retiring-chatgpt-classic-app-will-soon-combine-chat-and-work-tabs-in-new-app/",
-   "time": "2026-11-02T20:07:21.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "iOS 27.2’s clever new Messages feature can be tailored to your needs",
-   "url": "https://9to5mac.com/2026/11/02/ios-27-2s-clever-new-messages-feature-can-be-tailored-to-your-needs/",
-   "time": "2026-11-02T19:56:12.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "MagSafe Monday: Pelican’s MagSafe Battery Pack is the battery built to go anywhere",
-   "url": "https://9to5mac.com/2026/11/02/magsafe-monday-pelicans-magsafe-battery-pack-is-the-battery-built-to-go-anywhere/",
-   "time": "2026-11-02T19:49:00.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "New MacBook Pro with PROLED XDR accessories: Here are five top picks",
-   "url": "https://9to5mac.com/2026/11/02/new-macbook-pro-with-proled-xdr-accessories-here-are-five-top-picks/",
-   "time": "2026-11-02T18:34:47.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "X for iPhone and iPad just added over a dozen new app icon options",
-   "url": "https://9to5mac.com/2026/11/02/x-for-iphone-and-ipad-just-dropped-a-dozen-new-app-icon-options/",
-   "time": "2026-11-02T18:34:37.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "Here’s how to listen live to Apple’s Q4 2026 earnings call",
-   "url": "https://9to5mac.com/2026/11/02/heres-how-to-listen-live-to-apples-q4-2026-earnings-call/",
-   "time": "2026-11-02T17:13:36.000Z",
-   "source": "9to5Mac",
-   "rumor": false
-  },
-  {
-   "title": "iOS 27.2.1 could launch soon as next iPhone update",
-   "url": "https://9to5mac.com/2026/11/02/ios-27-2-1-could-launch-soon-as-next-iphone-update/",
-   "time": "2026-11-02T16:37:47.000Z",
-   "source": "9to5Mac",
-   "rumor": true
   }
  ],
  "stock": {
-  "price": 332.265,
-  "change": -6.055,
-  "pct": -1.79,
-  "at": "Nov 3, 2026 12:49 PM ET",
+  "price": 331.0541,
+  "change": -0.8459,
+  "pct": -0.25,
+  "at": "Nov 3, 2026 6:16 PM ET",
   "closes": [
    [
     "2021-11-01",
@@ -11100,6 +11163,13 @@
  ],
  "gurman": [
   {
+   "title": "Apple Launches Beta Versions of Watch AI Listening Tools, New Health App",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPNVVBQnczQ0dUZFYwcG5wUjRkU3BpNHQxRk9jNXRLNUcwb1pvWERNLUdKcVhjTjFSeTZ5UUNYeElicHFraUIyV09iSFgtYkJzb2RrdGlIckljN2VZVzVQUEUzQnNZNUFQWUo0NWI1ekdBMGhDemllZldzWFNMZHhQUmRkZkJDQVRRZURHNTlqMUFLWHRjbmE3ZERsVEtxVnREQ0MwVEpyUFczMDk4TjItMzFBaTJVamFjbmI5empyQmFZc09OZEttMw?oc=5",
+   "time": "2026-11-03T18:27:38.000Z",
+   "source": "Bloomberg",
+   "bloomberg": true
+  },
+  {
    "title": "What to Watch on Election Night: Voter Turnout, Socialists’ Success and More",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVlk3U3BkNWJJd3Z5b29FeXplQWdHdF9WcUUzSWNWU0ZLcUljZnFUTndhSHoyREkxa0lqdG0wSWJ6TmtHMFVZY3cycHl4U1cyamE4MWN5THZ6THlyMnBiazhNa2cwMHFTOGNqSUIyYkZ2MDhFUjZrMlB0MDBwMmh5TXZHTzVTTC1yRnFFZmlYMkxMRjFkNmhHdHhicjFPeXFVcFRFdTFOVnhGTERqT1lHY2M0WFZCMHRuNHE4Y1Y2bw?oc=5",
    "time": "2026-11-03T17:06:47.000Z",
@@ -11110,6 +11180,13 @@
    "title": "Apple’s Narrowing Margins Overshadow Upbeat Holiday Forecast",
    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPNjVqdFViRENfaVVnVkZiWUdtVVZlVEp2ZDBnUlNDaFk1TG5kYS1XWUpXZWlhUUxrZDdDZk1FTjQ2N0xVbnpxaEdrOEZjQ2NQLWNlc3ZneWNfbG5oSXo2RVg1NzZuSnVNU05YTzgwQWZvRjBFZHQyajFROVBiU1A5OG5vSXRjc05lVngtMy1OemdvZURnbVluQlpXTjlvbERMdENydFpwVS1CLU5CQ1Bn?oc=5",
    "time": "2026-11-03T14:36:46.000Z",
+   "source": "Bloomberg",
+   "bloomberg": true
+  },
+  {
+   "title": "Watch Apple's Upbeat Outlook Overshadowed by Margin Squeeze",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNTnNJeWF2aFdSeUs3MGlMdVh3cnZ6bUNBVXdwT3hTY0gwV083YWhIalBRbnNBSTRXQkpSRUFFdGZWd2FCdzBzVENwRzBXdV90SU1LT015SVpCOXZmdGxDbzV1bEpjdUljOVA1WGFkbllha2hpR3g5MmJoVmV6S2VxNVk2eTRTbU5TdlFWSlQxa2Y1UF8xOC1rc012RldtUlBHTVRkN3F0WXY4aGxi?oc=5",
+   "time": "2026-11-03T00:00:00.000Z",
    "source": "Bloomberg",
    "bloomberg": true
   },
@@ -11289,22 +11366,8 @@
    "bloomberg": true
   },
   {
-   "title": "Watch Power On: Exclusive News About Apple’s October Launch Event",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMm9EZXdnUHQ0ZUl5eWg1STl4aURNcDU1V0tnc2t2SHd6VkhzLS1KYklneHU4bl9nMXlsc1BPSFZ2UlVLcVRrdVNaSlk3NU9KZFlIOFdqRmNIeF9nSG5XNVAtZ3d4X3UwOTFlNGFjMVBnUm5wUmdxNGZKTng0MjN2SjZQSWM1QkJtVlNOVUIwMkpnR1pzQ3NKbU1adFhoamkySlFPZ1FYZVZ4Q1ZtdUxR?oc=5",
-   "time": "2026-10-16T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
    "title": "Watch Apple HomeView Is Finally Here + Touchscreen MacBook Pro Launch Details",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQWjRWSGpmZnJ3MzZzTHZZTmhhRnQzSlZiTHpkdEd4V2ZoRllDbEl2LW5OMUp0VXUzVlJ6TnJ2V3lpTVZqSkdUTUxjSkctNjhfZmZFZldvVms3N3A1WS0zdzNMb0o1eElVWl9keTIyLUdDT1RWYm15czR4cTZULUN5MFJsSXNDRTdldUFjLXdIb0IxdUI0Qkt1TzZpOE0?oc=5",
-   "time": "2026-10-15T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Watch Power On: Is Apple’s HomeView Ecosystem Worth Buying Into?",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQTVZLNms4OTB5UFNSSFRDcEstNU1LcTJmNGstV2FXdTcxc1lmQ2Y4bDBtNXI1bUtHWTRLX0ZCLUhoZ29OMTR3VUNKWjNRdHZVekRENUxNaHoxa1I1TG4xeW0yODZaYnFEU2VvU3J1M3pYNDV3M3RjVDhjT0tZOXlYbEp3QTJBRzhUbHBETHFHaDlhN25ueXBCcWNzaGMyS3JY?oc=5",
    "time": "2026-10-15T07:00:00.000Z",
    "source": "Bloomberg",
    "bloomberg": true
@@ -11373,51 +11436,9 @@
    "bloomberg": true
   },
   {
-   "title": "Watch Why Apple Vision Pro Is Struggling Compared to Meta’s VR Glasses",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa0I3OS13ajh4OHl6TnFRNUZlVUhONlZEZTU4d0J0elRLRGtDN2VkbENvYnA2MDJtazFHbHJQaWV0c0pSN1RzQkhPaWxHY29lNHdtX1Q5enRwSC1PTTRoMHJfVmhTaTZDWW9oQUYwY0RhXzZ2MEhjZzlnTjV6bnptclQtMkRMRzl6Y0NEYTRrSnJ6bG5vM1E?oc=5",
-   "time": "2026-10-08T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Power On Podcast: John Ternus Is Remaking Apple. How Far Will He Go?",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc1ZzOTJ3c2hIQ0hreTIxR0Y1RjdQYlRpYWdkZWotbFItLV94VVlJWnNWVlhZcTJSeVZpQWhWQmJERmltZDJrZVZFSkR0WDREeWtSZmRVMmc0c1dYVmtvVnpfdW9QTUp1N25XNlZxZGQwQVBlS1VRMzZEWkx3SnNQZEg5UEV5Skl4YXF2X2ZTdWZqMTFDVjQwVDlJOHBCcUpqeUpIWUJoWmFUNnY5?oc=5",
-   "time": "2026-10-08T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Watch Inside John Ternus’ New Apple + Meta’s Vision Pro Killer",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWRWZnExWDgxZWFCSW0yTEx3VlA3dHFGdVh3Tk1UTkEwZENVNVJuck5TeEs3SEprMzFka0N0VG43UF9nQmdCbEgtWVpJYVAxa1d2Y3U5X25hVXpPOHVsNzFUXzdMdVdiNXd1TElidmZWSDJwZVQ5VVNuZGV2UjhSc2JnNTF1cjhOdUtITnFYN3Flb1ZjeG82M1pOUUptOHdURnc?oc=5",
-   "time": "2026-10-08T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Watch Apple Partners With LG on New Smart Home Devices",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQY3lVaGg4el9fYTBBaGJCLVByMEl3RlZ5YzFqR3VQdTE3dHpCZ3paMHJ0VC0weHV2Nm9oMnFWZG1QV204TEZhSUI2WGRzOW9KSHR6WWM3TENTZVRSZFBpc05tcURxaFVXVDBiQ0FZSDFGam5xVTNaSzVhaXhjRXBJVmJ0U1l6dnpXblRBZWZUbV8wNm55dHQ1dXdScjN5WE1jZFVpb0hB?oc=5",
-   "time": "2026-10-07T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
    "title": "Apple to Launch Doorbell, Lock, Thermostat Developed With LG",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTlpOVHp0YnNWVDViYXdaSjRlYy1QS2hrMjZINnZwYUQ3NWcxTmdYLTlsZjhmcFhNZzlTZjVCeXI0NTlZNm1JVnE1bW5TeHZxNVhiQmxxcVlrQjNVVmJMVXpvYUM3UDRKSXZ2R3dsX1NWRVdaRExHQTVjWU9zZmNrcGF3WXEwdUZUWGVoR19tQi1yN0V0ZzkwR1RsQy1rZkdRdEdDNUM5dzZTeWRDM2tWZU9XZW5scE5SNkVKZDBSYzZDQ19iellZ?oc=5",
    "time": "2026-10-06T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Apple’s John Ternus Has Found a New Design Chief: Himself",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRkVyd3FmTWlFU25rNlJYQ3lKcDhXY3YtdnV4TENhdGZSMkNWUFhZZmI5XzU0ZGhJMHdmdkZKallDb0dlNXRheFZYTGhicnI2TkVTVnF3UFFfRXBfMVVqc2NlblpFY2JtT3h4bnhsbmN0U2xTYktNc21xSlBudnVRMkRZN0dPMnN4d3hjemdHS1hvZnMxYjFVNmVmZzFXSC16bFJPM3VKTG0xTXZna2lMeU1QWjgwQllpMVQ0UlBraWRFMFRQVklMSQ?oc=5",
-   "time": "2026-10-04T07:00:00.000Z",
-   "source": "Bloomberg",
-   "bloomberg": true
-  },
-  {
-   "title": "Watch Apple’s Upcoming Smart Home Device Won’t Record Video",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVkhOZl90VnV2MWtHX29rTi1uT01WT29oc2NFQ0RMS1lxQmxmU1ZZbUFUV3RmQjFtX1gwNVIycWdpdXBDUUhhR1ZSTXRoRW5vRng3ZVVSeUNsQmo1UnJ6UUlZWm5GcGt5MWtFQ3FRSkw5UEROOWZNN2Exc1BQeUU1UDR2cmtvRzUxQlJxMlZ6VGR3dWxPM1RPMEhOYlEzZkRFOFRzcF85dmt2UWdD?oc=5",
-   "time": "2026-10-01T07:00:00.000Z",
    "source": "Bloomberg",
    "bloomberg": true
   }
@@ -11477,7 +11498,7 @@
    "date": "2026-10-28",
    "start": "2026-10-28T17:00:00.000Z",
    "tagline": "Pro and tell",
-   "city": "Los Angeles",
+   "city": null,
    "kind": "event",
    "announced": "2026-10-19T07:00:00.000Z",
    "sources": [
@@ -12624,5 +12645,5 @@
    "podcast": null
   }
  ],
- "archiveCount": 2572
+ "archiveCount": 2573
 }

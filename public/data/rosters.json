@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-03T17:49:03.273Z",
+ "updated": "2026-11-03T23:16:19.000Z",
  "pats": {
-  "at": "2026-11-03T17:49:03.273Z",
+  "at": "2026-11-03T23:16:19.000Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -83,7 +83,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
     "status": "Active",
     "injury": {
-     "status": "Out",
+     "status": "Questionable",
      "detail": null
     },
     "stats": null,
@@ -144,6 +144,32 @@
     "state": "MS",
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362890.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": null,
+    "depthPos": null,
+    "season": null,
+    "snaps": []
+   },
+   {
+    "espn": "4565293",
+    "name": "Marcus Bryant",
+    "short": "M. Bryant",
+    "jersey": "52",
+    "group": "offense",
+    "pos": "OT",
+    "posName": "Offensive Tackle",
+    "unit": "OFF",
+    "age": 24,
+    "ht": "6' 7\"",
+    "wt": "320 lbs",
+    "exp": 2,
+    "college": "Missouri",
+    "from": "Round Rock, TX",
+    "state": "TX",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4565293.png",
     "status": "Active",
     "injury": null,
     "stats": null,
@@ -458,7 +484,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4432710.png",
     "status": "Active",
     "injury": {
-     "status": "Out",
+     "status": "Questionable",
      "detail": null
     },
     "stats": null,
@@ -799,54 +825,6 @@
     ]
    },
    {
-    "espn": "4698253",
-    "name": "Lan Larison",
-    "short": "L. Larison",
-    "jersey": "34",
-    "group": "offense",
-    "pos": "RB",
-    "posName": "Running Back",
-    "unit": "OFF",
-    "age": 25,
-    "ht": "5' 11\"",
-    "wt": "209 lbs",
-    "exp": 2,
-    "college": "UC Davis",
-    "from": "Caldwell, ID",
-    "state": "ID",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4698253.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2025
-    },
-    "depthPos": "RB",
-    "season": {
-     "games": 1,
-     "receptions": 2,
-     "targets": 2,
-     "receiving_yards": 9,
-     "receiving_epa": 0.076,
-     "receiving_yards_after_catch": 12,
-     "target_share": 0.01,
-     "air_yards_share": -0.001,
-     "wopr": 0.013,
-     "fantasy_points_ppr": 2.9
-    },
-    "snaps": [
-     {
-      "wk": 1,
-      "off": 0.04,
-      "def": 0,
-      "st": 0.27
-     }
-    ]
-   },
-   {
     "espn": "4372026",
     "name": "Cameron Latu",
     "short": "C. Latu",
@@ -1086,36 +1064,6 @@
       "st": 0
      }
     ]
-   },
-   {
-    "espn": "4369466",
-    "name": "Ryan Miller",
-    "short": "R. Miller",
-    "jersey": "11",
-    "group": "offense",
-    "pos": "WR",
-    "posName": "Wide Receiver",
-    "unit": "OFF",
-    "age": 26,
-    "ht": "6' 2\"",
-    "wt": "217 lbs",
-    "exp": 3,
-    "college": "Furman",
-    "from": "Jackson, TN",
-    "state": "TN",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2023
-    },
-    "depthPos": "WR",
-    "season": null,
-    "snaps": []
    },
    {
     "espn": "4431465",
@@ -1831,10 +1779,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916923.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 63,
@@ -2034,10 +1979,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4245273.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -2759,6 +2701,32 @@
     ]
    },
    {
+    "espn": "4428098",
+    "name": "Elias Neal",
+    "short": "E. Neal",
+    "jersey": null,
+    "group": "defense",
+    "pos": "LB",
+    "posName": "Linebacker",
+    "unit": "DEF",
+    "age": 25,
+    "ht": "6' 0\"",
+    "wt": "221 lbs",
+    "exp": 2,
+    "college": "Marshall",
+    "from": "Memphis, TN",
+    "state": "TN",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428098.png",
+    "status": "Active",
+    "injury": null,
+    "stats": null,
+    "draft": null,
+    "depthPos": null,
+    "season": null,
+    "snaps": []
+   },
+   {
     "espn": "5085407",
     "name": "Namdi Obiazor",
     "short": "N. Obiazor",
@@ -3288,74 +3256,6 @@
     ]
    },
    {
-    "espn": "4036651",
-    "name": "Kindle Vildor",
-    "short": "K. Vildor",
-    "jersey": "28",
-    "group": "defense",
-    "pos": "CB",
-    "posName": "Cornerback",
-    "unit": "DB",
-    "age": 28,
-    "ht": "5' 11\"",
-    "wt": "190 lbs",
-    "exp": 7,
-    "college": "Georgia Southern",
-    "from": "College Park, GA",
-    "state": "GA",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4036651.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": 163,
-     "club": "CHI",
-     "year": 2020
-    },
-    "depthPos": "CB",
-    "season": {
-     "games": 3,
-     "def_tackles_solo": 6,
-     "def_tackle_assists": 1,
-     "def_tackles_for_loss": 1,
-     "def_pass_defended": 1,
-     "def_fumbles_forced": 1
-    },
-    "snaps": [
-     {
-      "wk": 4,
-      "off": 0,
-      "def": 0.14,
-      "st": 0.19
-     },
-     {
-      "wk": 5,
-      "off": 0,
-      "def": 0.73,
-      "st": 0
-     },
-     {
-      "wk": 6,
-      "off": 0,
-      "def": 0.02,
-      "st": 0.31
-     },
-     {
-      "wk": 7,
-      "off": 0,
-      "def": 0,
-      "st": 0.21
-     },
-     {
-      "wk": 8,
-      "off": 0,
-      "def": 0,
-      "st": 0.5
-     }
-    ]
-   },
-   {
     "espn": "4239699",
     "name": "Milton Williams",
     "short": "M. Williams",
@@ -3803,35 +3703,6 @@
       "st": 0.31
      }
     ]
-   },
-   {
-    "espn": "4565293",
-    "name": "Marcus Bryant",
-    "short": "M. Bryant",
-    "jersey": "52",
-    "group": "injuredReserveOrOut",
-    "pos": "OT",
-    "posName": "Offensive Tackle",
-    "unit": "OFF",
-    "age": 24,
-    "ht": "6' 7\"",
-    "wt": "320 lbs",
-    "exp": 2,
-    "college": "Missouri",
-    "from": "Round Rock, TX",
-    "state": "TX",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4565293.png",
-    "status": "Day-To-Day",
-    "injury": {
-     "status": "Injured Reserve",
-     "detail": null
-    },
-    "stats": null,
-    "draft": null,
-    "depthPos": null,
-    "season": null,
-    "snaps": []
    },
    {
     "espn": "4361432",
@@ -4457,32 +4328,6 @@
     "snaps": []
    },
    {
-    "espn": "5295981",
-    "name": "Cameron Dorner",
-    "short": "C. Dorner",
-    "jersey": "88",
-    "group": "practiceSquad",
-    "pos": "WR",
-    "posName": "Wide Receiver",
-    "unit": "OFF",
-    "age": 22,
-    "ht": "6' 1\"",
-    "wt": "188 lbs",
-    "exp": 0,
-    "college": "North Texas",
-    "from": "New Market, MD",
-    "state": "MD",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/5295981.png",
-    "status": "Practice Squad",
-    "injury": null,
-    "stats": null,
-    "draft": null,
-    "depthPos": null,
-    "season": null,
-    "snaps": []
-   },
-   {
     "espn": "4567171",
     "name": "Eric Gregory",
     "short": "E. Gregory",
@@ -4582,32 +4427,6 @@
     "state": "FL",
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4427600.png",
-    "status": "Practice Squad",
-    "injury": null,
-    "stats": null,
-    "draft": null,
-    "depthPos": null,
-    "season": null,
-    "snaps": []
-   },
-   {
-    "espn": "4383405",
-    "name": "Jake Kubas",
-    "short": "J. Kubas",
-    "jersey": null,
-    "group": "practiceSquad",
-    "pos": "G",
-    "posName": "Guard",
-    "unit": null,
-    "age": 26,
-    "ht": "6' 4\"",
-    "wt": "308 lbs",
-    "exp": null,
-    "college": "North Dakota State",
-    "from": "Dickinson, ND",
-    "state": "ND",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4383405.png",
     "status": "Practice Squad",
     "injury": null,
     "stats": null,
@@ -4932,8 +4751,7 @@
       "pos": "NB",
       "name": "Nickel Back",
       "players": [
-       "4241720",
-       "4036651"
+       "4241720"
       ]
      }
     ]
@@ -5007,8 +4825,7 @@
       "name": "Wide Receiver",
       "players": [
        "4047646",
-       "4613202",
-       "4361432"
+       "4613202"
       ]
      },
      {
@@ -5017,7 +4834,7 @@
       "name": "Wide Receiver",
       "players": [
        "4427095",
-       "4369466"
+       "2991662"
       ]
      },
      {
@@ -5026,7 +4843,7 @@
       "name": "Wide Receiver",
       "players": [
        "4695193",
-       "2991662"
+       "4361432"
       ]
      },
      {
@@ -5077,8 +4894,8 @@
       "name": "Right Tackle",
       "players": [
        "16771",
-       "4921438",
-       "4565293"
+       "4565293",
+       "4921438"
       ]
      },
      {
@@ -8124,7 +7941,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-03T17:49:03.273Z",
+  "at": "2026-11-03T23:16:19.000Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9374,7 +9191,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-03T17:49:03.273Z",
+  "at": "2026-11-03T23:16:19.000Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,

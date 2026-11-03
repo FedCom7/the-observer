@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:49:06.435Z",
+ "updated": "2026-11-03T23:16:24.734Z",
  "edition": 2027,
  "countries": [
   "Portugal",
@@ -10,9 +10,17 @@
   {
    "num": 0,
    "label": "Prologue",
-   "date": "2027-01-09T04:30:00.000Z",
-   "from": "Loule",
-   "to": "Loule",
+   "date": "2027-01-09T07:30:00.000Z",
+   "from": "Loulé",
+   "to": "Loulé",
+   "fromLoc": [
+    -8.02,
+    37.14
+   ],
+   "toLoc": [
+    -8.02,
+    37.14
+   ],
    "totalKm": 129,
    "specialKm": 29,
    "rest": false
@@ -20,9 +28,17 @@
   {
    "num": 1,
    "label": "Stage 1",
-   "date": "2027-01-10T04:30:00.000Z",
-   "from": "Loule",
-   "to": "Loule",
+   "date": "2027-01-10T07:30:00.000Z",
+   "from": "Loulé",
+   "to": "Loulé",
+   "fromLoc": [
+    -8.02,
+    37.14
+   ],
+   "toLoc": [
+    -8.02,
+    37.14
+   ],
    "totalKm": 300,
    "specialKm": 100,
    "rest": false
@@ -49,9 +65,17 @@
   {
    "num": 2,
    "label": "Stage 2",
-   "date": "2027-01-12T04:30:00.000Z",
+   "date": "2027-01-12T07:30:00.000Z",
    "from": "Bouârfa",
    "to": "Bouârfa",
+   "fromLoc": [
+    -1.96,
+    32.53
+   ],
+   "toLoc": [
+    -1.96,
+    32.53
+   ],
    "totalKm": 490,
    "specialKm": 390,
    "rest": false
@@ -59,9 +83,17 @@
   {
    "num": 3,
    "label": "Stage 3",
-   "date": "2027-01-13T04:30:00.000Z",
+   "date": "2027-01-13T07:30:00.000Z",
    "from": "Bouârfa",
    "to": "Bouârfa",
+   "fromLoc": [
+    -1.96,
+    32.53
+   ],
+   "toLoc": [
+    -1.96,
+    32.53
+   ],
    "totalKm": 490,
    "specialKm": 410,
    "rest": false
@@ -69,9 +101,17 @@
   {
    "num": 4,
    "label": "Stage 4",
-   "date": "2027-01-14T04:30:00.000Z",
+   "date": "2027-01-14T07:30:00.000Z",
    "from": "Bouârfa",
    "to": "Zagora",
+   "fromLoc": [
+    -1.96,
+    32.53
+   ],
+   "toLoc": [
+    -5.84,
+    30.33
+   ],
    "totalKm": 750,
    "specialKm": 490,
    "rest": false
@@ -79,9 +119,17 @@
   {
    "num": 5,
    "label": "Stage 5",
-   "date": "2027-01-15T04:30:00.000Z",
+   "date": "2027-01-15T07:30:00.000Z",
    "from": "Zagora",
    "to": "Zagora",
+   "fromLoc": [
+    -5.84,
+    30.33
+   ],
+   "toLoc": [
+    -5.84,
+    30.33
+   ],
    "totalKm": 540,
    "specialKm": 365,
    "rest": false
@@ -89,9 +137,17 @@
   {
    "num": 6,
    "label": "Stage 6",
-   "date": "2027-01-16T04:30:00.000Z",
+   "date": "2027-01-16T07:30:00.000Z",
    "from": "Zagora",
    "to": "Agadir",
+   "fromLoc": [
+    -5.84,
+    30.33
+   ],
+   "toLoc": [
+    -9.6,
+    30.42
+   ],
    "totalKm": 760,
    "specialKm": 365,
    "rest": false
@@ -99,7 +155,7 @@
   {
    "num": null,
    "label": "Rest day",
-   "date": "2027-01-17T11:30:00.000Z",
+   "date": "2027-01-17T12:30:00.000Z",
    "from": "Agadir",
    "to": "Agadir",
    "fromLoc": [
@@ -117,9 +173,17 @@
   {
    "num": 7,
    "label": "Stage 7",
-   "date": "2027-01-18T04:30:00.000Z",
+   "date": "2027-01-18T07:30:00.000Z",
    "from": "Agadir",
    "to": "Smara",
+   "fromLoc": [
+    -9.6,
+    30.42
+   ],
+   "toLoc": [
+    -11.67,
+    26.74
+   ],
    "totalKm": 790,
    "specialKm": 500,
    "rest": false
@@ -127,9 +191,17 @@
   {
    "num": 8,
    "label": "Stage 8",
-   "date": "2027-01-19T04:30:00.000Z",
+   "date": "2027-01-19T07:30:00.000Z",
    "from": "Smara",
    "to": "Refuge",
+   "fromLoc": [
+    -11.67,
+    26.74
+   ],
+   "toLoc": [
+    -14.47,
+    25.75
+   ],
    "totalKm": 525,
    "specialKm": 355,
    "rest": false
@@ -137,9 +209,17 @@
   {
    "num": 9,
    "label": "Stage 9",
-   "date": "2027-01-20T04:30:00.000Z",
+   "date": "2027-01-20T07:30:00.000Z",
    "from": "Refuge",
    "to": "Smara",
+   "fromLoc": [
+    -14.47,
+    25.75
+   ],
+   "toLoc": [
+    -11.67,
+    26.74
+   ],
    "totalKm": 625,
    "specialKm": 390,
    "rest": false
@@ -147,9 +227,17 @@
   {
    "num": 10,
    "label": "Stage 10",
-   "date": "2027-01-21T04:30:00.000Z",
+   "date": "2027-01-21T07:30:00.000Z",
    "from": "Smara",
    "to": "Smara",
+   "fromLoc": [
+    -11.67,
+    26.74
+   ],
+   "toLoc": [
+    -11.67,
+    26.74
+   ],
    "totalKm": 560,
    "specialKm": 470,
    "rest": false
@@ -157,9 +245,17 @@
   {
    "num": 11,
    "label": "Stage 11",
-   "date": "2027-01-22T04:30:00.000Z",
+   "date": "2027-01-22T07:30:00.000Z",
    "from": "Smara",
    "to": "Marrakech",
+   "fromLoc": [
+    -11.67,
+    26.74
+   ],
+   "toLoc": [
+    -7.99,
+    31.63
+   ],
    "totalKm": 1035,
    "specialKm": 455,
    "rest": false
@@ -167,9 +263,17 @@
   {
    "num": 12,
    "label": "Stage 12",
-   "date": "2027-01-23T04:30:00.000Z",
+   "date": "2027-01-23T07:30:00.000Z",
    "from": "Marrakech",
    "to": "Marrakech",
+   "fromLoc": [
+    -7.99,
+    31.63
+   ],
+   "toLoc": [
+    -7.99,
+    31.63
+   ],
    "totalKm": 240,
    "specialKm": 22,
    "rest": false
