@@ -30,8 +30,8 @@ function toLive(r: CivicRace, office: LiveRace['office']): LiveRace {
   return { id: r.id, office, kind: r.type, st: r.province, district, name: r.election_name, reporting: r.percent_reporting ?? 0, cands, winner: w ? w.party : null, winnerName: w?.name ?? null };
 }
 
-async function search(query: string, date: string, offset = 0, limit = 500): Promise<CivicRace[]> {
-  const q = new URLSearchParams({ startDate: date, endDate: date, country: 'US', query, limit: String(limit), offset: String(offset) });
+async function search(query: string, date: string, offset = 0, limit = 500, by: 'query' | 'type' | 'province' = 'query'): Promise<CivicRace[]> {
+  const q = new URLSearchParams({ startDate: date, endDate: date, country: 'US', [by]: query, limit: String(limit), offset: String(offset) });
   const res = await fetch(`${CIVIC}/race/search?${q}`);
   if (!res.ok) throw new Error(`civicAPI ${res.status}`);
   return (await res.json()).races ?? [];
@@ -73,17 +73,16 @@ async function part<K extends keyof typeof PACE>(k: K, now: number, fn: () => Pr
 export async function loadLive(now = Date.now()): Promise<LiveData | null> {
   if ((now < RESULTS_WINDOW.from || now > RESULTS_WINDOW.to) && !liveForced()) return null;
   const day = replay2024() ? '2024-11-05' : '2026-11-03';
-  const senate = await part('senate', now, async () => (await search('US Senate', day, 0, 100)).filter(r => /US Senate/.test(r.election_name) && r.election_type === 'General').map(r => toLive(r, 'senate')));
-  const governor = await part('governor', now, async () => (await search('Governor', day, 0, 200)).filter(r => r.type === 'Governor' && r.province !== 'US').map(r => toLive(r, 'governor')));
-  const house = await part('house', now, async () => {
-    const pages: CivicRace[] = [];
-    for (const off of [0, 500, 1000]) { pages.push(...await search('US House', day, off)); await sleep(400); }
-    return pages.filter(r => / US House\b/.test(r.election_name) && r.type === 'House of Representatives').map(r => toLive(r, 'house'));
-  });
+  // By race type: on election night civicAPI's text search times out or misses races ("US Senate" found 2 of 35)
+  const senate = await part('senate', now, async () => (await search('US Senate', day, 0, 100, 'type')).filter(r => r.election_type === 'General' && r.province !== 'US').map(r => toLive(r, 'senate')));
+  const governor = await part('governor', now, async () => (await search('Governor', day, 0, 200, 'type')).filter(r => r.province !== 'US' && STATE_NAME[r.province]).map(r => toLive(r, 'governor')));
+  const house = await part('house', now, async () => (await search('House of Representatives', day, 0, 500, 'type')).filter(r => STATE_NAME[r.province]).map(r => toLive(r, 'house')));
   const measures = await part('measures', now, async () => {
     const seen = new Map<number, LiveRace>();
-    for (const q of ['Proposition', 'Amendment', 'Question', 'Measure', 'Issue', 'Initiative', 'Referendum']) {
-      for (const r of await search(q, day)) if (r.type === 'Referendum' && r.election_type === 'Statewide') seen.set(r.id, toLive(r, 'measure'));
+    for (const off of [0, 500]) {
+      const page = await search('Referendum', day, off, 500, 'type');
+      for (const r of page) if (r.election_type === 'Statewide') seen.set(r.id, toLive(r, 'measure'));
+      if (page.length < 500) break;
       await sleep(400);
     }
     return [...seen.values()].sort((a, b) => a.st.localeCompare(b.st) || a.name.localeCompare(b.name, 'en', { numeric: true }));
@@ -128,7 +127,7 @@ export async function stateRaces(st: string, now = Date.now()): Promise<LiveRace
   const day = replay2024() ? '2024-11-05' : '2026-11-03';
   const all: CivicRace[] = [];
   for (let off = 0; off < 2000; off += 500) {
-    const page = await search(STATE_NAME[st], day, off);
+    const page = await search(st, day, off, 500, 'province');
     all.push(...page);
     if (page.length < 500) break;
     await sleep(400);
