@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-03T09:29:21.906Z",
+ "updated": "2026-11-03T17:50:55.500Z",
  "status": {
   "uci": "75 races",
   "paris-nice.fr": "ok",
   "paris-roubaix.fr": "ok",
   "la-fleche-wallonne.be": "ok",
-  "liege-bastogne-liege.be": "ok",
-  "lavuelta.es": "ok",
-  "tour-auvergne-rhone-alpes.fr": "ok",
   "letour.fr": "ok",
+  "liege-bastogne-liege.be": "ok",
+  "tour-auvergne-rhone-alpes.fr": "ok",
+  "lavuelta.es": "ok",
   "giroditalia.it": "ok",
   "tirrenoadriatico.it": "ok",
-  "ilombardia.it": "ok",
   "milanosanremo.it": "ok",
   "strade-bianche.it": "ok",
+  "ilombardia.it": "ok",
   "wikipedia": "36 winners",
-  "wikiPages": "0 race pages read, 86 teams",
-  "geocoding": "323 towns, 150 lookups left"
+  "wikiPages": "1 race pages read, 86 teams",
+  "geocoding": "367 towns, 106 lookups left"
  },
  "races": [
   {
@@ -24304,10 +24304,5740 @@
    ],
    "site": "https://www.giroditalia.it/en",
    "org": "rcs",
-   "start": "2026-11-03T11:00:00.000Z",
+   "start": "2026-05-08T10:30:00.000Z",
    "end": "2026-05-31T15:00:00.000Z",
    "approx": true,
    "source": "giroditalia.it",
+   "wiki": {
+    "title": "2026 Giro d'Italia",
+    "url": "https://en.wikipedia.org/wiki/2026_Giro_d'Italia",
+    "podium": [
+     {
+      "pos": 1,
+      "rider": "Jonas Vingegaard",
+      "nat": "DEN",
+      "team": "Visma–Lease a Bike"
+     },
+     {
+      "pos": 2,
+      "rider": "Felix Gall",
+      "nat": "AUT",
+      "team": "Decathlon CMA CGM"
+     },
+     {
+      "pos": 3,
+      "rider": "Jai Hindley",
+      "nat": "AUS",
+      "team": "Red Bull–Bora–Hansgrohe"
+     }
+    ],
+    "jerseys": [
+     {
+      "key": "points",
+      "label": "Points",
+      "rider": "Paul Magnier",
+      "nat": "FRA",
+      "team": "Soudal–Quick-Step",
+      "color": "violet"
+     },
+     {
+      "key": "mountains",
+      "label": "Mountains",
+      "rider": "Giulio Ciccone",
+      "nat": "ITA",
+      "team": "Lidl–Trek",
+      "color": "turquoise"
+     },
+     {
+      "key": "youth",
+      "label": "Young rider",
+      "rider": "Afonso Eulálio",
+      "nat": "POR",
+      "team": "Team Bahrain Victorious",
+      "color": "white"
+     },
+     {
+      "key": "sprints",
+      "label": "Sprints",
+      "rider": "Manuele Tarozzi",
+      "nat": "ITA",
+      "team": "Bardiani–CSF 7 Saber",
+      "color": null
+     },
+     {
+      "key": "combativity",
+      "label": "Most combative",
+      "rider": "Damiano Caruso",
+      "nat": "ITA",
+      "team": "Team Bahrain Victorious",
+      "color": "red number"
+     },
+     {
+      "key": "team",
+      "label": "Team",
+      "rider": null,
+      "nat": "NED",
+      "team": "Visma–Lease a Bike",
+      "color": null
+     }
+    ],
+    "gcColor": "pink",
+    "colors": {
+     "gc": "pink",
+     "points": "purple",
+     "mountains": "azul",
+     "youth": "white",
+     "combativity": "red number"
+    },
+    "result": [
+     {
+      "pos": 1,
+      "rider": "Jonas Vingegaard",
+      "nat": "DEN",
+      "team": "Visma–Lease a Bike",
+      "time": "83h 22' 51\"",
+      "points": null
+     },
+     {
+      "pos": 2,
+      "rider": "Felix Gall",
+      "nat": "AUT",
+      "team": "Decathlon CMA CGM",
+      "time": "+ 5' 22\"",
+      "points": null
+     },
+     {
+      "pos": 3,
+      "rider": "Jai Hindley",
+      "nat": "AUS",
+      "team": "Red Bull–Bora–Hansgrohe",
+      "time": "+ 6' 25\"",
+      "points": null
+     },
+     {
+      "pos": 4,
+      "rider": "Thymen Arensman",
+      "nat": "NED",
+      "team": "Netcompany INEOS",
+      "time": "+ 7' 02\"",
+      "points": null
+     },
+     {
+      "pos": 5,
+      "rider": "Derek Gee-West",
+      "nat": "CAN",
+      "team": "Lidl–Trek",
+      "time": "+ 7' 56\"",
+      "points": null
+     },
+     {
+      "pos": 6,
+      "rider": "Afonso Eulálio",
+      "nat": "POR",
+      "team": "Team Bahrain Victorious",
+      "time": "+ 9' 39\"",
+      "points": null
+     },
+     {
+      "pos": 7,
+      "rider": "Michael Storer",
+      "nat": "AUS",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 10' 13\"",
+      "points": null
+     },
+     {
+      "pos": 8,
+      "rider": "Davide Piganzoli",
+      "nat": "ITA",
+      "team": "Visma–Lease a Bike",
+      "time": "+ 10' 52\"",
+      "points": null
+     },
+     {
+      "pos": 9,
+      "rider": "Damiano Caruso",
+      "nat": "ITA",
+      "team": "Team Bahrain Victorious",
+      "time": "+ 11' 24\"",
+      "points": null
+     },
+     {
+      "pos": 10,
+      "rider": "Egan Bernal",
+      "nat": "COL",
+      "team": "Netcompany INEOS",
+      "time": "+ 12' 54\"",
+      "points": null
+     }
+    ],
+    "classes": {
+     "points": [
+      {
+       "pos": 1,
+       "rider": "Paul Magnier",
+       "nat": "FRA",
+       "team": "Soudal–Quick-Step",
+       "time": null,
+       "points": 200
+      },
+      {
+       "pos": 2,
+       "rider": "Jonathan Milan",
+       "nat": "ITA",
+       "team": "Lidl–Trek",
+       "time": null,
+       "points": 153
+      },
+      {
+       "pos": 3,
+       "rider": "Guillermo Thomas Silva",
+       "nat": "URU",
+       "team": "XDS Astana Team",
+       "time": null,
+       "points": 99
+      },
+      {
+       "pos": 4,
+       "rider": "Andreas Leknessund",
+       "nat": "NOR",
+       "team": "Uno-X Mobility",
+       "time": null,
+       "points": 87
+      },
+      {
+       "pos": 5,
+       "rider": "Jonas Vingegaard",
+       "nat": "DEN",
+       "team": "Visma–Lease a Bike",
+       "time": null,
+       "points": 81
+      },
+      {
+       "pos": 6,
+       "rider": "Jasper Stuyven",
+       "nat": "BEL",
+       "team": "Soudal–Quick-Step",
+       "time": null,
+       "points": 75
+      },
+      {
+       "pos": 7,
+       "rider": "Mattia Bais",
+       "nat": "ITA",
+       "team": "Team Polti VisitMalta",
+       "time": null,
+       "points": 74
+      },
+      {
+       "pos": 8,
+       "rider": "Giulio Ciccone",
+       "nat": "ITA",
+       "team": "Lidl–Trek",
+       "time": null,
+       "points": 69
+      },
+      {
+       "pos": 9,
+       "rider": "Felix Gall",
+       "nat": "AUT",
+       "team": "Decathlon CMA CGM",
+       "time": null,
+       "points": 67
+      },
+      {
+       "pos": 10,
+       "rider": "Manuele Tarozzi",
+       "nat": "ITA",
+       "team": "Bardiani–CSF 7 Saber",
+       "time": null,
+       "points": 66
+      }
+     ],
+     "mountains": [
+      {
+       "pos": 1,
+       "rider": "Giulio Ciccone",
+       "nat": "ITA",
+       "team": "Lidl–Trek",
+       "time": null,
+       "points": 277
+      },
+      {
+       "pos": 2,
+       "rider": "Jonas Vingegaard",
+       "nat": "DEN",
+       "team": "Visma–Lease a Bike",
+       "time": null,
+       "points": 266
+      },
+      {
+       "pos": 3,
+       "rider": "Einer Rubio",
+       "nat": "COL",
+       "team": "Movistar Team",
+       "time": null,
+       "points": 164
+      },
+      {
+       "pos": 4,
+       "rider": "Felix Gall",
+       "nat": "AUT",
+       "team": "Decathlon CMA CGM",
+       "time": null,
+       "points": 124
+      },
+      {
+       "pos": 5,
+       "rider": "Jardi Christiaan van der Lee",
+       "nat": "NED",
+       "team": "EF Education–EasyPost",
+       "time": null,
+       "points": 108
+      },
+      {
+       "pos": 6,
+       "rider": "Jai Hindley",
+       "nat": "AUS",
+       "team": "Red Bull–Bora–Hansgrohe",
+       "time": null,
+       "points": 65
+      },
+      {
+       "pos": 7,
+       "rider": "Diego Pablo Sevilla",
+       "nat": "ESP",
+       "team": "Team Polti VisitMalta",
+       "time": null,
+       "points": 63
+      },
+      {
+       "pos": 8,
+       "rider": "Igor Arrieta",
+       "nat": "ESP",
+       "team": "UAE Team Emirates XRG",
+       "time": null,
+       "points": 55
+      },
+      {
+       "pos": 9,
+       "rider": "Derek Gee-West",
+       "nat": "CAN",
+       "team": "Lidl–Trek",
+       "time": null,
+       "points": 54
+      },
+      {
+       "pos": 10,
+       "rider": "Jack Haig",
+       "nat": "AUS",
+       "team": "Netcompany INEOS",
+       "time": null,
+       "points": 40
+      }
+     ],
+     "youth": [
+      {
+       "pos": 1,
+       "rider": "Afonso Eulálio",
+       "nat": "POR",
+       "team": "Team Bahrain Victorious",
+       "time": "83h 32' 30\"",
+       "points": null
+      },
+      {
+       "pos": 2,
+       "rider": "Davide Piganzoli",
+       "nat": "ITA",
+       "team": "Visma–Lease a Bike",
+       "time": "+ 1' 13\"",
+       "points": null
+      },
+      {
+       "pos": 3,
+       "rider": "Mathys Rondel",
+       "nat": "FRA",
+       "team": "Tudor Pro Cycling Team",
+       "time": "+ 5' 33\"",
+       "points": null
+      },
+      {
+       "pos": 4,
+       "rider": "Johannes Kulset",
+       "nat": "NOR",
+       "team": "Uno-X Mobility",
+       "time": "+ 24' 47\"",
+       "points": null
+      },
+      {
+       "pos": 5,
+       "rider": "Igor Arrieta",
+       "nat": "ESP",
+       "team": "UAE Team Emirates XRG",
+       "time": "+ 46' 11\"",
+       "points": null
+      },
+      {
+       "pos": 6,
+       "rider": "Giulio Pellizzari",
+       "nat": "ITA",
+       "team": "Red Bull–Bora–Hansgrohe",
+       "time": "+ 48' 37\"",
+       "points": null
+      },
+      {
+       "pos": 7,
+       "rider": "Embret Svestad-Bårdseng",
+       "nat": "NOR",
+       "team": "Netcompany INEOS",
+       "time": "+ 1h 04' 00\"",
+       "points": null
+      },
+      {
+       "pos": 8,
+       "rider": "Ludovico Crescioli",
+       "nat": "ITA",
+       "team": "Team Polti VisitMalta",
+       "time": "+ 1h 13' 18\"",
+       "points": null
+      },
+      {
+       "pos": 9,
+       "rider": "Gianmarco Garofoli",
+       "nat": "ITA",
+       "team": "Soudal–Quick-Step",
+       "time": "+ 1h 29' 24\"",
+       "points": null
+      },
+      {
+       "pos": 10,
+       "rider": "Johannes Staune-Mittet",
+       "nat": "NOR",
+       "team": "Decathlon CMA CGM",
+       "time": "+ 1h 44' 42\"",
+       "points": null
+      }
+     ]
+    },
+    "stages": [
+     {
+      "num": 1,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-08",
+      "from": "Nesebar",
+      "to": "Burgas",
+      "fromCountry": "Bulgaria",
+      "toCountry": "Bulgaria",
+      "km": 147,
+      "winner": "Paul Magnier",
+      "winnerNat": "FRA",
+      "winnerTeam": null
+     },
+     {
+      "num": 2,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-09",
+      "from": "Burgas",
+      "to": "Veliko Tarnovo",
+      "fromCountry": "Bulgaria",
+      "toCountry": "Bulgaria",
+      "km": 221,
+      "winner": "Guillermo Thomas Silva",
+      "winnerNat": "URU",
+      "winnerTeam": null
+     },
+     {
+      "num": 3,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-10",
+      "from": "Plovdiv",
+      "to": "Sofia",
+      "fromCountry": "Bulgaria",
+      "toCountry": "Bulgaria",
+      "km": 175,
+      "winner": "Paul Magnier",
+      "winnerNat": "FRA",
+      "winnerTeam": null
+     },
+     {
+      "num": null,
+      "type": "Rest day",
+      "rest": true,
+      "date": "2026-05-11",
+      "from": "",
+      "to": "",
+      "km": null
+     },
+     {
+      "num": 4,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-12",
+      "from": "Catanzaro",
+      "to": "Cosenza",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 138,
+      "winner": "Jhonatan Narváez",
+      "winnerNat": "ECU",
+      "winnerTeam": null
+     },
+     {
+      "num": 5,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-13",
+      "from": "Praia a Mare",
+      "to": "Potenza",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 203,
+      "winner": "Igor Arrieta",
+      "winnerNat": "ESP",
+      "winnerTeam": null
+     },
+     {
+      "num": 6,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-14",
+      "from": "Paestum",
+      "to": "Naples",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 142,
+      "winner": "Davide Ballerini",
+      "winnerNat": "ITA",
+      "winnerTeam": null
+     },
+     {
+      "num": 7,
+      "type": "Mountain",
+      "rest": false,
+      "date": "2026-05-15",
+      "from": "Formia",
+      "to": "Blockhaus",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 244,
+      "winner": "Jonas Vingegaard",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": 8,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-16",
+      "from": "Chieti",
+      "to": "Fermo",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 156,
+      "winner": "Jhonatan Narváez",
+      "winnerNat": "ECU",
+      "winnerTeam": null
+     },
+     {
+      "num": 9,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-17",
+      "from": "Cervia",
+      "to": "Corno alle Scale",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 184,
+      "winner": "Jonas Vingegaard",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": null,
+      "type": "Rest day",
+      "rest": true,
+      "date": "2026-05-18",
+      "from": "",
+      "to": "",
+      "km": null
+     },
+     {
+      "num": 10,
+      "type": "Individual time trial",
+      "rest": false,
+      "date": "2026-05-19",
+      "from": "Viareggio",
+      "to": "Massa",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 42,
+      "winner": "Filippo Ganna",
+      "winnerNat": "ITA",
+      "winnerTeam": null
+     },
+     {
+      "num": 11,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-20",
+      "from": "Porcari",
+      "to": "Chiavari",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 195,
+      "winner": "Jhonatan Narváez",
+      "winnerNat": "ECU",
+      "winnerTeam": null
+     },
+     {
+      "num": 12,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-21",
+      "from": "Imperia",
+      "to": "Novi Ligure",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 175,
+      "winner": "Alec Segaert",
+      "winnerNat": "BEL",
+      "winnerTeam": null
+     },
+     {
+      "num": 13,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-22",
+      "from": "Alessandria",
+      "to": "Verbania",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 189,
+      "winner": "Alberto Bettiol",
+      "winnerNat": "ITA",
+      "winnerTeam": null
+     },
+     {
+      "num": 14,
+      "type": "Mountain",
+      "rest": false,
+      "date": "2026-05-23",
+      "from": "Aosta",
+      "to": "Pila",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 133,
+      "winner": "Jonas Vingegaard",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": 15,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-24",
+      "from": "Voghera",
+      "to": "Milan",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 157,
+      "winner": "Fredrik Dversnes",
+      "winnerNat": "NOR",
+      "winnerTeam": null
+     },
+     {
+      "num": null,
+      "type": "Rest day",
+      "rest": true,
+      "date": "2026-05-25",
+      "from": "",
+      "to": "",
+      "km": null
+     },
+     {
+      "num": 16,
+      "type": "Mountain",
+      "rest": false,
+      "date": "2026-05-26",
+      "from": "Bellinzona",
+      "to": "Carì",
+      "fromCountry": "Switzerland",
+      "toCountry": "Switzerland",
+      "km": 113,
+      "winner": "Jonas Vingegaard",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": 17,
+      "type": "Hilly",
+      "rest": false,
+      "date": "2026-05-27",
+      "from": "Cassano d'Adda",
+      "to": "Andalo",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 202,
+      "winner": "Michael Valgren",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": 18,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-28",
+      "from": "Fai della Paganella",
+      "to": "Pieve di Soligo",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 171,
+      "winner": "Paul Magnier",
+      "winnerNat": "FRA",
+      "winnerTeam": null
+     },
+     {
+      "num": 19,
+      "type": "Mountain",
+      "rest": false,
+      "date": "2026-05-29",
+      "from": "Feltre",
+      "to": "Alleghe",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 151,
+      "winner": "Sepp Kuss",
+      "winnerNat": "USA",
+      "winnerTeam": null
+     },
+     {
+      "num": 20,
+      "type": "Mountain",
+      "rest": false,
+      "date": "2026-05-30",
+      "from": "Gemona del Friuli",
+      "to": "Piancavallo",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 200,
+      "winner": "Jonas Vingegaard",
+      "winnerNat": "DEN",
+      "winnerTeam": null
+     },
+     {
+      "num": 21,
+      "type": "Flat",
+      "rest": false,
+      "date": "2026-05-31",
+      "from": "Rome",
+      "to": "Rome",
+      "fromCountry": null,
+      "toCountry": null,
+      "km": 131,
+      "winner": "Jonathan Milan",
+      "winnerNat": "ITA",
+      "winnerTeam": null
+     }
+    ],
+    "leaders": [
+     {
+      "stage": 1,
+      "gc": "Paul Magnier",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Paul Magnier"
+     },
+     {
+      "stage": 2,
+      "gc": "Guillermo Thomas Silva",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Guillermo Thomas Silva"
+     },
+     {
+      "stage": 3,
+      "gc": "Guillermo Thomas Silva",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Guillermo Thomas Silva"
+     },
+     {
+      "stage": 4,
+      "gc": "Giulio Ciccone",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Jan Christen"
+     },
+     {
+      "stage": 5,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 6,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Diego Pablo Sevilla",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 7,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 8,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 9,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 10,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 11,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 12,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 13,
+      "gc": "Afonso Eulálio",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 14,
+      "gc": "Jonas Vingegaard",
+      "points": "Jhonatan Narváez",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 15,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 16,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 17,
+      "gc": "Jonas Vingegaard",
+      "points": "Jhonatan Narváez",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 18,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Jonas Vingegaard",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 19,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Giulio Ciccone",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 20,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Giulio Ciccone",
+      "youth": "Afonso Eulálio"
+     },
+     {
+      "stage": 21,
+      "gc": "Jonas Vingegaard",
+      "points": "Paul Magnier",
+      "mountains": "Giulio Ciccone",
+      "youth": "Afonso Eulálio"
+     }
+    ],
+    "history": [
+     {
+      "stage": 1,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Paul Magnier",
+        "nat": "FRA",
+        "team": "Soudal–Quick-Step",
+        "time": "3h 20' 58\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Tobias Lund Andresen",
+        "nat": "DEN",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Manuele Tarozzi",
+        "nat": "ITA",
+        "team": "Bardiani–CSF 7 Saber",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Ethan Vernon",
+        "nat": "GBR",
+        "team": "NSN Cycling Team",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Diego Pablo Sevilla",
+        "nat": "ESP",
+        "team": "Team Polti VisitMalta",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "António Morgado",
+        "nat": "POR",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 8\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jonathan Milan",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Madis Mihkels",
+        "nat": "EST",
+        "team": "EF Education–EasyPost",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giovanni Lonardi",
+        "nat": "ITA",
+        "team": "Team Polti VisitMalta",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Pascal Ackermann",
+        "nat": "GER",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 10\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 2,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Guillermo Thomas Silva",
+        "nat": "URU",
+        "team": "XDS Astana Team",
+        "time": "9h 00' 23\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Florian Stork",
+        "nat": "GER",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jan Christen",
+        "nat": "SUI",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Johannes Kulset",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Martin Tjøtta",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Lennert Van Eetvelt",
+        "nat": "BEL",
+        "team": "Lotto–Intermarché",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Darren Rafferty",
+        "nat": "IRL",
+        "team": "EF Education–EasyPost",
+        "time": "+ 10\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 3,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Guillermo Thomas Silva",
+        "nat": "URU",
+        "team": "XDS Astana Team",
+        "time": "13h 10' 05\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Florian Stork",
+        "nat": "GER",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jan Christen",
+        "nat": "SUI",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Martin Tjøtta",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Johannes Kulset",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Enric Mas",
+        "nat": "ESP",
+        "team": "Movistar Team",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Lennert Van Eetvelt",
+        "nat": "BEL",
+        "team": "Lotto–Intermarché",
+        "time": "+ 10\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 4,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "16h 18' 51\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jan Christen",
+        "nat": "SUI",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Florian Stork",
+        "nat": "GER",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 4\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 6\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Lennert Van Eetvelt",
+        "nat": "BEL",
+        "team": "Lotto–Intermarché",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Enric Mas",
+        "nat": "ESP",
+        "team": "Movistar Team",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Markel Beloki",
+        "nat": "ESP",
+        "team": "EF Education–EasyPost",
+        "time": "+ 10\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Jan Hirt",
+        "nat": "CZE",
+        "team": "NSN Cycling Team",
+        "time": "+ 10\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 5,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "21h 27' 43\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Igor Arrieta",
+        "nat": "ESP",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 2' 51\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Christian Scaroni",
+        "nat": "ITA",
+        "team": "XDS Astana Team",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Andrea Raccagni Noviero",
+        "nat": "ITA",
+        "team": "Soudal–Quick-Step",
+        "time": "+ 3' 39\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Johannes Kulset",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 5' 17\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 6' 12\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jan Christen",
+        "nat": "SUI",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Florian Stork",
+        "nat": "GER",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 6' 18\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 6,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "24h 47' 13\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Igor Arrieta",
+        "nat": "ESP",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 2' 51\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Christian Scaroni",
+        "nat": "ITA",
+        "team": "XDS Astana Team",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Andrea Raccagni Noviero",
+        "nat": "ITA",
+        "team": "Soudal–Quick-Step",
+        "time": "+ 3' 39\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Johannes Kulset",
+        "nat": "NOR",
+        "team": "Uno-X Mobility",
+        "time": "+ 5' 17\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 6' 12\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jan Christen",
+        "nat": "SUI",
+        "team": "UAE Team Emirates XRG",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Florian Stork",
+        "nat": "GER",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 6' 16\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 6' 18\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 7,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "30h 59' 23\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 3' 17\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 25\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 28\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 4' 32\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Mathys Rondel",
+        "nat": "FRA",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4' 56\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Giulio Ciccone",
+        "nat": "ITA",
+        "team": "Lidl–Trek",
+        "time": "+ 4' 57\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 5' 07\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 5' 11\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 8,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "34h 28' 42\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 3' 15\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Christian Scaroni",
+        "nat": "ITA",
+        "team": "XDS Astana Team",
+        "time": "+ 4' 18\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 23\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 28\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 4' 32\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Mathys Rondel",
+        "nat": "FRA",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4' 56\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 5' 07\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 5' 11\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 9,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "38h 49' 44\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 2' 24\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 59\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 32\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Christian Scaroni",
+        "nat": "ITA",
+        "team": "XDS Astana Team",
+        "time": "+ 4' 43\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 5' 00\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Mathys Rondel",
+        "nat": "FRA",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 5' 01\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 5' 03\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 5' 15\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 5' 20\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 10,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "39h 40' 34\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 27\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 1' 57\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 24\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 2' 48\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 06\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 3' 28\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 36\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Markel Beloki",
+        "nat": "ESP",
+        "team": "EF Education–EasyPost",
+        "time": "+ 4' 16\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 11,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "44h 17' 41\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 27\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 1' 57\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 24\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 2' 48\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 06\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 3' 28\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 36\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "nat": "AUS",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": "+ 4' 09\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 12,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "48h 10' 38\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 33\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 2' 03\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 30\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 2' 50\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 12\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 3' 40\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 42\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "nat": "AUS",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": "+ 4' 15\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 13,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "52h 15' 17\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 33\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 2' 03\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 30\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 2' 50\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 12\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 3' 34\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 3' 40\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 42\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "nat": "AUS",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": "+ 4' 15\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 14,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "56h 08' 41\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 2' 26\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 50\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 3' 03\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 43\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 22\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4' 46\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 5' 22\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 5' 41\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 6' 13\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 15,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "59h 12' 56\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 2' 26\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 2' 50\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 3' 03\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 3' 43\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "nat": "ITA",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 4' 22\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 4' 46\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 5' 22\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 5' 41\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 6' 13\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 16,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "62h 10' 26\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 4' 03\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 4' 27\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 5' 00\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 5' 40\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 7' 09\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 7' 14\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 7' 57\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 9' 20\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 9' 44\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 17,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "66h 57' 14\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 4' 03\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 4' 27\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 5' 00\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 5' 40\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 7' 09\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 7' 14\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 7' 57\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "nat": "ITA",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 8' 34\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 9' 20\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 18,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "70h 44' 04\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 4' 03\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 4' 27\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 5' 00\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 5' 40\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 7' 09\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 7' 14\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 7' 57\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "nat": "ITA",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 8' 34\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Ben O'Connor",
+        "nat": "AUS",
+        "team": "Team Jayco–AlUla",
+        "time": "+ 9' 20\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 19,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "75h 13' 16\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 4' 03\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 5' 04\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 5' 33\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 6' 31\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 7' 26\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 7' 50\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 8' 29\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "nat": "ITA",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 9' 01\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 11' 19\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 20,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "80h 17' 01\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 5' 22\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 6' 25\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 7' 02\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 7' 56\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 9' 39\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 10' 13\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 10' 52\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "nat": "ITA",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 11' 24\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 12' 54\"",
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 21,
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "nat": "DEN",
+        "team": "Visma–Lease a Bike",
+        "time": "83h 22' 51\"",
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "nat": "AUT",
+        "team": "Decathlon CMA CGM",
+        "time": "+ 5' 22\"",
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "nat": "AUS",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": "+ 6' 25\"",
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "nat": "NED",
+        "team": "Netcompany INEOS",
+        "time": "+ 7' 02\"",
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "nat": "CAN",
+        "team": "Lidl–Trek",
+        "time": "+ 7' 56\"",
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "nat": "POR",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 9' 39\"",
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "nat": "AUS",
+        "team": "Tudor Pro Cycling Team",
+        "time": "+ 10' 13\"",
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "nat": "ITA",
+        "team": "Visma–Lease a Bike",
+        "time": "+ 10' 52\"",
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "nat": "ITA",
+        "team": "Team Bahrain Victorious",
+        "time": "+ 11' 24\"",
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "nat": "COL",
+        "team": "Netcompany INEOS",
+        "time": "+ 12' 54\"",
+        "points": null
+       }
+      ]
+     }
+    ],
+    "v": 2
+   },
+   "stages": [
+    {
+     "num": 1,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-08",
+     "from": "Nesebar",
+     "to": "Burgas",
+     "fromCountry": "Bulgaria",
+     "toCountry": "Bulgaria",
+     "km": 147,
+     "start": "2026-05-08T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      27.7167,
+      42.6608
+     ],
+     "toLoc": [
+      27.4721,
+      42.4937
+     ]
+    },
+    {
+     "num": 2,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-09",
+     "from": "Burgas",
+     "to": "Veliko Tarnovo",
+     "fromCountry": "Bulgaria",
+     "toCountry": "Bulgaria",
+     "km": 221,
+     "start": "2026-05-09T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      27.4721,
+      42.4937
+     ],
+     "toLoc": [
+      25.6321,
+      43.0821
+     ]
+    },
+    {
+     "num": 3,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-10",
+     "from": "Plovdiv",
+     "to": "Sofia",
+     "fromCountry": "Bulgaria",
+     "toCountry": "Bulgaria",
+     "km": 175,
+     "start": "2026-05-10T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      24.7499,
+      42.1419
+     ],
+     "toLoc": [
+      23.3217,
+      42.6977
+     ]
+    },
+    {
+     "num": null,
+     "type": "Rest day",
+     "rest": true,
+     "date": "2026-05-11",
+     "from": "",
+     "to": "",
+     "km": null,
+     "start": "2026-05-11T10:00:00.000Z",
+     "approx": true
+    },
+    {
+     "num": 4,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-12",
+     "from": "Catanzaro",
+     "to": "Cosenza",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 138,
+     "start": "2026-05-12T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      16.4316,
+      38.83
+     ],
+     "toLoc": [
+      16.3331,
+      39.5967
+     ]
+    },
+    {
+     "num": 5,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-13",
+     "from": "Praia a Mare",
+     "to": "Potenza",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 203,
+     "start": "2026-05-13T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      15.7793,
+      39.9009
+     ],
+     "toLoc": [
+      15.8216,
+      40.5173
+     ]
+    },
+    {
+     "num": 6,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-14",
+     "from": "Paestum",
+     "to": "Naples",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 142,
+     "start": "2026-05-14T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      15.0149,
+      40.4217
+     ],
+     "toLoc": [
+      14.2488,
+      40.8359
+     ]
+    },
+    {
+     "num": 7,
+     "type": "Mountain",
+     "rest": false,
+     "date": "2026-05-15",
+     "from": "Formia",
+     "to": "Blockhaus",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 244,
+     "start": "2026-05-15T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.608,
+      41.2593
+     ],
+     "toLoc": [
+      14.1138,
+      42.1488
+     ]
+    },
+    {
+     "num": 8,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-16",
+     "from": "Chieti",
+     "to": "Fermo",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 156,
+     "start": "2026-05-16T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      14.4159,
+      42.1027
+     ],
+     "toLoc": [
+      13.6388,
+      43.0922
+     ]
+    },
+    {
+     "num": 9,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-17",
+     "from": "Cervia",
+     "to": "Corno alle Scale",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 184,
+     "start": "2026-05-17T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.3495,
+      44.261
+     ],
+     "toLoc": [
+      10.8302,
+      44.1195
+     ]
+    },
+    {
+     "num": null,
+     "type": "Rest day",
+     "rest": true,
+     "date": "2026-05-18",
+     "from": "",
+     "to": "",
+     "km": null,
+     "start": "2026-05-18T10:00:00.000Z",
+     "approx": true
+    },
+    {
+     "num": 10,
+     "type": "Individual time trial",
+     "rest": false,
+     "date": "2026-05-19",
+     "from": "Viareggio",
+     "to": "Massa",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 42,
+     "start": "2026-05-19T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      10.2506,
+      43.8672
+     ],
+     "toLoc": [
+      10.1396,
+      44.0359
+     ]
+    },
+    {
+     "num": 11,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-20",
+     "from": "Porcari",
+     "to": "Chiavari",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 195,
+     "start": "2026-05-20T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      10.6164,
+      43.8401
+     ],
+     "toLoc": [
+      9.3245,
+      44.3176
+     ]
+    },
+    {
+     "num": 12,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-21",
+     "from": "Imperia",
+     "to": "Novi Ligure",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 175,
+     "start": "2026-05-21T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      7.8667,
+      43.9584
+     ],
+     "toLoc": [
+      8.7896,
+      44.7608
+     ]
+    },
+    {
+     "num": 13,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-22",
+     "from": "Alessandria",
+     "to": "Verbania",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 189,
+     "start": "2026-05-22T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      8.745,
+      44.835
+     ],
+     "toLoc": [
+      8.558,
+      45.9344
+     ]
+    },
+    {
+     "num": 14,
+     "type": "Mountain",
+     "rest": false,
+     "date": "2026-05-23",
+     "from": "Aosta",
+     "to": "Pila",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 133,
+     "start": "2026-05-23T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      7.3204,
+      45.7373
+     ],
+     "toLoc": [
+      8.0811,
+      45.7699
+     ]
+    },
+    {
+     "num": 15,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-24",
+     "from": "Voghera",
+     "to": "Milan",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 157,
+     "start": "2026-05-24T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.0087,
+      44.9927
+     ],
+     "toLoc": [
+      9.1896,
+      45.4642
+     ]
+    },
+    {
+     "num": null,
+     "type": "Rest day",
+     "rest": true,
+     "date": "2026-05-25",
+     "from": "",
+     "to": "",
+     "km": null,
+     "start": "2026-05-25T10:00:00.000Z",
+     "approx": true
+    },
+    {
+     "num": 16,
+     "type": "Mountain",
+     "rest": false,
+     "date": "2026-05-26",
+     "from": "Bellinzona",
+     "to": "Carì",
+     "fromCountry": "Switzerland",
+     "toCountry": "Switzerland",
+     "km": 113,
+     "start": "2026-05-26T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.0206,
+      46.1921
+     ],
+     "toLoc": [
+      8.8212,
+      46.4933
+     ]
+    },
+    {
+     "num": 17,
+     "type": "Hilly",
+     "rest": false,
+     "date": "2026-05-27",
+     "from": "Cassano d'Adda",
+     "to": "Andalo",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 202,
+     "start": "2026-05-27T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.5215,
+      45.5263
+     ],
+     "toLoc": [
+      11.0076,
+      46.1617
+     ]
+    },
+    {
+     "num": 18,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-28",
+     "from": "Fai della Paganella",
+     "to": "Pieve di Soligo",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 171,
+     "start": "2026-05-28T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      11.0689,
+      46.1793
+     ],
+     "toLoc": [
+      12.1788,
+      45.9021
+     ]
+    },
+    {
+     "num": 19,
+     "type": "Mountain",
+     "rest": false,
+     "date": "2026-05-29",
+     "from": "Feltre",
+     "to": "Alleghe",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 151,
+     "start": "2026-05-29T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      11.9324,
+      46.0464
+     ],
+     "toLoc": [
+      12.0437,
+      46.4056
+     ]
+    },
+    {
+     "num": 20,
+     "type": "Mountain",
+     "rest": false,
+     "date": "2026-05-30",
+     "from": "Gemona del Friuli",
+     "to": "Piancavallo",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 200,
+     "start": "2026-05-30T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.1401,
+      46.277
+     ],
+     "toLoc": [
+      12.5191,
+      46.1093
+     ]
+    },
+    {
+     "num": 21,
+     "type": "Flat",
+     "rest": false,
+     "date": "2026-05-31",
+     "from": "Rome",
+     "to": "Rome",
+     "fromCountry": null,
+     "toCountry": null,
+     "km": 131,
+     "start": "2026-05-31T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.4829,
+      41.8933
+     ],
+     "toLoc": [
+      12.4829,
+      41.8933
+     ]
+    }
+   ],
+   "rankings": {
+    "final": true,
+    "stage": 21,
+    "source": "Wikipedia",
+    "gc": [
+     {
+      "pos": 1,
+      "rider": "Jonas Vingegaard",
+      "team": "Visma–Lease a Bike",
+      "time": "83h 22' 51\"",
+      "gap": null,
+      "gapS": 0,
+      "points": null
+     },
+     {
+      "pos": 2,
+      "rider": "Felix Gall",
+      "team": "Decathlon CMA CGM",
+      "time": null,
+      "gap": "+5' 22\"",
+      "gapS": 322,
+      "points": null
+     },
+     {
+      "pos": 3,
+      "rider": "Jai Hindley",
+      "team": "Red Bull–Bora–Hansgrohe",
+      "time": null,
+      "gap": "+6' 25\"",
+      "gapS": 385,
+      "points": null
+     },
+     {
+      "pos": 4,
+      "rider": "Thymen Arensman",
+      "team": "Netcompany INEOS",
+      "time": null,
+      "gap": "+7' 02\"",
+      "gapS": 422,
+      "points": null
+     },
+     {
+      "pos": 5,
+      "rider": "Derek Gee-West",
+      "team": "Lidl–Trek",
+      "time": null,
+      "gap": "+7' 56\"",
+      "gapS": 476,
+      "points": null
+     },
+     {
+      "pos": 6,
+      "rider": "Afonso Eulálio",
+      "team": "Team Bahrain Victorious",
+      "time": null,
+      "gap": "+9' 39\"",
+      "gapS": 579,
+      "points": null
+     },
+     {
+      "pos": 7,
+      "rider": "Michael Storer",
+      "team": "Tudor Pro Cycling Team",
+      "time": null,
+      "gap": "+10' 13\"",
+      "gapS": 613,
+      "points": null
+     },
+     {
+      "pos": 8,
+      "rider": "Davide Piganzoli",
+      "team": "Visma–Lease a Bike",
+      "time": null,
+      "gap": "+10' 52\"",
+      "gapS": 652,
+      "points": null
+     },
+     {
+      "pos": 9,
+      "rider": "Damiano Caruso",
+      "team": "Team Bahrain Victorious",
+      "time": null,
+      "gap": "+11' 24\"",
+      "gapS": 684,
+      "points": null
+     },
+     {
+      "pos": 10,
+      "rider": "Egan Bernal",
+      "team": "Netcompany INEOS",
+      "time": null,
+      "gap": "+12' 54\"",
+      "gapS": 774,
+      "points": null
+     }
+    ],
+    "points": [
+     {
+      "pos": 1,
+      "rider": "Paul Magnier",
+      "team": "Soudal–Quick-Step",
+      "time": "",
+      "gap": null,
+      "gapS": 0,
+      "points": 200
+     },
+     {
+      "pos": 2,
+      "rider": "Jonathan Milan",
+      "team": "Lidl–Trek",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 153
+     },
+     {
+      "pos": 3,
+      "rider": "Guillermo Thomas Silva",
+      "team": "XDS Astana Team",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 99
+     },
+     {
+      "pos": 4,
+      "rider": "Andreas Leknessund",
+      "team": "Uno-X Mobility",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 87
+     },
+     {
+      "pos": 5,
+      "rider": "Jonas Vingegaard",
+      "team": "Visma–Lease a Bike",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 81
+     },
+     {
+      "pos": 6,
+      "rider": "Jasper Stuyven",
+      "team": "Soudal–Quick-Step",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 75
+     },
+     {
+      "pos": 7,
+      "rider": "Mattia Bais",
+      "team": "Team Polti VisitMalta",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 74
+     },
+     {
+      "pos": 8,
+      "rider": "Giulio Ciccone",
+      "team": "Lidl–Trek",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 69
+     },
+     {
+      "pos": 9,
+      "rider": "Felix Gall",
+      "team": "Decathlon CMA CGM",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 67
+     },
+     {
+      "pos": 10,
+      "rider": "Manuele Tarozzi",
+      "team": "Bardiani–CSF 7 Saber",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 66
+     }
+    ],
+    "mountains": [
+     {
+      "pos": 1,
+      "rider": "Giulio Ciccone",
+      "team": "Lidl–Trek",
+      "time": "",
+      "gap": null,
+      "gapS": 0,
+      "points": 277
+     },
+     {
+      "pos": 2,
+      "rider": "Jonas Vingegaard",
+      "team": "Visma–Lease a Bike",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 266
+     },
+     {
+      "pos": 3,
+      "rider": "Einer Rubio",
+      "team": "Movistar Team",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 164
+     },
+     {
+      "pos": 4,
+      "rider": "Felix Gall",
+      "team": "Decathlon CMA CGM",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 124
+     },
+     {
+      "pos": 5,
+      "rider": "Jardi Christiaan van der Lee",
+      "team": "EF Education–EasyPost",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 108
+     },
+     {
+      "pos": 6,
+      "rider": "Jai Hindley",
+      "team": "Red Bull–Bora–Hansgrohe",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 65
+     },
+     {
+      "pos": 7,
+      "rider": "Diego Pablo Sevilla",
+      "team": "Team Polti VisitMalta",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 63
+     },
+     {
+      "pos": 8,
+      "rider": "Igor Arrieta",
+      "team": "UAE Team Emirates XRG",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 55
+     },
+     {
+      "pos": 9,
+      "rider": "Derek Gee-West",
+      "team": "Lidl–Trek",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 54
+     },
+     {
+      "pos": 10,
+      "rider": "Jack Haig",
+      "team": "Netcompany INEOS",
+      "time": null,
+      "gap": null,
+      "gapS": null,
+      "points": 40
+     }
+    ],
+    "youth": [
+     {
+      "pos": 1,
+      "rider": "Afonso Eulálio",
+      "team": "Team Bahrain Victorious",
+      "time": "83h 32' 30\"",
+      "gap": null,
+      "gapS": 0,
+      "points": null
+     },
+     {
+      "pos": 2,
+      "rider": "Davide Piganzoli",
+      "team": "Visma–Lease a Bike",
+      "time": null,
+      "gap": "+1' 13\"",
+      "gapS": 73,
+      "points": null
+     },
+     {
+      "pos": 3,
+      "rider": "Mathys Rondel",
+      "team": "Tudor Pro Cycling Team",
+      "time": null,
+      "gap": "+5' 33\"",
+      "gapS": 333,
+      "points": null
+     },
+     {
+      "pos": 4,
+      "rider": "Johannes Kulset",
+      "team": "Uno-X Mobility",
+      "time": null,
+      "gap": "+24' 47\"",
+      "gapS": 1487,
+      "points": null
+     },
+     {
+      "pos": 5,
+      "rider": "Igor Arrieta",
+      "team": "UAE Team Emirates XRG",
+      "time": null,
+      "gap": "+46' 11\"",
+      "gapS": 2771,
+      "points": null
+     },
+     {
+      "pos": 6,
+      "rider": "Giulio Pellizzari",
+      "team": "Red Bull–Bora–Hansgrohe",
+      "time": null,
+      "gap": "+48' 37\"",
+      "gapS": 2917,
+      "points": null
+     },
+     {
+      "pos": 7,
+      "rider": "Embret Svestad-Bårdseng",
+      "team": "Netcompany INEOS",
+      "time": null,
+      "gap": "+1h 04' 00\"",
+      "gapS": 3840,
+      "points": null
+     },
+     {
+      "pos": 8,
+      "rider": "Ludovico Crescioli",
+      "team": "Team Polti VisitMalta",
+      "time": null,
+      "gap": "+1h 13' 18\"",
+      "gapS": 4398,
+      "points": null
+     },
+     {
+      "pos": 9,
+      "rider": "Gianmarco Garofoli",
+      "team": "Soudal–Quick-Step",
+      "time": null,
+      "gap": "+1h 29' 24\"",
+      "gapS": 5364,
+      "points": null
+     },
+     {
+      "pos": 10,
+      "rider": "Johannes Staune-Mittet",
+      "team": "Decathlon CMA CGM",
+      "time": null,
+      "gap": "+1h 44' 42\"",
+      "gapS": 6282,
+      "points": null
+     }
+    ],
+    "history": [
+     {
+      "stage": 1,
+      "winner": {
+       "pos": 1,
+       "rider": "Paul Magnier",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Paul Magnier",
+        "team": "Soudal–Quick-Step",
+        "time": "3h 20' 58\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Tobias Lund Andresen",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Manuele Tarozzi",
+        "team": "Bardiani–CSF 7 Saber",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Ethan Vernon",
+        "team": "NSN Cycling Team",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Diego Pablo Sevilla",
+        "team": "Team Polti VisitMalta",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "António Morgado",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+8\"",
+        "gapS": 8,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jonathan Milan",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Madis Mihkels",
+        "team": "EF Education–EasyPost",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giovanni Lonardi",
+        "team": "Team Polti VisitMalta",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Pascal Ackermann",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 2,
+      "winner": {
+       "pos": 1,
+       "rider": "Guillermo Thomas Silva",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Guillermo Thomas Silva",
+        "team": "XDS Astana Team",
+        "time": "9h 00' 23\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Florian Stork",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jan Christen",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Johannes Kulset",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Martin Tjøtta",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Lennert Van Eetvelt",
+        "team": "Lotto–Intermarché",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Darren Rafferty",
+        "team": "EF Education–EasyPost",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 3,
+      "winner": {
+       "pos": 1,
+       "rider": "Paul Magnier",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Guillermo Thomas Silva",
+        "team": "XDS Astana Team",
+        "time": "13h 10' 05\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Florian Stork",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jan Christen",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Martin Tjøtta",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Johannes Kulset",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Enric Mas",
+        "team": "Movistar Team",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Lennert Van Eetvelt",
+        "team": "Lotto–Intermarché",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 4,
+      "winner": {
+       "pos": 1,
+       "rider": "Jhonatan Narváez",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": "16h 18' 51\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jan Christen",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Florian Stork",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4\"",
+        "gapS": 4,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+6\"",
+        "gapS": 6,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Lennert Van Eetvelt",
+        "team": "Lotto–Intermarché",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Enric Mas",
+        "team": "Movistar Team",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Markel Beloki",
+        "team": "EF Education–EasyPost",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Jan Hirt",
+        "team": "NSN Cycling Team",
+        "time": null,
+        "gap": "+10\"",
+        "gapS": 10,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 5,
+      "winner": {
+       "pos": 1,
+       "rider": "Igor Arrieta",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "21h 27' 43\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Igor Arrieta",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+2' 51\"",
+        "gapS": 171,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Christian Scaroni",
+        "team": "XDS Astana Team",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Andrea Raccagni Noviero",
+        "team": "Soudal–Quick-Step",
+        "time": null,
+        "gap": "+3' 39\"",
+        "gapS": 219,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Johannes Kulset",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+5' 17\"",
+        "gapS": 317,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+6' 12\"",
+        "gapS": 372,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jan Christen",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Florian Stork",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6' 18\"",
+        "gapS": 378,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 6,
+      "winner": {
+       "pos": 1,
+       "rider": "Davide Ballerini",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "24h 47' 13\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Igor Arrieta",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+2' 51\"",
+        "gapS": 171,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Christian Scaroni",
+        "team": "XDS Astana Team",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Andrea Raccagni Noviero",
+        "team": "Soudal–Quick-Step",
+        "time": null,
+        "gap": "+3' 39\"",
+        "gapS": 219,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Johannes Kulset",
+        "team": "Uno-X Mobility",
+        "time": null,
+        "gap": "+5' 17\"",
+        "gapS": 317,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+6' 12\"",
+        "gapS": 372,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Jan Christen",
+        "team": "UAE Team Emirates XRG",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Florian Stork",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6' 16\"",
+        "gapS": 376,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+6' 18\"",
+        "gapS": 378,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 7,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonas Vingegaard",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "30h 59' 23\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+3' 17\"",
+        "gapS": 197,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 25\"",
+        "gapS": 265,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 28\"",
+        "gapS": 268,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+4' 32\"",
+        "gapS": 272,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Mathys Rondel",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 56\"",
+        "gapS": 296,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Giulio Ciccone",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+4' 57\"",
+        "gapS": 297,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+5' 07\"",
+        "gapS": 307,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+5' 11\"",
+        "gapS": 311,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 8,
+      "winner": {
+       "pos": 1,
+       "rider": "Jhonatan Narváez",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "34h 28' 42\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+3' 15\"",
+        "gapS": 195,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Christian Scaroni",
+        "team": "XDS Astana Team",
+        "time": null,
+        "gap": "+4' 18\"",
+        "gapS": 258,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 23\"",
+        "gapS": 263,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 28\"",
+        "gapS": 268,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+4' 32\"",
+        "gapS": 272,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Mathys Rondel",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 56\"",
+        "gapS": 296,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+5' 07\"",
+        "gapS": 307,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+5' 11\"",
+        "gapS": 311,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 9,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonas Vingegaard",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "38h 49' 44\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+2' 24\"",
+        "gapS": 144,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 59\"",
+        "gapS": 179,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 32\"",
+        "gapS": 272,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Christian Scaroni",
+        "team": "XDS Astana Team",
+        "time": null,
+        "gap": "+4' 43\"",
+        "gapS": 283,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+5' 00\"",
+        "gapS": 300,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Mathys Rondel",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+5' 01\"",
+        "gapS": 301,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+5' 03\"",
+        "gapS": 303,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+5' 15\"",
+        "gapS": 315,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+5' 20\"",
+        "gapS": 320,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 10,
+      "winner": {
+       "pos": 1,
+       "rider": "Filippo Ganna",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "39h 40' 34\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+27\"",
+        "gapS": 27,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+1' 57\"",
+        "gapS": 117,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 24\"",
+        "gapS": 144,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+2' 48\"",
+        "gapS": 168,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 06\"",
+        "gapS": 186,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+3' 28\"",
+        "gapS": 208,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 36\"",
+        "gapS": 216,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Markel Beloki",
+        "team": "EF Education–EasyPost",
+        "time": null,
+        "gap": "+4' 16\"",
+        "gapS": 256,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 11,
+      "winner": {
+       "pos": 1,
+       "rider": "Jhonatan Narváez",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "44h 17' 41\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+27\"",
+        "gapS": 27,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+1' 57\"",
+        "gapS": 117,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 24\"",
+        "gapS": 144,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+2' 48\"",
+        "gapS": 168,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 06\"",
+        "gapS": 186,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+3' 28\"",
+        "gapS": 208,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 36\"",
+        "gapS": 216,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 09\"",
+        "gapS": 249,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 12,
+      "winner": {
+       "pos": 1,
+       "rider": "Alec Segaert",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "48h 10' 38\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+33\"",
+        "gapS": 33,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+2' 03\"",
+        "gapS": 123,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 30\"",
+        "gapS": 150,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+2' 50\"",
+        "gapS": 170,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 12\"",
+        "gapS": 192,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+3' 40\"",
+        "gapS": 220,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 42\"",
+        "gapS": 222,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 15\"",
+        "gapS": 255,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 13,
+      "winner": {
+       "pos": 1,
+       "rider": "Alberto Bettiol",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": "52h 15' 17\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+33\"",
+        "gapS": 33,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+2' 03\"",
+        "gapS": 123,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 30\"",
+        "gapS": 150,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+2' 50\"",
+        "gapS": 170,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 12\"",
+        "gapS": 192,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+3' 34\"",
+        "gapS": 214,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+3' 40\"",
+        "gapS": 220,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 42\"",
+        "gapS": 222,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Chris Harper",
+        "team": "Pinarello–Q36.5 Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 15\"",
+        "gapS": 255,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 14,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonas Vingegaard",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "56h 08' 41\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+2' 26\"",
+        "gapS": 146,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 50\"",
+        "gapS": 170,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+3' 03\"",
+        "gapS": 183,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 43\"",
+        "gapS": 223,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 22\"",
+        "gapS": 262,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 46\"",
+        "gapS": 286,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+5' 22\"",
+        "gapS": 322,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+5' 41\"",
+        "gapS": 341,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+6' 13\"",
+        "gapS": 373,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 15,
+      "winner": {
+       "pos": 1,
+       "rider": "Fredrik Dversnes",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "59h 12' 56\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+2' 26\"",
+        "gapS": 146,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+2' 50\"",
+        "gapS": 170,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+3' 03\"",
+        "gapS": 183,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+3' 43\"",
+        "gapS": 223,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Giulio Pellizzari",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+4' 22\"",
+        "gapS": 262,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+4' 46\"",
+        "gapS": 286,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+5' 22\"",
+        "gapS": 322,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+5' 41\"",
+        "gapS": 341,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+6' 13\"",
+        "gapS": 373,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 16,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonas Vingegaard",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "62h 10' 26\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+4' 03\"",
+        "gapS": 243,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4' 27\"",
+        "gapS": 267,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+5' 00\"",
+        "gapS": 300,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+5' 40\"",
+        "gapS": 340,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+7' 09\"",
+        "gapS": 429,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+7' 14\"",
+        "gapS": 434,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+7' 57\"",
+        "gapS": 477,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+9' 20\"",
+        "gapS": 560,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+9' 44\"",
+        "gapS": 584,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 17,
+      "winner": {
+       "pos": 1,
+       "rider": "Michael Valgren",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "66h 57' 14\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+4' 03\"",
+        "gapS": 243,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4' 27\"",
+        "gapS": 267,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+5' 00\"",
+        "gapS": 300,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+5' 40\"",
+        "gapS": 340,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+7' 09\"",
+        "gapS": 429,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+7' 14\"",
+        "gapS": 434,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+7' 57\"",
+        "gapS": 477,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+8' 34\"",
+        "gapS": 514,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+9' 20\"",
+        "gapS": 560,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 18,
+      "winner": {
+       "pos": 1,
+       "rider": "Paul Magnier",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "70h 44' 04\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+4' 03\"",
+        "gapS": 243,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+4' 27\"",
+        "gapS": 267,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+5' 00\"",
+        "gapS": 300,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+5' 40\"",
+        "gapS": 340,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+7' 09\"",
+        "gapS": 429,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+7' 14\"",
+        "gapS": 434,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+7' 57\"",
+        "gapS": 477,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+8' 34\"",
+        "gapS": 514,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Ben O'Connor",
+        "team": "Team Jayco–AlUla",
+        "time": null,
+        "gap": "+9' 20\"",
+        "gapS": 560,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 19,
+      "winner": {
+       "pos": 1,
+       "rider": "Sepp Kuss",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "75h 13' 16\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+4' 03\"",
+        "gapS": 243,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+5' 04\"",
+        "gapS": 304,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+5' 33\"",
+        "gapS": 333,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+6' 31\"",
+        "gapS": 391,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+7' 26\"",
+        "gapS": 446,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+7' 50\"",
+        "gapS": 470,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+8' 29\"",
+        "gapS": 509,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+9' 01\"",
+        "gapS": 541,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+11' 19\"",
+        "gapS": 679,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 20,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonas Vingegaard",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "80h 17' 01\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+5' 22\"",
+        "gapS": 322,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+6' 25\"",
+        "gapS": 385,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+7' 02\"",
+        "gapS": 422,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+7' 56\"",
+        "gapS": 476,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+9' 39\"",
+        "gapS": 579,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+10' 13\"",
+        "gapS": 613,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+10' 52\"",
+        "gapS": 652,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+11' 24\"",
+        "gapS": 684,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+12' 54\"",
+        "gapS": 774,
+        "points": null
+       }
+      ]
+     },
+     {
+      "stage": 21,
+      "winner": {
+       "pos": 1,
+       "rider": "Jonathan Milan",
+       "team": "",
+       "time": null,
+       "gap": null,
+       "gapS": 0,
+       "points": null
+      },
+      "gc": [
+       {
+        "pos": 1,
+        "rider": "Jonas Vingegaard",
+        "team": "Visma–Lease a Bike",
+        "time": "83h 22' 51\"",
+        "gap": null,
+        "gapS": 0,
+        "points": null
+       },
+       {
+        "pos": 2,
+        "rider": "Felix Gall",
+        "team": "Decathlon CMA CGM",
+        "time": null,
+        "gap": "+5' 22\"",
+        "gapS": 322,
+        "points": null
+       },
+       {
+        "pos": 3,
+        "rider": "Jai Hindley",
+        "team": "Red Bull–Bora–Hansgrohe",
+        "time": null,
+        "gap": "+6' 25\"",
+        "gapS": 385,
+        "points": null
+       },
+       {
+        "pos": 4,
+        "rider": "Thymen Arensman",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+7' 02\"",
+        "gapS": 422,
+        "points": null
+       },
+       {
+        "pos": 5,
+        "rider": "Derek Gee-West",
+        "team": "Lidl–Trek",
+        "time": null,
+        "gap": "+7' 56\"",
+        "gapS": 476,
+        "points": null
+       },
+       {
+        "pos": 6,
+        "rider": "Afonso Eulálio",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+9' 39\"",
+        "gapS": 579,
+        "points": null
+       },
+       {
+        "pos": 7,
+        "rider": "Michael Storer",
+        "team": "Tudor Pro Cycling Team",
+        "time": null,
+        "gap": "+10' 13\"",
+        "gapS": 613,
+        "points": null
+       },
+       {
+        "pos": 8,
+        "rider": "Davide Piganzoli",
+        "team": "Visma–Lease a Bike",
+        "time": null,
+        "gap": "+10' 52\"",
+        "gapS": 652,
+        "points": null
+       },
+       {
+        "pos": 9,
+        "rider": "Damiano Caruso",
+        "team": "Team Bahrain Victorious",
+        "time": null,
+        "gap": "+11' 24\"",
+        "gapS": 684,
+        "points": null
+       },
+       {
+        "pos": 10,
+        "rider": "Egan Bernal",
+        "team": "Netcompany INEOS",
+        "time": null,
+        "gap": "+12' 54\"",
+        "gapS": 774,
+        "points": null
+       }
+      ]
+     }
+    ]
+   },
+   "podium": [
+    {
+     "pos": 1,
+     "rider": "Jonas Vingegaard",
+     "team": "Visma–Lease a Bike",
+     "time": null,
+     "gap": null
+    },
+    {
+     "pos": 2,
+     "rider": "Felix Gall",
+     "team": "Decathlon CMA CGM",
+     "time": null,
+     "gap": null
+    },
+    {
+     "pos": 3,
+     "rider": "Jai Hindley",
+     "team": "Red Bull–Bora–Hansgrohe",
+     "time": null,
+     "gap": null
+    }
+   ],
    "winner": "Jonas Vingegaard"
   },
   {
@@ -54036,10 +59766,391 @@
    ],
    "site": "https://www.giroditalia.it/en",
    "org": "rcs",
-   "start": "2027-05-08T10:30:00.000Z",
+   "start": "2027-05-08T11:00:00.000Z",
    "end": "2027-05-30T15:00:00.000Z",
    "approx": true,
    "source": "giroditalia.it",
+   "stages": [
+    {
+     "num": 1,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-08",
+     "from": "Trieste",
+     "to": "Trieste",
+     "km": 172,
+     "start": "2027-05-08T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.7773,
+      45.6496
+     ],
+     "toLoc": [
+      13.7773,
+      45.6496
+     ]
+    },
+    {
+     "num": 2,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-09",
+     "from": "Ljubljana",
+     "to": "Koper",
+     "km": 166,
+     "start": "2027-05-09T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      14.4966,
+      46.0467
+     ],
+     "toLoc": [
+      13.7305,
+      45.548
+     ]
+    },
+    {
+     "num": 3,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-10",
+     "from": "Cervignano del Friuli",
+     "to": "Possagno",
+     "km": 163,
+     "start": "2027-05-10T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.3324,
+      45.8301
+     ],
+     "toLoc": [
+      11.8601,
+      45.871
+     ]
+    },
+    {
+     "num": 4,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-11",
+     "from": "Argenta",
+     "to": "Misano Adriatico (Autodromo Marco Simoncelli)",
+     "km": 151,
+     "start": "2027-05-11T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      11.8367,
+      44.6144
+     ]
+    },
+    {
+     "num": 5,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-12",
+     "from": "Filottrano",
+     "to": "Sarnano-Sassotetto",
+     "km": 139,
+     "start": "2027-05-12T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.3484,
+      43.4345
+     ],
+     "toLoc": [
+      13.2945,
+      43.0291
+     ]
+    },
+    {
+     "num": 6,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-13",
+     "from": "Alba Adriatica",
+     "to": "Lanciano",
+     "km": 148,
+     "start": "2027-05-13T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.9278,
+      42.8343
+     ],
+     "toLoc": [
+      14.3908,
+      42.2305
+     ]
+    },
+    {
+     "num": 7,
+     "type": "Crono",
+     "rest": false,
+     "date": "2027-05-14",
+     "from": "Sulmona",
+     "to": "Campo di Giove TUDOR ITT",
+     "km": 19.6,
+     "start": "2027-05-14T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.927,
+      42.0474
+     ]
+    },
+    {
+     "num": 8,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-15",
+     "from": "Trasacco",
+     "to": "Napoli",
+     "km": 219,
+     "start": "2027-05-15T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.5401,
+      41.9424
+     ],
+     "toLoc": [
+      14.2488,
+      40.8359
+     ]
+    },
+    {
+     "num": 9,
+     "type": "Montagna",
+     "rest": false,
+     "date": "2027-05-16",
+     "from": "Itri",
+     "to": "Subiaco-Monte Livata",
+     "km": 180,
+     "start": "2027-05-16T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      13.5304,
+      41.2911
+     ]
+    },
+    {
+     "num": 10,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-18",
+     "from": "Palombara Sabina",
+     "to": "Norcia",
+     "km": 218,
+     "start": "2027-05-18T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.7658,
+      42.0666
+     ],
+     "toLoc": [
+      13.0929,
+      42.7924
+     ]
+    },
+    {
+     "num": 11,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-19",
+     "from": "Gualdo Tadino",
+     "to": "Scarperia (Autodromo del Mugello)",
+     "km": 220,
+     "start": "2027-05-19T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.781,
+      43.2317
+     ],
+     "toLoc": [
+      11.3667,
+      43.9956
+     ]
+    },
+    {
+     "num": 12,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-20",
+     "from": "Montecatini Terme",
+     "to": "Zeri (Loc. Passo due Santi)",
+     "km": 173,
+     "start": "2027-05-20T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      10.771,
+      43.8832
+     ]
+    },
+    {
+     "num": 13,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-21",
+     "from": "Borgo Val di Taro",
+     "to": "Reggio Emilia",
+     "km": 176,
+     "start": "2027-05-21T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.7658,
+      44.4871
+     ],
+     "toLoc": [
+      10.5941,
+      44.6087
+     ]
+    },
+    {
+     "num": 14,
+     "type": "Montagna",
+     "rest": false,
+     "date": "2027-05-22",
+     "from": "Cantù Arena",
+     "to": "Piani di Bobbio/Valtorta",
+     "km": 187,
+     "start": "2027-05-22T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.1164,
+      45.7365
+     ],
+     "toLoc": [
+      9.4642,
+      45.9553
+     ]
+    },
+    {
+     "num": 15,
+     "type": "Crono",
+     "rest": false,
+     "date": "2027-05-23",
+     "from": "Monza (Autodromo Nazionale)",
+     "to": "Milano TUDOR ITT",
+     "km": 37.3,
+     "start": "2027-05-23T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.2826,
+      45.6191
+     ]
+    },
+    {
+     "num": 16,
+     "type": "Montagna",
+     "rest": false,
+     "date": "2027-05-25",
+     "from": "Sondrio",
+     "to": "Aprica",
+     "km": 192,
+     "start": "2027-05-25T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      10.2584,
+      46.3234
+     ],
+     "toLoc": [
+      10.1471,
+      46.1268
+     ]
+    },
+    {
+     "num": 17,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-26",
+     "from": "Chiari",
+     "to": "Vo'",
+     "km": 194,
+     "start": "2027-05-26T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      9.9288,
+      45.5365
+     ],
+     "toLoc": [
+      11.6433,
+      45.3279
+     ]
+    },
+    {
+     "num": 18,
+     "type": "Montagna",
+     "rest": false,
+     "date": "2027-05-27",
+     "from": "Rovereto",
+     "to": "Madonna di Campiglio",
+     "km": 154,
+     "start": "2027-05-27T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      11.0452,
+      45.8865
+     ],
+     "toLoc": [
+      10.827,
+      46.227
+     ]
+    },
+    {
+     "num": 19,
+     "type": "Collinare",
+     "rest": false,
+     "date": "2027-05-28",
+     "from": "Rovereto",
+     "to": "Sacile",
+     "km": 199,
+     "start": "2027-05-28T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      11.0452,
+      45.8865
+     ],
+     "toLoc": [
+      12.5034,
+      45.9548
+     ]
+    },
+    {
+     "num": 20,
+     "type": "Montagna",
+     "rest": false,
+     "date": "2027-05-29",
+     "from": "Pordenone",
+     "to": "Monte Zoncolan",
+     "km": 180,
+     "start": "2027-05-29T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.6597,
+      45.9563
+     ],
+     "toLoc": [
+      12.9263,
+      46.5025
+     ]
+    },
+    {
+     "num": 21,
+     "type": "Pianeggiante",
+     "rest": false,
+     "date": "2027-05-30",
+     "from": "Roma",
+     "to": "Roma",
+     "km": 131,
+     "start": "2027-05-30T10:30:00.000Z",
+     "approx": true,
+     "fromLoc": [
+      12.4829,
+      41.8933
+     ],
+     "toLoc": [
+      12.4829,
+      41.8933
+     ]
+    }
+   ],
    "winner": null
   },
   {
