@@ -3,14 +3,14 @@
 //   with votes, share reporting and the race calls.
 // - Open America: the states' own official counts (22 states publish a readable feed),
 //   shown next to civicAPI's numbers; it never calls races.
-import { RESULTS_WINDOW } from '../core/elections';
+import { RESULTS_WINDOW, STATE_NAME } from '../core/elections';
 
 const CIVIC = 'https://civicapi.org/api/v2';
 const OA = 'https://openamerica.io/elections/results.json';
 
 export type Side = 'D' | 'R' | 'I' | 'O';
 export interface LiveCand { name: string; party: Side; votes: number; pct: number; winner: boolean; inc: boolean }
-export interface LiveRace { id: number; office: 'senate' | 'governor' | 'house' | 'measure'; st: string; district: number | null; name: string; reporting: number; cands: LiveCand[]; winner: Side | null; winnerName: string | null }
+export interface LiveRace { id: number; office: 'senate' | 'governor' | 'house' | 'measure' | 'other'; kind?: string; st: string; district: number | null; name: string; reporting: number; cands: LiveCand[]; winner: Side | null; winnerName: string | null }
 export interface OfficialRace { leader: string; pctIn: number; total: number; cands: { n: string; p: string; v: number; pct: number }[] }
 export interface LiveData {
   fetched: number;
@@ -20,14 +20,14 @@ export interface LiveData {
 
 const sideOf = (party: string): Side => (/Democrat|DFL/i.test(party) ? 'D' : /Republican|GOP/i.test(party) ? 'R' : /Independent/i.test(party) ? 'I' : 'O');
 
-interface CivicRace { id: number; type: string; province: string; election_name: string; election_type: string; percent_reporting: number; candidates?: { name: string; party: string; votes: number; percent: number; winner: boolean; incumbent?: boolean }[] }
+interface CivicRace { id: number; type: string; province: string; district?: string | null; election_name: string; election_type: string; percent_reporting: number; candidates?: { name: string; party: string; votes: number; percent: number; winner: boolean; incumbent?: boolean }[] }
 
 function toLive(r: CivicRace, office: LiveRace['office']): LiveRace {
   const cands = (r.candidates ?? []).map(c => ({ name: c.name, party: office === 'measure' ? (/^yes/i.test(c.name) ? 'D' : 'R') as Side : sideOf(c.party), votes: c.votes, pct: c.percent, winner: c.winner, inc: !!c.incumbent }))
     .sort((a, b) => b.votes - a.votes);
   const w = cands.find(c => c.winner);
   const district = office === 'house' ? Number(r.election_name.match(/US House (\d+)/)?.[1] ?? 0) || 0 : null;
-  return { id: r.id, office, st: r.province, district, name: r.election_name, reporting: r.percent_reporting ?? 0, cands, winner: w ? w.party : null, winnerName: w?.name ?? null };
+  return { id: r.id, office, kind: r.type, st: r.province, district, name: r.election_name, reporting: r.percent_reporting ?? 0, cands, winner: w ? w.party : null, winnerName: w?.name ?? null };
 }
 
 async function search(query: string, date: string, offset = 0, limit = 500): Promise<CivicRace[]> {
@@ -93,19 +93,90 @@ export async function loadLive(now = Date.now()): Promise<LiveData | null> {
     return { senate: sen?.races ?? {}, house: hou?.races ?? {}, governor: gov?.races ?? {}, asOf: hou?.asOf ?? sen?.asOf ?? null, live: Boolean(sen?.live || hou?.live) };
   });
   if (!senate && !house) throw new Error('civicAPI unavailable');
-  return { fetched: now, senate: senate ?? [], governor: governor ?? [], house: house ?? [], measures: measures ?? [], official: official ?? { senate: {}, house: {}, governor: {}, asOf: null, live: false } };
+  const out: LiveData = { fetched: now, senate: senate ?? [], governor: governor ?? [], house: house ?? [], measures: measures ?? [], official: official ?? { senate: {}, house: {}, governor: {}, asOf: null, live: false } };
+  if (!replay2024()) recordNight(out);
+  return out;
 }
 
+export interface CountyResult { name: string; fips: string | null; reporting: number; cands: LiveCand[] }
+
 /** Race detail with results by county, for the state map (on demand). */
-export async function raceCounties(id: number): Promise<Record<string, { name: string; reporting: number; cands: LiveCand[] }>> {
+export async function raceCounties(id: number): Promise<Record<string, CountyResult>> {
+  return (await raceDetail(id)).counties;
+}
+
+/** One race in full: candidates with incumbents, county results, when the count last moved. */
+export async function raceDetail(id: number): Promise<{ updated: string | null; pollsClose: string | null; counties: Record<string, CountyResult> }> {
   const res = await fetch(`${CIVIC}/race/${id}`);
   if (!res.ok) throw new Error(`civicAPI ${res.status}`);
   const j = await res.json();
-  const out: Record<string, { name: string; reporting: number; cands: LiveCand[] }> = {};
-  for (const [k, v] of Object.entries<{ name: string; percent_reporting: number; candidates: { name: string; party: string; votes: number; percent: number; winner: boolean }[] }>(j.region_results ?? {})) {
-    out[k] = { name: v.name, reporting: v.percent_reporting, cands: v.candidates.map(c => ({ name: c.name, party: sideOf(c.party), votes: c.votes, pct: c.percent, winner: c.winner, inc: false })) };
+  const counties: Record<string, CountyResult> = {};
+  for (const [k, v] of Object.entries<{ name: string; fips?: string; percent_reporting: number; candidates: { name: string; party: string; votes: number; percent: number; winner: boolean }[] }>(j.region_results ?? {})) {
+    counties[k] = { name: v.name, fips: v.fips ?? null, reporting: v.percent_reporting, cands: v.candidates.map(c => ({ name: c.name, party: sideOf(c.party), votes: c.votes, pct: c.percent, winner: c.winner, inc: false })) };
   }
-  return out;
+  return { updated: j.last_updated ?? null, pollsClose: j.polls_close ?? null, counties };
+}
+
+const officeOf = (r: CivicRace): LiveRace['office'] =>
+  /US Senate/.test(r.election_name) ? 'senate' : r.type === 'Governor' ? 'governor' : r.type === 'House of Representatives' ? 'house' : r.type === 'Referendum' ? 'measure' : 'other';
+
+const stateCache: Record<string, { at: number; v: LiveRace[] }> = {};
+/** Every statewide and federal race of one state (no local races), for the States screen; kept a minute. */
+export async function stateRaces(st: string, now = Date.now()): Promise<LiveRace[]> {
+  const c = stateCache[st];
+  if (c && now - c.at < 55e3) return c.v;
+  const day = replay2024() ? '2024-11-05' : '2026-11-03';
+  const all: CivicRace[] = [];
+  for (let off = 0; off < 2000; off += 500) {
+    const page = await search(STATE_NAME[st], day, off);
+    all.push(...page);
+    if (page.length < 500) break;
+    await sleep(400);
+  }
+  const v = all.filter(r => r.province === st && (r.election_type === 'Statewide' || r.election_type === 'General'))
+    .map(r => toLive(r, officeOf(r)));
+  stateCache[st] = { at: now, v };
+  return v;
+}
+
+// ---------- the night, remembered in this browser ----------
+// civicAPI gives the calls but not when they came, so the app notes them as it sees them,
+// with the seat count after each update and every Senate and governor race's margin.
+
+export interface NightCall { t: number; id: number; office: LiveRace['office']; st: string; district: number | null; winner: Side; name: string }
+export interface NightLog { calls: NightCall[]; seats: { t: number; s: [number, number]; h: [number, number]; g: [number, number] }[]; races: Record<number, [number, number, number][]> }
+const NIGHT_KEY = 'obs-elez-night-2026';
+
+export function nightLog(): NightLog {
+  try { const j = JSON.parse(localStorage.getItem(NIGHT_KEY) ?? 'null'); if (j?.calls) return j; } catch { /* no storage */ }
+  return { calls: [], seats: [], races: {} };
+}
+
+/** Democratic lead in points among the two front-runners (independents on the Democratic side). */
+export function demLead(r: { cands: LiveCand[] }): number | null {
+  const d = r.cands.find(c => c.party === 'D') ?? r.cands.find(c => c.party === 'I'), g = r.cands.find(c => c.party === 'R');
+  if (!d && !g) return null;
+  return (d?.pct ?? 0) - (g?.pct ?? 0);
+}
+
+export function recordNight(l: LiveData) {
+  if (typeof localStorage === 'undefined') return;
+  const log = nightLog();
+  const known = new Set(log.calls.map(c => c.id));
+  for (const r of [...l.senate, ...l.governor, ...l.house]) {
+    if (r.winner && r.winnerName && !known.has(r.id)) log.calls.push({ t: l.fetched, id: r.id, office: r.office, st: r.st, district: r.district, winner: r.winner, name: r.winnerName });
+  }
+  const t = (x: LiveRace[]) => { const k = tally(x); return [k.D + k.I, k.R] as [number, number]; };
+  const snap = { t: l.fetched, s: t(l.senate), h: t(l.house), g: t(l.governor) };
+  const last = log.seats[log.seats.length - 1];
+  if (!last || JSON.stringify([last.s, last.h, last.g]) !== JSON.stringify([snap.s, snap.h, snap.g])) log.seats.push(snap);
+  for (const r of [...l.senate, ...l.governor]) {
+    const m = demLead(r);
+    if (m == null || r.reporting <= 0) continue;
+    const h = (log.races[r.id] ??= []), p = h[h.length - 1];
+    if (!p || p[2] !== r.reporting || Math.abs(p[1] - m) >= 0.05) h.push([l.fetched, Math.round(m * 10) / 10, r.reporting]);
+  }
+  try { localStorage.setItem(NIGHT_KEY, JSON.stringify(log)); } catch { /* full or blocked: the screens just show less */ }
 }
 
 /** Seats won so far by each side (called races only). */

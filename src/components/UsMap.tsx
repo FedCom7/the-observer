@@ -57,7 +57,7 @@ export function UsMap({ cells, selected, onPick, legend }: { cells: Record<strin
 }
 
 type CountyRow = { name: string; reporting: number; cands: LiveCand[] };
-const norm = (s: string) => s.toLowerCase().replace(/county|parish|borough|census area|city and borough|municipality/g, '').replace(/[^a-z]/g, '');
+export const norm = (s: string) => s.toLowerCase().replace(/county|parish|borough|census area|city and borough|municipality/g, '').replace(/[^a-z]/g, '');
 
 /** One state's counties, colored by the leader's margin in the results. */
 export function CountyMap({ st, rows }: { st: string; rows: Record<string, CountyRow> }) {
@@ -93,6 +93,44 @@ export function CountyMap({ st, rows }: { st: string; rows: Record<string, Count
         <div className="tip obs" style={{ position: 'absolute', left: Math.min(hover.x + 12, W - 220), top: Math.max(0, hover.y - 10) }}>
           <b>{hover.name}</b>
           {hover.row ? <>{hover.row.cands.slice(0, 3).map(c => <div key={c.name}>{c.name} {c.pct.toFixed(1)}%</div>)}<div className="k">{Math.round(hover.row.reporting)}% reporting</div></> : <div>No results yet</div>}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/** One state's counties, each colored and described by the caller (by county FIPS and name). */
+export function CountyChoropleth({ st, fill, tip, legend }: { st: string; fill: (fips: string, name: string) => string; tip: (fips: string, name: string) => ReactNode; legend?: ReactNode }) {
+  const [ref, W] = useWidth<HTMLDivElement>();
+  const [geo, setGeo] = useState<GeoJSON.Feature[] | null>(null);
+  const [hover, setHover] = useState<{ fips: string; name: string; x: number; y: number } | null>(null);
+  useEffect(() => {
+    let on = true;
+    setGeo(null);
+    import('us-atlas/counties-albers-10m.json').then(m => {
+      const t = (m.default ?? m) as unknown as Topology<{ counties: GeometryCollection<{ name: string }> }>;
+      if (on) setGeo(feature(t, t.objects.counties).features.filter(f => String(f.id).startsWith(FIPS[st])));
+    });
+    return () => { on = false; };
+  }, [st]);
+  const H = Math.round(W * 0.62);
+  const path = useMemo(() => (geo?.length ? geoPath(geoIdentity().fitSize([W, H], { type: 'FeatureCollection', features: geo })) : null), [geo, W, H]);
+  if (!geo || !path) return <div ref={ref} className="ochart" style={{ height: 200 }}><p className="dek">Loading the county map…</p></div>;
+  return (
+    <div ref={ref} className="ochart" style={{ position: 'relative' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label={`Counties of ${STATE_NAME[st]}`}>
+        {geo.map(f => {
+          const fips = String(f.id), name = (f.properties as { name: string }).name;
+          return <path key={fips} d={path(f) ?? ''} fill={fill(fips, name)} stroke={hover?.fips === fips ? 'var(--o-ink)' : 'var(--o-card)'} strokeWidth={hover?.fips === fips ? 1.5 : 0.6}
+            onPointerMove={ev => { const bx = (ev.currentTarget.ownerSVGElement!.parentElement as HTMLDivElement).getBoundingClientRect(); setHover({ fips, name, x: ev.clientX - bx.left, y: ev.clientY - bx.top }); }}
+            onPointerLeave={() => setHover(null)} />;
+        })}
+      </svg>
+      {legend}
+      {hover && (
+        <div className="tip obs" style={{ position: 'absolute', left: Math.min(hover.x + 12, W - 230), top: Math.max(0, hover.y - 10), pointerEvents: 'none' }}>
+          <b>{hover.name}</b>
+          {tip(hover.fips, hover.name)}
         </div>
       )}
     </div>

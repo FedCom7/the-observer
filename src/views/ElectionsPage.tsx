@@ -4,6 +4,8 @@ import { ElectionNight, hasResults, inResultsWindow, isElectionNight, joinLive }
 import { CountyMap, UsMap, marginFill, type StateCell } from '../components/UsMap';
 import { Score } from '../components/common';
 import { Hero, Row } from '../components/sheet';
+import { ScreenTabs, useTab } from '../components/tabs';
+import { ChamberScreen, ELEZ_TABS, HouseScreen, MeasuresScreen, NightScreen, StatesScreen } from './ElectionsScreens';
 import {
   CLOSINGS, FIRST_CLOSE, HOUSE_MAJORITY, HOUSE_SEATS, STATE_NAME, fmtMargin, pct, ratingOf, scoreOf,
   type Chamber, type ElectionData, type ModelRace, type PollAverage,
@@ -18,14 +20,28 @@ const OFFICE_LABEL: Record<Office, string> = { senate: 'Senate', governor: 'Gove
 /** US elections: forecasts and polls before the vote, live results on the night, polls and the calendar the rest of the time. */
 export function ElectionsPage() {
   const { now, events, elections: e, live } = useData();
+  const [tab, setTab] = useTab(ELEZ_TABS);
   if (!e) return <Hero id="elez" dek="Loading forecasts and polls…" />;
   const eday = Date.parse(e.electionDay);
   const results = inResultsWindow(now) || hasResults(live) || (liveForced() && Boolean(live));
   const preseason = !results && eday > now && eday - now < 150 * DAY;
   const upcoming = events.filter(x => x.passion === 'elez' && x.start > now);
+  if (tab !== 'now') return (
+    <>
+      {results ? <NightHero e={e} live={live} now={now} /> : <PreHero e={e} now={now} preseason={preseason} />}
+      <ScreenTabs tabs={ELEZ_TABS} tab={tab} set={setTab} label="Election screens" />
+      {tab === 'senate' ? <ChamberScreen e={e} live={live} now={now} office="senate" />
+        : tab === 'governors' ? <ChamberScreen e={e} live={live} now={now} office="governor" />
+        : tab === 'house' ? <HouseScreen e={e} live={live} now={now} />
+        : tab === 'states' ? <StatesScreen e={e} live={live} now={now} />
+        : tab === 'night' ? <NightScreen e={e} live={live} now={now} />
+        : <MeasuresScreen live={live} />}
+    </>
+  );
   return (
     <>
       {results ? <NightHero e={e} live={live} now={now} /> : <PreHero e={e} now={now} preseason={preseason} />}
+      <ScreenTabs tabs={ELEZ_TABS} tab={tab} set={setTab} label="Election screens" />
       {results && live && <Results e={e} live={live} now={now} />}
       {(preseason || results) && e.model && <Forecast e={e} live={results ? live : undefined} />}
       <Polls e={e} />

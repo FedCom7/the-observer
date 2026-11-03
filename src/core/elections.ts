@@ -42,6 +42,21 @@ export const ELECTION_NIGHT = { from: Date.parse('2026-11-03T12:00:00+01:00'), t
 /** Results stay on the page for a month after the vote, while the last races are counted. */
 export const RESULTS_WINDOW = { from: ELECTION_NIGHT.from, to: Date.parse('2026-12-05T00:00:00+01:00') };
 
+/** The party holding each seat on the ballot before the vote (open seats included), to spot the flips. */
+export const SENATE_HELD: Record<string, 'D' | 'R'> = Object.fromEntries([
+  ...'AL AK AR ID IA KS KY LA ME MS MT NE NC OK SC SD TN TX WV WY OH FL'.split(' ').map(s => [s, 'R']),
+  ...'CO DE GA IL MA MI MN NH NJ NM OR RI VA'.split(' ').map(s => [s, 'D']),
+]);
+export const GOV_HELD: Record<string, 'D' | 'R'> = Object.fromEntries([
+  ...'AL AK AR FL GA ID IA NE NV NH OH OK SC SD TN TX VT WY'.split(' ').map(s => [s, 'R']),
+  ...'AZ CA CO CT HI IL KS ME MD MA MI MN NM NY OR PA RI WI'.split(' ').map(s => [s, 'D']),
+]);
+/** Governors not on the ballot this year, by party. */
+export const GOV_NOT_UP: Record<string, 'D' | 'R'> = Object.fromEntries([
+  ...'VA NJ KY NC WA DE'.split(' ').map(s => [s, 'D']),
+  ...'LA MS IN MO MT ND UT WV'.split(' ').map(s => [s, 'R']),
+]);
+
 export const fmtMargin = (m: number) => (Math.abs(m) < 0.05 ? 'Even' : `${m >= 0 ? 'D' : 'R'}+${Math.abs(Math.round(m * 10) / 10)}`);
 export const pct = (p: number) => `${Math.round(p * 100)}%`;
 
