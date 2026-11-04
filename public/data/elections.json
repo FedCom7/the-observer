@@ -1,13 +1,13 @@
 {
  "cycle": 2026,
  "electionDay": "2026-11-03T11:00:00.000Z",
- "updated": "2026-11-04T01:54:03.971Z",
+ "updated": "2026-11-04T03:01:17.590Z",
  "status": {
   "onpoint-model": "ok",
   "onpoint-polls": "ok",
   "silver-bulletin": "ok",
-  "calendar": "ok",
-  "civicapi-ratings": "ok"
+  "civicapi-ratings": "ok",
+  "calendar": "ok"
  },
  "senate": {
   "current": {
@@ -16349,159 +16349,118 @@
   },
   "senate": {
    "AK": {
-    "insideelections": "Tossup",
-    "splitticket": "Lean D"
+    "cook": "Tossup"
    },
    "AL": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "AR": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "CO": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "DE": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "FL": {
-    "insideelections": "Likely R",
-    "splitticket": "Likely R"
+    "cook": "Likely R"
    },
    "GA": {
-    "insideelections": "Likely D",
-    "splitticket": "Safe D"
+    "cook": "Likely D"
    },
    "IA": {
-    "insideelections": "Tossup",
-    "splitticket": "Tossup"
+    "cook": "Tossup"
    },
    "ID": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "IL": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "KS": {
-    "insideelections": "Tossup",
-    "splitticket": "Lean D"
+    "cook": "Tossup"
    },
    "KY": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "LA": {
-    "insideelections": "Likely R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "MA": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "ME": {
-    "insideelections": "Tossup",
-    "splitticket": "Lean D"
+    "cook": "Tossup"
    },
    "MI": {
-    "insideelections": "Tilt D",
-    "splitticket": "Likely D"
+    "cook": "Lean D"
    },
    "MN": {
-    "insideelections": "Lean D",
-    "splitticket": "Likely D"
+    "cook": "Lean D"
    },
    "MS": {
-    "insideelections": "Likely R",
-    "splitticket": "Likely R"
+    "cook": "Likely R"
    },
    "MT": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "NC": {
-    "insideelections": "Lean D",
-    "splitticket": "Safe D"
+    "cook": "Likely D"
    },
    "NE": {
-    "insideelections": "Tilt R",
-    "splitticket": "Lean R"
+    "cook": "Lean R"
    },
    "NH": {
-    "insideelections": "Tilt D",
-    "splitticket": "Safe D"
+    "cook": "Lean D"
    },
    "NJ": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "NM": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "OH": {
-    "insideelections": "Tilt D",
-    "splitticket": "Lean D"
+    "cook": "Tossup"
    },
    "OK": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "OR": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "RI": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "SC": {
-    "insideelections": "Tilt R",
-    "splitticket": "Lean R"
+    "cook": "Lean R"
    },
    "SD": {
-    "insideelections": "Safe R",
-    "splitticket": "Likely R"
+    "cook": "Safe R"
    },
    "TN": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "TX": {
-    "insideelections": "Tilt D",
-    "splitticket": "Likely D"
+    "cook": "Tossup"
    },
    "VA": {
-    "insideelections": "Safe D",
-    "splitticket": "Safe D"
+    "cook": "Safe D"
    },
    "WV": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    },
    "WY": {
-    "insideelections": "Safe R",
-    "splitticket": "Safe R"
+    "cook": "Safe R"
    }
   },
   "governor": {},
   "totals": {
    "senate": {
-    "insideelections": {
-     "democrat": 61,
+    "cook": {
+     "democrat": 59,
      "republican": 60,
-     "tossup": 4,
-     "independent": 0
-    },
-    "splitticket": {
-     "democrat": 64,
-     "republican": 60,
-     "tossup": 1,
+     "tossup": 6,
      "independent": 0
     }
    },
