@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-03T23:17:31.174Z",
- "llAt": "2026-11-03T23:17:31.174Z",
+ "updated": "2026-11-04T01:53:53.969Z",
+ "llAt": "2026-11-04T01:53:53.969Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2409,7 +2409,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-03T17:50:33.961Z",
+  "at": "2026-11-04T01:53:41.529Z",
   "stats": {
    "total": 743,
    "successes": 728,
@@ -2419,7 +2419,7 @@
    "landingAttempts": 716,
    "landingStreak": 37,
    "dragonReturns": 63,
-   "pending": 134
+   "pending": 137
   },
   "year": 2026,
   "yearCount": 124,
@@ -3246,11 +3246,11 @@
    },
    {
     "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
-    "name": "USSF-xxx (\"R-5\")",
+    "name": "USSF-627",
     "rocket": "Falcon 9",
     "net": "2026-11-10T03:03:00Z",
-    "status": "TBC",
-    "tbc": true,
+    "status": "Go",
+    "tbc": false,
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
     "orbit": "LEO",
@@ -3260,11 +3260,11 @@
    },
    {
     "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
-    "name": "USSF-xxx (\"R-6\")",
+    "name": "USSF-317",
     "rocket": "Falcon 9",
     "net": "2026-11-13T04:23:00Z",
-    "status": "TBC",
-    "tbc": true,
+    "status": "Go",
+    "tbc": false,
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
     "orbit": "LEO",
@@ -3530,56 +3530,104 @@
  },
  "news": [
   {
-   "title": "Crew Keeps Up Spacewalk Preps, Research, and Cargo Operations",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-03T18:22:21.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/03/crew-keeps-up-spacewalk-preps-research-and-cargo-operations/"
+   "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
+   "source": "NASA · Artemis",
+   "time": "2026-10-29T02:49:59.000Z",
+   "url": "https://www.nasa.gov/centers-and-facilities/jpl/caltech-names-artemis-ii-commander-reid-wiseman-as-nasa-jpl-deputy/"
   },
   {
-   "title": "Week Starts with Spacewalk Preps and Life Science",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-02T19:14:48.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/02/week-starts-with-spacewalk-preps-and-life-science/"
+   "title": "Artemis III SLS Core Stage Joins Boosters at Kennedy",
+   "source": "NASA · Artemis",
+   "time": "2026-10-28T18:59:44.000Z",
+   "url": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/"
   },
   {
-   "title": "Space Crops and Advanced Tech Wrap Up Week Following Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-30T17:50:49.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/30/space-crops-and-advanced-tech-wrap-up-week-following-spacewalk/"
+   "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
+   "source": "NASA · Artemis",
+   "time": "2026-10-26T17:13:44.000Z",
+   "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-moon-landing-simulation-experience-in-california/"
   },
   {
-   "title": "Spacewalkers Install Roll-Out Solar Array for Power Generation",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-29T19:17:00.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/spacewalkers-install-roll-out-solar-arrays-for-power-generation/"
+   "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+   "source": "NASA · Artemis",
+   "time": "2026-10-23T22:39:39.000Z",
+   "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/"
   },
   {
-   "title": "Astronauts Begin Spacewalk to Install Roll-Out Solar Arrays",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-29T12:02:14.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/astronauts-begin-spacewalk-to-install-roll-out-solar-arrays-2/"
+   "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+   "source": "NASA · Artemis",
+   "time": "2026-10-23T22:37:53.000Z",
+   "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/"
   },
   {
-   "title": "Astronauts Suit Up to Prepare for Power Upgrade Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-29T10:32:26.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/astronauts-suit-up-to-prepare-for-power-upgrade-spacewalk/"
+   "title": "NASA Provides Progress Update on Moon Base Rovers",
+   "source": "NASA · Artemis",
+   "time": "2026-10-20T15:00:10.000Z",
+   "url": "https://www.nasa.gov/missions/moon-base/nasa-provides-progress-update-on-moon-base-rovers/"
   },
   {
-   "title": "Astronauts Are Go For Thursday’s Power Upgrade Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-28T16:30:27.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/28/astronauts-are-go-for-thursdays-power-upgrade-spacewalk/"
+   "title": "Artemis II Heat Shield After Splashdown",
+   "source": "NASA · Artemis",
+   "time": "2026-10-16T16:28:01.000Z",
+   "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/"
   },
   {
-   "title": "Spacewalk Preps, Robotics Jobs, and Science Duties Fill Tuesday Schedule",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-27T19:14:28.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/27/spacewalk-preps-robotics-jobs-and-science-duties-fill-tuesday-schedule/"
+   "title": "I Am Artemis: Allison Mjoen",
+   "source": "NASA · Artemis",
+   "time": "2026-10-16T14:24:29.000Z",
+   "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Dragon Splashes Down at 11:34 a.m. EDT",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-08T15:36:11.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/08/nasas-spacex-crew-12-dragon-splashes-down-at-1134-a-m-edt/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12: SpaceX Dragon Completes Deorbit Burn",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-08T14:56:24.000Z",
+   "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/08/nasas-spacex-crew-12-spacex-dragon-completes-deorbit-burn/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Prepares for Deorbit Burn",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-08T14:21:19.000Z",
+   "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/08/nasas-spacex-crew-12-prepares-for-deorbit-burn/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Closes Dragon Hatch, Preps for Departure",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-07T10:21:00.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-closes-dragon-hatch-preps-for-departure/"
+  },
+  {
+   "title": "NASA’s SpaceX Crew-12 Saying Farewell, Closing Dragon Hatch Soon",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-07T10:01:13.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
+  },
+  {
+   "title": "Crew-12 Ready to Depart as New Residents Begin Advanced Health Research",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-06T17:57:55.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/06/crew-12-ready-to-depart-as-new-residents-begin-advanced-health-research/"
+  },
+  {
+   "title": "NASA, SpaceX Set No Earlier Than Oct. 7 for Crew-12 Departure",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-03T19:19:36.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/03/nasa-spacex-set-no-earlier-than-oct-7-for-crew-12-departure/"
+  },
+  {
+   "title": "Crew-13 Members Enter Station, Join Expedition 75",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-02T02:01:55.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/crew-13-members-enter-station-join-expedition-75/"
   }
  ],
  "corps": {
-  "at": "2026-11-03T17:50:43.018Z",
+  "at": "2026-11-04T01:53:49.161Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -3740,12 +3788,156 @@
     "candidate": true
    }
   ],
-  "training": [],
-  "news": [],
+  "training": [
+   {
+    "topic": "Jets",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 4
+   },
+   {
+    "topic": "Survival",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 4
+   },
+   {
+    "topic": "Spacewalks",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 4
+   },
+   {
+    "topic": "Station systems",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 3
+   },
+   {
+    "topic": "Robotics",
+    "last": "2026-03-19T13:00:00.000Z",
+    "title": "Meet the Platypi: NASA’s Newest Astronaut Candidate Class",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/meet-the-platypi-nasas-newest-astronaut-candidate-class/",
+    "count": 3
+   },
+   {
+    "topic": "Russian",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 1
+   },
+   {
+    "topic": "Geology",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 4
+   },
+   {
+    "topic": "Artemis",
+    "last": "2026-09-14T15:00:00.000Z",
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "count": 3
+   }
+  ],
+  "news": [
+   {
+    "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+    "time": "2026-09-14T15:00:00.000Z",
+    "excerpt": "Did you spend part of your summer camping, hiking, at the pool, or in an aircraft? So did NASA’s 2025 Astronaut Candidate Class. The 10 candidates have been working their way through a comprehensive and rigorous training program since the agency introduced the",
+    "tags": [
+     "Jets",
+     "Survival",
+     "Spacewalks",
+     "Station systems",
+     "Russian",
+     "Geology",
+     "Artemis"
+    ],
+    "who": [
+     "Lauren Edgar",
+     "Adam Fuhrmann",
+     "Cameron Jones",
+     "Yuri Kubo",
+     "Rebecca Lawler",
+     "Anna Menon",
+     "Imelda Muller"
+    ]
+   },
+   {
+    "title": "Meet the Platypi: NASA’s Newest Astronaut Candidate Class",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/meet-the-platypi-nasas-newest-astronaut-candidate-class/",
+    "time": "2026-03-19T13:00:00.000Z",
+    "excerpt": "Ten explorers are currently training at NASA’s Johnson Space Center in Houston to become flight-eligible astronauts. Selected in 2025, the astronaut candidates are building the technical and operational skills needed for future missions to the International Sp",
+    "tags": [
+     "Jets",
+     "Survival",
+     "Spacewalks",
+     "Station systems",
+     "Robotics",
+     "Geology"
+    ],
+    "who": [
+     "Lauren Edgar",
+     "Yuri Kubo",
+     "Anna Menon",
+     "Imelda Muller"
+    ]
+   },
+   {
+    "title": "NASA’s 2025 Astronaut Candidates: Shaping Artemis Exploration",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/nasas-2025-astronaut-candidates-shaping-artemis-exploration/",
+    "time": "2025-11-24T20:00:00.000Z",
+    "excerpt": "When NASA’s 2025 astronaut candidates arrived at the agency’s Johnson Space Center in Houston this fall, they stepped into history, sharing a common mission to master the skills and teamwork that define NASA’s next era of exploration. Selected from a pool of m",
+    "tags": [
+     "Jets",
+     "Survival",
+     "Spacewalks",
+     "Robotics",
+     "Geology",
+     "Artemis"
+    ],
+    "who": [
+     "Ben Bailey",
+     "Lauren Edgar",
+     "Adam Fuhrmann",
+     "Cameron Jones",
+     "Yuri Kubo",
+     "Rebecca Lawler",
+     "Anna Menon",
+     "Imelda Muller",
+     "Erin Overcash",
+     "Katherine Spies"
+    ]
+   },
+   {
+    "title": "Astronaut Candidates Get to Work at Johnson Space Center",
+    "url": "https://www.nasa.gov/centers-and-facilities/johnson/astronaut-candidates-get-to-work-at-johnson-space-center/",
+    "time": "2025-09-29T15:08:41.000Z",
+    "excerpt": "NASA announced its newest class of astronaut candidates on Sept. 22, 2025, at the agency’s Johnson Space Center in Houston. After the welcome ceremony, the 10 highly qualified individuals rolled up their sleeves and prepared for the next step in their journey ",
+    "tags": [
+     "Jets",
+     "Survival",
+     "Spacewalks",
+     "Station systems",
+     "Robotics",
+     "Geology",
+     "Artemis"
+    ],
+    "who": []
+   }
+  ],
   "next": null
  },
  "artemisFlow": {
-  "at": "2026-11-03T17:50:48.900Z",
+  "at": "2026-11-04T01:53:53.968Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -3808,60 +4000,60 @@
     "lane": "rocket",
     "label": "Processing begins at Kennedy",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "done",
+    "date": "2025-08-18T15:46:48.000Z",
+    "title": "NASA Begins Processing Artemis III Moon Rocket at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2025/08/18/nasa-begins-processing-artemis-iii-moon-rocket-at-kennedy/"
    },
    {
     "id": "ml",
     "lane": "pad",
     "label": "Mobile Launcher back in the Vehicle Assembly Building",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "done",
+    "date": "2026-04-16T12:33:08.000Z",
+    "title": "NASA’s Mobile Launcher Rolls Ahead of Artemis III Preparation",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/16/nasas-mobile-launcher-rolls-ahead-of-artemis-iii-preparation/"
    },
    {
     "id": "segments",
     "lane": "rocket",
     "label": "Booster segments arrive by train",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "active",
+    "date": "2026-06-04T16:53:48.000Z",
+    "title": "Final Artemis III SLS Booster Segments En Route to NASA Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/06/04/final-artemis-iii-sls-booster-segments-en-route-to-nasa-kennedy/"
    },
    {
     "id": "core",
     "lane": "rocket",
     "label": "Core stage arrives at Kennedy",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "done",
+    "date": "2026-04-27T19:33:20.000Z",
+    "title": "NASA’s Artemis Core Stage Arrives at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/27/nasas-artemis-core-stage-arrives-at-kennedy/"
    },
    {
     "id": "engines",
     "lane": "rocket",
     "label": "RS-25 engines installed on the core stage",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "active",
+    "date": "2026-08-27T17:43:03.000Z",
+    "title": "NASA Starts Artemis III Engine Install; Boosters, Crew Training Advance",
+    "url": "https://www.nasa.gov/blogs/missions/2026/08/27/nasa-starts-artemis-iii-engine-install-boosters-crew-training-advance/"
    },
    {
     "id": "stack",
     "lane": "rocket",
     "label": "Solid rocket boosters stacked",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "done",
+    "date": "2026-10-13T18:44:03.000Z",
+    "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
+    "url": "https://www.nasa.gov/blogs/missions/2026/10/13/nasa-completes-artemis-iii-booster-stacking-shares-status-update/"
    },
    {
     "id": "corestack",
@@ -3888,10 +4080,10 @@
     "lane": "orion",
     "label": "Orion crew and service modules joined",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "done",
+    "date": "2026-08-05T17:00:56.000Z",
+    "title": "NASA Joins Artemis III Orion Modules; Rocket Hardware Update",
+    "url": "https://www.nasa.gov/blogs/missions/2026/08/05/nasa-joins-artemis-iii-orion-modules-rocket-hardware-update/"
    },
    {
     "id": "oriontest",
@@ -3998,10 +4190,10 @@
     "lane": "crew",
     "label": "Crew training",
     "note": null,
-    "status": "todo",
-    "date": null,
-    "title": null,
-    "url": null
+    "status": "active",
+    "date": "2026-08-27T17:43:03.000Z",
+    "title": "NASA Starts Artemis III Engine Install; Boosters, Crew Training Advance",
+    "url": "https://www.nasa.gov/blogs/missions/2026/08/27/nasa-starts-artemis-iii-engine-install-boosters-crew-training-advance/"
    },
    {
     "id": "ceit",
@@ -4111,9 +4303,29 @@
     "time": "2026-10-23T22:37:53.000Z"
    },
    {
+    "title": "NASA Shares Artemis Acceleration Plans for Moon Missions",
+    "url": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/",
+    "time": "2026-10-23T20:15:28.000Z"
+   },
+   {
+    "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
+    "url": "https://www.nasa.gov/blogs/missions/2026/10/13/nasa-completes-artemis-iii-booster-stacking-shares-status-update/",
+    "time": "2026-10-13T18:44:03.000Z"
+   },
+   {
+    "title": "NASA Starts Artemis III Engine Install; Boosters, Crew Training Advance",
+    "url": "https://www.nasa.gov/blogs/missions/2026/08/27/nasa-starts-artemis-iii-engine-install-boosters-crew-training-advance/",
+    "time": "2026-08-27T17:43:03.000Z"
+   },
+   {
     "title": "Pursuing a Dream of Working for NASA",
     "url": "https://www.nasa.gov/centers-and-facilities/kennedy/pursuing-a-dream-of-working-for-nasa/",
     "time": "2026-08-12T15:38:51.000Z"
+   },
+   {
+    "title": "NASA Joins Artemis III Orion Modules; Rocket Hardware Update",
+    "url": "https://www.nasa.gov/blogs/missions/2026/08/05/nasa-joins-artemis-iii-orion-modules-rocket-hardware-update/",
+    "time": "2026-08-05T17:00:56.000Z"
    },
    {
     "title": "NASA, SpaceX Advance Wind Tunnel Tests for Starship Rocket",
@@ -4121,9 +4333,29 @@
     "time": "2026-07-31T18:39:47.000Z"
    },
    {
+    "title": "NASA Taps SpaceX’s Starlink to Deliver Artemis III Imagery from Orion",
+    "url": "https://www.nasa.gov/blogs/missions/2026/07/16/nasa-taps-spacexs-starlink-to-deliver-artemis-iii-imagery-from-orion/",
+    "time": "2026-07-16T21:26:04.000Z"
+   },
+   {
     "title": "How NASA’s Artemis III Lander Test Will Pave Way for Moon Landings",
     "url": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/how-nasas-artemis-iii-lander-test-will-pave-way-for-moon-landings/",
     "time": "2026-07-15T18:50:52.000Z"
+   },
+   {
+    "title": "NASA’s Artemis III Flight Hardware Stacks Up at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/07/13/nasas-artemis-iii-flight-hardware-stacks-up-at-kennedy/",
+    "time": "2026-07-13T19:52:21.000Z"
+   },
+   {
+    "title": "Crew Works Microbiology, Advanced Tech and Congratulates New Artemis III Crew",
+    "url": "https://www.nasa.gov/blogs/spacestation/2026/06/09/crew-works-microbiology-advanced-tech-and-congratulates-new-artemis-iii-crew/",
+    "time": "2026-06-09T19:57:15.000Z"
+   },
+   {
+    "title": "Final Artemis III SLS Booster Segments En Route to NASA Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/06/04/final-artemis-iii-sls-booster-segments-en-route-to-nasa-kennedy/",
+    "time": "2026-06-04T16:53:48.000Z"
    },
    {
     "title": "NASA Outlines Preliminary Artemis III Mission Plans",
@@ -4131,9 +4363,54 @@
     "time": "2026-05-13T15:33:56.000Z"
    },
    {
+    "title": "NASA’s Artemis III Moon Rocket Hardware Arrives, Artemis II Capsule Returns to Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/28/nasas-artemis-iii-moon-rocket-hardware-arrives-artemis-ii-capsule-returns-to-kennedy/",
+    "time": "2026-04-28T20:52:59.000Z"
+   },
+   {
+    "title": "NASA’s Artemis Core Stage Arrives at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/27/nasas-artemis-core-stage-arrives-at-kennedy/",
+    "time": "2026-04-27T19:33:20.000Z"
+   },
+   {
+    "title": "NASA’s Mobile Launcher Arrives at Vehicle Assembly Building",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/17/nasas-mobile-launcher-arrives-at-vehicle-assembly-building/",
+    "time": "2026-04-17T15:59:01.000Z"
+   },
+   {
+    "title": "NASA’s Mobile Launcher Rolls Ahead of Artemis III Preparation",
+    "url": "https://www.nasa.gov/blogs/missions/2026/04/16/nasas-mobile-launcher-rolls-ahead-of-artemis-iii-preparation/",
+    "time": "2026-04-16T12:33:08.000Z"
+   },
+   {
     "title": "Experience the Rollout of SLS Hardware for Artemis III",
     "url": "https://www.nasa.gov/general/experience-the-rollout-of-sls-hardware-for-artemis-iii/",
     "time": "2026-04-07T17:52:09.000Z"
+   },
+   {
+    "title": "NASA Begins Processing Artemis III Moon Rocket at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2025/08/18/nasa-begins-processing-artemis-iii-moon-rocket-at-kennedy/",
+    "time": "2025-08-18T15:46:48.000Z"
+   },
+   {
+    "title": "NASA Marks Milestones for Artemis III Orion Spacecraft at Kennedy",
+    "url": "https://www.nasa.gov/blogs/missions/2025/05/28/nasa-marks-milestones-for-artemis-iii-orion-spacecraft-at-kennedy/",
+    "time": "2025-05-28T16:23:05.000Z"
+   },
+   {
+    "title": "NASA’s Moon Seismometer Cleared for Construction",
+    "url": "https://www.nasa.gov/blogs/missions/2025/04/21/nasas-moon-seismometer-cleared-for-construction/",
+    "time": "2025-04-21T15:29:45.000Z"
+   },
+   {
+    "title": "Orion’s Artemis III European Service Module Joined with Crew Module Adapter",
+    "url": "https://www.nasa.gov/blogs/missions/2024/09/27/orions-artemis-iii-european-service-module-joined-with-crew-module-adapter/",
+    "time": "2024-09-27T12:54:30.000Z"
+   },
+   {
+    "title": "Rocket Hardware for Future Artemis Flights Moved to Barge for Delivery to NASA’s Kennedy Space Center",
+    "url": "https://www.nasa.gov/blogs/missions/2024/08/30/rocket-hardware-for-future-artemis-flights-moved-to-barge-for-delivery-to-nasas-kennedy-space-center/",
+    "time": "2024-08-30T15:15:52.000Z"
    }
   ]
  },
