@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T03:00:26.628Z",
+ "updated": "2026-11-04T04:30:31.348Z",
  "season": 2026,
  "teams": [
   {
@@ -41986,6 +41986,15 @@
   {
    "date": "2026-10-31",
    "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "José Barrero",
+   "text": "SS José Barrero elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
    "team": 113,
    "from": null,
    "to": 113,
@@ -42004,20 +42013,11 @@
   {
    "date": "2026-10-31",
    "type": "Declared Free Agency",
-   "team": 110,
+   "team": 113,
    "from": null,
-   "to": 110,
-   "player": "Albert Suárez",
-   "text": "RHP Albert Suárez elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "José Barrero",
-   "text": "SS José Barrero elected free agency."
+   "to": 113,
+   "player": "Eugenio Suárez",
+   "text": "DH Eugenio Suárez elected free agency."
   },
   {
    "date": "2026-10-31",
@@ -42031,11 +42031,11 @@
   {
    "date": "2026-10-31",
    "type": "Declared Free Agency",
-   "team": 113,
+   "team": 110,
    "from": null,
-   "to": 113,
-   "player": "Eugenio Suárez",
-   "text": "DH Eugenio Suárez elected free agency."
+   "to": 110,
+   "player": "Albert Suárez",
+   "text": "RHP Albert Suárez elected free agency."
   },
   {
    "date": "2026-10-30",
@@ -42876,6 +42876,96 @@
   }
  ],
  "markets": {
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Sal Stewart",
+     "p": 93
+    },
+    {
+     "name": "Carson Benge",
+     "p": 8
+    },
+    {
+     "name": "Thomas White",
+     "p": 2
+    },
+    {
+     "name": "Zac Veen",
+     "p": 1
+    },
+    {
+     "name": "T.J. Rumfield",
+     "p": 1
+    },
+    {
+     "name": "Joe Mack",
+     "p": 1
+    },
+    {
+     "name": "Justin Crawford",
+     "p": 1
+    },
+    {
+     "name": "Moises Ballesteros",
+     "p": 1
+    },
+    {
+     "name": "Owen Caissie",
+     "p": 1
+    },
+    {
+     "name": "Hunter Barco",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALROTY": {
+   "label": "Pro Baseball American League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Kevin McGonigle",
+     "p": 96.5
+    },
+    {
+     "name": "Lazaro Montes",
+     "p": 4
+    },
+    {
+     "name": "Hagen Smith",
+     "p": 3
+    },
+    {
+     "name": "Kazuma Okamoto",
+     "p": 1
+    },
+    {
+     "name": "Samuel Basallo",
+     "p": 1
+    },
+    {
+     "name": "Noah Schultz",
+     "p": 1
+    },
+    {
+     "name": "Trey Yesavage",
+     "p": 1
+    },
+    {
+     "name": "Walbert Ureña",
+     "p": 1
+    },
+    {
+     "name": "Braden Montgomery",
+     "p": 1
+    },
+    {
+     "name": "Sam Antonacci",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBNLMVP": {
    "label": "Pro Baseball National League MVP",
    "rows": [
@@ -42921,96 +43011,6 @@
     }
    ]
   },
-  "KXMLBNLCY": {
-   "label": "Pro Baseball National League Cy Young",
-   "rows": [
-    {
-     "name": "Jacob Misiorowski",
-     "p": 99.5
-    },
-    {
-     "name": "Cristopher Sanchez",
-     "p": 1
-    },
-    {
-     "name": "Robbie Ray",
-     "p": 1
-    },
-    {
-     "name": "Kodai Senga",
-     "p": 1
-    },
-    {
-     "name": "Jared Jones",
-     "p": 1
-    },
-    {
-     "name": "Merrill Kelly",
-     "p": 1
-    },
-    {
-     "name": "Bubba Chandler",
-     "p": 1
-    },
-    {
-     "name": "Paul Skenes",
-     "p": 1
-    },
-    {
-     "name": "Zack Wheeler",
-     "p": 1
-    },
-    {
-     "name": "Roki Sasaki",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALCY": {
-   "label": "Pro Baseball American League Cy Young",
-   "rows": [
-    {
-     "name": "Cam Schlittler",
-     "p": 99.5
-    },
-    {
-     "name": "Pablo Lopez",
-     "p": 3
-    },
-    {
-     "name": "Luis Gil",
-     "p": 2
-    },
-    {
-     "name": "Luis Castillo",
-     "p": 1
-    },
-    {
-     "name": "Logan Gilbert",
-     "p": 1
-    },
-    {
-     "name": "Jack Flaherty",
-     "p": 1
-    },
-    {
-     "name": "Jacob Degrom",
-     "p": 1
-    },
-    {
-     "name": "George Kirby",
-     "p": 1
-    },
-    {
-     "name": "Gerrit Cole",
-     "p": 1
-    },
-    {
-     "name": "Carlos Rodon",
-     "p": 1
-    }
-   ]
-  },
   "KXMLBALMVP": {
    "label": "Pro Baseball American League MVP",
    "rows": [
@@ -43020,7 +43020,7 @@
     },
     {
      "name": "Junior Caminero",
-     "p": 2.5
+     "p": 1.5
     },
     {
      "name": "Roman Anthony",
@@ -43052,51 +43052,6 @@
     },
     {
      "name": "Aaron Judge",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Sal Stewart",
-     "p": 93.5
-    },
-    {
-     "name": "Carson Benge",
-     "p": 7
-    },
-    {
-     "name": "Thomas White",
-     "p": 2
-    },
-    {
-     "name": "Zac Veen",
-     "p": 1
-    },
-    {
-     "name": "Joe Mack",
-     "p": 1
-    },
-    {
-     "name": "Justin Crawford",
-     "p": 1
-    },
-    {
-     "name": "Moises Ballesteros",
-     "p": 1
-    },
-    {
-     "name": "Owen Caissie",
-     "p": 1
-    },
-    {
-     "name": "Hunter Barco",
-     "p": 1
-    },
-    {
-     "name": "Jaxon Wiggins",
      "p": 1
     }
    ]

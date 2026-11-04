@@ -1,13 +1,13 @@
 {
  "cycle": 2026,
  "electionDay": "2026-11-03T11:00:00.000Z",
- "updated": "2026-11-04T03:01:17.590Z",
+ "updated": "2026-11-04T04:32:28.371Z",
  "status": {
   "onpoint-model": "ok",
   "onpoint-polls": "ok",
   "silver-bulletin": "ok",
-  "civicapi-ratings": "ok",
-  "calendar": "ok"
+  "calendar": "ok",
+  "civicapi-ratings": "ok"
  },
  "senate": {
   "current": {
@@ -16349,109 +16349,249 @@
   },
   "senate": {
    "AK": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Lean D",
+    "insideelections": "Tossup",
+    "splitticket": "Lean D",
+    "ddhq": "Tossup"
    },
    "AL": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "AR": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "CO": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "DE": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "FL": {
-    "cook": "Likely R"
+    "cook": "Likely R",
+    "sabato": "Likely R",
+    "insideelections": "Likely R",
+    "splitticket": "Likely R",
+    "ddhq": "Likely R"
    },
    "GA": {
-    "cook": "Likely D"
+    "cook": "Likely D",
+    "sabato": "Likely D",
+    "insideelections": "Likely D",
+    "splitticket": "Safe D",
+    "ddhq": "Likely D"
    },
    "IA": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Tossup",
+    "insideelections": "Tossup",
+    "splitticket": "Tossup",
+    "ddhq": "Tossup"
    },
    "ID": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "IL": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "KS": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Tossup",
+    "insideelections": "Tossup",
+    "splitticket": "Lean D",
+    "ddhq": "Likely R"
    },
    "KY": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "LA": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Likely R",
+    "splitticket": "Safe R",
+    "ddhq": "Likely R"
    },
    "MA": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "ME": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Tossup",
+    "insideelections": "Tossup",
+    "splitticket": "Lean D",
+    "ddhq": "Tossup"
    },
    "MI": {
-    "cook": "Lean D"
+    "cook": "Lean D",
+    "sabato": "Lean D",
+    "insideelections": "Tilt D",
+    "splitticket": "Likely D",
+    "ddhq": "Lean D"
    },
    "MN": {
-    "cook": "Lean D"
+    "cook": "Lean D",
+    "sabato": "Lean D",
+    "insideelections": "Lean D",
+    "splitticket": "Likely D",
+    "ddhq": "Likely D"
    },
    "MS": {
-    "cook": "Likely R"
+    "cook": "Likely R",
+    "sabato": "Likely R",
+    "insideelections": "Likely R",
+    "splitticket": "Likely R",
+    "ddhq": "Likely R"
    },
    "MT": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Likely R"
    },
    "NC": {
-    "cook": "Likely D"
+    "cook": "Likely D",
+    "sabato": "Likely D",
+    "insideelections": "Lean D",
+    "splitticket": "Safe D",
+    "ddhq": "Likely D"
    },
    "NE": {
-    "cook": "Lean R"
+    "cook": "Lean R",
+    "sabato": "Lean R",
+    "insideelections": "Tilt R",
+    "splitticket": "Lean R",
+    "ddhq": "Likely R"
    },
    "NH": {
-    "cook": "Lean D"
+    "cook": "Lean D",
+    "sabato": "Likely D",
+    "insideelections": "Tilt D",
+    "splitticket": "Safe D",
+    "ddhq": "Likely D"
    },
    "NJ": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "NM": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "OH": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Tossup",
+    "insideelections": "Tilt D",
+    "splitticket": "Lean D",
+    "ddhq": "Tossup"
    },
    "OK": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "OR": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "RI": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "SC": {
-    "cook": "Lean R"
+    "cook": "Lean R",
+    "sabato": "Lean R",
+    "insideelections": "Tilt R",
+    "splitticket": "Lean R",
+    "ddhq": "Lean R"
    },
    "SD": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Likely R",
+    "ddhq": "Safe R"
    },
    "TN": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "TX": {
-    "cook": "Tossup"
+    "cook": "Tossup",
+    "sabato": "Tossup",
+    "insideelections": "Tilt D",
+    "splitticket": "Likely D",
+    "ddhq": "Tossup"
    },
    "VA": {
-    "cook": "Safe D"
+    "cook": "Safe D",
+    "sabato": "Safe D",
+    "insideelections": "Safe D",
+    "splitticket": "Safe D",
+    "ddhq": "Safe D"
    },
    "WV": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    },
    "WY": {
-    "cook": "Safe R"
+    "cook": "Safe R",
+    "sabato": "Safe R",
+    "insideelections": "Safe R",
+    "splitticket": "Safe R",
+    "ddhq": "Safe R"
    }
   },
   "governor": {},
@@ -16462,11 +16602,35 @@
      "republican": 60,
      "tossup": 6,
      "independent": 0
+    },
+    "sabato": {
+     "democrat": 60,
+     "republican": 60,
+     "tossup": 5,
+     "independent": 0
+    },
+    "insideelections": {
+     "democrat": 61,
+     "republican": 60,
+     "tossup": 4,
+     "independent": 0
+    },
+    "splitticket": {
+     "democrat": 64,
+     "republican": 60,
+     "tossup": 1,
+     "independent": 0
+    },
+    "ddhq": {
+     "democrat": 48,
+     "republican": 47,
+     "tossup": 5,
+     "independent": 0
     }
    },
    "governor": {}
   },
-  "asOf": "2026-11-03"
+  "asOf": "2026-10-04"
  },
  "calendar": [
   {
