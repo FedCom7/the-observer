@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T00:21:28.523Z",
+ "updated": "2026-11-05T07:53:41.431Z",
  "pats": {
-  "at": "2026-11-05T00:21:28.523Z",
+  "at": "2026-11-05T07:53:41.431Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -4217,37 +4217,10 @@
     "status": "Practice Squad",
     "injury": null,
     "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2025
-    },
-    "depthPos": "FS",
-    "season": {
-     "games": 1,
-     "def_tackles_solo": 2,
-     "def_pass_defended": 1
-    },
-    "snaps": [
-     {
-      "wk": 5,
-      "off": 0,
-      "def": 0.17,
-      "st": 0.66
-     },
-     {
-      "wk": 6,
-      "off": 0,
-      "def": 0,
-      "st": 0.69
-     },
-     {
-      "wk": 7,
-      "off": 0,
-      "def": 0,
-      "st": 0.71
-     }
-    ]
+    "draft": null,
+    "depthPos": null,
+    "season": null,
+    "snaps": []
    },
    {
     "espn": "5011554",
@@ -4382,8 +4355,12 @@
     "status": "Practice Squad",
     "injury": null,
     "stats": null,
-    "draft": null,
-    "depthPos": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2024
+    },
+    "depthPos": "RB",
     "season": null,
     "snaps": []
    },
@@ -4471,8 +4448,12 @@
     "status": "Practice Squad",
     "injury": null,
     "stats": null,
-    "draft": null,
-    "depthPos": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2024
+    },
+    "depthPos": "ILB",
     "season": null,
     "snaps": []
    },
@@ -4960,7 +4941,7 @@
   ]
  },
  "texas": {
-  "at": "2026-11-04T01:52:38.733Z",
+  "at": "2026-11-05T07:53:41.431Z",
   "team": "TEX",
   "sport": "cfb",
   "season": 2026,
@@ -7956,7 +7937,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-05T00:21:28.523Z",
+  "at": "2026-11-05T07:53:41.431Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9206,7 +9187,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-05T00:21:28.523Z",
+  "at": "2026-11-05T07:53:41.431Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
