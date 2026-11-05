@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T16:26:28.252Z",
+ "updated": "2026-11-05T22:39:55.839Z",
  "pats": {
-  "at": "2026-11-05T16:26:28.252Z",
+  "at": "2026-11-05T22:39:55.839Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -1455,10 +1455,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4372030.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 38,
@@ -2472,7 +2469,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4241720.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 85,
@@ -2953,7 +2953,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -4587,6 +4590,32 @@
     "state": "IL",
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4916597.png",
+    "status": "Practice Squad",
+    "injury": null,
+    "stats": null,
+    "draft": null,
+    "depthPos": null,
+    "season": null,
+    "snaps": []
+   },
+   {
+    "espn": "4036651",
+    "name": "Kindle Vildor",
+    "short": "K. Vildor",
+    "jersey": "28",
+    "group": "practiceSquad",
+    "pos": "CB",
+    "posName": "Cornerback",
+    "unit": "DB",
+    "age": 28,
+    "ht": "5' 11\"",
+    "wt": "190 lbs",
+    "exp": 7,
+    "college": "Georgia Southern",
+    "from": "College Park, GA",
+    "state": "GA",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4036651.png",
     "status": "Practice Squad",
     "injury": null,
     "stats": null,
@@ -7937,7 +7966,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-05T16:26:28.252Z",
+  "at": "2026-11-05T22:39:55.839Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9187,7 +9216,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-05T16:26:28.252Z",
+  "at": "2026-11-05T22:39:55.839Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
@@ -9346,6 +9375,29 @@
      "shotsFaced": 0,
      "goalsConceded": 0
     },
+    "xg": null
+   },
+   {
+    "espn": "407906",
+    "name": "Matteo Pittarella",
+    "short": "M. Pittarella",
+    "jersey": "37",
+    "group": "squad",
+    "pos": "G",
+    "posName": "Goalkeeper",
+    "unit": null,
+    "age": 18,
+    "ht": null,
+    "wt": null,
+    "exp": null,
+    "college": null,
+    "from": "",
+    "state": null,
+    "nation": "Italy",
+    "photo": null,
+    "status": "Active",
+    "injury": null,
+    "stats": null,
     "xg": null
    },
    {

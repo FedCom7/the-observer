@@ -1,14 +1,12 @@
 {
- "updated": "2026-11-05T16:26:28.360Z",
+ "updated": "2026-11-05T22:39:56.116Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
   "sport": "soccer",
   "league": "ita.1",
   "id": "103",
-  "status": {
-   "history": "127 seasons"
-  },
+  "status": {},
   "card": {
    "id": "103",
    "name": "AC Milan",
@@ -31,6 +29,73 @@
   },
   "stats": null,
   "competitions": [
+   {
+    "name": "UEFA Europa League",
+    "phase": "League Phase",
+    "w": 1,
+    "d": 0,
+    "l": 3,
+    "gf": 4,
+    "ga": 7,
+    "games": [
+     {
+      "date": "2026-09-16T19:00Z",
+      "opp": "Benfica",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-10-15T16:45Z",
+      "opp": "RB Salzburg",
+      "home": false,
+      "us": 4,
+      "them": 0
+     },
+     {
+      "date": "2026-10-22T19:00Z",
+      "opp": "AFC Bournemouth",
+      "home": false,
+      "us": 0,
+      "them": 3
+     },
+     {
+      "date": "2026-11-05T17:45Z",
+      "opp": "Ferencvaros",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-11-26T17:45Z",
+      "opp": "Olympiacos",
+      "home": false,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2026-12-10T20:00Z",
+      "opp": "Sunderland",
+      "home": true,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-21T20:00Z",
+      "opp": "Levski Sofia",
+      "home": false,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-28T20:00Z",
+      "opp": "Ararat-Armenia",
+      "home": true,
+      "us": null,
+      "them": null
+     }
+    ]
+   },
    {
     "name": "Italian Serie A",
     "phase": "2026-27 Italian Serie A",
@@ -302,73 +367,6 @@
      {
       "date": "2027-05-30T18:00Z",
       "opp": "Udinese",
-      "home": true,
-      "us": null,
-      "them": null
-     }
-    ]
-   },
-   {
-    "name": "UEFA Europa League",
-    "phase": "League Phase",
-    "w": 1,
-    "d": 0,
-    "l": 2,
-    "gf": 4,
-    "ga": 5,
-    "games": [
-     {
-      "date": "2026-09-16T19:00Z",
-      "opp": "Benfica",
-      "home": true,
-      "us": 0,
-      "them": 2
-     },
-     {
-      "date": "2026-10-15T16:45Z",
-      "opp": "RB Salzburg",
-      "home": false,
-      "us": 4,
-      "them": 0
-     },
-     {
-      "date": "2026-10-22T19:00Z",
-      "opp": "AFC Bournemouth",
-      "home": false,
-      "us": 0,
-      "them": 3
-     },
-     {
-      "date": "2026-11-05T17:45Z",
-      "opp": "Ferencvaros",
-      "home": true,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2026-11-26T17:45Z",
-      "opp": "Olympiacos",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2026-12-10T20:00Z",
-      "opp": "Sunderland",
-      "home": true,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-21T20:00Z",
-      "opp": "Levski Sofia",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-28T20:00Z",
-      "opp": "Ararat-Armenia",
       "home": true,
       "us": null,
       "them": null
@@ -14043,9 +14041,7 @@
   "sport": "football",
   "league": "nfl",
   "id": "17",
-  "status": {
-   "history": "66 seasons"
-  },
+  "status": {},
   "card": {
    "id": "17",
    "name": "New England Patriots",
@@ -20842,9 +20838,7 @@
   "sport": "football",
   "league": "college-football",
   "id": "251",
-  "status": {
-   "history": "133 seasons"
-  },
+  "status": {},
   "card": {
    "id": "251",
    "name": "Texas Longhorns",
@@ -27426,9 +27420,7 @@
   "sport": "baseball",
   "league": "mlb",
   "id": "19",
-  "status": {
-   "history": "143 seasons"
-  },
+  "status": {},
   "card": {
    "id": "19",
    "name": "Los Angeles Dodgers",
