@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-05T07:55:22.455Z",
- "llAt": "2026-11-05T07:55:22.455Z",
+ "updated": "2026-11-05T16:27:57.257Z",
+ "llAt": "2026-11-05T16:27:57.257Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1142,7 +1142,7 @@
    "date": "2026-11-05T12:00:00Z",
    "description": "NASA astronaut Anil Menon and CSA astronaut Joshua Kutryk will install and deploy the eighth and final IROSA on the 3B channel of the space station, completing the power augmentation upgrades.\r\n\r\nThe final two roll-out solar arrays will complete the space station’s power system augmentation. Together, the eight roll-out arrays will increase available power by up to 30%, boosting the station’s electric power generation capacity from 160 kilowatts to approximately 215 kilowatts.",
    "location": "International Space Station",
-   "webcast": false
+   "webcast": true
   },
   {
    "id": 365,
@@ -2411,7 +2411,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-04T19:58:45.962Z",
+  "at": "2026-11-05T16:27:33.864Z",
   "stats": {
    "total": 743,
    "successes": 728,
@@ -3532,6 +3532,24 @@
  },
  "news": [
   {
+   "title": "NASA Astronauts to Answer Questions from Florida Students",
+   "source": "NASA · News releases",
+   "time": "2026-11-05T15:11:25.000Z",
+   "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/"
+  },
+  {
+   "title": "Spacewalk Begins to Install Last Roll-Out Solar Array",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-05T13:44:35.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalk-begins-to-install-last-roll-out-solar-array/"
+  },
+  {
+   "title": "Astronauts Suit Up for Final Power Upgrade Spacewalk",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-05T12:02:48.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/astronauts-suit-up-for-final-power-upgrade-spacewalk/"
+  },
+  {
    "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
    "source": "NASA · Artemis",
    "time": "2026-11-04T21:04:10.000Z",
@@ -3574,12 +3592,6 @@
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/astronauts-begin-spacewalk-to-install-roll-out-solar-arrays-2/"
   },
   {
-   "title": "Astronauts Suit Up to Prepare for Power Upgrade Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-29T10:32:26.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/29/astronauts-suit-up-to-prepare-for-power-upgrade-spacewalk/"
-  },
-  {
    "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
    "source": "NASA · Artemis",
    "time": "2026-10-29T02:49:59.000Z",
@@ -3590,12 +3602,6 @@
    "source": "NASA · Artemis",
    "time": "2026-10-28T18:59:44.000Z",
    "url": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/"
-  },
-  {
-   "title": "Astronauts Are Go For Thursday’s Power Upgrade Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-10-28T16:30:27.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/28/astronauts-are-go-for-thursdays-power-upgrade-spacewalk/"
   },
   {
    "title": "NASA Invites Media to Moon Landing Simulation Experience in California",
@@ -3674,16 +3680,10 @@
    "source": "NASA · Commercial Crew blog",
    "time": "2026-10-07T10:01:13.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
-  },
-  {
-   "title": "Crew-12 Ready to Depart as New Residents Begin Advanced Health Research",
-   "source": "NASA · Commercial Crew blog",
-   "time": "2026-10-06T17:57:55.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/06/crew-12-ready-to-depart-as-new-residents-begin-advanced-health-research/"
   }
  ],
  "corps": {
-  "at": "2026-11-05T07:55:09.545Z",
+  "at": "2026-11-05T16:27:43.619Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4084,7 +4084,7 @@
   "next": null
  },
  "artemisFlow": {
-  "at": "2026-11-05T07:55:15.638Z",
+  "at": "2026-11-05T16:27:49.773Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4597,21 +4597,8 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-05T07:55:22.454Z",
+  "at": "2026-11-05T16:27:57.257Z",
   "items": [
-   {
-    "id": "agenda:6cp38ob26kq3gbb46gr36b9kc8o38b9o60q64b9n68sj0c346kojgc1n6s@google.com",
-    "kind": "dock",
-    "name": "Docking · Soyuz MS-31",
-    "vehicle": "Soyuz MS-31",
-    "station": "ISS",
-    "eva": null,
-    "crewed": true,
-    "date": "2026-10-06T10:00:00.000Z",
-    "allDay": true,
-    "description": "Equipaggio: Kononenko, Grebionkin, Berrios",
-    "location": "Prichal"
-   },
    {
     "id": "agenda:1gqmh1hh4td9ciusqrfjfqfn8h@google.com",
     "kind": "undock",

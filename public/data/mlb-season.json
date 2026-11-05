@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T07:53:41.433Z",
+ "updated": "2026-11-05T16:26:28.253Z",
  "season": 2026,
  "teams": [
   {
@@ -41526,15 +41526,6 @@
  "transactions": [
   {
    "date": "2026-11-04",
-   "type": "Signed as Free Agent",
-   "team": 113,
-   "from": null,
-   "to": 113,
-   "player": "Many Ramirez",
-   "text": "Cincinnati Reds signed free agent RHP Many Ramirez to a minor league contract."
-  },
-  {
-   "date": "2026-11-04",
    "type": "Released",
    "team": 120,
    "from": null,
@@ -41543,12 +41534,21 @@
    "text": "Washington Nationals released RHP Zak Kent."
   },
   {
+   "date": "2026-11-04",
+   "type": "Signed as Free Agent",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Many Ramirez",
+   "text": "Cincinnati Reds signed free agent RHP Many Ramirez to a minor league contract."
+  },
+  {
    "date": "2026-11-03",
    "type": "Trade",
-   "team": 138,
-   "from": 111,
-   "to": 138,
-   "player": "Eduardo Rivera",
+   "team": 111,
+   "from": 138,
+   "to": 111,
+   "player": "Juan García",
    "text": "Boston Red Sox traded LHP Eduardo Rivera to St. Louis Cardinals for RHP Juan García."
   },
   {
@@ -42876,47 +42876,47 @@
   }
  ],
  "markets": {
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
+  "KXMLBALCY": {
+   "label": "Pro Baseball American League Cy Young",
    "rows": [
     {
-     "name": "Pete Crow-Armstrong",
+     "name": "Cam Schlittler",
      "p": 99.5
     },
     {
-     "name": "Kyle Tucker",
+     "name": "Pablo Lopez",
+     "p": 3
+    },
+    {
+     "name": "Luis Gil",
+     "p": 2
+    },
+    {
+     "name": "Logan Gilbert",
      "p": 1
     },
     {
-     "name": "Fernando Tatis Jr.",
+     "name": "Jack Flaherty",
      "p": 1
     },
     {
-     "name": "Freddie Freeman",
+     "name": "Carlos Rodon",
      "p": 1
     },
     {
-     "name": "Yoshinobu Yamamoto",
+     "name": "George Kirby",
      "p": 1
     },
     {
-     "name": "Alex Bregman",
+     "name": "Tarik Skubal",
      "p": 1
     },
     {
-     "name": "Marcus Semien",
+     "name": "Luis Castillo",
      "p": 1
     },
     {
-     "name": "Tie/Co-Winners",
-     "p": 1
-    },
-    {
-     "name": "Teoscar Hernández",
-     "p": 1
-    },
-    {
-     "name": "Ketel Marte",
+     "name": "Gerrit Cole",
      "p": 1
     }
    ]
@@ -42929,7 +42929,15 @@
      "p": 99.5
     },
     {
+     "name": "Edward Cabrera",
+     "p": 1
+    },
+    {
      "name": "Cristopher Sanchez",
+     "p": 1
+    },
+    {
+     "name": "Brady Singer",
      "p": 1
     },
     {
@@ -42945,23 +42953,15 @@
      "p": 1
     },
     {
-     "name": "Paul Skenes",
-     "p": 1
-    },
-    {
-     "name": "Brady Singer",
-     "p": 1
-    },
-    {
-     "name": "Zack Wheeler",
-     "p": 1
-    },
-    {
-     "name": "Bryce Elder",
-     "p": 1
-    },
-    {
      "name": "Kodai Senga",
+     "p": 1
+    },
+    {
+     "name": "Andrew Abbott",
+     "p": 1
+    },
+    {
+     "name": "Jhoan Duran",
      "p": 1
     }
    ]
@@ -42971,7 +42971,7 @@
    "rows": [
     {
      "name": "Kevin McGonigle",
-     "p": 98.5
+     "p": 99.5
     },
     {
      "name": "Lazaro Montes",
@@ -42990,113 +42990,23 @@
      "p": 1
     },
     {
+     "name": "Noah Schultz",
+     "p": 1
+    },
+    {
+     "name": "Travis Bazzana",
+     "p": 1
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
      "name": "Walbert Ureña",
      "p": 1
     },
     {
-     "name": "Emmanuel Rodriguez",
-     "p": 1
-    },
-    {
-     "name": "Connelly Early",
-     "p": 1
-    },
-    {
-     "name": "Tatsuya Imai",
-     "p": 1
-    },
-    {
-     "name": "Sam Antonacci",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Sal Stewart",
-     "p": 95.5
-    },
-    {
-     "name": "Carson Benge",
-     "p": 5.5
-    },
-    {
-     "name": "Thomas White",
-     "p": 2
-    },
-    {
-     "name": "Rhett Lowder",
-     "p": 1
-    },
-    {
-     "name": "Quinn Mathews",
-     "p": 1
-    },
-    {
-     "name": "Aidan Miller",
-     "p": 1
-    },
-    {
-     "name": "Nolan McLean",
-     "p": 1
-    },
-    {
-     "name": "Jaxon Wiggins",
-     "p": 1
-    },
-    {
-     "name": "Bryce Eldridge",
-     "p": 1
-    },
-    {
-     "name": "Andrew Painter",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALCY": {
-   "label": "Pro Baseball American League Cy Young",
-   "rows": [
-    {
-     "name": "Cam Schlittler",
-     "p": 99.5
-    },
-    {
-     "name": "Pablo Lopez",
-     "p": 3
-    },
-    {
-     "name": "Luis Gil",
-     "p": 2
-    },
-    {
-     "name": "Luis Castillo",
-     "p": 1
-    },
-    {
-     "name": "Logan Gilbert",
-     "p": 1
-    },
-    {
-     "name": "Jack Flaherty",
-     "p": 1
-    },
-    {
-     "name": "Dylan Cease",
-     "p": 1
-    },
-    {
-     "name": "Jacob Degrom",
-     "p": 1
-    },
-    {
-     "name": "Gerrit Cole",
-     "p": 1
-    },
-    {
-     "name": "Carlos Rodon",
+     "name": "Spencer Jones Jr.",
      "p": 1
     }
    ]
@@ -43109,11 +43019,15 @@
      "p": 98.5
     },
     {
-     "name": "Junior Caminero",
-     "p": 1.5
+     "name": "Jose Altuve",
+     "p": 1
     },
     {
-     "name": "Roman Anthony",
+     "name": "Zach Neto",
+     "p": 1
+    },
+    {
+     "name": "Jarren Duran",
      "p": 1
     },
     {
@@ -43121,15 +43035,11 @@
      "p": 1
     },
     {
-     "name": "Byron Buxton",
+     "name": "Jeremy Peña",
      "p": 1
     },
     {
-     "name": "Vladimir Guerrero Jr.",
-     "p": 1
-    },
-    {
-     "name": "Garrett Crochet",
+     "name": "Dillon Dingler",
      "p": 1
     },
     {
@@ -43137,11 +43047,56 @@
      "p": 1
     },
     {
-     "name": "Aaron Judge",
+     "name": "Trevor Story",
      "p": 1
     },
     {
-     "name": "Zach Neto",
+     "name": "Josh Naylor",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
+   "rows": [
+    {
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
+    },
+    {
+     "name": "Yoshinobu Yamamoto",
+     "p": 1
+    },
+    {
+     "name": "Manny Machado",
+     "p": 1
+    },
+    {
+     "name": "Freddie Freeman",
+     "p": 1
+    },
+    {
+     "name": "Bo Bichette",
+     "p": 1
+    },
+    {
+     "name": "Mookie Betts",
+     "p": 1
+    },
+    {
+     "name": "Matt Chapman",
+     "p": 1
+    },
+    {
+     "name": "Ian Happ",
+     "p": 1
+    },
+    {
+     "name": "Kyle Tucker",
+     "p": 1
+    },
+    {
+     "name": "Jackson Merrill",
      "p": 1
     }
    ]
