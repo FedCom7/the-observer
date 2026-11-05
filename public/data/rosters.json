@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-04T19:57:43.572Z",
+ "updated": "2026-11-05T00:21:28.523Z",
  "pats": {
-  "at": "2026-11-04T18:37:35.511Z",
+  "at": "2026-11-05T00:21:28.523Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -1029,43 +1029,6 @@
     ]
    },
    {
-    "espn": "4369466",
-    "name": "Ryan Miller",
-    "short": "R. Miller",
-    "jersey": "11",
-    "group": "offense",
-    "pos": "WR",
-    "posName": "Wide Receiver",
-    "unit": "OFF",
-    "age": 26,
-    "ht": "6' 2\"",
-    "wt": "217 lbs",
-    "exp": 3,
-    "college": "Furman",
-    "from": "Jackson, TN",
-    "state": "TN",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2023
-    },
-    "depthPos": "WR",
-    "season": null,
-    "snaps": [
-     {
-      "wk": 8,
-      "off": 0.08,
-      "def": 0,
-      "st": 0
-     }
-    ]
-   },
-   {
     "espn": "4431465",
     "name": "Behren Morton",
     "short": "B. Morton",
@@ -1114,7 +1077,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/16771.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -1489,7 +1455,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4372030.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 38,
@@ -1641,7 +1610,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2574056.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 64,
@@ -1779,7 +1751,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916923.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 63,
@@ -1818,59 +1793,6 @@
       "off": 0,
       "def": 0.97,
       "st": 0
-     }
-    ]
-   },
-   {
-    "espn": "4688366",
-    "name": "Elliott Davison",
-    "short": "E. Davison",
-    "jersey": "27",
-    "group": "defense",
-    "pos": "S",
-    "posName": "Safety",
-    "unit": "DB",
-    "age": 24,
-    "ht": "6' 0\"",
-    "wt": "190 lbs",
-    "exp": 1,
-    "college": "UTSA",
-    "from": "Tyler, TX",
-    "state": "TX",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4688366.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2025
-    },
-    "depthPos": "FS",
-    "season": {
-     "games": 1,
-     "def_tackles_solo": 2,
-     "def_pass_defended": 1
-    },
-    "snaps": [
-     {
-      "wk": 5,
-      "off": 0,
-      "def": 0.17,
-      "st": 0.66
-     },
-     {
-      "wk": 6,
-      "off": 0,
-      "def": 0,
-      "st": 0.69
-     },
-     {
-      "wk": 7,
-      "off": 0,
-      "def": 0,
-      "st": 0.71
      }
     ]
    },
@@ -2467,7 +2389,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3915525.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 71,
@@ -4272,6 +4197,59 @@
     "snaps": []
    },
    {
+    "espn": "4688366",
+    "name": "Elliott Davison",
+    "short": "E. Davison",
+    "jersey": "27",
+    "group": "practiceSquad",
+    "pos": "S",
+    "posName": "Safety",
+    "unit": "DB",
+    "age": 24,
+    "ht": "6' 0\"",
+    "wt": "190 lbs",
+    "exp": 1,
+    "college": "UTSA",
+    "from": "Tyler, TX",
+    "state": "TX",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4688366.png",
+    "status": "Practice Squad",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2025
+    },
+    "depthPos": "FS",
+    "season": {
+     "games": 1,
+     "def_tackles_solo": 2,
+     "def_pass_defended": 1
+    },
+    "snaps": [
+     {
+      "wk": 5,
+      "off": 0,
+      "def": 0.17,
+      "st": 0.66
+     },
+     {
+      "wk": 6,
+      "off": 0,
+      "def": 0,
+      "st": 0.69
+     },
+     {
+      "wk": 7,
+      "off": 0,
+      "def": 0,
+      "st": 0.71
+     }
+    ]
+   },
+   {
     "espn": "5011554",
     "name": "Kyle Dixon",
     "short": "K. Dixon",
@@ -4434,6 +4412,43 @@
     "depthPos": null,
     "season": null,
     "snaps": []
+   },
+   {
+    "espn": "4369466",
+    "name": "Ryan Miller",
+    "short": "R. Miller",
+    "jersey": "11",
+    "group": "practiceSquad",
+    "pos": "WR",
+    "posName": "Wide Receiver",
+    "unit": "OFF",
+    "age": 26,
+    "ht": "6' 2\"",
+    "wt": "217 lbs",
+    "exp": 3,
+    "college": "Furman",
+    "from": "Jackson, TN",
+    "state": "TN",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4369466.png",
+    "status": "Practice Squad",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2023
+    },
+    "depthPos": "WR",
+    "season": null,
+    "snaps": [
+     {
+      "wk": 8,
+      "off": 0.08,
+      "def": 0,
+      "st": 0
+     }
+    ]
    },
    {
     "espn": "4428098",
@@ -7941,7 +7956,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-04T18:37:35.511Z",
+  "at": "2026-11-05T00:21:28.523Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9191,7 +9206,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-04T18:37:35.511Z",
+  "at": "2026-11-05T00:21:28.523Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
