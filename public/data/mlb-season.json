@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T12:02:29.795Z",
+ "updated": "2026-11-06T19:20:09.571Z",
  "season": 2026,
  "teams": [
   {
@@ -41525,6 +41525,15 @@
  ],
  "transactions": [
   {
+   "date": "2026-11-06",
+   "type": "Trade",
+   "team": 137,
+   "from": 120,
+   "to": 137,
+   "player": "Robert Cranz",
+   "text": "Washington Nationals traded RHP Robert Cranz to San Francisco Giants for LHP Reiver Sanmartin."
+  },
+  {
    "date": "2026-11-04",
    "type": "Released",
    "team": 120,
@@ -41545,20 +41554,11 @@
   {
    "date": "2026-11-03",
    "type": "Trade",
-   "team": 111,
-   "from": 138,
-   "to": 111,
-   "player": "Juan García",
+   "team": 138,
+   "from": 111,
+   "to": 138,
+   "player": "Eduardo Rivera",
    "text": "Boston Red Sox traded LHP Eduardo Rivera to St. Louis Cardinals for RHP Juan García."
-  },
-  {
-   "date": "2026-11-03",
-   "type": "Released",
-   "team": 146,
-   "from": null,
-   "to": 146,
-   "player": "Bradley Blalock",
-   "text": "Miami Marlins released RHP Bradley Blalock."
   },
   {
    "date": "2026-11-03",
@@ -41568,6 +41568,15 @@
    "to": 141,
    "player": "Feremi Suriel",
    "text": "Toronto Blue Jays signed free agent RHP Feremi Suriel to a minor league contract."
+  },
+  {
+   "date": "2026-11-03",
+   "type": "Released",
+   "team": 146,
+   "from": null,
+   "to": 146,
+   "player": "Bradley Blalock",
+   "text": "Miami Marlins released RHP Bradley Blalock."
   },
   {
    "date": "2026-11-02",
@@ -42864,59 +42873,140 @@
    "to": 141,
    "player": "Jameson Taillon",
    "text": "RHP Jameson Taillon elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Brent Suter",
-   "text": "LHP Brent Suter elected free agency."
   }
  ],
  "markets": {
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
    "rows": [
     {
-     "name": "Sal Stewart",
-     "p": 98.5
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
     },
     {
-     "name": "Thomas White",
+     "name": "Yoshinobu Yamamoto",
+     "p": 1
+    },
+    {
+     "name": "Manny Machado",
+     "p": 1
+    },
+    {
+     "name": "Bo Bichette",
+     "p": 1
+    },
+    {
+     "name": "Matt Chapman",
+     "p": 1
+    },
+    {
+     "name": "Bryce Harper",
+     "p": 1
+    },
+    {
+     "name": "James Wood",
+     "p": 1
+    },
+    {
+     "name": "Max Muncy",
+     "p": 1
+    },
+    {
+     "name": "Teoscar Hernández",
+     "p": 1
+    },
+    {
+     "name": "Paul Skenes",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALCY": {
+   "label": "Pro Baseball American League Cy Young",
+   "rows": [
+    {
+     "name": "Cam Schlittler",
+     "p": 99.5
+    },
+    {
+     "name": "Pablo Lopez",
+     "p": 3
+    },
+    {
+     "name": "Luis Gil",
      "p": 2
     },
     {
-     "name": "JJ Wetherholt",
+     "name": "Jack Flaherty",
      "p": 1
     },
     {
-     "name": "Tie/Co-Winners",
+     "name": "Max Fried",
      "p": 1
     },
     {
-     "name": "Quinn Mathews",
+     "name": "Carlos Rodon",
      "p": 1
     },
     {
-     "name": "Chase Petty",
+     "name": "Tarik Skubal",
      "p": 1
     },
     {
-     "name": "Aidan Miller",
+     "name": "Hunter Brown",
      "p": 1
     },
     {
-     "name": "Jaxon Wiggins",
+     "name": "Ranger Suarez",
      "p": 1
     },
     {
-     "name": "Jhostnyxon Garcia",
+     "name": "Jacob Degrom",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALMVP": {
+   "label": "Pro Baseball American League MVP",
+   "rows": [
+    {
+     "name": "Yordan Álvarez",
+     "p": 99.5
+    },
+    {
+     "name": "Junior Caminero",
+     "p": 2
+    },
+    {
+     "name": "Jarren Duran",
      "p": 1
     },
     {
-     "name": "JR Ritchie",
+     "name": "Mike Trout",
+     "p": 1
+    },
+    {
+     "name": "Jo Adell",
+     "p": 1
+    },
+    {
+     "name": "Riley Greene",
+     "p": 1
+    },
+    {
+     "name": "Gunnar Henderson",
+     "p": 1
+    },
+    {
+     "name": "Cam Schlittler",
+     "p": 1
+    },
+    {
+     "name": "Corey Seager",
+     "p": 1
+    },
+    {
+     "name": "Vladimir Guerrero Jr.",
      "p": 1
     }
    ]
@@ -42966,96 +43056,6 @@
     }
    ]
   },
-  "KXMLBALCY": {
-   "label": "Pro Baseball American League Cy Young",
-   "rows": [
-    {
-     "name": "Cam Schlittler",
-     "p": 99.5
-    },
-    {
-     "name": "Pablo Lopez",
-     "p": 3
-    },
-    {
-     "name": "Luis Gil",
-     "p": 2
-    },
-    {
-     "name": "Jack Flaherty",
-     "p": 1
-    },
-    {
-     "name": "Carlos Rodon",
-     "p": 1
-    },
-    {
-     "name": "Tarik Skubal",
-     "p": 1
-    },
-    {
-     "name": "Hunter Brown",
-     "p": 1
-    },
-    {
-     "name": "Ranger Suarez",
-     "p": 1
-    },
-    {
-     "name": "Jacob Degrom",
-     "p": 1
-    },
-    {
-     "name": "Yusei Kikuchi",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLMVP": {
-   "label": "Pro Baseball National League MVP",
-   "rows": [
-    {
-     "name": "Pete Crow-Armstrong",
-     "p": 99.5
-    },
-    {
-     "name": "Yoshinobu Yamamoto",
-     "p": 1
-    },
-    {
-     "name": "Manny Machado",
-     "p": 1
-    },
-    {
-     "name": "Bo Bichette",
-     "p": 1
-    },
-    {
-     "name": "Matt Chapman",
-     "p": 1
-    },
-    {
-     "name": "Bryce Harper",
-     "p": 1
-    },
-    {
-     "name": "James Wood",
-     "p": 1
-    },
-    {
-     "name": "Max Muncy",
-     "p": 1
-    },
-    {
-     "name": "Teoscar Hernández",
-     "p": 1
-    },
-    {
-     "name": "Paul Skenes",
-     "p": 1
-    }
-   ]
-  },
   "KXMLBALROTY": {
    "label": "Pro Baseball American League Rookie of the Year",
    "rows": [
@@ -43084,7 +43084,11 @@
      "p": 1
     },
     {
-     "name": "Spencer Jones Jr.",
+     "name": "Sebastian Walcott",
+     "p": 1
+    },
+    {
+     "name": "Munetaka Murakami",
      "p": 1
     },
     {
@@ -43092,11 +43096,7 @@
      "p": 1
     },
     {
-     "name": "Carson Williams",
-     "p": 1
-    },
-    {
-     "name": "Chase DeLauter",
+     "name": "Brice Matthews",
      "p": 1
     }
    ]

@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-06T12:02:30.225Z",
+ "updated": "2026-11-06T19:20:09.825Z",
  "since": "2026-10-04T18:00:00.000Z",
- "total": 235,
+ "total": 241,
  "recent": [
   {
    "id": "royal:cc:2026-10-04:richard+birgitte:1tnj34k",
@@ -2386,6 +2386,66 @@
    "title": "Departed from Cape Town International Airport for the United Kingdom",
    "kind": "Travel",
    "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-05:anne:13gn5ix",
+   "people": [
+    "anne"
+   ],
+   "start": "2026-11-05T10:00:00.000Z",
+   "title": "Arrived at Heathrow Airport",
+   "kind": "Travel",
+   "place": "London, from South Africa"
+  },
+  {
+   "id": "royal:cc:2026-11-05:richard:1516cuf",
+   "people": [
+    "richard"
+   ],
+   "start": "2026-11-05T12:00:00.000Z",
+   "title": "Visited Cunningham Covers Limited",
+   "kind": "Visit",
+   "place": "Glenshane Industrial Park, Maghera"
+  },
+  {
+   "id": "royal:cc:2026-11-05:richard:kocs1r",
+   "people": [
+    "richard"
+   ],
+   "start": "2026-11-05T12:00:00.000Z",
+   "title": "Visited Henry Brothers Limited",
+   "kind": "Visit",
+   "place": "62-66 Duncrue Street, Belfast"
+  },
+  {
+   "id": "royal:cc:2026-11-05:edward:g9u1va",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-05T14:00:00.000Z",
+   "title": "Received the Archbishop of Canterbury",
+   "kind": "Audience",
+   "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-05:richard:1nk3zxh",
+   "people": [
+    "richard"
+   ],
+   "start": "2026-11-05T14:00:00.000Z",
+   "title": "Visited Royal Air Force Limavady Trainer Dome",
+   "kind": "Armed forces",
+   "place": "70 Lilac Avenue, Limavady"
+  },
+  {
+   "id": "royal:cc:2026-11-05:edward:14w9smt",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-05T19:00:00.000Z",
+   "title": "Held a Trustees’ Meeting",
+   "kind": "Meeting",
+   "place": "followed by a Dinner this evening"
   }
  ],
  "weeks": {
@@ -2393,7 +2453,8 @@
    "2026-09-28": 1,
    "2026-10-05": 12,
    "2026-10-19": 3,
-   "2026-10-26": 7
+   "2026-10-26": 7,
+   "2026-11-02": 3
   },
   "birgitte": {
    "2026-09-28": 1,
@@ -2405,7 +2466,7 @@
    "2026-10-05": 6,
    "2026-10-19": 1,
    "2026-10-26": 13,
-   "2026-11-02": 6
+   "2026-11-02": 8
   },
   "sophie": {
    "2026-10-05": 3,
@@ -2417,7 +2478,7 @@
    "2026-10-12": 12,
    "2026-10-19": 15,
    "2026-10-26": 13,
-   "2026-11-02": 12
+   "2026-11-02": 13
   },
   "william": {
    "2026-10-05": 8,
@@ -2455,11 +2516,11 @@
    "Travel": 3,
    "Other": 3,
    "Service or commemoration": 1,
-   "Visit": 5,
+   "Visit": 7,
    "Reception": 3,
    "Event": 4,
    "Audience": 2,
-   "Armed forces": 2
+   "Armed forces": 3
   },
   "birgitte": {
    "Travel": 3,
@@ -2472,11 +2533,12 @@
   "edward": {
    "Event": 3,
    "Reception": 6,
-   "Meeting": 4,
+   "Meeting": 5,
    "Other": 7,
    "Travel": 2,
    "Visit": 3,
-   "Armed forces": 1
+   "Armed forces": 1,
+   "Audience": 1
   },
   "sophie": {
    "Audience": 2,
@@ -2496,7 +2558,7 @@
    "Armed forces": 5,
    "Audience": 3,
    "Investiture": 2,
-   "Travel": 3
+   "Travel": 4
   },
   "william": {
    "Visit": 4,
@@ -2550,7 +2612,7 @@
    2,
    6,
    9,
-   4,
+   7,
    1,
    0,
    1
@@ -2568,7 +2630,7 @@
    5,
    9,
    9,
-   3,
+   5,
    0,
    0,
    0
@@ -2586,7 +2648,7 @@
    8,
    16,
    18,
-   9,
+   10,
    11,
    0,
    2
@@ -2670,6 +2732,18 @@
    [
     0.2,
     52.06
+   ],
+   [
+    -6.68,
+    54.84
+   ],
+   [
+    -5.92,
+    54.62
+   ],
+   [
+    -6.93,
+    55.07
    ]
   ],
   "birgitte": [
@@ -3287,6 +3361,11 @@
    {
     "title": "Patron",
     "org": "London Youth",
+    "n": 1
+   },
+   {
+    "title": "Chairman",
+    "org": "of the Trustees, The Prince Philip Trust Fund for the Royal Borough of Windsor and Maidenhead",
     "n": 1
    }
   ],
