@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T00:05:45.909Z",
+ "updated": "2026-11-07T05:53:12.961Z",
  "season": 2026,
  "teams": [
   {
@@ -41526,12 +41526,30 @@
  "transactions": [
   {
    "date": "2026-11-06",
+   "type": "Claimed Off Waivers",
+   "team": 114,
+   "from": 120,
+   "to": 114,
+   "player": "José Tena",
+   "text": "Cleveland Guardians claimed DH José Tena off waivers from Washington Nationals."
+  },
+  {
+   "date": "2026-11-06",
    "type": "Trade",
    "team": 137,
    "from": 120,
    "to": 137,
    "player": "Robert Cranz",
    "text": "Washington Nationals traded RHP Robert Cranz to San Francisco Giants for LHP Reiver Sanmartin."
+  },
+  {
+   "date": "2026-11-06",
+   "type": "Released",
+   "team": 111,
+   "from": null,
+   "to": 111,
+   "player": "Zack Kelly",
+   "text": "Boston Red Sox released RHP Zack Kelly."
   },
   {
    "date": "2026-11-04",
@@ -42855,27 +42873,99 @@
    "to": 112,
    "player": "Seiya Suzuki",
    "text": "RF Seiya Suzuki elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 144,
-   "from": null,
-   "to": 144,
-   "player": "Rowdy Tellez",
-   "text": "1B Rowdy Tellez elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 141,
-   "from": null,
-   "to": 141,
-   "player": "Jameson Taillon",
-   "text": "RHP Jameson Taillon elected free agency."
   }
  ],
  "markets": {
+  "KXMLBNLMVP": {
+   "label": "Pro Baseball National League MVP",
+   "rows": [
+    {
+     "name": "Pete Crow-Armstrong",
+     "p": 99.5
+    },
+    {
+     "name": "Matt Chapman",
+     "p": 1
+    },
+    {
+     "name": "Bryce Harper",
+     "p": 1
+    },
+    {
+     "name": "James Wood",
+     "p": 1
+    },
+    {
+     "name": "Rafael Devers",
+     "p": 1
+    },
+    {
+     "name": "Christian Yelich",
+     "p": 1
+    },
+    {
+     "name": "Tie/Co-Winners",
+     "p": 1
+    },
+    {
+     "name": "Nick Castellanos",
+     "p": 1
+    },
+    {
+     "name": "Paul Skenes",
+     "p": 1
+    },
+    {
+     "name": "Teoscar Hernández",
+     "p": 1
+    }
+   ]
+  },
+  "KXMLBALROTY": {
+   "label": "Pro Baseball American League Rookie of the Year",
+   "rows": [
+    {
+     "name": "Kevin McGonigle",
+     "p": 99.5
+    },
+    {
+     "name": "Lazaro Montes",
+     "p": 4
+    },
+    {
+     "name": "Hagen Smith",
+     "p": 3
+    },
+    {
+     "name": "Payton Tolle",
+     "p": 2
+    },
+    {
+     "name": "Braden Montgomery",
+     "p": 1
+    },
+    {
+     "name": "Chase DeLauter",
+     "p": 1
+    },
+    {
+     "name": "Kazuma Okamoto",
+     "p": 1
+    },
+    {
+     "name": "Sebastian Walcott",
+     "p": 1
+    },
+    {
+     "name": "Brice Matthews",
+     "p": 1
+    },
+    {
+     "name": "Walker Jenkins",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBNLCY": {
    "label": "Pro Baseball National League Cy Young",
    "rows": [
@@ -42904,10 +42994,6 @@
      "p": 1
     },
     {
-     "name": "Zack Wheeler",
-     "p": 1
-    },
-    {
      "name": "Chase Burns",
      "p": 1
     },
@@ -42918,50 +43004,54 @@
     {
      "name": "Roki Sasaki",
      "p": 1
+    },
+    {
+     "name": "Brady Singer",
+     "p": 1
     }
    ]
   },
-  "KXMLBALROTY": {
-   "label": "Pro Baseball American League Rookie of the Year",
+  "KXMLBNLROTY": {
+   "label": "Pro Baseball National League Rookie of the Year",
    "rows": [
     {
-     "name": "Kevin McGonigle",
+     "name": "Sal Stewart",
      "p": 99.5
     },
     {
-     "name": "Lazaro Montes",
-     "p": 4
-    },
-    {
-     "name": "Hagen Smith",
-     "p": 3
-    },
-    {
-     "name": "Payton Tolle",
-     "p": 2
-    },
-    {
-     "name": "Tatsuya Imai",
+     "name": "Quinn Mathews",
      "p": 1
     },
     {
-     "name": "Braden Montgomery",
+     "name": "Aidan Miller",
      "p": 1
     },
     {
-     "name": "Chase DeLauter",
+     "name": "Zac Veen",
      "p": 1
     },
     {
-     "name": "Sebastian Walcott",
+     "name": "Chase Petty",
      "p": 1
     },
     {
-     "name": "Max Clark",
+     "name": "Jaxon Wiggins",
      "p": 1
     },
     {
-     "name": "Brice Matthews",
+     "name": "Moises Ballesteros",
+     "p": 1
+    },
+    {
+     "name": "Thomas White",
+     "p": 1
+    },
+    {
+     "name": "Nolan McLean",
+     "p": 1
+    },
+    {
+     "name": "Alex Freeland",
      "p": 1
     }
    ]
@@ -43007,51 +43097,6 @@
     },
     {
      "name": "Jazz Chisholm Jr.",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBNLROTY": {
-   "label": "Pro Baseball National League Rookie of the Year",
-   "rows": [
-    {
-     "name": "Sal Stewart",
-     "p": 99.5
-    },
-    {
-     "name": "Quinn Mathews",
-     "p": 1
-    },
-    {
-     "name": "Aidan Miller",
-     "p": 1
-    },
-    {
-     "name": "Zac Veen",
-     "p": 1
-    },
-    {
-     "name": "Chase Petty",
-     "p": 1
-    },
-    {
-     "name": "Jaxon Wiggins",
-     "p": 1
-    },
-    {
-     "name": "Thomas White",
-     "p": 1
-    },
-    {
-     "name": "Alex Freeland",
-     "p": 1
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 1
-    },
-    {
-     "name": "Charlie Condon",
      "p": 1
     }
    ]
