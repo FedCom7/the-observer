@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:54:58.742Z",
+ "updated": "2026-11-07T18:00:58.588Z",
  "year": 2026,
  "rounds": [
   {
@@ -434,6 +434,30 @@
    "end": "2026-11-08T23:59:00+01:00",
    "raceId": "5066",
    "sessions": [
+    {
+     "id": "8291",
+     "name": "Hyperpole - HYPERCAR",
+     "cls": null,
+     "state": null
+    },
+    {
+     "id": "8290",
+     "name": "Qualifying - HYPERCAR",
+     "cls": null,
+     "state": null
+    },
+    {
+     "id": "8289",
+     "name": "Hyperpole - LMGT3",
+     "cls": null,
+     "state": null
+    },
+    {
+     "id": "8288",
+     "name": "Qualifying - LMGT3",
+     "cls": null,
+     "state": null
+    },
     {
      "id": "8287",
      "name": "Free Practice 3",
@@ -984,7 +1008,8 @@
    "pos7": 1,
    "avg7": 0.081,
    "hyperpole7": 0.189,
-   "quali7": 0.159
+   "quali7": 0.159,
+   "quali8": 1.428
   },
   "Ferrari": {
    "race1": 0,
@@ -1019,7 +1044,9 @@
    "pos7": 3,
    "avg7": 0.422,
    "hyperpole7": 0.708,
-   "quali7": 0.741
+   "quali7": 0.741,
+   "hyperpole8": 0,
+   "quali8": 0
   },
   "Alpine": {
    "race1": 0.209,
@@ -1054,7 +1081,9 @@
    "pos7": 8,
    "avg7": 0.77,
    "hyperpole7": 0.617,
-   "quali7": 0.754
+   "quali7": 0.754,
+   "hyperpole8": 0.529,
+   "quali8": 0.926
   },
   "Bmw": {
    "race1": 0.55,
@@ -1087,7 +1116,9 @@
    "race7": 1.078,
    "pos7": 7,
    "avg7": 0.783,
-   "quali7": 1.207
+   "quali7": 1.207,
+   "hyperpole8": 1.126,
+   "quali8": 0.915
   },
   "Cadillac": {
    "race1": 0.516,
@@ -1122,7 +1153,9 @@
    "pos7": 4,
    "avg7": 0.708,
    "hyperpole7": 0.685,
-   "quali7": 0.557
+   "quali7": 0.557,
+   "hyperpole8": 0.19,
+   "quali8": 0.832
   },
   "Aston Martin": {
    "race1": 0.459,
@@ -1155,7 +1188,8 @@
    "race7": 1.781,
    "pos7": 9,
    "avg7": 1.019,
-   "quali7": 1.065
+   "quali7": 1.065,
+   "quali8": 1.169
   },
   "Peugeot": {
    "race1": 1.274,
@@ -1187,7 +1221,9 @@
    "race7": 1.493,
    "pos7": 12,
    "avg7": 1.106,
-   "quali7": 1.27
+   "quali7": 1.27,
+   "hyperpole8": 0.271,
+   "quali8": 0.894
   },
   "Genesis": {
    "race1": 1.112,
@@ -1220,7 +1256,9 @@
    "pos7": 11,
    "avg7": 1.062,
    "hyperpole7": 0,
-   "quali7": 0
+   "quali7": 0,
+   "hyperpole8": 0.103,
+   "quali8": 0.42
   }
  },
  "leMans": {

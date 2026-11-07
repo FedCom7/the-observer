@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:55:14.945Z",
+ "updated": "2026-11-07T18:01:14.988Z",
  "season": 2027,
  "races": [
   {
@@ -148,10 +148,19 @@
    "country": "USA",
    "discipline": "Giant Slalom",
    "gender": "women",
-   "start": "2026-11-28T15:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-28T14:30:00.000Z",
+   "approxTime": false,
    "tz": "America/New_York",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-28T14:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-28T17:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -176,10 +185,19 @@
    "country": "USA",
    "discipline": "Slalom",
    "gender": "women",
-   "start": "2026-11-29T15:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-29T15:30:00.000Z",
+   "approxTime": false,
    "tz": "America/New_York",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-29T15:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-29T18:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {

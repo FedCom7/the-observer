@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T12:55:34.378Z",
+ "updated": "2026-11-07T18:01:34.052Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3541,7 +3541,29 @@
       "start": "2026-11-08T16:00:00.000Z"
      }
     ],
-    "results": null
+    "results": {
+     "race": [],
+     "sprint": [
+      {
+       "pos": 1,
+       "name": "Marc Marquez",
+       "nation": "ES",
+       "team": "Ducati Lenovo Team"
+      },
+      {
+       "pos": 2,
+       "name": "Fabio Di Giannantonio",
+       "nation": "IT",
+       "team": "Pertamina Enduro VR46 Racing Team"
+      },
+      {
+       "pos": 3,
+       "name": "Jorge Martin",
+       "nation": "ES",
+       "team": "Aprilia Racing"
+      }
+     ]
+    }
    },
    {
     "id": "c7f7626b-807f-4a6f-813e-7ad2c68302a3",
@@ -3830,10 +3852,10 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 399,
+    "points": 411,
     "wins": 7,
     "podiums": 7,
-    "sprintWins": 9
+    "sprintWins": 10
    },
    {
     "pos": 2,
@@ -3842,7 +3864,7 @@
     "nation": "ES",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 355,
+    "points": 362,
     "wins": 1,
     "podiums": 9,
     "sprintWins": 4
@@ -3866,7 +3888,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 295,
+    "points": 299,
     "wins": 1,
     "podiums": 7,
     "sprintWins": 2
@@ -3878,7 +3900,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 278,
+    "points": 281,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3890,7 +3912,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 265,
+    "points": 274,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3902,7 +3924,7 @@
     "nation": "ES",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 236,
+    "points": 242,
     "wins": 1,
     "podiums": 5,
     "sprintWins": 2
@@ -3938,7 +3960,7 @@
     "nation": "IT",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 134,
+    "points": 136,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4022,7 +4044,7 @@
     "nation": "FR",
     "team": "Castrol Honda LCR",
     "constructor": "Honda",
-    "points": 51,
+    "points": 56,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4094,7 +4116,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 11,
+    "points": 12,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4161,6 +4183,18 @@
    },
    {
     "pos": 29,
+    "name": "Jake Dixon",
+    "number": 96,
+    "nation": "GB",
+    "team": "Honda HRC Castrol",
+    "constructor": "Honda",
+    "points": 0,
+    "wins": 0,
+    "podiums": 0,
+    "sprintWins": 0
+   },
+   {
+    "pos": 30,
     "name": "Jonas Folger",
     "number": 94,
     "nation": "DE",
@@ -4172,7 +4206,7 @@
     "sprintWins": 0
    },
    {
-    "pos": 30,
+    "pos": 31,
     "name": "Lorenzo Savadori",
     "number": 32,
     "nation": "IT",
@@ -4184,7 +4218,7 @@
     "sprintWins": 0
    },
    {
-    "pos": 31,
+    "pos": 32,
     "name": "Michele Pirro",
     "number": 51,
     "nation": "IT",
@@ -4196,7 +4230,7 @@
     "sprintWins": 0
    },
    {
-    "pos": 32,
+    "pos": 33,
     "name": "Aleix Espargaro",
     "number": 41,
     "nation": "ES",

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-07T12:56:14.845Z",
- "llAt": "2026-11-07T12:56:14.845Z",
+ "updated": "2026-11-07T18:02:27.469Z",
+ "llAt": "2026-11-07T18:02:27.469Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -153,17 +153,17 @@
   "upcoming": [
    {
     "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
-    "name": "Starship | Flight 15",
-    "mission": "Flight 15",
-    "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3.",
+    "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
+    "mission": "Starlink Group 31-2 (Starship Flight 15)",
+    "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster’s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship’s heatshield and transmit imagery down to operators.",
     "rocket": "Starship",
     "provider": "SpaceX",
-    "net": "2026-11-13T00:00:00Z",
-    "windowEnd": "2026-11-13T00:00:00Z",
-    "precision": "Day",
+    "net": "2026-11-13T22:45:00Z",
+    "windowEnd": "2026-11-14T00:00:00Z",
+    "precision": "Minute",
     "tbc": true,
-    "status": "TBD",
-    "statusName": "To Be Determined",
+    "status": "TBC",
+    "statusName": "To Be Confirmed",
     "crewed": false,
     "starship": true,
     "artemis": false,
@@ -2391,7 +2391,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-07T05:54:27.200Z",
+  "at": "2026-11-07T18:02:21.041Z",
   "stats": {
    "total": 744,
    "successes": 729,
@@ -2401,7 +2401,7 @@
    "landingAttempts": 717,
    "landingStreak": 38,
    "dragonReturns": 63,
-   "pending": 136
+   "pending": 135
   },
   "year": 2026,
   "yearCount": 125,
@@ -3241,20 +3241,6 @@
     "webcast": false
    },
    {
-    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
-    "name": "Flight 15",
-    "rocket": "Starship",
-    "net": "2026-11-13T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Orbital Launch Pad 2",
-    "location": "SpaceX Starbase, TX, USA",
-    "orbit": "LEO",
-    "type": "Test Flight",
-    "kind": "Starship",
-    "webcast": false
-   },
-   {
     "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
     "name": "USSF-317",
     "rocket": "Falcon 9",
@@ -3266,6 +3252,20 @@
     "orbit": "LEO",
     "type": "Government/Top Secret",
     "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+    "name": "Starlink Group 31-2 (Starship Flight 15)",
+    "rocket": "Starship",
+    "net": "2026-11-13T22:45:00Z",
+    "status": "TBC",
+    "tbc": true,
+    "pad": "Orbital Launch Pad 2",
+    "location": "SpaceX Starbase, TX, USA",
+    "orbit": "LEO",
+    "type": "Communications",
+    "kind": "Starship",
     "webcast": false
    },
    {
@@ -4577,21 +4577,8 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-07T12:56:14.844Z",
+  "at": "2026-11-07T18:02:27.468Z",
   "items": [
-   {
-    "id": "agenda:6h3b30hquoa1lkrf2am2suhrri@google.com",
-    "kind": "landing",
-    "name": "Splashdown · Crew-12",
-    "vehicle": "Crew-12",
-    "station": "ISS",
-    "eva": null,
-    "crewed": true,
-    "date": "2026-10-08T15:34:00.000Z",
-    "allDay": false,
-    "description": "Exp. 74: Jessica Meir, Jack Hathaway, Sophie Adenot, Andrej Fedyaev\n\nDeorbit burn: 16:46 CEST\nChiusura nosecone: 17:04 CEST\nApertura parafreni: 17:30 CEST\nApertura paracadute principali: 17:31 CEST\nSplashdown: 17:34 CEST",
-    "location": ""
-   },
    {
     "id": "agenda:6kqj6phj65h62b9hclhjgb9k70p30b9occp6cbb6cgpjccpj64qj0p1m60@google.com",
     "kind": "broadcast",
