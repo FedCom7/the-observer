@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T18:01:14.988Z",
+ "updated": "2026-11-07T21:46:35.768Z",
  "season": 2027,
  "races": [
   {
@@ -171,10 +171,15 @@
    "country": "USA",
    "discipline": "Super G",
    "gender": "men",
-   "start": "2026-11-28T18:30:00.000Z",
-   "approxTime": true,
+   "start": "2026-11-28T18:45:00.000Z",
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-28T18:45:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -209,9 +214,18 @@
    "discipline": "Giant Slalom",
    "gender": "men",
    "start": "2026-11-29T17:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-29T17:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-29T20:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {

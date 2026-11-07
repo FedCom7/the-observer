@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-07T18:00:58.586Z",
+ "updated": "2026-11-07T21:46:03.542Z",
  "pats": {
-  "at": "2026-11-07T18:00:58.586Z",
+  "at": "2026-11-07T21:46:03.542Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -639,6 +639,75 @@
      {
       "wk": 8,
       "off": 0.13,
+      "def": 0,
+      "st": 0
+     }
+    ]
+   },
+   {
+    "espn": "2991662",
+    "name": "Mack Hollins",
+    "short": "M. Hollins",
+    "jersey": "13",
+    "group": "offense",
+    "pos": "WR",
+    "posName": "Wide Receiver",
+    "unit": "OFF",
+    "age": 33,
+    "ht": "6' 4\"",
+    "wt": "221 lbs",
+    "exp": 10,
+    "college": "North Carolina",
+    "from": "Rockville, MD",
+    "state": "MD",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2991662.png",
+    "status": "Active",
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
+    "stats": null,
+    "draft": {
+     "pick": 118,
+     "club": "PHI",
+     "year": 2017
+    },
+    "depthPos": "WR",
+    "season": {
+     "games": 4,
+     "receptions": 15,
+     "targets": 20,
+     "receiving_yards": 209,
+     "receiving_epa": 12.885,
+     "receiving_yards_after_catch": 38,
+     "target_share": 0.088,
+     "air_yards_share": 0.138,
+     "wopr": 0.228,
+     "fantasy_points_ppr": 35.9
+    },
+    "snaps": [
+     {
+      "wk": 1,
+      "off": 0.7,
+      "def": 0,
+      "st": 0.36
+     },
+     {
+      "wk": 2,
+      "off": 0.71,
+      "def": 0,
+      "st": 0.04
+     },
+     {
+      "wk": 3,
+      "off": 0.76,
+      "def": 0,
+      "st": 0.3
+     },
+     {
+      "wk": 4,
+      "off": 0.41,
       "def": 0,
       "st": 0
      }
@@ -3776,75 +3845,6 @@
     "snaps": []
    },
    {
-    "espn": "2991662",
-    "name": "Mack Hollins",
-    "short": "M. Hollins",
-    "jersey": "13",
-    "group": "injuredReserveOrOut",
-    "pos": "WR",
-    "posName": "Wide Receiver",
-    "unit": "OFF",
-    "age": 33,
-    "ht": "6' 4\"",
-    "wt": "221 lbs",
-    "exp": 10,
-    "college": "North Carolina",
-    "from": "Rockville, MD",
-    "state": "MD",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2991662.png",
-    "status": "Day-To-Day",
-    "injury": {
-     "status": "Injured Reserve",
-     "detail": null
-    },
-    "stats": null,
-    "draft": {
-     "pick": 118,
-     "club": "PHI",
-     "year": 2017
-    },
-    "depthPos": "WR",
-    "season": {
-     "games": 4,
-     "receptions": 15,
-     "targets": 20,
-     "receiving_yards": 209,
-     "receiving_epa": 12.885,
-     "receiving_yards_after_catch": 38,
-     "target_share": 0.088,
-     "air_yards_share": 0.138,
-     "wopr": 0.228,
-     "fantasy_points_ppr": 35.9
-    },
-    "snaps": [
-     {
-      "wk": 1,
-      "off": 0.7,
-      "def": 0,
-      "st": 0.36
-     },
-     {
-      "wk": 2,
-      "off": 0.71,
-      "def": 0,
-      "st": 0.04
-     },
-     {
-      "wk": 3,
-      "off": 0.76,
-      "def": 0,
-      "st": 0.3
-     },
-     {
-      "wk": 4,
-      "off": 0.41,
-      "def": 0,
-      "st": 0
-     }
-    ]
-   },
-   {
     "espn": "4698181",
     "name": "Quintayvious Hutchins",
     "short": "Q. Hutchins",
@@ -4904,7 +4904,7 @@
       "name": "Wide Receiver",
       "players": [
        "4047646",
-       "4613202"
+       "4695193"
       ]
      },
      {
@@ -4913,7 +4913,7 @@
       "name": "Wide Receiver",
       "players": [
        "4427095",
-       "2991662"
+       "4613202"
       ]
      },
      {
@@ -4921,7 +4921,7 @@
       "pos": "WR",
       "name": "Wide Receiver",
       "players": [
-       "4695193",
+       "2991662",
        "4361432"
       ]
      },
@@ -8019,7 +8019,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-07T18:00:58.586Z",
+  "at": "2026-11-07T21:46:03.542Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9269,7 +9269,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-07T18:00:58.586Z",
+  "at": "2026-11-07T21:46:03.542Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,

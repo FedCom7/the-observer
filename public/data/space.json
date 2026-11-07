@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-07T18:02:27.469Z",
- "llAt": "2026-11-07T18:02:27.469Z",
+ "updated": "2026-11-07T21:47:41.691Z",
+ "llAt": "2026-11-07T21:47:41.691Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1487,7 +1487,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-07T12:55:53.920Z",
+  "at": "2026-11-07T21:47:18.945Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -3512,6 +3512,12 @@
  },
  "news": [
   {
+   "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+   "source": "NASA · News releases",
+   "time": "2026-11-07T18:11:57.000Z",
+   "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/"
+  },
+  {
    "title": "Spacewalk Cleanup, Biomedical Science, and Maintenance Wrap Up Week",
    "source": "NASA · Space Station blog",
    "time": "2026-11-06T17:48:13.000Z",
@@ -3654,16 +3660,10 @@
    "source": "NASA · Commercial Crew blog",
    "time": "2026-10-07T10:21:00.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-closes-dragon-hatch-preps-for-departure/"
-  },
-  {
-   "title": "NASA’s SpaceX Crew-12 Saying Farewell, Closing Dragon Hatch Soon",
-   "source": "NASA · Commercial Crew blog",
-   "time": "2026-10-07T10:01:13.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
   }
  ],
  "corps": {
-  "at": "2026-11-07T12:56:01.615Z",
+  "at": "2026-11-07T21:47:28.549Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4061,10 +4061,15 @@
     "who": []
    }
   ],
-  "next": null
+  "next": {
+   "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+   "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+   "time": "2026-11-07T18:11:57.000Z",
+   "closes": null
+  }
  },
  "artemisFlow": {
-  "at": "2026-11-07T12:56:07.118Z",
+  "at": "2026-11-07T21:47:34.265Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4577,21 +4582,8 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-07T18:02:27.468Z",
+  "at": "2026-11-07T21:47:41.690Z",
   "items": [
-   {
-    "id": "agenda:6kqj6phj65h62b9hclhjgb9k70p30b9occp6cbb6cgpjccpj64qj0p1m60@google.com",
-    "kind": "broadcast",
-    "name": "AstronautiCAST",
-    "vehicle": null,
-    "station": null,
-    "eva": null,
-    "crewed": null,
-    "date": "2026-10-08T19:30:00.000Z",
-    "allDay": false,
-    "description": "https://youtube.com/@astronauticast?si=IQqU1ZK8gU95IBuU",
-    "location": ""
-   },
    {
     "id": "agenda:43a3o97ndlc9p17qcghpnknar5@google.com",
     "kind": "undock",
