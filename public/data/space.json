@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-07T21:47:41.691Z",
- "llAt": "2026-11-07T21:47:41.691Z",
+ "updated": "2026-11-08T01:25:49.224Z",
+ "llAt": "2026-11-08T01:25:49.224Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1182,17 +1182,6 @@
   }
  ],
  "events": [
-  {
-   "id": "agenda:71i9uqnm7u9fspo9r5jt203r9b@google.com",
-   "name": "NASA Live: Aggiornamenti sulla Moon Base",
-   "type": "NASA broadcast",
-   "date": "2026-11-07T22:00:00.000Z",
-   "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=MRg4uIpJ3xE\">https://www.youtube.com/watch?v=MRg4uIpJ3xE</a>",
-   "location": "",
-   "webcast": true,
-   "allDay": false,
-   "source": "AstronauticAgenda"
-  },
   {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
    "name": "Docking · Progress MS-36",
@@ -2391,7 +2380,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-07T18:02:21.041Z",
+  "at": "2026-11-08T01:25:42.222Z",
   "stats": {
    "total": 744,
    "successes": 729,
@@ -3213,20 +3202,6 @@
   ],
   "upcoming": [
    {
-    "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
-    "name": "USSF-432",
-    "rocket": "Falcon 9",
-    "net": "2026-11-07T00:48:42Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
     "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
     "name": "USSF-627",
     "rocket": "Falcon 9",
@@ -3421,6 +3396,20 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
+   },
+   {
+    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+    "name": "SDA Tranche 1 Tracking Layer D",
+    "rocket": "Falcon 9",
+    "net": "2026-12-31T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
    }
   ],
   "fleet": [
@@ -3512,6 +3501,12 @@
  },
  "news": [
   {
+   "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+   "source": "NASA · News releases",
+   "time": "2026-11-07T22:47:03.000Z",
+   "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+  },
+  {
    "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
    "source": "NASA · News releases",
    "time": "2026-11-07T18:11:57.000Z",
@@ -3528,12 +3523,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-05T20:52:33.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/"
-  },
-  {
-   "title": "NASA Astronauts to Answer Questions from Florida Students",
-   "source": "NASA · News releases",
-   "time": "2026-11-05T15:11:25.000Z",
-   "url": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/"
   },
   {
    "title": "Spacewalk Begins to Install Last Roll-Out Solar Array",
@@ -4582,7 +4571,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-07T21:47:41.690Z",
+  "at": "2026-11-08T01:25:49.223Z",
   "items": [
    {
     "id": "agenda:43a3o97ndlc9p17qcghpnknar5@google.com",
