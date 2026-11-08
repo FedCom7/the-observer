@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T15:57:26.784Z",
+ "updated": "2026-11-08T20:27:20.766Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3418,7 +3418,7 @@
     ],
     "start": "2026-11-06T05:00:00.000Z",
     "end": "2026-11-08T18:30:00.000Z",
-    "status": "CURRENT",
+    "status": "FINISHED",
     "sessions": [
      {
       "cls": "Moto3",
@@ -3542,7 +3542,26 @@
      }
     ],
     "results": {
-     "race": [],
+     "race": [
+      {
+       "pos": 1,
+       "name": "Marco Bezzecchi",
+       "nation": "IT",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 2,
+       "name": "Marc Marquez",
+       "nation": "ES",
+       "team": "Ducati Lenovo Team"
+      },
+      {
+       "pos": 3,
+       "name": "Raul Fernandez",
+       "nation": "ES",
+       "team": "SuperFile Trackhouse MotoGP Team"
+      }
+     ],
      "sprint": [
       {
        "pos": 1,
@@ -3852,9 +3871,9 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 411,
+    "points": 431,
     "wins": 7,
-    "podiums": 7,
+    "podiums": 8,
     "sprintWins": 10
    },
    {
@@ -3864,7 +3883,7 @@
     "nation": "ES",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 362,
+    "points": 371,
     "wins": 1,
     "podiums": 9,
     "sprintWins": 4
@@ -3876,9 +3895,9 @@
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 332,
-    "wins": 5,
-    "podiums": 11,
+    "points": 357,
+    "wins": 6,
+    "podiums": 12,
     "sprintWins": 0
    },
    {
@@ -3888,7 +3907,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 299,
+    "points": 309,
     "wins": 1,
     "podiums": 7,
     "sprintWins": 2
@@ -3900,7 +3919,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 281,
+    "points": 294,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3912,7 +3931,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 274,
+    "points": 282,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3924,9 +3943,9 @@
     "nation": "ES",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 242,
+    "points": 258,
     "wins": 1,
-    "podiums": 5,
+    "podiums": 6,
     "sprintWins": 2
    },
    {
@@ -3960,7 +3979,7 @@
     "nation": "IT",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 136,
+    "points": 147,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -3972,7 +3991,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 125,
+    "points": 129,
     "wins": 0,
     "podiums": 1,
     "sprintWins": 0
@@ -4032,7 +4051,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 65,
+    "points": 70,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4044,7 +4063,7 @@
     "nation": "FR",
     "team": "Castrol Honda LCR",
     "constructor": "Honda",
-    "points": 56,
+    "points": 63,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4087,6 +4106,18 @@
    },
    {
     "pos": 21,
+    "name": "Iker Lecuona",
+    "number": 27,
+    "nation": "ES",
+    "team": "BK8 Gresini Racing MotoGP",
+    "constructor": "Ducati",
+    "points": 18,
+    "wins": 0,
+    "podiums": 0,
+    "sprintWins": 0
+   },
+   {
+    "pos": 22,
     "name": "Toprak Razgatlioglu",
     "number": 7,
     "nation": "TR",
@@ -4098,25 +4129,13 @@
     "sprintWins": 0
    },
    {
-    "pos": 22,
+    "pos": 23,
     "name": "Maverick Viñales",
     "number": 12,
     "nation": "ES",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 14,
-    "wins": 0,
-    "podiums": 0,
-    "sprintWins": 0
-   },
-   {
-    "pos": 23,
-    "name": "Iker Lecuona",
-    "number": 27,
-    "nation": "ES",
-    "team": "BK8 Gresini Racing MotoGP",
-    "constructor": "Ducati",
-    "points": 12,
+    "points": 17,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4171,22 +4190,22 @@
    },
    {
     "pos": 28,
-    "name": "Cal Crutchlow",
-    "number": 35,
+    "name": "Jake Dixon",
+    "number": 96,
     "nation": "GB",
-    "team": "Castrol Honda LCR",
+    "team": "Honda HRC Castrol",
     "constructor": "Honda",
-    "points": 0,
+    "points": 2,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
    },
    {
     "pos": 29,
-    "name": "Jake Dixon",
-    "number": 96,
+    "name": "Cal Crutchlow",
+    "number": 35,
     "nation": "GB",
-    "team": "Honda HRC Castrol",
+    "team": "Castrol Honda LCR",
     "constructor": "Honda",
     "points": 0,
     "wins": 0,

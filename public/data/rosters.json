@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-08T15:56:44.863Z",
+ "updated": "2026-11-08T20:26:39.888Z",
  "pats": {
-  "at": "2026-11-08T15:56:44.863Z",
+  "at": "2026-11-08T20:26:39.888Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -317,7 +317,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431526.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -568,10 +571,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3046439.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 35,
@@ -663,10 +663,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2991662.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 118,
@@ -1116,7 +1113,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431465.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 234,
@@ -1146,10 +1146,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/16771.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -3007,10 +3004,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -3316,7 +3310,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4368113.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -8040,7 +8037,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-08T15:56:44.863Z",
+  "at": "2026-11-08T20:26:39.888Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9290,7 +9287,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-08T15:56:44.863Z",
+  "at": "2026-11-08T20:26:39.888Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,

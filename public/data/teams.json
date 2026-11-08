@@ -1,14 +1,12 @@
 {
- "updated": "2026-11-08T15:56:45.024Z",
+ "updated": "2026-11-08T20:26:40.039Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
   "sport": "soccer",
   "league": "ita.1",
   "id": "103",
-  "status": {
-   "history": "127 seasons"
-  },
+  "status": {},
   "card": {
    "id": "103",
    "name": "AC Milan",
@@ -16,96 +14,29 @@
    "abbr": "MIL",
    "color": "#e4002b",
    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
-   "standing": "5th in Italian Serie A",
-   "record": "6-3-1",
+   "standing": "4th in Italian Serie A",
+   "record": "7-3-1",
    "rank": null,
-   "gp": 10,
-   "w": 6,
+   "gp": 11,
+   "w": 7,
    "d": 3,
    "l": 1,
-   "pf": 21,
-   "pa": 12,
-   "pts": 21,
-   "pos": 5,
+   "pf": 23,
+   "pa": 13,
+   "pts": 24,
+   "pos": 4,
    "seed": null
   },
   "stats": null,
   "competitions": [
    {
-    "name": "UEFA Europa League",
-    "phase": "League Phase",
-    "w": 1,
-    "d": 0,
-    "l": 3,
-    "gf": 4,
-    "ga": 7,
-    "games": [
-     {
-      "date": "2026-09-16T19:00Z",
-      "opp": "Benfica",
-      "home": true,
-      "us": 0,
-      "them": 2
-     },
-     {
-      "date": "2026-10-15T16:45Z",
-      "opp": "RB Salzburg",
-      "home": false,
-      "us": 4,
-      "them": 0
-     },
-     {
-      "date": "2026-10-22T19:00Z",
-      "opp": "AFC Bournemouth",
-      "home": false,
-      "us": 0,
-      "them": 3
-     },
-     {
-      "date": "2026-11-05T17:45Z",
-      "opp": "Ferencvaros",
-      "home": true,
-      "us": 0,
-      "them": 2
-     },
-     {
-      "date": "2026-11-26T17:45Z",
-      "opp": "Olympiacos",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2026-12-10T20:00Z",
-      "opp": "Sunderland",
-      "home": true,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-21T20:00Z",
-      "opp": "Levski Sofia",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-28T20:00Z",
-      "opp": "Ararat-Armenia",
-      "home": true,
-      "us": null,
-      "them": null
-     }
-    ]
-   },
-   {
     "name": "Italian Serie A",
     "phase": "2026-27 Italian Serie A",
-    "w": 6,
+    "w": 7,
     "d": 3,
     "l": 1,
-    "gf": 21,
-    "ga": 12,
+    "gf": 23,
+    "ga": 13,
     "games": [
      {
       "date": "2026-08-23T18:45Z",
@@ -181,8 +112,8 @@
       "date": "2026-11-08T14:00Z",
       "opp": "Genoa",
       "home": false,
-      "us": null,
-      "them": null
+      "us": 2,
+      "them": 1
      },
      {
       "date": "2026-11-22T17:00Z",
@@ -369,6 +300,73 @@
      {
       "date": "2027-05-30T18:00Z",
       "opp": "Udinese",
+      "home": true,
+      "us": null,
+      "them": null
+     }
+    ]
+   },
+   {
+    "name": "UEFA Europa League",
+    "phase": "League Phase",
+    "w": 1,
+    "d": 0,
+    "l": 3,
+    "gf": 4,
+    "ga": 7,
+    "games": [
+     {
+      "date": "2026-09-16T19:00Z",
+      "opp": "Benfica",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-10-15T16:45Z",
+      "opp": "RB Salzburg",
+      "home": false,
+      "us": 4,
+      "them": 0
+     },
+     {
+      "date": "2026-10-22T19:00Z",
+      "opp": "AFC Bournemouth",
+      "home": false,
+      "us": 0,
+      "them": 3
+     },
+     {
+      "date": "2026-11-05T17:45Z",
+      "opp": "Ferencvaros",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-11-26T17:45Z",
+      "opp": "Olympiacos",
+      "home": false,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2026-12-10T20:00Z",
+      "opp": "Sunderland",
+      "home": true,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-21T20:00Z",
+      "opp": "Levski Sofia",
+      "home": false,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-28T20:00Z",
+      "opp": "Ararat-Armenia",
       "home": true,
       "us": null,
       "them": null
@@ -12763,6 +12761,16 @@
    ],
    "2026": [
     {
+     "date": "2026-11-08",
+     "opp": "3263",
+     "oppName": "Genoa",
+     "home": false,
+     "us": 2,
+     "them": 1,
+     "result": "W",
+     "type": "2026-27 Italian Serie A"
+    },
+    {
      "date": "2026-10-31",
      "opp": "110",
      "oppName": "Internazionale",
@@ -13067,11 +13075,11 @@
    },
    {
     "season": 2026,
-    "w": 6,
+    "w": 7,
     "d": 3,
     "l": 1,
-    "pf": 21,
-    "pa": 12
+    "pf": 23,
+    "pa": 13
    }
   ],
   "rivals": [
@@ -13087,17 +13095,17 @@
      "abbr": "INT",
      "color": "#00239c",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-     "standing": "3rd in Italian Serie A",
-     "record": "8-1-1",
+     "standing": "2nd in Italian Serie A",
+     "record": "9-1-1",
      "rank": null,
-     "gp": 10,
-     "w": 8,
+     "gp": 11,
+     "w": 9,
      "d": 1,
      "l": 1,
-     "pf": 26,
+     "pf": 28,
      "pa": 13,
-     "pts": 25,
-     "pos": 3,
+     "pts": 28,
+     "pos": 2,
      "seed": null
     },
     "stats": null,
@@ -13543,7 +13551,7 @@
      "abbr": "ROMA",
      "color": "#990a2c",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-     "standing": "2nd in Italian Serie A",
+     "standing": "3rd in Italian Serie A",
      "record": "8-3-0",
      "rank": null,
      "gp": 11,
@@ -13553,7 +13561,7 @@
      "pf": 31,
      "pa": 10,
      "pts": 27,
-     "pos": 2,
+     "pos": 3,
      "seed": null
     },
     "stats": null,
@@ -13839,17 +13847,17 @@
      "abbr": "COMO",
      "color": "#4169E1",
      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-     "standing": "4th in Italian Serie A",
-     "record": "7-2-1",
+     "standing": "5th in Italian Serie A",
+     "record": "7-2-2",
      "rank": null,
-     "gp": 10,
+     "gp": 11,
      "w": 7,
      "d": 2,
-     "l": 1,
+     "l": 2,
      "pf": 18,
-     "pa": 8,
+     "pa": 10,
      "pts": 23,
-     "pos": 4,
+     "pos": 5,
      "seed": null
     },
     "stats": null,
@@ -14043,9 +14051,7 @@
   "sport": "football",
   "league": "nfl",
   "id": "17",
-  "status": {
-   "history": "66 seasons"
-  },
+  "status": {},
   "card": {
    "id": "17",
    "name": "New England Patriots",
@@ -20853,9 +20859,7 @@
   "sport": "football",
   "league": "college-football",
   "id": "251",
-  "status": {
-   "history": "133 seasons"
-  },
+  "status": {},
   "card": {
    "id": "251",
    "name": "Texas Longhorns",
@@ -27271,51 +27275,6 @@
     ]
    },
    {
-    "id": "2390",
-    "name": "Miami",
-    "label": null,
-    "kind": "current",
-    "card": {
-     "id": "2390",
-     "name": "Miami Hurricanes",
-     "short": "Miami",
-     "abbr": "MIA",
-     "color": "#f47423",
-     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
-     "standing": "1st in ACC",
-     "record": "8-1",
-     "rank": null,
-     "gp": 9,
-     "w": 8,
-     "d": 0,
-     "l": 1,
-     "pf": 405,
-     "pa": 173,
-     "pts": null,
-     "pos": null,
-     "seed": 1
-    },
-    "stats": {
-     "ppg": 45,
-     "ypg": 517.3,
-     "passYpg": 326.1111,
-     "rushYpg": 191.2,
-     "third": 52.941177,
-     "toDiff": 4,
-     "sacks": 24
-    },
-    "allTime": null,
-    "page": null,
-    "since2001": {
-     "w": 0,
-     "d": 0,
-     "l": 0,
-     "gf": 0,
-     "ga": 0
-    },
-    "recent": []
-   },
-   {
     "id": "61",
     "name": "Georgia",
     "label": null,
@@ -27438,6 +27397,74 @@
      "ga": 0
     },
     "recent": []
+   },
+   {
+    "id": "87",
+    "name": "Notre Dame",
+    "label": null,
+    "kind": "current",
+    "card": {
+     "id": "87",
+     "name": "Notre Dame Fighting Irish",
+     "short": "Notre Dame",
+     "abbr": "ND",
+     "color": "#062340",
+     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+     "standing": "1st in FBS Indep.",
+     "record": "8-1",
+     "rank": null,
+     "gp": 9,
+     "w": 8,
+     "d": 0,
+     "l": 1,
+     "pf": 354,
+     "pa": 131,
+     "pts": null,
+     "pos": null,
+     "seed": 1
+    },
+    "stats": {
+     "ppg": 39.333,
+     "ypg": 439.3,
+     "passYpg": 263.66666,
+     "rushYpg": 175.7,
+     "third": 42.056076,
+     "toDiff": 9,
+     "sacks": 17
+    },
+    "allTime": null,
+    "page": null,
+    "since2001": {
+     "w": 1,
+     "d": 0,
+     "l": 1,
+     "gf": 53,
+     "ga": 85
+    },
+    "recent": [
+     {
+      "date": "2016-09-04",
+      "opp": "87",
+      "oppName": "Notre Dame Fighting Irish",
+      "home": true,
+      "us": 50,
+      "them": 47,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2016
+     },
+     {
+      "date": "2015-09-05",
+      "opp": "87",
+      "oppName": "Notre Dame Fighting Irish",
+      "home": false,
+      "us": 3,
+      "them": 38,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2015
+     }
+    ]
    }
   ]
  },
@@ -27447,9 +27474,7 @@
   "sport": "baseball",
   "league": "mlb",
   "id": "19",
-  "status": {
-   "history": "143 seasons"
-  },
+  "status": {},
   "card": {
    "id": "19",
    "name": "Los Angeles Dodgers",
