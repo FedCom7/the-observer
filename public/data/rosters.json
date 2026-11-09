@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-08T20:26:39.888Z",
+ "updated": "2026-11-09T00:49:58.411Z",
  "pats": {
-  "at": "2026-11-08T20:26:39.888Z",
+  "at": "2026-11-09T00:49:58.411Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -145,7 +145,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362890.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -197,7 +200,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4685298.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -1309,7 +1315,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 120,
@@ -1811,7 +1820,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/3916923.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 63,
@@ -3004,7 +3016,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -8037,7 +8052,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-08T20:26:39.888Z",
+  "at": "2026-11-09T00:49:58.411Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9287,7 +9302,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-08T20:26:39.888Z",
+  "at": "2026-11-09T00:49:58.411Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
