@@ -1,74 +1,11 @@
 {
- "updated": "2026-11-09T18:43:32.535Z",
+ "updated": "2026-11-10T02:02:18.512Z",
  "pats": {
-  "at": "2026-11-09T18:43:32.535Z",
+  "at": "2026-11-10T02:02:18.512Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
   "players": [
-   {
-    "espn": "4683308",
-    "name": "Tanner Arkin",
-    "short": "T. Arkin",
-    "jersey": "84",
-    "group": "offense",
-    "pos": "TE",
-    "posName": "Tight End",
-    "unit": "OFF",
-    "age": 23,
-    "ht": "6' 4\"",
-    "wt": "262 lbs",
-    "exp": 0,
-    "college": "Illinois",
-    "from": "Fort Collins, CO",
-    "state": "CO",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683308.png",
-    "status": "Active",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": null,
-     "club": null,
-     "year": 2026
-    },
-    "depthPos": "TE",
-    "season": {
-     "games": 2
-    },
-    "snaps": [
-     {
-      "wk": 1,
-      "off": 0,
-      "def": 0,
-      "st": 0.18
-     },
-     {
-      "wk": 3,
-      "off": 0.24,
-      "def": 0,
-      "st": 0.39
-     },
-     {
-      "wk": 5,
-      "off": 0.2,
-      "def": 0,
-      "st": 0.1
-     },
-     {
-      "wk": 8,
-      "off": 0.27,
-      "def": 0,
-      "st": 0.27
-     },
-     {
-      "wk": 9,
-      "off": 0.22,
-      "def": 0,
-      "st": 0.55
-     }
-    ]
-   },
    {
     "espn": "4047646",
     "name": "A.J. Brown",
@@ -335,10 +272,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431526.png",
     "status": "Active",
-    "injury": {
-     "status": "Out",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -1181,10 +1115,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431465.png",
     "status": "Active",
-    "injury": {
-     "status": "Out",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 234,
@@ -4790,52 +4721,6 @@
     ]
    },
    {
-    "espn": "4569068",
-    "name": "Jose Ramirez",
-    "short": "J. Ramirez",
-    "jersey": "43",
-    "group": "practiceSquad",
-    "pos": "LB",
-    "posName": "Linebacker",
-    "unit": "DEF",
-    "age": 27,
-    "ht": "6' 2\"",
-    "wt": "252 lbs",
-    "exp": 1,
-    "college": "Eastern Michigan",
-    "from": "Lake Alfred, FL",
-    "state": "FL",
-    "nation": null,
-    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4569068.png",
-    "status": "Practice Squad",
-    "injury": null,
-    "stats": null,
-    "draft": {
-     "pick": 196,
-     "club": "TB",
-     "year": 2023
-    },
-    "depthPos": "OLB",
-    "season": {
-     "games": 1,
-     "def_tackles_solo": 1
-    },
-    "snaps": [
-     {
-      "wk": 3,
-      "off": 0,
-      "def": 0.13,
-      "st": 0.3
-     },
-     {
-      "wk": 4,
-      "off": 0,
-      "def": 0,
-      "st": 0.58
-     }
-    ]
-   },
-   {
     "espn": "4916597",
     "name": "Andrew Rupcich",
     "short": "A. Rupcich",
@@ -5246,7 +5131,6 @@
        "3046439",
        "4831959",
        "4372026",
-       "4683308",
        "4365395"
       ]
      },
@@ -8292,7 +8176,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-09T18:43:32.535Z",
+  "at": "2026-11-10T02:02:18.512Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -8537,6 +8421,24 @@
      "bb9": 3.38,
      "avg": 0.183
     }
+   },
+   {
+    "id": 686551,
+    "name": "Christian Cairo",
+    "jersey": "",
+    "pos": "SS",
+    "posType": "Infielder",
+    "status": "Active",
+    "age": 25,
+    "bats": "R",
+    "throws": "R",
+    "from": "USA",
+    "debut": null,
+    "ht": "5' 8\"",
+    "wt": 185,
+    "photo": "https://img.mlbstatic.com/mlb-photos/image/upload/w_120,q_auto:best/v1/people/686551/headshot/67/current",
+    "hitting": null,
+    "pitching": null
    },
    {
     "id": 687221,
@@ -9542,7 +9444,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-09T18:43:32.535Z",
+  "at": "2026-11-10T02:02:18.512Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,

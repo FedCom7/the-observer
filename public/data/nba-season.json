@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T18:43:32.535Z",
+ "updated": "2026-11-10T02:02:18.512Z",
  "season": 2027,
  "week": 3,
  "teams": [
@@ -21968,39 +21968,39 @@
  ],
  "bpi": {
   "SA": {
-   "bpi": 8.8,
+   "bpi": 8.7,
    "rank": 1,
-   "off": 4.2,
-   "def": 4.6,
+   "off": 4.1,
+   "def": 4.7,
+   "projW": 60.8,
+   "projL": 21.2,
+   "playoffs": 100,
+   "top6": 99.9,
+   "playIn": 0.1,
+   "seed1": 0.4,
+   "semis": 81,
+   "confFinal": 54.2,
+   "finals": 30.7,
+   "title": 20.2,
+   "sosRem": 12,
+   "sos": 6,
+   "lottery": 0.9
+  },
+  "OKC": {
+   "bpi": 8,
+   "rank": 2,
+   "off": 1.6,
+   "def": 6.4,
    "projW": 60.7,
    "projL": 21.3,
    "playoffs": 100,
-   "top6": 99.8,
-   "playIn": 0.2,
-   "seed1": 0.4,
-   "semis": 81.1,
-   "confFinal": 54,
-   "finals": 30.1,
-   "title": 19.5,
-   "sosRem": 12,
-   "sos": 6,
-   "lottery": 1
-  },
-  "OKC": {
-   "bpi": 8.2,
-   "rank": 2,
-   "off": 1.8,
-   "def": 6.4,
-   "projW": 60.5,
-   "projL": 21.5,
-   "playoffs": 100,
-   "top6": 99.8,
-   "playIn": 0.2,
-   "seed1": 0.4,
-   "semis": 81.5,
-   "confFinal": 55.1,
-   "finals": 33.3,
-   "title": 22.1,
+   "top6": 99.9,
+   "playIn": 0.1,
+   "seed1": 0.5,
+   "semis": 82.6,
+   "confFinal": 56.6,
+   "finals": 33.6,
+   "title": 22.6,
    "sosRem": 7,
    "sos": 22,
    "lottery": 9.3
@@ -22008,151 +22008,151 @@
   "BOS": {
    "bpi": 6.4,
    "rank": 3,
-   "off": 3.6,
-   "def": 2.8,
+   "off": 3.7,
+   "def": 2.7,
    "projW": 56.3,
    "projL": 25.7,
-   "playoffs": 99.9,
-   "top6": 99.4,
-   "playIn": 0.6,
-   "seed1": 0.4,
-   "semis": 75.7,
-   "confFinal": 45.6,
-   "finals": 25.2,
-   "title": 10.8,
+   "playoffs": 100,
+   "top6": 99.5,
+   "playIn": 0.5,
+   "seed1": 0.5,
+   "semis": 76.6,
+   "confFinal": 45,
+   "finals": 25.9,
+   "title": 10.9,
    "sosRem": 10,
    "sos": 2,
    "lottery": 0
   },
-  "HOU": {
-   "bpi": 5.9,
-   "rank": 4,
-   "off": 3.5,
-   "def": 2.4,
-   "projW": 55,
-   "projL": 27,
-   "playoffs": 99.5,
-   "top6": 95.3,
-   "playIn": 4.7,
-   "seed1": 0.1,
-   "semis": 60.1,
-   "confFinal": 25.1,
-   "finals": 10.8,
-   "title": 5.8,
-   "sosRem": 6,
-   "sos": 29,
-   "lottery": 15.6
-  },
   "NY": {
-   "bpi": 5.6,
-   "rank": 5,
-   "off": 2.7,
-   "def": 2.9,
+   "bpi": 5.5,
+   "rank": 4,
+   "off": 2.6,
+   "def": 3,
    "projW": 52.9,
    "projL": 29.1,
    "playoffs": 99.7,
-   "top6": 96.3,
-   "playIn": 3.7,
+   "top6": 96.2,
+   "playIn": 3.8,
    "seed1": 0.1,
-   "semis": 65.5,
-   "confFinal": 34.4,
-   "finals": 18.2,
+   "semis": 64.8,
+   "confFinal": 35.1,
+   "finals": 18.1,
    "title": 7.3,
-   "sosRem": 8,
+   "sosRem": 9,
    "sos": 15,
    "lottery": 0
   },
-  "MIN": {
+  "HOU": {
+   "bpi": 5.5,
+   "rank": 5,
+   "off": 3.2,
+   "def": 2.3,
+   "projW": 55.2,
+   "projL": 26.8,
+   "playoffs": 99.4,
+   "top6": 95.1,
+   "playIn": 4.9,
+   "seed1": 0.1,
+   "semis": 59.8,
+   "confFinal": 24.9,
+   "finals": 10.1,
+   "title": 5.5,
+   "sosRem": 6,
+   "sos": 29,
+   "lottery": 15.3
+  },
+  "LAL": {
    "bpi": 5.1,
    "rank": 6,
-   "off": 1.4,
+   "off": 5.5,
+   "def": -0.4,
+   "projW": 52,
+   "projL": 30,
+   "playoffs": 96.8,
+   "top6": 81.6,
+   "playIn": 18.4,
+   "seed1": 0,
+   "semis": 35.9,
+   "confFinal": 11.2,
+   "finals": 3.8,
+   "title": 1.6,
+   "sosRem": 18,
+   "sos": 7,
+   "lottery": 0.3
+  },
+  "MIN": {
+   "bpi": 5,
+   "rank": 7,
+   "off": 1.3,
    "def": 3.7,
-   "projW": 54.9,
-   "projL": 27.1,
+   "projW": 54.8,
+   "projL": 27.2,
    "playoffs": 99.3,
-   "top6": 94.5,
-   "playIn": 5.5,
-   "seed1": 0.1,
-   "semis": 64.8,
-   "confFinal": 30.2,
-   "finals": 14.3,
-   "title": 8.3,
+   "top6": 93.9,
+   "playIn": 6.1,
+   "seed1": 0,
+   "semis": 64.6,
+   "confFinal": 29.6,
+   "finals": 14.1,
+   "title": 7.9,
    "sosRem": 25,
    "sos": 17,
    "lottery": 0
   },
-  "LAL": {
-   "bpi": 4.6,
-   "rank": 7,
-   "off": 4.9,
-   "def": -0.4,
-   "projW": 51.4,
-   "projL": 30.6,
-   "playoffs": 95.8,
-   "top6": 78.2,
-   "playIn": 21.8,
-   "seed1": 0,
-   "semis": 34.8,
-   "confFinal": 10.9,
-   "finals": 3.7,
-   "title": 1.7,
-   "sosRem": 21,
-   "sos": 7,
-   "lottery": 0.4
-  },
-  "DET": {
-   "bpi": 4.1,
-   "rank": 8,
-   "off": 0,
-   "def": 4.1,
-   "projW": 55,
-   "projL": 27,
-   "playoffs": 99.9,
-   "top6": 98.8,
-   "playIn": 1.2,
-   "seed1": 0.3,
-   "semis": 74.2,
-   "confFinal": 44.1,
-   "finals": 24.8,
-   "title": 10.3,
-   "sosRem": 1,
-   "sos": 16,
-   "lottery": 0
-  },
   "CLE": {
-   "bpi": 3.8,
-   "rank": 9,
-   "off": 3.2,
-   "def": 0.5,
-   "projW": 49.7,
-   "projL": 32.3,
-   "playoffs": 98.5,
-   "top6": 85.2,
-   "playIn": 14.8,
+   "bpi": 4.7,
+   "rank": 8,
+   "off": 4,
+   "def": 0.7,
+   "projW": 49.4,
+   "projL": 32.6,
+   "playoffs": 98.1,
+   "top6": 83.8,
+   "playIn": 16.3,
    "seed1": 0,
-   "semis": 45.8,
-   "confFinal": 19.2,
+   "semis": 43.8,
+   "confFinal": 18.6,
    "finals": 7.9,
    "title": 2.5,
-   "sosRem": 2,
+   "sosRem": 3,
    "sos": 28,
    "lottery": 0
   },
+  "DET": {
+   "bpi": 4.2,
+   "rank": 9,
+   "off": 0.3,
+   "def": 3.9,
+   "projW": 54.4,
+   "projL": 27.6,
+   "playoffs": 99.9,
+   "top6": 98.4,
+   "playIn": 1.6,
+   "seed1": 0.2,
+   "semis": 71.5,
+   "confFinal": 40.9,
+   "finals": 21.7,
+   "title": 8.8,
+   "sosRem": 2,
+   "sos": 16,
+   "lottery": 0
+  },
   "PHI": {
-   "bpi": 3.6,
+   "bpi": 3.7,
    "rank": 10,
    "off": 0.7,
-   "def": 2.9,
-   "projW": 51.1,
-   "projL": 30.9,
-   "playoffs": 99.4,
-   "top6": 92.4,
-   "playIn": 7.6,
+   "def": 3,
+   "projW": 51.3,
+   "projL": 30.7,
+   "playoffs": 99.3,
+   "top6": 93,
+   "playIn": 7,
    "seed1": 0.1,
-   "semis": 57.2,
-   "confFinal": 28,
-   "finals": 13.5,
-   "title": 5.1,
+   "semis": 60.2,
+   "confFinal": 30.6,
+   "finals": 15,
+   "title": 5.7,
    "sosRem": 5,
    "sos": 11,
    "lottery": 0.1
@@ -22160,165 +22160,146 @@
   "DEN": {
    "bpi": 3.2,
    "rank": 11,
-   "off": 4.3,
-   "def": -1,
-   "projW": 47.1,
-   "projL": 34.9,
-   "playoffs": 79.8,
-   "top6": 33.6,
-   "playIn": 65.8,
+   "off": 4.1,
+   "def": -0.9,
+   "projW": 47.3,
+   "projL": 34.7,
+   "playoffs": 81.3,
+   "top6": 35,
+   "playIn": 64.5,
    "seed1": 0,
-   "semis": 19.5,
-   "confFinal": 5.4,
-   "finals": 1.5,
+   "semis": 20,
+   "confFinal": 5.7,
+   "finals": 1.8,
    "title": 0.7,
-   "sosRem": 18,
+   "sosRem": 17,
    "sos": 13,
-   "lottery": 1.9
+   "lottery": 1.7
   },
   "POR": {
-   "bpi": 2.8,
+   "bpi": 2.6,
    "rank": 12,
-   "off": 1.4,
-   "def": 1.5,
-   "projW": 46.6,
-   "projL": 35.4,
-   "playoffs": 79,
-   "top6": 32.1,
-   "playIn": 67.3,
+   "off": 1.3,
+   "def": 1.4,
+   "projW": 46.5,
+   "projL": 35.5,
+   "playoffs": 76.7,
+   "top6": 30.5,
+   "playIn": 68.9,
    "seed1": 0,
-   "semis": 17.3,
-   "confFinal": 4.7,
-   "finals": 1.3,
-   "title": 0.5,
+   "semis": 16.2,
+   "confFinal": 4.2,
+   "finals": 1.1,
+   "title": 0.6,
    "sosRem": 27,
-   "sos": 20,
-   "lottery": 1.9
+   "sos": 21,
+   "lottery": 2.1
   },
   "ATL": {
-   "bpi": 1.6,
+   "bpi": 2.6,
    "rank": 13,
-   "off": 0.5,
-   "def": 1.1,
-   "projW": 45.1,
-   "projL": 36.9,
-   "playoffs": 89.7,
-   "top6": 43.9,
-   "playIn": 56,
+   "off": 1.4,
+   "def": 1.2,
+   "projW": 45.4,
+   "projL": 36.6,
+   "playoffs": 90.5,
+   "top6": 46.3,
+   "playIn": 53.6,
    "seed1": 0,
-   "semis": 22.6,
-   "confFinal": 6.5,
-   "finals": 1.9,
-   "title": 0.4,
-   "sosRem": 13,
-   "sos": 4,
+   "semis": 23.6,
+   "confFinal": 7,
+   "finals": 2.2,
+   "title": 0.5,
+   "sosRem": 14,
+   "sos": 5,
    "lottery": 0
   },
   "DAL": {
-   "bpi": 1,
+   "bpi": 0.8,
    "rank": 14,
-   "off": -0.2,
-   "def": 1.3,
-   "projW": 42.3,
-   "projL": 39.7,
-   "playoffs": 39.3,
-   "top6": 6.4,
-   "playIn": 87.8,
+   "off": -0.3,
+   "def": 1.1,
+   "projW": 42.1,
+   "projL": 39.9,
+   "playoffs": 38.1,
+   "top6": 5.6,
+   "playIn": 87.2,
    "seed1": 0,
-   "semis": 4.7,
-   "confFinal": 1.1,
-   "finals": 0.3,
+   "semis": 4.4,
+   "confFinal": 0.9,
+   "finals": 0.2,
    "title": 0.1,
    "sosRem": 22,
    "sos": 24,
-   "lottery": 4.8
+   "lottery": 5
   },
   "GS": {
-   "bpi": 0.9,
+   "bpi": 0.7,
    "rank": 15,
-   "off": 0.8,
-   "def": 0.2,
-   "projW": 49.4,
-   "projL": 32.6,
-   "playoffs": 92.4,
-   "top6": 59.9,
-   "playIn": 40,
+   "off": 0.6,
+   "def": 0.1,
+   "projW": 49.2,
+   "projL": 32.8,
+   "playoffs": 91.6,
+   "top6": 58.1,
+   "playIn": 41.8,
    "seed1": 0,
-   "semis": 35.2,
-   "confFinal": 13.5,
-   "finals": 4.8,
-   "title": 2.3,
+   "semis": 34.5,
+   "confFinal": 12.6,
+   "finals": 4.6,
+   "title": 2.1,
    "sosRem": 15,
    "sos": 18,
-   "lottery": 0.8
+   "lottery": 0.9
   },
   "MIA": {
    "bpi": -0.5,
    "rank": 16,
-   "off": 0.4,
-   "def": -0.9,
-   "projW": 39,
-   "projL": 43,
-   "playoffs": 53.9,
-   "top6": 5.5,
-   "playIn": 90,
+   "off": 0.3,
+   "def": -0.8,
+   "projW": 39.1,
+   "projL": 42.9,
+   "playoffs": 53.6,
+   "top6": 5.2,
+   "playIn": 90.5,
    "seed1": 0,
-   "semis": 8.1,
-   "confFinal": 1.5,
+   "semis": 7.8,
+   "confFinal": 1.7,
    "finals": 0.3,
    "title": 0.1,
    "sosRem": 4,
    "sos": 12,
-   "lottery": 3.8
+   "lottery": 3.9
   },
   "ORL": {
-   "bpi": -0.9,
+   "bpi": -1.3,
    "rank": 17,
-   "off": -1.4,
+   "off": -1.7,
    "def": 0.5,
-   "projW": 35.3,
-   "projL": 46.7,
-   "playoffs": 23.7,
+   "projW": 35.1,
+   "projL": 46.9,
+   "playoffs": 21.8,
    "top6": 0.8,
-   "playIn": 77.7,
+   "playIn": 76.4,
    "seed1": 0,
-   "semis": 2.5,
+   "semis": 2.3,
    "confFinal": 0.5,
    "finals": 0.1,
    "title": 0,
-   "sosRem": 3,
+   "sosRem": 1,
    "sos": 27,
-   "lottery": 6.2
-  },
-  "TOR": {
-   "bpi": -1.5,
-   "rank": 18,
-   "off": -1.5,
-   "def": 0,
-   "projW": 48.2,
-   "projL": 33.8,
-   "playoffs": 97.1,
-   "top6": 76.3,
-   "playIn": 23.7,
-   "seed1": 0,
-   "semis": 43.4,
-   "confFinal": 19.1,
-   "finals": 8.2,
-   "title": 2.7,
-   "sosRem": 16,
-   "sos": 9,
-   "lottery": 0
+   "lottery": 6.3
   },
   "PHX": {
-   "bpi": -1.7,
-   "rank": 19,
+   "bpi": -1.5,
+   "rank": 18,
    "off": 0.2,
-   "def": -1.9,
-   "projW": 36.7,
-   "projL": 45.3,
-   "playoffs": 9.5,
-   "top6": 0.2,
-   "playIn": 56.6,
+   "def": -1.7,
+   "projW": 37.5,
+   "projL": 44.5,
+   "playoffs": 11.3,
+   "top6": 0.4,
+   "playIn": 63.6,
    "seed1": 0,
    "semis": 0.8,
    "confFinal": 0.1,
@@ -22329,15 +22310,15 @@
    "lottery": 0
   },
   "MEM": {
-   "bpi": -2,
-   "rank": 20,
-   "off": -0.9,
-   "def": -1,
-   "projW": 35.5,
-   "projL": 46.5,
-   "playoffs": 5.1,
+   "bpi": -2.2,
+   "rank": 19,
+   "off": -1.1,
+   "def": -1.1,
+   "projW": 35.3,
+   "projL": 46.7,
+   "playoffs": 5,
    "top6": 0.2,
-   "playIn": 41.6,
+   "playIn": 37.6,
    "seed1": 0,
    "semis": 0.2,
    "confFinal": 0,
@@ -22345,94 +22326,113 @@
    "title": 0,
    "sosRem": 28,
    "sos": 1,
-   "lottery": 8.3
+   "lottery": 8.6
+  },
+  "TOR": {
+   "bpi": -2.2,
+   "rank": 20,
+   "off": -2,
+   "def": -0.2,
+   "projW": 48,
+   "projL": 34,
+   "playoffs": 97.6,
+   "top6": 75.4,
+   "playIn": 24.6,
+   "seed1": 0,
+   "semis": 43.9,
+   "confFinal": 19.8,
+   "finals": 8.5,
+   "title": 2.9,
+   "sosRem": 16,
+   "sos": 9,
+   "lottery": 0
   },
   "IND": {
-   "bpi": -2.7,
+   "bpi": -2.8,
    "rank": 21,
    "off": -2.1,
    "def": -0.6,
-   "projW": 36.4,
-   "projL": 45.6,
-   "playoffs": 32.7,
-   "top6": 1.4,
-   "playIn": 85.6,
+   "projW": 36.7,
+   "projL": 45.3,
+   "playoffs": 34.4,
+   "top6": 1.5,
+   "playIn": 86.5,
    "seed1": 0,
-   "semis": 4.8,
-   "confFinal": 1.1,
-   "finals": 0.1,
-   "title": 0,
-   "sosRem": 20,
+   "semis": 5.3,
+   "confFinal": 1,
+   "finals": 0.3,
+   "title": 0.1,
+   "sosRem": 21,
    "sos": 3,
-   "lottery": 5.6
+   "lottery": 5.5
   },
   "WSH": {
-   "bpi": -4,
+   "bpi": -3.1,
    "rank": 22,
-   "off": -1.7,
-   "def": -2.3,
-   "projW": 30.8,
-   "projL": 51.2,
-   "playoffs": 4.7,
+   "off": -0.9,
+   "def": -2.2,
+   "projW": 30.7,
+   "projL": 51.3,
+   "playoffs": 4.3,
    "top6": 0,
-   "playIn": 30.8,
+   "playIn": 30.3,
    "seed1": 0,
-   "semis": 0.3,
+   "semis": 0.2,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
-   "sosRem": 9,
+   "sosRem": 8,
    "sos": 10,
    "lottery": 0
   },
   "NO": {
-   "bpi": -4.2,
+   "bpi": -4.6,
    "rank": 23,
-   "off": -1.3,
+   "off": -1.7,
    "def": -2.9,
-   "projW": 29.5,
-   "projL": 52.5,
-   "playoffs": 0.3,
+   "projW": 29.3,
+   "projL": 52.7,
+   "playoffs": 0.4,
    "top6": 0,
-   "playIn": 4.9,
+   "playIn": 4.1,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
    "sosRem": 30,
-   "sos": 5,
+   "sos": 4,
    "lottery": 16.5
   },
   "LAC": {
-   "bpi": -4.3,
+   "bpi": -4.9,
    "rank": 24,
-   "off": -2,
-   "def": -2.3,
-   "projW": 28.3,
-   "projL": 53.7,
+   "off": -2.3,
+   "def": -2.6,
+   "projW": 28.2,
+   "projL": 53.8,
    "playoffs": 0.2,
    "top6": 0,
-   "playIn": 3.2,
+   "playIn": 2.3,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
-   "sosRem": 19,
+   "sosRem": 20,
    "sos": 14,
    "lottery": 0.3
   },
   "UTAH": {
-   "bpi": -5.1,
+   "bpi": -5.3,
    "rank": 25,
-   "off": -2.5,
-   "def": -2.6,
-   "projW": 25.7,
-   "projL": 56.3,
+   "off": -2.8,
+   "def": -2.5,
+   "projW": 25.5,
+   "projL": 56.5,
    "playoffs": 0,
    "top6": 0,
-   "playIn": 0.6,
+   "playIn": 0.4,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
@@ -22443,32 +22443,32 @@
    "lottery": 0
   },
   "CHA": {
-   "bpi": -6.2,
+   "bpi": -5.6,
    "rank": 26,
-   "off": -4.7,
-   "def": -1.6,
-   "projW": 26.9,
-   "projL": 55.1,
+   "off": -4,
+   "def": -1.5,
+   "projW": 26.8,
+   "projL": 55.2,
    "playoffs": 0.8,
    "top6": 0,
-   "playIn": 7,
+   "playIn": 7.8,
    "seed1": 0,
-   "semis": 0,
+   "semis": 0.1,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
    "sosRem": 24,
    "sos": 8,
-   "lottery": 9
+   "lottery": 8.9
   },
   "BKN": {
-   "bpi": -7.1,
+   "bpi": -7.2,
    "rank": 27,
-   "off": -4.6,
+   "off": -4.7,
    "def": -2.5,
    "projW": 22.2,
    "projL": 59.8,
-   "playoffs": 0,
+   "playoffs": 0.1,
    "top6": 0,
    "playIn": 0.6,
    "seed1": 0,
@@ -22483,48 +22483,48 @@
   "CHI": {
    "bpi": -7.3,
    "rank": 28,
-   "off": -2.6,
-   "def": -4.6,
-   "projW": 21.8,
-   "projL": 60.2,
+   "off": -2.8,
+   "def": -4.5,
+   "projW": 22,
+   "projL": 60,
    "playoffs": 0,
    "top6": 0,
-   "playIn": 0.5,
+   "playIn": 0.6,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
-   "sosRem": 17,
+   "sosRem": 19,
    "sos": 30,
    "lottery": 7.9
   },
   "MIL": {
-   "bpi": -8.2,
+   "bpi": -8.1,
    "rank": 29,
-   "off": -3.7,
-   "def": -4.5,
-   "projW": 20,
-   "projL": 62,
+   "off": -3.8,
+   "def": -4.3,
+   "projW": 19.9,
+   "projL": 62.1,
    "playoffs": 0,
    "top6": 0,
-   "playIn": 0.2,
+   "playIn": 0.1,
    "seed1": 0,
    "semis": 0,
    "confFinal": 0,
    "finals": 0,
    "title": 0,
-   "sosRem": 14,
+   "sosRem": 13,
    "sos": 23,
    "lottery": 0
   },
   "SAC": {
-   "bpi": -10,
+   "bpi": -10.2,
    "rank": 30,
-   "off": -4.2,
-   "def": -5.8,
-   "projW": 15.7,
-   "projL": 66.3,
+   "off": -4.5,
+   "def": -5.7,
+   "projW": 15.4,
+   "projL": 66.6,
    "playoffs": 0,
    "top6": 0,
    "playIn": 0,
@@ -22534,7 +22534,7 @@
    "finals": 0,
    "title": 0,
    "sosRem": 29,
-   "sos": 21,
+   "sos": 20,
    "lottery": 6.5
   }
  },
@@ -22853,141 +22853,141 @@
   },
   {
    "wk": 3,
-   "at": "2026-11-09T18:43:32.535Z",
+   "at": "2026-11-10T02:02:18.512Z",
    "t": {
     "SA": [
-     8.8,
+     8.7,
      100,
-     19.5
+     20.2
     ],
     "OKC": [
-     8.2,
+     8,
      100,
-     22.1
+     22.6
     ],
     "BOS": [
      6.4,
-     99.9,
-     10.8
-    ],
-    "HOU": [
-     5.9,
-     99.5,
-     5.8
+     100,
+     10.9
     ],
     "NY": [
-     5.6,
+     5.5,
      99.7,
      7.3
     ],
-    "MIN": [
-     5.1,
-     99.3,
-     8.3
+    "HOU": [
+     5.5,
+     99.4,
+     5.5
     ],
     "LAL": [
-     4.6,
-     95.8,
-     1.7
+     5.1,
+     96.8,
+     1.6
     ],
-    "DET": [
-     4.1,
-     99.9,
-     10.3
+    "MIN": [
+     5,
+     99.3,
+     7.9
     ],
     "CLE": [
-     3.8,
-     98.5,
+     4.7,
+     98.1,
      2.5
     ],
+    "DET": [
+     4.2,
+     99.9,
+     8.8
+    ],
     "PHI": [
-     3.6,
-     99.4,
-     5.1
+     3.7,
+     99.3,
+     5.7
     ],
     "DEN": [
      3.2,
-     79.8,
+     81.3,
      0.7
     ],
     "POR": [
-     2.8,
-     79,
-     0.5
+     2.6,
+     76.7,
+     0.6
     ],
     "ATL": [
-     1.6,
-     89.7,
-     0.4
+     2.6,
+     90.5,
+     0.5
     ],
     "DAL": [
-     1,
-     39.3,
+     0.8,
+     38.1,
      0.1
     ],
     "GS": [
-     0.9,
-     92.4,
-     2.3
+     0.7,
+     91.6,
+     2.1
     ],
     "MIA": [
      -0.5,
-     53.9,
+     53.6,
      0.1
     ],
     "ORL": [
-     -0.9,
-     23.7,
+     -1.3,
+     21.8,
      0
     ],
-    "TOR": [
-     -1.5,
-     97.1,
-     2.7
-    ],
     "PHX": [
-     -1.7,
-     9.5,
+     -1.5,
+     11.3,
      0
     ],
     "MEM": [
-     -2,
-     5.1,
+     -2.2,
+     5,
      0
+    ],
+    "TOR": [
+     -2.2,
+     97.6,
+     2.9
     ],
     "IND": [
-     -2.7,
-     32.7,
-     0
+     -2.8,
+     34.4,
+     0.1
     ],
     "WSH": [
-     -4,
-     4.7,
+     -3.1,
+     4.3,
      0
     ],
     "NO": [
-     -4.2,
-     0.3,
+     -4.6,
+     0.4,
      0
     ],
     "LAC": [
-     -4.3,
+     -4.9,
      0.2,
      0
     ],
     "UTAH": [
-     -5.1,
+     -5.3,
      0,
      0
     ],
     "CHA": [
-     -6.2,
+     -5.6,
      0.8,
      0
     ],
     "BKN": [
-     -7.1,
-     0,
+     -7.2,
+     0.1,
      0
     ],
     "CHI": [
@@ -22996,12 +22996,12 @@
      0
     ],
     "MIL": [
-     -8.2,
+     -8.1,
      0,
      0
     ],
     "SAC": [
-     -10,
+     -10.2,
      0,
      0
     ]
@@ -23009,101 +23009,6 @@
   }
  ],
  "markets": {
-  "KXNBAROY": {
-   "label": "Rookie of the Year",
-   "rows": [
-    {
-     "name": "Yaxel Lendeborg",
-     "p": 30.5,
-     "bid": 29,
-     "ask": 32
-    },
-    {
-     "name": "Darius Acuff Jr.",
-     "p": 27.5,
-     "bid": 26,
-     "ask": 29
-    },
-    {
-     "name": "Cameron Boozer",
-     "p": 25.5,
-     "bid": 25,
-     "ask": 26
-    },
-    {
-     "name": "Caleb Wilson",
-     "p": 8.5,
-     "bid": 8,
-     "ask": 9
-    },
-    {
-     "name": "AJ Dybantsa",
-     "p": 7.5,
-     "bid": 7,
-     "ask": 8
-    },
-    {
-     "name": "Darryn Peterson",
-     "p": 4.5,
-     "bid": 4,
-     "ask": 5
-    },
-    {
-     "name": "Aday Mara",
-     "p": 1.5,
-     "bid": 1,
-     "ask": 2
-    },
-    {
-     "name": "Morez Johnson Jr.",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Kingston Flemings",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Brayden Burries",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Ryan Conwell",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Dailyn Swain",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Mikel Brown Jr.",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Hannes Steinbach",
-     "p": 1,
-     "bid": 0,
-     "ask": 1
-    }
-   ]
-  },
   "KXNBA": {
    "label": "Champion",
    "rows": [
@@ -23121,9 +23026,9 @@
     },
     {
      "name": "Philadelphia",
-     "p": 11.5,
-     "bid": 11,
-     "ask": 12
+     "p": 12.5,
+     "bid": 12,
+     "ask": 13
     },
     {
      "name": "Boston",
@@ -23138,13 +23043,13 @@
      "ask": 7
     },
     {
-     "name": "Minnesota",
+     "name": "Houston",
      "p": 5.5,
      "bid": 5,
      "ask": 6
     },
     {
-     "name": "Houston",
+     "name": "Minnesota",
      "p": 5.5,
      "bid": 5,
      "ask": 6
@@ -23156,7 +23061,7 @@
      "ask": 5
     },
     {
-     "name": "Los Angeles L",
+     "name": "Detroit",
      "p": 3.5,
      "bid": 3,
      "ask": 4
@@ -23168,7 +23073,7 @@
      "ask": 4
     },
     {
-     "name": "Detroit",
+     "name": "Los Angeles L",
      "p": 3.5,
      "bid": 3,
      "ask": 4
@@ -23192,199 +23097,9 @@
      "ask": 3
     },
     {
-     "name": "Indiana",
+     "name": "Dallas",
      "p": 1.5,
      "bid": 1,
-     "ask": 2
-    }
-   ]
-  },
-  "KXNBACOY": {
-   "label": "Coach of the Year",
-   "rows": [
-    {
-     "name": "JJ Redick",
-     "p": 18.5,
-     "bid": 18,
-     "ask": 19
-    },
-    {
-     "name": "Ime Udoka",
-     "p": 12.5,
-     "bid": 12,
-     "ask": 13
-    },
-    {
-     "name": "Micah Nori",
-     "p": 11.5,
-     "bid": 11,
-     "ask": 12
-    },
-    {
-     "name": "Erik Spoelstra",
-     "p": 11,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Jordan Ott",
-     "p": 11,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Dusty May",
-     "p": 10.5,
-     "bid": 2,
-     "ask": 19
-    },
-    {
-     "name": "Mark Daigneault",
-     "p": 10,
-     "bid": 9,
-     "ask": 11
-    },
-    {
-     "name": "Chris Finch",
-     "p": 7,
-     "bid": 4,
-     "ask": 10
-    },
-    {
-     "name": "Nick Nurse",
-     "p": 6.5,
-     "bid": 6,
-     "ask": 7
-    },
-    {
-     "name": "Brian Keefe",
-     "p": 6,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Tuomas Iisalo",
-     "p": 5.5,
-     "bid": 5,
-     "ask": 6
-    },
-    {
-     "name": "Quin Snyder",
-     "p": 5,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Darko Rajaković",
-     "p": 4.5,
-     "bid": 4,
-     "ask": 5
-    },
-    {
-     "name": "Steve Kerr",
-     "p": 4,
-     "bid": 0,
-     "ask": 3
-    },
-    {
-     "name": "Charles Lee",
-     "p": 3,
-     "bid": 0,
-     "ask": 2
-    }
-   ]
-  },
-  "KXNBAMIMP": {
-   "label": "Most Improved Player",
-   "rows": [
-    {
-     "name": "Ty Jerome",
-     "p": 31.5,
-     "bid": 31,
-     "ask": 32
-    },
-    {
-     "name": "Ajay Mitchell",
-     "p": 18.5,
-     "bid": 18,
-     "ask": 19
-    },
-    {
-     "name": "Kyshawn George",
-     "p": 16,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Aaron Wiggins",
-     "p": 15,
-     "bid": 0,
-     "ask": 9
-    },
-    {
-     "name": "Jonathan Kuminga",
-     "p": 8,
-     "bid": 0,
-     "ask": 6
-    },
-    {
-     "name": "Davion Mitchell",
-     "p": 7,
-     "bid": 1,
-     "ask": 13
-    },
-    {
-     "name": "Ayo Dosunmu",
-     "p": 6,
-     "bid": 0,
-     "ask": 4
-    },
-    {
-     "name": "Joan Beringer",
-     "p": 5,
-     "bid": 0,
-     "ask": 2
-    },
-    {
-     "name": "Matas Buzelis",
-     "p": 3,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Coby White",
-     "p": 3,
-     "bid": 0,
-     "ask": 1
-    },
-    {
-     "name": "Anthony Black",
-     "p": 2.5,
-     "bid": 1,
-     "ask": 4
-    },
-    {
-     "name": "Zach Edey",
-     "p": 2.5,
-     "bid": 2,
-     "ask": 3
-    },
-    {
-     "name": "Amen Thompson",
-     "p": 2.5,
-     "bid": 2,
-     "ask": 3
-    },
-    {
-     "name": "Walker Kessler",
-     "p": 2.5,
-     "bid": 2,
-     "ask": 3
-    },
-    {
-     "name": "Kon Knueppel",
-     "p": 2,
-     "bid": 0,
      "ask": 2
     }
    ]
@@ -23394,9 +23109,9 @@
    "rows": [
     {
      "name": "Victor Wembanyama",
-     "p": 79,
+     "p": 78,
      "bid": 77,
-     "ask": 81
+     "ask": 79
     },
     {
      "name": "Cooper Flagg",
@@ -23435,31 +23150,13 @@
      "ask": 6
     },
     {
-     "name": "Amen Thompson",
-     "p": 3.5,
-     "bid": 1,
-     "ask": 6
-    },
-    {
      "name": "Anthony Davis",
      "p": 3.5,
      "bid": 1,
      "ask": 6
     },
     {
-     "name": "Dyson Daniels",
-     "p": 3,
-     "bid": 2,
-     "ask": 4
-    },
-    {
      "name": "Rudy Gobert",
-     "p": 3,
-     "bid": 0,
-     "ask": 3
-    },
-    {
-     "name": "OG Anunoby",
      "p": 3,
      "bid": 0,
      "ask": 3
@@ -23471,75 +23168,129 @@
      "ask": 3
     },
     {
+     "name": "Dyson Daniels",
+     "p": 3,
+     "bid": 2,
+     "ask": 4
+    },
+    {
+     "name": "OG Anunoby",
+     "p": 3,
+     "bid": 0,
+     "ask": 3
+    },
+    {
+     "name": "Amen Thompson",
+     "p": 3,
+     "bid": 1,
+     "ask": 5
+    },
+    {
+     "name": "Scottie Barnes",
+     "p": 3,
+     "bid": 0,
+     "ask": 3
+    },
+    {
      "name": "Giannis Antetokounmpo",
      "p": 2,
      "bid": 0,
      "ask": 2
-    },
-    {
-     "name": "Scottie Barnes",
-     "p": 2,
-     "bid": 1,
-     "ask": 3
     }
    ]
   },
-  "KXNBACLUTCH": {
-   "label": "Clutch Player of the Year",
+  "KXNBAROY": {
+   "label": "Rookie of the Year",
    "rows": [
     {
-     "name": "Stephen Curry",
-     "p": 28,
+     "name": "Yaxel Lendeborg",
+     "p": 27.5,
+     "bid": 26,
+     "ask": 29
+    },
+    {
+     "name": "Darius Acuff Jr.",
+     "p": 26.5,
+     "bid": 26,
+     "ask": 27
+    },
+    {
+     "name": "Cameron Boozer",
+     "p": 21.5,
+     "bid": 21,
+     "ask": 22
+    },
+    {
+     "name": "Caleb Wilson",
+     "p": 8.5,
+     "bid": 8,
+     "ask": 9
+    },
+    {
+     "name": "AJ Dybantsa",
+     "p": 7.5,
+     "bid": 7,
+     "ask": 8
+    },
+    {
+     "name": "Darryn Peterson",
+     "p": 4.5,
+     "bid": 4,
+     "ask": 5
+    },
+    {
+     "name": "Aday Mara",
+     "p": 1.5,
      "bid": 1,
-     "ask": 55
+     "ask": 2
     },
     {
-     "name": "Jalen Brunson",
-     "p": 21,
-     "bid": 1,
-     "ask": 41
+     "name": "Brayden Burries",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Jayson Tatum",
-     "p": 18.5,
-     "bid": 5,
-     "ask": 32
+     "name": "Morez Johnson Jr.",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Jaylen Brown",
-     "p": 18.5,
-     "bid": 1,
-     "ask": 36
+     "name": "Ryan Conwell",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Nikola Jokić",
-     "p": 17.5,
-     "bid": 1,
-     "ask": 34
+     "name": "Dailyn Swain",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Shai Gilgeous-Alexander",
-     "p": 17,
-     "bid": 1,
-     "ask": 33
+     "name": "Kingston Flemings",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Tyrese Maxey",
-     "p": 16.5,
-     "bid": 10,
-     "ask": 23
+     "name": "Tie/Co-Winners",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Luka Dončić",
-     "p": 16.5,
-     "bid": 2,
-     "ask": 31
+     "name": "Bennett Stirtz",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     },
     {
-     "name": "Cooper Flagg",
-     "p": 8,
-     "bid": 1,
-     "ask": 15
+     "name": "Mikel Brown Jr.",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
     }
    ]
   },
@@ -23548,9 +23299,9 @@
    "rows": [
     {
      "name": "Luka Doncic",
-     "p": 37.5,
+     "p": 38,
      "bid": 37,
-     "ask": 38
+     "ask": 39
     },
     {
      "name": "Victor Wembanyama",
@@ -23577,13 +23328,13 @@
      "ask": 5
     },
     {
-     "name": "Cooper Flagg",
+     "name": "Stephen Curry",
      "p": 1.5,
      "bid": 1,
      "ask": 2
     },
     {
-     "name": "Tyrese Maxey",
+     "name": "Cooper Flagg",
      "p": 1.5,
      "bid": 1,
      "ask": 2
@@ -23595,7 +23346,7 @@
      "ask": 2
     },
     {
-     "name": "Stephen Curry",
+     "name": "Tyrese Maxey",
      "p": 1.5,
      "bid": 1,
      "ask": 2
@@ -23607,13 +23358,19 @@
      "ask": 2
     },
     {
-     "name": "Zion Williamson",
+     "name": "Mikal Bridges",
      "p": 1,
      "bid": 0,
      "ask": 1
     },
     {
-     "name": "Devin Booker",
+     "name": "Tie/Co-Winners",
+     "p": 1,
+     "bid": 0,
+     "ask": 1
+    },
+    {
+     "name": "Anthony Edwards",
      "p": 1,
      "bid": 0,
      "ask": 1
@@ -23625,14 +23382,162 @@
      "ask": 1
     },
     {
-     "name": "Tyrese Haliburton",
+     "name": "Deni Avdija",
      "p": 1,
+     "bid": 0,
+     "ask": 1
+    }
+   ]
+  },
+  "KXNBACLUTCH": {
+   "label": "Clutch Player of the Year",
+   "rows": [
+    {
+     "name": "Nikola Jokić",
+     "p": 43.5,
+     "bid": 1,
+     "ask": 86
+    },
+    {
+     "name": "Stephen Curry",
+     "p": 41.5,
+     "bid": 1,
+     "ask": 82
+    },
+    {
+     "name": "Luka Dončić",
+     "p": 35,
+     "bid": 2,
+     "ask": 68
+    },
+    {
+     "name": "Tyrese Maxey",
+     "p": 22.5,
+     "bid": 12,
+     "ask": 33
+    },
+    {
+     "name": "Jalen Brunson",
+     "p": 20.5,
+     "bid": 1,
+     "ask": 40
+    },
+    {
+     "name": "Jaylen Brown",
+     "p": 18.5,
+     "bid": 1,
+     "ask": 36
+    },
+    {
+     "name": "Shai Gilgeous-Alexander",
+     "p": 17,
+     "bid": 1,
+     "ask": 33
+    },
+    {
+     "name": "Jayson Tatum",
+     "p": 16.5,
+     "bid": 1,
+     "ask": 32
+    },
+    {
+     "name": "Cooper Flagg",
+     "p": 1,
+     "bid": 0,
+     "ask": 43
+    }
+   ]
+  },
+  "KXNBAMIMP": {
+   "label": "Most Improved Player",
+   "rows": [
+    {
+     "name": "Ty Jerome",
+     "p": 31.5,
+     "bid": 31,
+     "ask": 32
+    },
+    {
+     "name": "Ajay Mitchell",
+     "p": 19,
+     "bid": 17,
+     "ask": 21
+    },
+    {
+     "name": "Kyshawn George",
+     "p": 16,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Jonathan Kuminga",
+     "p": 8,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Jabari Smith Jr.",
+     "p": 8,
+     "bid": 1,
+     "ask": 15
+    },
+    {
+     "name": "Ayo Dosunmu",
+     "p": 6,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Joan Beringer",
+     "p": 5,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Davion Mitchell",
+     "p": 4.5,
+     "bid": 1,
+     "ask": 8
+    },
+    {
+     "name": "Matas Buzelis",
+     "p": 3,
      "bid": 0,
      "ask": 1
     },
     {
-     "name": "Jalen Johnson",
-     "p": 1,
+     "name": "Coby White",
+     "p": 3,
+     "bid": 0,
+     "ask": 1
+    },
+    {
+     "name": "Zach Edey",
+     "p": 2.5,
+     "bid": 2,
+     "ask": 3
+    },
+    {
+     "name": "Amen Thompson",
+     "p": 2.5,
+     "bid": 2,
+     "ask": 3
+    },
+    {
+     "name": "Walker Kessler",
+     "p": 2.5,
+     "bid": 2,
+     "ask": 3
+    },
+    {
+     "name": "Kon Knueppel",
+     "p": 2,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Donovan Clingan",
+     "p": 2,
      "bid": 0,
      "ask": 1
     }
@@ -23649,21 +23554,21 @@
     },
     {
      "name": "Jrue Holiday",
-     "p": 22.5,
+     "p": 21,
      "bid": 20,
-     "ask": 25
+     "ask": 22
     },
     {
      "name": "Ayo Dosunmu",
-     "p": 10,
-     "bid": 8,
-     "ask": 12
+     "p": 12,
+     "bid": 10,
+     "ask": 14
     },
     {
      "name": "Aaron Wiggins",
-     "p": 8,
+     "p": 8.5,
      "bid": 2,
-     "ask": 14
+     "ask": 15
     },
     {
      "name": "Jared McCain",
@@ -23690,22 +23595,10 @@
      "ask": 3
     },
     {
-     "name": "Sandro Mamukelashvili",
-     "p": 2,
-     "bid": 0,
-     "ask": 2
-    },
-    {
      "name": "Reed Sheppard",
      "p": 2,
      "bid": 0,
      "ask": 2
-    },
-    {
-     "name": "Bennedict Mathurin",
-     "p": 2,
-     "bid": 0,
-     "ask": 1
     },
     {
      "name": "Ajay Mitchell",
@@ -23714,22 +23607,129 @@
      "ask": 2
     },
     {
-     "name": "Tre Johnson",
-     "p": 2,
-     "bid": 0,
-     "ask": 1
-    },
-    {
      "name": "Bobby Portis",
      "p": 2,
      "bid": 0,
      "ask": 1
     },
     {
-     "name": "Isaiah Joe",
+     "name": "Tim Hardaway Jr.",
      "p": 2,
      "bid": 0,
      "ask": 1
+    },
+    {
+     "name": "Damian Lillard",
+     "p": 2,
+     "bid": 0,
+     "ask": 1
+    },
+    {
+     "name": "Scoot Henderson",
+     "p": 2,
+     "bid": 0,
+     "ask": 1
+    },
+    {
+     "name": "Sam Merrill",
+     "p": 2,
+     "bid": 0,
+     "ask": 1
+    }
+   ]
+  },
+  "KXNBACOY": {
+   "label": "Coach of the Year",
+   "rows": [
+    {
+     "name": "JJ Redick",
+     "p": 16.5,
+     "bid": 13,
+     "ask": 20
+    },
+    {
+     "name": "Ime Udoka",
+     "p": 11.5,
+     "bid": 11,
+     "ask": 12
+    },
+    {
+     "name": "Micah Nori",
+     "p": 11.5,
+     "bid": 11,
+     "ask": 12
+    },
+    {
+     "name": "Erik Spoelstra",
+     "p": 11,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Jordan Ott",
+     "p": 11,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Joe Mazzulla",
+     "p": 11,
+     "bid": 0,
+     "ask": 9
+    },
+    {
+     "name": "Mark Daigneault",
+     "p": 9.5,
+     "bid": 9,
+     "ask": 10
+    },
+    {
+     "name": "Dusty May",
+     "p": 8.5,
+     "bid": 2,
+     "ask": 15
+    },
+    {
+     "name": "Nick Nurse",
+     "p": 6.5,
+     "bid": 6,
+     "ask": 7
+    },
+    {
+     "name": "Chris Finch",
+     "p": 6.5,
+     "bid": 5,
+     "ask": 8
+    },
+    {
+     "name": "Brian Keefe",
+     "p": 6,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "Tuomas Iisalo",
+     "p": 3.5,
+     "bid": 2,
+     "ask": 5
+    },
+    {
+     "name": "Charles Lee",
+     "p": 3,
+     "bid": 0,
+     "ask": 2
+    },
+    {
+     "name": "J.B. Bickerstaff",
+     "p": 2.5,
+     "bid": 2,
+     "ask": 3
+    },
+    {
+     "name": "Jamahl Mosley",
+     "p": 2,
+     "bid": 0,
+     "ask": 2
     }
    ]
   }
@@ -23926,100 +23926,100 @@
   {
    "wk": 3,
    "t": {
-    "KXNBAROY": {
-     "Yaxel Lendeborg": 30.5,
-     "Darius Acuff Jr.": 27.5,
-     "Cameron Boozer": 25.5,
-     "Caleb Wilson": 8.5,
-     "AJ Dybantsa": 7.5,
-     "Darryn Peterson": 4.5,
-     "Aday Mara": 1.5,
-     "Morez Johnson Jr.": 1,
-     "Tie/Co-Winners": 1,
-     "Kingston Flemings": 1
-    },
     "KXNBA": {
      "San Antonio": 21.5,
      "Oklahoma City": 14.5,
-     "Philadelphia": 11.5,
+     "Philadelphia": 12.5,
      "Boston": 6.5,
      "New York": 6.5,
-     "Minnesota": 5.5,
      "Houston": 5.5,
+     "Minnesota": 5.5,
      "Golden State": 4.5,
-     "Los Angeles L": 3.5,
+     "Detroit": 3.5,
      "Toronto": 3.5
     },
-    "KXNBACOY": {
-     "JJ Redick": 18.5,
-     "Ime Udoka": 12.5,
-     "Micah Nori": 11.5,
-     "Erik Spoelstra": 11,
-     "Jordan Ott": 11,
-     "Dusty May": 10.5,
-     "Mark Daigneault": 10,
-     "Chris Finch": 7,
-     "Nick Nurse": 6.5,
-     "Brian Keefe": 6
-    },
-    "KXNBAMIMP": {
-     "Ty Jerome": 31.5,
-     "Ajay Mitchell": 18.5,
-     "Kyshawn George": 16,
-     "Aaron Wiggins": 15,
-     "Jonathan Kuminga": 8,
-     "Davion Mitchell": 7,
-     "Ayo Dosunmu": 6,
-     "Joan Beringer": 5,
-     "Matas Buzelis": 3,
-     "Coby White": 3
-    },
     "KXNBADPOY": {
-     "Victor Wembanyama": 79,
+     "Victor Wembanyama": 78,
      "Cooper Flagg": 12,
      "Walker Kessler": 8.5,
      "LeBron James": 7,
      "Chet Holmgren": 6,
      "Ausar Thompson": 5.5,
      "Zach Edey": 4,
-     "Amen Thompson": 3.5,
      "Anthony Davis": 3.5,
-     "Dyson Daniels": 3
+     "Rudy Gobert": 3,
+     "Bam Adebayo": 3
     },
-    "KXNBACLUTCH": {
-     "Stephen Curry": 28,
-     "Jalen Brunson": 21,
-     "Jayson Tatum": 18.5,
-     "Jaylen Brown": 18.5,
-     "Nikola Jokić": 17.5,
-     "Shai Gilgeous-Alexander": 17,
-     "Tyrese Maxey": 16.5,
-     "Luka Dončić": 16.5,
-     "Cooper Flagg": 8
+    "KXNBAROY": {
+     "Yaxel Lendeborg": 27.5,
+     "Darius Acuff Jr.": 26.5,
+     "Cameron Boozer": 21.5,
+     "Caleb Wilson": 8.5,
+     "AJ Dybantsa": 7.5,
+     "Darryn Peterson": 4.5,
+     "Aday Mara": 1.5,
+     "Brayden Burries": 1,
+     "Morez Johnson Jr.": 1,
+     "Ryan Conwell": 1
     },
     "KXNBAMVP": {
-     "Luka Doncic": 37.5,
+     "Luka Doncic": 38,
      "Victor Wembanyama": 31.5,
      "Shai Gilgeous-Alexander": 10.5,
      "Nikola Jokić": 4.5,
      "Jayson Tatum": 4.5,
-     "Cooper Flagg": 1.5,
-     "Tyrese Maxey": 1.5,
-     "Giannis Antetokounmpo": 1.5,
      "Stephen Curry": 1.5,
+     "Cooper Flagg": 1.5,
+     "Giannis Antetokounmpo": 1.5,
+     "Tyrese Maxey": 1.5,
      "Cade Cunningham": 1.5
+    },
+    "KXNBACLUTCH": {
+     "Nikola Jokić": 43.5,
+     "Stephen Curry": 41.5,
+     "Luka Dončić": 35,
+     "Tyrese Maxey": 22.5,
+     "Jalen Brunson": 20.5,
+     "Jaylen Brown": 18.5,
+     "Shai Gilgeous-Alexander": 17,
+     "Jayson Tatum": 16.5,
+     "Cooper Flagg": 1
+    },
+    "KXNBAMIMP": {
+     "Ty Jerome": 31.5,
+     "Ajay Mitchell": 19,
+     "Kyshawn George": 16,
+     "Jonathan Kuminga": 8,
+     "Jabari Smith Jr.": 8,
+     "Ayo Dosunmu": 6,
+     "Joan Beringer": 5,
+     "Davion Mitchell": 4.5,
+     "Matas Buzelis": 3,
+     "Coby White": 3
     },
     "KXNBASIXTH": {
      "Payton Pritchard": 32.5,
-     "Jrue Holiday": 22.5,
-     "Ayo Dosunmu": 10,
-     "Aaron Wiggins": 8,
+     "Jrue Holiday": 21,
+     "Ayo Dosunmu": 12,
+     "Aaron Wiggins": 8.5,
      "Jared McCain": 5,
      "Anfernee Simons": 4.5,
      "Hugo González": 3,
      "Pelle Larsson": 2.5,
-     "Sandro Mamukelashvili": 2,
-     "Reed Sheppard": 2
+     "Reed Sheppard": 2,
+     "Ajay Mitchell": 2
+    },
+    "KXNBACOY": {
+     "JJ Redick": 16.5,
+     "Ime Udoka": 11.5,
+     "Micah Nori": 11.5,
+     "Erik Spoelstra": 11,
+     "Jordan Ott": 11,
+     "Joe Mazzulla": 11,
+     "Mark Daigneault": 9.5,
+     "Dusty May": 8.5,
+     "Nick Nurse": 6.5,
+     "Chris Finch": 6.5
     }
    }
   }
