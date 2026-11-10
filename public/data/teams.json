@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T02:02:18.605Z",
+ "updated": "2026-11-10T09:43:24.886Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
@@ -19857,26 +19857,26 @@
      "color": "#00338d",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
      "standing": "1st in AFC East",
-     "record": "6-1",
+     "record": "7-1",
      "rank": null,
-     "gp": 7,
-     "w": 6,
+     "gp": 8,
+     "w": 7,
      "d": 0,
      "l": 1,
-     "pf": 233,
-     "pa": 181,
+     "pf": 256,
+     "pa": 187,
      "pts": null,
      "pos": null,
      "seed": 1
     },
     "stats": {
-     "ppg": 33.286,
-     "ypg": 404.571,
-     "passYpg": 244.71428,
-     "rushYpg": 148.4,
-     "third": 44.156,
-     "toDiff": -2,
-     "sacks": 15
+     "ppg": 32,
+     "ypg": 400,
+     "passYpg": 239.75,
+     "rushYpg": 146.6,
+     "third": 43.158,
+     "toDiff": 0,
+     "sacks": 17
     },
     "allTime": {
      "wins": 81,
@@ -20605,118 +20605,6 @@
     ]
    },
    {
-    "id": "16",
-    "name": "Vikings",
-    "label": null,
-    "kind": "current",
-    "card": {
-     "id": "16",
-     "name": "Minnesota Vikings",
-     "short": "Vikings",
-     "abbr": "MIN",
-     "color": "#4f2683",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
-     "standing": "2nd in National Football Conference",
-     "record": "6-1",
-     "rank": null,
-     "gp": 7,
-     "w": 6,
-     "d": 0,
-     "l": 1,
-     "pf": 140,
-     "pa": 93,
-     "pts": null,
-     "pos": null,
-     "seed": 2
-    },
-    "stats": {
-     "ppg": 20,
-     "ypg": 299.286,
-     "passYpg": 165.57143,
-     "rushYpg": 113.9,
-     "third": 36,
-     "toDiff": 7,
-     "sacks": 25
-    },
-    "allTime": null,
-    "page": null,
-    "since2001": {
-     "w": 5,
-     "d": 0,
-     "l": 1,
-     "gf": 163,
-     "ga": 92
-    },
-    "recent": [
-     {
-      "date": "2022-11-25",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": false,
-      "us": 26,
-      "them": 33,
-      "result": "L",
-      "type": "Regular Season",
-      "season": 2022
-     },
-     {
-      "date": "2018-12-02",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": true,
-      "us": 24,
-      "them": 10,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2018
-     },
-     {
-      "date": "2014-09-14",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": false,
-      "us": 30,
-      "them": 7,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2014
-     },
-     {
-      "date": "2010-10-31",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": true,
-      "us": 28,
-      "them": 18,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2010
-     },
-     {
-      "date": "2006-10-31",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": false,
-      "us": 31,
-      "them": 7,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2006
-     },
-     {
-      "date": "2002-11-24",
-      "opp": "16",
-      "oppName": "Minnesota Vikings",
-      "home": true,
-      "us": 24,
-      "them": 17,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2002
-     }
-    ]
-   },
-   {
     "id": "3",
     "name": "Bears",
     "label": null,
@@ -20728,7 +20616,7 @@
      "abbr": "CHI",
      "color": "#0b1c3a",
      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-     "standing": "5th in National Football Conference",
+     "standing": "2nd in National Football Conference",
      "record": "7-2",
      "rank": null,
      "gp": 9,
@@ -20739,7 +20627,7 @@
      "pa": 184,
      "pts": null,
      "pos": null,
-     "seed": 5
+     "seed": 2
     },
     "stats": {
      "ppg": 26.778,
@@ -20847,6 +20735,162 @@
       "result": "W",
       "type": "Regular Season",
       "season": 2002
+     }
+    ]
+   },
+   {
+    "id": "7",
+    "name": "Broncos",
+    "label": null,
+    "kind": "current",
+    "card": {
+     "id": "7",
+     "name": "Denver Broncos",
+     "short": "Broncos",
+     "abbr": "DEN",
+     "color": "#0a2343",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+     "standing": "1st in AFC West",
+     "record": "7-2",
+     "rank": null,
+     "gp": 9,
+     "w": 7,
+     "d": 0,
+     "l": 2,
+     "pf": 198,
+     "pa": 186,
+     "pts": null,
+     "pos": null,
+     "seed": 2
+    },
+    "stats": {
+     "ppg": 22,
+     "ypg": 283.667,
+     "passYpg": 185.88889,
+     "rushYpg": 91.4,
+     "third": 32.432,
+     "toDiff": 5,
+     "sacks": 26
+    },
+    "allTime": null,
+    "page": null,
+    "since2001": {
+     "w": 9,
+     "d": 0,
+     "l": 7,
+     "gf": 419,
+     "ga": 339
+    },
+    "recent": [
+     {
+      "date": "2023-12-25",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 26,
+      "them": 23,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2023
+     },
+     {
+      "date": "2020-10-18",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": true,
+      "us": 12,
+      "them": 18,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2020
+     },
+     {
+      "date": "2017-11-13",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 41,
+      "them": 16,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2017
+     },
+     {
+      "date": "2016-12-18",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 16,
+      "them": 3,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2016
+     },
+     {
+      "date": "2015-11-30",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 24,
+      "them": 30,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2015
+     },
+     {
+      "date": "2014-11-02",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": true,
+      "us": 43,
+      "them": 21,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2014
+     },
+     {
+      "date": "2013-11-25",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": true,
+      "us": 34,
+      "them": 31,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2013
+     },
+     {
+      "date": "2012-10-07",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": true,
+      "us": 31,
+      "them": 21,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2012
+     },
+     {
+      "date": "2011-12-18",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 41,
+      "them": 23,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2011
+     },
+     {
+      "date": "2009-10-11",
+      "opp": "7",
+      "oppName": "Denver Broncos",
+      "home": false,
+      "us": 17,
+      "them": 20,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2009
      }
     ]
    }

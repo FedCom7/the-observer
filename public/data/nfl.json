@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T02:02:18.512Z",
+ "updated": "2026-11-10T09:43:24.683Z",
  "season": 2026,
  "teams": [
   {
@@ -3998,19 +3998,23 @@
    "type": 2,
    "wk": 9,
    "start": "2026-11-10T01:15Z",
-   "st": "in",
-   "detail": "14:14 - 2nd",
+   "st": "post",
+   "detail": "Final",
    "h": "MIN",
    "a": "BUF",
-   "hs": 0,
-   "as": 3,
+   "hs": 6,
+   "as": 23,
    "hl": [
+    0,
+    6,
     0,
     0
    ],
    "al": [
     3,
-    0
+    7,
+    3,
+    10
    ],
    "tv": "ESPN / ABC",
    "venue": "U.S. Bank Stadium",
@@ -6534,7 +6538,7 @@
   }
  ],
  "pbp": {
-  "at": "2026-11-10T02:02:18.512Z",
+  "at": "2026-11-10T09:43:24.683Z",
   "ftnPlays": 20723,
   "maxWeek": 9,
   "teams": {
@@ -10249,48 +10253,48 @@
     }
    },
    "BUF": {
-    "games": 7,
-    "plays": 459,
-    "offEpa": 0.169,
-    "defEpa": 0.085,
-    "offPassEpa": 0.284,
-    "offRushEpa": 0.013,
-    "defPassEpa": 0.173,
-    "defRushEpa": -0.083,
-    "offSr": 0.488,
-    "defSr": 0.472,
-    "offExp": 0.124,
-    "defExp": 0.089,
-    "off3rd": 0.43,
-    "def3rd": 0.398,
-    "offRz": 0.7,
-    "defRz": 0.655,
-    "offPtsDrive": 3.08,
-    "defPtsDrive": 2.35,
-    "sackRateAllowed": 0.054,
-    "sackRate": 0.051,
-    "give": 11,
-    "take": 9,
-    "toMargin": -2,
-    "earlyPass": 0.532,
+    "games": 8,
+    "plays": 535,
+    "offEpa": 0.14,
+    "defEpa": 0.019,
+    "offPassEpa": 0.25,
+    "offRushEpa": -0.001,
+    "defPassEpa": 0.071,
+    "defRushEpa": -0.087,
+    "offSr": 0.477,
+    "defSr": 0.457,
+    "offExp": 0.116,
+    "defExp": 0.085,
+    "off3rd": 0.427,
+    "def3rd": 0.364,
+    "offRz": 0.667,
+    "defRz": 0.633,
+    "offPtsDrive": 2.89,
+    "defPtsDrive": 2.1,
+    "sackRateAllowed": 0.061,
+    "sackRate": 0.052,
+    "give": 12,
+    "take": 12,
+    "toMargin": 0,
+    "earlyPass": 0.525,
     "byQ": {
      "off": [
-      -0.051,
-      0.306,
-      0.086,
-      0.292
+      -0.124,
+      0.286,
+      0.09,
+      0.285
      ],
      "def": [
-      0.086,
-      0.051,
-      0.119,
-      0.089
+      -0.044,
+      0.022,
+      0.04,
+      0.034
      ]
     },
     "close4": {
-     "off": 0.27,
+     "off": 0.288,
      "def": 0.081,
-     "plays": 195
+     "plays": 210
     },
     "weeks": [
      {
@@ -10334,29 +10338,35 @@
       "opp": "BAL",
       "off": -0.007,
       "def": -0.46
+     },
+     {
+      "wk": 9,
+      "opp": "MIN",
+      "off": -0.038,
+      "def": -0.666
      }
     ],
     "splits": {
      "off": {
       "d1": [
-       0.09,
-       0.486,
-       218
+       0.075,
+       0.472,
+       250
       ],
       "own": [
-       0.138,
-       0.514,
-       177
+       0.167,
+       0.516,
+       192
       ],
       "run_left_guard": [
-       0.345,
-       0.688,
-       32
+       0.359,
+       0.667,
+       39
       ],
       "center": [
-       0.115,
-       0.526,
-       249
+       0.081,
+       0.5,
+       292
       ],
       "nomotion": [
        0.18,
@@ -10369,24 +10379,24 @@
        26
       ],
       "d2": [
-       0.167,
-       0.463,
-       147
+       0.128,
+       0.451,
+       173
       ],
       "short": [
-       0.277,
-       0.489,
-       90
+       0.254,
+       0.505,
+       103
       ],
       "pass_right": [
-       0.348,
-       0.452,
-       84
+       0.379,
+       0.49,
+       102
       ],
       "pz_right_short": [
-       0.195,
-       0.426,
-       61
+       0.217,
+       0.474,
+       76
       ],
       "pa": [
        0.253,
@@ -10399,9 +10409,9 @@
        156
       ],
       "run_middle": [
-       -0.048,
-       0.515,
-       66
+       -0.061,
+       0.456,
+       79
       ],
       "normalbox": [
        0.07,
@@ -10409,14 +10419,14 @@
        74
       ],
       "opp": [
-       0.265,
-       0.481,
-       160
+       0.196,
+       0.467,
+       197
       ],
       "run_right_guard": [
-       -0.051,
-       0.37,
-       27
+       -0.043,
+       0.389,
+       36
       ],
       "motion": [
        0.163,
@@ -10424,9 +10434,9 @@
        295
       ],
       "gun": [
-       0.233,
-       0.443,
-       210
+       0.21,
+       0.449,
+       243
       ],
       "lightbox": [
        -0.089,
@@ -10434,9 +10444,9 @@
        95
       ],
       "d3": [
-       0.346,
-       0.532,
-       79
+       0.266,
+       0.521,
+       96
       ],
       "rpo": [
        -0.143,
@@ -10444,14 +10454,14 @@
        24
       ],
       "d4": [
-       0.726,
-       0.636,
-       11
+       0.84,
+       0.667,
+       12
       ],
       "run_left_end": [
-       -0.489,
-       0.462,
-       13
+       -0.567,
+       0.4,
+       15
       ],
       "nopa": [
        0.305,
@@ -10459,39 +10469,39 @@
        176
       ],
       "pass_left": [
-       0.334,
+       0.333,
        0.5,
-       72
+       78
       ],
       "pz_left_short": [
-       0.429,
-       0.532,
-       47
+       0.349,
+       0.51,
+       51
       ],
       "mid": [
-       0.374,
-       0.6,
-       45
+       0.394,
+       0.608,
+       51
       ],
       "pass_middle": [
-       0.376,
-       0.51,
-       49
+       0.238,
+       0.5,
+       56
       ],
       "pz_middle_mid": [
-       0.308,
+       0.324,
        0.667,
-       18
+       21
       ],
       "pz_right_mid": [
-       0.382,
+       0.429,
        0.5,
-       14
+       16
       ],
       "run_right_end": [
-       0.512,
-       0.714,
-       7
+       0.235,
+       0.545,
+       11
       ],
       "oop": [
        0.448,
@@ -10499,14 +10509,14 @@
        73
       ],
       "pz_left_mid": [
-       0.455,
-       0.615,
-       13
+       0.459,
+       0.643,
+       14
       ],
       "rz": [
-       0.144,
-       0.448,
-       96
+       0.116,
+       0.442,
+       104
       ],
       "blitz": [
        0.189,
@@ -10514,39 +10524,39 @@
        85
       ],
       "backed": [
-       -0.115,
-       0.5,
-       26
+       -0.189,
+       0.429,
+       42
       ],
       "deep": [
-       0.792,
-       0.406,
-       32
+       0.739,
+       0.417,
+       36
       ],
       "pz_right_deep": [
-       1.337,
-       0.556,
-       9
+       1.527,
+       0.6,
+       10
       ],
       "nohuddle": [
-       0.945,
-       0.789,
-       19
+       0.719,
+       0.8,
+       25
       ],
       "pz_middle_deep": [
-       1.399,
-       0.455,
-       11
+       0.741,
+       0.385,
+       13
       ],
       "run_right_tackle": [
-       0.203,
-       0.611,
-       18
+       0.166,
+       0.55,
+       20
       ],
       "behind": [
-       0.121,
-       0.395,
-       38
+       0.112,
+       0.413,
+       46
       ],
       "screen": [
        0.274,
@@ -10554,41 +10564,41 @@
        23
       ],
       "pz_left_deep": [
-       -0.172,
-       0.25,
-       12
+       0.131,
+       0.308,
+       13
       ],
       "pz_middle_short": [
-       -0.125,
-       0.4,
-       20
+       -0.14,
+       0.409,
+       22
       ],
       "run_left_tackle": [
-       -0.058,
-       0.304,
-       23
+       -0.092,
+       0.28,
+       25
       ]
      },
      "def": {
       "d1": [
-       0.073,
-       0.463,
-       214
+       0.019,
+       0.457,
+       234
       ],
       "own": [
-       -0.066,
-       0.445,
-       218
+       -0.109,
+       0.44,
+       243
       ],
       "run_left_tackle": [
-       -0.263,
-       0.278,
-       18
+       -0.279,
+       0.238,
+       21
       ],
       "center": [
-       0.064,
-       0.467,
-       197
+       0.001,
+       0.455,
+       209
       ],
       "nomotion": [
        0.112,
@@ -10601,19 +10611,19 @@
        74
       ],
       "d2": [
-       0.095,
-       0.481,
-       160
+       0.052,
+       0.466,
+       176
       ],
       "gun": [
-       0.1,
-       0.476,
-       288
+       0.03,
+       0.458,
+       323
       ],
       "d3": [
-       -0.096,
-       0.439,
-       98
+       -0.169,
+       0.411,
+       107
       ],
       "nopa": [
        0.118,
@@ -10626,9 +10636,9 @@
        182
       ],
       "run_right_guard": [
-       -0.117,
-       0.5,
-       18
+       -0.111,
+       0.474,
+       19
       ],
       "motion": [
        0.07,
@@ -10636,19 +10646,19 @@
        314
       ],
       "short": [
-       0.167,
-       0.563,
-       119
+       0.097,
+       0.538,
+       130
       ],
       "pass_right": [
-       0.277,
-       0.5,
-       110
+       0.168,
+       0.468,
+       124
       ],
       "pz_right_short": [
-       0.059,
-       0.493,
-       73
+       0,
+       0.456,
+       79
       ],
       "heavybox": [
        -0.072,
@@ -10656,19 +10666,19 @@
        30
       ],
       "mid": [
-       0.59,
-       0.557,
-       79
+       0.455,
+       0.539,
+       89
       ],
       "pass_left": [
-       0.146,
-       0.484,
-       95
+       0.098,
+       0.475,
+       101
       ],
       "pz_left_mid": [
-       0.388,
-       0.552,
-       29
+       0.402,
+       0.567,
+       30
       ],
       "pa": [
        0.202,
@@ -10681,9 +10691,9 @@
        113
       ],
       "opp": [
-       0.265,
-       0.521,
-       142
+       0.131,
+       0.487,
+       158
       ],
       "run_left_guard": [
        0.006,
@@ -10691,9 +10701,9 @@
        27
       ],
       "run_right_end": [
-       0.097,
-       0.583,
-       12
+       0.137,
+       0.615,
+       13
       ],
       "run_left_end": [
        0.081,
@@ -10701,9 +10711,9 @@
        13
       ],
       "pz_right_mid": [
-       0.801,
-       0.6,
-       25
+       0.591,
+       0.563,
+       32
       ],
       "oop": [
        0.119,
@@ -10711,44 +10721,44 @@
        52
       ],
       "deep": [
-       0.461,
-       0.346,
-       26
+       0.143,
+       0.313,
+       32
       ],
       "pz_right_deep": [
-       0.51,
-       0.333,
-       12
+       0.147,
+       0.308,
+       13
       ],
       "rz": [
-       0.233,
-       0.511,
-       94
+       0.207,
+       0.5,
+       96
       ],
       "run_right_tackle": [
-       0.049,
-       0.444,
-       18
+       0.028,
+       0.421,
+       19
       ],
       "behind": [
-       -0.211,
-       0.341,
-       44
+       -0.25,
+       0.333,
+       48
       ],
       "pass_middle": [
-       0.394,
-       0.54,
-       63
+       0.202,
+       0.514,
+       74
       ],
       "pz_middle_short": [
-       0.118,
-       0.548,
-       31
+       -0.027,
+       0.526,
+       38
       ],
       "pz_left_short": [
-       0.043,
+       0.026,
        0.492,
-       59
+       61
       ],
       "screen": [
        0.089,
@@ -10761,9 +10771,9 @@
        63
       ],
       "run_middle": [
-       -0.054,
-       0.418,
-       55
+       -0.061,
+       0.417,
+       60
       ],
       "rpo": [
        0.329,
@@ -10771,85 +10781,85 @@
        16
       ],
       "backed": [
-       -0.124,
-       0.323,
-       31
+       -0.12,
+       0.314,
+       35
       ],
       "nohuddle": [
-       0.387,
-       0.652,
-       23
+       0.166,
+       0.548,
+       31
       ],
       "pz_middle_mid": [
-       0.613,
-       0.52,
-       25
+       0.352,
+       0.481,
+       27
       ],
       "pz_left_deep": [
-       0.005,
-       0.143,
-       7
+       -0.378,
+       0.1,
+       10
       ],
       "d4": [
-       1.793,
-       0.818,
-       11
+       1.093,
+       0.692,
+       13
       ],
       "pz_middle_deep": [
-       0.834,
-       0.571,
-       7
+       0.715,
+       0.556,
+       9
       ]
      }
     },
     "rates": {
-     "gun": 0.458,
-     "noHuddle": 0.041,
+     "gun": 0.454,
+     "noHuddle": 0.047,
      "motion": 0.643,
      "playAction": 0.27,
      "blitzFaced": 0.353,
      "outOfPocket": 0.303,
      "drops": 0.044,
      "intWorthy": 0.031,
-     "hitAllowed": 0.133,
-     "passOe": -1,
+     "hitAllowed": 0.152,
+     "passOe": -2.6,
      "goFourth": 1,
-     "fourthN": 6,
-     "penPerGame": 8.6,
-     "penYdsPerGame": 74.4,
+     "fourthN": 7,
+     "penPerGame": 8.5,
+     "penYdsPerGame": 72.9,
      "blitz": 0.383,
-     "hit": 0.186,
-     "havoc": 0.124,
+     "hit": 0.195,
+     "havoc": 0.126,
      "motionFaced": 0.647,
      "paFaced": 0.268,
      "intWorthyForced": 0.032
     },
     "drives": {
      "off": {
-      "n": 77,
-      "start": 34.8,
+      "n": 90,
+      "start": 33.9,
       "plays": 5.9,
       "end": {
-       "downs": 0.026,
-       "fg": 0.208,
-       "td": 0.351,
-       "half": 0.091,
-       "punt": 0.182,
-       "to": 0.143
+       "downs": 0.022,
+       "fg": 0.211,
+       "td": 0.322,
+       "half": 0.1,
+       "punt": 0.211,
+       "to": 0.133
       }
      },
      "def": {
-      "n": 77,
-      "start": 29.9,
-      "plays": 6.1,
+      "n": 89,
+      "start": 30.8,
+      "plays": 5.8,
       "end": {
-       "to": 0.117,
-       "td": 0.286,
-       "punt": 0.325,
-       "fg": 0.117,
-       "missed": 0.052,
-       "half": 0.078,
-       "downs": 0.026
+       "to": 0.135,
+       "td": 0.247,
+       "punt": 0.337,
+       "fg": 0.124,
+       "missed": 0.045,
+       "half": 0.067,
+       "downs": 0.045
       }
      }
     }
@@ -16403,48 +16413,48 @@
     }
    },
    "MIN": {
-    "games": 7,
-    "plays": 424,
-    "offEpa": -0.094,
-    "defEpa": -0.191,
-    "offPassEpa": -0.016,
-    "offRushEpa": -0.206,
-    "defPassEpa": -0.21,
-    "defRushEpa": -0.166,
-    "offSr": 0.38,
-    "defSr": 0.36,
-    "offExp": 0.08,
-    "defExp": 0.082,
-    "off3rd": 0.343,
-    "def3rd": 0.281,
-    "offRz": 0.533,
-    "defRz": 0.294,
-    "offPtsDrive": 1.65,
-    "defPtsDrive": 1.28,
-    "sackRateAllowed": 0.09,
-    "sackRate": 0.106,
-    "give": 5,
-    "take": 12,
-    "toMargin": 7,
-    "earlyPass": 0.512,
+    "games": 8,
+    "plays": 471,
+    "offEpa": -0.151,
+    "defEpa": -0.168,
+    "offPassEpa": -0.117,
+    "offRushEpa": -0.203,
+    "defPassEpa": -0.183,
+    "defRushEpa": -0.149,
+    "offSr": 0.372,
+    "defSr": 0.367,
+    "offExp": 0.076,
+    "defExp": 0.08,
+    "off3rd": 0.316,
+    "def3rd": 0.301,
+    "offRz": 0.5,
+    "defRz": 0.3,
+    "offPtsDrive": 1.49,
+    "defPtsDrive": 1.35,
+    "sackRateAllowed": 0.086,
+    "sackRate": 0.107,
+    "give": 8,
+    "take": 13,
+    "toMargin": 5,
+    "earlyPass": 0.521,
     "byQ": {
      "off": [
-      -0.202,
-      -0.09,
-      -0.299,
-      0.167
+      -0.279,
+      -0.109,
+      -0.36,
+      0.095
      ],
      "def": [
-      -0.031,
-      -0.182,
-      -0.109,
-      -0.418
+      -0.127,
+      -0.146,
+      -0.079,
+      -0.323
      ]
     },
     "close4": {
      "off": 0.183,
-     "def": -0.348,
-     "plays": 189
+     "def": -0.231,
+     "plays": 204
     },
     "weeks": [
      {
@@ -16488,29 +16498,35 @@
       "opp": "DET",
       "off": -0.079,
       "def": -0.043
+     },
+     {
+      "wk": 9,
+      "opp": "BUF",
+      "off": -0.666,
+      "def": -0.038
      }
     ],
     "splits": {
      "off": {
       "d1": [
-       -0.072,
-       0.364,
-       173
+       -0.122,
+       0.368,
+       193
       ],
       "own": [
-       -0.128,
-       0.372,
-       188
+       -0.17,
+       0.376,
+       213
       ],
       "run_middle": [
-       -0.261,
-       0.333,
-       39
+       -0.248,
+       0.341,
+       44
       ],
       "gun": [
-       -0.12,
-       0.395,
-       258
+       -0.171,
+       0.386,
+       293
       ],
       "motion": [
        -0.104,
@@ -16523,24 +16539,24 @@
        80
       ],
       "d2": [
-       -0.119,
-       0.348,
-       138
+       -0.146,
+       0.344,
+       154
       ],
       "deep": [
-       0.391,
-       0.409,
-       22
+       0.042,
+       0.357,
+       28
       ],
       "pass_right": [
-       0.167,
-       0.452,
-       73
+       0.029,
+       0.414,
+       87
       ],
       "pz_right_deep": [
-       -0.907,
-       0.333,
-       3
+       -1.732,
+       0.25,
+       4
       ],
       "nomotion": [
        -0.082,
@@ -16558,19 +16574,19 @@
        78
       ],
       "short": [
-       0.165,
-       0.451,
-       82
+       0.066,
+       0.43,
+       93
       ],
       "pz_right_short": [
-       0.07,
-       0.42,
-       50
+       -0.015,
+       0.375,
+       56
       ],
       "center": [
-       -0.052,
-       0.355,
-       166
+       -0.118,
+       0.348,
+       178
       ],
       "pa": [
        0.118,
@@ -16593,14 +16609,14 @@
        76
       ],
       "d3": [
-       -0.125,
-       0.419,
-       105
+       -0.191,
+       0.395,
+       114
       ],
       "behind": [
-       -0.394,
-       0.341,
-       41
+       -0.419,
+       0.333,
+       45
       ],
       "noblitz": [
        0.08,
@@ -16613,39 +16629,39 @@
        25
       ],
       "run_right_end": [
-       -0.019,
-       0.375,
-       16
+       0.019,
+       0.412,
+       17
       ],
       "pass_left": [
-       -0.147,
-       0.378,
-       82
+       -0.182,
+       0.375,
+       88
       ],
       "pz_left_short": [
-       -0.19,
-       0.413,
-       46
+       -0.202,
+       0.417,
+       48
       ],
       "opp": [
-       -0.087,
-       0.355,
-       152
+       -0.179,
+       0.339,
+       168
       ],
       "run_right_tackle": [
-       0.007,
-       0.478,
-       23
+       -0.008,
+       0.458,
+       24
       ],
       "mid": [
-       0.223,
-       0.468,
-       47
+       0.077,
+       0.456,
+       57
       ],
       "pz_right_mid": [
-       0.571,
-       0.55,
-       20
+       0.382,
+       0.519,
+       27
       ],
       "run_left_guard": [
        -0.134,
@@ -16653,54 +16669,54 @@
        14
       ],
       "rz": [
-       -0.117,
-       0.426,
-       47
+       -0.152,
+       0.408,
+       49
       ],
       "pz_left_mid": [
-       -0.52,
-       0.3,
-       20
+       -0.457,
+       0.333,
+       21
       ],
       "run_right_guard": [
-       -0.281,
-       0.242,
-       33
+       -0.273,
+       0.235,
+       34
       ],
       "nohuddle": [
-       0.627,
-       0.56,
-       25
+       0.361,
+       0.485,
+       33
       ],
       "pass_middle": [
-       0.44,
-       0.486,
-       37
+       0.133,
+       0.458,
+       48
       ],
       "pz_middle_short": [
-       0.095,
-       0.407,
-       27
+       -0.062,
+       0.412,
+       34
       ],
       "backed": [
-       0.086,
-       0.459,
-       37
+       0.07,
+       0.439,
+       41
       ],
       "pz_middle_mid": [
-       1.353,
-       0.714,
-       7
+       0.407,
+       0.556,
+       9
       ],
       "pz_left_deep": [
-       0.443,
-       0.375,
-       16
+       0.172,
+       0.316,
+       19
       ],
       "run_left_tackle": [
-       -0.155,
-       0.35,
-       20
+       -0.184,
+       0.304,
+       23
       ],
       "heavybox": [
        0.175,
@@ -16713,46 +16729,46 @@
        28
       ],
       "d4": [
-       0.031,
-       0.667,
-       6
+       -0.666,
+       0.5,
+       8
       ],
       "pz_middle_deep": [
-       1.412,
-       0.667,
-       3
+       0.966,
+       0.6,
+       5
       ]
      },
      "def": {
       "d1": [
-       -0.142,
-       0.343,
-       172
+       -0.124,
+       0.348,
+       204
       ],
       "own": [
-       -0.261,
-       0.364,
-       198
+       -0.207,
+       0.376,
+       213
       ],
       "mid": [
-       -0.107,
-       0.457,
-       46
+       -0.031,
+       0.481,
+       52
       ],
       "pass_middle": [
-       0.124,
-       0.458,
-       48
+       0.016,
+       0.455,
+       55
       ],
       "pz_middle_mid": [
-       -0.223,
-       0.412,
-       17
+       -0.127,
+       0.45,
+       20
       ],
       "center": [
-       -0.136,
-       0.366,
-       183
+       -0.133,
+       0.363,
+       226
       ],
       "nomotion": [
        -0.331,
@@ -16770,14 +16786,14 @@
        171
       ],
       "d2": [
-       -0.148,
-       0.393,
-       145
+       -0.139,
+       0.392,
+       171
       ],
       "run_left_tackle": [
-       0.266,
-       0.543,
-       35
+       0.225,
+       0.514,
+       37
       ],
       "motion": [
        -0.07,
@@ -16790,44 +16806,44 @@
        85
       ],
       "opp": [
-       -0.011,
-       0.372,
-       121
+       -0.032,
+       0.38,
+       158
       ],
       "run_left_guard": [
-       -0.147,
-       0.3,
-       20
+       0.001,
+       0.37,
+       27
       ],
       "deep": [
-       0.181,
-       0.273,
-       22
+       0.201,
+       0.308,
+       26
       ],
       "pz_middle_deep": [
-       0.886,
-       0.429,
-       7
+       0.05,
+       0.333,
+       9
       ],
       "gun": [
-       -0.233,
-       0.355,
-       242
+       -0.197,
+       0.371,
+       275
       ],
       "d3": [
-       -0.31,
-       0.333,
-       96
+       -0.279,
+       0.354,
+       113
       ],
       "pass_right": [
-       -0.177,
-       0.346,
-       81
+       -0.05,
+       0.404,
+       99
       ],
       "pz_right_deep": [
-       -0.381,
-       0.1,
-       10
+       -0.053,
+       0.182,
+       11
       ],
       "oop": [
        -0.51,
@@ -16835,39 +16851,39 @@
        44
       ],
       "backed": [
-       -0.017,
-       0.4,
-       55
+       -0.083,
+       0.38,
+       71
       ],
       "short": [
-       -0.023,
-       0.437,
-       103
+       -0.01,
+       0.457,
+       116
       ],
       "pz_right_short": [
-       -0.21,
-       0.345,
-       58
-      ],
-      "run_left_end": [
-       -0.373,
-       0.238,
-       21
-      ],
-      "pass_left": [
-       -0.015,
-       0.438,
+       -0.103,
+       0.411,
        73
       ],
+      "run_left_end": [
+       -0.434,
+       0.217,
+       23
+      ],
+      "pass_left": [
+       0.011,
+       0.443,
+       79
+      ],
       "pz_left_short": [
-       0.001,
-       0.442,
-       52
+       -0.041,
+       0.429,
+       56
       ],
       "nohuddle": [
-       -0.507,
-       0.27,
-       37
+       -0.435,
+       0.349,
+       43
       ],
       "noblitz": [
        -0.239,
@@ -16875,9 +16891,9 @@
        64
       ],
       "pz_left_deep": [
-       0.318,
-       0.4,
-       5
+       0.894,
+       0.5,
+       6
       ],
       "pa": [
        0.068,
@@ -16885,19 +16901,19 @@
        48
       ],
       "run_right_tackle": [
-       -0.377,
-       0.222,
-       27
+       -0.363,
+       0.207,
+       29
       ],
       "pz_left_mid": [
-       -0.172,
-       0.438,
-       16
+       -0.132,
+       0.471,
+       17
       ],
       "behind": [
-       -0.201,
-       0.323,
-       31
+       -0.146,
+       0.359,
+       39
       ],
       "screen": [
        0.229,
@@ -16905,24 +16921,24 @@
        11
       ],
       "rz": [
-       -0.537,
-       0.275,
-       51
+       -0.493,
+       0.288,
+       59
       ],
       "run_right_guard": [
-       -0.327,
-       0.292,
-       24
-      ],
-      "run_middle": [
-       0.022,
-       0.455,
+       -0.244,
+       0.333,
        33
       ],
+      "run_middle": [
+       -0.021,
+       0.37,
+       46
+      ],
       "pz_right_mid": [
-       0.126,
-       0.538,
-       13
+       0.21,
+       0.533,
+       15
       ],
       "rpo": [
        0.191,
@@ -16935,19 +16951,19 @@
        85
       ],
       "pz_middle_short": [
-       0.148,
+       0.114,
        0.5,
-       24
+       26
       ],
       "d4": [
-       -0.433,
-       0.455,
-       11
+       -0.223,
+       0.5,
+       12
       ],
       "run_right_end": [
-       -0.137,
-       0.333,
-       9
+       -0.171,
+       0.308,
+       13
       ],
       "heavybox": [
        -0.537,
@@ -16957,56 +16973,56 @@
      }
     },
     "rates": {
-     "gun": 0.608,
-     "noHuddle": 0.059,
+     "gun": 0.622,
+     "noHuddle": 0.07,
      "motion": 0.521,
      "playAction": 0.343,
      "blitzFaced": 0.335,
      "outOfPocket": 0.215,
      "drops": 0.038,
      "intWorthy": 0.024,
-     "hitAllowed": 0.15,
-     "passOe": -1.7,
-     "goFourth": 0.714,
-     "fourthN": 7,
-     "penPerGame": 5.6,
-     "penYdsPerGame": 44.9,
+     "hitAllowed": 0.165,
+     "passOe": -1.4,
+     "goFourth": 0.625,
+     "fourthN": 8,
+     "penPerGame": 5.4,
+     "penYdsPerGame": 41.8,
      "blitz": 0.728,
-     "hit": 0.251,
-     "havoc": 0.141,
+     "hit": 0.255,
+     "havoc": 0.132,
      "motionFaced": 0.536,
      "paFaced": 0.204,
      "intWorthyForced": 0.052
     },
     "drives": {
      "off": {
-      "n": 75,
-      "start": 31.8,
-      "plays": 5.7,
+      "n": 87,
+      "start": 32.5,
+      "plays": 5.4,
       "end": {
-       "to": 0.053,
-       "punt": 0.427,
-       "fg": 0.24,
-       "td": 0.133,
-       "half": 0.08,
-       "other": 0.013,
-       "downs": 0.027,
-       "missed": 0.027
+       "to": 0.08,
+       "punt": 0.425,
+       "fg": 0.23,
+       "td": 0.115,
+       "half": 0.069,
+       "other": 0.011,
+       "downs": 0.046,
+       "missed": 0.023
       }
      },
      "def": {
-      "n": 75,
-      "start": 30.2,
-      "plays": 5.6,
+      "n": 88,
+      "start": 30,
+      "plays": 5.7,
       "end": {
-       "fg": 0.147,
-       "td": 0.12,
-       "punt": 0.44,
-       "downs": 0.053,
-       "to": 0.147,
-       "half": 0.027,
-       "missed": 0.053,
-       "other": 0.013
+       "fg": 0.159,
+       "td": 0.125,
+       "punt": 0.432,
+       "downs": 0.045,
+       "to": 0.136,
+       "half": 0.045,
+       "missed": 0.045,
+       "other": 0.011
       }
      }
     }
@@ -26293,14 +26309,6 @@
     "sr": 0.55
    },
    {
-    "name": "J.Allen",
-    "team": "BUF",
-    "dropbacks": 241,
-    "epa": 0.291,
-    "cpoe": 4,
-    "sr": 0.477
-   },
-   {
     "name": "T.Lawrence",
     "team": "JAX",
     "dropbacks": 246,
@@ -26315,6 +26323,14 @@
     "epa": 0.261,
     "cpoe": 9.7,
     "sr": 0.547
+   },
+   {
+    "name": "J.Allen",
+    "team": "BUF",
+    "dropbacks": 277,
+    "epa": 0.253,
+    "cpoe": 4,
+    "sr": 0.484
    },
    {
     "name": "J.Goff",
@@ -26571,114 +26587,122 @@
     "epa": -0.259,
     "cpoe": -1.5,
     "sr": 0.365
+   },
+   {
+    "name": "C.Wentz",
+    "team": "MIN",
+    "dropbacks": 73,
+    "epa": -0.273,
+    "cpoe": -16.6,
+    "sr": 0.329
    }
   ]
  },
  "fpi": {
   "SF": {
-   "fpi": 6.22,
+   "fpi": 6.21,
    "rank": 1,
    "projW": 13.5,
    "projL": 3.5,
    "playoff": 99.3,
-   "div": 94.5,
-   "divRound": 88.2,
-   "conf": 59.6,
-   "sb": 39.6,
-   "title": 22.8,
-   "sosRemRank": 13,
-   "sosRank": 30,
+   "div": 94.6,
+   "divRound": 89.5,
+   "conf": 60.9,
+   "sb": 39.8,
+   "title": 22.7,
+   "sosRemRank": 14,
+   "sosRank": 29,
    "ingameWp": 68.6,
-   "epaOff": 5.46,
-   "epaDef": 0.83,
-   "epaSt": -0.07,
+   "epaOff": 5.47,
+   "epaDef": 0.81,
+   "epaSt": -0.08,
    "effOff": 71.5,
    "effDef": 64.5,
    "effSt": 41.3,
    "eff": null
   },
-  "JAX": {
-   "fpi": 5.54,
+  "BUF": {
+   "fpi": 5.72,
    "rank": 2,
-   "projW": 12.4,
+   "projW": 13.4,
+   "projL": 3.5,
+   "playoff": 99.8,
+   "div": 96.3,
+   "divRound": 83.2,
+   "conf": 50.5,
+   "sb": 29.3,
+   "title": 16.1,
+   "sosRemRank": 27,
+   "sosRank": 10,
+   "ingameWp": 62.1,
+   "epaOff": 5.35,
+   "epaDef": -0.15,
+   "epaSt": 0.52,
+   "effOff": 69.6,
+   "effDef": 49.8,
+   "effSt": 70.4,
+   "eff": null
+  },
+  "JAX": {
+   "fpi": 5.57,
+   "rank": 3,
+   "projW": 12.5,
    "projL": 4.5,
    "playoff": 98.8,
-   "div": 92.9,
-   "divRound": 70.9,
-   "conf": 42.1,
-   "sb": 23.9,
-   "title": 12.8,
-   "sosRemRank": 27,
-   "sosRank": 17,
+   "div": 93.4,
+   "divRound": 70,
+   "conf": 39.3,
+   "sb": 21.4,
+   "title": 11.7,
+   "sosRemRank": 26,
+   "sosRank": 18,
    "ingameWp": 66.8,
-   "epaOff": 2.63,
-   "epaDef": 2.54,
+   "epaOff": 2.68,
+   "epaDef": 2.52,
    "epaSt": 0.37,
    "effOff": 62,
    "effDef": 72.5,
    "effSt": 61.9,
    "eff": null
   },
-  "BUF": {
-   "fpi": 5,
-   "rank": 3,
-   "projW": 12.9,
-   "projL": 4.1,
-   "playoff": 99.5,
-   "div": 92.7,
-   "divRound": 76,
-   "conf": 42.9,
-   "sb": 23,
-   "title": 12.1,
-   "sosRemRank": 26,
-   "sosRank": 10,
-   "ingameWp": 61.3,
-   "epaOff": 5.45,
-   "epaDef": -1.05,
-   "epaSt": 0.6,
-   "effOff": 74.3,
-   "effDef": 39.9,
-   "effSt": 79.2,
-   "eff": null
-  },
   "CIN": {
    "fpi": 4.45,
    "rank": 4,
    "projW": 12.6,
-   "projL": 4.3,
-   "playoff": 98.7,
-   "div": 79.6,
-   "divRound": 67.9,
-   "conf": 35.8,
-   "sb": 18.8,
-   "title": 9.5,
+   "projL": 4.4,
+   "playoff": 98.6,
+   "div": 79.5,
+   "divRound": 64.7,
+   "conf": 34.1,
+   "sb": 16.8,
+   "title": 8.7,
    "sosRemRank": 31,
    "sosRank": 24,
    "ingameWp": 59,
-   "epaOff": 5.28,
-   "epaDef": -0.78,
-   "epaSt": -0.05,
+   "epaOff": 5.31,
+   "epaDef": -0.81,
+   "epaSt": -0.06,
    "effOff": 70.2,
    "effDef": 57.4,
    "effSt": 53.2,
    "eff": null
   },
   "KC": {
-   "fpi": 4.2,
+   "fpi": 4.19,
    "rank": 5,
    "projW": 11.6,
    "projL": 5.4,
-   "playoff": 96.3,
-   "div": 43.1,
-   "divRound": 57.1,
-   "conf": 29.7,
-   "sb": 15.1,
-   "title": 7.6,
-   "sosRemRank": 11,
+   "playoff": 95.9,
+   "div": 42.6,
+   "divRound": 55.6,
+   "conf": 27.7,
+   "sb": 13.7,
+   "title": 6.9,
+   "sosRemRank": 9,
    "sosRank": 31,
    "ingameWp": 61.2,
-   "epaOff": 3.2,
-   "epaDef": 1.43,
+   "epaOff": 3.22,
+   "epaDef": 1.41,
    "epaSt": -0.44,
    "effOff": 67.2,
    "effDef": 65.2,
@@ -26690,17 +26714,17 @@
    "rank": 6,
    "projW": 11.8,
    "projL": 5.1,
-   "playoff": 89.6,
-   "div": 36.6,
-   "divRound": 58.4,
-   "conf": 32.2,
-   "sb": 15.6,
+   "playoff": 90.4,
+   "div": 41.6,
+   "divRound": 59.7,
+   "conf": 33.4,
+   "sb": 16.6,
    "title": 7.9,
-   "sosRemRank": 5,
-   "sosRank": 19,
+   "sosRemRank": 7,
+   "sosRank": 21,
    "ingameWp": 65.4,
-   "epaOff": 2.06,
-   "epaDef": 1.47,
+   "epaOff": 2.12,
+   "epaDef": 1.4,
    "epaSt": 0.57,
    "effOff": 55.4,
    "effDef": 66.2,
@@ -26708,175 +26732,153 @@
    "eff": null
   },
   "LAR": {
-   "fpi": 3.62,
+   "fpi": 3.7,
    "rank": 7,
-   "projW": 9.4,
-   "projL": 7.5,
-   "playoff": 37.9,
-   "div": 1.8,
-   "divRound": 21.9,
-   "conf": 10.6,
-   "sb": 5,
-   "title": 2.6,
+   "projW": 9.6,
+   "projL": 7.4,
+   "playoff": 44.5,
+   "div": 2.2,
+   "divRound": 26.5,
+   "conf": 12.5,
+   "sb": 6.7,
+   "title": 3.5,
    "sosRemRank": 1,
-   "sosRank": 21,
+   "sosRank": 19,
    "ingameWp": 55.3,
-   "epaOff": 2.17,
-   "epaDef": 2.6,
-   "epaSt": -1.14,
+   "epaOff": 2.28,
+   "epaDef": 2.58,
+   "epaSt": -1.15,
    "effOff": 57.3,
    "effDef": 67.3,
    "effSt": 32.7,
    "eff": null
   },
-  "SEA": {
-   "fpi": 2.96,
+  "HOU": {
+   "fpi": 2.76,
    "rank": 8,
-   "projW": 9.9,
-   "projL": 7.1,
-   "playoff": 47.1,
-   "div": 3.8,
-   "divRound": 26.4,
-   "conf": 12.5,
-   "sb": 5.9,
-   "title": 2.7,
-   "sosRemRank": 7,
-   "sosRank": 12,
-   "ingameWp": 52,
-   "epaOff": -0.74,
-   "epaDef": 3.26,
-   "epaSt": 0.44,
-   "effOff": 39.5,
-   "effDef": 69.7,
-   "effSt": 67.7,
+   "projW": 9.1,
+   "projL": 7.9,
+   "playoff": 44.3,
+   "div": 6.6,
+   "divRound": 18.7,
+   "conf": 7.9,
+   "sb": 3.4,
+   "title": 1.6,
+   "sosRemRank": 30,
+   "sosRank": 8,
+   "ingameWp": 52.7,
+   "epaOff": 1.76,
+   "epaDef": 1.18,
+   "epaSt": -0.17,
+   "effOff": 62,
+   "effDef": 50.3,
+   "effSt": 41.5,
    "eff": null
   },
   "GB": {
-   "fpi": 2.78,
+   "fpi": 2.72,
    "rank": 9,
    "projW": 10.6,
    "projL": 6.4,
-   "playoff": 65.7,
-   "div": 12.4,
-   "divRound": 35.2,
-   "conf": 15.7,
-   "sb": 7,
-   "title": 3.1,
-   "sosRemRank": 2,
-   "sosRank": 15,
+   "playoff": 69.6,
+   "div": 14.7,
+   "divRound": 37.6,
+   "conf": 17.3,
+   "sb": 7.7,
+   "title": 3.4,
+   "sosRemRank": 3,
+   "sosRank": 16,
    "ingameWp": 63.1,
-   "epaOff": 2.22,
-   "epaDef": 0.75,
+   "epaOff": 2.25,
+   "epaDef": 0.66,
    "epaSt": -0.18,
    "effOff": 51.6,
    "effDef": 62,
    "effSt": 43.8,
    "eff": null
   },
-  "HOU": {
-   "fpi": 2.64,
-   "rank": 10,
-   "projW": 9.1,
-   "projL": 7.9,
-   "playoff": 44.9,
-   "div": 7.1,
-   "divRound": 18.5,
-   "conf": 7.5,
-   "sb": 3.2,
-   "title": 1.5,
-   "sosRemRank": 30,
-   "sosRank": 8,
-   "ingameWp": 52.7,
-   "epaOff": 1.65,
-   "epaDef": 1.18,
-   "epaSt": -0.18,
-   "effOff": 62,
-   "effDef": 50.3,
-   "effSt": 41.5,
-   "eff": null
-  },
   "TB": {
-   "fpi": 2.6,
-   "rank": 11,
+   "fpi": 2.54,
+   "rank": 10,
    "projW": 8.2,
    "projL": 8.8,
-   "playoff": 66.1,
-   "div": 65.8,
-   "divRound": 34.7,
-   "conf": 16.1,
-   "sb": 6.5,
-   "title": 2.8,
+   "playoff": 64.2,
+   "div": 63.9,
+   "divRound": 34.2,
+   "conf": 15.5,
+   "sb": 6.3,
+   "title": 2.6,
    "sosRemRank": 28,
-   "sosRank": 13,
+   "sosRank": 15,
    "ingameWp": 51.4,
-   "epaOff": -0.78,
-   "epaDef": 2.79,
-   "epaSt": 0.59,
+   "epaOff": -0.79,
+   "epaDef": 2.73,
+   "epaSt": 0.6,
    "effOff": 25.8,
    "effDef": 79.9,
    "effSt": 45,
    "eff": null
   },
   "DEN": {
-   "fpi": 2.25,
-   "rank": 12,
+   "fpi": 2.3,
+   "rank": 11,
    "projW": 12.2,
    "projL": 4.8,
-   "playoff": 96.9,
-   "div": 56.6,
-   "divRound": 55.3,
-   "conf": 25,
-   "sb": 10.4,
-   "title": 4.3,
+   "playoff": 96.6,
+   "div": 57,
+   "divRound": 53,
+   "conf": 22.8,
+   "sb": 9.7,
+   "title": 4,
    "sosRemRank": 32,
    "sosRank": 2,
    "ingameWp": 50.7,
-   "epaOff": 0.49,
-   "epaDef": 1.61,
-   "epaSt": 0.15,
+   "epaOff": 0.54,
+   "epaDef": 1.62,
+   "epaSt": 0.14,
    "effOff": 47.5,
    "effDef": 54.9,
    "effSt": 53.4,
    "eff": null
   },
   "DET": {
-   "fpi": 2.17,
-   "rank": 13,
+   "fpi": 2.14,
+   "rank": 12,
    "projW": 11,
-   "projL": 6,
-   "playoff": 77.5,
-   "div": 24.7,
-   "divRound": 41.5,
-   "conf": 18.9,
-   "sb": 8,
-   "title": 3.3,
+   "projL": 5.9,
+   "playoff": 79.6,
+   "div": 29.6,
+   "divRound": 43.3,
+   "conf": 19.4,
+   "sb": 7.6,
+   "title": 3.1,
    "sosRemRank": 10,
    "sosRank": 32,
    "ingameWp": 55,
-   "epaOff": 2.94,
-   "epaDef": -1.23,
-   "epaSt": 0.46,
+   "epaOff": 3.03,
+   "epaDef": -1.34,
+   "epaSt": 0.45,
    "effOff": 62,
    "effDef": 44.2,
    "effSt": 72.8,
    "eff": null
   },
   "DAL": {
-   "fpi": 1.85,
-   "rank": 14,
-   "projW": 8.4,
+   "fpi": 1.89,
+   "rank": 13,
+   "projW": 8.5,
    "projL": 8.5,
-   "playoff": 43,
-   "div": 41.6,
-   "divRound": 20.8,
-   "conf": 8.8,
-   "sb": 3.6,
+   "playoff": 44.2,
+   "div": 42.6,
+   "divRound": 22.1,
+   "conf": 9.6,
+   "sb": 3.8,
    "title": 1.5,
    "sosRemRank": 8,
    "sosRank": 22,
    "ingameWp": 49.3,
-   "epaOff": 3.78,
-   "epaDef": -2.38,
+   "epaOff": 3.82,
+   "epaDef": -2.39,
    "epaSt": 0.46,
    "effOff": 63,
    "effDef": 37.7,
@@ -26884,86 +26886,108 @@
    "eff": null
   },
   "NE": {
-   "fpi": 1.4,
-   "rank": 15,
+   "fpi": 1.44,
+   "rank": 14,
    "projW": 9.4,
-   "projL": 7.6,
-   "playoff": 64.2,
-   "div": 7.3,
-   "divRound": 23.1,
-   "conf": 7.6,
-   "sb": 2.8,
-   "title": 1.1,
-   "sosRemRank": 21,
+   "projL": 7.5,
+   "playoff": 65.1,
+   "div": 3.7,
+   "divRound": 23.7,
+   "conf": 8.1,
+   "sb": 3,
+   "title": 1.2,
+   "sosRemRank": 22,
    "sosRank": 9,
    "ingameWp": 52.6,
-   "epaOff": 1.13,
+   "epaOff": 1.19,
    "epaDef": 0.21,
-   "epaSt": 0.06,
+   "epaSt": 0.04,
    "effOff": 50.2,
    "effDef": 52.1,
    "effSt": 61.8,
    "eff": null
   },
+  "SEA": {
+   "fpi": 0.63,
+   "rank": 15,
+   "projW": 9.8,
+   "projL": 7.2,
+   "playoff": 47.2,
+   "div": 3.2,
+   "divRound": 26.3,
+   "conf": 11.9,
+   "sb": 5.8,
+   "title": 2.7,
+   "sosRemRank": 4,
+   "sosRank": 13,
+   "ingameWp": 52,
+   "epaOff": -3.05,
+   "epaDef": 3.25,
+   "epaSt": 0.43,
+   "effOff": 39.5,
+   "effDef": 69.7,
+   "effSt": 67.7,
+   "eff": null
+  },
   "PIT": {
-   "fpi": -0.05,
+   "fpi": -0.09,
    "rank": 16,
    "projW": 10.7,
-   "projL": 6.2,
-   "playoff": 81.5,
-   "div": 19.8,
-   "divRound": 27.6,
-   "conf": 8.7,
+   "projL": 6.3,
+   "playoff": 80.8,
+   "div": 19.7,
+   "divRound": 26.9,
+   "conf": 8.8,
    "sb": 2.7,
-   "title": 0.9,
-   "sosRemRank": 15,
-   "sosRank": 29,
+   "title": 1,
+   "sosRemRank": 12,
+   "sosRank": 30,
    "ingameWp": 52.7,
-   "epaOff": -0.98,
-   "epaDef": 0.7,
-   "epaSt": 0.23,
+   "epaOff": -0.95,
+   "epaDef": 0.64,
+   "epaSt": 0.22,
    "effOff": 45.1,
    "effDef": 68.8,
    "effSt": 51.9,
    "eff": null
   },
   "MIN": {
-   "fpi": -0.23,
+   "fpi": -1.2,
    "rank": 17,
-   "projW": 11.2,
-   "projL": 5.8,
-   "playoff": 79,
-   "div": 26.3,
-   "divRound": 42.2,
-   "conf": 17.6,
-   "sb": 7.1,
-   "title": 3.1,
-   "sosRemRank": 9,
-   "sosRank": 18,
-   "ingameWp": 54.9,
-   "epaOff": -4.72,
-   "epaDef": 3.9,
-   "epaSt": 0.6,
-   "effOff": 30.3,
-   "effDef": 79,
-   "effSt": 73.3,
+   "projW": 10.4,
+   "projL": 6.6,
+   "playoff": 64.5,
+   "div": 14.2,
+   "divRound": 29,
+   "conf": 10.7,
+   "sb": 3.7,
+   "title": 1.3,
+   "sosRemRank": 15,
+   "sosRank": 11,
+   "ingameWp": 52.1,
+   "epaOff": -5.86,
+   "epaDef": 3.95,
+   "epaSt": 0.71,
+   "effOff": 23.8,
+   "effDef": 76.5,
+   "effSt": 75.3,
    "eff": null
   },
   "CAR": {
    "fpi": -1.77,
    "rank": 18,
-   "projW": 7,
-   "projL": 10,
-   "playoff": 19.1,
-   "div": 18.6,
-   "divRound": 7,
-   "conf": 2.1,
-   "sb": 0.5,
+   "projW": 7.1,
+   "projL": 9.9,
+   "playoff": 20.8,
+   "div": 19.9,
+   "divRound": 7.7,
+   "conf": 2.4,
+   "sb": 0.6,
    "title": 0.2,
    "sosRemRank": 19,
-   "sosRank": 16,
+   "sosRank": 17,
    "ingameWp": 46.9,
-   "epaOff": -0.73,
+   "epaOff": -0.72,
    "epaDef": -1.22,
    "epaSt": 0.18,
    "effOff": 51.5,
@@ -26972,87 +26996,87 @@
    "eff": null
   },
   "IND": {
-   "fpi": -2.47,
+   "fpi": -2.53,
    "rank": 19,
-   "projW": 5.9,
+   "projW": 5.8,
    "projL": 11.1,
-   "playoff": 0.5,
+   "playoff": 0.7,
    "div": 0.1,
-   "divRound": 0.1,
+   "divRound": 0.2,
    "conf": 0.1,
    "sb": 0,
    "title": 0,
    "sosRemRank": 29,
    "sosRank": 6,
    "ingameWp": 43.5,
-   "epaOff": -2.23,
-   "epaDef": -0.75,
-   "epaSt": 0.51,
+   "epaOff": -2.22,
+   "epaDef": -0.83,
+   "epaSt": 0.52,
    "effOff": 33,
    "effDef": 42.6,
    "effSt": 63,
    "eff": null
   },
-  "NO": {
-   "fpi": -2.9,
-   "rank": 20,
-   "projW": 6.3,
-   "projL": 10.6,
-   "playoff": 10.5,
-   "div": 10.3,
-   "divRound": 3.7,
-   "conf": 1,
-   "sb": 0.3,
-   "title": 0.1,
-   "sosRemRank": 14,
-   "sosRank": 27,
-   "ingameWp": 40.3,
-   "epaOff": -1.08,
-   "epaDef": -1.79,
-   "epaSt": -0.02,
-   "effOff": 46.9,
-   "effDef": 46.9,
-   "effSt": 35.6,
-   "eff": null
-  },
   "WSH": {
-   "fpi": -2.91,
-   "rank": 21,
+   "fpi": -2.89,
+   "rank": 20,
    "projW": 5.7,
-   "projL": 10.3,
-   "playoff": 6,
-   "div": 5.9,
+   "projL": 10.2,
+   "playoff": 5.8,
+   "div": 5.7,
    "divRound": 1.9,
-   "conf": 0.4,
+   "conf": 0.5,
    "sb": 0.1,
    "title": 0,
    "sosRemRank": 18,
    "sosRank": 7,
    "ingameWp": 43.8,
-   "epaOff": -0.99,
-   "epaDef": -1.72,
-   "epaSt": -0.19,
+   "epaOff": -0.94,
+   "epaDef": -1.75,
+   "epaSt": -0.21,
    "effOff": 38.9,
    "effDef": 51,
    "effSt": 44,
    "eff": null
   },
+  "NO": {
+   "fpi": -2.93,
+   "rank": 21,
+   "projW": 6.3,
+   "projL": 10.6,
+   "playoff": 10.9,
+   "div": 10.8,
+   "divRound": 3.6,
+   "conf": 1,
+   "sb": 0.3,
+   "title": 0.1,
+   "sosRemRank": 13,
+   "sosRank": 27,
+   "ingameWp": 40.3,
+   "epaOff": -1.03,
+   "epaDef": -1.88,
+   "epaSt": -0.01,
+   "effOff": 46.9,
+   "effDef": 46.9,
+   "effSt": 35.6,
+   "eff": null
+  },
   "LV": {
-   "fpi": -3.07,
+   "fpi": -3.03,
    "rank": 22,
-   "projW": 7.3,
+   "projW": 7.4,
    "projL": 9.6,
-   "playoff": 6.4,
-   "div": 0.3,
-   "divRound": 1.2,
-   "conf": 0.2,
+   "playoff": 7,
+   "div": 0.4,
+   "divRound": 1.7,
+   "conf": 0.3,
    "sb": 0.1,
    "title": 0,
    "sosRemRank": 25,
-   "sosRank": 14,
+   "sosRank": 12,
    "ingameWp": 42.2,
-   "epaOff": -1.38,
-   "epaDef": -1.87,
+   "epaOff": -1.29,
+   "epaDef": -1.91,
    "epaSt": 0.17,
    "effOff": 50,
    "effDef": 36.6,
@@ -27060,7 +27084,7 @@
    "eff": null
   },
   "LAC": {
-   "fpi": -3.2,
+   "fpi": -3.08,
    "rank": 23,
    "projW": 3.6,
    "projL": 13.4,
@@ -27073,8 +27097,8 @@
    "sosRemRank": 17,
    "sosRank": 3,
    "ingameWp": 32.4,
-   "epaOff": -4.75,
-   "epaDef": 1.37,
+   "epaOff": -4.61,
+   "epaDef": 1.36,
    "epaSt": 0.18,
    "effOff": 13.4,
    "effDef": 50.7,
@@ -27082,21 +27106,21 @@
    "eff": null
   },
   "NYG": {
-   "fpi": -3.53,
+   "fpi": -3.54,
    "rank": 24,
    "projW": 8.3,
    "projL": 7.7,
-   "playoff": 53.7,
-   "div": 52.4,
-   "divRound": 16.5,
-   "conf": 4.2,
-   "sb": 0.9,
+   "playoff": 53.1,
+   "div": 51.7,
+   "divRound": 16.9,
+   "conf": 4.6,
+   "sb": 1,
    "title": 0.2,
-   "sosRemRank": 12,
+   "sosRemRank": 11,
    "sosRank": 28,
    "ingameWp": 50.6,
-   "epaOff": -3.13,
-   "epaDef": -0.66,
+   "epaOff": -3.12,
+   "epaDef": -0.68,
    "epaSt": 0.26,
    "effOff": 46,
    "effDef": 54,
@@ -27104,33 +27128,33 @@
    "eff": null
   },
   "ATL": {
-   "fpi": -4.12,
+   "fpi": -4.11,
    "rank": 25,
-   "projW": 5.9,
+   "projW": 6,
    "projL": 11,
-   "playoff": 5.4,
-   "div": 5.3,
-   "divRound": 1.6,
+   "playoff": 5.7,
+   "div": 5.5,
+   "divRound": 1.7,
    "conf": 0.3,
    "sb": 0.1,
    "title": 0,
-   "sosRemRank": 23,
+   "sosRemRank": 24,
    "sosRank": 4,
    "ingameWp": 43.4,
-   "epaOff": -3.56,
-   "epaDef": -0.59,
-   "epaSt": 0.03,
+   "epaOff": -3.53,
+   "epaDef": -0.6,
+   "epaSt": 0.02,
    "effOff": 35.8,
    "effDef": 47.6,
    "effSt": 46.8,
    "eff": null
   },
   "NYJ": {
-   "fpi": -4.9,
+   "fpi": -4.87,
    "rank": 26,
    "projW": 4.6,
-   "projL": 12.4,
-   "playoff": 0,
+   "projL": 12.3,
+   "playoff": 0.1,
    "div": 0,
    "divRound": 0,
    "conf": 0,
@@ -27140,51 +27164,51 @@
    "sosRank": 23,
    "ingameWp": 43.1,
    "epaOff": -2.87,
-   "epaDef": -2.42,
-   "epaSt": 0.38,
+   "epaDef": -2.39,
+   "epaSt": 0.39,
    "effOff": 41.2,
    "effDef": 40.7,
    "effSt": 50.8,
    "eff": null
   },
-  "ARI": {
-   "fpi": -5.25,
+  "CLE": {
+   "fpi": -5.41,
    "rank": 27,
-   "projW": 5.9,
-   "projL": 11,
-   "playoff": 0.1,
-   "div": 0,
-   "divRound": 0,
-   "conf": 0,
+   "projW": 7.8,
+   "projL": 9.2,
+   "playoff": 9.6,
+   "div": 0.7,
+   "divRound": 1.6,
+   "conf": 0.3,
    "sb": 0,
    "title": 0,
-   "sosRemRank": 24,
-   "sosRank": 1,
-   "ingameWp": 36.4,
-   "epaOff": -2.07,
-   "epaDef": -2.8,
-   "epaSt": -0.39,
-   "effOff": 39.5,
-   "effDef": 41.9,
-   "effSt": 26,
+   "sosRemRank": 16,
+   "sosRank": 25,
+   "ingameWp": 40.5,
+   "epaOff": -4.88,
+   "epaDef": -0.45,
+   "epaSt": -0.08,
+   "effOff": 33.4,
+   "effDef": 57.4,
+   "effSt": 52.2,
    "eff": null
   },
   "BAL": {
-   "fpi": -5.87,
+   "fpi": -5.83,
    "rank": 28,
    "projW": 6.7,
    "projL": 10.3,
-   "playoff": 2.7,
-   "div": 0,
+   "playoff": 2.9,
+   "div": 0.1,
    "divRound": 0.6,
    "conf": 0.2,
    "sb": 0,
    "title": 0,
-   "sosRemRank": 22,
+   "sosRemRank": 21,
    "sosRank": 20,
    "ingameWp": 53.2,
-   "epaOff": -4.97,
-   "epaDef": -0.21,
+   "epaOff": -4.91,
+   "epaDef": -0.22,
    "epaSt": -0.69,
    "effOff": 42.1,
    "effDef": 47.4,
@@ -27192,7 +27216,7 @@
    "eff": null
   },
   "TEN": {
-   "fpi": -5.98,
+   "fpi": -5.95,
    "rank": 29,
    "projW": 3.4,
    "projL": 13.6,
@@ -27202,81 +27226,81 @@
    "conf": 0,
    "sb": 0,
    "title": 0,
-   "sosRemRank": 4,
+   "sosRemRank": 5,
    "sosRank": 26,
    "ingameWp": 35,
-   "epaOff": -3.71,
-   "epaDef": -1.87,
-   "epaSt": -0.41,
+   "epaOff": -3.67,
+   "epaDef": -1.88,
+   "epaSt": -0.4,
    "effOff": 31.1,
    "effDef": 43.5,
    "effSt": 39.9,
    "eff": null
   },
   "PHI": {
-   "fpi": -6.08,
+   "fpi": -6.11,
    "rank": 30,
    "projW": 4.2,
    "projL": 12.8,
    "playoff": 0.1,
    "div": 0.1,
-   "divRound": 0.1,
+   "divRound": 0,
    "conf": 0,
    "sb": 0,
    "title": 0,
    "sosRemRank": 6,
-   "sosRank": 11,
+   "sosRank": 14,
    "ingameWp": 46.1,
-   "epaOff": -5.83,
-   "epaDef": -0.19,
+   "epaOff": -5.86,
+   "epaDef": -0.21,
    "epaSt": -0.05,
    "effOff": 28.9,
    "effDef": 46,
    "effSt": 52.1,
    "eff": null
   },
-  "CLE": {
-   "fpi": -6.24,
-   "rank": 31,
-   "projW": 7.7,
-   "projL": 9.2,
-   "playoff": 9.6,
-   "div": 0.6,
-   "divRound": 1.7,
-   "conf": 0.3,
-   "sb": 0.1,
-   "title": 0,
-   "sosRemRank": 16,
-   "sosRank": 25,
-   "ingameWp": 40.5,
-   "epaOff": -5.75,
-   "epaDef": -0.41,
-   "epaSt": -0.08,
-   "effOff": 33.4,
-   "effDef": 57.4,
-   "effSt": 52.2,
-   "eff": null
-  },
   "MIA": {
-   "fpi": -7.73,
-   "rank": 32,
-   "projW": 3,
-   "projL": 14,
+   "fpi": -7.78,
+   "rank": 31,
+   "projW": 2.9,
+   "projL": 14.1,
    "playoff": 0,
    "div": 0,
    "divRound": 0,
    "conf": 0,
    "sb": 0,
    "title": 0,
-   "sosRemRank": 3,
+   "sosRemRank": 2,
    "sosRank": 5,
    "ingameWp": 33.8,
-   "epaOff": -4.19,
-   "epaDef": -2.7,
+   "epaOff": -4.16,
+   "epaDef": -2.78,
    "epaSt": -0.84,
    "effOff": 34.9,
    "effDef": 36,
    "effSt": 30.4,
+   "eff": null
+  },
+  "ARI": {
+   "fpi": -8.51,
+   "rank": 32,
+   "projW": 5.9,
+   "projL": 11.1,
+   "playoff": 0.1,
+   "div": 0,
+   "divRound": 0,
+   "conf": 0,
+   "sb": 0,
+   "title": 0,
+   "sosRemRank": 23,
+   "sosRank": 1,
+   "ingameWp": 36.4,
+   "epaOff": -5.29,
+   "epaDef": -2.82,
+   "epaSt": -0.4,
+   "effOff": 39.5,
+   "effDef": 41.9,
+   "effSt": 26,
    "eff": null
   }
  },
@@ -28279,166 +28303,166 @@
   },
   {
    "wk": 9,
-   "at": "2026-11-10T02:02:18.512Z",
+   "at": "2026-11-10T09:43:24.683Z",
    "t": {
     "SF": [
-     6.22,
+     6.21,
      99.3,
-     22.8
-    ],
-    "JAX": [
-     5.54,
-     98.8,
-     12.8
+     22.7
     ],
     "BUF": [
-     5,
-     99.5,
-     12.1
+     5.72,
+     99.8,
+     16.1
+    ],
+    "JAX": [
+     5.57,
+     98.8,
+     11.7
     ],
     "CIN": [
      4.45,
-     98.7,
-     9.5
+     98.6,
+     8.7
     ],
     "KC": [
-     4.2,
-     96.3,
-     7.6
+     4.19,
+     95.9,
+     6.9
     ],
     "CHI": [
      4.1,
-     89.6,
+     90.4,
      7.9
     ],
     "LAR": [
-     3.62,
-     37.9,
-     2.6
-    ],
-    "SEA": [
-     2.96,
-     47.1,
-     2.7
-    ],
-    "GB": [
-     2.78,
-     65.7,
-     3.1
+     3.7,
+     44.5,
+     3.5
     ],
     "HOU": [
-     2.64,
-     44.9,
-     1.5
+     2.76,
+     44.3,
+     1.6
+    ],
+    "GB": [
+     2.72,
+     69.6,
+     3.4
     ],
     "TB": [
-     2.6,
-     66.1,
-     2.8
+     2.54,
+     64.2,
+     2.6
     ],
     "DEN": [
-     2.25,
-     96.9,
-     4.3
+     2.3,
+     96.6,
+     4
     ],
     "DET": [
-     2.17,
-     77.5,
-     3.3
+     2.14,
+     79.6,
+     3.1
     ],
     "DAL": [
-     1.85,
-     43,
+     1.89,
+     44.2,
      1.5
     ],
     "NE": [
-     1.4,
-     64.2,
-     1.1
+     1.44,
+     65.1,
+     1.2
+    ],
+    "SEA": [
+     0.63,
+     47.2,
+     2.7
     ],
     "PIT": [
-     -0.05,
-     81.5,
-     0.9
+     -0.09,
+     80.8,
+     1
     ],
     "MIN": [
-     -0.23,
-     79,
-     3.1
+     -1.2,
+     64.5,
+     1.3
     ],
     "CAR": [
      -1.77,
-     19.1,
+     20.8,
      0.2
     ],
     "IND": [
-     -2.47,
-     0.5,
+     -2.53,
+     0.7,
+     0
+    ],
+    "WSH": [
+     -2.89,
+     5.8,
      0
     ],
     "NO": [
-     -2.9,
-     10.5,
+     -2.93,
+     10.9,
      0.1
     ],
-    "WSH": [
-     -2.91,
-     6,
-     0
-    ],
     "LV": [
-     -3.07,
-     6.4,
+     -3.03,
+     7,
      0
     ],
     "LAC": [
-     -3.2,
+     -3.08,
      0,
      0
     ],
     "NYG": [
-     -3.53,
-     53.7,
+     -3.54,
+     53.1,
      0.2
     ],
     "ATL": [
-     -4.12,
-     5.4,
+     -4.11,
+     5.7,
      0
     ],
     "NYJ": [
-     -4.9,
-     0,
-     0
-    ],
-    "ARI": [
-     -5.25,
-     0.1,
-     0
-    ],
-    "BAL": [
-     -5.87,
-     2.7,
-     0
-    ],
-    "TEN": [
-     -5.98,
-     0,
-     0
-    ],
-    "PHI": [
-     -6.08,
+     -4.87,
      0.1,
      0
     ],
     "CLE": [
-     -6.24,
+     -5.41,
      9.6,
      0
     ],
-    "MIA": [
-     -7.73,
+    "BAL": [
+     -5.83,
+     2.9,
+     0
+    ],
+    "TEN": [
+     -5.95,
      0,
+     0
+    ],
+    "PHI": [
+     -6.11,
+     0.1,
+     0
+    ],
+    "MIA": [
+     -7.78,
+     0,
+     0
+    ],
+    "ARI": [
+     -8.51,
+     0.1,
      0
     ]
    }

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-10T02:03:47.917Z",
- "llAt": "2026-11-10T02:03:47.917Z",
+ "updated": "2026-11-10T09:44:56.389Z",
+ "llAt": "2026-11-10T09:44:56.389Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2380,7 +2380,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-09T18:44:37.203Z",
+  "at": "2026-11-10T09:44:36.048Z",
   "stats": {
    "total": 744,
    "successes": 729,
@@ -2390,7 +2390,7 @@
    "landingAttempts": 717,
    "landingStreak": 38,
    "dragonReturns": 63,
-   "pending": 135
+   "pending": 136
   },
   "year": 2026,
   "yearCount": 125,
@@ -3205,21 +3205,7 @@
     "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
     "name": "USSF-627",
     "rocket": "Falcon 9",
-    "net": "2026-11-10T04:59:49Z",
-    "status": "Go",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
-    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
-    "name": "USSF-317",
-    "rocket": "Falcon 9",
-    "net": "2026-11-13T04:23:00Z",
+    "net": "2026-11-11T02:49:00Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3241,6 +3227,34 @@
     "orbit": "LEO",
     "type": "Communications",
     "kind": "Starship",
+    "webcast": false
+   },
+   {
+    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
+    "name": "USSF-317",
+    "rocket": "Falcon 9",
+    "net": "2026-11-14T04:09:00Z",
+    "status": "Go",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+    "name": "USSF-266",
+    "rocket": "Falcon 9",
+    "net": "2026-11-17T16:58:00Z",
+    "status": "Go",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
     "webcast": false
    },
    {
@@ -3396,20 +3410,6 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
-    "name": "SDA Tranche 1 Tracking Layer D",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3501,16 +3501,16 @@
  },
  "news": [
   {
+   "title": "APOD: 2026 November 10 – Saturn Behind the Moon",
+   "source": "NASA · News releases",
+   "time": "2026-11-10T05:05:00.000Z",
+   "url": "https://science.nasa.gov/image-article/apod-2026-november-10-saturn-behind-the-moon/"
+  },
+  {
    "title": "La NASA busca a la próxima generación de astronautas",
    "source": "NASA · News releases",
    "time": "2026-11-09T19:27:20.000Z",
    "url": "https://www.nasa.gov/news-release/la-nasa-busca-a-la-proxima-generacion-de-astronautas/"
-  },
-  {
-   "title": "La NASA destina un millón de dólares al reto estudiantil Base Lunar",
-   "source": "NASA · News releases",
-   "time": "2026-11-09T17:36:33.000Z",
-   "url": "https://www.nasa.gov/news-release/la-nasa-destina-un-millon-de-dolares-al-reto-estudiantil-base-lunar/"
   },
   {
    "title": "Astronauts Across Generations Share the Stage",
@@ -3652,7 +3652,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-10T02:03:36.800Z",
+  "at": "2026-11-10T09:44:45.415Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4057,7 +4057,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-10T02:03:41.563Z",
+  "at": "2026-11-10T09:44:50.342Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4570,7 +4570,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-10T02:03:47.917Z",
+  "at": "2026-11-10T09:44:56.388Z",
   "items": [
    {
     "id": "agenda:0nvkcveg6bsdnd3am3540utmbs@google.com",
