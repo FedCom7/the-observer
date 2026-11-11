@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T10:50:01.936Z",
+ "updated": "2026-11-11T18:39:57.913Z",
  "season": 2026,
  "teams": [
   {
@@ -41525,7 +41525,7 @@
  ],
  "transactions": [
   {
-   "date": "2026-11-11",
+   "date": "2026-11-10",
    "type": "Signed as Free Agent",
    "team": 135,
    "from": null,
@@ -41568,6 +41568,15 @@
    "to": 114,
    "player": "Antoine Kelly",
    "text": "Cleveland Guardians signed free agent LHP Antoine Kelly to a minor league contract and invited him to spring training."
+  },
+  {
+   "date": "2026-11-09",
+   "type": "Signed as Free Agent",
+   "team": 141,
+   "from": null,
+   "to": 141,
+   "player": "Woo-jin Cho",
+   "text": "Toronto Blue Jays signed free agent RHP Woo-jin Cho to a minor league contract."
   },
   {
    "date": "2026-11-06",
@@ -42094,29 +42103,20 @@
   {
    "date": "2026-10-31",
    "type": "Declared Free Agency",
-   "team": 113,
-   "from": null,
-   "to": 113,
-   "player": "Pierce Johnson",
-   "text": "RHP Pierce Johnson elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "Albert Suárez",
-   "text": "RHP Albert Suárez elected free agency."
-  },
-  {
-   "date": "2026-10-31",
-   "type": "Declared Free Agency",
    "team": 110,
    "from": null,
    "to": 110,
    "player": "José Barrero",
    "text": "SS José Barrero elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Pierce Johnson",
+   "text": "RHP Pierce Johnson elected free agency."
   },
   {
    "date": "2026-10-31",
@@ -42135,6 +42135,15 @@
    "to": 110,
    "player": "Luis Robert Jr.",
    "text": "CF Luis Robert Jr. elected free agency."
+  },
+  {
+   "date": "2026-10-31",
+   "type": "Declared Free Agency",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Albert Suárez",
+   "text": "RHP Albert Suárez elected free agency."
   },
   {
    "date": "2026-10-31",
@@ -42864,18 +42873,54 @@
    "to": 141,
    "player": "George Springer",
    "text": "RF George Springer elected free agency."
-  },
-  {
-   "date": "2026-10-29",
-   "type": "Declared Free Agency",
-   "team": 115,
-   "from": null,
-   "to": 115,
-   "player": "Tomoyuki Sugano",
-   "text": "RHP Tomoyuki Sugano elected free agency."
   }
  ],
  "markets": {
+  "KXMLBNLCY": {
+   "label": "Pro Baseball National League Cy Young",
+   "rows": [
+    {
+     "name": "Jacob Misiorowski",
+     "p": 99.5
+    },
+    {
+     "name": "Shohei Ohtani",
+     "p": 1
+    },
+    {
+     "name": "Eury Perez",
+     "p": 1
+    },
+    {
+     "name": "Aaron Nola",
+     "p": 1
+    },
+    {
+     "name": "Chris Sale",
+     "p": 1
+    },
+    {
+     "name": "Cristopher Sanchez",
+     "p": 1
+    },
+    {
+     "name": "Logan Webb",
+     "p": 1
+    },
+    {
+     "name": "Kyle Harrison",
+     "p": 1
+    },
+    {
+     "name": "Nick Lodolo",
+     "p": 1
+    },
+    {
+     "name": "Merrill Kelly",
+     "p": 1
+    }
+   ]
+  },
   "KXMLBALCY": {
    "label": "Pro Baseball American League Cy Young",
    "rows": [
@@ -42917,51 +42962,6 @@
     },
     {
      "name": "Jacob Degrom",
-     "p": 1
-    }
-   ]
-  },
-  "KXMLBALMVP": {
-   "label": "Pro Baseball American League MVP",
-   "rows": [
-    {
-     "name": "Yordan Álvarez",
-     "p": 99.5
-    },
-    {
-     "name": "Cal Raleigh",
-     "p": 1
-    },
-    {
-     "name": "Jo Adell",
-     "p": 1
-    },
-    {
-     "name": "Steven Kwan",
-     "p": 1
-    },
-    {
-     "name": "Corey Seager",
-     "p": 1
-    },
-    {
-     "name": "Josh Naylor",
-     "p": 1
-    },
-    {
-     "name": "Alejandro Kirk",
-     "p": 1
-    },
-    {
-     "name": "Tie/Co-Winners",
-     "p": 1
-    },
-    {
-     "name": "Shea Langeliers",
-     "p": 1
-    },
-    {
-     "name": "Dillon Dingler",
      "p": 1
     }
    ]
