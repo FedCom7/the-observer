@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-12T18:16:18.773Z",
- "llAt": "2026-11-12T18:16:18.773Z",
+ "updated": "2026-11-12T23:40:37.307Z",
+ "llAt": "2026-11-12T23:40:37.307Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2380,20 +2380,20 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-12T01:30:44.632Z",
+  "at": "2026-11-12T23:40:29.994Z",
   "stats": {
-   "total": 744,
-   "successes": 729,
+   "total": 745,
+   "successes": 730,
    "failures": 15,
-   "streak": 229,
-   "landings": 689,
-   "landingAttempts": 717,
-   "landingStreak": 38,
+   "streak": 230,
+   "landings": 690,
+   "landingAttempts": 718,
+   "landingStreak": 39,
    "dragonReturns": 63,
    "pending": 136
   },
   "year": 2026,
-  "yearCount": 125,
+  "yearCount": 126,
   "byMonth": [
    {
     "Starlink": 9,
@@ -2467,7 +2467,7 @@
    },
    {
     "Starlink": 0,
-    "Customer": 1,
+    "Customer": 2,
     "Dragon": 0,
     "Starship": 0,
     "failed": 0
@@ -2481,6 +2481,29 @@
    }
   ],
   "recent": [
+   {
+    "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
+    "name": "USSF-627",
+    "rocket": "Falcon 9",
+    "net": "2026-11-12T04:36:30Z",
+    "status": "Success",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false,
+    "boosters": [
+     {
+      "serial": "B1103",
+      "flight": 7,
+      "turnaround": "P32DT20H56M46S",
+      "result": "landed",
+      "where": "OCISLY"
+     }
+    ]
+   },
    {
     "id": "54d471e8-695c-4fa7-a3cf-dbd8b389e8ae",
     "name": "USSF-432",
@@ -3175,29 +3198,6 @@
       "where": "OCISLY"
      }
     ]
-   },
-   {
-    "id": "36ab6924-bb36-416a-b71d-cda9e88004be",
-    "name": "Starlink Group 10-19",
-    "rocket": "Falcon 9",
-    "net": "2026-08-11T15:58:26Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 40",
-    "location": "Cape Canaveral SFS, FL, USA",
-    "orbit": "LEO",
-    "type": "Communications",
-    "kind": "Starlink",
-    "webcast": false,
-    "boosters": [
-     {
-      "serial": "B1085",
-      "flight": 18,
-      "turnaround": "P43DT13H33M26S",
-      "result": "landed",
-      "where": "ASOG"
-     }
-    ]
    }
   ],
   "upcoming": [
@@ -3206,7 +3206,7 @@
     "name": "USSF-627",
     "rocket": "Falcon 9",
     "net": "2026-11-12T04:36:30Z",
-    "status": "Go",
+    "status": "Success",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
@@ -3253,6 +3253,20 @@
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
     "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
+    "name": "NROL-136",
+    "rocket": "Falcon 9",
+    "net": "2026-11-21T12:30:00Z",
+    "status": "Go",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
@@ -3396,20 +3410,6 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
-    "name": "SDA Tranche 1 Tracking Layer C",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3501,6 +3501,18 @@
  },
  "news": [
   {
+   "title": "Crew Packs Dragon with Science and Cleans Spacesuits",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-12T22:07:49.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/"
+  },
+  {
+   "title": "I Am Artemis Katie Spicer",
+   "source": "NASA · Artemis",
+   "time": "2026-11-12T20:10:02.000Z",
+   "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/"
+  },
+  {
    "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
    "source": "NASA · News releases",
    "time": "2026-11-12T05:05:00.000Z",
@@ -3561,12 +3573,6 @@
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/03/crew-keeps-up-spacewalk-preps-research-and-cargo-operations/"
   },
   {
-   "title": "Week Starts with Spacewalk Preps and Life Science",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-02T19:14:48.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/02/week-starts-with-spacewalk-preps-and-life-science/"
-  },
-  {
    "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
    "source": "NASA · Artemis",
    "time": "2026-10-29T02:49:59.000Z",
@@ -3601,12 +3607,6 @@
    "source": "NASA · Artemis blog",
    "time": "2026-10-23T20:15:28.000Z",
    "url": "https://www.nasa.gov/blogs/missions/2026/10/23/nasa-shares-artemis-acceleration-plans-for-moon-missions/"
-  },
-  {
-   "title": "NASA Provides Progress Update on Moon Base Rovers",
-   "source": "NASA · Artemis",
-   "time": "2026-10-20T15:00:10.000Z",
-   "url": "https://www.nasa.gov/missions/moon-base/nasa-provides-progress-update-on-moon-base-rovers/"
   },
   {
    "title": "NASA Completes Artemis III Booster Stacking, Shares Status Update",
@@ -4570,7 +4570,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-12T18:16:18.773Z",
+  "at": "2026-11-12T23:40:37.307Z",
   "items": [
    {
     "id": "agenda:3mraov9vf64h0a9vtpg6q65p5g@google.com",
