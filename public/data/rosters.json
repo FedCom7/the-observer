@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12T01:29:40.422Z",
+ "updated": "2026-11-12T09:44:50.274Z",
  "pats": {
-  "at": "2026-11-12T01:29:40.422Z",
+  "at": "2026-11-12T09:44:50.274Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -26,7 +26,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
     "status": "Active",
     "injury": {
-     "status": "Questionable",
+     "status": "Out",
      "detail": null
     },
     "stats": null,
@@ -143,7 +143,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4685298.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -4323,6 +4326,69 @@
     "snaps": []
    },
    {
+    "espn": "4683308",
+    "name": "Tanner Arkin",
+    "short": "T. Arkin",
+    "jersey": "84",
+    "group": "practiceSquad",
+    "pos": "TE",
+    "posName": "Tight End",
+    "unit": "OFF",
+    "age": 23,
+    "ht": "6' 4\"",
+    "wt": "262 lbs",
+    "exp": 0,
+    "college": "Illinois",
+    "from": "Fort Collins, CO",
+    "state": "CO",
+    "nation": null,
+    "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4683308.png",
+    "status": "Practice Squad",
+    "injury": null,
+    "stats": null,
+    "draft": {
+     "pick": null,
+     "club": null,
+     "year": 2026
+    },
+    "depthPos": "TE",
+    "season": {
+     "games": 2
+    },
+    "snaps": [
+     {
+      "wk": 1,
+      "off": 0,
+      "def": 0,
+      "st": 0.18
+     },
+     {
+      "wk": 3,
+      "off": 0.24,
+      "def": 0,
+      "st": 0.39
+     },
+     {
+      "wk": 5,
+      "off": 0.2,
+      "def": 0,
+      "st": 0.1
+     },
+     {
+      "wk": 8,
+      "off": 0.27,
+      "def": 0,
+      "st": 0.27
+     },
+     {
+      "wk": 9,
+      "off": 0.22,
+      "def": 0,
+      "st": 0.55
+     }
+    ]
+   },
+   {
     "espn": "4573243",
     "name": "Chandler Brayboy",
     "short": "C. Brayboy",
@@ -8188,7 +8254,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-12T01:29:40.422Z",
+  "at": "2026-11-12T09:44:50.274Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9456,7 +9522,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-12T01:29:40.422Z",
+  "at": "2026-11-12T09:44:50.274Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
