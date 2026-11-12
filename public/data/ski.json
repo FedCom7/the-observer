@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T09:45:19.460Z",
+ "updated": "2026-11-12T18:15:11.586Z",
  "season": 2027,
  "races": [
   {
@@ -237,9 +237,14 @@
    "discipline": "Downhill",
    "gender": "men",
    "start": "2026-12-03T18:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-03T18:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -251,9 +256,14 @@
    "discipline": "Downhill",
    "gender": "men",
    "start": "2026-12-04T18:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-04T18:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -278,10 +288,15 @@
    "country": "USA",
    "discipline": "Super G",
    "gender": "men",
-   "start": "2026-12-05T18:30:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-05T17:30:00.000Z",
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-05T17:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -307,9 +322,18 @@
    "discipline": "Giant Slalom",
    "gender": "men",
    "start": "2026-12-06T17:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-06T17:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-06T20:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
