@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13T15:22:11.942Z",
- "llAt": "2026-11-13T15:22:11.942Z",
+ "updated": "2026-11-13T21:59:11.304Z",
+ "llAt": "2026-11-13T21:59:11.304Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -158,12 +158,12 @@
     "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster’s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship’s heatshield and transmit imagery down to operators.",
     "rocket": "Starship",
     "provider": "SpaceX",
-    "net": "2026-11-13T22:45:00Z",
+    "net": "2026-11-13T22:47:36Z",
     "windowEnd": "2026-11-14T00:00:00Z",
-    "precision": "Minute",
-    "tbc": true,
-    "status": "TBC",
-    "statusName": "To Be Confirmed",
+    "precision": "Second",
+    "tbc": false,
+    "status": "Go",
+    "statusName": "Go for Launch",
     "crewed": false,
     "starship": true,
     "artemis": false,
@@ -174,7 +174,7 @@
      -97.15799,
      25.99677
     ],
-    "webcast": false,
+    "webcast": true,
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
     "patch": null,
     "crew": null,
@@ -1183,6 +1183,17 @@
  ],
  "events": [
   {
+   "id": "agenda:3epnga8cddu2th97u03kg3bp92@google.com",
+   "name": "AstronautiCAST Live: Telecronaca informale del lancio di Flight 15",
+   "type": "NASA broadcast",
+   "date": "2026-11-13T22:15:00.000Z",
+   "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=9XM0lpVlvo0\">https://www.youtube.com/watch?v=9XM0lpVlvo0</a>",
+   "location": "",
+   "webcast": true,
+   "allDay": false,
+   "source": "AstronauticAgenda"
+  },
+  {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
    "name": "Docking · Progress MS-36",
    "type": "Docking",
@@ -1476,7 +1487,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-13T06:36:33.877Z",
+  "at": "2026-11-13T21:58:52.595Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -3501,6 +3512,18 @@
  },
  "news": [
   {
+   "title": "Botany, Biomedicine, and Cargo Ops Wrap Up Week Aboard Station",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-13T18:00:58.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/13/botany-biomedicine-and-cargo-ops-wrap-up-week-aboard-station/"
+  },
+  {
+   "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+   "source": "NASA · News releases",
+   "time": "2026-11-13T16:05:54.000Z",
+   "url": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/"
+  },
+  {
    "title": "Crew Packs Dragon with Science and Cleans Spacesuits",
    "source": "NASA · Space Station blog",
    "time": "2026-11-12T22:07:49.000Z",
@@ -3511,12 +3534,6 @@
    "source": "NASA · Artemis",
    "time": "2026-11-12T20:10:02.000Z",
    "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/"
-  },
-  {
-   "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
-   "source": "NASA · News releases",
-   "time": "2026-11-12T05:05:00.000Z",
-   "url": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/"
   },
   {
    "title": "Microbiology, Spacesuits, and Cargo Mission Preps Keep Crew Busy",
@@ -3565,12 +3582,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-04T16:00:58.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/04/astronauts-are-go-for-final-power-upgrade-spacewalk/"
-  },
-  {
-   "title": "Crew Keeps Up Spacewalk Preps, Research, and Cargo Operations",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-03T18:22:21.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/03/crew-keeps-up-spacewalk-preps-research-and-cargo-operations/"
   },
   {
    "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
@@ -3652,7 +3663,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-13T15:22:00.069Z",
+  "at": "2026-11-13T21:59:00.426Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4058,7 +4069,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-13T15:22:04.725Z",
+  "at": "2026-11-13T21:59:04.826Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4571,7 +4582,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-13T15:22:11.941Z",
+  "at": "2026-11-13T21:59:11.303Z",
   "items": [
    {
     "id": "agenda:3mraov9vf64h0a9vtpg6q65p5g@google.com",
@@ -4662,6 +4673,19 @@
     "date": "2026-11-07T22:00:00.000Z",
     "allDay": false,
     "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=MRg4uIpJ3xE\">https://www.youtube.com/watch?v=MRg4uIpJ3xE</a>",
+    "location": ""
+   },
+   {
+    "id": "agenda:3epnga8cddu2th97u03kg3bp92@google.com",
+    "kind": "broadcast",
+    "name": "AstronautiCAST Live: Telecronaca informale del lancio di Flight 15",
+    "vehicle": null,
+    "station": null,
+    "eva": null,
+    "crewed": null,
+    "date": "2026-11-13T22:15:00.000Z",
+    "allDay": false,
+    "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=9XM0lpVlvo0\">https://www.youtube.com/watch?v=9XM0lpVlvo0</a>",
     "location": ""
    },
    {
