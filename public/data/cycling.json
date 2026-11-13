@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-13T06:36:17.583Z",
+ "updated": "2026-11-13T15:21:34.290Z",
  "status": {
-  "uci": "74 races",
+  "uci": "75 races",
   "paris-nice.fr": "ok",
-  "la-fleche-wallonne.be": "ok",
   "paris-roubaix.fr": "ok",
-  "liege-bastogne-liege.be": "ok",
   "letour.fr": "ok",
-  "tour-auvergne-rhone-alpes.fr": "ok",
+  "liege-bastogne-liege.be": "ok",
+  "la-fleche-wallonne.be": "ok",
   "lavuelta.es": "ok",
+  "tour-auvergne-rhone-alpes.fr": "ok",
   "giroditalia.it": "ok",
   "tirrenoadriatico.it": "ok",
-  "ilombardia.it": "ok",
   "strade-bianche.it": "ok",
   "milanosanremo.it": "ok",
+  "ilombardia.it": "ok",
   "wikipedia": "36 winners",
   "wikiPages": "0 race pages read, 86 teams",
   "geocoding": "367 towns, 150 lookups left"
@@ -60901,6 +60901,41 @@
    "end": "2027-09-12T21:00:00.000Z",
    "approx": true,
    "winner": null
+  },
+  {
+   "id": "81391",
+   "uciName": "UEC Road European Championships",
+   "cls": "CC",
+   "country": "DEN",
+   "venue": "Silkeborg/Herning",
+   "startDate": "2027-09-28",
+   "endDate": "2027-10-03",
+   "uci": "https://www.uci.org/competition-details/2027/ROA/81391",
+   "year": 2027,
+   "name": "European Championships",
+   "tier": 2,
+   "tag": "euros",
+   "kind": "champs",
+   "tz": "Europe/Copenhagen",
+   "loc": [
+    12.57,
+    55.68
+   ],
+   "site": null,
+   "org": null,
+   "start": "2027-09-28T10:30:00.000Z",
+   "end": "2027-10-03T15:00:00.000Z",
+   "approx": true,
+   "events": [
+    {
+     "title": "Men's road race",
+     "date": "2027-10-03",
+     "winner": null,
+     "tier": 3,
+     "start": "2027-10-03T08:00:00.000Z",
+     "approx": true
+    }
+   ]
   },
   {
    "id": "79725",
