@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-14T16:39:04.468Z",
- "llAt": "2026-11-14T16:39:04.468Z",
+ "updated": "2026-11-14T21:27:25.831Z",
+ "llAt": "2026-11-14T21:27:25.831Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -162,8 +162,8 @@
     "windowEnd": "2026-11-14T00:00:00Z",
     "precision": "Second",
     "tbc": false,
-    "status": "Deployed",
-    "statusName": "Payload Deployed",
+    "status": "Success",
+    "statusName": "Launch Successful",
     "crewed": false,
     "starship": true,
     "artemis": false,
@@ -280,8 +280,8 @@
     "windowEnd": "2026-11-14T00:00:00Z",
     "precision": "Second",
     "tbc": false,
-    "status": "Deployed",
-    "statusName": "Payload Deployed",
+    "status": "Success",
+    "statusName": "Launch Successful",
     "crewed": false,
     "starship": true,
     "artemis": false,
@@ -1142,7 +1142,7 @@
    "date": "2026-11-14T21:20:10Z",
    "description": "SpaceX is attempting to catch Ship 42 after reentry from orbit at Starbase Texas.",
    "location": "Starbase Texas",
-   "webcast": false
+   "webcast": true
   },
   {
    "id": 365,
@@ -1192,13 +1192,24 @@
  ],
  "events": [
   {
+   "id": "agenda:7aoqqpifd47vicej04jifp260c@google.com",
+   "name": "AstronautiCAST Live: Telecronaca informale della cattura di Ship 42",
+   "type": "NASA broadcast",
+   "date": "2026-11-14T20:20:00.000Z",
+   "description": "Live:",
+   "location": "",
+   "webcast": true,
+   "allDay": false,
+   "source": "AstronauticAgenda"
+  },
+  {
    "id": 1570,
    "name": "Starship Orbital Catch Attempt",
    "type": "Spacecraft Landing",
    "date": "2026-11-14T21:20:10Z",
    "description": "SpaceX is attempting to catch Ship 42 after reentry from orbit at Starbase Texas.",
    "location": "Starbase Texas",
-   "webcast": false
+   "webcast": true
   },
   {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
@@ -1494,7 +1505,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-14T10:18:12.294Z",
+  "at": "2026-11-14T21:27:18.020Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -4589,21 +4600,8 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-14T16:39:04.467Z",
+  "at": "2026-11-14T21:27:25.831Z",
   "items": [
-   {
-    "id": "agenda:34cf011d37c76qi54lfrabc4l1@google.com",
-    "kind": "broadcast",
-    "name": "NASA Live: conferenza post volo con l'equipaggio di Crew-12",
-    "vehicle": null,
-    "station": null,
-    "eva": null,
-    "crewed": null,
-    "date": "2026-10-15T19:30:00.000Z",
-    "allDay": false,
-    "description": "<br>Live: <br><a href=\"https://www.youtube.com/watch?v=ivng4U5xeYM&amp;pp=0gcJCT8MAYcqIYzv\">https://www.youtube.com/watch?v=ivng4U5xeYM&amp;pp=0gcJCT8MAYcqIYzv</a>",
-    "location": ""
-   },
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
     "kind": "broadcast",
@@ -4680,6 +4678,19 @@
     "date": "2026-11-13T22:15:00.000Z",
     "allDay": false,
     "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=9XM0lpVlvo0\">https://www.youtube.com/watch?v=9XM0lpVlvo0</a>",
+    "location": ""
+   },
+   {
+    "id": "agenda:7aoqqpifd47vicej04jifp260c@google.com",
+    "kind": "broadcast",
+    "name": "AstronautiCAST Live: Telecronaca informale della cattura di Ship 42",
+    "vehicle": null,
+    "station": null,
+    "eva": null,
+    "crewed": null,
+    "date": "2026-11-14T20:20:00.000Z",
+    "allDay": false,
+    "description": "Live:",
     "location": ""
    },
    {
