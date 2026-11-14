@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-13T21:59:11.304Z",
- "llAt": "2026-11-13T21:59:11.304Z",
+ "updated": "2026-11-14T02:25:00.662Z",
+ "llAt": "2026-11-14T02:25:00.662Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -162,8 +162,8 @@
     "windowEnd": "2026-11-14T00:00:00Z",
     "precision": "Second",
     "tbc": false,
-    "status": "Go",
-    "statusName": "Go for Launch",
+    "status": "Deployed",
+    "statusName": "Payload Deployed",
     "crewed": false,
     "starship": true,
     "artemis": false,
@@ -269,6 +269,35 @@
    }
   ],
   "previous": [
+   {
+    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+    "name": "Starship | Starlink Group 31-2 (Starship Flight 15)",
+    "mission": "Starlink Group 31-2 (Starship Flight 15)",
+    "description": "15th test flight of the two-stage Starship launch vehicle and 4th flight of Starship V3. Second Starship flight to deploy satellites (a group of Starlink satellites known as Starlink Group 31-2) into stable Low Earth Orbit and first ever to attempt returning the Starship 2nd stage back to the launch site.\r\n\r\nThe ship is expected to fly at an altitude approximately 275 km above Earth and complete approximately 14 orbits around the planet for more than 22 hours, with the ship expected to attempt returning back to Starbase, Texas on its launch pad by pad arms catching.\r\n\r\nThe booster’s primary test objective on Flight 15 will be executing a successful launch, ascent, stage separation, boostback burn, and landing by pad arms catching. This will also be the 1st Starship V3 booster to attempt returning to its launch site.\r\n\r\nStarship will deliver 26 Starlink V3 satellites to orbit for the second time, which aim to greatly expand the network's capacity and user speeds. Each Starlink V3 satellite will add 1 Tbps of capacity to the constellation. 3 of the satellites have been modified with a suite of cameras to scan Starship’s heatshield and transmit imagery down to operators.",
+    "rocket": "Starship",
+    "provider": "SpaceX",
+    "net": "2026-11-13T22:47:36Z",
+    "windowEnd": "2026-11-14T00:00:00Z",
+    "precision": "Second",
+    "tbc": false,
+    "status": "Deployed",
+    "statusName": "Payload Deployed",
+    "crewed": false,
+    "starship": true,
+    "artemis": false,
+    "orbit": "LEO",
+    "pad": "Orbital Launch Pad 2",
+    "location": "SpaceX Starbase, TX, USA",
+    "loc": [
+     -97.15799,
+     25.99677
+    ],
+    "webcast": true,
+    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
+    "patch": null,
+    "crew": null,
+    "past": true
+   },
    {
     "id": "7d1afb26-6f9c-429b-9ccf-29012fd1e519",
     "name": "Starship | Starlink Group 31-1 (Starship Flight 14)",
@@ -584,35 +613,6 @@
     ],
     "webcast": false,
     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_liftof_image_thumbnail_20240621051605.jpeg",
-    "patch": null,
-    "crew": null,
-    "past": true
-   },
-   {
-    "id": "c0d90c60-4961-470a-a6d7-804b3bf4b012",
-    "name": "Starship | Integrated Flight Test 3",
-    "mission": "Integrated Flight Test 3",
-    "description": "Third test flight of the two-stage Starship launch vehicle.",
-    "rocket": "Starship",
-    "provider": "SpaceX",
-    "net": "2024-03-14T13:25:00Z",
-    "windowEnd": "2024-03-14T13:50:00Z",
-    "precision": "Minute",
-    "tbc": false,
-    "status": "Success",
-    "statusName": "Launch Successful",
-    "crewed": false,
-    "starship": true,
-    "artemis": false,
-    "orbit": "Sub",
-    "pad": "Orbital Launch Pad 1",
-    "location": "SpaceX Starbase, TX, USA",
-    "loc": [
-     -97.154423,
-     25.9962
-    ],
-    "webcast": false,
-    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_liftof_image_thumbnail_20240314160301.jpeg",
     "patch": null,
     "crew": null,
     "past": true
@@ -1183,17 +1183,6 @@
  ],
  "events": [
   {
-   "id": "agenda:3epnga8cddu2th97u03kg3bp92@google.com",
-   "name": "AstronautiCAST Live: Telecronaca informale del lancio di Flight 15",
-   "type": "NASA broadcast",
-   "date": "2026-11-13T22:15:00.000Z",
-   "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=9XM0lpVlvo0\">https://www.youtube.com/watch?v=9XM0lpVlvo0</a>",
-   "location": "",
-   "webcast": true,
-   "allDay": false,
-   "source": "AstronauticAgenda"
-  },
-  {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
    "name": "Docking · Progress MS-36",
    "type": "Docking",
@@ -1317,7 +1306,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P212DT23H51M6S",
+   "timeInSpace": "P213DT23H50M55S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190244.jpeg"
   },
   {
@@ -1325,7 +1314,7 @@
    "agency": "CSA",
    "nationality": "Canadian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P42DT10H49M29S",
+   "timeInSpace": "P43DT10H49M19S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185947.jpeg"
   },
   {
@@ -1333,7 +1322,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P278DT21H12M59S",
+   "timeInSpace": "P279DT21H12M48S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185904.jpeg"
   },
   {
@@ -1341,7 +1330,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P476DT14H57M15S",
+   "timeInSpace": "P477DT14H57M5S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185922.jpeg"
   },
   {
@@ -1349,7 +1338,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P42DT10H50M24S",
+   "timeInSpace": "P43DT10H50M8S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190723.jpeg"
   },
   {
@@ -1357,7 +1346,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P121DT11H12M49S",
+   "timeInSpace": "P122DT11H12M33S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190559.jpeg"
   },
   {
@@ -1365,7 +1354,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P326DT9H33M31S",
+   "timeInSpace": "P327DT9H33M11S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185258.jpeg"
   },
   {
@@ -1373,7 +1362,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P42DT10H52M37S",
+   "timeInSpace": "P43DT10H52M13S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sergey_teteryat_image_thumbnail_20260424073411.jpeg"
   },
   {
@@ -1381,7 +1370,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P172DT10H54M8S",
+   "timeInSpace": "P173DT10H53M44S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhang_zhiyuan_o_image_thumbnail_20260524125922.png"
   },
   {
@@ -1389,7 +1378,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P172DT10H54M8S",
+   "timeInSpace": "P173DT10H53M45S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/lai_ka-ying_off_image_thumbnail_20260524130423.png"
   },
   {
@@ -1397,7 +1386,7 @@
    "agency": "CCCP",
    "nationality": "Russian",
    "lastFlight": "1957-11-03T02:30:00Z",
-   "timeInSpace": "P25211DT23H32M47S",
+   "timeInSpace": "P25212DT23H32M24S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/laika_image_thumbnail_20261102201325.jpeg"
   }
  ],
@@ -2391,20 +2380,20 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-13T15:21:51.101Z",
+  "at": "2026-11-14T02:24:53.302Z",
   "stats": {
-   "total": 745,
+   "total": 746,
    "successes": 730,
    "failures": 15,
    "streak": 230,
    "landings": 690,
-   "landingAttempts": 718,
-   "landingStreak": 39,
+   "landingAttempts": 719,
+   "landingStreak": 0,
    "dragonReturns": 63,
    "pending": 136
   },
   "year": 2026,
-  "yearCount": 126,
+  "yearCount": 127,
   "byMonth": [
    {
     "Starlink": 9,
@@ -2480,7 +2469,7 @@
     "Starlink": 0,
     "Customer": 2,
     "Dragon": 0,
-    "Starship": 0,
+    "Starship": 1,
     "failed": 0
    },
    {
@@ -2492,6 +2481,29 @@
    }
   ],
   "recent": [
+   {
+    "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
+    "name": "Starlink Group 31-2 (Starship Flight 15)",
+    "rocket": "Starship",
+    "net": "2026-11-13T22:47:36Z",
+    "status": "Deployed",
+    "tbc": false,
+    "pad": "Orbital Launch Pad 2",
+    "location": "SpaceX Starbase, TX, USA",
+    "orbit": "LEO",
+    "type": "Communications",
+    "kind": "Starship",
+    "webcast": true,
+    "boosters": [
+     {
+      "serial": "Booster 22",
+      "flight": 1,
+      "turnaround": null,
+      "result": "lost",
+      "where": "OLM-B"
+     }
+    ]
+   },
    {
     "id": "6aa7b90b-e5ed-45d8-a52e-04fbf399d178",
     "name": "USSF-627",
@@ -3186,29 +3198,6 @@
       "where": "LZ-40"
      }
     ]
-   },
-   {
-    "id": "6f94dbe4-1318-4ffb-a53d-351bbdcba733",
-    "name": "Starlink Group 17-49",
-    "rocket": "Falcon 9",
-    "net": "2026-08-12T04:46:47Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Communications",
-    "kind": "Starlink",
-    "webcast": false,
-    "boosters": [
-     {
-      "serial": "B1103",
-      "flight": 5,
-      "turnaround": "P26DT8H14M11S",
-      "result": "landed",
-      "where": "OCISLY"
-     }
-    ]
    }
   ],
   "upcoming": [
@@ -3216,15 +3205,15 @@
     "id": "0f867f0c-5422-4d44-93b8-d7faaae7019b",
     "name": "Starlink Group 31-2 (Starship Flight 15)",
     "rocket": "Starship",
-    "net": "2026-11-13T22:45:00Z",
-    "status": "TBC",
-    "tbc": true,
+    "net": "2026-11-13T22:47:36Z",
+    "status": "Deployed",
+    "tbc": false,
     "pad": "Orbital Launch Pad 2",
     "location": "SpaceX Starbase, TX, USA",
     "orbit": "LEO",
     "type": "Communications",
     "kind": "Starship",
-    "webcast": false
+    "webcast": true
    },
    {
     "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
@@ -3241,20 +3230,6 @@
     "webcast": false
    },
    {
-    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
-    "name": "USSF-266",
-    "rocket": "Falcon 9",
-    "net": "2026-11-18T16:49:00Z",
-    "status": "Go",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
     "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
     "name": "NROL-136",
     "rocket": "Falcon 9",
@@ -3264,6 +3239,20 @@
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
     "orbit": "LEO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+    "name": "USSF-266",
+    "rocket": "Falcon 9",
+    "net": "2026-11-23T16:04:00Z",
+    "status": "Go",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
@@ -4582,7 +4571,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-13T21:59:11.303Z",
+  "at": "2026-11-14T02:25:00.661Z",
   "items": [
    {
     "id": "agenda:3mraov9vf64h0a9vtpg6q65p5g@google.com",
