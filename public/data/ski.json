@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T10:17:36.570Z",
+ "updated": "2026-11-14T16:37:43.851Z",
  "season": 2027,
  "races": [
   {
@@ -69,7 +69,8 @@
      "start": "2026-11-14T12:00:00.000Z"
     }
    ],
-   "cancelled": false
+   "cancelled": false,
+   "results": []
   },
   {
    "raceid": "131580",
@@ -274,10 +275,19 @@
    "country": "CAN",
    "discipline": "Giant Slalom",
    "gender": "women",
-   "start": "2026-12-05T15:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-05T16:00:00.000Z",
+   "approxTime": false,
    "tz": "America/Toronto",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-05T16:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-05T19:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -307,10 +317,19 @@
    "country": "CAN",
    "discipline": "Giant Slalom",
    "gender": "women",
-   "start": "2026-12-06T15:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-06T15:30:00.000Z",
+   "approxTime": false,
    "tz": "America/Toronto",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-06T15:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-06T18:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -1867,9 +1886,29 @@
   ],
   "women": [
    {
+    "name": "AICHER Emma",
+    "nation": "GER",
+    "rank": 1,
+    "points": 160,
+    "DH": null,
+    "SG": null,
+    "GS": 60,
+    "SL": 100
+   },
+   {
+    "name": "COLTURI Lara",
+    "nation": "ALB",
+    "rank": 1,
+    "points": 160,
+    "DH": null,
+    "SG": null,
+    "GS": 80,
+    "SL": 80
+   },
+   {
     "name": "MOLTZAN Paula",
     "nation": "USA",
-    "rank": 1,
+    "rank": 3,
     "points": 100,
     "DH": null,
     "SG": null,
@@ -1877,39 +1916,59 @@
     "SL": null
    },
    {
-    "name": "COLTURI Lara",
-    "nation": "ALB",
-    "rank": 2,
-    "points": 80,
+    "name": "LJUTIC Zrinka",
+    "nation": "CRO",
+    "rank": 4,
+    "points": 74,
     "DH": null,
     "SG": null,
-    "GS": 80,
-    "SL": null
-   },
-   {
-    "name": "AICHER Emma",
-    "nation": "GER",
-    "rank": 3,
-    "points": 60,
-    "DH": null,
-    "SG": null,
-    "GS": 60,
-    "SL": null
+    "GS": 24,
+    "SL": 50
    },
    {
     "name": "HECTOR Sara",
     "nation": "SWE",
-    "rank": 4,
-    "points": 50,
+    "rank": 5,
+    "points": 70,
     "DH": null,
     "SG": null,
     "GS": 50,
-    "SL": null
+    "SL": 20
+   },
+   {
+    "name": "RAST Camille",
+    "nation": "SUI",
+    "rank": 6,
+    "points": 64,
+    "DH": null,
+    "SG": null,
+    "GS": 40,
+    "SL": 24
+   },
+   {
+    "name": "TRUPPE Katharina",
+    "nation": "AUT",
+    "rank": 7,
+    "points": 60,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 60
+   },
+   {
+    "name": "SWENN LARSSON Anna",
+    "nation": "SWE",
+    "rank": 8,
+    "points": 45,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 45
    },
    {
     "name": "ZENERE Asja",
     "nation": "ITA",
-    "rank": 5,
+    "rank": 8,
     "points": 45,
     "DH": null,
     "SG": null,
@@ -1917,19 +1976,39 @@
     "SL": null
    },
    {
-    "name": "RAST Camille",
-    "nation": "SUI",
-    "rank": 6,
+    "name": "CHEVRIER Marion",
+    "nation": "FRA",
+    "rank": 10,
     "points": 40,
     "DH": null,
     "SG": null,
-    "GS": 40,
-    "SL": null
+    "GS": null,
+    "SL": 40
+   },
+   {
+    "name": "HOLDENER Wendy",
+    "nation": "SUI",
+    "rank": 11,
+    "points": 37,
+    "DH": null,
+    "SG": null,
+    "GS": 11,
+    "SL": 26
+   },
+   {
+    "name": "LAMURE Marie",
+    "nation": "FRA",
+    "rank": 12,
+    "points": 36,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 36
    },
    {
     "name": "SHIFFRIN Mikaela",
     "nation": "USA",
-    "rank": 7,
+    "rank": 12,
     "points": 36,
     "DH": null,
     "SG": null,
@@ -1937,9 +2016,39 @@
     "SL": null
    },
    {
+    "name": "HURT A J",
+    "nation": "USA",
+    "rank": 12,
+    "points": 36,
+    "DH": null,
+    "SG": null,
+    "GS": 20,
+    "SL": 16
+   },
+   {
+    "name": "GRITSCH Franziska",
+    "nation": "AUT",
+    "rank": 15,
+    "points": 35,
+    "DH": null,
+    "SG": null,
+    "GS": 29,
+    "SL": 6
+   },
+   {
+    "name": "HOFFMAN Madison",
+    "nation": "AUS",
+    "rank": 16,
+    "points": 32,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 32
+   },
+   {
     "name": "ROBINSON Alice",
     "nation": "NZL",
-    "rank": 8,
+    "rank": 16,
     "points": 32,
     "DH": null,
     "SG": null,
@@ -1949,7 +2058,7 @@
    {
     "name": "GASIENICA-DANIEL Maryna",
     "nation": "POL",
-    "rank": 9,
+    "rank": 18,
     "points": 29,
     "DH": null,
     "SG": null,
@@ -1957,29 +2066,39 @@
     "SL": null
    },
    {
-    "name": "GRITSCH Franziska",
+    "name": "HUBER Katharina",
     "nation": "AUT",
-    "rank": 9,
+    "rank": 18,
     "points": 29,
     "DH": null,
     "SG": null,
-    "GS": 29,
-    "SL": null
+    "GS": null,
+    "SL": 29
    },
    {
-    "name": "LJUTIC Zrinka",
-    "nation": "CRO",
-    "rank": 11,
+    "name": "DELLA MEA Lara",
+    "nation": "ITA",
+    "rank": 20,
     "points": 24,
     "DH": null,
     "SG": null,
-    "GS": 24,
-    "SL": null
+    "GS": 13,
+    "SL": 11
+   },
+   {
+    "name": "VLHOVA Petra",
+    "nation": "SVK",
+    "rank": 21,
+    "points": 23,
+    "DH": null,
+    "SG": null,
+    "GS": 8,
+    "SL": 15
    },
    {
     "name": "ALPHAND Estelle",
     "nation": "SWE",
-    "rank": 12,
+    "rank": 22,
     "points": 22,
     "DH": null,
     "SG": null,
@@ -1987,133 +2106,33 @@
     "SL": null
    },
    {
-    "name": "HURT A J",
-    "nation": "USA",
-    "rank": 13,
-    "points": 20,
+    "name": "GERMANE Dzenifera",
+    "nation": "LAT",
+    "rank": 22,
+    "points": 22,
     "DH": null,
     "SG": null,
-    "GS": 20,
-    "SL": null
-   },
-   {
-    "name": "BOCOCK Elisabeth",
-    "nation": "USA",
-    "rank": 14,
-    "points": 18,
-    "DH": null,
-    "SG": null,
-    "GS": 18,
-    "SL": null
-   },
-   {
-    "name": "LOEVBLOM Hilma",
-    "nation": "SWE",
-    "rank": 15,
-    "points": 16,
-    "DH": null,
-    "SG": null,
-    "GS": 16,
-    "SL": null
-   },
-   {
-    "name": "HOLTMANN Mina Fuerst",
-    "nation": "NOR",
-    "rank": 16,
-    "points": 15,
-    "DH": null,
-    "SG": null,
-    "GS": 15,
-    "SL": null
-   },
-   {
-    "name": "O'BRIEN Nina",
-    "nation": "USA",
-    "rank": 16,
-    "points": 15,
-    "DH": null,
-    "SG": null,
-    "GS": 15,
-    "SL": null
-   },
-   {
-    "name": "DELLA MEA Lara",
-    "nation": "ITA",
-    "rank": 18,
-    "points": 13,
-    "DH": null,
-    "SG": null,
-    "GS": 13,
-    "SL": null
-   },
-   {
-    "name": "ARONSSON ELFMAN Hanna",
-    "nation": "SWE",
-    "rank": 19,
-    "points": 12,
-    "DH": null,
-    "SG": null,
-    "GS": 12,
-    "SL": null
-   },
-   {
-    "name": "HOLDENER Wendy",
-    "nation": "SUI",
-    "rank": 20,
-    "points": 11,
-    "DH": null,
-    "SG": null,
-    "GS": 11,
-    "SL": null
-   },
-   {
-    "name": "STJERNESUND Thea Louise",
-    "nation": "NOR",
-    "rank": 20,
-    "points": 11,
-    "DH": null,
-    "SG": null,
-    "GS": 11,
-    "SL": null
+    "GS": null,
+    "SL": 22
    },
    {
     "name": "DUERR Lena",
     "nation": "GER",
     "rank": 22,
-    "points": 9,
+    "points": 22,
     "DH": null,
     "SG": null,
     "GS": 9,
-    "SL": null
+    "SL": 13
    },
    {
-    "name": "VLHOVA Petra",
-    "nation": "SVK",
-    "rank": 23,
-    "points": 8,
-    "DH": null,
-    "SG": null,
-    "GS": 8,
-    "SL": null
-   },
-   {
-    "name": "WILD Simone",
-    "nation": "SUI",
-    "rank": 24,
-    "points": 7,
-    "DH": null,
-    "SG": null,
-    "GS": 7,
-    "SL": null
-   },
-   {
-    "name": "GROB Stefanie",
-    "nation": "SUI",
+    "name": "BOCOCK Elisabeth",
+    "nation": "USA",
     "rank": 25,
-    "points": 6,
+    "points": 18,
     "DH": null,
     "SG": null,
-    "GS": 6,
+    "GS": 18,
     "SL": null
    }
   ]

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T10:16:58.888Z",
+ "updated": "2026-11-14T16:37:21.129Z",
  "season": 2027,
  "races": [
   {
@@ -363,6 +363,164 @@
      "NOR",
      5,
      "Van Deer"
+    ]
+   ]
+  },
+  {
+   "raceid": "131579",
+   "place": "Levi",
+   "country": "FIN",
+   "discipline": "Slalom",
+   "gender": "women",
+   "start": "2026-11-14T09:00:00.000Z",
+   "category": "WC",
+   "podium": [
+    {
+     "rank": 1,
+     "name": "AICHER Emma",
+     "nation": "GER",
+     "skis": "Head"
+    },
+    {
+     "rank": 2,
+     "name": "COLTURI Lara",
+     "nation": "ALB",
+     "skis": "Head"
+    }
+   ],
+   "finishers": 22,
+   "points": [
+    [
+     "AICHER Emma",
+     "GER",
+     100,
+     "Head"
+    ],
+    [
+     "COLTURI Lara",
+     "ALB",
+     80,
+     "Head"
+    ],
+    [
+     "LJUTIC Zrinka",
+     "CRO",
+     50,
+     "Atomic"
+    ],
+    [
+     "SWENN LARSSON Anna",
+     "SWE",
+     45,
+     "Head"
+    ],
+    [
+     "CHEVRIER Marion",
+     "FRA",
+     40,
+     "Atomic"
+    ],
+    [
+     "LAMURE Marie",
+     "FRA",
+     36,
+     "Rossignol"
+    ],
+    [
+     "HOLDENER Wendy",
+     "SUI",
+     26,
+     "Head"
+    ],
+    [
+     "RAST Camille",
+     "SUI",
+     24,
+     "Head"
+    ],
+    [
+     "GERMANE Dzenifera",
+     "LAT",
+     22,
+     "Head"
+    ],
+    [
+     "HECTOR Sara",
+     "SWE",
+     20,
+     "Head"
+    ],
+    [
+     "HOEPLI Aline",
+     "SUI",
+     18,
+     "Head"
+    ],
+    [
+     "HURT A J",
+     "USA",
+     16,
+     "Head"
+    ],
+    [
+     "VLHOVA Petra",
+     "SVK",
+     15,
+     "Rossignol"
+    ],
+    [
+     "DVORNIK Neja",
+     "SLO",
+     14,
+     "Rossignol"
+    ],
+    [
+     "DUERR Lena",
+     "GER",
+     13,
+     "Head"
+    ],
+    [
+     "SOLA Beatrice",
+     "ITA",
+     12,
+     "Rossignol"
+    ],
+    [
+     "DELLA MEA Lara",
+     "ITA",
+     11,
+     "Fischer"
+    ],
+    [
+     "LINGG Charlotte",
+     "LIE",
+     10,
+     "Head"
+    ],
+    [
+     "ST-GERMAIN Laurence",
+     "CAN",
+     9,
+     "Rossignol"
+    ],
+    [
+     "PETERLINI Martina",
+     "ITA",
+     7,
+     "Head"
+    ],
+    [
+     "MCFARLANE Caitlin",
+     "FRA",
+     5,
+     "Rossignol"
+    ],
+    [
+     "ARONSSON ELFMAN Hanna",
+     "SWE",
+     4,
+     "Rossignol"
     ]
    ]
   }
@@ -11218,21 +11376,29 @@
    ],
    "women": [
     {
-     "name": "MOLTZAN Paula",
-     "nation": "USA",
+     "name": "AICHER Emma",
+     "nation": "GER",
      "ALL": {
+      "rank": 1,
+      "points": 160
+     },
+     "SL": {
       "rank": 1,
       "points": 100
      },
      "GS": {
-      "rank": 1,
-      "points": 100
+      "rank": 3,
+      "points": 60
      }
     },
     {
      "name": "COLTURI Lara",
      "nation": "ALB",
      "ALL": {
+      "rank": 1,
+      "points": 160
+     },
+     "SL": {
       "rank": 2,
       "points": 80
      },
@@ -11242,39 +11408,48 @@
      }
     },
     {
-     "name": "AICHER Emma",
-     "nation": "GER",
+     "name": "MOLTZAN Paula",
+     "nation": "USA",
      "ALL": {
       "rank": 3,
-      "points": 60
+      "points": 100
+     },
+     "SL": null,
+     "GS": {
+      "rank": 1,
+      "points": 100
+     }
+    },
+    {
+     "name": "LJUTIC Zrinka",
+     "nation": "CRO",
+     "ALL": {
+      "rank": 4,
+      "points": 74
+     },
+     "SL": {
+      "rank": 4,
+      "points": 50
      },
      "GS": {
-      "rank": 3,
-      "points": 60
+      "rank": 11,
+      "points": 24
      }
     },
     {
      "name": "HECTOR Sara",
      "nation": "SWE",
      "ALL": {
-      "rank": 4,
-      "points": 50
+      "rank": 5,
+      "points": 70
+     },
+     "SL": {
+      "rank": 13,
+      "points": 20
      },
      "GS": {
       "rank": 4,
       "points": 50
-     }
-    },
-    {
-     "name": "ZENERE Asja",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 5,
-      "points": 45
-     },
-     "GS": {
-      "rank": 5,
-      "points": 45
      }
     },
     {
@@ -11282,7 +11457,11 @@
      "nation": "SUI",
      "ALL": {
       "rank": 6,
-      "points": 40
+      "points": 64
+     },
+     "SL": {
+      "rank": 11,
+      "points": 24
      },
      "GS": {
       "rank": 6,
@@ -11290,24 +11469,152 @@
      }
     },
     {
-     "name": "SHIFFRIN Mikaela",
-     "nation": "USA",
+     "name": "TRUPPE Katharina",
+     "nation": "AUT",
      "ALL": {
+      "rank": 7,
+      "points": 60
+     },
+     "SL": {
+      "rank": 3,
+      "points": 60
+     },
+     "GS": null
+    },
+    {
+     "name": "SWENN LARSSON Anna",
+     "nation": "SWE",
+     "ALL": {
+      "rank": 8,
+      "points": 45
+     },
+     "SL": {
+      "rank": 5,
+      "points": 45
+     },
+     "GS": null
+    },
+    {
+     "name": "ZENERE Asja",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 8,
+      "points": 45
+     },
+     "SL": null,
+     "GS": {
+      "rank": 5,
+      "points": 45
+     }
+    },
+    {
+     "name": "CHEVRIER Marion",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 10,
+      "points": 40
+     },
+     "SL": {
+      "rank": 6,
+      "points": 40
+     },
+     "GS": null
+    },
+    {
+     "name": "HOLDENER Wendy",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 11,
+      "points": 37
+     },
+     "SL": {
+      "rank": 10,
+      "points": 26
+     },
+     "GS": {
+      "rank": 20,
+      "points": 11
+     }
+    },
+    {
+     "name": "LAMURE Marie",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 12,
+      "points": 36
+     },
+     "SL": {
       "rank": 7,
       "points": 36
      },
+     "GS": null
+    },
+    {
+     "name": "SHIFFRIN Mikaela",
+     "nation": "USA",
+     "ALL": {
+      "rank": 12,
+      "points": 36
+     },
+     "SL": null,
      "GS": {
       "rank": 7,
       "points": 36
      }
     },
     {
-     "name": "ROBINSON Alice",
-     "nation": "NZL",
+     "name": "HURT A J",
+     "nation": "USA",
      "ALL": {
+      "rank": 12,
+      "points": 36
+     },
+     "SL": {
+      "rank": 15,
+      "points": 16
+     },
+     "GS": {
+      "rank": 13,
+      "points": 20
+     }
+    },
+    {
+     "name": "GRITSCH Franziska",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 15,
+      "points": 35
+     },
+     "SL": {
+      "rank": 25,
+      "points": 6
+     },
+     "GS": {
+      "rank": 9,
+      "points": 29
+     }
+    },
+    {
+     "name": "HOFFMAN Madison",
+     "nation": "AUS",
+     "ALL": {
+      "rank": 16,
+      "points": 32
+     },
+     "SL": {
       "rank": 8,
       "points": 32
      },
+     "GS": null
+    },
+    {
+     "name": "ROBINSON Alice",
+     "nation": "NZL",
+     "ALL": {
+      "rank": 16,
+      "points": 32
+     },
+     "SL": null,
      "GS": {
       "rank": 8,
       "points": 32
@@ -11317,93 +11624,165 @@
      "name": "GASIENICA-DANIEL Maryna",
      "nation": "POL",
      "ALL": {
-      "rank": 9,
+      "rank": 18,
       "points": 29
      },
+     "SL": null,
      "GS": {
       "rank": 9,
       "points": 29
      }
     },
     {
-     "name": "GRITSCH Franziska",
+     "name": "HUBER Katharina",
      "nation": "AUT",
      "ALL": {
+      "rank": 18,
+      "points": 29
+     },
+     "SL": {
       "rank": 9,
       "points": 29
      },
+     "GS": null
+    },
+    {
+     "name": "DELLA MEA Lara",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 20,
+      "points": 24
+     },
+     "SL": {
+      "rank": 20,
+      "points": 11
+     },
      "GS": {
-      "rank": 9,
-      "points": 29
+      "rank": 18,
+      "points": 13
      }
     },
     {
-     "name": "LJUTIC Zrinka",
-     "nation": "CRO",
+     "name": "VLHOVA Petra",
+     "nation": "SVK",
      "ALL": {
-      "rank": 11,
-      "points": 24
+      "rank": 21,
+      "points": 23
+     },
+     "SL": {
+      "rank": 16,
+      "points": 15
      },
      "GS": {
-      "rank": 11,
-      "points": 24
+      "rank": 23,
+      "points": 8
      }
     },
     {
      "name": "ALPHAND Estelle",
      "nation": "SWE",
      "ALL": {
-      "rank": 12,
+      "rank": 22,
       "points": 22
      },
+     "SL": null,
      "GS": {
       "rank": 12,
       "points": 22
      }
     },
     {
-     "name": "HURT A J",
-     "nation": "USA",
+     "name": "GERMANE Dzenifera",
+     "nation": "LAT",
      "ALL": {
-      "rank": 13,
-      "points": 20
+      "rank": 22,
+      "points": 22
+     },
+     "SL": {
+      "rank": 12,
+      "points": 22
+     },
+     "GS": null
+    },
+    {
+     "name": "DUERR Lena",
+     "nation": "GER",
+     "ALL": {
+      "rank": 22,
+      "points": 22
+     },
+     "SL": {
+      "rank": 18,
+      "points": 13
      },
      "GS": {
-      "rank": 13,
-      "points": 20
+      "rank": 22,
+      "points": 9
      }
     },
     {
      "name": "BOCOCK Elisabeth",
      "nation": "USA",
      "ALL": {
-      "rank": 14,
+      "rank": 25,
       "points": 18
      },
+     "SL": null,
      "GS": {
       "rank": 14,
       "points": 18
      }
     },
     {
+     "name": "HOEPLI Aline",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 25,
+      "points": 18
+     },
+     "SL": {
+      "rank": 14,
+      "points": 18
+     },
+     "GS": null
+    },
+    {
      "name": "LOEVBLOM Hilma",
      "nation": "SWE",
      "ALL": {
-      "rank": 15,
+      "rank": 27,
       "points": 16
      },
+     "SL": null,
      "GS": {
       "rank": 15,
       "points": 16
+     }
+    },
+    {
+     "name": "ARONSSON ELFMAN Hanna",
+     "nation": "SWE",
+     "ALL": {
+      "rank": 27,
+      "points": 16
+     },
+     "SL": {
+      "rank": 27,
+      "points": 4
+     },
+     "GS": {
+      "rank": 19,
+      "points": 12
      }
     },
     {
      "name": "HOLTMANN Mina Fuerst",
      "nation": "NOR",
      "ALL": {
-      "rank": 16,
+      "rank": 29,
       "points": 15
      },
+     "SL": null,
      "GS": {
       "rank": 16,
       "points": 15
@@ -11413,93 +11792,117 @@
      "name": "O'BRIEN Nina",
      "nation": "USA",
      "ALL": {
-      "rank": 16,
+      "rank": 29,
       "points": 15
      },
+     "SL": null,
      "GS": {
       "rank": 16,
       "points": 15
      }
     },
     {
-     "name": "DELLA MEA Lara",
+     "name": "DVORNIK Neja",
+     "nation": "SLO",
+     "ALL": {
+      "rank": 29,
+      "points": 15
+     },
+     "SL": {
+      "rank": 17,
+      "points": 14
+     },
+     "GS": {
+      "rank": 30,
+      "points": 1
+     }
+    },
+    {
+     "name": "SOLA Beatrice",
      "nation": "ITA",
      "ALL": {
-      "rank": 18,
-      "points": 13
+      "rank": 32,
+      "points": 12
      },
-     "GS": {
-      "rank": 18,
-      "points": 13
-     }
-    },
-    {
-     "name": "ARONSSON ELFMAN Hanna",
-     "nation": "SWE",
-     "ALL": {
+     "SL": {
       "rank": 19,
       "points": 12
      },
-     "GS": {
-      "rank": 19,
-      "points": 12
-     }
-    },
-    {
-     "name": "HOLDENER Wendy",
-     "nation": "SUI",
-     "ALL": {
-      "rank": 20,
-      "points": 11
-     },
-     "GS": {
-      "rank": 20,
-      "points": 11
-     }
+     "GS": null
     },
     {
      "name": "STJERNESUND Thea Louise",
      "nation": "NOR",
      "ALL": {
-      "rank": 20,
+      "rank": 33,
       "points": 11
      },
+     "SL": null,
      "GS": {
       "rank": 20,
       "points": 11
      }
     },
     {
-     "name": "DUERR Lena",
-     "nation": "GER",
+     "name": "LINGG Charlotte",
+     "nation": "LIE",
      "ALL": {
-      "rank": 22,
-      "points": 9
+      "rank": 34,
+      "points": 10
      },
-     "GS": {
-      "rank": 22,
-      "points": 9
-     }
+     "SL": {
+      "rank": 21,
+      "points": 10
+     },
+     "GS": null
     },
     {
-     "name": "VLHOVA Petra",
-     "nation": "SVK",
+     "name": "ST-GERMAIN Laurence",
+     "nation": "CAN",
      "ALL": {
+      "rank": 35,
+      "points": 9
+     },
+     "SL": {
+      "rank": 22,
+      "points": 9
+     },
+     "GS": null
+    },
+    {
+     "name": "RINGS-WANNER Valentina",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 36,
+      "points": 8
+     },
+     "SL": {
       "rank": 23,
       "points": 8
      },
-     "GS": {
-      "rank": 23,
-      "points": 8
-     }
+     "GS": null
+    },
+    {
+     "name": "PETERLINI Martina",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 37,
+      "points": 7
+     },
+     "SL": {
+      "rank": 24,
+      "points": 7
+     },
+     "GS": null
     },
     {
      "name": "WILD Simone",
      "nation": "SUI",
      "ALL": {
-      "rank": 24,
+      "rank": 37,
       "points": 7
      },
+     "SL": null,
      "GS": {
       "rank": 24,
       "points": 7
@@ -11509,21 +11912,36 @@
      "name": "GROB Stefanie",
      "nation": "SUI",
      "ALL": {
-      "rank": 25,
+      "rank": 39,
       "points": 6
      },
+     "SL": null,
      "GS": {
       "rank": 25,
       "points": 6
      }
     },
     {
-     "name": "WEIDLE-WINKELMANN Kira",
-     "nation": "GER",
+     "name": "MCFARLANE Caitlin",
+     "nation": "FRA",
      "ALL": {
+      "rank": 40,
+      "points": 5
+     },
+     "SL": {
       "rank": 26,
       "points": 5
      },
+     "GS": null
+    },
+    {
+     "name": "WEIDLE-WINKELMANN Kira",
+     "nation": "GER",
+     "ALL": {
+      "rank": 40,
+      "points": 5
+     },
+     "SL": null,
      "GS": {
       "rank": 26,
       "points": 5
@@ -11533,9 +11951,10 @@
      "name": "RICHARDSON Britt",
      "nation": "CAN",
      "ALL": {
-      "rank": 27,
+      "rank": 42,
       "points": 4
      },
+     "SL": null,
      "GS": {
       "rank": 27,
       "points": 4
@@ -11545,9 +11964,10 @@
      "name": "KASPER Vanessa",
      "nation": "SUI",
      "ALL": {
-      "rank": 28,
+      "rank": 43,
       "points": 3
      },
+     "SL": null,
      "GS": {
       "rank": 28,
       "points": 3
@@ -11557,50 +11977,47 @@
      "name": "PAZZAGLIA Alice",
      "nation": "ITA",
      "ALL": {
-      "rank": 29,
+      "rank": 44,
       "points": 2
      },
+     "SL": null,
      "GS": {
       "rank": 29,
       "points": 2
-     }
-    },
-    {
-     "name": "DVORNIK Neja",
-     "nation": "SLO",
-     "ALL": {
-      "rank": 30,
-      "points": 1
-     },
-     "GS": {
-      "rank": 30,
-      "points": 1
      }
     }
    ],
    "nations": [
     {
-     "name": "United States of America",
-     "nation": "USA",
-     "ALL": {
-      "rank": 1,
-      "points": 239
-     },
-     "GS": {
-      "rank": 1,
-      "points": 239
-     }
-    },
-    {
      "name": "Switzerland",
      "nation": "SUI",
      "ALL": {
-      "rank": 2,
-      "points": 221
+      "rank": 1,
+      "points": 289
      },
      "GS": {
       "rank": 2,
       "points": 221
+     },
+     "SL": {
+      "rank": 6,
+      "points": 68
+     }
+    },
+    {
+     "name": "United States of America",
+     "nation": "USA",
+     "ALL": {
+      "rank": 2,
+      "points": 255
+     },
+     "GS": {
+      "rank": 1,
+      "points": 239
+     },
+     "SL": {
+      "rank": 11,
+      "points": 16
      }
     },
     {
@@ -11608,11 +12025,15 @@
      "nation": "GER",
      "ALL": {
       "rank": 3,
-      "points": 140
+      "points": 253
      },
      "GS": {
       "rank": 3,
       "points": 140
+     },
+     "SL": {
+      "rank": 1,
+      "points": 113
      }
     },
     {
@@ -11620,23 +12041,15 @@
      "nation": "AUT",
      "ALL": {
       "rank": 4,
-      "points": 138
+      "points": 241
      },
      "GS": {
       "rank": 4,
       "points": 138
-     }
-    },
-    {
-     "name": "Brazil",
-     "nation": "BRA",
-     "ALL": {
-      "rank": 5,
-      "points": 100
      },
-     "GS": {
-      "rank": 5,
-      "points": 100
+     "SL": {
+      "rank": 2,
+      "points": 103
      }
     },
     {
@@ -11644,46 +12057,30 @@
      "nation": "SWE",
      "ALL": {
       "rank": 5,
-      "points": 100
+      "points": 169
      },
      "GS": {
       "rank": 5,
       "points": 100
-     }
-    },
-    {
-     "name": "Italy",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 7,
-      "points": 96
      },
-     "GS": {
-      "rank": 7,
-      "points": 96
-     }
-    },
-    {
-     "name": "Norway",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 8,
-      "points": 90
-     },
-     "GS": {
-      "rank": 8,
-      "points": 90
+     "SL": {
+      "rank": 5,
+      "points": 69
      }
     },
     {
      "name": "Albania",
      "nation": "ALB",
      "ALL": {
-      "rank": 9,
-      "points": 80
+      "rank": 6,
+      "points": 160
      },
      "GS": {
       "rank": 9,
+      "points": 80
+     },
+     "SL": {
+      "rank": 4,
       "points": 80
      }
     },
@@ -11691,24 +12088,87 @@
      "name": "France",
      "nation": "FRA",
      "ALL": {
-      "rank": 10,
-      "points": 56
+      "rank": 7,
+      "points": 137
      },
      "GS": {
       "rank": 10,
       "points": 56
+     },
+     "SL": {
+      "rank": 3,
+      "points": 81
      }
+    },
+    {
+     "name": "Italy",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 8,
+      "points": 126
+     },
+     "GS": {
+      "rank": 7,
+      "points": 96
+     },
+     "SL": {
+      "rank": 9,
+      "points": 30
+     }
+    },
+    {
+     "name": "Brazil",
+     "nation": "BRA",
+     "ALL": {
+      "rank": 9,
+      "points": 100
+     },
+     "GS": {
+      "rank": 5,
+      "points": 100
+     },
+     "SL": null
+    },
+    {
+     "name": "Norway",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 10,
+      "points": 90
+     },
+     "GS": {
+      "rank": 8,
+      "points": 90
+     },
+     "SL": null
     },
     {
      "name": "Croatia",
      "nation": "CRO",
      "ALL": {
       "rank": 11,
-      "points": 36
+      "points": 86
      },
      "GS": {
       "rank": 11,
       "points": 36
+     },
+     "SL": {
+      "rank": 7,
+      "points": 50
+     }
+    },
+    {
+     "name": "Australia",
+     "nation": "AUS",
+     "ALL": {
+      "rank": 12,
+      "points": 32
+     },
+     "GS": null,
+     "SL": {
+      "rank": 8,
+      "points": 32
      }
     },
     {
@@ -11721,29 +12181,77 @@
      "GS": {
       "rank": 12,
       "points": 32
-     }
+     },
+     "SL": null
     },
     {
      "name": "Poland",
      "nation": "POL",
      "ALL": {
-      "rank": 13,
+      "rank": 14,
       "points": 29
      },
      "GS": {
       "rank": 13,
       "points": 29
+     },
+     "SL": null
+    },
+    {
+     "name": "Slovenia",
+     "nation": "SLO",
+     "ALL": {
+      "rank": 15,
+      "points": 28
+     },
+     "GS": {
+      "rank": 16,
+      "points": 14
+     },
+     "SL": {
+      "rank": 13,
+      "points": 14
+     }
+    },
+    {
+     "name": "Slovakia",
+     "nation": "SVK",
+     "ALL": {
+      "rank": 16,
+      "points": 23
+     },
+     "GS": {
+      "rank": 18,
+      "points": 8
+     },
+     "SL": {
+      "rank": 12,
+      "points": 15
      }
     },
     {
      "name": "Great Britain",
      "nation": "GBR",
      "ALL": {
-      "rank": 14,
+      "rank": 17,
       "points": 22
      },
      "GS": {
       "rank": 14,
+      "points": 22
+     },
+     "SL": null
+    },
+    {
+     "name": "Latvia",
+     "nation": "LAT",
+     "ALL": {
+      "rank": 17,
+      "points": 22
+     },
+     "GS": null,
+     "SL": {
+      "rank": 10,
       "points": 22
      }
     },
@@ -11751,60 +12259,55 @@
      "name": "Finland",
      "nation": "FIN",
      "ALL": {
-      "rank": 15,
+      "rank": 19,
       "points": 15
      },
      "GS": {
       "rank": 15,
       "points": 15
-     }
+     },
+     "SL": null
     },
     {
-     "name": "Slovenia",
-     "nation": "SLO",
+     "name": "Canada",
+     "nation": "CAN",
      "ALL": {
-      "rank": 16,
-      "points": 14
+      "rank": 20,
+      "points": 13
      },
      "GS": {
-      "rank": 16,
-      "points": 14
+      "rank": 19,
+      "points": 4
+     },
+     "SL": {
+      "rank": 15,
+      "points": 9
      }
     },
     {
      "name": "Belgium",
      "nation": "BEL",
      "ALL": {
-      "rank": 17,
+      "rank": 21,
       "points": 11
      },
      "GS": {
       "rank": 17,
       "points": 11
-     }
+     },
+     "SL": null
     },
     {
-     "name": "Slovakia",
-     "nation": "SVK",
+     "name": "Liechtenstein",
+     "nation": "LIE",
      "ALL": {
-      "rank": 18,
-      "points": 8
+      "rank": 22,
+      "points": 10
      },
-     "GS": {
-      "rank": 18,
-      "points": 8
-     }
-    },
-    {
-     "name": "Canada",
-     "nation": "CAN",
-     "ALL": {
-      "rank": 19,
-      "points": 4
-     },
-     "GS": {
-      "rank": 19,
-      "points": 4
+     "GS": null,
+     "SL": {
+      "rank": 14,
+      "points": 10
      }
     }
    ],
