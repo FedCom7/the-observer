@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T09:17:43.063Z",
+ "updated": "2026-11-15T17:03:48.047Z",
  "season": 2027,
  "races": [
   {
@@ -520,6 +520,158 @@
      "ARONSSON ELFMAN Hanna",
      "SWE",
      4,
+     "Rossignol"
+    ]
+   ]
+  },
+  {
+   "raceid": "131580",
+   "place": "Levi",
+   "country": "FIN",
+   "discipline": "Slalom",
+   "gender": "men",
+   "start": "2026-11-15T09:00:00.000Z",
+   "category": "WC",
+   "podium": [
+    {
+     "rank": 1,
+     "name": "PINHEIRO BRAATHEN Lucas",
+     "nation": "BRA",
+     "skis": "Atomic"
+    },
+    {
+     "rank": 2,
+     "name": "NOEL Clement",
+     "nation": "FRA",
+     "skis": "Dynastar"
+    },
+    {
+     "rank": 3,
+     "name": "MEILLARD Loic",
+     "nation": "SUI",
+     "skis": "Rossignol"
+    }
+   ],
+   "finishers": 20,
+   "points": [
+    [
+     "PINHEIRO BRAATHEN Lucas",
+     "BRA",
+     100,
+     "Atomic"
+    ],
+    [
+     "NOEL Clement",
+     "FRA",
+     80,
+     "Dynastar"
+    ],
+    [
+     "MEILLARD Loic",
+     "SUI",
+     60,
+     "Rossignol"
+    ],
+    [
+     "AX SWARTZ Fabian",
+     "SWE",
+     50,
+     "Van Deer"
+    ],
+    [
+     "VINATZER Alex",
+     "ITA",
+     45,
+     "Atomic"
+    ],
+    [
+     "RASSAT Paco",
+     "FRA",
+     40,
+     "Head"
+    ],
+    [
+     "MCGRATH Atle Lie",
+     "NOR",
+     36,
+     "Head"
+    ],
+    [
+     "HALLBERG Eduard",
+     "FIN",
+     32,
+     "Fischer"
+    ],
+    [
+     "KOLEGA Samuel",
+     "CRO",
+     29,
+     "Rossignol"
+    ],
+    [
+     "SANDVIK Oscar Andreas",
+     "NOR",
+     24,
+     "Rossignol"
+    ],
+    [
+     "NEF Tanguy",
+     "SUI",
+     22,
+     "Atomic"
+    ],
+    [
+     "STRASSER Linus",
+     "GER",
+     20,
+     "Head"
+    ],
+    [
+     "AIHARA Shiro",
+     "JPN",
+     18,
+     "Atomic"
+    ],
+    [
+     "MAJOR Billy",
+     "GBR",
+     16,
+     "Head"
+    ],
+    [
+     "YULE Daniel",
+     "SUI",
+     15,
+     "Atomic"
+    ],
+    [
+     "WISSTING Gustav",
+     "SWE",
+     14,
+     "Atomic"
+    ],
+    [
+     "HAUGAN Timon",
+     "NOR",
+     13,
+     "Van Deer"
+    ],
+    [
+     "KRISTOFFERSEN Henrik",
+     "NOR",
+     12,
+     "Head"
+    ],
+    [
+     "AULNETTE Auguste",
+     "FRA",
+     11,
+     "Salomon"
+    ],
+    [
+     "WALLACE Liam",
+     "CAN",
+     10,
      "Rossignol"
     ]
    ]
@@ -11066,6 +11218,10 @@
      "nation": "BRA",
      "ALL": {
       "rank": 1,
+      "points": 200
+     },
+     "SL": {
+      "rank": 1,
       "points": 100
      },
      "GS": {
@@ -11078,7 +11234,11 @@
      "nation": "SUI",
      "ALL": {
       "rank": 2,
-      "points": 80
+      "points": 140
+     },
+     "SL": {
+      "rank": 3,
+      "points": 60
      },
      "GS": {
       "rank": 2,
@@ -11086,36 +11246,97 @@
      }
     },
     {
+     "name": "VINATZER Alex",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 3,
+      "points": 81
+     },
+     "SL": {
+      "rank": 5,
+      "points": 45
+     },
+     "GS": {
+      "rank": 7,
+      "points": 36
+     }
+    },
+    {
+     "name": "NOEL Clement",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 4,
+      "points": 80
+     },
+     "SL": {
+      "rank": 2,
+      "points": 80
+     },
+     "GS": null
+    },
+    {
      "name": "ODERMATT Marco",
      "nation": "SUI",
      "ALL": {
-      "rank": 3,
+      "rank": 5,
       "points": 60
      },
+     "SL": null,
      "GS": {
       "rank": 3,
       "points": 60
      }
     },
     {
-     "name": "RADAMUS River",
-     "nation": "USA",
+     "name": "AX SWARTZ Fabian",
+     "nation": "SWE",
      "ALL": {
+      "rank": 6,
+      "points": 50
+     },
+     "SL": {
       "rank": 4,
       "points": 50
      },
+     "GS": null
+    },
+    {
+     "name": "RADAMUS River",
+     "nation": "USA",
+     "ALL": {
+      "rank": 6,
+      "points": 50
+     },
+     "SL": null,
      "GS": {
       "rank": 4,
       "points": 50
+     }
+    },
+    {
+     "name": "HALLBERG Eduard",
+     "nation": "FIN",
+     "ALL": {
+      "rank": 8,
+      "points": 47
+     },
+     "SL": {
+      "rank": 8,
+      "points": 32
+     },
+     "GS": {
+      "rank": 16,
+      "points": 15
      }
     },
     {
      "name": "HAASER Raphael",
      "nation": "AUT",
      "ALL": {
-      "rank": 5,
+      "rank": 9,
       "points": 45
      },
+     "SL": null,
      "GS": {
       "rank": 5,
       "points": 45
@@ -11125,33 +11346,49 @@
      "name": "GRATZ Fabian",
      "nation": "GER",
      "ALL": {
-      "rank": 6,
+      "rank": 10,
       "points": 40
      },
+     "SL": null,
      "GS": {
       "rank": 6,
       "points": 40
      }
     },
     {
-     "name": "VINATZER Alex",
-     "nation": "ITA",
+     "name": "RASSAT Paco",
+     "nation": "FRA",
      "ALL": {
+      "rank": 10,
+      "points": 40
+     },
+     "SL": {
+      "rank": 6,
+      "points": 40
+     },
+     "GS": null
+    },
+    {
+     "name": "MCGRATH Atle Lie",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 12,
+      "points": 36
+     },
+     "SL": {
       "rank": 7,
       "points": 36
      },
-     "GS": {
-      "rank": 7,
-      "points": 36
-     }
+     "GS": null
     },
     {
      "name": "SOLBERG Eirik Hystad",
      "nation": "NOR",
      "ALL": {
-      "rank": 8,
+      "rank": 13,
       "points": 32
      },
+     "SL": null,
      "GS": {
       "rank": 8,
       "points": 32
@@ -11161,69 +11398,169 @@
      "name": "ANGUENOT Leo",
      "nation": "FRA",
      "ALL": {
-      "rank": 9,
+      "rank": 14,
       "points": 29
      },
+     "SL": null,
      "GS": {
       "rank": 9,
       "points": 29
      }
+    },
+    {
+     "name": "KOLEGA Samuel",
+     "nation": "CRO",
+     "ALL": {
+      "rank": 14,
+      "points": 29
+     },
+     "SL": {
+      "rank": 9,
+      "points": 29
+     },
+     "GS": null
     },
     {
      "name": "FEURSTEIN Patrick",
      "nation": "AUT",
      "ALL": {
-      "rank": 10,
+      "rank": 16,
       "points": 26
      },
+     "SL": null,
      "GS": {
       "rank": 10,
       "points": 26
      }
+    },
+    {
+     "name": "POPOV Albert",
+     "nation": "BUL",
+     "ALL": {
+      "rank": 16,
+      "points": 26
+     },
+     "SL": {
+      "rank": 10,
+      "points": 26
+     },
+     "GS": null
     },
     {
      "name": "BRENNSTEINER Stefan",
      "nation": "AUT",
      "ALL": {
-      "rank": 11,
+      "rank": 18,
       "points": 24
      },
+     "SL": null,
      "GS": {
       "rank": 11,
       "points": 24
      }
     },
     {
+     "name": "SANDVIK Oscar Andreas",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 18,
+      "points": 24
+     },
+     "SL": {
+      "rank": 11,
+      "points": 24
+     },
+     "GS": null
+    },
+    {
      "name": "CARRICK-SMITH Freddy",
      "nation": "GBR",
      "ALL": {
-      "rank": 12,
+      "rank": 20,
       "points": 22
      },
+     "SL": null,
      "GS": {
       "rank": 12,
       "points": 22
+     }
+    },
+    {
+     "name": "NEF Tanguy",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 20,
+      "points": 22
+     },
+     "SL": {
+      "rank": 12,
+      "points": 22
+     },
+     "GS": null
+    },
+    {
+     "name": "KRISTOFFERSEN Henrik",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 22,
+      "points": 21
+     },
+     "SL": {
+      "rank": 19,
+      "points": 12
+     },
+     "GS": {
+      "rank": 22,
+      "points": 9
      }
     },
     {
      "name": "FAVROT Thibaut",
      "nation": "FRA",
      "ALL": {
-      "rank": 13,
+      "rank": 23,
       "points": 20
      },
+     "SL": null,
      "GS": {
       "rank": 13,
       "points": 20
      }
     },
     {
-     "name": "BAKKEVIG Rasmus",
-     "nation": "NOR",
+     "name": "STRASSER Linus",
+     "nation": "GER",
      "ALL": {
+      "rank": 23,
+      "points": 20
+     },
+     "SL": {
+      "rank": 13,
+      "points": 20
+     },
+     "GS": null
+    },
+    {
+     "name": "AIHARA Shiro",
+     "nation": "JPN",
+     "ALL": {
+      "rank": 25,
+      "points": 18
+     },
+     "SL": {
       "rank": 14,
       "points": 18
      },
+     "GS": null
+    },
+    {
+     "name": "BAKKEVIG Rasmus",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 25,
+      "points": 18
+     },
+     "SL": null,
      "GS": {
       "rank": 14,
       "points": 18
@@ -11233,45 +11570,88 @@
      "name": "GRAMMEL Anton",
      "nation": "GER",
      "ALL": {
-      "rank": 15,
+      "rank": 27,
       "points": 16
      },
+     "SL": null,
      "GS": {
       "rank": 15,
       "points": 16
      }
     },
     {
-     "name": "HALLBERG Eduard",
-     "nation": "FIN",
+     "name": "MAJOR Billy",
+     "nation": "GBR",
      "ALL": {
+      "rank": 27,
+      "points": 16
+     },
+     "SL": {
+      "rank": 15,
+      "points": 16
+     },
+     "GS": null
+    },
+    {
+     "name": "YULE Daniel",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 29,
+      "points": 15
+     },
+     "SL": {
       "rank": 16,
       "points": 15
      },
-     "GS": {
-      "rank": 16,
-      "points": 15
-     }
+     "GS": null
     },
     {
      "name": "STURM Joshua",
      "nation": "AUT",
      "ALL": {
-      "rank": 17,
+      "rank": 30,
       "points": 14
      },
+     "SL": null,
      "GS": {
       "rank": 17,
       "points": 14
      }
     },
     {
-     "name": "KRANJEC Zan",
-     "nation": "SLO",
+     "name": "WISSTING Gustav",
+     "nation": "SWE",
      "ALL": {
+      "rank": 30,
+      "points": 14
+     },
+     "SL": {
+      "rank": 17,
+      "points": 14
+     },
+     "GS": null
+    },
+    {
+     "name": "HAUGAN Timon",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 32,
+      "points": 13
+     },
+     "SL": {
       "rank": 18,
       "points": 13
      },
+     "GS": null
+    },
+    {
+     "name": "KRANJEC Zan",
+     "nation": "SLO",
+     "ALL": {
+      "rank": 32,
+      "points": 13
+     },
+     "SL": null,
      "GS": {
       "rank": 18,
       "points": 13
@@ -11281,21 +11661,36 @@
      "name": "ZUBCIC Filip",
      "nation": "CRO",
      "ALL": {
-      "rank": 19,
+      "rank": 34,
       "points": 12
      },
+     "SL": null,
      "GS": {
       "rank": 19,
       "points": 12
      }
     },
     {
-     "name": "MAES Sam",
-     "nation": "BEL",
+     "name": "AULNETTE Auguste",
+     "nation": "FRA",
      "ALL": {
+      "rank": 35,
+      "points": 11
+     },
+     "SL": {
       "rank": 20,
       "points": 11
      },
+     "GS": null
+    },
+    {
+     "name": "MAES Sam",
+     "nation": "BEL",
+     "ALL": {
+      "rank": 35,
+      "points": 11
+     },
+     "SL": null,
      "GS": {
       "rank": 20,
       "points": 11
@@ -11305,33 +11700,49 @@
      "name": "SCHMID Alexander",
      "nation": "GER",
      "ALL": {
-      "rank": 21,
+      "rank": 37,
       "points": 10
      },
+     "SL": null,
      "GS": {
       "rank": 21,
       "points": 10
      }
     },
     {
-     "name": "KRISTOFFERSEN Henrik",
-     "nation": "NOR",
+     "name": "WALLACE Liam",
+     "nation": "CAN",
      "ALL": {
+      "rank": 37,
+      "points": 10
+     },
+     "SL": {
+      "rank": 21,
+      "points": 10
+     },
+     "GS": null
+    },
+    {
+     "name": "STROLZ Johannes",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 39,
+      "points": 9
+     },
+     "SL": {
       "rank": 22,
       "points": 9
      },
-     "GS": {
-      "rank": 22,
-      "points": 9
-     }
+     "GS": null
     },
     {
      "name": "TUMLER Thomas",
      "nation": "SUI",
      "ALL": {
-      "rank": 23,
+      "rank": 40,
       "points": 8
      },
+     "SL": null,
      "GS": {
       "rank": 23,
       "points": 8
@@ -11341,9 +11752,10 @@
      "name": "ELEZI CANNAFERINA Alban",
      "nation": "FRA",
      "ALL": {
-      "rank": 24,
+      "rank": 41,
       "points": 7
      },
+     "SL": null,
      "GS": {
       "rank": 24,
       "points": 7
@@ -11353,9 +11765,10 @@
      "name": "HAECHLER Lenz",
      "nation": "SUI",
      "ALL": {
-      "rank": 25,
+      "rank": 42,
       "points": 6
      },
+     "SL": null,
      "GS": {
       "rank": 25,
       "points": 6
@@ -11365,9 +11778,10 @@
      "name": "GRAHL-MADSEN Hans",
      "nation": "NOR",
      "ALL": {
-      "rank": 26,
+      "rank": 43,
       "points": 5
      },
+     "SL": null,
      "GS": {
       "rank": 26,
       "points": 5
@@ -11993,22 +12407,54 @@
      "nation": "SUI",
      "ALL": {
       "rank": 1,
-      "points": 289
+      "points": 386
      },
      "GS": {
       "rank": 2,
       "points": 221
      },
      "SL": {
-      "rank": 6,
-      "points": 68
+      "rank": 2,
+      "points": 165
+     }
+    },
+    {
+     "name": "Germany",
+     "nation": "GER",
+     "ALL": {
+      "rank": 2,
+      "points": 273
+     },
+     "GS": {
+      "rank": 3,
+      "points": 140
+     },
+     "SL": {
+      "rank": 3,
+      "points": 133
+     }
+    },
+    {
+     "name": "France",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 3,
+      "points": 268
+     },
+     "GS": {
+      "rank": 10,
+      "points": 56
+     },
+     "SL": {
+      "rank": 1,
+      "points": 212
      }
     },
     {
      "name": "United States of America",
      "nation": "USA",
      "ALL": {
-      "rank": 2,
+      "rank": 4,
       "points": 255
      },
      "GS": {
@@ -12016,63 +12462,95 @@
       "points": 239
      },
      "SL": {
-      "rank": 11,
+      "rank": 17,
       "points": 16
-     }
-    },
-    {
-     "name": "Germany",
-     "nation": "GER",
-     "ALL": {
-      "rank": 3,
-      "points": 253
-     },
-     "GS": {
-      "rank": 3,
-      "points": 140
-     },
-     "SL": {
-      "rank": 1,
-      "points": 113
      }
     },
     {
      "name": "Austria",
      "nation": "AUT",
      "ALL": {
-      "rank": 4,
-      "points": 241
+      "rank": 5,
+      "points": 250
      },
      "GS": {
       "rank": 4,
       "points": 138
      },
      "SL": {
-      "rank": 2,
-      "points": 103
+      "rank": 5,
+      "points": 112
      }
     },
     {
      "name": "Sweden",
      "nation": "SWE",
      "ALL": {
-      "rank": 5,
-      "points": 169
+      "rank": 6,
+      "points": 233
      },
      "GS": {
       "rank": 5,
       "points": 100
      },
      "SL": {
+      "rank": 3,
+      "points": 133
+     }
+    },
+    {
+     "name": "Brazil",
+     "nation": "BRA",
+     "ALL": {
+      "rank": 7,
+      "points": 200
+     },
+     "GS": {
       "rank": 5,
-      "points": 69
+      "points": 100
+     },
+     "SL": {
+      "rank": 6,
+      "points": 100
+     }
+    },
+    {
+     "name": "Norway",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 8,
+      "points": 175
+     },
+     "GS": {
+      "rank": 8,
+      "points": 90
+     },
+     "SL": {
+      "rank": 7,
+      "points": 85
+     }
+    },
+    {
+     "name": "Italy",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 9,
+      "points": 171
+     },
+     "GS": {
+      "rank": 7,
+      "points": 96
+     },
+     "SL": {
+      "rank": 10,
+      "points": 75
      }
     },
     {
      "name": "Albania",
      "nation": "ALB",
      "ALL": {
-      "rank": 6,
+      "rank": 10,
       "points": 160
      },
      "GS": {
@@ -12080,94 +12558,68 @@
       "points": 80
      },
      "SL": {
-      "rank": 4,
+      "rank": 8,
       "points": 80
      }
-    },
-    {
-     "name": "France",
-     "nation": "FRA",
-     "ALL": {
-      "rank": 7,
-      "points": 137
-     },
-     "GS": {
-      "rank": 10,
-      "points": 56
-     },
-     "SL": {
-      "rank": 3,
-      "points": 81
-     }
-    },
-    {
-     "name": "Italy",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 8,
-      "points": 126
-     },
-     "GS": {
-      "rank": 7,
-      "points": 96
-     },
-     "SL": {
-      "rank": 9,
-      "points": 30
-     }
-    },
-    {
-     "name": "Brazil",
-     "nation": "BRA",
-     "ALL": {
-      "rank": 9,
-      "points": 100
-     },
-     "GS": {
-      "rank": 5,
-      "points": 100
-     },
-     "SL": null
-    },
-    {
-     "name": "Norway",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 10,
-      "points": 90
-     },
-     "GS": {
-      "rank": 8,
-      "points": 90
-     },
-     "SL": null
     },
     {
      "name": "Croatia",
      "nation": "CRO",
      "ALL": {
       "rank": 11,
-      "points": 86
+      "points": 115
      },
      "GS": {
       "rank": 11,
       "points": 36
      },
      "SL": {
-      "rank": 7,
-      "points": 50
+      "rank": 9,
+      "points": 79
+     }
+    },
+    {
+     "name": "Finland",
+     "nation": "FIN",
+     "ALL": {
+      "rank": 12,
+      "points": 47
+     },
+     "GS": {
+      "rank": 15,
+      "points": 15
+     },
+     "SL": {
+      "rank": 11,
+      "points": 32
+     }
+    },
+    {
+     "name": "Great Britain",
+     "nation": "GBR",
+     "ALL": {
+      "rank": 13,
+      "points": 38
+     },
+     "GS": {
+      "rank": 14,
+      "points": 22
+     },
+     "SL": {
+      "rank": 17,
+      "points": 16
      }
     },
     {
      "name": "Australia",
      "nation": "AUS",
      "ALL": {
-      "rank": 12,
+      "rank": 14,
       "points": 32
      },
      "GS": null,
      "SL": {
-      "rank": 8,
+      "rank": 11,
       "points": 32
      }
     },
@@ -12175,7 +12627,7 @@
      "name": "New Zealand",
      "nation": "NZL",
      "ALL": {
-      "rank": 12,
+      "rank": 14,
       "points": 32
      },
      "GS": {
@@ -12188,7 +12640,7 @@
      "name": "Poland",
      "nation": "POL",
      "ALL": {
-      "rank": 14,
+      "rank": 16,
       "points": 29
      },
      "GS": {
@@ -12201,7 +12653,7 @@
      "name": "Slovenia",
      "nation": "SLO",
      "ALL": {
-      "rank": 15,
+      "rank": 17,
       "points": 28
      },
      "GS": {
@@ -12209,71 +12661,29 @@
       "points": 14
      },
      "SL": {
-      "rank": 13,
+      "rank": 20,
       "points": 14
      }
     },
     {
-     "name": "Slovakia",
-     "nation": "SVK",
+     "name": "Bulgaria",
+     "nation": "BUL",
      "ALL": {
-      "rank": 16,
-      "points": 23
-     },
-     "GS": {
       "rank": 18,
-      "points": 8
-     },
-     "SL": {
-      "rank": 12,
-      "points": 15
-     }
-    },
-    {
-     "name": "Great Britain",
-     "nation": "GBR",
-     "ALL": {
-      "rank": 17,
-      "points": 22
-     },
-     "GS": {
-      "rank": 14,
-      "points": 22
-     },
-     "SL": null
-    },
-    {
-     "name": "Latvia",
-     "nation": "LAT",
-     "ALL": {
-      "rank": 17,
-      "points": 22
+      "points": 26
      },
      "GS": null,
      "SL": {
-      "rank": 10,
-      "points": 22
+      "rank": 13,
+      "points": 26
      }
-    },
-    {
-     "name": "Finland",
-     "nation": "FIN",
-     "ALL": {
-      "rank": 19,
-      "points": 15
-     },
-     "GS": {
-      "rank": 15,
-      "points": 15
-     },
-     "SL": null
     },
     {
      "name": "Canada",
      "nation": "CAN",
      "ALL": {
-      "rank": 20,
-      "points": 13
+      "rank": 19,
+      "points": 23
      },
      "GS": {
       "rank": 19,
@@ -12281,14 +12691,56 @@
      },
      "SL": {
       "rank": 15,
-      "points": 9
+      "points": 19
+     }
+    },
+    {
+     "name": "Slovakia",
+     "nation": "SVK",
+     "ALL": {
+      "rank": 19,
+      "points": 23
+     },
+     "GS": {
+      "rank": 18,
+      "points": 8
+     },
+     "SL": {
+      "rank": 19,
+      "points": 15
+     }
+    },
+    {
+     "name": "Latvia",
+     "nation": "LAT",
+     "ALL": {
+      "rank": 21,
+      "points": 22
+     },
+     "GS": null,
+     "SL": {
+      "rank": 14,
+      "points": 22
+     }
+    },
+    {
+     "name": "Japan",
+     "nation": "JPN",
+     "ALL": {
+      "rank": 22,
+      "points": 18
+     },
+     "GS": null,
+     "SL": {
+      "rank": 16,
+      "points": 18
      }
     },
     {
      "name": "Belgium",
      "nation": "BEL",
      "ALL": {
-      "rank": 21,
+      "rank": 23,
       "points": 11
      },
      "GS": {
@@ -12301,12 +12753,12 @@
      "name": "Liechtenstein",
      "nation": "LIE",
      "ALL": {
-      "rank": 22,
+      "rank": 24,
       "points": 10
      },
      "GS": null,
      "SL": {
-      "rank": 14,
+      "rank": 21,
       "points": 10
      }
     }
@@ -12338,12 +12790,12 @@
      "nation": "BRA",
      "ALL": {
       "rank": 2,
-      "points": 1199
+      "points": 1262
      },
      "DH": null,
      "SL": {
-      "rank": 5,
-      "points": 511
+      "rank": 2,
+      "points": 574
      },
      "GS": {
       "rank": 1,
@@ -12356,12 +12808,12 @@
      "nation": "SUI",
      "ALL": {
       "rank": 3,
-      "points": 1113
+      "points": 1138
      },
      "DH": null,
      "SL": {
       "rank": 6,
-      "points": 492
+      "points": 517
      },
      "GS": {
       "rank": 3,
@@ -12395,12 +12847,12 @@
      "nation": "NOR",
      "ALL": {
       "rank": 5,
-      "points": 947
+      "points": 941
      },
      "DH": null,
      "SL": {
       "rank": 1,
-      "points": 584
+      "points": 578
      },
      "GS": {
       "rank": 5,
@@ -12416,12 +12868,12 @@
      "nation": "NOR",
      "ALL": {
       "rank": 6,
-      "points": 894
+      "points": 866
      },
      "DH": null,
      "SL": {
-      "rank": 2,
-      "points": 563
+      "rank": 4,
+      "points": 535
      },
      "GS": {
       "rank": 7,
@@ -12430,28 +12882,10 @@
      "SG": null
     },
     {
-     "name": "HAUGAN Timon",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 7,
-      "points": 823
-     },
-     "DH": null,
-     "SL": {
-      "rank": 3,
-      "points": 549
-     },
-     "GS": {
-      "rank": 8,
-      "points": 274
-     },
-     "SG": null
-    },
-    {
      "name": "KRIECHMAYR Vincent",
      "nation": "AUT",
      "ALL": {
-      "rank": 8,
+      "rank": 7,
       "points": 807
      },
      "DH": {
@@ -12467,6 +12901,24 @@
       "rank": 2,
       "points": 383
      }
+    },
+    {
+     "name": "HAUGAN Timon",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 8,
+      "points": 797
+     },
+     "DH": null,
+     "SL": {
+      "rank": 5,
+      "points": 523
+     },
+     "GS": {
+      "rank": 8,
+      "points": 274
+     },
+     "SG": null
     },
     {
      "name": "FRANZONI Giovanni",
@@ -12509,15 +12961,15 @@
      "nation": "AUT",
      "ALL": {
       "rank": 11,
-      "points": 653
+      "points": 645
      },
      "DH": {
       "rank": 62,
       "points": 2
      },
      "SL": {
-      "rank": 21,
-      "points": 115
+      "rank": 25,
+      "points": 107
      },
      "GS": {
       "rank": 6,
@@ -12554,12 +13006,12 @@
      "nation": "FRA",
      "ALL": {
       "rank": 13,
-      "points": 520
+      "points": 563
      },
      "DH": null,
      "SL": {
-      "rank": 4,
-      "points": 520
+      "rank": 3,
+      "points": 563
      },
      "GS": null,
      "SG": null
@@ -12634,10 +13086,28 @@
      "SG": null
     },
     {
+     "name": "VINATZER Alex",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 18,
+      "points": 434
+     },
+     "DH": null,
+     "SL": {
+      "rank": 16,
+      "points": 194
+     },
+     "GS": {
+      "rank": 9,
+      "points": 240
+     },
+     "SG": null
+    },
+    {
      "name": "#",
      "nation": "FRA",
      "ALL": {
-      "rank": 18,
+      "rank": 19,
       "points": 423
      },
      "DH": {
@@ -12658,7 +13128,7 @@
      "name": "COCHRAN-SIEGLE Ryan",
      "nation": "USA",
      "ALL": {
-      "rank": 19,
+      "rank": 20,
       "points": 422
      },
      "DH": {
@@ -12673,34 +13143,16 @@
      }
     },
     {
-     "name": "VINATZER Alex",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 20,
-      "points": 401
-     },
-     "DH": null,
-     "SL": {
-      "rank": 18,
-      "points": 161
-     },
-     "GS": {
-      "rank": 9,
-      "points": 240
-     },
-     "SG": null
-    },
-    {
      "name": "RASSAT Paco",
      "nation": "FRA",
      "ALL": {
       "rank": 21,
-      "points": 387
+      "points": 399
      },
      "DH": null,
      "SL": {
       "rank": 7,
-      "points": 387
+      "points": 399
      },
      "GS": null,
      "SG": null
@@ -12710,12 +13162,12 @@
      "nation": "FIN",
      "ALL": {
       "rank": 22,
-      "points": 354
+      "points": 362
      },
      "DH": null,
      "SL": {
       "rank": 8,
-      "points": 339
+      "points": 347
      },
      "GS": {
       "rank": 42,
@@ -12746,12 +13198,12 @@
      "nation": "SUI",
      "ALL": {
       "rank": 24,
-      "points": 320
+      "points": 319
      },
      "DH": null,
      "SL": {
       "rank": 9,
-      "points": 320
+      "points": 319
      },
      "GS": null,
      "SG": null
@@ -12775,28 +13227,10 @@
      }
     },
     {
-     "name": "SOLBERG Eirik Hystad",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 25,
-      "points": 310
-     },
-     "DH": null,
-     "SL": {
-      "rank": 15,
-      "points": 226
-     },
-     "GS": {
-      "rank": 26,
-      "points": 84
-     },
-     "SG": null
-    },
-    {
      "name": "BABINSKY Stefan",
      "nation": "AUT",
      "ALL": {
-      "rank": 27,
+      "rank": 26,
       "points": 300
      },
      "DH": {
@@ -12827,6 +13261,24 @@
       "rank": 39,
       "points": 22
      }
+    },
+    {
+     "name": "SOLBERG Eirik Hystad",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 29,
+      "points": 294
+     },
+     "DH": null,
+     "SL": {
+      "rank": 15,
+      "points": 210
+     },
+     "GS": {
+      "rank": 26,
+      "points": 84
+     },
+     "SG": null
     },
     {
      "name": "RADAMUS River",
@@ -12865,31 +13317,31 @@
      }
     },
     {
-     "name": "GSTREIN Fabio",
-     "nation": "AUT",
+     "name": "STRASSER Linus",
+     "nation": "GER",
      "ALL": {
       "rank": 32,
-      "points": 281
+      "points": 268
      },
      "DH": null,
      "SL": {
       "rank": 10,
-      "points": 281
+      "points": 268
      },
      "GS": null,
      "SG": null
     },
     {
-     "name": "STRASSER Linus",
-     "nation": "GER",
+     "name": "GSTREIN Fabio",
+     "nation": "AUT",
      "ALL": {
       "rank": 33,
-      "points": 267
+      "points": 261
      },
      "DH": null,
      "SL": {
       "rank": 11,
-      "points": 267
+      "points": 261
      },
      "GS": null,
      "SG": null
@@ -12899,12 +13351,12 @@
      "nation": "AUT",
      "ALL": {
       "rank": 35,
-      "points": 256
+      "points": 238
      },
      "DH": null,
      "SL": {
       "rank": 12,
-      "points": 256
+      "points": 238
      },
      "GS": null,
      "SG": null
@@ -12914,39 +13366,21 @@
      "nation": "BEL",
      "ALL": {
       "rank": 36,
-      "points": 252
+      "points": 234
      },
      "DH": null,
      "SL": {
       "rank": 14,
-      "points": 252
+      "points": 234
      },
      "GS": null,
-     "SG": null
-    },
-    {
-     "name": "ZUBCIC Filip",
-     "nation": "CRO",
-     "ALL": {
-      "rank": 37,
-      "points": 227
-     },
-     "DH": null,
-     "SL": {
-      "rank": 30,
-      "points": 80
-     },
-     "GS": {
-      "rank": 20,
-      "points": 147
-     },
      "SG": null
     },
     {
      "name": "HROBAT Miha",
      "nation": "SLO",
      "ALL": {
-      "rank": 38,
+      "rank": 37,
       "points": 224
      },
      "DH": {
@@ -12964,7 +13398,7 @@
      "name": "ALEXANDER Cameron",
      "nation": "CAN",
      "ALL": {
-      "rank": 39,
+      "rank": 38,
       "points": 223
      },
      "DH": {
@@ -12982,7 +13416,7 @@
      "name": "ANGUENOT Leo",
      "nation": "FRA",
      "ALL": {
-      "rank": 40,
+      "rank": 39,
       "points": 222
      },
      "DH": null,
@@ -12994,16 +13428,34 @@
      "SG": null
     },
     {
-     "name": "MAES Sam",
-     "nation": "BEL",
+     "name": "ZUBCIC Filip",
+     "nation": "CRO",
      "ALL": {
-      "rank": 41,
+      "rank": 40,
       "points": 221
      },
      "DH": null,
      "SL": {
+      "rank": 30,
+      "points": 74
+     },
+     "GS": {
+      "rank": 20,
+      "points": 147
+     },
+     "SG": null
+    },
+    {
+     "name": "MAES Sam",
+     "nation": "BEL",
+     "ALL": {
+      "rank": 41,
+      "points": 218
+     },
+     "DH": null,
+     "SL": {
       "rank": 39,
-      "points": 38
+      "points": 35
      },
      "GS": {
       "rank": 15,
@@ -13063,25 +13515,10 @@
      }
     },
     {
-     "name": "MUFFAT-JEANDET Victor",
-     "nation": "FRA",
-     "ALL": {
-      "rank": 44,
-      "points": 194
-     },
-     "DH": null,
-     "SL": {
-      "rank": 16,
-      "points": 194
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "KRANJEC Zan",
      "nation": "SLO",
      "ALL": {
-      "rank": 46,
+      "rank": 45,
       "points": 187
      },
      "DH": null,
@@ -13093,28 +13530,25 @@
      "SG": null
     },
     {
-     "name": "STURM Joshua",
-     "nation": "AUT",
+     "name": "MUFFAT-JEANDET Victor",
+     "nation": "FRA",
      "ALL": {
-      "rank": 47,
-      "points": 184
+      "rank": 46,
+      "points": 180
      },
      "DH": null,
      "SL": {
-      "rank": 31,
-      "points": 78
+      "rank": 17,
+      "points": 180
      },
-     "GS": {
-      "rank": 24,
-      "points": 106
-     },
+     "GS": null,
      "SG": null
     },
     {
      "name": "ELEZI CANNAFERINA Alban",
      "nation": "FRA",
      "ALL": {
-      "rank": 48,
+      "rank": 47,
       "points": 178
      },
      "DH": {
@@ -13132,25 +13566,28 @@
      }
     },
     {
-     "name": "AMIEZ Steven",
-     "nation": "FRA",
+     "name": "STURM Joshua",
+     "nation": "AUT",
      "ALL": {
-      "rank": 49,
-      "points": 174
+      "rank": 47,
+      "points": 178
      },
      "DH": null,
      "SL": {
-      "rank": 17,
-      "points": 174
+      "rank": 31,
+      "points": 72
      },
-     "GS": null,
+     "GS": {
+      "rank": 24,
+      "points": 106
+     },
      "SG": null
     },
     {
      "name": "ZABYSTRAN Jan",
      "nation": "CZE",
      "ALL": {
-      "rank": 50,
+      "rank": 49,
       "points": 168
      },
      "DH": {
@@ -13168,7 +13605,7 @@
      "name": "TUMLER Thomas",
      "nation": "SUI",
      "ALL": {
-      "rank": 51,
+      "rank": 50,
       "points": 167
      },
      "DH": null,
@@ -13183,7 +13620,7 @@
      "name": "ALLIOD Benjamin Jacques",
      "nation": "ITA",
      "ALL": {
-      "rank": 53,
+      "rank": 52,
       "points": 162
      },
      "DH": {
@@ -13198,10 +13635,43 @@
      }
     },
     {
+     "name": "AMIEZ Steven",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 52,
+      "points": 162
+     },
+     "DH": null,
+     "SL": {
+      "rank": 18,
+      "points": 162
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "AX SWARTZ Fabian",
+     "nation": "SWE",
+     "ALL": {
+      "rank": 52,
+      "points": 162
+     },
+     "DH": null,
+     "SL": {
+      "rank": 20,
+      "points": 133
+     },
+     "GS": {
+      "rank": 38,
+      "points": 29
+     },
+     "SG": null
+    },
+    {
      "name": "AERNI Luca",
      "nation": "SUI",
      "ALL": {
-      "rank": 54,
+      "rank": 55,
       "points": 161
      },
      "DH": null,
@@ -13216,7 +13686,7 @@
      "name": "GRAMMEL Anton",
      "nation": "GER",
      "ALL": {
-      "rank": 55,
+      "rank": 56,
       "points": 157
      },
      "DH": null,
@@ -13231,7 +13701,7 @@
      "name": "MUZATON Maxence",
      "nation": "FRA",
      "ALL": {
-      "rank": 56,
+      "rank": 57,
       "points": 156
      },
      "DH": {
@@ -13243,10 +13713,25 @@
      "SG": null
     },
     {
+     "name": "YULE Daniel",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 58,
+      "points": 147
+     },
+     "DH": null,
+     "SL": {
+      "rank": 19,
+      "points": 147
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "MURISIER Justin",
      "nation": "SUI",
      "ALL": {
-      "rank": 57,
+      "rank": 59,
       "points": 142
      },
      "DH": {
@@ -13259,36 +13744,6 @@
       "rank": 36,
       "points": 27
      }
-    },
-    {
-     "name": "YULE Daniel",
-     "nation": "SUI",
-     "ALL": {
-      "rank": 57,
-      "points": 142
-     },
-     "DH": null,
-     "SL": {
-      "rank": 19,
-      "points": 142
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "SALA Tommaso",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 59,
-      "points": 139
-     },
-     "DH": null,
-     "SL": {
-      "rank": 20,
-      "points": 139
-     },
-     "GS": null,
-     "SG": null
     },
     {
      "name": "PINTURAULT Alexis",
@@ -13324,10 +13779,43 @@
      }
     },
     {
+     "name": "SALA Tommaso",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 62,
+      "points": 129
+     },
+     "DH": null,
+     "SL": {
+      "rank": 21,
+      "points": 129
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "SANDVIK Oscar Andreas",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 63,
+      "points": 127
+     },
+     "DH": null,
+     "SL": {
+      "rank": 24,
+      "points": 112
+     },
+     "GS": {
+      "rank": 42,
+      "points": 15
+     },
+     "SG": null
+    },
+    {
      "name": "FEURSTEIN Lukas",
      "nation": "AUT",
      "ALL": {
-      "rank": 62,
+      "rank": 64,
       "points": 125
      },
      "DH": null,
@@ -13342,10 +13830,25 @@
      }
     },
     {
+     "name": "POPOV Albert",
+     "nation": "BUL",
+     "ALL": {
+      "rank": 65,
+      "points": 124
+     },
+     "DH": null,
+     "SL": {
+      "rank": 22,
+      "points": 124
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "HINTERMANN Niels",
      "nation": "SUI",
      "ALL": {
-      "rank": 63,
+      "rank": 66,
       "points": 123
      },
      "DH": {
@@ -13360,7 +13863,7 @@
      "name": "MIGGIANO Alessio",
      "nation": "SUI",
      "ALL": {
-      "rank": 64,
+      "rank": 67,
       "points": 120
      },
      "DH": {
@@ -13375,28 +13878,10 @@
      }
     },
     {
-     "name": "AX SWARTZ Fabian",
-     "nation": "SWE",
-     "ALL": {
-      "rank": 65,
-      "points": 118
-     },
-     "DH": null,
-     "SL": {
-      "rank": 28,
-      "points": 89
-     },
-     "GS": {
-      "rank": 38,
-      "points": 29
-     },
-     "SG": null
-    },
-    {
      "name": "JOCHER Simon",
      "nation": "GER",
      "ALL": {
-      "rank": 65,
+      "rank": 68,
       "points": 118
      },
      "DH": {
@@ -13414,7 +13899,7 @@
      "name": "NEGOMIR Kyle",
      "nation": "USA",
      "ALL": {
-      "rank": 67,
+      "rank": 69,
       "points": 117
      },
      "DH": {
@@ -13429,10 +13914,25 @@
      }
     },
     {
+     "name": "KOLEGA Samuel",
+     "nation": "CRO",
+     "ALL": {
+      "rank": 70,
+      "points": 116
+     },
+     "DH": null,
+     "SL": {
+      "rank": 23,
+      "points": 116
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "ALPHAND Nils",
      "nation": "FRA",
      "ALL": {
-      "rank": 68,
+      "rank": 71,
       "points": 115
      },
      "DH": {
@@ -13450,7 +13950,7 @@
      "name": "BOSCA Guglielmo",
      "nation": "ITA",
      "ALL": {
-      "rank": 69,
+      "rank": 72,
       "points": 112
      },
      "DH": {
@@ -13468,7 +13968,7 @@
      "name": "FAVROT Thibaut",
      "nation": "FRA",
      "ALL": {
-      "rank": 69,
+      "rank": 72,
       "points": 112
      },
      "DH": null,
@@ -13476,39 +13976,6 @@
      "GS": {
       "rank": 22,
       "points": 112
-     },
-     "SG": null
-    },
-    {
-     "name": "TAYLOR Laurie",
-     "nation": "GBR",
-     "ALL": {
-      "rank": 69,
-      "points": 112
-     },
-     "DH": null,
-     "SL": {
-      "rank": 22,
-      "points": 112
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "SANDVIK Oscar Andreas",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 72,
-      "points": 110
-     },
-     "DH": null,
-     "SL": {
-      "rank": 24,
-      "points": 95
-     },
-     "GS": {
-      "rank": 42,
-      "points": 15
      },
      "SG": null
     },
@@ -13516,7 +13983,7 @@
      "name": "FEURSTEIN Patrick",
      "nation": "AUT",
      "ALL": {
-      "rank": 73,
+      "rank": 74,
       "points": 108
      },
      "DH": null,
@@ -13528,76 +13995,16 @@
      "SG": null
     },
     {
-     "name": "POPOV Albert",
-     "nation": "BUL",
-     "ALL": {
-      "rank": 74,
-      "points": 106
-     },
-     "DH": null,
-     "SL": {
-      "rank": 23,
-      "points": 106
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "ITEN Matthias",
-     "nation": "SUI",
-     "ALL": {
-      "rank": 76,
-      "points": 94
-     },
-     "DH": null,
-     "SL": {
-      "rank": 25,
-      "points": 94
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "KOLEGA Samuel",
-     "nation": "CRO",
-     "ALL": {
-      "rank": 76,
-      "points": 94
-     },
-     "DH": null,
-     "SL": {
-      "rank": 25,
-      "points": 94
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "RASCHNER Dominik",
-     "nation": "AUT",
-     "ALL": {
-      "rank": 76,
-      "points": 94
-     },
-     "DH": null,
-     "SL": {
-      "rank": 25,
-      "points": 94
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "RYDING Dave",
+     "name": "TAYLOR Laurie",
      "nation": "GBR",
      "ALL": {
-      "rank": 81,
-      "points": 89
+      "rank": 75,
+      "points": 104
      },
      "DH": null,
      "SL": {
-      "rank": 28,
-      "points": 89
+      "rank": 26,
+      "points": 104
      },
      "GS": null,
      "SG": null
@@ -13606,7 +14013,7 @@
      "name": "BAILET Matthieu",
      "nation": "FRA",
      "ALL": {
-      "rank": 82,
+      "rank": 79,
       "points": 87
      },
      "DH": {
@@ -13619,6 +14026,51 @@
       "rank": 24,
       "points": 71
      }
+    },
+    {
+     "name": "ITEN Matthias",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 79,
+      "points": 87
+     },
+     "DH": null,
+     "SL": {
+      "rank": 27,
+      "points": 87
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "RASCHNER Dominik",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 79,
+      "points": 87
+     },
+     "DH": null,
+     "SL": {
+      "rank": 27,
+      "points": 87
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "RYDING Dave",
+     "nation": "GBR",
+     "ALL": {
+      "rank": 82,
+      "points": 83
+     },
+     "DH": null,
+     "SL": {
+      "rank": 29,
+      "points": 83
+     },
+     "GS": null,
+     "SG": null
     },
     {
      "name": "SCHMID Alexander",
@@ -13670,12 +14122,12 @@
      "nation": "NOR",
      "ALL": {
       "rank": 87,
-      "points": 77
+      "points": 72
      },
      "DH": null,
      "SL": {
       "rank": 32,
-      "points": 72
+      "points": 67
      },
      "GS": {
       "rank": 52,
@@ -13699,10 +14151,25 @@
      "SG": null
     },
     {
+     "name": "STROLZ Johannes",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 89,
+      "points": 60
+     },
+     "DH": null,
+     "SL": {
+      "rank": 33,
+      "points": 60
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "ROESTI Lars",
      "nation": "SUI",
      "ALL": {
-      "rank": 89,
+      "rank": 90,
       "points": 59
      },
      "DH": {
@@ -13717,7 +14184,7 @@
      "name": "BENNETT Bryce",
      "nation": "USA",
      "ALL": {
-      "rank": 90,
+      "rank": 91,
       "points": 57
      },
      "DH": {
@@ -13735,7 +14202,7 @@
      "name": "GIEZENDANNER Blaise",
      "nation": "FRA",
      "ALL": {
-      "rank": 90,
+      "rank": 91,
       "points": 57
      },
      "DH": {
@@ -13750,10 +14217,25 @@
      }
     },
     {
+     "name": "MAJOR Billy",
+     "nation": "GBR",
+     "ALL": {
+      "rank": 91,
+      "points": 57
+     },
+     "DH": null,
+     "SL": {
+      "rank": 35,
+      "points": 57
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "VOGT Luis",
      "nation": "GER",
      "ALL": {
-      "rank": 90,
+      "rank": 91,
       "points": 57
      },
      "DH": {
@@ -13765,25 +14247,10 @@
      "SG": null
     },
     {
-     "name": "STROLZ Johannes",
-     "nation": "AUT",
-     "ALL": {
-      "rank": 93,
-      "points": 55
-     },
-     "DH": null,
-     "SL": {
-      "rank": 33,
-      "points": 55
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "MONSEN Felix",
      "nation": "SWE",
      "ALL": {
-      "rank": 94,
+      "rank": 95,
       "points": 54
      },
      "DH": {
@@ -13798,7 +14265,7 @@
      "name": "SEGER Brodie",
      "nation": "CAN",
      "ALL": {
-      "rank": 95,
+      "rank": 96,
       "points": 51
      },
      "DH": {
@@ -13813,15 +14280,15 @@
      }
     },
     {
-     "name": "RITCHIE Benjamin",
-     "nation": "USA",
+     "name": "AULNETTE Auguste",
+     "nation": "FRA",
      "ALL": {
-      "rank": 96,
+      "rank": 97,
       "points": 48
      },
      "DH": null,
      "SL": {
-      "rank": 35,
+      "rank": 36,
       "points": 48
      },
      "GS": null,
@@ -13831,7 +14298,7 @@
      "name": "BORSOTTI Giovanni",
      "nation": "ITA",
      "ALL": {
-      "rank": 97,
+      "rank": 98,
       "points": 45
      },
      "DH": null,
@@ -13843,10 +14310,25 @@
      "SG": null
     },
     {
+     "name": "RITCHIE Benjamin",
+     "nation": "USA",
+     "ALL": {
+      "rank": 98,
+      "points": 45
+     },
+     "DH": null,
+     "SL": {
+      "rank": 37,
+      "points": 45
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "ARVIDSSON Erik",
      "nation": "USA",
      "ALL": {
-      "rank": 99,
+      "rank": 101,
       "points": 44
      },
      "DH": {
@@ -13858,55 +14340,10 @@
      "SG": null
     },
     {
-     "name": "MAJOR Billy",
-     "nation": "GBR",
-     "ALL": {
-      "rank": 99,
-      "points": 44
-     },
-     "DH": null,
-     "SL": {
-      "rank": 36,
-      "points": 44
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "AULNETTE Auguste",
-     "nation": "FRA",
-     "ALL": {
-      "rank": 101,
-      "points": 40
-     },
-     "DH": null,
-     "SL": {
-      "rank": 37,
-      "points": 40
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "ZENHAEUSERN Ramon",
-     "nation": "SUI",
-     "ALL": {
-      "rank": 101,
-      "points": 40
-     },
-     "DH": null,
-     "SL": {
-      "rank": 37,
-      "points": 40
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "ALPHAND Sam",
      "nation": "FRA",
      "ALL": {
-      "rank": 103,
+      "rank": 102,
       "points": 39
      },
      "DH": {
@@ -13924,7 +14361,7 @@
      "name": "VITALE Flavio",
      "nation": "FRA",
      "ALL": {
-      "rank": 103,
+      "rank": 102,
       "points": 39
      },
      "DH": null,
@@ -13939,7 +14376,7 @@
      "name": "MORSE Sam",
      "nation": "USA",
      "ALL": {
-      "rank": 105,
+      "rank": 104,
       "points": 37
      },
      "DH": {
@@ -13952,6 +14389,21 @@
       "rank": 34,
       "points": 30
      }
+    },
+    {
+     "name": "ZENHAEUSERN Ramon",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 104,
+      "points": 37
+     },
+     "DH": null,
+     "SL": {
+      "rank": 38,
+      "points": 37
+     },
+     "GS": null,
+     "SG": null
     },
     {
      "name": "BAUMANN Romed",
@@ -14065,43 +14517,10 @@
      }
     },
     {
-     "name": "KASTLUNGER Tobias",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 113,
-      "points": 31
-     },
-     "DH": null,
-     "SL": {
-      "rank": 41,
-      "points": 26
-     },
-     "GS": {
-      "rank": 52,
-      "points": 5
-     },
-     "SG": null
-    },
-    {
-     "name": "AZZOLIN Antoine",
-     "nation": "FRA",
-     "ALL": {
-      "rank": 114,
-      "points": 30
-     },
-     "DH": null,
-     "SL": {
-      "rank": 40,
-      "points": 30
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "MAPLE Wiley",
      "nation": "USA",
      "ALL": {
-      "rank": 114,
+      "rank": 113,
       "points": 30
      },
      "DH": {
@@ -14116,7 +14535,7 @@
      "name": "DE ALIPRANDINI Luca",
      "nation": "ITA",
      "ALL": {
-      "rank": 116,
+      "rank": 114,
       "points": 29
      },
      "DH": null,
@@ -14128,10 +14547,28 @@
      "SG": null
     },
     {
+     "name": "KASTLUNGER Tobias",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 114,
+      "points": 29
+     },
+     "DH": null,
+     "SL": {
+      "rank": 41,
+      "points": 24
+     },
+     "GS": {
+      "rank": 52,
+      "points": 5
+     },
+     "SG": null
+    },
+    {
      "name": "SEGER Riley",
      "nation": "CAN",
      "ALL": {
-      "rank": 116,
+      "rank": 114,
       "points": 29
      },
      "DH": null,
@@ -14143,16 +14580,31 @@
      }
     },
     {
-     "name": "SACCARDI Tommaso",
-     "nation": "ITA",
+     "name": "AZZOLIN Antoine",
+     "nation": "FRA",
+     "ALL": {
+      "rank": 117,
+      "points": 28
+     },
+     "DH": null,
+     "SL": {
+      "rank": 40,
+      "points": 28
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "AIHARA Shiro",
+     "nation": "JPN",
      "ALL": {
       "rank": 119,
-      "points": 26
+      "points": 24
      },
      "DH": null,
      "SL": {
       "rank": 41,
-      "points": 26
+      "points": 24
      },
      "GS": null,
      "SG": null
@@ -14161,7 +14613,7 @@
      "name": "READ Jeffrey",
      "nation": "CAN",
      "ALL": {
-      "rank": 120,
+      "rank": 119,
       "points": 24
      },
      "DH": {
@@ -14176,10 +14628,25 @@
      }
     },
     {
+     "name": "SACCARDI Tommaso",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 119,
+      "points": 24
+     },
+     "DH": null,
+     "SL": {
+      "rank": 41,
+      "points": 24
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "HILTBRAND Livio",
      "nation": "SUI",
      "ALL": {
-      "rank": 121,
+      "rank": 122,
       "points": 23
      },
      "DH": {
@@ -14194,7 +14661,7 @@
      "name": "RIESER Stefan",
      "nation": "AUT",
      "ALL": {
-      "rank": 121,
+      "rank": 122,
       "points": 23
      },
      "DH": {
@@ -14209,7 +14676,7 @@
      "name": "CARRICK-SMITH Freddy",
      "nation": "GBR",
      "ALL": {
-      "rank": 123,
+      "rank": 124,
       "points": 22
      },
      "DH": null,
@@ -14221,40 +14688,10 @@
      "SG": null
     },
     {
-     "name": "DESGRIPPES Hugo",
-     "nation": "FRA",
-     "ALL": {
-      "rank": 123,
-      "points": 22
-     },
-     "DH": null,
-     "SL": {
-      "rank": 43,
-      "points": 22
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "RUELAND Simon",
-     "nation": "AUT",
-     "ALL": {
-      "rank": 123,
-      "points": 22
-     },
-     "DH": null,
-     "SL": {
-      "rank": 43,
-      "points": 22
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "VON APPEN Henrik",
      "nation": "CHI",
      "ALL": {
-      "rank": 126,
+      "rank": 125,
       "points": 21
      },
      "DH": {
@@ -14269,7 +14706,7 @@
      "name": "BOISSET Arnaud",
      "nation": "SUI",
      "ALL": {
-      "rank": 127,
+      "rank": 126,
       "points": 20
      },
      "DH": {
@@ -14281,16 +14718,46 @@
      "SG": null
     },
     {
-     "name": "JAKOBSEN Kristoffer",
-     "nation": "SWE",
+     "name": "DESGRIPPES Hugo",
+     "nation": "FRA",
      "ALL": {
-      "rank": 127,
+      "rank": 126,
       "points": 20
      },
      "DH": null,
      "SL": {
-      "rank": 45,
+      "rank": 44,
       "points": 20
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "RUELAND Simon",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 126,
+      "points": 20
+     },
+     "DH": null,
+     "SL": {
+      "rank": 44,
+      "points": 20
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "JAKOBSEN Kristoffer",
+     "nation": "SWE",
+     "ALL": {
+      "rank": 130,
+      "points": 19
+     },
+     "DH": null,
+     "SL": {
+      "rank": 46,
+      "points": 19
      },
      "GS": null,
      "SG": null
@@ -14299,27 +14766,27 @@
      "name": "SALARICH BAUCELLS Joaquim",
      "nation": "ESP",
      "ALL": {
-      "rank": 127,
-      "points": 20
+      "rank": 130,
+      "points": 19
      },
      "DH": null,
      "SL": {
-      "rank": 45,
-      "points": 20
+      "rank": 46,
+      "points": 19
      },
      "GS": null,
      "SG": null
     },
     {
-     "name": "PERTL Adrian",
-     "nation": "AUT",
+     "name": "WISSTING Gustav",
+     "nation": "SWE",
      "ALL": {
-      "rank": 131,
+      "rank": 132,
       "points": 18
      },
      "DH": null,
      "SL": {
-      "rank": 47,
+      "rank": 48,
       "points": 18
      },
      "GS": null,
@@ -14329,7 +14796,7 @@
      "name": "HAECHLER Lenz",
      "nation": "SUI",
      "ALL": {
-      "rank": 132,
+      "rank": 133,
       "points": 17
      },
      "DH": null,
@@ -14341,10 +14808,25 @@
      "SG": null
     },
     {
+     "name": "PERTL Adrian",
+     "nation": "AUT",
+     "ALL": {
+      "rank": 133,
+      "points": 17
+     },
+     "DH": null,
+     "SL": {
+      "rank": 49,
+      "points": 17
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "GAMEL SEIGNEUR Charles",
      "nation": "FRA",
      "ALL": {
-      "rank": 133,
+      "rank": 135,
       "points": 16
      },
      "DH": {
@@ -14356,25 +14838,10 @@
      "SG": null
     },
     {
-     "name": "HOLZMANN Sebastian",
-     "nation": "GER",
-     "ALL": {
-      "rank": 135,
-      "points": 14
-     },
-     "DH": null,
-     "SL": {
-      "rank": 48,
-      "points": 14
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "READ Erik",
      "nation": "CAN",
      "ALL": {
-      "rank": 135,
+      "rank": 137,
       "points": 14
      },
      "DH": null,
@@ -14386,10 +14853,25 @@
      "SG": null
     },
     {
+     "name": "HOLZMANN Sebastian",
+     "nation": "GER",
+     "ALL": {
+      "rank": 138,
+      "points": 13
+     },
+     "DH": null,
+     "SL": {
+      "rank": 50,
+      "points": 13
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "ORTEGA FORNESA Albert",
      "nation": "ESP",
      "ALL": {
-      "rank": 137,
+      "rank": 138,
       "points": 13
      },
      "DH": null,
@@ -14404,13 +14886,13 @@
      "name": "SEYMOUR Jett",
      "nation": "USA",
      "ALL": {
-      "rank": 137,
-      "points": 13
+      "rank": 142,
+      "points": 12
      },
      "DH": null,
      "SL": {
-      "rank": 49,
-      "points": 13
+      "rank": 51,
+      "points": 12
      },
      "GS": null,
      "SG": null
@@ -14419,13 +14901,13 @@
      "name": "KOYAMA Yohei",
      "nation": "JPN",
      "ALL": {
-      "rank": 141,
-      "points": 12
+      "rank": 143,
+      "points": 11
      },
      "DH": null,
      "SL": {
-      "rank": 50,
-      "points": 12
+      "rank": 52,
+      "points": 11
      },
      "GS": null,
      "SG": null
@@ -14434,13 +14916,13 @@
      "name": "POHJOLAINEN Jesper",
      "nation": "FIN",
      "ALL": {
-      "rank": 141,
-      "points": 12
+      "rank": 143,
+      "points": 11
      },
      "DH": null,
      "SL": {
-      "rank": 50,
-      "points": 12
+      "rank": 52,
+      "points": 11
      },
      "GS": null,
      "SG": null
@@ -14449,13 +14931,13 @@
      "name": "RODES Istok",
      "nation": "CRO",
      "ALL": {
-      "rank": 141,
-      "points": 12
+      "rank": 143,
+      "points": 11
      },
      "DH": null,
      "SL": {
-      "rank": 50,
-      "points": 12
+      "rank": 52,
+      "points": 11
      },
      "GS": null,
      "SG": null
@@ -14464,43 +14946,13 @@
      "name": "WINTERS Luke",
      "nation": "USA",
      "ALL": {
-      "rank": 141,
-      "points": 12
+      "rank": 143,
+      "points": 11
      },
      "DH": null,
      "SL": {
-      "rank": 50,
-      "points": 12
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "BRAEKKEN Theodor",
-     "nation": "NOR",
-     "ALL": {
-      "rank": 146,
-      "points": 10
-     },
-     "DH": null,
-     "SL": {
-      "rank": 54,
-      "points": 10
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
-     "name": "CANINS Matteo",
-     "nation": "ITA",
-     "ALL": {
-      "rank": 146,
-      "points": 10
-     },
-     "DH": null,
-     "SL": {
-      "rank": 54,
-      "points": 10
+      "rank": 52,
+      "points": 11
      },
      "GS": null,
      "SG": null
@@ -14509,7 +14961,7 @@
      "name": "LAINE Tormis",
      "nation": "EST",
      "ALL": {
-      "rank": 146,
+      "rank": 148,
       "points": 10
      },
      "DH": null,
@@ -14521,10 +14973,55 @@
      "SG": null
     },
     {
+     "name": "WALLACE Liam",
+     "nation": "CAN",
+     "ALL": {
+      "rank": 148,
+      "points": 10
+     },
+     "DH": null,
+     "SL": {
+      "rank": 56,
+      "points": 10
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "BRAEKKEN Theodor",
+     "nation": "NOR",
+     "ALL": {
+      "rank": 150,
+      "points": 9
+     },
+     "DH": null,
+     "SL": {
+      "rank": 57,
+      "points": 9
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
+     "name": "CANINS Matteo",
+     "nation": "ITA",
+     "ALL": {
+      "rank": 150,
+      "points": 9
+     },
+     "DH": null,
+     "SL": {
+      "rank": 57,
+      "points": 9
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "ZAMPA Andreas",
      "nation": "SVK",
      "ALL": {
-      "rank": 149,
+      "rank": 150,
       "points": 9
      },
      "DH": null,
@@ -14539,7 +15036,7 @@
      "name": "HANSSON William",
      "nation": "SWE",
      "ALL": {
-      "rank": 150,
+      "rank": 153,
       "points": 7
      },
      "DH": null,
@@ -14551,25 +15048,10 @@
      "SG": null
     },
     {
-     "name": "ROCHAT Marc",
-     "nation": "SUI",
-     "ALL": {
-      "rank": 150,
-      "points": 7
-     },
-     "DH": null,
-     "SL": {
-      "rank": 56,
-      "points": 7
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "TRANINGER Manuel",
      "nation": "AUT",
      "ALL": {
-      "rank": 150,
+      "rank": 153,
       "points": 7
      },
      "DH": {
@@ -14581,25 +15063,10 @@
      "SG": null
     },
     {
-     "name": "AIHARA Shiro",
-     "nation": "JPN",
-     "ALL": {
-      "rank": 153,
-      "points": 6
-     },
-     "DH": null,
-     "SL": {
-      "rank": 57,
-      "points": 6
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "AUBERT SERRACANTA Aleix",
      "nation": "ESP",
      "ALL": {
-      "rank": 153,
+      "rank": 155,
       "points": 6
      },
      "DH": null,
@@ -14614,7 +15081,7 @@
      "name": "GOLDBERG Jared",
      "nation": "USA",
      "ALL": {
-      "rank": 153,
+      "rank": 155,
       "points": 6
      },
      "DH": null,
@@ -14629,7 +15096,7 @@
      "name": "JANUTIN Fadri",
      "nation": "SUI",
      "ALL": {
-      "rank": 153,
+      "rank": 155,
       "points": 6
      },
      "DH": null,
@@ -14641,10 +15108,25 @@
      "SG": null
     },
     {
+     "name": "ROCHAT Marc",
+     "nation": "SUI",
+     "ALL": {
+      "rank": 155,
+      "points": 6
+     },
+     "DH": null,
+     "SL": {
+      "rank": 59,
+      "points": 6
+     },
+     "GS": null,
+     "SG": null
+    },
+    {
      "name": "FAVRE Guerlain",
      "nation": "FRA",
      "ALL": {
-      "rank": 158,
+      "rank": 160,
       "points": 5
      },
      "DH": null,
@@ -14659,7 +15141,7 @@
      "name": "PERATHONER Max",
      "nation": "ITA",
      "ALL": {
-      "rank": 158,
+      "rank": 160,
       "points": 5
      },
      "DH": null,
@@ -14674,12 +15156,12 @@
      "name": "PUCKETT Cooper",
      "nation": "USA",
      "ALL": {
-      "rank": 158,
+      "rank": 160,
       "points": 5
      },
      "DH": null,
      "SL": {
-      "rank": 58,
+      "rank": 60,
       "points": 5
      },
      "GS": null,
@@ -14689,12 +15171,12 @@
      "name": "DEL CAMPO HERNANDEZ Juan",
      "nation": "ESP",
      "ALL": {
-      "rank": 161,
+      "rank": 163,
       "points": 4
      },
      "DH": null,
      "SL": {
-      "rank": 59,
+      "rank": 61,
       "points": 4
      },
      "GS": null,
@@ -14704,7 +15186,7 @@
      "name": "GILE Bridger",
      "nation": "USA",
      "ALL": {
-      "rank": 161,
+      "rank": 163,
       "points": 4
      },
      "DH": null,
@@ -14719,7 +15201,7 @@
      "name": "STEFFEY George",
      "nation": "USA",
      "ALL": {
-      "rank": 161,
+      "rank": 163,
       "points": 4
      },
      "DH": null,
@@ -14734,7 +15216,7 @@
      "name": "TALACCI Simon",
      "nation": "ITA",
      "ALL": {
-      "rank": 161,
+      "rank": 163,
       "points": 4
      },
      "DH": null,
@@ -14746,30 +15228,15 @@
      "SG": null
     },
     {
-     "name": "WISSTING Gustav",
-     "nation": "SWE",
-     "ALL": {
-      "rank": 161,
-      "points": 4
-     },
-     "DH": null,
-     "SL": {
-      "rank": 59,
-      "points": 4
-     },
-     "GS": null,
-     "SG": null
-    },
-    {
      "name": "BARBERA Corrado",
      "nation": "ITA",
      "ALL": {
-      "rank": 166,
+      "rank": 167,
       "points": 3
      },
      "DH": null,
      "SL": {
-      "rank": 61,
+      "rank": 62,
       "points": 3
      },
      "GS": null,

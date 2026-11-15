@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T09:18:16.718Z",
+ "updated": "2026-11-15T17:04:21.519Z",
  "season": 2027,
  "races": [
   {
@@ -93,7 +93,8 @@
      "start": "2026-11-15T12:00:00.000Z"
     }
    ],
-   "cancelled": false
+   "cancelled": false,
+   "results": []
   },
   {
    "raceid": "131581",
@@ -1637,26 +1638,46 @@
     "name": "PINHEIRO BRAATHEN Lucas",
     "nation": "BRA",
     "rank": 1,
-    "points": 100,
+    "points": 200,
     "DH": null,
     "SG": null,
     "GS": 100,
-    "SL": null
+    "SL": 100
    },
    {
     "name": "MEILLARD Loic",
     "nation": "SUI",
     "rank": 2,
-    "points": 80,
+    "points": 140,
     "DH": null,
     "SG": null,
     "GS": 80,
-    "SL": null
+    "SL": 60
+   },
+   {
+    "name": "VINATZER Alex",
+    "nation": "ITA",
+    "rank": 3,
+    "points": 81,
+    "DH": null,
+    "SG": null,
+    "GS": 36,
+    "SL": 45
+   },
+   {
+    "name": "NOEL Clement",
+    "nation": "FRA",
+    "rank": 4,
+    "points": 80,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 80
    },
    {
     "name": "ODERMATT Marco",
     "nation": "SUI",
-    "rank": 3,
+    "rank": 5,
     "points": 60,
     "DH": null,
     "SG": null,
@@ -1664,9 +1685,19 @@
     "SL": null
    },
    {
+    "name": "AX SWARTZ Fabian",
+    "nation": "SWE",
+    "rank": 6,
+    "points": 50,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 50
+   },
+   {
     "name": "RADAMUS River",
     "nation": "USA",
-    "rank": 4,
+    "rank": 6,
     "points": 50,
     "DH": null,
     "SG": null,
@@ -1674,9 +1705,19 @@
     "SL": null
    },
    {
+    "name": "HALLBERG Eduard",
+    "nation": "FIN",
+    "rank": 8,
+    "points": 47,
+    "DH": null,
+    "SG": null,
+    "GS": 15,
+    "SL": 32
+   },
+   {
     "name": "HAASER Raphael",
     "nation": "AUT",
-    "rank": 5,
+    "rank": 9,
     "points": 45,
     "DH": null,
     "SG": null,
@@ -1686,7 +1727,7 @@
    {
     "name": "GRATZ Fabian",
     "nation": "GER",
-    "rank": 6,
+    "rank": 10,
     "points": 40,
     "DH": null,
     "SG": null,
@@ -1694,19 +1735,29 @@
     "SL": null
    },
    {
-    "name": "VINATZER Alex",
-    "nation": "ITA",
-    "rank": 7,
+    "name": "RASSAT Paco",
+    "nation": "FRA",
+    "rank": 10,
+    "points": 40,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 40
+   },
+   {
+    "name": "MCGRATH Atle Lie",
+    "nation": "NOR",
+    "rank": 12,
     "points": 36,
     "DH": null,
     "SG": null,
-    "GS": 36,
-    "SL": null
+    "GS": null,
+    "SL": 36
    },
    {
     "name": "SOLBERG Eirik Hystad",
     "nation": "NOR",
-    "rank": 8,
+    "rank": 13,
     "points": 32,
     "DH": null,
     "SG": null,
@@ -1716,7 +1767,7 @@
    {
     "name": "ANGUENOT Leo",
     "nation": "FRA",
-    "rank": 9,
+    "rank": 14,
     "points": 29,
     "DH": null,
     "SG": null,
@@ -1724,9 +1775,19 @@
     "SL": null
    },
    {
+    "name": "KOLEGA Samuel",
+    "nation": "CRO",
+    "rank": 14,
+    "points": 29,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 29
+   },
+   {
     "name": "FEURSTEIN Patrick",
     "nation": "AUT",
-    "rank": 10,
+    "rank": 16,
     "points": 26,
     "DH": null,
     "SG": null,
@@ -1734,9 +1795,19 @@
     "SL": null
    },
    {
+    "name": "POPOV Albert",
+    "nation": "BUL",
+    "rank": 16,
+    "points": 26,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 26
+   },
+   {
     "name": "BRENNSTEINER Stefan",
     "nation": "AUT",
-    "rank": 11,
+    "rank": 18,
     "points": 24,
     "DH": null,
     "SG": null,
@@ -1744,9 +1815,19 @@
     "SL": null
    },
    {
+    "name": "SANDVIK Oscar Andreas",
+    "nation": "NOR",
+    "rank": 18,
+    "points": 24,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 24
+   },
+   {
     "name": "CARRICK-SMITH Freddy",
     "nation": "GBR",
-    "rank": 12,
+    "rank": 20,
     "points": 22,
     "DH": null,
     "SG": null,
@@ -1754,9 +1835,29 @@
     "SL": null
    },
    {
+    "name": "NEF Tanguy",
+    "nation": "SUI",
+    "rank": 20,
+    "points": 22,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 22
+   },
+   {
+    "name": "KRISTOFFERSEN Henrik",
+    "nation": "NOR",
+    "rank": 22,
+    "points": 21,
+    "DH": null,
+    "SG": null,
+    "GS": 9,
+    "SL": 12
+   },
+   {
     "name": "FAVROT Thibaut",
     "nation": "FRA",
-    "rank": 13,
+    "rank": 23,
     "points": 20,
     "DH": null,
     "SG": null,
@@ -1764,124 +1865,24 @@
     "SL": null
    },
    {
-    "name": "BAKKEVIG Rasmus",
-    "nation": "NOR",
-    "rank": 14,
+    "name": "STRASSER Linus",
+    "nation": "GER",
+    "rank": 23,
+    "points": 20,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 20
+   },
+   {
+    "name": "AIHARA Shiro",
+    "nation": "JPN",
+    "rank": 25,
     "points": 18,
     "DH": null,
     "SG": null,
-    "GS": 18,
-    "SL": null
-   },
-   {
-    "name": "GRAMMEL Anton",
-    "nation": "GER",
-    "rank": 15,
-    "points": 16,
-    "DH": null,
-    "SG": null,
-    "GS": 16,
-    "SL": null
-   },
-   {
-    "name": "HALLBERG Eduard",
-    "nation": "FIN",
-    "rank": 16,
-    "points": 15,
-    "DH": null,
-    "SG": null,
-    "GS": 15,
-    "SL": null
-   },
-   {
-    "name": "STURM Joshua",
-    "nation": "AUT",
-    "rank": 17,
-    "points": 14,
-    "DH": null,
-    "SG": null,
-    "GS": 14,
-    "SL": null
-   },
-   {
-    "name": "KRANJEC Zan",
-    "nation": "SLO",
-    "rank": 18,
-    "points": 13,
-    "DH": null,
-    "SG": null,
-    "GS": 13,
-    "SL": null
-   },
-   {
-    "name": "ZUBCIC Filip",
-    "nation": "CRO",
-    "rank": 19,
-    "points": 12,
-    "DH": null,
-    "SG": null,
-    "GS": 12,
-    "SL": null
-   },
-   {
-    "name": "MAES Sam",
-    "nation": "BEL",
-    "rank": 20,
-    "points": 11,
-    "DH": null,
-    "SG": null,
-    "GS": 11,
-    "SL": null
-   },
-   {
-    "name": "SCHMID Alexander",
-    "nation": "GER",
-    "rank": 21,
-    "points": 10,
-    "DH": null,
-    "SG": null,
-    "GS": 10,
-    "SL": null
-   },
-   {
-    "name": "KRISTOFFERSEN Henrik",
-    "nation": "NOR",
-    "rank": 22,
-    "points": 9,
-    "DH": null,
-    "SG": null,
-    "GS": 9,
-    "SL": null
-   },
-   {
-    "name": "TUMLER Thomas",
-    "nation": "SUI",
-    "rank": 23,
-    "points": 8,
-    "DH": null,
-    "SG": null,
-    "GS": 8,
-    "SL": null
-   },
-   {
-    "name": "ELEZI CANNAFERINA Alban",
-    "nation": "FRA",
-    "rank": 24,
-    "points": 7,
-    "DH": null,
-    "SG": null,
-    "GS": 7,
-    "SL": null
-   },
-   {
-    "name": "HAECHLER Lenz",
-    "nation": "SUI",
-    "rank": 25,
-    "points": 6,
-    "DH": null,
-    "SG": null,
-    "GS": 6,
-    "SL": null
+    "GS": null,
+    "SL": 18
    }
   ],
   "women": [

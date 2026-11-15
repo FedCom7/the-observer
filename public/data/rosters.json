@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-15T09:17:43.062Z",
+ "updated": "2026-11-15T17:03:48.046Z",
  "pats": {
-  "at": "2026-11-15T09:17:43.062Z",
+  "at": "2026-11-15T17:03:48.046Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -25,10 +25,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047646.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 51,
@@ -269,7 +266,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431526.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -447,10 +447,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4039505.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -880,10 +877,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4372026.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 101,
@@ -998,7 +992,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431452.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 3,
@@ -1099,7 +1096,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4431465.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Out",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": 234,
@@ -1273,7 +1273,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4428394.png",
     "status": "Active",
     "injury": {
-     "status": "Questionable",
+     "status": "Out",
      "detail": null
     },
     "stats": null,
@@ -1327,10 +1327,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 120,
@@ -1431,10 +1428,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/15718.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -1747,10 +1741,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/2574056.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": 64,
@@ -3189,7 +3180,7 @@
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
     "status": "Active",
     "injury": {
-     "status": "Questionable",
+     "status": "Out",
      "detail": null
     },
     "stats": null,
@@ -3521,10 +3512,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4368113.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -4931,7 +4919,7 @@
       "name": "Left Defensive End",
       "players": [
        "4372030",
-       "4611993",
+       "16910",
        "4431598"
       ]
      },
@@ -4949,6 +4937,7 @@
       "name": "Right Defensive End",
       "players": [
        "4239699",
+       "4611993",
        "16910"
       ]
      },
@@ -5156,7 +5145,8 @@
       "name": "Center",
       "players": [
        "4599198",
-       "4362890"
+       "4362890",
+       "15718"
       ]
      },
      {
@@ -5165,6 +5155,7 @@
       "name": "Right Guard",
       "players": [
        "3055886",
+       "4362890",
        "4916597",
        "4046545"
       ]
@@ -5175,6 +5166,7 @@
       "name": "Right Tackle",
       "players": [
        "16771",
+       "4921438",
        "4565293"
       ]
      },
@@ -5224,7 +5216,7 @@
   ]
  },
  "texas": {
-  "at": "2026-11-14T10:16:58.888Z",
+  "at": "2026-11-15T17:03:48.046Z",
   "team": "TEX",
   "sport": "cfb",
   "season": 2026,
@@ -5418,22 +5410,22 @@
     "season": {
      "defensive.QB HUR": 0,
      "receiving.TD": 2,
-     "receiving.YPR": 10.6,
+     "receiving.REC": 23,
+     "receiving.YPR": 11,
      "defensive.SOLO": 1,
      "defensive.TFL": 0,
      "defensive.PD": 0,
-     "receiving.REC": 20,
      "defensive.TD": 0,
-     "receiving.LONG": 29,
+     "receiving.LONG": 32,
      "defensive.SACKS": 0,
-     "defensive.TOT": 1,
-     "receiving.YDS": 211
+     "receiving.YDS": 252,
+     "defensive.TOT": 1
     },
     "ppa": {
      "plays": null,
-     "avg": 0.475,
-     "total": 12.815,
-     "pass": 12.815,
+     "avg": 0.416,
+     "total": 13.296,
+     "pass": 13.296,
      "rush": 0,
      "third": 0.849
     }
@@ -5508,27 +5500,27 @@
     "injury": null,
     "stats": null,
     "season": {
-     "rushing.YPC": 4.9,
-     "receiving.REC": 18,
-     "rushing.CAR": 109,
+     "rushing.CAR": 124,
+     "receiving.REC": 22,
+     "receiving.YDS": 110,
      "fumbles.REC": 0,
-     "rushing.YDS": 537,
      "fumbles.LOST": 1,
+     "rushing.YPC": 4.6,
      "rushing.TD": 6,
      "receiving.LONG": 23,
-     "receiving.YPR": 5.7,
+     "receiving.YPR": 5,
+     "receiving.TD": 3,
      "rushing.LONG": 47,
-     "receiving.TD": 2,
      "fumbles.FUM": 1,
-     "receiving.YDS": 102
+     "rushing.YDS": 572
     },
     "ppa": {
      "plays": null,
-     "avg": 0.077,
-     "total": 9.926,
-     "pass": 2.998,
-     "rush": 6.928,
-     "third": 0.786
+     "avg": 0.036,
+     "total": 5.453,
+     "pass": 2.193,
+     "rush": 3.259,
+     "third": 0.694
     }
    },
    {
@@ -5664,11 +5656,11 @@
     },
     "ppa": {
      "plays": null,
-     "avg": 0.896,
-     "total": 31.359,
-     "pass": 31.359,
+     "avg": 0.713,
+     "total": 27.803,
+     "pass": 27.803,
      "rush": 0,
-     "third": 1.731
+     "third": 1.426
     }
    },
    {
@@ -5741,23 +5733,23 @@
     "injury": null,
     "stats": null,
     "season": {
+     "rushing.CAR": 32,
      "receiving.LONG": 24,
      "receiving.REC": 3,
      "receiving.YDS": 37,
      "rushing.LONG": 16,
      "rushing.TD": 1,
-     "rushing.YDS": 105,
+     "rushing.YPC": 3.6,
      "receiving.YPR": 12.3,
-     "rushing.YPC": 3.4,
-     "rushing.CAR": 31,
+     "rushing.YDS": 114,
      "receiving.TD": 1
     },
     "ppa": {
      "plays": null,
-     "avg": 0.045,
-     "total": 1.519,
+     "avg": 0.078,
+     "total": 2.725,
      "pass": 2.887,
-     "rush": -1.368,
+     "rush": -0.162,
      "third": 0.743
     }
    },
@@ -6008,29 +6000,29 @@
     "injury": null,
     "stats": null,
     "season": {
-     "passing.YDS": 2027,
+     "rushing.YDS": 145,
      "fumbles.REC": 0,
-     "rushing.YDS": 110,
-     "passing.INT": 7,
-     "rushing.TD": 2,
-     "rushing.YPC": 1.5,
-     "rushing.CAR": 75,
+     "passing.TD": 19,
+     "passing.YPA": 7.6,
+     "rushing.TD": 3,
+     "passing.INT": 10,
+     "passing.PCT": 0.648,
      "rushing.LONG": 20,
-     "passing.TD": 18,
      "fumbles.LOST": 3,
      "fumbles.FUM": 4,
-     "passing.ATT": 255,
-     "passing.PCT": 0.663,
-     "passing.COMPLETIONS": 169,
-     "passing.YPA": 7.9
+     "passing.COMPLETIONS": 188,
+     "rushing.CAR": 87,
+     "passing.YDS": 2201,
+     "passing.ATT": 290,
+     "rushing.YPC": 1.7
     },
     "ppa": {
      "plays": null,
-     "avg": 0.161,
-     "total": 52.779,
-     "pass": 66.264,
-     "rush": -5.351,
-     "third": 0.437
+     "avg": 0.129,
+     "total": 48.088,
+     "pass": 55.052,
+     "rush": 1.17,
+     "third": 0.367
     }
    },
    {
@@ -6068,9 +6060,9 @@
     },
     "ppa": {
      "plays": null,
-     "avg": 0.581,
-     "total": 3.486,
-     "pass": 3.486,
+     "avg": 0.243,
+     "total": 1.942,
+     "pass": 1.942,
      "rush": 0,
      "third": 0.54
     }
@@ -6159,22 +6151,22 @@
      "fumbles.LOST": 1,
      "fumbles.REC": 0,
      "defensive.TD": 0,
-     "receiving.YDS": 504,
      "receiving.LONG": 62,
      "defensive.QB HUR": 0,
+     "receiving.YPR": 15.9,
      "receiving.TD": 1,
      "defensive.SOLO": 0,
-     "receiving.YPR": 16.8,
-     "receiving.REC": 30,
+     "receiving.REC": 34,
+     "receiving.YDS": 541,
      "fumbles.FUM": 2
     },
     "ppa": {
      "plays": null,
      "avg": 0.523,
-     "total": 23.534,
-     "pass": 27.012,
+     "total": 26.15,
+     "pass": 29.627,
      "rush": -3.477,
-     "third": 1.263
+     "third": 1.139
     }
    },
    {
@@ -6230,16 +6222,16 @@
      "rushing.LONG": 6,
      "rushing.CAR": 2,
      "puntReturns.AVG": 10.9,
-     "kickReturns.AVG": 17,
      "puntReturns.NO": 20,
      "fumbles.FUM": 2,
-     "kickReturns.NO": 6,
+     "kickReturns.AVG": 18.1,
      "receiving.LONG": 2,
-     "kickReturns.YDS": 102,
      "puntReturns.YDS": 217,
+     "kickReturns.YDS": 127,
      "kickReturns.TD": 0,
      "kickReturns.LONG": 28,
      "receiving.YDS": 2,
+     "kickReturns.NO": 7,
      "puntReturns.LONG": 63,
      "rushing.TD": 0,
      "defensive.TD": 1,
@@ -6504,7 +6496,15 @@
     "status": "Active",
     "injury": null,
     "stats": null,
-    "season": null,
+    "season": {
+     "defensive.PD": 0,
+     "defensive.TD": 0,
+     "defensive.SOLO": 1,
+     "defensive.TFL": 0,
+     "defensive.TOT": 1,
+     "defensive.QB HUR": 0,
+     "defensive.SACKS": 0
+    },
     "ppa": null
    },
    {
@@ -6688,24 +6688,24 @@
     "injury": null,
     "stats": null,
     "season": {
-     "rushing.YPC": 4.7,
+     "rushing.CAR": 29,
+     "receiving.YPR": 8.5,
      "rushing.TD": 1,
-     "receiving.REC": 1,
-     "rushing.YDS": 118,
-     "receiving.YDS": 3,
-     "receiving.YPR": 3,
-     "rushing.CAR": 25,
-     "receiving.LONG": 3,
+     "receiving.LONG": 14,
+     "receiving.REC": 2,
+     "rushing.YPC": 4.8,
+     "receiving.YDS": 17,
      "receiving.TD": 0,
+     "rushing.YDS": 138,
      "rushing.LONG": 19
     },
     "ppa": {
      "plays": null,
-     "avg": 0.039,
-     "total": 1.05,
-     "pass": -0.507,
-     "rush": 1.557,
-     "third": 0.276
+     "avg": 0.099,
+     "total": 3.167,
+     "pass": 2.35,
+     "rush": 0.817,
+     "third": 0.792
     }
    },
    {
@@ -6854,17 +6854,17 @@
     "injury": null,
     "stats": null,
     "season": {
-     "defensive.TOT": 67,
-     "defensive.TFL": 10,
      "interceptions.YDS": 4,
      "interceptions.AVG": 1.3,
      "interceptions.INT": 3,
-     "defensive.SOLO": 34,
+     "defensive.SOLO": 39,
      "interceptions.TD": 0,
-     "defensive.QB HUR": 10,
-     "defensive.SACKS": 4,
+     "defensive.SACKS": 5,
+     "defensive.TOT": 78,
+     "defensive.QB HUR": 12,
      "defensive.PD": 5,
-     "defensive.TD": 0
+     "defensive.TD": 0,
+     "defensive.TFL": 12
     },
     "ppa": null
    },
@@ -6891,11 +6891,11 @@
     "stats": null,
     "season": {
      "defensive.PD": 1,
-     "defensive.TOT": 14,
      "defensive.QB HUR": 0,
+     "defensive.TOT": 17,
+     "defensive.SOLO": 8,
      "defensive.SACKS": 0,
      "defensive.TFL": 0,
-     "defensive.SOLO": 7,
      "defensive.TD": 0
     },
     "ppa": null
@@ -7006,8 +7006,8 @@
      "defensive.TD": 0,
      "defensive.TFL": 0.5,
      "defensive.PD": 0,
+     "defensive.TOT": 5,
      "defensive.SOLO": 2,
-     "defensive.TOT": 4,
      "defensive.QB HUR": 1
     },
     "ppa": null
@@ -7058,16 +7058,16 @@
     "injury": null,
     "stats": null,
     "season": {
-     "defensive.TOT": 52,
      "interceptions.AVG": 15,
-     "defensive.TFL": 3,
+     "defensive.TFL": 5,
      "interceptions.TD": 0,
      "interceptions.YDS": 15,
      "defensive.TD": 0,
+     "defensive.SACKS": 2,
      "interceptions.INT": 1,
-     "defensive.SACKS": 1,
      "defensive.QB HUR": 4,
-     "defensive.SOLO": 23,
+     "defensive.SOLO": 28,
+     "defensive.TOT": 59,
      "defensive.PD": 4
     },
     "ppa": null
@@ -7249,7 +7249,7 @@
      "defensive.SOLO": 9,
      "defensive.QB HUR": 2,
      "defensive.TD": 0,
-     "defensive.TOT": 22,
+     "defensive.TOT": 23,
      "defensive.PD": 0,
      "defensive.SACKS": 0,
      "defensive.TFL": 1
@@ -7306,8 +7306,8 @@
      "defensive.SOLO": 1,
      "defensive.TD": 0,
      "defensive.TFL": 0,
+     "defensive.TOT": 2,
      "defensive.SACKS": 0,
-     "defensive.TOT": 1,
      "defensive.QB HUR": 0
     },
     "ppa": null
@@ -7358,12 +7358,12 @@
     "injury": null,
     "stats": null,
     "season": {
-     "defensive.TFL": 1.5,
      "defensive.TD": 0,
-     "defensive.TOT": 26,
+     "defensive.TOT": 30,
      "defensive.SOLO": 12,
      "defensive.QB HUR": 1,
      "defensive.SACKS": 1,
+     "defensive.TFL": 2.5,
      "defensive.PD": 3
     },
     "ppa": null
@@ -7391,8 +7391,8 @@
     "stats": null,
     "season": {
      "defensive.TFL": 1,
-     "defensive.SOLO": 5,
-     "defensive.TOT": 14,
+     "defensive.SOLO": 6,
+     "defensive.TOT": 15,
      "defensive.QB HUR": 1,
      "defensive.SACKS": 1,
      "defensive.TD": 0,
@@ -7510,18 +7510,18 @@
     "injury": null,
     "stats": null,
     "season": {
-     "defensive.PD": 5,
+     "defensive.TOT": 35,
+     "defensive.PD": 6,
      "interceptions.AVG": 0,
      "fumbles.FUM": 0,
      "interceptions.YDS": 0,
      "interceptions.TD": 0,
+     "defensive.SOLO": 19,
      "fumbles.REC": 2,
      "defensive.SACKS": 0,
      "interceptions.INT": 1,
      "defensive.TD": 1,
      "fumbles.LOST": 0,
-     "defensive.SOLO": 17,
-     "defensive.TOT": 32,
      "defensive.QB HUR": 0,
      "defensive.TFL": 0
     },
@@ -7574,12 +7574,12 @@
     "stats": null,
     "season": {
      "defensive.QB HUR": 1,
-     "defensive.SOLO": 16,
-     "defensive.SACKS": 0,
-     "defensive.TFL": 1,
+     "defensive.TOT": 29,
+     "defensive.SACKS": 1,
+     "defensive.TFL": 2,
      "defensive.TD": 0,
-     "defensive.TOT": 23,
-     "defensive.PD": 3
+     "defensive.PD": 3,
+     "defensive.SOLO": 21
     },
     "ppa": null
    },
@@ -7637,16 +7637,16 @@
     "injury": null,
     "stats": null,
     "season": {
-     "defensive.SOLO": 36,
-     "interceptions.INT": 1,
-     "defensive.PD": 3,
-     "defensive.TOT": 67,
      "interceptions.AVG": 0,
+     "defensive.SOLO": 38,
      "interceptions.YDS": 0,
      "defensive.TD": 0,
      "interceptions.TD": 0,
      "defensive.QB HUR": 0,
+     "defensive.TOT": 78,
      "defensive.SACKS": 0,
+     "interceptions.INT": 4,
+     "defensive.PD": 4,
      "defensive.TFL": 3
     },
     "ppa": null
@@ -7770,12 +7770,12 @@
     "stats": null,
     "season": {
      "defensive.PD": 2,
-     "defensive.SOLO": 26,
-     "defensive.TOT": 36,
      "defensive.TD": 0,
+     "defensive.SOLO": 27,
      "defensive.QB HUR": 0,
      "defensive.SACKS": 0,
-     "defensive.TFL": 2
+     "defensive.TFL": 2,
+     "defensive.TOT": 38
     },
     "ppa": null
    },
@@ -7831,7 +7831,7 @@
      "defensive.TD": 0,
      "defensive.SOLO": 13,
      "defensive.QB HUR": 0,
-     "defensive.TOT": 17
+     "defensive.TOT": 18
     },
     "ppa": null
    },
@@ -7916,11 +7916,11 @@
      "fumbles.FUM": 0,
      "fumbles.LOST": 0,
      "defensive.SACKS": 10,
+     "defensive.SOLO": 20,
      "fumbles.REC": 1,
-     "defensive.SOLO": 17,
-     "defensive.TFL": 15.5,
      "defensive.TD": 0,
-     "defensive.TOT": 24,
+     "defensive.TFL": 16,
+     "defensive.TOT": 32,
      "defensive.PD": 0,
      "defensive.QB HUR": 4
     },
@@ -7982,11 +7982,11 @@
     "season": {
      "defensive.PD": 0,
      "defensive.TD": 0,
+     "defensive.TOT": 20,
      "defensive.SACKS": 0,
-     "defensive.TOT": 18,
      "defensive.QB HUR": 0,
      "defensive.TFL": 0.5,
-     "defensive.SOLO": 7
+     "defensive.SOLO": 8
     },
     "ppa": null
    },
@@ -8015,10 +8015,10 @@
      "defensive.SACKS": 1,
      "defensive.PD": 0,
      "defensive.TD": 0,
+     "defensive.TFL": 1.5,
      "defensive.SOLO": 3,
-     "defensive.TOT": 7,
      "defensive.QB HUR": 1,
-     "defensive.TFL": 1
+     "defensive.TOT": 9
     },
     "ppa": null
    },
@@ -8116,12 +8116,12 @@
     "injury": null,
     "stats": null,
     "season": {
-     "punting.YDS": 1683,
      "punting.LONG": 57,
      "punting.TB": 2,
-     "punting.In 20": 10,
-     "punting.NO": 40,
-     "punting.YPP": 42.1
+     "punting.In 20": 12,
+     "punting.YDS": 1805,
+     "punting.YPP": 42,
+     "punting.NO": 43
     },
     "ppa": null
    },
@@ -8219,18 +8219,18 @@
     "injury": null,
     "stats": null,
     "season": {
-     "kicking.XPM": 34,
+     "kicking.XPA": 35,
      "defensive.TFL": 0,
      "defensive.SOLO": 1,
-     "kicking.FGM": 14,
-     "kicking.PTS": 76,
-     "kicking.XPA": 34,
-     "kicking.PCT": 0.933,
      "kicking.LONG": 52,
-     "kicking.FGA": 15,
+     "kicking.FGM": 17,
+     "defensive.TOT": 2,
      "defensive.TD": 0,
-     "defensive.TOT": 1,
+     "kicking.FGA": 18,
      "defensive.QB HUR": 0,
+     "kicking.XPM": 35,
+     "kicking.PTS": 86,
+     "kicking.PCT": 0.944,
      "defensive.SACKS": 0,
      "defensive.PD": 0
     },
@@ -8241,7 +8241,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-15T09:17:43.062Z",
+  "at": "2026-11-15T17:03:48.046Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9509,7 +9509,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-15T09:17:43.062Z",
+  "at": "2026-11-15T17:03:48.046Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
