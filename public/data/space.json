@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17T13:18:05.709Z",
- "llAt": "2026-11-17T13:18:05.709Z",
+ "updated": "2026-11-17T21:48:06.729Z",
+ "llAt": "2026-11-17T21:48:06.729Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1107,6 +1107,15 @@
  ],
  "llEvents": [
   {
+   "id": 1571,
+   "name": "SpaceX CRS-35 Dragon Undocking",
+   "type": "Spacecraft Undocking",
+   "date": "2026-11-18T16:05:00Z",
+   "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
+   "location": "International Space Station",
+   "webcast": false
+  },
+  {
    "id": 365,
    "name": "Boeing Starliner-1 Docking",
    "type": "Docking",
@@ -1153,6 +1162,15 @@
   }
  ],
  "events": [
+  {
+   "id": 1571,
+   "name": "SpaceX CRS-35 Dragon Undocking",
+   "type": "Spacecraft Undocking",
+   "date": "2026-11-18T16:05:00Z",
+   "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
+   "location": "International Space Station",
+   "webcast": false
+  },
   {
    "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
    "name": "NASA LIVE: Discussione sullo status di Voyager 1 e 2",
@@ -1458,7 +1476,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-17T03:48:54.972Z",
+  "at": "2026-11-17T21:47:46.516Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -3483,6 +3501,18 @@
  },
  "news": [
   {
+   "title": "Cardiac Research, Exercise Studies on Station Keeping Crews Healthy",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-17T19:28:52.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/17/cardiac-research-exercise-studies-on-station-keeping-crews-healthy/"
+  },
+  {
+   "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
+   "source": "NASA · News releases",
+   "time": "2026-11-17T19:16:22.000Z",
+   "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
+  },
+  {
    "title": "Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station",
    "source": "NASA · Space Station blog",
    "time": "2026-11-16T22:24:06.000Z",
@@ -3501,7 +3531,7 @@
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/12/dragon-science-spacesuits/"
   },
   {
-   "title": "I Am Artemis Katie Spicer",
+   "title": "I Am Artemis: Katie Spicer",
    "source": "NASA · Artemis",
    "time": "2026-11-12T20:10:02.000Z",
    "url": "https://www.nasa.gov/missions/artemis/i-am-artemis-katie-spicer/"
@@ -3535,12 +3565,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-05T13:44:35.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalk-begins-to-install-last-roll-out-solar-array/"
-  },
-  {
-   "title": "Astronauts Suit Up for Final Power Upgrade Spacewalk",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-05T12:02:48.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/astronauts-suit-up-for-final-power-upgrade-spacewalk/"
   },
   {
    "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
@@ -3625,16 +3649,10 @@
    "source": "NASA · Commercial Crew blog",
    "time": "2026-10-07T10:01:13.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
-  },
-  {
-   "title": "Crew-12 Ready to Depart as New Residents Begin Advanced Health Research",
-   "source": "NASA · Commercial Crew blog",
-   "time": "2026-10-06T17:57:55.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/06/crew-12-ready-to-depart-as-new-residents-begin-advanced-health-research/"
   }
  ],
  "corps": {
-  "at": "2026-11-17T13:17:54.143Z",
+  "at": "2026-11-17T21:47:55.207Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -3850,7 +3868,7 @@
     "last": "2026-09-14T15:00:00.000Z",
     "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
     "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
-    "count": 6
+    "count": 5
    }
   ],
   "news": [
@@ -3911,8 +3929,7 @@
      "Spacewalks",
      "Station systems",
      "Robotics",
-     "Geology",
-     "Artemis"
+     "Geology"
     ],
     "who": [
      "Lauren Edgar",
@@ -4040,7 +4057,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-17T13:17:58.808Z",
+  "at": "2026-11-17T21:47:59.892Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4553,7 +4570,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-17T13:18:05.708Z",
+  "at": "2026-11-17T21:48:06.728Z",
   "items": [
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
