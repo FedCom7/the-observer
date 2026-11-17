@@ -36,7 +36,10 @@ function useRoomFit(dep?: string) {
       if (getComputedStyle(el).gridTemplateColumns.split(' ').length < 3) { el.style.removeProperty('--theatre-h'); el.style.removeProperty('--live-h'); return; }
       const liveH = head.offsetHeight + games.scrollHeight + 2;
       const top = map.getBoundingClientRect().top + window.scrollY;
-      const theatre = Math.max(340, window.innerHeight - top - 8 - liveH - 10);
+      // top already includes the top bar with its safe-area padding; the bottom padding of .room
+      // carries the home-indicator inset, so read it back instead of assuming 0
+      const padBottom = parseFloat(getComputedStyle(el).paddingBottom) || 12;
+      const theatre = Math.max(340, window.innerHeight - top - 8 - liveH - (padBottom - 2));
       el.style.setProperty('--live-h', `${liveH}px`);
       el.style.setProperty('--theatre-h', `${theatre}px`);
     };
