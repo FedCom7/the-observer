@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-17T03:49:15.461Z",
- "llAt": "2026-11-17T03:49:15.461Z",
+ "updated": "2026-11-17T13:18:05.709Z",
+ "llAt": "2026-11-17T13:18:05.709Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1153,6 +1153,17 @@
   }
  ],
  "events": [
+  {
+   "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
+   "name": "NASA LIVE: Discussione sullo status di Voyager 1 e 2",
+   "type": "NASA broadcast",
+   "date": "2026-11-19T17:00:00.000Z",
+   "description": "",
+   "location": "",
+   "webcast": true,
+   "allDay": false,
+   "source": "AstronauticAgenda"
+  },
   {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
    "name": "Docking · Progress MS-36",
@@ -2351,7 +2362,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-16T20:26:03.978Z",
+  "at": "2026-11-17T13:17:45.104Z",
   "stats": {
    "total": 746,
    "successes": 731,
@@ -3623,7 +3634,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-17T03:49:03.732Z",
+  "at": "2026-11-17T13:17:54.143Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4029,7 +4040,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-17T03:49:08.932Z",
+  "at": "2026-11-17T13:17:58.808Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4542,7 +4553,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-17T03:49:15.460Z",
+  "at": "2026-11-17T13:18:05.708Z",
   "items": [
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
@@ -4633,6 +4644,19 @@
     "date": "2026-11-14T20:20:00.000Z",
     "allDay": false,
     "description": "Live:",
+    "location": ""
+   },
+   {
+    "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
+    "kind": "broadcast",
+    "name": "NASA LIVE: Discussione sullo status di Voyager 1 e 2",
+    "vehicle": null,
+    "station": null,
+    "eva": null,
+    "crewed": null,
+    "date": "2026-11-19T17:00:00.000Z",
+    "allDay": false,
+    "description": "",
     "location": ""
    },
    {
