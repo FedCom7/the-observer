@@ -127,17 +127,19 @@ function TopBar({ liveCount, next72, wall }: { liveCount: number; next72: ObsEve
       </div>
       <div className="spacer" />
       <button className="stat stat-btn" aria-pressed={wall} title={wall ? 'Back to the overview' : 'Open the live wall: today and tomorrow'} onClick={() => nav(wall ? '/' : '/live')}>
-        <small>LIVE NOW ›</small><b style={{ color: 'var(--signal)' }}>{liveCount}</b>
+        <small><span className="l-long">LIVE NOW</span><span className="l-short">LIVE</span> ›</small><b style={{ color: 'var(--signal)' }}>{liveCount}</b>
       </button>
-      <div className="stat"><small>NEXT 72H</small><b>{next72.length}</b></div>
-      <div className="stat" title="Events in the next 72 hours, by category">
-        <small>TEMPO 72H</small>
+      <div className="stat" title="Events in the next 72 hours"><small><span className="l-long">NEXT 72H</span><span className="l-short">72H</span></small><b>{next72.length}</b></div>
+      <div className="stat stat-tempo" title="Events in the next 72 hours, by category">
+        <small className="l-long">TEMPO 72H</small>
         <div className="tempo">{tempo.map(([c, v]) => <div key={c} title={`${CATS[c]}: ${v}`} style={{ height: 4 + Math.min(v, 9) * 2.4, background: catColor(c) }} />)}</div>
       </div>
-      <button className="btn" aria-pressed={spoiler.on} onClick={spoiler.toggle}>Spoiler shield</button>
-      <span className="sim" title={failing.map(([k, s]) => `${k}: ${s.error}`).join('\n') || 'All sources responding'}>
-        {failing.length ? `${failing.length} source${failing.length > 1 ? 's' : ''} offline` : 'All feeds live'}
-      </span>
+      <div className="top-tools">
+        <button className="btn" aria-pressed={spoiler.on} onClick={spoiler.toggle}>Spoiler shield</button>
+        <span className="sim" title={failing.map(([k, s]) => `${k}: ${s.error}`).join('\n') || 'All sources responding'}>
+          {failing.length ? `${failing.length} source${failing.length > 1 ? 's' : ''} offline` : 'All feeds live'}
+        </span>
+      </div>
     </header>
   );
 }
