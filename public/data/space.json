@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18T13:01:20.765Z",
- "llAt": "2026-11-18T13:01:20.765Z",
+ "updated": "2026-11-18T21:25:43.456Z",
+ "llAt": "2026-11-18T21:25:43.456Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1110,7 +1110,7 @@
    "id": 1571,
    "name": "SpaceX CRS-35 Dragon Undocking",
    "type": "Spacecraft Undocking",
-   "date": "2026-11-18T16:05:00Z",
+   "date": "2026-11-20T17:05:00Z",
    "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
    "location": "International Space Station",
    "webcast": false
@@ -1163,26 +1163,6 @@
  ],
  "events": [
   {
-   "id": 1571,
-   "name": "SpaceX CRS-35 Dragon Undocking",
-   "type": "Spacecraft Undocking",
-   "date": "2026-11-18T16:05:00Z",
-   "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
-   "location": "International Space Station",
-   "webcast": false
-  },
-  {
-   "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
-   "name": "Undocking · Dragon SpX-35",
-   "type": "Undocking",
-   "date": "2026-11-18T16:05:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": false,
-   "source": "AstronauticAgenda"
-  },
-  {
    "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
    "name": "Reentry · Dragon SpX-35",
    "type": "Landing",
@@ -1191,6 +1171,17 @@
    "location": "ISS",
    "webcast": false,
    "allDay": true,
+   "source": "AstronauticAgenda"
+  },
+  {
+   "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+   "name": "Undocking · Dragon SpX-35",
+   "type": "Undocking",
+   "date": "2026-11-19T16:05:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": false,
    "source": "AstronauticAgenda"
   },
   {
@@ -1203,6 +1194,15 @@
    "webcast": true,
    "allDay": false,
    "source": "AstronauticAgenda"
+  },
+  {
+   "id": 1571,
+   "name": "SpaceX CRS-35 Dragon Undocking",
+   "type": "Spacecraft Undocking",
+   "date": "2026-11-20T17:05:00Z",
+   "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
+   "location": "International Space Station",
+   "webcast": false
   },
   {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
@@ -2413,7 +2413,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-18T03:42:46.127Z",
+  "at": "2026-11-18T21:25:20.106Z",
   "stats": {
    "total": 746,
    "successes": 731,
@@ -2423,7 +2423,7 @@
    "landingAttempts": 719,
    "landingStreak": 0,
    "dragonReturns": 64,
-   "pending": 136
+   "pending": 137
   },
   "year": 2026,
   "yearCount": 127,
@@ -3277,6 +3277,20 @@
     "webcast": false
    },
    {
+    "id": "b0d27def-0a88-44c3-a947-1fd5b8503e2c",
+    "name": "USSF-380",
+    "rocket": "Falcon 9",
+    "net": "2026-11-28T04:53:00Z",
+    "status": "Go",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
     "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
     "name": "Cygnus CRS-2 NG-25",
     "rocket": "Falcon 9",
@@ -3429,20 +3443,6 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
-    "name": "SDA Tranche 1 Tracking Layer D",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3534,6 +3534,18 @@
  },
  "news": [
   {
+   "title": "NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-18T19:09:48.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/"
+  },
+  {
+   "title": "What Is the Moon Base?",
+   "source": "NASA · News releases",
+   "time": "2026-11-18T17:36:03.000Z",
+   "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-the-moon-base/"
+  },
+  {
    "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
    "source": "NASA · Space Station blog",
    "time": "2026-11-18T06:44:57.000Z",
@@ -3544,12 +3556,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-17T19:28:52.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/17/cardiac-research-exercise-studies-on-station-keeping-crews-healthy/"
-  },
-  {
-   "title": "NASA to Cover 35th SpaceX Resupply Mission Space Station Departure",
-   "source": "NASA · News releases",
-   "time": "2026-11-17T19:16:22.000Z",
-   "url": "https://www.nasa.gov/news-release/nasa-to-cover-35th-spacex-resupply-mission-space-station-departure/"
   },
   {
    "title": "Biotechnology, Spacesuit Work, and Dragon Packing Start Week Aboard Station",
@@ -3592,12 +3598,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-06T17:48:13.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/06/spacewalk-cleanup-biomedical-science-and-maintenance-wrap-up-week/"
-  },
-  {
-   "title": "Spacewalkers Install Final Roll-Out Solar Array",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-05T20:52:33.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/"
   },
   {
    "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
@@ -3685,7 +3685,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-18T13:01:09.101Z",
+  "at": "2026-11-18T21:25:30.105Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4090,7 +4090,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-18T13:01:14.122Z",
+  "at": "2026-11-18T21:25:36.208Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4603,7 +4603,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-18T13:01:20.764Z",
+  "at": "2026-11-18T21:25:43.455Z",
   "items": [
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
@@ -4697,19 +4697,6 @@
     "location": ""
    },
    {
-    "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
-    "kind": "undock",
-    "name": "Undocking · Dragon SpX-35",
-    "vehicle": "Dragon SpX-35",
-    "station": "ISS",
-    "eva": null,
-    "crewed": false,
-    "date": "2026-11-18T16:05:00.000Z",
-    "allDay": false,
-    "description": "",
-    "location": "Harmony PMA-3/IDA-Z"
-   },
-   {
     "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
     "kind": "landing",
     "name": "Reentry · Dragon SpX-35",
@@ -4719,6 +4706,19 @@
     "crewed": false,
     "date": "2026-11-19T11:00:00.000Z",
     "allDay": true,
+    "description": "",
+    "location": "Harmony PMA-3/IDA-Z"
+   },
+   {
+    "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+    "kind": "undock",
+    "name": "Undocking · Dragon SpX-35",
+    "vehicle": "Dragon SpX-35",
+    "station": "ISS",
+    "eva": null,
+    "crewed": false,
+    "date": "2026-11-19T16:05:00.000Z",
+    "allDay": false,
     "description": "",
     "location": "Harmony PMA-3/IDA-Z"
    },
