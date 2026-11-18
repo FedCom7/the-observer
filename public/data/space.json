@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-18T03:42:52.772Z",
- "llAt": "2026-11-18T03:42:52.772Z",
+ "updated": "2026-11-18T13:01:20.765Z",
+ "llAt": "2026-11-18T13:01:20.765Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -264,7 +264,7 @@
      25.99677
     ],
     "webcast": false,
-    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_on_the_image_thumbnail_20260724044615.jpeg",
+    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/starship_42_dur_image_thumbnail_20261118092531.jpeg",
     "patch": null,
     "crew": null,
     "past": true
@@ -1172,11 +1172,33 @@
    "webcast": false
   },
   {
+   "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+   "name": "Undocking · Dragon SpX-35",
+   "type": "Undocking",
+   "date": "2026-11-18T16:05:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": false,
+   "source": "AstronauticAgenda"
+  },
+  {
+   "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
+   "name": "Reentry · Dragon SpX-35",
+   "type": "Landing",
+   "date": "2026-11-19T11:00:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": true,
+   "source": "AstronauticAgenda"
+  },
+  {
    "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
-   "name": "NASA LIVE: Discussione sullo status di Voyager 1 e 2",
+   "name": "NASA Live: Discussione sullo status di Voyager 1 e 2",
    "type": "NASA broadcast",
    "date": "2026-11-19T17:00:00.000Z",
-   "description": "",
+   "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=oPgE-ECuJEs\">https://www.youtube.com/watch?v=oPgE-ECuJEs</a>",
    "location": "",
    "webcast": true,
    "allDay": false,
@@ -1191,6 +1213,17 @@
    "location": "ISS",
    "webcast": false,
    "allDay": true,
+   "source": "AstronauticAgenda"
+  },
+  {
+   "id": "agenda:2sg05i1qr3rq70vfc9m8oqn2ki@google.com",
+   "name": "NASA Live: Rilascio delle prime immagini dal Nancy Grace Roman Space Telescope",
+   "type": "NASA broadcast",
+   "date": "2026-12-07T20:30:00.000Z",
+   "description": "",
+   "location": "",
+   "webcast": true,
+   "allDay": false,
    "source": "AstronauticAgenda"
   },
   {
@@ -1476,7 +1509,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-17T21:47:46.516Z",
+  "at": "2026-11-18T13:00:59.112Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -1511,7 +1544,7 @@
      "age": 48,
      "firstFlight": "2021-04-09T07:42:41Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P480DT14H7M21S",
+     "inSpace": "P481DT14H2M37S",
      "evaTime": "P1DT5H49M"
     },
     {
@@ -1523,7 +1556,7 @@
      "age": 50,
      "firstFlight": "2026-07-14T14:47:43Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P125DT10H22M39S",
+     "inSpace": "P126DT10H17M47S",
      "evaTime": "P1DT9H39M"
     },
     {
@@ -1535,7 +1568,7 @@
      "age": 44,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P46DT9H59M36S",
+     "inSpace": "P47DT9H54M52S",
      "evaTime": "PT14H10M"
     },
     {
@@ -1547,7 +1580,7 @@
      "age": 47,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P46DT10H15S",
+     "inSpace": "P47DT9H55M23S",
      "evaTime": "P0D"
     },
     {
@@ -1559,7 +1592,7 @@
      "age": 37,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P46DT10H1M21S",
+     "inSpace": "P47DT9H56M27S",
      "evaTime": "P0D"
     },
     {
@@ -1571,7 +1604,7 @@
      "age": 42,
      "firstFlight": "2022-10-05T16:00:57Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P282DT20H23M5S",
+     "inSpace": "P283DT20H18M21S",
      "evaTime": "P0D"
     },
     {
@@ -1583,7 +1616,7 @@
      "age": 38,
      "firstFlight": "2022-04-27T07:52:55Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P216DT23H1M24S",
+     "inSpace": "P217DT22H56M43S",
      "evaTime": "P0D"
     }
    ]
@@ -1614,24 +1647,6 @@
     "since": "2026-10-15T14:27:00Z"
    },
    {
-    "name": "Unity nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Zvezda aft",
-    "vehicle": "Progress MS-34",
-    "mission": "Progress MS-34 (95P)",
-    "since": "2026-04-28T00:00:48Z"
-   },
-   {
-    "name": "Poisk zenith",
-    "vehicle": "Progress MS-35",
-    "mission": "Progress MS-35 (96P)",
-    "since": "2026-09-19T13:44:20Z"
-   },
-   {
     "name": "Zvezda nadir",
     "vehicle": null,
     "mission": null,
@@ -1648,6 +1663,24 @@
     "vehicle": null,
     "mission": null,
     "since": null
+   },
+   {
+    "name": "Unity nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Zvezda aft",
+    "vehicle": "Progress MS-34",
+    "mission": "Progress MS-34 (95P)",
+    "since": "2026-04-28T00:00:48Z"
+   },
+   {
+    "name": "Poisk zenith",
+    "vehicle": "Progress MS-35",
+    "mission": "Progress MS-35 (96P)",
+    "since": "2026-09-19T13:44:20Z"
    },
    {
     "name": "Node 2 forward",
@@ -3501,6 +3534,12 @@
  },
  "news": [
   {
+   "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-18T06:44:57.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/"
+  },
+  {
    "title": "Cardiac Research, Exercise Studies on Station Keeping Crews Healthy",
    "source": "NASA · Space Station blog",
    "time": "2026-11-17T19:28:52.000Z",
@@ -3559,12 +3598,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-05T20:52:33.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalkers-install-final-roll-out-solar-array/"
-  },
-  {
-   "title": "Spacewalk Begins to Install Last Roll-Out Solar Array",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-05T13:44:35.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/05/spacewalk-begins-to-install-last-roll-out-solar-array/"
   },
   {
    "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
@@ -3652,7 +3685,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-17T21:47:55.207Z",
+  "at": "2026-11-18T13:01:09.101Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4057,7 +4090,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-17T21:47:59.892Z",
+  "at": "2026-11-18T13:01:14.122Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4570,7 +4603,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-18T03:42:52.772Z",
+  "at": "2026-11-18T13:01:20.764Z",
   "items": [
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
@@ -4664,16 +4697,42 @@
     "location": ""
    },
    {
+    "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+    "kind": "undock",
+    "name": "Undocking · Dragon SpX-35",
+    "vehicle": "Dragon SpX-35",
+    "station": "ISS",
+    "eva": null,
+    "crewed": false,
+    "date": "2026-11-18T16:05:00.000Z",
+    "allDay": false,
+    "description": "",
+    "location": "Harmony PMA-3/IDA-Z"
+   },
+   {
+    "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
+    "kind": "landing",
+    "name": "Reentry · Dragon SpX-35",
+    "vehicle": "Dragon SpX-35",
+    "station": "ISS",
+    "eva": null,
+    "crewed": false,
+    "date": "2026-11-19T11:00:00.000Z",
+    "allDay": true,
+    "description": "",
+    "location": "Harmony PMA-3/IDA-Z"
+   },
+   {
     "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
     "kind": "broadcast",
-    "name": "NASA LIVE: Discussione sullo status di Voyager 1 e 2",
+    "name": "NASA Live: Discussione sullo status di Voyager 1 e 2",
     "vehicle": null,
     "station": null,
     "eva": null,
     "crewed": null,
     "date": "2026-11-19T17:00:00.000Z",
     "allDay": false,
-    "description": "",
+    "description": "Live:<br><a href=\"https://www.youtube.com/watch?v=oPgE-ECuJEs\">https://www.youtube.com/watch?v=oPgE-ECuJEs</a>",
     "location": ""
    },
    {
@@ -4724,6 +4783,19 @@
     "eva": null,
     "crewed": null,
     "date": "2026-12-03T20:16:00.000Z",
+    "allDay": false,
+    "description": "",
+    "location": ""
+   },
+   {
+    "id": "agenda:2sg05i1qr3rq70vfc9m8oqn2ki@google.com",
+    "kind": "broadcast",
+    "name": "NASA Live: Rilascio delle prime immagini dal Nancy Grace Roman Space Telescope",
+    "vehicle": null,
+    "station": null,
+    "eva": null,
+    "crewed": null,
+    "date": "2026-12-07T20:30:00.000Z",
     "allDay": false,
     "description": "",
     "location": ""

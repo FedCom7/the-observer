@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T03:41:46.790Z",
+ "updated": "2026-11-18T12:59:24.595Z",
  "elo": {
   "table": [
    {
@@ -20,7 +20,7 @@
     "rank": 3,
     "code": "AR",
     "name": "Argentina",
-    "rating": 2157,
+    "rating": 2158,
     "peak": 2200
    },
    {
@@ -48,7 +48,7 @@
     "rank": 7,
     "code": "CO",
     "name": "Colombia",
-    "rating": 1992,
+    "rating": 1987,
     "peak": 2069
    },
    {
@@ -67,17 +67,17 @@
    },
    {
     "rank": 10,
+    "code": "NL",
+    "name": "Netherlands",
+    "rating": 1953,
+    "peak": 2153
+   },
+   {
+    "rank": 10,
     "code": "DE",
     "name": "Germany",
     "rating": 1953,
     "peak": 2222
-   },
-   {
-    "rank": 11,
-    "code": "NL",
-    "name": "Netherlands",
-    "rating": 1952,
-    "peak": 2153
    },
    {
     "rank": 12,
@@ -118,7 +118,7 @@
     "rank": 17,
     "code": "UY",
     "name": "Uruguay",
-    "rating": 1869,
+    "rating": 1870,
     "peak": 2104
    },
    {
@@ -136,25 +136,25 @@
     "peak": 1955
    },
    {
-    "rank": 20,
+    "rank": 19,
     "code": "EC",
     "name": "Ecuador",
-    "rating": 1852,
+    "rating": 1856,
     "peak": 1938
    },
    {
     "rank": 21,
+    "code": "MX",
+    "name": "Mexico",
+    "rating": 1841,
+    "peak": 1985
+   },
+   {
+    "rank": 22,
     "code": "AT",
     "name": "Austria",
     "rating": 1838,
     "peak": 2070
-   },
-   {
-    "rank": 22,
-    "code": "MX",
-    "name": "Mexico",
-    "rating": 1837,
-    "peak": 1985
    },
    {
     "rank": 23,
@@ -167,7 +167,7 @@
     "rank": 24,
     "code": "US",
     "name": "United States",
-    "rating": 1804,
+    "rating": 1810,
     "peak": 1890
    },
    {
@@ -242,31 +242,31 @@
    },
    {
     "rank": 35,
+    "code": "CL",
+    "name": "Chile",
+    "rating": 1726,
+    "peak": 2040
+   },
+   {
+    "rank": 36,
     "code": "KR",
     "name": "South Korea",
     "rating": 1723,
     "peak": 1845
    },
    {
-    "rank": 35,
+    "rank": 36,
     "code": "VE",
     "name": "Venezuela",
     "rating": 1723,
     "peak": 1829
    },
    {
-    "rank": 37,
+    "rank": 38,
     "code": "UA",
     "name": "Ukraine",
     "rating": 1721,
     "peak": 1872
-   },
-   {
-    "rank": 37,
-    "code": "CL",
-    "name": "Chile",
-    "rating": 1721,
-    "peak": 2040
    },
    {
     "rank": 39,
@@ -291,17 +291,17 @@
    },
    {
     "rank": 42,
+    "code": "EI",
+    "name": "Northern Ireland",
+    "rating": 1699,
+    "peak": 1853
+   },
+   {
+    "rank": 42,
     "code": "NG",
     "name": "Nigeria",
     "rating": 1699,
     "peak": 1826
-   },
-   {
-    "rank": 43,
-    "code": "EI",
-    "name": "Northern Ireland",
-    "rating": 1698,
-    "peak": 1853
    },
    {
     "rank": 44,
@@ -440,7 +440,7 @@
     "rank": 63,
     "code": "BO",
     "name": "Bolivia",
-    "rating": 1605,
+    "rating": 1601,
     "peak": 1798
    },
    {
@@ -452,17 +452,17 @@
    },
    {
     "rank": 65,
-    "code": "CR",
-    "name": "Costa Rica",
-    "rating": 1584,
-    "peak": 1866
-   },
-   {
-    "rank": 65,
     "code": "GE",
     "name": "Georgia",
     "rating": 1584,
     "peak": 1754
+   },
+   {
+    "rank": 66,
+    "code": "CR",
+    "name": "Costa Rica",
+    "rating": 1583,
+    "peak": 1866
    },
    {
     "rank": 67,
@@ -475,15 +475,15 @@
     "rank": 68,
     "code": "JM",
     "name": "Jamaica",
-    "rating": 1574,
+    "rating": 1570,
     "peak": 1700
    },
    {
     "rank": 69,
     "code": "AO",
     "name": "Angola",
-    "rating": 1568,
-    "peak": 1629
+    "rating": 1567,
+    "peak": 1628
    },
    {
     "rank": 70,
@@ -501,23 +501,23 @@
    },
    {
     "rank": 72,
-    "code": "HT",
-    "name": "Haiti",
-    "rating": 1552,
-    "peak": 1673
-   },
-   {
-    "rank": 73,
     "code": "BF",
     "name": "Burkina Faso",
     "rating": 1551,
     "peak": 1617
    },
    {
+    "rank": 73,
+    "code": "HT",
+    "name": "Haiti",
+    "rating": 1545,
+    "peak": 1673
+   },
+   {
     "rank": 74,
     "code": "IQ",
     "name": "Iraq",
-    "rating": 1539,
+    "rating": 1538,
     "peak": 1740
    },
    {
@@ -525,7 +525,7 @@
     "code": "HN",
     "name": "Honduras",
     "rating": 1530,
-    "peak": 1789
+    "peak": 1788
    },
    {
     "rank": 76,
@@ -546,7 +546,7 @@
     "code": "BY",
     "name": "Belarus",
     "rating": 1517,
-    "peak": 1666
+    "peak": 1665
    },
    {
     "rank": 79,
@@ -577,27 +577,27 @@
      ],
      [
       1992,
-      1979
+      1980
      ],
      [
       1993,
-      1999
+      2000
      ],
      [
       1994,
-      1985
+      1986
      ],
      [
       1995,
-      1990
+      1991
      ],
      [
       1996,
-      1975
+      1976
      ],
      [
       1997,
-      1975
+      1976
      ],
      [
       1998,
@@ -653,7 +653,7 @@
      ],
      [
       2011,
-      1884
+      1885
      ],
      [
       2012,
@@ -1595,43 +1595,43 @@
      ],
      [
       2017,
-      1894
+      1895
      ],
      [
       2018,
-      1984
+      1985
      ],
      [
       2019,
-      2016
+      2017
      ],
      [
       2020,
-      1993
+      1994
      ],
      [
       2021,
-      1928
+      1929
      ],
      [
       2022,
-      2072
+      2073
      ],
      [
       2023,
-      1969
+      1970
      ],
      [
       2024,
-      1937
+      1938
      ],
      [
       2025,
-      1958
+      1959
      ],
      [
       2026,
-      1952
+      1953
      ]
     ]
    },
@@ -1784,7 +1784,7 @@
      ],
      [
       2026,
-      2157
+      2158
      ]
     ]
    },
