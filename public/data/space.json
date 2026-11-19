@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-19T03:22:54.897Z",
- "llAt": "2026-11-19T03:22:54.897Z",
+ "updated": "2026-11-19T12:59:01.107Z",
+ "llAt": "2026-11-19T12:59:01.107Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1163,28 +1163,6 @@
  ],
  "events": [
   {
-   "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
-   "name": "Reentry · Dragon SpX-35",
-   "type": "Landing",
-   "date": "2026-11-19T11:00:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": true,
-   "source": "AstronauticAgenda"
-  },
-  {
-   "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
-   "name": "Undocking · Dragon SpX-35",
-   "type": "Undocking",
-   "date": "2026-11-19T16:05:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": false,
-   "source": "AstronauticAgenda"
-  },
-  {
    "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
    "name": "NASA Live: Discussione sullo status di Voyager 1 e 2",
    "type": "NASA broadcast",
@@ -1203,6 +1181,28 @@
    "description": "The SpaceX CRS-35 Dragon spacecraft will undock from the International Space Station ahead of its reentry, splashdown and recovery.",
    "location": "International Space Station",
    "webcast": false
+  },
+  {
+   "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+   "name": "Undocking · Dragon SpX-35",
+   "type": "Undocking",
+   "date": "2026-11-20T17:05:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": false,
+   "source": "AstronauticAgenda"
+  },
+  {
+   "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
+   "name": "Splashdown · Dragon SpX-35",
+   "type": "Landing",
+   "date": "2026-11-21T22:04:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": false,
+   "source": "AstronauticAgenda"
   },
   {
    "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
@@ -2413,7 +2413,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-18T21:25:20.106Z",
+  "at": "2026-11-19T12:58:39.474Z",
   "stats": {
    "total": 746,
    "successes": 731,
@@ -3238,7 +3238,7 @@
     "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
     "name": "USSF-317",
     "rocket": "Falcon 9",
-    "net": "2026-11-20T02:46:00Z",
+    "net": "2026-11-20T04:28:55Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3685,7 +3685,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-18T21:25:30.105Z",
+  "at": "2026-11-19T12:58:48.729Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4090,7 +4090,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-18T21:25:36.208Z",
+  "at": "2026-11-19T12:58:54.014Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4603,7 +4603,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-19T03:22:54.896Z",
+  "at": "2026-11-19T12:59:01.106Z",
   "items": [
    {
     "id": "agenda:0vj2jevki38u5esj2l0cujsp3s@google.com",
@@ -4697,32 +4697,6 @@
     "location": ""
    },
    {
-    "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
-    "kind": "landing",
-    "name": "Reentry · Dragon SpX-35",
-    "vehicle": "Dragon SpX-35",
-    "station": "ISS",
-    "eva": null,
-    "crewed": false,
-    "date": "2026-11-19T11:00:00.000Z",
-    "allDay": true,
-    "description": "",
-    "location": "Harmony PMA-3/IDA-Z"
-   },
-   {
-    "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
-    "kind": "undock",
-    "name": "Undocking · Dragon SpX-35",
-    "vehicle": "Dragon SpX-35",
-    "station": "ISS",
-    "eva": null,
-    "crewed": false,
-    "date": "2026-11-19T16:05:00.000Z",
-    "allDay": false,
-    "description": "",
-    "location": "Harmony PMA-3/IDA-Z"
-   },
-   {
     "id": "agenda:024anvjqtjv6ecucsqivb172ld@google.com",
     "kind": "broadcast",
     "name": "NASA Live: Discussione sullo status di Voyager 1 e 2",
@@ -4736,6 +4710,19 @@
     "location": ""
    },
    {
+    "id": "agenda:1tbngo8rd627j8d5jand5sp51j@google.com",
+    "kind": "undock",
+    "name": "Undocking · Dragon SpX-35",
+    "vehicle": "Dragon SpX-35",
+    "station": "ISS",
+    "eva": null,
+    "crewed": false,
+    "date": "2026-11-20T17:05:00.000Z",
+    "allDay": false,
+    "description": "",
+    "location": "Harmony PMA-3/IDA-Z"
+   },
+   {
     "id": "agenda:7s0c2ak8nqg45r78i52h2enamh@google.com",
     "kind": "deep",
     "name": "BepiColombo: cattura di MPO e Mio dalla gravità di Mercurio",
@@ -4747,6 +4734,19 @@
     "allDay": true,
     "description": "I due orbiter MPO (Mercury Planetary Orbiter) e Mio (Mercury Magnetospheric Orbiter), ancora agganciati fra loro, vengono catturati dalla gravità di Mercurio. L'orbita è di 674 x 178.000 km di altitudine.",
     "location": ""
+   },
+   {
+    "id": "agenda:3hv3v7ihsnpiqn1geim1045jn0@google.com",
+    "kind": "landing",
+    "name": "Splashdown · Dragon SpX-35",
+    "vehicle": "Dragon SpX-35",
+    "station": "ISS",
+    "eva": null,
+    "crewed": false,
+    "date": "2026-11-21T22:04:00.000Z",
+    "allDay": false,
+    "description": "",
+    "location": "Harmony PMA-3/IDA-Z"
    },
    {
     "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
