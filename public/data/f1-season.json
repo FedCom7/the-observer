@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:27:59.568Z",
+ "updated": "2026-11-20T03:07:40.585Z",
  "year": 2026,
  "meetings": [
   {
@@ -962,7 +962,7 @@
      "key": 11413,
      "name": "Practice 1",
      "start": "2026-11-20T00:30:00+00:00",
-     "done": false
+     "done": true
     },
     {
      "key": 11414,
@@ -1263,10 +1263,10 @@
    "n": 50,
    "code": "HIR",
    "name": "Ryo HIRAKAWA",
-   "first": null,
-   "last": null,
-   "team": null,
-   "colour": null,
+   "first": "Ryo",
+   "last": "Hirakawa",
+   "team": "Haas F1 Team",
+   "colour": "#9C9FA2",
    "photo": null
   },
   "51": {
@@ -30847,6 +30847,12 @@
      "points": 0
     }
    ]
+  },
+  {
+   "key": 11413,
+   "name": "Practice 1",
+   "meeting": 1300,
+   "results": []
   }
  ],
  "champ": [
@@ -36649,7 +36655,7 @@
     "s1": 2.535,
     "s2": 2.542,
     "s3": 2.305,
-    "speed": -8.8,
+    "speed": -8.7,
     "deg": {
      "MEDIUM": {
       "slope": 0.058,
@@ -36660,8 +36666,8 @@
       "n": 33
      },
      "SOFT": {
-      "slope": 0.082,
-      "n": 17
+      "slope": 0.069,
+      "n": 19
      },
      "INTERMEDIATE": {
       "slope": -0.02,
@@ -36670,10 +36676,10 @@
     },
     "pit": 3.9,
     "pitN": 11,
-    "start": 1.35,
-    "gained": 1.57,
+    "start": 1.33,
+    "gained": 1.71,
     "dnf": 7,
-    "starts": 51,
+    "starts": 52,
     "byType": {
      "street": 2.334,
      "mixed": 2.164,
@@ -37075,8 +37081,8 @@
    "50": {
     "quali": 3.194,
     "race": 2.648,
-    "start": null,
-    "gained": null,
+    "start": 0,
+    "gained": 8,
     "h2hQ": [
      0,
      1
@@ -37085,7 +37091,7 @@
      0,
      0
     ],
-    "avgFinish": null,
+    "avgFinish": 10,
     "avgQuali": 18,
     "dnf": 0
    },
