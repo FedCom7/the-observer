@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:28:47.365Z",
+ "updated": "2026-11-20T20:08:10.887Z",
  "season": 2027,
  "races": [
   {
@@ -365,9 +365,14 @@
    "discipline": "Downhill",
    "gender": "women",
    "start": "2026-12-11T18:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-11T18:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -393,9 +398,14 @@
    "discipline": "Downhill",
    "gender": "women",
    "start": "2026-12-12T18:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-12T18:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -420,10 +430,15 @@
    "country": "USA",
    "discipline": "Super G",
    "gender": "women",
-   "start": "2026-12-13T18:30:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-13T18:00:00.000Z",
+   "approxTime": false,
    "tz": "America/Denver",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-13T18:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {

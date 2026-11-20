@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-20T11:28:18.784Z",
+ "updated": "2026-11-20T20:07:32.547Z",
  "since": "2026-10-04T18:00:00.000Z",
- "total": 362,
+ "total": 368,
  "recent": [
   {
    "id": "royal:cc:2026-10-04:richard+birgitte:1tnj34k",
@@ -3665,6 +3665,67 @@
    "title": "Attended a Trustees’ Dinner at the Castle Hotel",
    "kind": "Reception",
    "place": "Windsor, Berkshire"
+  },
+  {
+   "id": "royal:cc:2026-11-19:richard:8pu9ab",
+   "people": [
+    "richard"
+   ],
+   "start": "2026-11-19T10:00:00.000Z",
+   "title": "Attended the Nuffield Farming Annual Conference at New Dock Hall",
+   "kind": "Event",
+   "place": "Armouries Drive, Leeds"
+  },
+  {
+   "id": "royal:cc:2026-11-19:queen:1d782xe",
+   "people": [
+    "queen"
+   ],
+   "start": "2026-11-19T12:00:00.000Z",
+   "title": "Unveiled a portrait at the Cavalry and Guards Club",
+   "kind": "Armed forces",
+   "place": "127 Piccadilly, London W1"
+  },
+  {
+   "id": "royal:cc:2026-11-19:edward:cgg23y",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-19T12:00:00.000Z",
+   "title": "Attended the International Council at the Castle Hotel",
+   "kind": "Event",
+   "place": "Windsor, Berkshire"
+  },
+  {
+   "id": "royal:cc:2026-11-19:queen:1u5kmva",
+   "people": [
+    "queen"
+   ],
+   "start": "2026-11-19T14:00:00.000Z",
+   "title": "Gave a Reception at Clarence House to mark the Twentieth Anniversary of Her Majesty’s Presidency of the Brooke Hospital for Animals",
+   "kind": "Reception",
+   "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-19:william+catherine:1utrlh1",
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "start": "2026-11-19T14:00:00.000Z",
+   "title": "Arrived at Heathrow Airport",
+   "kind": "Travel",
+   "place": "London, from India"
+  },
+  {
+   "id": "royal:cc:2026-11-19:sophie:12yd438",
+   "people": [
+    "sophie"
+   ],
+   "start": "2026-11-19T19:00:00.000Z",
+   "title": "Attended a Reception to mark the launch of the Georgetown Institute of Women",
+   "kind": "Reception",
+   "place": "Peace and Security’s 2025/26 Index at the House of Lords, London SW1"
   }
  ],
  "weeks": {
@@ -3674,7 +3735,8 @@
    "2026-10-19": 3,
    "2026-10-26": 7,
    "2026-11-02": 7,
-   "2026-11-09": 8
+   "2026-11-09": 8,
+   "2026-11-16": 1
   },
   "birgitte": {
    "2026-09-28": 1,
@@ -3689,14 +3751,14 @@
    "2026-10-26": 13,
    "2026-11-02": 11,
    "2026-11-09": 12,
-   "2026-11-16": 2
+   "2026-11-16": 3
   },
   "sophie": {
    "2026-10-05": 3,
    "2026-10-26": 14,
    "2026-11-02": 5,
    "2026-11-09": 11,
-   "2026-11-16": 1
+   "2026-11-16": 2
   },
   "anne": {
    "2026-10-05": 12,
@@ -3713,7 +3775,7 @@
    "2026-10-19": 5,
    "2026-11-02": 1,
    "2026-11-09": 7,
-   "2026-11-16": 13
+   "2026-11-16": 14
   },
   "king": {
    "2026-10-05": 4,
@@ -3730,7 +3792,7 @@
    "2026-10-19": 2,
    "2026-11-02": 1,
    "2026-11-09": 2,
-   "2026-11-16": 6
+   "2026-11-16": 7
   },
   "queen": {
    "2026-10-05": 1,
@@ -3739,7 +3801,7 @@
    "2026-10-26": 1,
    "2026-11-02": 11,
    "2026-11-09": 6,
-   "2026-11-16": 2
+   "2026-11-16": 4
   },
   "kent": {
    "2026-10-05": 1,
@@ -3756,7 +3818,7 @@
    "Service or commemoration": 2,
    "Visit": 10,
    "Reception": 7,
-   "Event": 4,
+   "Event": 5,
    "Audience": 3,
    "Armed forces": 3,
    "Investiture": 1,
@@ -3771,7 +3833,7 @@
    "Audience": 2
   },
   "edward": {
-   "Event": 7,
+   "Event": 8,
    "Reception": 8,
    "Meeting": 6,
    "Other": 8,
@@ -3782,7 +3844,7 @@
   },
   "sophie": {
    "Audience": 2,
-   "Reception": 7,
+   "Reception": 8,
    "Travel": 7,
    "Other": 10,
    "Visit": 6,
@@ -3808,7 +3870,7 @@
    "State business": 5,
    "Audience": 4,
    "Other": 7,
-   "Travel": 3,
+   "Travel": 4,
    "Event": 4,
    "Reception": 1
   },
@@ -3831,19 +3893,19 @@
    "Meeting": 2,
    "Visit": 6,
    "Other": 1,
-   "Travel": 2,
+   "Travel": 3,
    "Event": 1,
    "State business": 2
   },
   "queen": {
    "Audience": 2,
-   "Reception": 3,
+   "Reception": 4,
    "Meeting": 4,
    "Other": 7,
    "State business": 3,
    "Event": 2,
    "Visit": 8,
-   "Armed forces": 1,
+   "Armed forces": 2,
    "Service or commemoration": 1
   },
   "kent": {
@@ -3860,7 +3922,7 @@
    4,
    9,
    10,
-   9,
+   10,
    5,
    0,
    1
@@ -3878,7 +3940,7 @@
    10,
    11,
    13,
-   8,
+   9,
    2,
    0,
    1
@@ -3887,7 +3949,7 @@
    11,
    10,
    9,
-   1,
+   2,
    0,
    0,
    3
@@ -3905,7 +3967,7 @@
    7,
    16,
    8,
-   5,
+   6,
    2,
    1,
    1
@@ -3923,7 +3985,7 @@
    1,
    2,
    5,
-   3,
+   4,
    2,
    1,
    1
@@ -3932,7 +3994,7 @@
    5,
    6,
    7,
-   7,
+   9,
    4,
    1,
    1
@@ -4032,6 +4094,10 @@
    [
     -0.08,
     51.5
+   ],
+   [
+    -1.53,
+    53.79
    ]
   ],
   "birgitte": [
@@ -4152,6 +4218,10 @@
    [
     -1.03,
     51.45
+   ],
+   [
+    -1.04,
+    51.45
    ]
   ],
   "sophie": [
@@ -4194,6 +4264,10 @@
    [
     -1.58,
     53.82
+   ],
+   [
+    -0.14,
+    51.49
    ]
   ],
   "william": [
@@ -4312,6 +4386,10 @@
    [
     -1.78,
     51.55
+   ],
+   [
+    -0.2,
+    51.5
    ]
   ],
   "king": [
@@ -4504,6 +4582,10 @@
    [
     -1.78,
     51.55
+   ],
+   [
+    -0.2,
+    51.5
    ]
   ],
   "queen": [
@@ -4582,6 +4664,14 @@
    [
     -0.14,
     51.5
+   ],
+   [
+    -2.23,
+    53.48
+   ],
+   [
+    -0.14,
+    51.51
    ]
   ],
   "kent": [
@@ -4900,6 +4990,11 @@
     "n": 2
    },
    {
+    "title": "Chair",
+    "org": "The Duke of Edinburgh’s International Award Foundation",
+    "n": 2
+   },
+   {
     "title": "Patron",
     "org": "St. Helena National Trust",
     "n": 1
@@ -4947,11 +5042,6 @@
    {
     "title": "President",
     "org": "Sport and Recreation Alliance",
-    "n": 1
-   },
-   {
-    "title": "Chair",
-    "org": "The Duke of Edinburgh’s International Award Foundation",
     "n": 1
    },
    {
@@ -5149,6 +5239,11 @@
     "title": "Patron",
     "org": "National Literacy Trust",
     "n": 1
+   },
+   {
+    "title": "Colonel-in-Chief",
+    "org": "The Royal Lancers (Queen Elizabeths’ Own)",
+    "n": 1
    }
   ],
   "kent": [
@@ -5227,6 +5322,11 @@
    {
     "title": "Patron",
     "org": "Construction Youth Trust",
+    "n": 1
+   },
+   {
+    "title": "Patron",
+    "org": "Nuffield Farming Scholarships Trust",
     "n": 1
    }
   ],
