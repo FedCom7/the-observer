@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-20T03:09:33.225Z",
- "diaryFetched": "2026-11-20T03:09:30.812Z",
+ "updated": "2026-11-20T11:30:20.255Z",
+ "diaryFetched": "2026-11-20T11:30:17.300Z",
  "events": [
   {
    "id": "royal:state-visit-in:2026-10-20:Oman",
@@ -1716,6 +1716,21 @@
    "source": "Rule: second Sunday of November, two minutes' silence at 11:00"
   },
   {
+   "id": "royal:birthday:alexandra:2027",
+   "passion": "royal",
+   "who": "Princess Alexandra",
+   "start": "2027-12-25T09:00:00.000Z",
+   "approxTime": true,
+   "source": "Fixed date",
+   "kind": "birthday",
+   "weight": 1,
+   "people": [
+    "alexandra"
+   ],
+   "sub": "91st birthday",
+   "title": "Princess Alexandra turns 91"
+  },
+  {
    "id": "royal:rule:sandringham:2027",
    "passion": "royal",
    "who": "The Royal Family",
@@ -1781,6 +1796,114 @@
   }
  ],
  "recent": [
+  {
+   "id": "royal:cc:2026-11-19:sophie:12yd438",
+   "people": [
+    "sophie"
+   ],
+   "who": "The Duchess of Edinburgh",
+   "start": "2026-11-19T19:00:00.000Z",
+   "title": "Attended a Reception to mark the launch of the Georgetown Institute of Women",
+   "role": "The Duchess of Edinburgh",
+   "detail": "The Duchess of Edinburgh this evening attended a Reception to mark the launch of the Georgetown Institute of Women, Peace and Security’s 2025/26 Index at the House of Lords, London SW1",
+   "place": "Peace and Security’s 2025/26 Index at the House of Lords, London SW1",
+   "residence": "St. James's Palace",
+   "loc": [
+    -0.1381,
+    51.4897
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-11-19:queen:1u5kmva",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-11-19T14:00:00.000Z",
+   "title": "Gave a Reception at Clarence House to mark the Twentieth Anniversary of Her Majesty’s Presidency of the Brooke Hospital for Animals",
+   "role": "The Queen",
+   "detail": "The Queen this afternoon gave a Reception at Clarence House to mark the Twentieth Anniversary of Her Majesty’s Presidency of the Brooke Hospital for Animals",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -0.1386,
+    51.5058
+   ],
+   "locPrecise": true
+  },
+  {
+   "id": "royal:cc:2026-11-19:william+catherine:1utrlh1",
+   "people": [
+    "william",
+    "catherine"
+   ],
+   "who": "The Prince of Wales & The Princess of Wales",
+   "start": "2026-11-19T14:00:00.000Z",
+   "title": "Arrived at Heathrow Airport",
+   "role": "The Prince and Princess of Wales",
+   "detail": "The Prince and Princess of Wales this afternoon arrived at Heathrow Airport, London, from India",
+   "place": "London, from India",
+   "residence": "Kensington Palace",
+   "loc": [
+    -0.1976,
+    51.504
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-11-19:queen:1d782xe",
+   "people": [
+    "queen"
+   ],
+   "who": "The Queen",
+   "start": "2026-11-19T12:00:00.000Z",
+   "title": "Unveiled a portrait at the Cavalry and Guards Club",
+   "role": "Colonel-in-Chief, The Royal Lancers (Queen Elizabeths’ Own), today",
+   "detail": "The Queen, Colonel-in-Chief, The Royal Lancers (Queen Elizabeths’ Own), today unveiled a portrait at the Cavalry and Guards Club, 127 Piccadilly, London W1, and was received by His Majesty’s Lord-Lieutenant of Greater London (Sir Alastair King)",
+   "place": "127 Piccadilly, London W1",
+   "residence": "Buckingham Palace",
+   "loc": [
+    -2.2338,
+    53.4769
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-11-19:edward:cgg23y",
+   "people": [
+    "edward"
+   ],
+   "who": "The Duke of Edinburgh",
+   "start": "2026-11-19T12:00:00.000Z",
+   "title": "Attended the International Council at the Castle Hotel",
+   "role": "Chair, The Duke of Edinburgh’s International Award Foundation, today",
+   "detail": "The Duke of Edinburgh, Chair, The Duke of Edinburgh’s International Award Foundation, today attended the International Council at the Castle Hotel, 18 High Street, Windsor, Berkshire",
+   "place": "Windsor, Berkshire",
+   "residence": "St. James's Palace",
+   "loc": [
+    -1.0382,
+    51.4517
+   ],
+   "locPrecise": false
+  },
+  {
+   "id": "royal:cc:2026-11-19:richard:8pu9ab",
+   "people": [
+    "richard"
+   ],
+   "who": "The Duke of Gloucester",
+   "start": "2026-11-19T10:00:00.000Z",
+   "title": "Attended the Nuffield Farming Annual Conference at New Dock Hall",
+   "role": "Patron, Nuffield Farming Scholarships Trust",
+   "detail": "The Duke of Gloucester, Patron, Nuffield Farming Scholarships Trust, this morning attended the Nuffield Farming Annual Conference at New Dock Hall, Armouries Drive, Leeds, and was received by His Majesty’s Lord-Lieutenant of West Yorkshire (Professor Adeeba Malik)",
+   "place": "Armouries Drive, Leeds",
+   "residence": "Kensington Palace",
+   "loc": [
+    -1.5314,
+    53.7904
+   ],
+   "locPrecise": true
+  },
   {
    "id": "royal:cc:2026-11-18:king+queen:1gqs8i7",
    "people": [
@@ -4395,24 +4518,6 @@
    "locPrecise": false
   },
   {
-   "id": "royal:cc:2026-11-01:sophie:8b78h5",
-   "people": [
-    "sophie"
-   ],
-   "who": "The Duchess of Edinburgh",
-   "start": "2026-11-01T14:00:00.000Z",
-   "title": "Attended a Reception at Northshore Seaside Suites",
-   "role": "Her Royal Highness",
-   "detail": "Her Royal Highness this afternoon attended a Reception at Northshore Seaside Suites, Antigua",
-   "place": "Antigua",
-   "residence": "St. James's Palace",
-   "loc": [
-    -9.2923,
-    53.8357
-   ],
-   "locPrecise": false
-  },
-  {
    "id": "royal:cc:2026-11-01:king:pq9wu5",
    "people": [
     "king"
@@ -4452,260 +4557,6 @@
    "loc": [
     -0.1687,
     51.5147
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-11-01:sophie:aieogt",
-   "people": [
-    "sophie"
-   ],
-   "who": "The Duchess of Edinburgh",
-   "start": "2026-11-01T10:00:00.000Z",
-   "title": "Departed Gatwick Airport",
-   "role": "Global Ambassador, International Agency for the Prevention of Blindness",
-   "detail": "The Duchess of Edinburgh, Global Ambassador, International Agency for the Prevention of Blindness, this morning departed Gatwick Airport, London for Antigua and Barbuda",
-   "place": "London for Antigua and Barbuda",
-   "residence": "St. James's Palace"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:1itg2aq",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T14:00:00.000Z",
-   "title": "Visited the Arthur Chung Conference Centre",
-   "role": "His Majesty",
-   "detail": "His Majesty this afternoon visited the Arthur Chung Conference Centre, Georgetown, and was received by The President of the Co-operative Republic of Guyana",
-   "place": "Georgetown",
-   "residence": "Other",
-   "loc": [
-    -3.2393,
-    51.7653
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:anne:h2y7ta",
-   "people": [
-    "anne"
-   ],
-   "who": "The Princess Royal",
-   "start": "2026-10-30T14:00:00.000Z",
-   "title": "Opened Darwen Youth Zone",
-   "role": "Her Royal Highness",
-   "detail": "Her Royal Highness this afternoon opened Darwen Youth Zone, Gary Aspden Way, Darwen",
-   "place": "Gary Aspden Way, Darwen",
-   "residence": "St. James's Palace",
-   "loc": [
-    -2.4692,
-    53.6943
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:qfm3hz",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Met foreign High Commissioners and veterans",
-   "role": "His Majesty",
-   "detail": "His Majesty subsequently met foreign High Commissioners and veterans",
-   "residence": "Other"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:r0ml7o",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Visited Promenade Gardens and",
-   "role": "The King afterwards",
-   "detail": "The King afterwards visited Promenade Gardens and, having been received by the Hon. Steven Jacobs MP (Minister within the Ministry of Culture) and the Mayor of Georgetown (His Worship Alfred Mentore), walked through the gardens meeting children who have been participating in an environmental club, viewing botanical work on seeds, before viewing, as Royal Founding President, an exhibition of the work of The King’s Foundation",
-   "place": "before viewing, an exhibition of the work of The King’s Foundation",
-   "residence": "Other"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:1wju62v",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "The King",
-   "role": "",
-   "detail": "The King, escorted by the Hon. Dr. Bharrat Jagdeo (Vice President of the Co-operative Republic of Guyana), Mr. Shyam Nokta (Natural Resources, Environment and Climate Change Adviser) and Dr. Pradeepa Bholanauth (Senior Director of Climate, Ministry of Natural Resources), viewed various exhibition booths, before meeting Heads of State and senior delegates",
-   "residence": "Other"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:1o89vf6",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Visited Umana Yana",
-   "role": "His Majesty",
-   "detail": "His Majesty later visited Umana Yana, Georgetown, and was received by the Chairman of the National Toshaos Council (Toshao Derrick John), the Hon. Sarah Browne-Shadeek MP (Minister for Amerindian Affairs) and the Hon. Pauline Campbell-Sukhai MP (Minister within the Ministry of Local Government and Regional Development)",
-   "place": "Georgetown",
-   "residence": "Other",
-   "loc": [
-    -3.2411,
-    51.7641
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:15esq0e",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Met members of the Executive Committee",
-   "role": "The King",
-   "detail": "The King met members of the Executive Committee, before viewing indigenous craft booths and subsequently met members of the public outside",
-   "place": "before viewing indigenous craft booths",
-   "residence": "Other"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:5bc0wc",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Attended a Reception with business people at Jewelz by Kings Hotel",
-   "role": "His Majesty afterwards",
-   "detail": "His Majesty afterwards attended a Reception with business people at Jewelz by Kings Hotel, Georgetown, and was received by the British High Commissioner to the Co-operative Republic of Guyana (His Excellency Mr. Joseph Fisher) and The President of the Co-operative Republic of Guyana",
-   "place": "Georgetown",
-   "residence": "Other",
-   "loc": [
-    -3.2393,
-    51.7659
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:1o1wlqs",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Visited Kingston Seawall",
-   "role": "The King",
-   "detail": "The King subsequently visited Kingston Seawall and was received by Mrs. Arya Ali (wife of The President of the Co-operative Republic of Guyana) who described her work to regenerate the Seawall Promenade",
-   "residence": "Other",
-   "loc": [
-    -2.8774,
-    51.4137
-   ],
-   "locPrecise": true
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:3twfir",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "His Majesty",
-   "role": "",
-   "detail": "His Majesty, escorted by the Chief Executive Officer of Wilton Park (Mr. Tom Cargill), undertook a walking tour of the Commonwealth Sustainable Cities Initiative exhibit",
-   "residence": "Other"
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:zsrxis",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "At VC Bird International Airport",
-   "role": "His Majesty arrived",
-   "detail": "His Majesty arrived later at VC Bird International Airport, St. John’s, and was received by the Governor-General of Antigua and Barbuda (Sir Rodney Williams)",
-   "place": "St. John’s",
-   "residence": "Other",
-   "loc": [
-    -2.8053,
-    54.0456
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:anne:ox5zby",
-   "people": [
-    "anne"
-   ],
-   "who": "The Princess Royal",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Visited Darwen Heritage Centre",
-   "role": "The Princess Royal afterwards",
-   "detail": "The Princess Royal afterwards visited Darwen Heritage Centre, Holker House, Railway Road, Darwen",
-   "place": "Railway Road, Darwen",
-   "residence": "St. James's Palace",
-   "loc": [
-    -2.4709,
-    53.692
-   ],
-   "locPrecise": true
-  },
-  {
-   "id": "royal:cc:2026-10-30:anne:1vdxl7j",
-   "people": [
-    "anne"
-   ],
-   "who": "The Princess Royal",
-   "start": "2026-10-30T12:00:00.000Z",
-   "title": "Visited Friends of Darwen Cemetery",
-   "role": "Her Royal Highness",
-   "detail": "Her Royal Highness subsequently visited Friends of Darwen Cemetery, Cemetery Road, Darwen",
-   "place": "Cemetery Road, Darwen",
-   "residence": "St. James's Palace",
-   "loc": [
-    -2.4626,
-    53.6744
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:king:1c4c8ws",
-   "people": [
-    "king"
-   ],
-   "who": "The King",
-   "start": "2026-10-30T10:00:00.000Z",
-   "title": "Laid a wreath at the Commonwealth War Graves",
-   "role": "Patron, Commonwealth War Graves Commission",
-   "detail": "The King, Patron, Commonwealth War Graves Commission, this morning laid a wreath at the Commonwealth War Graves, Georgetown, Guyana, and was received by Brigadier Mark Phillips MP (Prime Minister of the Co-operative Republic of Guyana) and Brigadier Omar Khan (Chief of Defence Staff of the Guyana Defence Force)",
-   "place": "Georgetown, Guyana",
-   "residence": "Other",
-   "loc": [
-    -0.192,
-    51.5083
-   ],
-   "locPrecise": false
-  },
-  {
-   "id": "royal:cc:2026-10-30:anne:xy38dn",
-   "people": [
-    "anne"
-   ],
-   "who": "The Princess Royal",
-   "start": "2026-10-30T10:00:00.000Z",
-   "title": "Visited Herbert Parkinson Limited",
-   "role": "President, UK Fashion and Textile Association",
-   "detail": "The Princess Royal, President, UK Fashion and Textile Association, this morning visited Herbert Parkinson Limited, Harvest Mill, Monton Road, Darwen, and was received by His Majesty’s Lord-Lieutenant of Lancashire (Mrs. Amanda Parker)",
-   "place": "Monton Road, Darwen",
-   "residence": "St. James's Palace",
-   "loc": [
-    -2.4825,
-    53.7111
    ],
    "locPrecise": false
   }
@@ -4985,11 +4836,11 @@
    "url": "https://www.royal.uk/autumn-tour-2026",
    "kind": "News",
    "date": "2026-10-28",
-   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-11/PA-86366322_0.jpg.webp?h=16ed327c&itok=C1xanKqg",
-   "alt": "The King in Antigua"
+   "image": "https://www.royal.uk/sites/default/files/styles/grid_3x2/public/images/2026-10/PA-86324631.jpg.webp?h=c70f8ee2&itok=XlTc2lSs",
+   "alt": "The King in The Bahamas"
   },
   {
-   "title": "A message from The King to delegates at the COP31 World Leaders’ Summit in Antalya.",
+   "title": "A message from The King to the delegates at the World Leaders’ Summit in Antalya for COP31.",
    "url": "https://www.royal.uk/news-and-activity/2026-11-11/a-message-from-the-king-to-delegates-at-the-cop31-world-leaders-summit",
    "kind": "Speech",
    "date": "2026-11-11",
@@ -5061,14 +4912,14 @@
   "harry"
  ],
  "activity": {
-  "king": 55,
-  "queen": 20,
-  "william": 21,
-  "catherine": 9,
-  "anne": 39,
-  "edward": 25,
-  "sophie": 19,
-  "richard": 15,
+  "king": 44,
+  "queen": 22,
+  "william": 22,
+  "catherine": 10,
+  "anne": 35,
+  "edward": 26,
+  "sophie": 18,
+  "richard": 16,
   "birgitte": 1,
   "kent": 4,
   "alexandra": 0
@@ -5090,37 +4941,37 @@
   },
   "queen": {
    "seen": {
-    "t": "2026-11-18T12:00:00.000Z",
-    "title": "Held a Meeting relating to The Consorts’ Library at Buckingham Palace",
+    "t": "2026-11-19T14:00:00.000Z",
+    "title": "Gave a Reception at Clarence House to mark the Twentieth Anniversary of Her Majesty’s Presidency of the Brooke Hospital for Animals",
     "loc": [
-     -0.1446,
-     51.4996
+     -0.1386,
+     51.5058
     ]
    },
    "residence": {
-    "t": "2026-11-18T12:00:00.000Z",
+    "t": "2026-11-19T12:00:00.000Z",
     "name": "Buckingham Palace"
    }
   },
   "william": {
    "seen": {
-    "t": "2026-11-18T19:00:00.000Z",
-    "title": "Called upon Mr. Narendra Modi MP (Prime Minister of the Republic of India) at 7 Lok Kalyan Marg",
-    "place": "New Delhi",
+    "t": "2026-11-19T14:00:00.000Z",
+    "title": "Arrived at Heathrow Airport",
+    "place": "London, from India",
     "loc": [
-     -1.7829,
-     51.5536
+     -0.1976,
+     51.504
     ]
    }
   },
   "catherine": {
    "seen": {
-    "t": "2026-11-18T19:00:00.000Z",
-    "title": "Called upon Mr. Narendra Modi MP (Prime Minister of the Republic of India) at 7 Lok Kalyan Marg",
-    "place": "New Delhi",
+    "t": "2026-11-19T14:00:00.000Z",
+    "title": "Arrived at Heathrow Airport",
+    "place": "London, from India",
     "loc": [
-     -1.7829,
-     51.5536
+     -0.1976,
+     51.504
     ]
    }
   },
@@ -5133,30 +4984,34 @@
   },
   "edward": {
    "seen": {
-    "t": "2026-11-18T19:00:00.000Z",
-    "title": "Attended a Trustees’ Dinner at the Castle Hotel",
+    "t": "2026-11-19T12:00:00.000Z",
+    "title": "Attended the International Council at the Castle Hotel",
     "place": "Windsor, Berkshire",
     "loc": [
-     -1.0319,
-     51.4535
+     -1.0382,
+     51.4517
     ]
    }
   },
   "sophie": {
    "seen": {
-    "t": "2026-11-12T14:00:00.000Z",
-    "title": "Arrived at Heathrow Airport",
-    "place": "London, from Bangladesh"
+    "t": "2026-11-19T19:00:00.000Z",
+    "title": "Attended a Reception to mark the launch of the Georgetown Institute of Women",
+    "place": "Peace and Security’s 2025/26 Index at the House of Lords, London SW1",
+    "loc": [
+     -0.1381,
+     51.4897
+    ]
    }
   },
   "richard": {
    "seen": {
-    "t": "2026-11-12T14:00:00.000Z",
-    "title": "Attended a Reception at the Cottons Centre",
-    "place": "Hay’s Lane, London SE1",
+    "t": "2026-11-19T10:00:00.000Z",
+    "title": "Attended the Nuffield Farming Annual Conference at New Dock Hall",
+    "place": "Armouries Drive, Leeds",
     "loc": [
-     -0.0835,
-     51.5039
+     -1.5314,
+     53.7904
     ]
    }
   },
@@ -5184,6 +5039,20 @@
   }
  },
  "stays": [
+  {
+   "people": [
+    "queen"
+   ],
+   "start": "2026-11-19T12:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
+  {
+   "people": [
+    "queen"
+   ],
+   "start": "2026-11-19T12:00:00.000Z",
+   "residence": "Buckingham Palace"
+  },
   {
    "people": [
     "king"
@@ -5332,27 +5201,6 @@
     "king"
    ],
    "start": "2026-11-01T12:00:00.000Z",
-   "residence": "Other"
-  },
-  {
-   "people": [
-    "king"
-   ],
-   "start": "2026-10-30T12:00:00.000Z",
-   "residence": "Other"
-  },
-  {
-   "people": [
-    "king"
-   ],
-   "start": "2026-10-30T12:00:00.000Z",
-   "residence": "Other"
-  },
-  {
-   "people": [
-    "king"
-   ],
-   "start": "2026-10-30T12:00:00.000Z",
    "residence": "Other"
   }
  ]
