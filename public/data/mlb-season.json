@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:26:40.846Z",
+ "updated": "2026-11-21T23:09:42.631Z",
  "season": 2026,
  "teams": [
   {
@@ -41526,12 +41526,30 @@
  "transactions": [
   {
    "date": "2026-11-20",
+   "type": "Trade",
+   "team": 143,
+   "from": 145,
+   "to": 143,
+   "player": "Jordan Leasure",
+   "text": "Chicago White Sox traded RHP Jordan Leasure to Philadelphia Phillies for RHP Christian Coppola."
+  },
+  {
+   "date": "2026-11-20",
    "type": "Claimed Off Waivers",
    "team": 112,
    "from": 145,
    "to": 112,
    "player": "Joey Bart",
    "text": "Chicago Cubs claimed C Joey Bart off waivers from Chicago White Sox."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Trade",
+   "team": 109,
+   "from": 111,
+   "to": 109,
+   "player": "Johan Oviedo",
+   "text": "Arizona Diamondbacks traded LHP Luke Dotson and Future Considerations to Boston Red Sox for RHP Johan Oviedo."
   },
   {
    "date": "2026-11-20",
@@ -41545,11 +41563,11 @@
   {
    "date": "2026-11-20",
    "type": "Trade",
-   "team": 143,
-   "from": 145,
-   "to": 143,
-   "player": "Jordan Leasure",
-   "text": "Chicago White Sox traded RHP Jordan Leasure to Philadelphia Phillies for RHP Christian Coppola."
+   "team": 112,
+   "from": 120,
+   "to": 112,
+   "player": "Braxton Roxby",
+   "text": "Washington Nationals traded RHP Braxton Roxby to Chicago Cubs for cash."
   },
   {
    "date": "2026-11-20",
@@ -41559,6 +41577,15 @@
    "to": 139,
    "player": "Christian Koss",
    "text": "San Francisco Giants traded SS Christian Koss to Tampa Bay Rays for RHP Cole Stokes."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Trade",
+   "team": 142,
+   "from": 119,
+   "to": 142,
+   "player": "Bobby Miller",
+   "text": "Minnesota Twins traded 1B Royce Lewis to Los Angeles Dodgers for RHP Bobby Miller and C Francisco Espinoza."
   },
   {
    "date": "2026-11-20",
@@ -41572,38 +41599,155 @@
   {
    "date": "2026-11-20",
    "type": "Trade",
-   "team": 142,
-   "from": 119,
-   "to": 142,
-   "player": "Francisco Espinoza",
-   "text": "Minnesota Twins traded 1B Royce Lewis to Los Angeles Dodgers for RHP Bobby Miller and C Francisco Espinoza."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
-   "team": 112,
-   "from": 120,
-   "to": 112,
-   "player": "Braxton Roxby",
-   "text": "Washington Nationals traded RHP Braxton Roxby to Chicago Cubs for cash."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
-   "team": 109,
-   "from": 111,
-   "to": 109,
-   "player": "Johan Oviedo",
-   "text": "Arizona Diamondbacks traded LHP Luke Dotson and Future Considerations to Boston Red Sox for RHP Johan Oviedo."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
    "team": 115,
    "from": 141,
    "to": 115,
    "player": "Chase Lee",
    "text": "Toronto Blue Jays traded RHP Chase Lee to Colorado Rockies for cash."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 137,
+   "from": null,
+   "to": 137,
+   "player": "Victor Bericoto",
+   "text": "LF Victor Bericoto elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 118,
+   "from": null,
+   "to": 118,
+   "player": "Kyle Isbel",
+   "text": "CF Kyle Isbel elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 121,
+   "from": null,
+   "to": 121,
+   "player": "Dylan Ross",
+   "text": "RHP Dylan Ross elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 121,
+   "from": null,
+   "to": 121,
+   "player": "Christopher Morel",
+   "text": "1B Christopher Morel elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Andrew Hoffmann",
+   "text": "RHP Andrew Hoffmann elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Bryan De La Cruz",
+   "text": "RF Bryan De La Cruz elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 121,
+   "from": null,
+   "to": 121,
+   "player": "Hayden Senger",
+   "text": "C Hayden Senger elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 143,
+   "from": null,
+   "to": 143,
+   "player": "Brett Harris",
+   "text": "3B Brett Harris elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 120,
+   "from": null,
+   "to": 120,
+   "player": "Josiah Gray",
+   "text": "RHP Josiah Gray elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "JP Sears",
+   "text": "LHP JP Sears elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 142,
+   "from": null,
+   "to": 142,
+   "player": "Bailey Ober",
+   "text": "RHP Bailey Ober elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 142,
+   "from": null,
+   "to": 142,
+   "player": "Matt Wallner",
+   "text": "RF Matt Wallner elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Ethan Roberts",
+   "text": "RHP Ethan Roberts elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Gabriel Arias",
+   "text": "3B Gabriel Arias elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Matt Vierling",
+   "text": "CF Matt Vierling elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 116,
+   "from": null,
+   "to": 116,
+   "player": "Trey Sweeney",
+   "text": "SS Trey Sweeney elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41653,150 +41797,6 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 143,
-   "from": null,
-   "to": 143,
-   "player": "Andrew Hoffmann",
-   "text": "RHP Andrew Hoffmann elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 143,
-   "from": null,
-   "to": 143,
-   "player": "Bryan De La Cruz",
-   "text": "RF Bryan De La Cruz elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 121,
-   "from": null,
-   "to": 121,
-   "player": "Hayden Senger",
-   "text": "C Hayden Senger elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 143,
-   "from": null,
-   "to": 143,
-   "player": "Brett Harris",
-   "text": "3B Brett Harris elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 135,
-   "from": null,
-   "to": 135,
-   "player": "JP Sears",
-   "text": "LHP JP Sears elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 142,
-   "from": null,
-   "to": 142,
-   "player": "Matt Wallner",
-   "text": "RF Matt Wallner elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Connor Wong",
-   "text": "C Connor Wong elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 120,
-   "from": null,
-   "to": 120,
-   "player": "Jared Simpson",
-   "text": "LHP Jared Simpson elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Gabriel Arias",
-   "text": "3B Gabriel Arias elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Matt Vierling",
-   "text": "CF Matt Vierling elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Trey Sweeney",
-   "text": "SS Trey Sweeney elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 109,
-   "from": null,
-   "to": 109,
-   "player": "Andrew Saalfrank",
-   "text": "LHP Andrew Saalfrank elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 137,
-   "from": null,
-   "to": 137,
-   "player": "Victor Bericoto",
-   "text": "LF Victor Bericoto elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 118,
-   "from": null,
-   "to": 118,
-   "player": "Kyle Isbel",
-   "text": "CF Kyle Isbel elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 121,
-   "from": null,
-   "to": 121,
-   "player": "Dylan Ross",
-   "text": "RHP Dylan Ross elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 121,
-   "from": null,
-   "to": 121,
-   "player": "Christopher Morel",
-   "text": "1B Christopher Morel elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
    "team": 115,
    "from": null,
    "to": 115,
@@ -41833,11 +41833,29 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 142,
+   "team": 111,
    "from": null,
-   "to": 142,
-   "player": "Trevor Larnach",
-   "text": "LF Trevor Larnach elected free agency."
+   "to": 111,
+   "player": "Connor Wong",
+   "text": "C Connor Wong elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 120,
+   "from": null,
+   "to": 120,
+   "player": "Carson Palmquist",
+   "text": "LHP Carson Palmquist elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 113,
+   "from": null,
+   "to": 113,
+   "player": "Leo Balcazar",
+   "text": "SS Leo Balcazar elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41914,15 +41932,6 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 120,
-   "from": null,
-   "to": 120,
-   "player": "Josiah Gray",
-   "text": "RHP Josiah Gray elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
    "team": 144,
    "from": null,
    "to": 144,
@@ -41953,17 +41962,8 @@
    "team": 142,
    "from": null,
    "to": 142,
-   "player": "Bailey Ober",
-   "text": "RHP Bailey Ober elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 112,
-   "from": null,
-   "to": 112,
-   "player": "Ethan Roberts",
-   "text": "RHP Ethan Roberts elected free agency."
+   "player": "Trevor Larnach",
+   "text": "LF Trevor Larnach elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41971,17 +41971,8 @@
    "team": 120,
    "from": null,
    "to": 120,
-   "player": "Carson Palmquist",
-   "text": "LHP Carson Palmquist elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 113,
-   "from": null,
-   "to": 113,
-   "player": "Leo Balcazar",
-   "text": "SS Leo Balcazar elected free agency."
+   "player": "Jared Simpson",
+   "text": "LHP Jared Simpson elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41991,6 +41982,15 @@
    "to": 135,
    "player": "Garrett Hawkins",
    "text": "RHP Garrett Hawkins elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 109,
+   "from": null,
+   "to": 109,
+   "player": "Andrew Saalfrank",
+   "text": "LHP Andrew Saalfrank elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -42192,15 +42192,6 @@
   },
   {
    "date": "2026-11-17",
-   "type": "Trade",
-   "team": 133,
-   "from": 110,
-   "to": 133,
-   "player": "Yaqui Rivera",
-   "text": "Baltimore Orioles traded RHP Yaqui Rivera to Athletics for RHP Josiah Romeo."
-  },
-  {
-   "date": "2026-11-17",
    "type": "Claimed Off Waivers",
    "team": 140,
    "from": 110,
@@ -42228,6 +42219,24 @@
   },
   {
    "date": "2026-11-17",
+   "type": "Trade",
+   "team": 133,
+   "from": 110,
+   "to": 133,
+   "player": "Yaqui Rivera",
+   "text": "Baltimore Orioles traded RHP Yaqui Rivera to Athletics for RHP Josiah Romeo."
+  },
+  {
+   "date": "2026-11-17",
+   "type": "Trade",
+   "team": 111,
+   "from": 118,
+   "to": 111,
+   "player": "Jack Pineda",
+   "text": "Boston Red Sox traded RHP Angel Bastardo to Kansas City Royals for SS Jack Pineda."
+  },
+  {
+   "date": "2026-11-17",
    "type": "Claimed Off Waivers",
    "team": 147,
    "from": 110,
@@ -42246,42 +42255,6 @@
   },
   {
    "date": "2026-11-17",
-   "type": "Trade",
-   "team": 111,
-   "from": 118,
-   "to": 111,
-   "player": "Jack Pineda",
-   "text": "Boston Red Sox traded RHP Angel Bastardo to Kansas City Royals for SS Jack Pineda."
-  },
-  {
-   "date": "2026-11-17",
-   "type": "Signed as Free Agent",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Emilio Pagán",
-   "text": "Detroit Tigers signed free agent RHP Emilio Pagán."
-  },
-  {
-   "date": "2026-11-17",
-   "type": "Signed as Free Agent",
-   "team": 111,
-   "from": null,
-   "to": 111,
-   "player": "Jake Bauers",
-   "text": "Boston Red Sox signed free agent 1B Jake Bauers."
-  },
-  {
-   "date": "2026-11-17",
-   "type": "Released",
-   "team": 110,
-   "from": null,
-   "to": 110,
-   "player": "Rece Hinds",
-   "text": "Baltimore Orioles released RF Rece Hinds."
-  },
-  {
-   "date": "2026-11-17",
    "type": "Signed as Free Agent",
    "team": 146,
    "from": null,
@@ -42292,20 +42265,20 @@
   {
    "date": "2026-11-17",
    "type": "Signed as Free Agent",
-   "team": 139,
+   "team": 143,
    "from": null,
-   "to": 139,
-   "player": "Julio Robaina",
-   "text": "Tampa Bay Rays signed free agent LHP Julio Robaina to a minor league contract."
+   "to": 143,
+   "player": "Jerming Rosario",
+   "text": "Philadelphia Phillies signed free agent RHP Jerming Rosario to a minor league contract."
   },
   {
    "date": "2026-11-17",
    "type": "Signed as Free Agent",
-   "team": 133,
+   "team": 116,
    "from": null,
-   "to": 133,
-   "player": "Ryan Murphy",
-   "text": "Athletics signed free agent RHP Ryan Murphy to a minor league contract."
+   "to": 116,
+   "player": "Anderson Pilar",
+   "text": "Detroit Tigers signed free agent RHP Anderson Pilar to a minor league contract."
   },
   {
    "date": "2026-11-17",
@@ -42331,8 +42304,17 @@
    "team": 133,
    "from": null,
    "to": 133,
-   "player": "Luke Little",
-   "text": "Athletics signed free agent LHP Luke Little to a minor league contract."
+   "player": "Wilkin Ramos",
+   "text": "Athletics signed free agent RHP Wilkin Ramos to a minor league contract."
+  },
+  {
+   "date": "2026-11-17",
+   "type": "Signed as Free Agent",
+   "team": 136,
+   "from": null,
+   "to": 136,
+   "player": "Bryce Conley",
+   "text": "Seattle Mariners signed free agent RHP Bryce Conley to a minor league contract."
   },
   {
    "date": "2026-11-17",
@@ -42355,11 +42337,11 @@
   {
    "date": "2026-11-17",
    "type": "Signed as Free Agent",
-   "team": 135,
+   "team": 116,
    "from": null,
-   "to": 135,
-   "player": "Cal Stevenson",
-   "text": "San Diego Padres signed free agent OF Cal Stevenson to a minor league contract."
+   "to": 116,
+   "player": "Emilio Pagán",
+   "text": "Detroit Tigers signed free agent RHP Emilio Pagán."
   },
   {
    "date": "2026-11-17",
@@ -42369,6 +42351,15 @@
    "to": 142,
    "player": "Ryan Jeffers",
    "text": "Minnesota Twins signed free agent C Ryan Jeffers."
+  },
+  {
+   "date": "2026-11-17",
+   "type": "Released",
+   "team": 110,
+   "from": null,
+   "to": 110,
+   "player": "Rece Hinds",
+   "text": "Baltimore Orioles released RF Rece Hinds."
   },
   {
    "date": "2026-11-17",
@@ -42400,11 +42391,11 @@
   {
    "date": "2026-11-17",
    "type": "Signed as Free Agent",
-   "team": 143,
+   "team": 139,
    "from": null,
-   "to": 143,
-   "player": "Jerming Rosario",
-   "text": "Philadelphia Phillies signed free agent RHP Jerming Rosario to a minor league contract."
+   "to": 139,
+   "player": "Julio Robaina",
+   "text": "Tampa Bay Rays signed free agent LHP Julio Robaina to a minor league contract."
   },
   {
    "date": "2026-11-17",
@@ -42414,15 +42405,6 @@
    "to": 121,
    "player": "Justin King",
    "text": "New York Mets signed free agent LHP Justin King to a minor league contract."
-  },
-  {
-   "date": "2026-11-17",
-   "type": "Signed as Free Agent",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Anderson Pilar",
-   "text": "Detroit Tigers signed free agent RHP Anderson Pilar to a minor league contract."
   },
   {
    "date": "2026-11-17",
@@ -42457,8 +42439,17 @@
    "team": 133,
    "from": null,
    "to": 133,
-   "player": "Wilkin Ramos",
-   "text": "Athletics signed free agent RHP Wilkin Ramos to a minor league contract."
+   "player": "Ryan Murphy",
+   "text": "Athletics signed free agent RHP Ryan Murphy to a minor league contract."
+  },
+  {
+   "date": "2026-11-17",
+   "type": "Signed as Free Agent",
+   "team": 133,
+   "from": null,
+   "to": 133,
+   "player": "Luke Little",
+   "text": "Athletics signed free agent LHP Luke Little to a minor league contract."
   },
   {
    "date": "2026-11-17",
@@ -42472,11 +42463,20 @@
   {
    "date": "2026-11-17",
    "type": "Signed as Free Agent",
-   "team": 136,
+   "team": 111,
    "from": null,
-   "to": 136,
-   "player": "Bryce Conley",
-   "text": "Seattle Mariners signed free agent RHP Bryce Conley to a minor league contract."
+   "to": 111,
+   "player": "Jake Bauers",
+   "text": "Boston Red Sox signed free agent 1B Jake Bauers."
+  },
+  {
+   "date": "2026-11-17",
+   "type": "Signed as Free Agent",
+   "team": 135,
+   "from": null,
+   "to": 135,
+   "player": "Cal Stevenson",
+   "text": "San Diego Padres signed free agent OF Cal Stevenson to a minor league contract."
   },
   {
    "date": "2026-11-16",
