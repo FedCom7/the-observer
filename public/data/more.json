@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:43:29.291Z",
+ "updated": "2026-11-21T17:27:30.875Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3670,31 +3670,31 @@
       "cls": "Moto3",
       "key": "Q1",
       "name": "Q1",
-      "start": "2026-11-21T12:45:00.000Z"
+      "start": "2026-11-21T12:15:00.000Z"
      },
      {
       "cls": "Moto3",
       "key": "Q2",
       "name": "Q2",
-      "start": "2026-11-21T13:10:00.000Z"
+      "start": "2026-11-21T12:40:00.000Z"
      },
      {
       "cls": "Moto2",
       "key": "Q1",
       "name": "Q1",
-      "start": "2026-11-21T13:40:00.000Z"
+      "start": "2026-11-21T13:10:00.000Z"
      },
      {
       "cls": "Moto2",
       "key": "Q2",
       "name": "Q2",
-      "start": "2026-11-21T14:05:00.000Z"
+      "start": "2026-11-21T13:35:00.000Z"
      },
      {
       "cls": "MotoGP",
       "key": "SPR",
       "name": "Sprint",
-      "start": "2026-11-21T15:00:00.000Z"
+      "start": "2026-11-21T14:30:00.000Z"
      },
      {
       "cls": "MotoGP",
@@ -3721,7 +3721,29 @@
       "start": "2026-11-22T13:00:00.000Z"
      }
     ],
-    "results": null
+    "results": {
+     "race": [],
+     "sprint": [
+      {
+       "pos": 1,
+       "name": "Marco Bezzecchi",
+       "nation": "IT",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 2,
+       "name": "Raul Fernandez",
+       "nation": "ES",
+       "team": "SuperFile Trackhouse MotoGP Team"
+      },
+      {
+       "pos": 3,
+       "name": "Alex Marquez",
+       "nation": "ES",
+       "team": "BK8 Gresini Racing MotoGP"
+      }
+     ]
+    }
    },
    {
     "id": "6ad2859f-51c4-459e-9714-338814e7537f",
@@ -3883,7 +3905,7 @@
     "nation": "ES",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 371,
+    "points": 376,
     "wins": 1,
     "podiums": 9,
     "sprintWins": 4
@@ -3895,10 +3917,10 @@
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 357,
+    "points": 369,
     "wins": 6,
     "podiums": 12,
-    "sprintWins": 0
+    "sprintWins": 1
    },
    {
     "pos": 4,
@@ -3907,7 +3929,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 309,
+    "points": 315,
     "wins": 1,
     "podiums": 7,
     "sprintWins": 2
@@ -3919,7 +3941,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 294,
+    "points": 298,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3931,7 +3953,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 282,
+    "points": 285,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3943,7 +3965,7 @@
     "nation": "ES",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 258,
+    "points": 267,
     "wins": 1,
     "podiums": 6,
     "sprintWins": 2
@@ -3955,7 +3977,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 197,
+    "points": 204,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 1
@@ -4027,7 +4049,7 @@
     "nation": "FR",
     "team": "Monster Energy Yamaha MotoGP Team",
     "constructor": "Yamaha",
-    "points": 79,
+    "points": 81,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4109,9 +4131,9 @@
     "name": "Iker Lecuona",
     "number": 27,
     "nation": "ES",
-    "team": "BK8 Gresini Racing MotoGP",
+    "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 18,
+    "points": 19,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0

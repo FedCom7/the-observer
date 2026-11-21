@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:43:18.593Z",
+ "updated": "2026-11-21T17:27:17.934Z",
  "season": 2027,
  "races": [
   {
@@ -44,6 +44,101 @@
     {
      "run": "2nd",
      "start": "2026-10-25T12:00:00.000Z"
+    }
+   ],
+   "cancelled": false
+  },
+  {
+   "raceid": "131579",
+   "eventid": "62772",
+   "category": "WC",
+   "place": "Levi",
+   "country": "FIN",
+   "discipline": "Slalom",
+   "gender": "women",
+   "start": "2026-11-14T09:00:00.000Z",
+   "approxTime": false,
+   "tz": "Europe/Helsinki",
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-14T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-14T12:00:00.000Z"
+    }
+   ],
+   "cancelled": false,
+   "results": []
+  },
+  {
+   "raceid": "131580",
+   "eventid": "62772",
+   "category": "WC",
+   "place": "Levi",
+   "country": "FIN",
+   "discipline": "Slalom",
+   "gender": "men",
+   "start": "2026-11-15T09:00:00.000Z",
+   "approxTime": false,
+   "tz": "Europe/Helsinki",
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-15T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-15T12:00:00.000Z"
+    }
+   ],
+   "cancelled": false,
+   "results": []
+  },
+  {
+   "raceid": "131581",
+   "eventid": "62773",
+   "category": "WC",
+   "place": "Gurgl",
+   "country": "AUT",
+   "discipline": "Slalom",
+   "gender": "women",
+   "start": "2026-11-21T09:30:00.000Z",
+   "approxTime": false,
+   "tz": "Europe/Vienna",
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-21T09:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-21T12:30:00.000Z"
+    }
+   ],
+   "cancelled": false,
+   "results": []
+  },
+  {
+   "raceid": "131582",
+   "eventid": "62773",
+   "category": "WC",
+   "place": "Gurgl",
+   "country": "AUT",
+   "discipline": "Slalom",
+   "gender": "men",
+   "start": "2026-11-22T09:30:00.000Z",
+   "approxTime": false,
+   "tz": "Europe/Vienna",
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-11-22T09:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-11-22T12:30:00.000Z"
     }
    ],
    "cancelled": false
@@ -1826,69 +1921,109 @@
   ],
   "women": [
    {
-    "name": "AICHER Emma",
-    "nation": "GER",
-    "rank": 1,
-    "points": 160,
-    "DH": null,
-    "SG": null,
-    "GS": 60,
-    "SL": 100
-   },
-   {
     "name": "COLTURI Lara",
     "nation": "ALB",
     "rank": 1,
-    "points": 160,
+    "points": 260,
     "DH": null,
     "SG": null,
     "GS": 80,
-    "SL": 80
+    "SL": 180
    },
    {
-    "name": "MOLTZAN Paula",
-    "nation": "USA",
-    "rank": 3,
-    "points": 100,
+    "name": "AICHER Emma",
+    "nation": "GER",
+    "rank": 2,
+    "points": 192,
     "DH": null,
     "SG": null,
-    "GS": 100,
-    "SL": null
-   },
-   {
-    "name": "LJUTIC Zrinka",
-    "nation": "CRO",
-    "rank": 4,
-    "points": 74,
-    "DH": null,
-    "SG": null,
-    "GS": 24,
-    "SL": 50
+    "GS": 60,
+    "SL": 132
    },
    {
     "name": "HECTOR Sara",
     "nation": "SWE",
-    "rank": 5,
-    "points": 70,
+    "rank": 3,
+    "points": 150,
     "DH": null,
     "SG": null,
     "GS": 50,
+    "SL": 100
+   },
+   {
+    "name": "MOLTZAN Paula",
+    "nation": "USA",
+    "rank": 4,
+    "points": 120,
+    "DH": null,
+    "SG": null,
+    "GS": 100,
     "SL": 20
+   },
+   {
+    "name": "LJUTIC Zrinka",
+    "nation": "CRO",
+    "rank": 5,
+    "points": 110,
+    "DH": null,
+    "SG": null,
+    "GS": 24,
+    "SL": 86
    },
    {
     "name": "RAST Camille",
     "nation": "SUI",
     "rank": 6,
-    "points": 64,
+    "points": 109,
     "DH": null,
     "SG": null,
     "GS": 40,
-    "SL": 24
+    "SL": 69
+   },
+   {
+    "name": "SWENN LARSSON Anna",
+    "nation": "SWE",
+    "rank": 7,
+    "points": 105,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 105
+   },
+   {
+    "name": "HURT A J",
+    "nation": "USA",
+    "rank": 8,
+    "points": 86,
+    "DH": null,
+    "SG": null,
+    "GS": 20,
+    "SL": 66
+   },
+   {
+    "name": "CHEVRIER Marion",
+    "nation": "FRA",
+    "rank": 9,
+    "points": 64,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 64
+   },
+   {
+    "name": "ARONSSON ELFMAN Hanna",
+    "nation": "SWE",
+    "rank": 10,
+    "points": 61,
+    "DH": null,
+    "SG": null,
+    "GS": 12,
+    "SL": 49
    },
    {
     "name": "TRUPPE Katharina",
     "nation": "AUT",
-    "rank": 7,
+    "rank": 11,
     "points": 60,
     "DH": null,
     "SG": null,
@@ -1896,19 +2031,29 @@
     "SL": 60
    },
    {
-    "name": "SWENN LARSSON Anna",
-    "nation": "SWE",
-    "rank": 8,
-    "points": 45,
+    "name": "DELLA MEA Lara",
+    "nation": "ITA",
+    "rank": 12,
+    "points": 53,
+    "DH": null,
+    "SG": null,
+    "GS": 13,
+    "SL": 40
+   },
+   {
+    "name": "GERMANE Dzenifera",
+    "nation": "LAT",
+    "rank": 13,
+    "points": 48,
     "DH": null,
     "SG": null,
     "GS": null,
-    "SL": 45
+    "SL": 48
    },
    {
     "name": "ZENERE Asja",
     "nation": "ITA",
-    "rank": 8,
+    "rank": 14,
     "points": 45,
     "DH": null,
     "SG": null,
@@ -1916,19 +2061,29 @@
     "SL": null
    },
    {
-    "name": "CHEVRIER Marion",
+    "name": "DUERR Lena",
+    "nation": "GER",
+    "rank": 15,
+    "points": 44,
+    "DH": null,
+    "SG": null,
+    "GS": 9,
+    "SL": 35
+   },
+   {
+    "name": "LAMURE Marie",
     "nation": "FRA",
-    "rank": 10,
-    "points": 40,
+    "rank": 16,
+    "points": 43,
     "DH": null,
     "SG": null,
     "GS": null,
-    "SL": 40
+    "SL": 43
    },
    {
     "name": "HOLDENER Wendy",
     "nation": "SUI",
-    "rank": 11,
+    "rank": 17,
     "points": 37,
     "DH": null,
     "SG": null,
@@ -1936,19 +2091,9 @@
     "SL": 26
    },
    {
-    "name": "LAMURE Marie",
-    "nation": "FRA",
-    "rank": 12,
-    "points": 36,
-    "DH": null,
-    "SG": null,
-    "GS": null,
-    "SL": 36
-   },
-   {
     "name": "SHIFFRIN Mikaela",
     "nation": "USA",
-    "rank": 12,
+    "rank": 18,
     "points": 36,
     "DH": null,
     "SG": null,
@@ -1956,19 +2101,9 @@
     "SL": null
    },
    {
-    "name": "HURT A J",
-    "nation": "USA",
-    "rank": 12,
-    "points": 36,
-    "DH": null,
-    "SG": null,
-    "GS": 20,
-    "SL": 16
-   },
-   {
     "name": "GRITSCH Franziska",
     "nation": "AUT",
-    "rank": 15,
+    "rank": 19,
     "points": 35,
     "DH": null,
     "SG": null,
@@ -1978,7 +2113,7 @@
    {
     "name": "HOFFMAN Madison",
     "nation": "AUS",
-    "rank": 16,
+    "rank": 20,
     "points": 32,
     "DH": null,
     "SG": null,
@@ -1988,7 +2123,7 @@
    {
     "name": "ROBINSON Alice",
     "nation": "NZL",
-    "rank": 16,
+    "rank": 20,
     "points": 32,
     "DH": null,
     "SG": null,
@@ -1996,9 +2131,19 @@
     "SL": null
    },
    {
+    "name": "HOEPLI Aline",
+    "nation": "SUI",
+    "rank": 22,
+    "points": 30,
+    "DH": null,
+    "SG": null,
+    "GS": null,
+    "SL": 30
+   },
+   {
     "name": "GASIENICA-DANIEL Maryna",
     "nation": "POL",
-    "rank": 18,
+    "rank": 23,
     "points": 29,
     "DH": null,
     "SG": null,
@@ -2008,7 +2153,7 @@
    {
     "name": "HUBER Katharina",
     "nation": "AUT",
-    "rank": 18,
+    "rank": 23,
     "points": 29,
     "DH": null,
     "SG": null,
@@ -2016,64 +2161,14 @@
     "SL": 29
    },
    {
-    "name": "DELLA MEA Lara",
-    "nation": "ITA",
-    "rank": 20,
-    "points": 24,
-    "DH": null,
-    "SG": null,
-    "GS": 13,
-    "SL": 11
-   },
-   {
-    "name": "VLHOVA Petra",
-    "nation": "SVK",
-    "rank": 21,
-    "points": 23,
-    "DH": null,
-    "SG": null,
-    "GS": 8,
-    "SL": 15
-   },
-   {
-    "name": "ALPHAND Estelle",
-    "nation": "SWE",
-    "rank": 22,
-    "points": 22,
-    "DH": null,
-    "SG": null,
-    "GS": 22,
-    "SL": null
-   },
-   {
-    "name": "GERMANE Dzenifera",
-    "nation": "LAT",
-    "rank": 22,
-    "points": 22,
-    "DH": null,
-    "SG": null,
-    "GS": null,
-    "SL": 22
-   },
-   {
-    "name": "DUERR Lena",
-    "nation": "GER",
-    "rank": 22,
-    "points": 22,
-    "DH": null,
-    "SG": null,
-    "GS": 9,
-    "SL": 13
-   },
-   {
-    "name": "BOCOCK Elisabeth",
-    "nation": "USA",
+    "name": "DVORNIK Neja",
+    "nation": "SLO",
     "rank": 25,
-    "points": 18,
+    "points": 28,
     "DH": null,
     "SG": null,
-    "GS": 18,
-    "SL": null
+    "GS": 1,
+    "SL": 27
    }
   ]
  },
