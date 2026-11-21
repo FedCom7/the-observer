@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T01:28:29.538Z",
+ "updated": "2026-11-21T09:43:18.593Z",
  "season": 2027,
  "races": [
   {
@@ -44,100 +44,6 @@
     {
      "run": "2nd",
      "start": "2026-10-25T12:00:00.000Z"
-    }
-   ],
-   "cancelled": false
-  },
-  {
-   "raceid": "131579",
-   "eventid": "62772",
-   "category": "WC",
-   "place": "Levi",
-   "country": "FIN",
-   "discipline": "Slalom",
-   "gender": "women",
-   "start": "2026-11-14T09:00:00.000Z",
-   "approxTime": false,
-   "tz": "Europe/Helsinki",
-   "runs": [
-    {
-     "run": "1st",
-     "start": "2026-11-14T09:00:00.000Z"
-    },
-    {
-     "run": "2nd",
-     "start": "2026-11-14T12:00:00.000Z"
-    }
-   ],
-   "cancelled": false,
-   "results": []
-  },
-  {
-   "raceid": "131580",
-   "eventid": "62772",
-   "category": "WC",
-   "place": "Levi",
-   "country": "FIN",
-   "discipline": "Slalom",
-   "gender": "men",
-   "start": "2026-11-15T09:00:00.000Z",
-   "approxTime": false,
-   "tz": "Europe/Helsinki",
-   "runs": [
-    {
-     "run": "1st",
-     "start": "2026-11-15T09:00:00.000Z"
-    },
-    {
-     "run": "2nd",
-     "start": "2026-11-15T12:00:00.000Z"
-    }
-   ],
-   "cancelled": false,
-   "results": []
-  },
-  {
-   "raceid": "131581",
-   "eventid": "62773",
-   "category": "WC",
-   "place": "Gurgl",
-   "country": "AUT",
-   "discipline": "Slalom",
-   "gender": "women",
-   "start": "2026-11-21T09:30:00.000Z",
-   "approxTime": false,
-   "tz": "Europe/Vienna",
-   "runs": [
-    {
-     "run": "1st",
-     "start": "2026-11-21T09:30:00.000Z"
-    },
-    {
-     "run": "2nd",
-     "start": "2026-11-21T12:30:00.000Z"
-    }
-   ],
-   "cancelled": false
-  },
-  {
-   "raceid": "131582",
-   "eventid": "62773",
-   "category": "WC",
-   "place": "Gurgl",
-   "country": "AUT",
-   "discipline": "Slalom",
-   "gender": "men",
-   "start": "2026-11-22T09:30:00.000Z",
-   "approxTime": false,
-   "tz": "Europe/Vienna",
-   "runs": [
-    {
-     "run": "1st",
-     "start": "2026-11-22T09:30:00.000Z"
-    },
-    {
-     "run": "2nd",
-     "start": "2026-11-22T12:30:00.000Z"
     }
    ],
    "cancelled": false
@@ -384,9 +290,18 @@
    "discipline": "Giant Slalom",
    "gender": "men",
    "start": "2026-12-12T09:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "Europe/Paris",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-12T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-12T12:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -417,9 +332,18 @@
    "discipline": "Slalom",
    "gender": "men",
    "start": "2026-12-13T09:00:00.000Z",
-   "approxTime": true,
+   "approxTime": false,
    "tz": "Europe/Paris",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-13T09:00:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-13T12:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
