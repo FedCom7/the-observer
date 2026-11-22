@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T11:14:58.117Z",
+ "updated": "2026-11-22T18:30:38.383Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -304,7 +304,7 @@
      {
       "cls": "Moto3",
       "key": "RAC2",
-      "name": "Race ",
+      "name": "Race",
       "start": "2026-03-22T15:30:00.000Z"
      },
      {
@@ -3598,7 +3598,7 @@
     ],
     "start": "2026-11-20T08:00:00.000Z",
     "end": "2026-11-22T18:00:00.000Z",
-    "status": "CURRENT",
+    "status": "FINISHED",
     "sessions": [
      {
       "cls": "Moto3",
@@ -3664,7 +3664,7 @@
       "cls": "MotoGP",
       "key": "Q2",
       "name": "Q2",
-      "start": "2026-11-21T11:15:00.000Z"
+      "start": "2026-11-21T11:20:00.000Z"
      },
      {
       "cls": "Moto3",
@@ -3706,13 +3706,13 @@
       "cls": "Moto3",
       "key": "RAC",
       "name": "Race",
-      "start": "2026-11-22T10:00:00.000Z"
+      "start": "2026-11-22T10:05:00.000Z"
      },
      {
       "cls": "Moto2",
-      "key": "RAC",
+      "key": "RAC2",
       "name": "Race",
-      "start": "2026-11-22T11:15:00.000Z"
+      "start": "2026-11-22T11:51:00.000Z"
      },
      {
       "cls": "MotoGP",
@@ -3722,7 +3722,26 @@
      }
     ],
     "results": {
-     "race": [],
+     "race": [
+      {
+       "pos": 1,
+       "name": "Marco Bezzecchi",
+       "nation": "IT",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 2,
+       "name": "Jorge Martin",
+       "nation": "ES",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 3,
+       "name": "Raul Fernandez",
+       "nation": "ES",
+       "team": "SuperFile Trackhouse MotoGP Team"
+      }
+     ],
      "sprint": [
       {
        "pos": 1,
@@ -3893,7 +3912,7 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 431,
+    "points": 439,
     "wins": 7,
     "podiums": 8,
     "sprintWins": 10
@@ -3905,9 +3924,9 @@
     "nation": "ES",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 376,
+    "points": 396,
     "wins": 1,
-    "podiums": 9,
+    "podiums": 10,
     "sprintWins": 4
    },
    {
@@ -3917,9 +3936,9 @@
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 369,
-    "wins": 6,
-    "podiums": 12,
+    "points": 394,
+    "wins": 7,
+    "podiums": 13,
     "sprintWins": 1
    },
    {
@@ -3941,7 +3960,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 298,
+    "points": 309,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3953,7 +3972,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 285,
+    "points": 298,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3965,9 +3984,9 @@
     "nation": "ES",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 267,
+    "points": 283,
     "wins": 1,
-    "podiums": 6,
+    "podiums": 7,
     "sprintWins": 2
    },
    {
@@ -4001,7 +4020,7 @@
     "nation": "IT",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 147,
+    "points": 152,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4013,7 +4032,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 129,
+    "points": 139,
     "wins": 0,
     "podiums": 1,
     "sprintWins": 0
@@ -4025,7 +4044,7 @@
     "nation": "ZA",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 118,
+    "points": 127,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4037,7 +4056,7 @@
     "nation": "IT",
     "team": "Honda HRC Castrol",
     "constructor": "Honda",
-    "points": 117,
+    "points": 124,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4049,7 +4068,7 @@
     "nation": "FR",
     "team": "Monster Energy Yamaha MotoGP Team",
     "constructor": "Yamaha",
-    "points": 81,
+    "points": 85,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4073,7 +4092,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 70,
+    "points": 71,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4092,6 +4111,18 @@
    },
    {
     "pos": 18,
+    "name": "Jack Miller",
+    "number": 43,
+    "nation": "AU",
+    "team": "Prima Pramac Yamaha MotoGP",
+    "constructor": "Yamaha",
+    "points": 34,
+    "wins": 0,
+    "podiums": 0,
+    "sprintWins": 0
+   },
+   {
+    "pos": 19,
     "name": "Joan Mir",
     "number": 36,
     "nation": "ES",
@@ -4103,25 +4134,13 @@
     "sprintWins": 0
    },
    {
-    "pos": 19,
-    "name": "Jack Miller",
-    "number": 43,
-    "nation": "AU",
-    "team": "Prima Pramac Yamaha MotoGP",
-    "constructor": "Yamaha",
-    "points": 31,
-    "wins": 0,
-    "podiums": 0,
-    "sprintWins": 0
-   },
-   {
     "pos": 20,
     "name": "Alex Rins",
     "number": 42,
     "nation": "ES",
     "team": "Monster Energy Yamaha MotoGP Team",
     "constructor": "Yamaha",
-    "points": 29,
+    "points": 31,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4133,7 +4152,7 @@
     "nation": "ES",
     "team": "Ducati Lenovo Team",
     "constructor": "Ducati",
-    "points": 19,
+    "points": 25,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4303,7 +4322,7 @@
     "nation": "ES",
     "team": "BLU CRU Pramac Yamaha Moto2",
     "constructor": "Boscoscuro",
-    "points": 273,
+    "points": 282,
     "wins": 4,
     "podiums": 9,
     "sprintWins": 0
@@ -4315,7 +4334,7 @@
     "nation": "ES",
     "team": "QJMOTOR - MSI",
     "constructor": "Kalex",
-    "points": 219.5,
+    "points": 230.5,
     "wins": 2,
     "podiums": 5,
     "sprintWins": 0
@@ -4327,7 +4346,7 @@
     "nation": "ES",
     "team": "CFMOTO Power Electronics Aspar Team",
     "constructor": "Kalex",
-    "points": 215,
+    "points": 225,
     "wins": 2,
     "podiums": 7,
     "sprintWins": 0
@@ -4339,7 +4358,7 @@
     "nation": "CO",
     "team": "CFMOTO Power Electronics Aspar Team",
     "constructor": "Kalex",
-    "points": 204,
+    "points": 217,
     "wins": 2,
     "podiums": 5,
     "sprintWins": 0

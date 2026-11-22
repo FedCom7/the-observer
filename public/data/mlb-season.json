@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T11:14:26.245Z",
+ "updated": "2026-11-22T18:29:58.199Z",
  "season": 2026,
  "teams": [
   {
@@ -41526,6 +41526,24 @@
  "transactions": [
   {
    "date": "2026-11-20",
+   "type": "Claimed Off Waivers",
+   "team": 112,
+   "from": 145,
+   "to": 112,
+   "player": "Joey Bart",
+   "text": "Chicago Cubs claimed C Joey Bart off waivers from Chicago White Sox."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Trade",
+   "team": 142,
+   "from": 119,
+   "to": 142,
+   "player": "Francisco Espinoza",
+   "text": "Minnesota Twins traded 1B Royce Lewis to Los Angeles Dodgers for RHP Bobby Miller and C Francisco Espinoza."
+  },
+  {
+   "date": "2026-11-20",
    "type": "Trade",
    "team": 143,
    "from": 145,
@@ -41535,12 +41553,21 @@
   },
   {
    "date": "2026-11-20",
-   "type": "Claimed Off Waivers",
-   "team": 112,
-   "from": 145,
-   "to": 112,
-   "player": "Joey Bart",
-   "text": "Chicago Cubs claimed C Joey Bart off waivers from Chicago White Sox."
+   "type": "Trade",
+   "team": 139,
+   "from": 137,
+   "to": 139,
+   "player": "Christian Koss",
+   "text": "San Francisco Giants traded SS Christian Koss to Tampa Bay Rays for RHP Cole Stokes."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Trade",
+   "team": 120,
+   "from": 112,
+   "to": 120,
+   "player": null,
+   "text": "Washington Nationals traded RHP Braxton Roxby to Chicago Cubs for cash."
   },
   {
    "date": "2026-11-20",
@@ -41559,33 +41586,6 @@
    "to": 121,
    "player": "Gus Varland",
    "text": "New York Mets claimed RHP Gus Varland off waivers from Washington Nationals."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
-   "team": 112,
-   "from": 120,
-   "to": 112,
-   "player": "Braxton Roxby",
-   "text": "Washington Nationals traded RHP Braxton Roxby to Chicago Cubs for cash."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
-   "team": 139,
-   "from": 137,
-   "to": 139,
-   "player": "Christian Koss",
-   "text": "San Francisco Giants traded SS Christian Koss to Tampa Bay Rays for RHP Cole Stokes."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Trade",
-   "team": 142,
-   "from": 119,
-   "to": 142,
-   "player": "Bobby Miller",
-   "text": "Minnesota Twins traded 1B Royce Lewis to Los Angeles Dodgers for RHP Bobby Miller and C Francisco Espinoza."
   },
   {
    "date": "2026-11-20",
@@ -41662,20 +41662,20 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 121,
+   "team": 134,
    "from": null,
-   "to": 121,
-   "player": "Hayden Senger",
-   "text": "C Hayden Senger elected free agency."
+   "to": 134,
+   "player": "Noah Murdock",
+   "text": "RHP Noah Murdock elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 143,
+   "team": 118,
    "from": null,
-   "to": 143,
-   "player": "Brett Harris",
-   "text": "3B Brett Harris elected free agency."
+   "to": 118,
+   "player": "Nick Mears",
+   "text": "RHP Nick Mears elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41689,20 +41689,11 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 135,
+   "team": 119,
    "from": null,
-   "to": 135,
-   "player": "JP Sears",
-   "text": "LHP JP Sears elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 142,
-   "from": null,
-   "to": 142,
-   "player": "Bailey Ober",
-   "text": "RHP Bailey Ober elected free agency."
+   "to": 119,
+   "player": "Jake Cousins",
+   "text": "RHP Jake Cousins elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41716,38 +41707,29 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 112,
+   "team": 111,
    "from": null,
-   "to": 112,
-   "player": "Ethan Roberts",
-   "text": "RHP Ethan Roberts elected free agency."
+   "to": 111,
+   "player": "Connor Wong",
+   "text": "C Connor Wong elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 112,
+   "team": 120,
    "from": null,
-   "to": 112,
-   "player": "Gabriel Arias",
-   "text": "3B Gabriel Arias elected free agency."
+   "to": 120,
+   "player": "Jared Simpson",
+   "text": "LHP Jared Simpson elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 116,
+   "team": 135,
    "from": null,
-   "to": 116,
-   "player": "Matt Vierling",
-   "text": "CF Matt Vierling elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 116,
-   "from": null,
-   "to": 116,
-   "player": "Trey Sweeney",
-   "text": "SS Trey Sweeney elected free agency."
+   "to": 135,
+   "player": "Garrett Hawkins",
+   "text": "RHP Garrett Hawkins elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41779,11 +41761,11 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 137,
+   "team": 109,
    "from": null,
-   "to": 137,
-   "player": "Rowan Wick",
-   "text": "RHP Rowan Wick elected free agency."
+   "to": 109,
+   "player": "Andrew Saalfrank",
+   "text": "LHP Andrew Saalfrank elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41815,47 +41797,38 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 134,
+   "team": 121,
    "from": null,
-   "to": 134,
-   "player": "Noah Murdock",
-   "text": "RHP Noah Murdock elected free agency."
+   "to": 121,
+   "player": "Hayden Senger",
+   "text": "C Hayden Senger elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 118,
+   "team": 143,
    "from": null,
-   "to": 118,
-   "player": "Nick Mears",
-   "text": "RHP Nick Mears elected free agency."
+   "to": 143,
+   "player": "Brett Harris",
+   "text": "3B Brett Harris elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 111,
+   "team": 139,
    "from": null,
-   "to": 111,
-   "player": "Connor Wong",
-   "text": "C Connor Wong elected free agency."
+   "to": 139,
+   "player": "Cole Sulser",
+   "text": "RHP Cole Sulser elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 120,
+   "team": 142,
    "from": null,
-   "to": 120,
-   "player": "Carson Palmquist",
-   "text": "LHP Carson Palmquist elected free agency."
-  },
-  {
-   "date": "2026-11-20",
-   "type": "Declared Free Agency",
-   "team": 113,
-   "from": null,
-   "to": 113,
-   "player": "Leo Balcazar",
-   "text": "SS Leo Balcazar elected free agency."
+   "to": 142,
+   "player": "Trevor Larnach",
+   "text": "LF Trevor Larnach elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41950,11 +41923,11 @@
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 139,
+   "team": 135,
    "from": null,
-   "to": 139,
-   "player": "Cole Sulser",
-   "text": "RHP Cole Sulser elected free agency."
+   "to": 135,
+   "player": "JP Sears",
+   "text": "LHP JP Sears elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41962,8 +41935,26 @@
    "team": 142,
    "from": null,
    "to": 142,
-   "player": "Trevor Larnach",
-   "text": "LF Trevor Larnach elected free agency."
+   "player": "Bailey Ober",
+   "text": "RHP Bailey Ober elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Ethan Roberts",
+   "text": "RHP Ethan Roberts elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 112,
+   "from": null,
+   "to": 112,
+   "player": "Gabriel Arias",
+   "text": "3B Gabriel Arias elected free agency."
   },
   {
    "date": "2026-11-20",
@@ -41971,35 +41962,44 @@
    "team": 120,
    "from": null,
    "to": 120,
-   "player": "Jared Simpson",
-   "text": "LHP Jared Simpson elected free agency."
+   "player": "Carson Palmquist",
+   "text": "LHP Carson Palmquist elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 135,
+   "team": 113,
    "from": null,
-   "to": 135,
-   "player": "Garrett Hawkins",
-   "text": "RHP Garrett Hawkins elected free agency."
+   "to": 113,
+   "player": "Leo Balcazar",
+   "text": "SS Leo Balcazar elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 109,
+   "team": 116,
    "from": null,
-   "to": 109,
-   "player": "Andrew Saalfrank",
-   "text": "LHP Andrew Saalfrank elected free agency."
+   "to": 116,
+   "player": "Matt Vierling",
+   "text": "CF Matt Vierling elected free agency."
   },
   {
    "date": "2026-11-20",
    "type": "Declared Free Agency",
-   "team": 119,
+   "team": 116,
    "from": null,
-   "to": 119,
-   "player": "Jake Cousins",
-   "text": "RHP Jake Cousins elected free agency."
+   "to": 116,
+   "player": "Trey Sweeney",
+   "text": "SS Trey Sweeney elected free agency."
+  },
+  {
+   "date": "2026-11-20",
+   "type": "Declared Free Agency",
+   "team": 137,
+   "from": null,
+   "to": 137,
+   "player": "Rowan Wick",
+   "text": "RHP Rowan Wick elected free agency."
   },
   {
    "date": "2026-11-19",
