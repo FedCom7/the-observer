@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T03:07:04.990Z",
- "llAt": "2026-11-22T03:07:04.990Z",
+ "updated": "2026-11-22T11:15:52.085Z",
+ "llAt": "2026-11-22T11:15:52.085Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2362,7 +2362,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-21T23:10:47.125Z",
+  "at": "2026-11-22T11:15:32.403Z",
   "stats": {
    "total": 747,
    "successes": 732,
@@ -2371,7 +2371,7 @@
    "landings": 691,
    "landingAttempts": 720,
    "landingStreak": 1,
-   "dragonReturns": 64,
+   "dragonReturns": 65,
    "pending": 136
   },
   "year": 2026,
@@ -3184,20 +3184,6 @@
   ],
   "upcoming": [
    {
-    "id": "76617033-4dc0-4448-b50c-e5b0d5a18539",
-    "name": "USSF-317",
-    "rocket": "Falcon 9",
-    "net": "2026-11-21T04:20:35Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
     "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
     "name": "NROL-136",
     "rocket": "Falcon 9",
@@ -3382,6 +3368,20 @@
    {
     "id": "dca8749f-1552-485a-8061-f1ad79055b8d",
     "name": "SDA Tranche 1 Tracking Layer C",
+    "rocket": "Falcon 9",
+    "net": "2026-12-31T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
+    "name": "SDA Tranche 1 Tracking Layer D",
     "rocket": "Falcon 9",
     "net": "2026-12-31T00:00:00Z",
     "status": "TBD",
@@ -3634,7 +3634,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-22T03:06:54.219Z",
+  "at": "2026-11-22T11:15:40.692Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4039,7 +4039,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-22T03:06:58.360Z",
+  "at": "2026-11-22T11:15:45.271Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4552,7 +4552,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-22T03:07:04.989Z",
+  "at": "2026-11-22T11:15:52.084Z",
   "items": [
    {
     "id": "agenda:2mbflouhqsn125agtjinuvhfoe@google.com",
