@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T04:45:59.829Z",
- "llAt": "2026-11-24T04:45:59.829Z",
+ "updated": "2026-11-24T15:50:44.480Z",
+ "llAt": "2026-11-24T15:50:44.480Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1107,6 +1107,15 @@
  ],
  "llEvents": [
   {
+   "id": 1578,
+   "name": "Progress MS-36 Docking",
+   "type": "Docking",
+   "date": "2026-11-26T12:11:00Z",
+   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Zvezda module of the ISS.",
+   "location": "International Space Station",
+   "webcast": false
+  },
+  {
    "id": 365,
    "name": "Boeing Starliner-1 Docking",
    "type": "Docking",
@@ -1154,15 +1163,13 @@
  ],
  "events": [
   {
-   "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
-   "name": "Docking · Progress MS-36",
+   "id": 1578,
+   "name": "Progress MS-36 Docking",
    "type": "Docking",
-   "date": "2026-11-26T11:00:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": true,
-   "source": "AstronauticAgenda"
+   "date": "2026-11-26T12:11:00Z",
+   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Zvezda module of the ISS.",
+   "location": "International Space Station",
+   "webcast": false
   },
   {
    "id": "agenda:2sg05i1qr3rq70vfc9m8oqn2ki@google.com",
@@ -1458,7 +1465,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-23T07:39:41.703Z",
+  "at": "2026-11-24T15:50:24.472Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -1493,7 +1500,7 @@
      "age": 48,
      "firstFlight": "2021-04-09T07:42:41Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P486DT4H35M45S",
+     "inSpace": "P487DT4H37M28S",
      "evaTime": "P1DT5H49M"
     },
     {
@@ -1505,7 +1512,7 @@
      "age": 50,
      "firstFlight": "2026-07-14T14:47:43Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P131DT51M11S",
+     "inSpace": "P132DT53M5S",
      "evaTime": "P1DT9H39M"
     },
     {
@@ -1517,7 +1524,7 @@
      "age": 44,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P52DT27M58S",
+     "inSpace": "P53DT29M41S",
      "evaTime": "PT14H10M"
     },
     {
@@ -1529,7 +1536,7 @@
      "age": 47,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P52DT28M47S",
+     "inSpace": "P53DT30M40S",
      "evaTime": "P0D"
     },
     {
@@ -1541,7 +1548,7 @@
      "age": 37,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P52DT30M37S",
+     "inSpace": "P53DT32M35S",
      "evaTime": "P0D"
     },
     {
@@ -1553,7 +1560,7 @@
      "age": 42,
      "firstFlight": "2022-10-05T16:00:57Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P288DT10H51M29S",
+     "inSpace": "P289DT10H53M12S",
      "evaTime": "P0D"
     },
     {
@@ -1565,7 +1572,7 @@
      "age": 38,
      "firstFlight": "2022-04-27T07:52:55Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P222DT13H29M33S",
+     "inSpace": "P223DT13H31M14S",
      "evaTime": "P0D"
     }
    ]
@@ -1602,13 +1609,19 @@
     "since": null
    },
    {
+    "name": "Unity nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
     "name": "Zvezda zenith",
     "vehicle": null,
     "mission": null,
     "since": null
    },
    {
-    "name": "Unity nadir",
+    "name": "Nauka nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1618,12 +1631,6 @@
     "vehicle": "Progress MS-34",
     "mission": "Progress MS-34 (95P)",
     "since": "2026-04-28T00:00:48Z"
-   },
-   {
-    "name": "Nauka nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
    },
    {
     "name": "Poisk zenith",
@@ -3483,6 +3490,24 @@
  },
  "news": [
   {
+   "title": "Crew Awaits Thanksgiving Day Delivery as Another Cargo Craft Nears Launch",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-24T15:05:29.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/24/crew-awaits-thanksgiving-day-delivery-as-another-cargo-craft-nears-launch/"
+  },
+  {
+   "title": "Progress Cargo Craft Lifts Off to Resupply Expedition 75 Crew",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-24T10:34:45.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/24/progress-cargo-craft-lifts-off-to-resupply-expedition-75-crew/"
+  },
+  {
+   "title": "Progress Cargo Craft Counts Down to Launch from Kazakhstan",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-24T09:41:47.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/24/progress-cargo-craft-counts-down-to-launch-from-kazakhstan/"
+  },
+  {
    "title": "Advanced Biomedical Research Tops Crew Schedule Aboard Station",
    "source": "NASA · Space Station blog",
    "time": "2026-11-23T18:18:17.000Z",
@@ -3517,24 +3542,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-19T21:02:23.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/19/science-and-suits-fill-schedule-as-crew-preps-for-cargo-missions/"
-  },
-  {
-   "title": "NASA, SpaceX Prepare for Dragon Undocking as Science Packing Continues",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-18T19:09:48.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-prepare-for-dragon-undocking-as-science-packing-continues/"
-  },
-  {
-   "title": "NASA, SpaceX Stand Down from Dragon’s Undocking on Wednesday",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-18T06:44:57.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/18/nasa-spacex-stand-down-from-dragons-undocking-on-wednesday/"
-  },
-  {
-   "title": "Cardiac Research, Exercise Studies on Station Keeping Crews Healthy",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-17T19:28:52.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/17/cardiac-research-exercise-studies-on-station-keeping-crews-healthy/"
   },
   {
    "title": "I Am Artemis: Katie Spicer",
@@ -3634,7 +3641,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-24T04:45:49.578Z",
+  "at": "2026-11-24T15:50:33.687Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4039,7 +4046,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-24T04:45:53.993Z",
+  "at": "2026-11-24T15:50:38.529Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4552,7 +4559,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-24T04:45:59.828Z",
+  "at": "2026-11-24T15:50:44.479Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
