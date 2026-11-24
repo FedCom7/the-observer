@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T20:12:11.231Z",
- "llAt": "2026-11-23T20:12:11.231Z",
+ "updated": "2026-11-24T04:45:59.829Z",
+ "llAt": "2026-11-24T04:45:59.829Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -2362,7 +2362,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-23T00:16:18.172Z",
+  "at": "2026-11-24T04:45:42.220Z",
   "stats": {
    "total": 748,
    "successes": 733,
@@ -2372,7 +2372,7 @@
    "landingAttempts": 721,
    "landingStreak": 2,
    "dragonReturns": 65,
-   "pending": 135
+   "pending": 136
   },
   "year": 2026,
   "yearCount": 129,
@@ -3184,24 +3184,10 @@
   ],
   "upcoming": [
    {
-    "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
-    "name": "NROL-136",
-    "rocket": "Falcon 9",
-    "net": "2026-11-22T12:23:56Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
-   },
-   {
     "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
     "name": "USSF-266",
     "rocket": "Falcon 9",
-    "net": "2026-11-24T15:55:00Z",
+    "net": "2026-11-24T16:08:59Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
@@ -3236,6 +3222,20 @@
     "location": "Cape Canaveral SFS, FL, USA",
     "orbit": "LEO",
     "type": "Resupply",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "5591cfa3-6336-41ab-a37a-7c57aa28ab5f",
+    "name": "NROL-132",
+    "rocket": "Falcon 9",
+    "net": "2026-12-02T20:30:00Z",
+    "status": "TBC",
+    "tbc": true,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "LEO",
+    "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
    },
@@ -3634,7 +3634,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-23T20:11:58.750Z",
+  "at": "2026-11-24T04:45:49.578Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -3747,7 +3747,7 @@
     "type": "SpaceX commercial astronaut, NASA astronaut candidate",
     "missions": "Polaris Dawn",
     "education": "",
-    "lead": "Anna Menon (née Wilhelm ; born December 24, 1985) is an American engineer and NASA astronaut candidate, formerly employed by SpaceX as lead space operations and a mission director. She flew on Polaris Dawn, a private human spaceflight mission operated by SpaceX on behalf of Jared Isaacman. During the September 2024 mission, she served as the onboard medical officer and, along with Sarah Gillis, set a record for women traveling farthest from Earth, later broken by Christina Koch of Artemis II. She was selected in September 2025 as a member of NASA Astronaut Group 24. Menon previously worked as a biomedical flight controller at NASA for seven years, overseeing operations at the International S",
+    "lead": "Anna Menon (née Wilhelm ; born December 24, 1985) is an American engineer and NASA astronaut candidate, formerly employed by SpaceX as lead space operations and a mission director. She flew on Polaris Dawn, a private human spaceflight mission operated by SpaceX on behalf of Jared Isaacman. During the September 2024 mission, she served as the onboard medical officer and, along with Sarah Gillis, set a record for women traveling farthest from Earth, broken in 2026 by Christina Koch of Artemis II. She was selected in September 2025 as a member of NASA Astronaut Group 24. Menon previously worked as a biomedical flight controller at NASA for seven years, overseeing operations at the International",
     "assignment": null,
     "url": "https://en.wikipedia.org/wiki/Anna_Menon",
     "candidate": true
@@ -4039,7 +4039,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-23T20:12:04.260Z",
+  "at": "2026-11-24T04:45:53.993Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4552,7 +4552,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-23T20:12:11.230Z",
+  "at": "2026-11-24T04:45:59.828Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
