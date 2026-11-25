@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T00:40:14.709Z",
- "llAt": "2026-11-25T00:40:14.709Z",
+ "updated": "2026-11-25T09:49:49.965Z",
+ "llAt": "2026-11-25T09:49:49.965Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -14,8 +14,8 @@
    "windowEnd": "2026-11-25T00:48:00Z",
    "precision": "Second",
    "tbc": false,
-   "status": "In Flight",
-   "statusName": "Launch in Flight",
+   "status": "Success",
+   "statusName": "Launch Successful",
    "crewed": true,
    "starship": false,
    "artemis": false,
@@ -26,7 +26,7 @@
     100.290944,
     40.957893
    ],
-   "webcast": true,
+   "webcast": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_thumbnail_20251129175823.jpeg",
    "patch": null,
    "crew": null,
@@ -886,8 +886,8 @@
    "windowEnd": "2026-11-25T00:48:00Z",
    "precision": "Second",
    "tbc": false,
-   "status": "In Flight",
-   "statusName": "Launch in Flight",
+   "status": "Success",
+   "statusName": "Launch Successful",
    "crewed": true,
    "starship": false,
    "artemis": false,
@@ -898,7 +898,7 @@
     100.290944,
     40.957893
    ],
-   "webcast": true,
+   "webcast": false,
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_thumbnail_20251129175823.jpeg",
    "patch": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/mission_patch_images/shenzhou252024_mission_patch_20261124224210.png",
    "crew": [
@@ -1186,13 +1186,15 @@
  ],
  "events": [
   {
-   "id": 1578,
-   "name": "Progress MS-36 Docking",
+   "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
+   "name": "Docking · Progress MS-36",
    "type": "Docking",
-   "date": "2026-11-26T12:11:00Z",
-   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Zvezda module of the ISS.",
-   "location": "International Space Station",
-   "webcast": false
+   "date": "2026-11-26T12:11:00.000Z",
+   "description": "",
+   "location": "ISS",
+   "webcast": false,
+   "allDay": false,
+   "source": "AstronauticAgenda"
   },
   {
    "id": "agenda:2sg05i1qr3rq70vfc9m8oqn2ki@google.com",
@@ -1346,6 +1348,14 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185922.jpeg"
   },
   {
+   "name": "Tang Hongbo",
+   "agency": "CNSA",
+   "nationality": "Chinese",
+   "lastFlight": "2026-11-25T00:18:52Z",
+   "timeInSpace": "P279DT15H12M44S",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185459.jpeg"
+  },
+  {
    "name": "Luke Delaney",
    "agency": "NASA",
    "nationality": "American",
@@ -1366,7 +1376,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P338DT6H13M30S",
+   "timeInSpace": "P338DT12H20M23S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185258.jpeg"
   },
   {
@@ -1400,9 +1410,51 @@
    "lastFlight": "1957-11-03T02:30:00Z",
    "timeInSpace": "P25223DT13H40M26S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/laika_image_thumbnail_20261102201325.jpeg"
+  },
+  {
+   "name": "Wu Yi",
+   "agency": "CNSA",
+   "nationality": "Chinese",
+   "lastFlight": "2026-11-25T00:18:52Z",
+   "timeInSpace": "PT4H29M18S",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/wu_yi_official__image_thumbnail_20261124223451.jpeg"
+  },
+  {
+   "name": "Muhammad Zeeshan Ali",
+   "agency": "SUPARCO",
+   "nationality": "Pakistani",
+   "lastFlight": "2026-11-25T00:18:52Z",
+   "timeInSpace": "PT4H29M19S",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/muhammad_zeesha_image_thumbnail_20261124223937.jpeg"
   }
  ],
  "missions": [
+  {
+   "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
+   "name": "Shenzhou 24",
+   "launched": "2026-11-25T00:18:52Z",
+   "spacecraft": "Shenzhou 24",
+   "destination": "Tiangong space station",
+   "patch": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/mission_patch_images/shenzhou252024_mission_patch_20261124224210.png",
+   "landing": "The Shenzhou 24 spacecraft will land at the Donfgeng landing site in Inner Mongolia, China.",
+   "crew": [
+    {
+     "name": "Tang Hongbo",
+     "role": "Commander",
+     "agency": "CNSA"
+    },
+    {
+     "name": "Muhammad Zeeshan Ali",
+     "role": "Operator",
+     "agency": "SUPARCO"
+    },
+    {
+     "name": "Wu Yi",
+     "role": "Operator",
+     "agency": "CNSA"
+    }
+   ]
+  },
   {
    "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
    "name": "Crew-13",
@@ -1488,7 +1540,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-24T15:50:24.472Z",
+  "at": "2026-11-25T09:49:28.243Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -1523,7 +1575,7 @@
      "age": 48,
      "firstFlight": "2021-04-09T07:42:41Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P487DT4H37M28S",
+     "inSpace": "P488DT5H4M10S",
      "evaTime": "P1DT5H49M"
     },
     {
@@ -1535,7 +1587,7 @@
      "age": 50,
      "firstFlight": "2026-07-14T14:47:43Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P132DT53M5S",
+     "inSpace": "P133DT1H19M56S",
      "evaTime": "P1DT9H39M"
     },
     {
@@ -1547,7 +1599,7 @@
      "age": 44,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P53DT29M41S",
+     "inSpace": "P54DT56M22S",
      "evaTime": "PT14H10M"
     },
     {
@@ -1559,7 +1611,7 @@
      "age": 47,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P53DT30M40S",
+     "inSpace": "P54DT57M31S",
      "evaTime": "P0D"
     },
     {
@@ -1571,7 +1623,7 @@
      "age": 37,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P53DT32M35S",
+     "inSpace": "P54DT1H13S",
      "evaTime": "P0D"
     },
     {
@@ -1583,7 +1635,7 @@
      "age": 42,
      "firstFlight": "2022-10-05T16:00:57Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P289DT10H53M12S",
+     "inSpace": "P290DT11H19M53S",
      "evaTime": "P0D"
     },
     {
@@ -1595,7 +1647,7 @@
      "age": 38,
      "firstFlight": "2022-04-27T07:52:55Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P223DT13H31M14S",
+     "inSpace": "P224DT13H57M38S",
      "evaTime": "P0D"
     }
    ]
@@ -1632,12 +1684,6 @@
     "since": null
    },
    {
-    "name": "Unity nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
     "name": "Zvezda zenith",
     "vehicle": null,
     "mission": null,
@@ -1645,6 +1691,12 @@
    },
    {
     "name": "Nauka nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Unity nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1873,6 +1925,15 @@
    }
   ],
   "stays": [
+   {
+    "id": 646,
+    "vehicle": "Shenzhou 24",
+    "mission": "Shenzhou 24",
+    "station": "Tiangong",
+    "crewed": true,
+    "docking": "2026-11-25T03:56:00Z",
+    "departure": null
+   },
    {
     "id": 645,
     "vehicle": "Cargo Dragon C211",
@@ -2223,15 +2284,6 @@
     "crewed": true,
     "docking": "2024-06-06T17:34:00Z",
     "departure": "2024-09-06T22:04:00Z"
-   },
-   {
-    "id": 609,
-    "vehicle": "Chang'e 6 Sample Ascender",
-    "mission": "",
-    "station": "",
-    "crewed": false,
-    "docking": "2024-06-06T06:48:00Z",
-    "departure": "2024-06-06T06:48:00Z"
    }
   ],
   "spacewalks": [
@@ -3513,12 +3565,6 @@
  },
  "news": [
   {
-   "title": "NASA’s Titan-Bound Dragonfly Rotorcraft Gets Its Eyes",
-   "source": "NASA · News releases",
-   "time": "2026-11-24T15:44:38.000Z",
-   "url": "https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes/"
-  },
-  {
    "title": "Crew Awaits Thanksgiving Day Delivery as Another Cargo Craft Nears Launch",
    "source": "NASA · Space Station blog",
    "time": "2026-11-24T15:05:29.000Z",
@@ -3661,10 +3707,16 @@
    "source": "NASA · Commercial Crew blog",
    "time": "2026-10-07T10:01:13.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
+  },
+  {
+   "title": "Crew-12 Ready to Depart as New Residents Begin Advanced Health Research",
+   "source": "NASA · Commercial Crew blog",
+   "time": "2026-10-06T17:57:55.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/06/crew-12-ready-to-depart-as-new-residents-begin-advanced-health-research/"
   }
  ],
  "corps": {
-  "at": "2026-11-25T00:40:01.579Z",
+  "at": "2026-11-25T09:49:37.907Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4069,7 +4121,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-25T00:40:07.111Z",
+  "at": "2026-11-25T09:49:42.669Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4582,7 +4634,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-25T00:40:14.709Z",
+  "at": "2026-11-25T09:49:49.964Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
@@ -4709,8 +4761,8 @@
     "station": "ISS",
     "eva": null,
     "crewed": false,
-    "date": "2026-11-26T11:00:00.000Z",
-    "allDay": true,
+    "date": "2026-11-26T12:11:00.000Z",
+    "allDay": false,
     "description": "",
     "location": "Rassvet"
    },
