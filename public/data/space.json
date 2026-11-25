@@ -1,8 +1,37 @@
 {
- "updated": "2026-11-24T15:50:44.480Z",
- "llAt": "2026-11-24T15:50:44.480Z",
+ "updated": "2026-11-25T00:40:14.709Z",
+ "llAt": "2026-11-25T00:40:14.709Z",
  "llBlockedUntil": null,
  "crewed": [
+  {
+   "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
+   "name": "Long March 2F/G | Shenzhou 24",
+   "mission": "Shenzhou 24",
+   "description": "Shenzhou 24 will be the 24th flight of the Shenzhou program.\r\n\r\nThe first astronaut from Pakistan, Muhammad Zeeshan Ali, will fly on this on a short duration mission, with Chinese astronaut Zhu Yangzhu of Shenzhou 23 to undergo a year long expedition and stay on the CSS in exchange.",
+   "rocket": "Long March 2F/G",
+   "provider": "China Aerospace Science and Technology Corporation",
+   "net": "2026-11-25T00:18:52Z",
+   "windowEnd": "2026-11-25T00:48:00Z",
+   "precision": "Second",
+   "tbc": false,
+   "status": "In Flight",
+   "statusName": "Launch in Flight",
+   "crewed": true,
+   "starship": false,
+   "artemis": false,
+   "orbit": "LEO",
+   "pad": "Launch Area 91 (SLS-1 / 921)",
+   "location": "Jiuquan Satellite Launch Center, People's Republic of China",
+   "loc": [
+    100.290944,
+    40.957893
+   ],
+   "webcast": true,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_thumbnail_20251129175823.jpeg",
+   "patch": null,
+   "crew": null,
+   "past": false
+  },
   {
    "id": "a5556e79-a01f-48c6-b822-69bbadb4460d",
    "name": "Falcon 9 Block 5 | Crew-14",
@@ -91,19 +120,19 @@
    "past": false
   },
   {
-   "id": "99875c7b-400c-40e2-b16c-bb9b2a02a0d8",
-   "name": "Falcon 9 Block 5 | Haven-1 Crew-1",
-   "mission": "Haven-1 Crew-1",
-   "description": "First crewed mission of VAST Space's future commercial space station Haven-1. The crew of four will remain in orbit for 10 days.\r\n\r\nThe crew will include ESA/CNES astronaut Arnaud Prost, as well as potentially ESA/UKSA astronaut John McFall.",
+   "id": "f3a1a032-5cca-4733-9ca8-04a5a1dba222",
+   "name": "Falcon 9 Block 5 | Vast-PAM-1 (Vast ISS Mission 1)",
+   "mission": "Vast-PAM-1 (Vast ISS Mission 1)",
+   "description": "Vast’s first private crew rotation to the International Space Station aboard a SpaceX Crew Dragon spacecraft, and NASA's 6th Private Astronaut Mission to the ISS.\r\n\r\nThe crew includes ESA/CNES astronaut Thomas Pesquet, who will serve as Commander for the mission, Czech astronaut Aleš Svoboda, and Greek astronaut Adrianos Golemis. The mission will carry 4 astronauts to and from the International Space Station for up to 2 weeks.",
    "rocket": "Falcon 9",
    "provider": "SpaceX",
-   "net": "2027-07-31T00:00:00Z",
-   "windowEnd": "2027-07-31T00:00:00Z",
-   "precision": "Month",
+   "net": "2027-07-13T00:00:00Z",
+   "windowEnd": "2027-07-13T00:00:00Z",
+   "precision": "Day",
    "tbc": true,
    "status": "TBD",
    "statusName": "To Be Determined",
-   "crewed": true,
+   "crewed": false,
    "starship": false,
    "artemis": false,
    "orbit": "LEO",
@@ -120,19 +149,19 @@
    "past": false
   },
   {
-   "id": "f3a1a032-5cca-4733-9ca8-04a5a1dba222",
-   "name": "Falcon 9 Block 5 | Vast-PAM-1 (Vast ISS Mission 1)",
-   "mission": "Vast-PAM-1 (Vast ISS Mission 1)",
-   "description": "Vast’s first private crew rotation to the International Space Station aboard a SpaceX Crew Dragon spacecraft, and NASA's 6th Private Astronaut Mission to the ISS.\r\n\r\nThe crew includes ESA/CNES astronaut Thomas Pesquet, who will serve as Commander for the mission, Czech astronaut Aleš Svoboda, and Greek astronaut Adrianos Golemis. The mission will carry 4 astronauts to and from the International Space Station for up to 2 weeks.",
+   "id": "99875c7b-400c-40e2-b16c-bb9b2a02a0d8",
+   "name": "Falcon 9 Block 5 | Haven-1 Crew-1",
+   "mission": "Haven-1 Crew-1",
+   "description": "First crewed mission of VAST Space's future commercial space station Haven-1. The crew of four will remain in orbit for 10 days.\r\n\r\nThe crew will include ESA/CNES astronaut Arnaud Prost, as well as potentially ESA/UKSA astronaut John McFall.",
    "rocket": "Falcon 9",
    "provider": "SpaceX",
-   "net": "2027-09-30T00:00:00Z",
-   "windowEnd": "2027-09-30T00:00:00Z",
-   "precision": "Quarter 3",
+   "net": "2027-07-31T00:00:00Z",
+   "windowEnd": "2027-07-31T00:00:00Z",
+   "precision": "Month",
    "tbc": true,
    "status": "TBD",
    "statusName": "To Be Determined",
-   "crewed": false,
+   "crewed": true,
    "starship": false,
    "artemis": false,
    "orbit": "LEO",
@@ -847,6 +876,54 @@
  ],
  "recentCrewed": [
   {
+   "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
+   "name": "Long March 2F/G | Shenzhou 24",
+   "mission": "Shenzhou 24",
+   "description": "Shenzhou 24 will be the 24th flight of the Shenzhou program.\r\n\r\nThe first astronaut from Pakistan, Muhammad Zeeshan Ali, will fly on this on a short duration mission, with Chinese astronaut Zhu Yangzhu of Shenzhou 23 to undergo a year long expedition and stay on the CSS in exchange.",
+   "rocket": "Long March 2F/G",
+   "provider": "China Aerospace Science and Technology Corporation",
+   "net": "2026-11-25T00:18:52Z",
+   "windowEnd": "2026-11-25T00:48:00Z",
+   "precision": "Second",
+   "tbc": false,
+   "status": "In Flight",
+   "statusName": "Launch in Flight",
+   "crewed": true,
+   "starship": false,
+   "artemis": false,
+   "orbit": "LEO",
+   "pad": "Launch Area 91 (SLS-1 / 921)",
+   "location": "Jiuquan Satellite Launch Center, People's Republic of China",
+   "loc": [
+    100.290944,
+    40.957893
+   ],
+   "webcast": true,
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_thumbnail_20251129175823.jpeg",
+   "patch": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/mission_patch_images/shenzhou252024_mission_patch_20261124224210.png",
+   "crew": [
+    {
+     "name": "Tang Hongbo",
+     "role": "Commander",
+     "agency": "CNSA",
+     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185459.jpeg"
+    },
+    {
+     "name": "Muhammad Zeeshan Ali",
+     "role": "Operator",
+     "agency": "SUPARCO",
+     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/muhammad_zeesha_image_thumbnail_20261124223937.jpeg"
+    },
+    {
+     "name": "Wu Yi",
+     "role": "Operator",
+     "agency": "CNSA",
+     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/wu_yi_official__image_thumbnail_20261124223451.jpeg"
+    }
+   ],
+   "past": true
+  },
+  {
    "id": "18441371-8b2e-457c-afb5-1ec1b11ab630",
    "name": "Falcon 9 Block 5 | Crew-13",
    "mission": "Crew-13",
@@ -1049,60 +1126,6 @@
     }
    ],
    "past": true
-  },
-  {
-   "id": "862b54e3-7bf8-48e5-8cd1-d77257d5fde9",
-   "name": "Falcon 9 Block 5 | Crew-12",
-   "mission": "Crew-12",
-   "description": "SpaceX Crew-12 is the twelfth crewed operational flight of a Crew Dragon spacecraft to the International Space Station as part of NASA's Commercial Crew Program.",
-   "rocket": "Falcon 9",
-   "provider": "SpaceX",
-   "net": "2026-02-13T10:15:56Z",
-   "windowEnd": "2026-02-13T10:15:56Z",
-   "precision": "Second",
-   "tbc": false,
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "crewed": true,
-   "starship": false,
-   "artemis": false,
-   "orbit": "LEO",
-   "pad": "Space Launch Complex 40",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "loc": [
-    -80.57735736,
-    28.56194122
-   ],
-   "webcast": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_at_slc_image_thumbnail_20260208171228.jpeg",
-   "patch": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/mission_patch_images/crew-12_mission_patch_20260208171350.png",
-   "crew": [
-    {
-     "name": "Jessica Meir",
-     "role": "Spacecraft Commander",
-     "agency": "NASA",
-     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190924.jpeg"
-    },
-    {
-     "name": "Jack Hathaway",
-     "role": "Pilot",
-     "agency": "NASA",
-     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190331.jpeg"
-    },
-    {
-     "name": "Sophie Adenot",
-     "role": "Flight Engineer",
-     "agency": "ESA",
-     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185354.jpeg"
-    },
-    {
-     "name": "Andrei Fedyaev",
-     "role": "Flight Engineer",
-     "agency": "RFSA",
-     "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190412.jpeg"
-    }
-   ],
-   "past": true
   }
  ],
  "llEvents": [
@@ -1295,7 +1318,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P223DT13H31M14S",
+   "timeInSpace": "P224DT13H57M38S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190244.jpeg"
   },
   {
@@ -1303,7 +1326,7 @@
    "agency": "CSA",
    "nationality": "Canadian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P53DT29M41S",
+   "timeInSpace": "P54DT56M22S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185947.jpeg"
   },
   {
@@ -1311,7 +1334,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P289DT10H53M12S",
+   "timeInSpace": "P290DT11H19M53S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185904.jpeg"
   },
   {
@@ -1319,7 +1342,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P487DT4H37M28S",
+   "timeInSpace": "P488DT5H4M10S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185922.jpeg"
   },
   {
@@ -1327,7 +1350,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P53DT30M40S",
+   "timeInSpace": "P54DT57M31S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190723.jpeg"
   },
   {
@@ -1335,7 +1358,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P132DT53M5S",
+   "timeInSpace": "P133DT1H19M56S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190559.jpeg"
   },
   {
@@ -1343,7 +1366,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P336DT23H13M42S",
+   "timeInSpace": "P338DT6H13M30S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185258.jpeg"
   },
   {
@@ -1351,7 +1374,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P53DT32M35S",
+   "timeInSpace": "P54DT1H13S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sergey_teteryat_image_thumbnail_20260424073411.jpeg"
   },
   {
@@ -1359,7 +1382,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P183DT34M6S",
+   "timeInSpace": "P184DT7H32M41S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhang_zhiyuan_o_image_thumbnail_20260524125922.png"
   },
   {
@@ -1367,7 +1390,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P183DT34M6S",
+   "timeInSpace": "P184DT7H32M42S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/lai_ka-ying_off_image_thumbnail_20260524130423.png"
   },
   {
@@ -1375,7 +1398,7 @@
    "agency": "CCCP",
    "nationality": "Russian",
    "lastFlight": "1957-11-03T02:30:00Z",
-   "timeInSpace": "P25222DT13H12M46S",
+   "timeInSpace": "P25223DT13H40M26S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/laika_image_thumbnail_20261102201325.jpeg"
   }
  ],
@@ -2369,20 +2392,20 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-24T04:45:42.220Z",
+  "at": "2026-11-25T00:39:52.435Z",
   "stats": {
-   "total": 748,
-   "successes": 733,
+   "total": 749,
+   "successes": 734,
    "failures": 15,
-   "streak": 233,
-   "landings": 692,
-   "landingAttempts": 721,
-   "landingStreak": 2,
+   "streak": 234,
+   "landings": 693,
+   "landingAttempts": 722,
+   "landingStreak": 3,
    "dragonReturns": 65,
-   "pending": 136
+   "pending": 135
   },
   "year": 2026,
-  "yearCount": 129,
+  "yearCount": 130,
   "byMonth": [
    {
     "Starlink": 9,
@@ -2456,7 +2479,7 @@
    },
    {
     "Starlink": 0,
-    "Customer": 4,
+    "Customer": 5,
     "Dragon": 0,
     "Starship": 1,
     "failed": 0
@@ -2470,6 +2493,29 @@
    }
   ],
   "recent": [
+   {
+    "id": "460d9db7-eaf6-4cd9-b095-cff433534c09",
+    "name": "USSF-266",
+    "rocket": "Falcon 9",
+    "net": "2026-11-24T16:08:59Z",
+    "status": "Success",
+    "tbc": false,
+    "pad": "Space Launch Complex 4E",
+    "location": "Vandenberg SFB, CA, USA",
+    "orbit": "PO",
+    "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false,
+    "boosters": [
+     {
+      "serial": "B1081",
+      "flight": 29,
+      "turnaround": "P39DT16H7M54S",
+      "result": "landed",
+      "where": "OCISLY"
+     }
+    ]
+   },
    {
     "id": "951a341f-236b-42fe-a667-4ab2fcf36eac",
     "name": "NROL-136",
@@ -3164,29 +3210,6 @@
       "where": "ASOG"
      }
     ]
-   },
-   {
-    "id": "f6958a77-37bb-4559-a108-40ba0ff9e34a",
-    "name": "Starlink Group 17-50",
-    "rocket": "Falcon 9",
-    "net": "2026-08-19T04:01:07Z",
-    "status": "Success",
-    "tbc": false,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "LEO",
-    "type": "Communications",
-    "kind": "Starlink",
-    "webcast": false,
-    "boosters": [
-     {
-      "serial": "B1097",
-      "flight": 12,
-      "turnaround": "P42DT20H49M7S",
-      "result": "landed",
-      "where": "OCISLY"
-     }
-    ]
    }
   ],
   "upcoming": [
@@ -3195,7 +3218,7 @@
     "name": "USSF-266",
     "rocket": "Falcon 9",
     "net": "2026-11-24T16:08:59Z",
-    "status": "Go",
+    "status": "Success",
     "tbc": false,
     "pad": "Space Launch Complex 4E",
     "location": "Vandenberg SFB, CA, USA",
@@ -3222,7 +3245,7 @@
     "id": "d74afbc7-0de5-491c-be05-4e9c31f736ac",
     "name": "Cygnus CRS-2 NG-25",
     "rocket": "Falcon 9",
-    "net": "2026-11-29T15:50:00Z",
+    "net": "2026-11-29T15:47:00Z",
     "status": "Go",
     "tbc": false,
     "pad": "Space Launch Complex 40",
@@ -3243,6 +3266,20 @@
     "location": "Vandenberg SFB, CA, USA",
     "orbit": "LEO",
     "type": "Government/Top Secret",
+    "kind": "Customer",
+    "webcast": false
+   },
+   {
+    "id": "9b9db235-8ffb-4569-b09b-0e852ad231a0",
+    "name": "Amazon Leo (LF-04)",
+    "rocket": "Falcon 9",
+    "net": "2026-12-31T00:00:00Z",
+    "status": "TBD",
+    "tbc": true,
+    "pad": "Unknown Pad",
+    "location": "Cape Canaveral SFS, FL, USA",
+    "orbit": "LEO",
+    "type": "Communications",
     "kind": "Customer",
     "webcast": false
    },
@@ -3385,20 +3422,6 @@
     "type": "Government/Top Secret",
     "kind": "Customer",
     "webcast": false
-   },
-   {
-    "id": "a9ee8337-127d-4f17-9e3a-a07999f80099",
-    "name": "SDA Tranche 1 Tracking Layer D",
-    "rocket": "Falcon 9",
-    "net": "2026-12-31T00:00:00Z",
-    "status": "TBD",
-    "tbc": true,
-    "pad": "Space Launch Complex 4E",
-    "location": "Vandenberg SFB, CA, USA",
-    "orbit": "PO",
-    "type": "Government/Top Secret",
-    "kind": "Customer",
-    "webcast": false
    }
   ],
   "fleet": [
@@ -3439,9 +3462,9 @@
    },
    {
     "serial": "B1081",
-    "flights": 28,
-    "last": "2026-10-16T00:01:05Z",
-    "lastMission": "USSF-481",
+    "flights": 29,
+    "last": "2026-11-24T16:08:59Z",
+    "lastMission": "USSF-266",
     "status": "landed"
    },
    {
@@ -3490,6 +3513,12 @@
  },
  "news": [
   {
+   "title": "NASA’s Titan-Bound Dragonfly Rotorcraft Gets Its Eyes",
+   "source": "NASA · News releases",
+   "time": "2026-11-24T15:44:38.000Z",
+   "url": "https://science.nasa.gov/missions/dragonfly/nasas-titan-bound-dragonfly-rotorcraft-gets-its-eyes/"
+  },
+  {
    "title": "Crew Awaits Thanksgiving Day Delivery as Another Cargo Craft Nears Launch",
    "source": "NASA · Space Station blog",
    "time": "2026-11-24T15:05:29.000Z",
@@ -3512,12 +3541,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-23T18:18:17.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/23/advanced-biomedical-research-tops-crew-schedule-aboard-station/"
-  },
-  {
-   "title": "NASA Seeks Partners to Design First Nuclear Reactor for the Moon",
-   "source": "NASA · News releases",
-   "time": "2026-11-23T17:23:50.000Z",
-   "url": "https://www.nasa.gov/directorates/rtmd/nasa-seeks-partners-to-design-first-nuclear-reactor-for-the-moon/"
   },
   {
    "title": "Dragon Returns to Earth Packed With Science and Cargo",
@@ -3641,7 +3664,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-24T15:50:33.687Z",
+  "at": "2026-11-25T00:40:01.579Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4046,7 +4069,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-24T15:50:38.529Z",
+  "at": "2026-11-25T00:40:07.111Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4559,7 +4582,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-24T15:50:44.479Z",
+  "at": "2026-11-25T00:40:14.709Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
