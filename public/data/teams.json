@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T12:20:43.333Z",
+ "updated": "2026-11-26T22:17:38.883Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
@@ -29,6 +29,73 @@
   },
   "stats": null,
   "competitions": [
+   {
+    "name": "UEFA Europa League",
+    "phase": "League Phase",
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "gf": 8,
+    "ga": 9,
+    "games": [
+     {
+      "date": "2026-09-16T19:00Z",
+      "opp": "Benfica",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-10-15T16:45Z",
+      "opp": "RB Salzburg",
+      "home": false,
+      "us": 4,
+      "them": 0
+     },
+     {
+      "date": "2026-10-22T19:00Z",
+      "opp": "AFC Bournemouth",
+      "home": false,
+      "us": 0,
+      "them": 3
+     },
+     {
+      "date": "2026-11-05T17:45Z",
+      "opp": "Ferencvaros",
+      "home": true,
+      "us": 0,
+      "them": 2
+     },
+     {
+      "date": "2026-11-26T17:45Z",
+      "opp": "Olympiacos",
+      "home": false,
+      "us": 4,
+      "them": 2
+     },
+     {
+      "date": "2026-12-10T20:00Z",
+      "opp": "Sunderland",
+      "home": true,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-21T20:00Z",
+      "opp": "Levski Sofia",
+      "home": false,
+      "us": null,
+      "them": null
+     },
+     {
+      "date": "2027-01-28T20:00Z",
+      "opp": "Ararat-Armenia",
+      "home": true,
+      "us": null,
+      "them": null
+     }
+    ]
+   },
    {
     "name": "Italian Serie A",
     "phase": "2026-27 Italian Serie A",
@@ -300,73 +367,6 @@
      {
       "date": "2027-05-30T18:00Z",
       "opp": "Udinese",
-      "home": true,
-      "us": null,
-      "them": null
-     }
-    ]
-   },
-   {
-    "name": "UEFA Europa League",
-    "phase": "League Phase",
-    "w": 1,
-    "d": 0,
-    "l": 3,
-    "gf": 4,
-    "ga": 7,
-    "games": [
-     {
-      "date": "2026-09-16T19:00Z",
-      "opp": "Benfica",
-      "home": true,
-      "us": 0,
-      "them": 2
-     },
-     {
-      "date": "2026-10-15T16:45Z",
-      "opp": "RB Salzburg",
-      "home": false,
-      "us": 4,
-      "them": 0
-     },
-     {
-      "date": "2026-10-22T19:00Z",
-      "opp": "AFC Bournemouth",
-      "home": false,
-      "us": 0,
-      "them": 3
-     },
-     {
-      "date": "2026-11-05T17:45Z",
-      "opp": "Ferencvaros",
-      "home": true,
-      "us": 0,
-      "them": 2
-     },
-     {
-      "date": "2026-11-26T17:45Z",
-      "opp": "Olympiacos",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2026-12-10T20:00Z",
-      "opp": "Sunderland",
-      "home": true,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-21T20:00Z",
-      "opp": "Levski Sofia",
-      "home": false,
-      "us": null,
-      "them": null
-     },
-     {
-      "date": "2027-01-28T20:00Z",
-      "opp": "Ararat-Armenia",
       "home": true,
       "us": null,
       "them": null
@@ -20636,6 +20636,140 @@
     ]
    },
    {
+    "id": "3",
+    "name": "Bears",
+    "label": null,
+    "kind": "current",
+    "card": {
+     "id": "3",
+     "name": "Chicago Bears",
+     "short": "Bears",
+     "abbr": "CHI",
+     "color": "#0b1c3a",
+     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+     "standing": "2nd in National Football Conference",
+     "record": "9-2",
+     "rank": null,
+     "gp": 11,
+     "w": 9,
+     "d": 0,
+     "l": 2,
+     "pf": 301,
+     "pa": 232,
+     "pts": null,
+     "pos": null,
+     "seed": 2
+    },
+    "stats": {
+     "ppg": 26.2,
+     "ypg": 391.5,
+     "passYpg": 233.4,
+     "rushYpg": 142.4,
+     "third": 45,
+     "toDiff": -4,
+     "sacks": 32
+    },
+    "allTime": null,
+    "page": null,
+    "since2001": {
+     "w": 6,
+     "d": 0,
+     "l": 2,
+     "gf": 232,
+     "ga": 170
+    },
+    "recent": [
+     {
+      "date": "2026-10-23",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": false,
+      "us": 24,
+      "them": 30,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2026
+     },
+     {
+      "date": "2024-11-10",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": false,
+      "us": 19,
+      "them": 3,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2024
+     },
+     {
+      "date": "2022-10-25",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": true,
+      "us": 14,
+      "them": 33,
+      "result": "L",
+      "type": "Regular Season",
+      "season": 2022
+     },
+     {
+      "date": "2018-10-21",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": false,
+      "us": 38,
+      "them": 31,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2018
+     },
+     {
+      "date": "2014-10-26",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": true,
+      "us": 51,
+      "them": 23,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2014
+     },
+     {
+      "date": "2010-12-12",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": false,
+      "us": 36,
+      "them": 7,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2010
+     },
+     {
+      "date": "2006-11-26",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": true,
+      "us": 17,
+      "them": 13,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2006
+     },
+     {
+      "date": "2002-11-10",
+      "opp": "3",
+      "oppName": "Chicago Bears",
+      "home": false,
+      "us": 33,
+      "them": 30,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2002
+     }
+    ]
+   },
+   {
     "id": "12",
     "name": "Chiefs",
     "label": null,
@@ -20788,129 +20922,6 @@
       "result": "W",
       "type": "Regular Season",
       "season": 2004
-     }
-    ]
-   },
-   {
-    "id": "8",
-    "name": "Lions",
-    "label": null,
-    "kind": "current",
-    "card": {
-     "id": "8",
-     "name": "Detroit Lions",
-     "short": "Lions",
-     "abbr": "DET",
-     "color": "#0076b6",
-     "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
-     "standing": "2nd in National Football Conference",
-     "record": "8-2",
-     "rank": null,
-     "gp": 10,
-     "w": 8,
-     "d": 0,
-     "l": 2,
-     "pf": 288,
-     "pa": 220,
-     "pts": null,
-     "pos": null,
-     "seed": 2
-    },
-    "stats": {
-     "ppg": 28.8,
-     "ypg": 405.6,
-     "passYpg": 259.6,
-     "rushYpg": 132.2,
-     "third": 41.667,
-     "toDiff": 2,
-     "sacks": 36
-    },
-    "allTime": null,
-    "page": null,
-    "since2001": {
-     "w": 5,
-     "d": 0,
-     "l": 2,
-     "gf": 176,
-     "ga": 127
-    },
-    "recent": [
-     {
-      "date": "2026-11-15",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": false,
-      "us": 10,
-      "them": 35,
-      "result": "L",
-      "type": "Regular Season",
-      "season": 2026
-     },
-     {
-      "date": "2022-10-09",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": true,
-      "us": 29,
-      "them": 0,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2022
-     },
-     {
-      "date": "2018-09-24",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": false,
-      "us": 10,
-      "them": 26,
-      "result": "L",
-      "type": "Regular Season",
-      "season": 2018
-     },
-     {
-      "date": "2014-11-23",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": true,
-      "us": 34,
-      "them": 9,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2014
-     },
-     {
-      "date": "2010-11-25",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": false,
-      "us": 45,
-      "them": 24,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2010
-     },
-     {
-      "date": "2006-12-03",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": true,
-      "us": 28,
-      "them": 21,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2006
-     },
-     {
-      "date": "2002-11-28",
-      "opp": "8",
-      "oppName": "Detroit Lions",
-      "home": false,
-      "us": 20,
-      "them": 12,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2002
      }
     ]
    }

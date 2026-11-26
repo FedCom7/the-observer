@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T12:22:21.276Z",
- "llAt": "2026-11-26T12:22:21.276Z",
+ "updated": "2026-11-26T22:19:09.261Z",
+ "llAt": "2026-11-26T22:19:09.261Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1105,9 +1105,9 @@
    "name": "Progress MS-36 Docking",
    "type": "Docking",
    "date": "2026-11-26T12:11:00Z",
-   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Zvezda module of the ISS.",
+   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Rassvet module of the ISS.",
    "location": "International Space Station",
-   "webcast": true
+   "webcast": false
   },
   {
    "id": 1579,
@@ -1166,15 +1166,13 @@
  ],
  "events": [
   {
-   "id": "agenda:37fhqotias31aikv2iouu00hvj@google.com",
-   "name": "Docking · Progress MS-36",
+   "id": 1578,
+   "name": "Progress MS-36 Docking",
    "type": "Docking",
-   "date": "2026-11-26T12:11:00.000Z",
-   "description": "",
-   "location": "ISS",
-   "webcast": false,
-   "allDay": false,
-   "source": "AstronauticAgenda"
+   "date": "2026-11-26T12:11:00Z",
+   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Rassvet module of the ISS.",
+   "location": "International Space Station",
+   "webcast": false
   },
   {
    "id": 1579,
@@ -1309,7 +1307,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P225DT13H25M49S",
+   "timeInSpace": "P226DT13H6M10S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190244.jpeg"
   },
   {
@@ -1317,7 +1315,7 @@
    "agency": "CSA",
    "nationality": "Canadian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P55DT23M53S",
+   "timeInSpace": "P56DT4M24S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185947.jpeg"
   },
   {
@@ -1325,7 +1323,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P291DT10H47M21S",
+   "timeInSpace": "P292DT10H27M53S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185904.jpeg"
   },
   {
@@ -1333,7 +1331,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P489DT4H31M37S",
+   "timeInSpace": "P490DT4H12M9S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185922.jpeg"
   },
   {
@@ -1341,7 +1339,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-11-25T00:18:52Z",
-   "timeInSpace": "P280DT1H58M48S",
+   "timeInSpace": "P281DT1H39M25S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185459.jpeg"
   },
   {
@@ -1349,7 +1347,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P55DT24M13S",
+   "timeInSpace": "P56DT4M59S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190723.jpeg"
   },
   {
@@ -1357,7 +1355,7 @@
    "agency": "NASA",
    "nationality": "American",
    "lastFlight": "2026-07-14T14:47:43Z",
-   "timeInSpace": "P134DT46M36S",
+   "timeInSpace": "P135DT27M23S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305190559.jpeg"
   },
   {
@@ -1365,7 +1363,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P338DT23H6M44S",
+   "timeInSpace": "P339DT22H47M45S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/255bauto255d__image_thumbnail_20240305185258.jpeg"
   },
   {
@@ -1373,7 +1371,7 @@
    "agency": "RFSA",
    "nationality": "Russian",
    "lastFlight": "2026-10-01T15:10:06Z",
-   "timeInSpace": "P55DT24M53S",
+   "timeInSpace": "P56DT6M22S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/sergey_teteryat_image_thumbnail_20260424073411.jpeg"
   },
   {
@@ -1381,7 +1379,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P185DT26M24S",
+   "timeInSpace": "P186DT7M52S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhang_zhiyuan_o_image_thumbnail_20260524125922.png"
   },
   {
@@ -1389,7 +1387,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-05-24T15:08:36Z",
-   "timeInSpace": "P185DT26M24S",
+   "timeInSpace": "P186DT7M52S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/lai_ka-ying_off_image_thumbnail_20260524130423.png"
   },
   {
@@ -1397,7 +1395,7 @@
    "agency": "CCCP",
    "nationality": "Russian",
    "lastFlight": "1957-11-03T02:30:00Z",
-   "timeInSpace": "P25224DT13H5M2S",
+   "timeInSpace": "P25225DT12H46M32S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/laika_image_thumbnail_20261102201325.jpeg"
   },
   {
@@ -1405,7 +1403,7 @@
    "agency": "CNSA",
    "nationality": "Chinese",
    "lastFlight": "2026-11-25T00:18:52Z",
-   "timeInSpace": "PT15H16M10S",
+   "timeInSpace": "P1DT14H57M40S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/wu_yi_official__image_thumbnail_20261124223451.jpeg"
   },
   {
@@ -1413,7 +1411,7 @@
    "agency": "SUPARCO",
    "nationality": "Pakistani",
    "lastFlight": "2026-11-25T00:18:52Z",
-   "timeInSpace": "PT15H16M11S",
+   "timeInSpace": "P1DT14H57M41S",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/muhammad_zeesha_image_thumbnail_20261124223937.jpeg"
   }
  ],
@@ -1529,7 +1527,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-26T02:49:33.528Z",
+  "at": "2026-11-26T22:18:50.083Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -1540,7 +1538,7 @@
    "height": 72.8,
    "width": 108.5,
    "onboard": 7,
-   "docked": 4,
+   "docked": 5,
    "owners": [
     "CSA",
     "ESA",
@@ -1564,7 +1562,7 @@
      "age": 48,
      "firstFlight": "2021-04-09T07:42:41Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P489DT4H31M37S",
+     "inSpace": "P490DT4H12M9S",
      "evaTime": "P1DT5H49M"
     },
     {
@@ -1576,7 +1574,7 @@
      "age": 50,
      "firstFlight": "2026-07-14T14:47:43Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P134DT46M36S",
+     "inSpace": "P135DT27M23S",
      "evaTime": "P1DT9H39M"
     },
     {
@@ -1588,7 +1586,7 @@
      "age": 44,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P55DT23M53S",
+     "inSpace": "P56DT4M24S",
      "evaTime": "PT14H10M"
     },
     {
@@ -1600,7 +1598,7 @@
      "age": 47,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P55DT24M13S",
+     "inSpace": "P56DT4M59S",
      "evaTime": "P0D"
     },
     {
@@ -1612,7 +1610,7 @@
      "age": 37,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P55DT24M53S",
+     "inSpace": "P56DT6M22S",
      "evaTime": "P0D"
     },
     {
@@ -1624,7 +1622,7 @@
      "age": 42,
      "firstFlight": "2022-10-05T16:00:57Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P291DT10H47M21S",
+     "inSpace": "P292DT10H27M53S",
      "evaTime": "P0D"
     },
     {
@@ -1636,12 +1634,18 @@
      "age": 38,
      "firstFlight": "2022-04-27T07:52:55Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P225DT13H25M49S",
+     "inSpace": "P226DT13H6M10S",
      "evaTime": "P0D"
     }
    ]
   },
   "ports": [
+   {
+    "name": "Harmony zenith",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
    {
     "name": "Node 2 forward",
     "vehicle": null,
@@ -1650,18 +1654,12 @@
    },
    {
     "name": "Rassvet nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
+    "vehicle": "Progress MS-36",
+    "mission": "Progress MS-36 (97P)",
+    "since": "2026-11-26T12:08:00Z"
    },
    {
     "name": "Zarya forward",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Zvezda nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1673,19 +1671,13 @@
     "since": null
    },
    {
-    "name": "Zvezda zenith",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Nauka nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
     "name": "Zvezda",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Zvezda nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1703,7 +1695,25 @@
     "since": null
    },
    {
+    "name": "Zvezda zenith",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
     "name": "Pirs nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Zvezda aft",
+    "vehicle": "Progress MS-34",
+    "mission": "Progress MS-34 (95P)",
+    "since": "2026-04-28T00:00:48Z"
+   },
+   {
+    "name": "Nauka nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1715,10 +1725,10 @@
     "since": "2026-10-01T23:05:00Z"
    },
    {
-    "name": "Zvezda aft",
-    "vehicle": "Progress MS-34",
-    "mission": "Progress MS-34 (95P)",
-    "since": "2026-04-28T00:00:48Z"
+    "name": "Poisk zenith",
+    "vehicle": "Progress MS-35",
+    "mission": "Progress MS-35 (96P)",
+    "since": "2026-09-19T13:44:20Z"
    },
    {
     "name": "Zarya nadir",
@@ -1727,19 +1737,7 @@
     "since": null
    },
    {
-    "name": "Poisk zenith",
-    "vehicle": "Progress MS-35",
-    "mission": "Progress MS-35 (96P)",
-    "since": "2026-09-19T13:44:20Z"
-   },
-   {
     "name": "Harmony nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Harmony zenith",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1752,6 +1750,14 @@
    }
   ],
   "traffic": [
+   {
+    "id": 647,
+    "vehicle": "Progress MS-36",
+    "mission": "Progress MS-36 (97P)",
+    "port": "Rassvet nadir",
+    "docking": "2026-11-26T12:08:00Z",
+    "departure": null
+   },
    {
     "id": 645,
     "vehicle": "Cargo Dragon C211",
@@ -1903,17 +1909,18 @@
     "port": "Prichal nadir",
     "docking": "2025-04-08T08:57:43Z",
     "departure": "2025-12-09T01:41:00Z"
-   },
-   {
-    "id": 619,
-    "vehicle": "Crew Dragon Endurance",
-    "mission": "Crew-10",
-    "port": "Harmony forward",
-    "docking": "2025-03-16T04:52:00Z",
-    "departure": "2025-08-08T22:15:00Z"
    }
   ],
   "stays": [
+   {
+    "id": 647,
+    "vehicle": "Progress MS-36",
+    "mission": "Progress MS-36 (97P)",
+    "station": "ISS",
+    "crewed": false,
+    "docking": "2026-11-26T12:08:00Z",
+    "departure": null
+   },
    {
     "id": 646,
     "vehicle": "Shenzhou 24",
@@ -2264,15 +2271,6 @@
     "crewed": false,
     "docking": "2024-08-06T07:11:00Z",
     "departure": "2025-03-28T10:57:00Z"
-   },
-   {
-    "id": 571,
-    "vehicle": "Starliner Calypso",
-    "mission": "CST-100 Starliner Crewed Flight Test",
-    "station": "ISS",
-    "crewed": true,
-    "docking": "2024-06-06T17:34:00Z",
-    "departure": "2024-09-06T22:04:00Z"
    }
   ],
   "spacewalks": [
@@ -3705,7 +3703,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-26T12:22:09.428Z",
+  "at": "2026-11-26T22:18:58.207Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4110,7 +4108,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-26T12:22:14.056Z",
+  "at": "2026-11-26T22:19:02.633Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4623,7 +4621,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-26T12:22:21.275Z",
+  "at": "2026-11-26T22:19:09.260Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
@@ -4750,7 +4748,7 @@
     "station": "ISS",
     "eva": null,
     "crewed": false,
-    "date": "2026-11-26T12:11:00.000Z",
+    "date": "2026-11-26T12:08:00.000Z",
     "allDay": false,
     "description": "",
     "location": "Rassvet"
