@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T02:49:55.321Z",
- "llAt": "2026-11-26T02:49:55.321Z",
+ "updated": "2026-11-26T12:22:21.276Z",
+ "llAt": "2026-11-26T12:22:21.276Z",
  "llBlockedUntil": null,
  "crewed": [
   {
@@ -1107,6 +1107,15 @@
    "date": "2026-11-26T12:11:00Z",
    "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Zvezda module of the ISS.",
    "location": "International Space Station",
+   "webcast": true
+  },
+  {
+   "id": 1579,
+   "name": "Shenzhou 23 Landing",
+   "type": "Spacecraft Landing",
+   "date": "2026-11-29T21:16:00Z",
+   "description": "The Shenzhou 23 Descent Capsule will land in the desert near Jiuquan Satellite Launch Center, China, bringing Zhang Zhiyuan, Lai Ka-ying and Muhammad Zeeshan Ali back to Earth as part of the eleventh mission to the Chinese Space Station.",
+   "location": "Near Jiuquan Satellite Launch Center, China",
    "webcast": false
   },
   {
@@ -1166,6 +1175,15 @@
    "webcast": false,
    "allDay": false,
    "source": "AstronauticAgenda"
+  },
+  {
+   "id": 1579,
+   "name": "Shenzhou 23 Landing",
+   "type": "Spacecraft Landing",
+   "date": "2026-11-29T21:16:00Z",
+   "description": "The Shenzhou 23 Descent Capsule will land in the desert near Jiuquan Satellite Launch Center, China, bringing Zhang Zhiyuan, Lai Ka-ying and Muhammad Zeeshan Ali back to Earth as part of the eleventh mission to the Chinese Space Station.",
+   "location": "Near Jiuquan Satellite Launch Center, China",
+   "webcast": false
   },
   {
    "id": "agenda:2sg05i1qr3rq70vfc9m8oqn2ki@google.com",
@@ -2415,7 +2433,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-25T19:59:11.982Z",
+  "at": "2026-11-26T12:21:59.970Z",
   "stats": {
    "total": 749,
    "successes": 734,
@@ -3536,6 +3554,18 @@
  },
  "news": [
   {
+   "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-26T12:19:44.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+  },
+  {
+   "title": "Progress Cargo Craft Approaching Station With Space Delivery",
+   "source": "NASA · Space Station blog",
+   "time": "2026-11-26T11:32:37.000Z",
+   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-approaching-station-with-space-delivery/"
+  },
+  {
    "title": "Crew Works Biomedical Research Day Before Thanksgiving Space Delivery",
    "source": "NASA · Space Station blog",
    "time": "2026-11-25T16:17:32.000Z",
@@ -3570,18 +3600,6 @@
    "source": "NASA · Space Station blog",
    "time": "2026-11-21T22:10:07.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/11/21/dragon-returns-to-earth-packed-with-science-and-cargo/"
-  },
-  {
-   "title": "Dragon Undocks from Station Packed With Science and Cargo",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-20T17:08:20.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/20/dragon-undocks-from-station-packed-with-science-and-cargo/"
-  },
-  {
-   "title": "Dragon Prepares to Depart Station for Earth Return",
-   "source": "NASA · Space Station blog",
-   "time": "2026-11-20T16:47:19.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/11/20/dragon-prepares-to-depart-station-for-earth-return/"
   },
   {
    "title": "I Am Artemis: Katie Spicer",
@@ -3687,7 +3705,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-26T02:49:43.616Z",
+  "at": "2026-11-26T12:22:09.428Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4092,7 +4110,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-26T02:49:48.652Z",
+  "at": "2026-11-26T12:22:14.056Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4605,7 +4623,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-26T02:49:55.321Z",
+  "at": "2026-11-26T12:22:21.275Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
