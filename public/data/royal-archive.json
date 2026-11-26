@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-25T19:54:27.045Z",
+ "updated": "2026-11-26T02:48:33.919Z",
  "since": "2026-10-04T18:00:00.000Z",
- "total": 385,
+ "total": 392,
  "recent": [
   {
    "id": "royal:cc:2026-10-04:richard+birgitte:1tnj34k",
@@ -3899,6 +3899,76 @@
    "title": "The Duchess of Gloucester",
    "kind": "Other",
    "place": "Colonel-in-Chief, The Royal Bermuda Regiment"
+  },
+  {
+   "id": "royal:cc:2026-11-24:william:dxu5pn",
+   "people": [
+    "william"
+   ],
+   "start": "2026-11-24T10:00:00.000Z",
+   "title": "Called upon the Rt. Hon. Andrew Burnham MP (Prime Minister and First Lord of the Treasury) at No. 10 Downing Street",
+   "kind": "State business",
+   "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-24:william:8tszbg",
+   "people": [
+    "william"
+   ],
+   "start": "2026-11-24T12:00:00.000Z",
+   "title": "Visited the Headquarters of the Special Air Service at Stirling Lines",
+   "kind": "Visit",
+   "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-24:edward:1ilyh8j",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-24T12:00:00.000Z",
+   "title": "Attended a Trustees’ Meeting at Bridgepoint Capital",
+   "kind": "Event",
+   "place": "5 Marble Arch, London W1"
+  },
+  {
+   "id": "royal:cc:2026-11-24:william:89x3d",
+   "people": [
+    "william"
+   ],
+   "start": "2026-11-24T14:00:00.000Z",
+   "title": "Held a Meeting with Brigadier Edward Butler (President) at Stirling Lines",
+   "kind": "Meeting",
+   "place": "Herefordshire"
+  },
+  {
+   "id": "royal:cc:2026-11-24:edward:vrur4o",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-24T14:00:00.000Z",
+   "title": "Held a Christmas Reception for the Not Forgotten Association at St. James’s Palace",
+   "kind": "Other",
+   "place": null
+  },
+  {
+   "id": "royal:cc:2026-11-24:edward:i2te9q",
+   "people": [
+    "edward"
+   ],
+   "start": "2026-11-24T19:00:00.000Z",
+   "title": "Attended a Trustees’ Dinner at Mount Street Restaurant",
+   "kind": "Reception",
+   "place": "41-43 Mount Street, London W1"
+  },
+  {
+   "id": "royal:cc:2026-11-24:richard:1rpj1ai",
+   "people": [
+    "richard"
+   ],
+   "start": "2026-11-24T19:00:00.000Z",
+   "title": "Attended the Founders’ Dinner for the official opening of the London Museum at Smithfield Market",
+   "kind": "Reception",
+   "place": "West Poultry Avenue, London EC1"
   }
  ],
  "weeks": {
@@ -3909,7 +3979,8 @@
    "2026-10-26": 7,
    "2026-11-02": 7,
    "2026-11-09": 8,
-   "2026-11-16": 1
+   "2026-11-16": 1,
+   "2026-11-23": 1
   },
   "birgitte": {
    "2026-09-28": 1,
@@ -3925,7 +3996,8 @@
    "2026-10-26": 13,
    "2026-11-02": 11,
    "2026-11-09": 12,
-   "2026-11-16": 4
+   "2026-11-16": 4,
+   "2026-11-23": 3
   },
   "sophie": {
    "2026-10-05": 3,
@@ -3949,7 +4021,8 @@
    "2026-10-19": 5,
    "2026-11-02": 1,
    "2026-11-09": 7,
-   "2026-11-16": 19
+   "2026-11-16": 19,
+   "2026-11-23": 3
   },
   "king": {
    "2026-10-05": 4,
@@ -3991,7 +4064,7 @@
    "Other": 4,
    "Service or commemoration": 2,
    "Visit": 10,
-   "Reception": 7,
+   "Reception": 8,
    "Event": 5,
    "Audience": 3,
    "Armed forces": 3,
@@ -4007,10 +4080,10 @@
    "Audience": 2
   },
   "edward": {
-   "Event": 9,
-   "Reception": 8,
+   "Event": 10,
+   "Reception": 9,
    "Meeting": 6,
-   "Other": 8,
+   "Other": 9,
    "Travel": 2,
    "Visit": 11,
    "Armed forces": 2,
@@ -4038,10 +4111,10 @@
    "Travel": 4
   },
   "william": {
-   "Visit": 5,
-   "Meeting": 11,
+   "Visit": 6,
+   "Meeting": 12,
    "Investiture": 2,
-   "State business": 5,
+   "State business": 6,
    "Audience": 4,
    "Other": 8,
    "Travel": 5,
@@ -4094,7 +4167,7 @@
  "days": {
   "richard": [
    4,
-   9,
+   10,
    10,
    10,
    5,
@@ -4112,7 +4185,7 @@
   ],
   "edward": [
    10,
-   11,
+   14,
    13,
    9,
    3,
@@ -4139,7 +4212,7 @@
   ],
   "william": [
    12,
-   16,
+   19,
    8,
    6,
    2,
@@ -4272,6 +4345,10 @@
    [
     -1.53,
     53.79
+   ],
+   [
+    -0.1,
+    51.52
    ]
   ],
   "birgitte": [
@@ -4400,6 +4477,18 @@
    [
     -1.03,
     51.45
+   ],
+   [
+    -0.15,
+    51.52
+   ],
+   [
+    -0.15,
+    51.5
+   ],
+   [
+    -0.16,
+    51.52
    ]
   ],
   "sophie": [
@@ -4568,6 +4657,18 @@
    [
     -0.2,
     51.5
+   ],
+   [
+    -0.13,
+    51.5
+   ],
+   [
+    -2.8,
+    52.08
+   ],
+   [
+    -2.8,
+    52.08
    ]
   ],
   "king": [
@@ -5163,6 +5264,11 @@
     "title": "Patron",
     "org": "The Football Association",
     "n": 1
+   },
+   {
+    "title": "Patron",
+    "org": "Special Air Service Regimental Association",
+    "n": 1
    }
   ],
   "edward": [
@@ -5524,6 +5630,11 @@
    {
     "title": "Patron",
     "org": "Nuffield Farming Scholarships Trust",
+    "n": 1
+   },
+   {
+    "title": "Patron",
+    "org": "The London Museum",
     "n": 1
    }
   ],

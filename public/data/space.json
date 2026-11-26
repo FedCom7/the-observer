@@ -1,37 +1,8 @@
 {
- "updated": "2026-11-25T19:59:32.854Z",
- "llAt": "2026-11-25T19:59:32.854Z",
+ "updated": "2026-11-26T02:49:55.321Z",
+ "llAt": "2026-11-26T02:49:55.321Z",
  "llBlockedUntil": null,
  "crewed": [
-  {
-   "id": "c9605b67-8a53-4239-a8ae-577fe3b79799",
-   "name": "Long March 2F/G | Shenzhou 24",
-   "mission": "Shenzhou 24",
-   "description": "Shenzhou 24 will be the 24th flight of the Shenzhou program.\r\n\r\nThe first astronaut from Pakistan, Muhammad Zeeshan Ali, will fly on this on a short duration mission, with Chinese astronaut Zhu Yangzhu of Shenzhou 23 to undergo a year long expedition and stay on the CSS in exchange.",
-   "rocket": "Long March 2F/G",
-   "provider": "China Aerospace Science and Technology Corporation",
-   "net": "2026-11-25T00:18:52Z",
-   "windowEnd": "2026-11-25T00:48:00Z",
-   "precision": "Second",
-   "tbc": false,
-   "status": "Success",
-   "statusName": "Launch Successful",
-   "crewed": true,
-   "starship": false,
-   "artemis": false,
-   "orbit": "LEO",
-   "pad": "Launch Area 91 (SLS-1 / 921)",
-   "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-   "loc": [
-    100.290944,
-    40.957893
-   ],
-   "webcast": false,
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_thumbnail_20251129175823.jpeg",
-   "patch": null,
-   "crew": null,
-   "past": false
-  },
   {
    "id": "a5556e79-a01f-48c6-b822-69bbadb4460d",
    "name": "Falcon 9 Block 5 | Crew-14",
@@ -1540,7 +1511,7 @@
   }
  ],
  "iss": {
-  "at": "2026-11-25T09:49:28.243Z",
+  "at": "2026-11-26T02:49:33.528Z",
   "station": {
    "name": "International Space Station",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/international2520space2520station_image_20190220215716.jpeg",
@@ -1575,7 +1546,7 @@
      "age": 48,
      "firstFlight": "2021-04-09T07:42:41Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P488DT5H4M10S",
+     "inSpace": "P489DT4H31M37S",
      "evaTime": "P1DT5H49M"
     },
     {
@@ -1587,7 +1558,7 @@
      "age": 50,
      "firstFlight": "2026-07-14T14:47:43Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P133DT1H19M56S",
+     "inSpace": "P134DT46M36S",
      "evaTime": "P1DT9H39M"
     },
     {
@@ -1599,7 +1570,7 @@
      "age": 44,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P54DT56M22S",
+     "inSpace": "P55DT23M53S",
      "evaTime": "PT14H10M"
     },
     {
@@ -1611,7 +1582,7 @@
      "age": 47,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P54DT57M31S",
+     "inSpace": "P55DT24M13S",
      "evaTime": "P0D"
     },
     {
@@ -1623,7 +1594,7 @@
      "age": 37,
      "firstFlight": "2026-10-01T15:10:06Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P54DT1H13S",
+     "inSpace": "P55DT24M53S",
      "evaTime": "P0D"
     },
     {
@@ -1635,7 +1606,7 @@
      "age": 42,
      "firstFlight": "2022-10-05T16:00:57Z",
      "lastFlight": "2026-07-14T14:47:43Z",
-     "inSpace": "P290DT11H19M53S",
+     "inSpace": "P291DT10H47M21S",
      "evaTime": "P0D"
     },
     {
@@ -1647,72 +1618,12 @@
      "age": 38,
      "firstFlight": "2022-04-27T07:52:55Z",
      "lastFlight": "2026-10-01T15:10:06Z",
-     "inSpace": "P224DT13H57M38S",
+     "inSpace": "P225DT13H25M49S",
      "evaTime": "P0D"
     }
    ]
   },
   "ports": [
-   {
-    "name": "Harmony forward",
-    "vehicle": "Crew Dragon Grace",
-    "mission": "Crew-13",
-    "since": "2026-10-01T23:05:00Z"
-   },
-   {
-    "name": "Zarya nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Harmony nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Harmony zenith",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Zvezda nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Zvezda zenith",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Nauka nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Unity nadir",
-    "vehicle": null,
-    "mission": null,
-    "since": null
-   },
-   {
-    "name": "Zvezda aft",
-    "vehicle": "Progress MS-34",
-    "mission": "Progress MS-34 (95P)",
-    "since": "2026-04-28T00:00:48Z"
-   },
-   {
-    "name": "Poisk zenith",
-    "vehicle": "Progress MS-35",
-    "mission": "Progress MS-35 (96P)",
-    "since": "2026-09-19T13:44:20Z"
-   },
    {
     "name": "Node 2 forward",
     "vehicle": null,
@@ -1732,7 +1643,25 @@
     "since": null
    },
    {
+    "name": "Zvezda nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
     "name": "Unity forward",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Zvezda zenith",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Nauka nadir",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -1750,7 +1679,49 @@
     "since": null
    },
    {
+    "name": "Unity nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
     "name": "Pirs nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Harmony forward",
+    "vehicle": "Crew Dragon Grace",
+    "mission": "Crew-13",
+    "since": "2026-10-01T23:05:00Z"
+   },
+   {
+    "name": "Zvezda aft",
+    "vehicle": "Progress MS-34",
+    "mission": "Progress MS-34 (95P)",
+    "since": "2026-04-28T00:00:48Z"
+   },
+   {
+    "name": "Zarya nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Poisk zenith",
+    "vehicle": "Progress MS-35",
+    "mission": "Progress MS-35 (96P)",
+    "since": "2026-09-19T13:44:20Z"
+   },
+   {
+    "name": "Harmony nadir",
+    "vehicle": null,
+    "mission": null,
+    "since": null
+   },
+   {
+    "name": "Harmony zenith",
     "vehicle": null,
     "mission": null,
     "since": null
@@ -3716,7 +3687,7 @@
   }
  ],
  "corps": {
-  "at": "2026-11-25T19:59:20.943Z",
+  "at": "2026-11-26T02:49:43.616Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4121,7 +4092,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-25T19:59:26.100Z",
+  "at": "2026-11-26T02:49:48.652Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4634,7 +4605,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-25T19:59:32.854Z",
+  "at": "2026-11-26T02:49:55.321Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",

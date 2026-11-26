@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-25T19:54:26.792Z",
+ "updated": "2026-11-26T02:48:33.489Z",
  "pats": {
-  "at": "2026-11-25T19:54:26.792Z",
+  "at": "2026-11-26T02:48:33.489Z",
   "team": "NE",
   "sport": "nfl",
   "season": 2026,
@@ -94,10 +94,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4362890.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": null,
     "depthPos": null,
@@ -474,7 +471,10 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4039505.png",
     "status": "Active",
-    "injury": null,
+    "injury": {
+     "status": "Questionable",
+     "detail": null
+    },
     "stats": null,
     "draft": {
      "pick": null,
@@ -3351,10 +3351,7 @@
     "nation": null,
     "photo": "https://a.espncdn.com/i/headshots/nfl/players/full/4047941.png",
     "status": "Active",
-    "injury": {
-     "status": "Questionable",
-     "detail": null
-    },
+    "injury": null,
     "stats": null,
     "draft": {
      "pick": null,
@@ -5432,7 +5429,7 @@
   ]
  },
  "texas": {
-  "at": "2026-11-25T00:38:44.869Z",
+  "at": "2026-11-26T02:48:33.489Z",
   "team": "TEX",
   "sport": "cfb",
   "season": 2026,
@@ -8485,7 +8482,7 @@
   "cfbd": true
  },
  "dodgers": {
-  "at": "2026-11-25T19:54:26.792Z",
+  "at": "2026-11-26T02:48:33.489Z",
   "team": "LAD",
   "sport": "mlb",
   "season": 2026,
@@ -9790,7 +9787,7 @@
   ]
  },
  "milan": {
-  "at": "2026-11-25T19:54:26.792Z",
+  "at": "2026-11-26T02:48:33.489Z",
   "team": "MIL",
   "sport": "soccer",
   "season": 2026,
