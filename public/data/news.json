@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-27T04:59:46.564Z",
+ "updated": "2026-11-27T14:59:19.792Z",
  "status": {
   "The Guardian (royal)": "Error: 403 https://www.theguardian.com/uk/monarchy/rss",
   "Royal Central (royal)": "10 items",
-  "BBC News (royal)": "1 items",
+  "BBC News (royal)": "0 items",
   "WWD (fashion)": "0 items",
   "Vogue (fashion)": "1 items",
-  "Google News (fashion)": "12 items",
+  "Google News (fashion)": "Error: 503 https://news.google.com/rss/search?q=%22fashion%20week%22%20OR%20%22H",
   "Variety (awards)": "10 items",
   "Politico (elez)": "12 items",
   "Cyclingnews (cicl)": "12 items",
@@ -14,15 +14,23 @@
   "ESPN (tennis)": "12 items",
   "Sportscar365 (wec)": "1 items",
   "Motorsport.com (more)": "0 items",
-  "Google News (dakar)": "12 items",
-  "Google News (ac)": "12 items",
-  "Google News (wec)": "12 items",
-  "Google News (space)": "12 items",
-  "Google News (more)": "12 items",
-  "Google News (wc)": "12 items",
-  "Google News (oly)": "12 items"
+  "Google News (dakar)": "Error: 503 https://news.google.com/rss/search?q=%22Dakar%20Rally%22%20when%3A7d&",
+  "Google News (ac)": "Error: 503 https://news.google.com/rss/search?q=%22America's%20Cup%22%20Naples%2",
+  "Google News (wec)": "Error: 503 https://news.google.com/rss/search?q=WEC%20Hypercar%20when%3A7d&hl=en",
+  "Google News (space)": "Error: 503 https://news.google.com/rss/search?q=astronauts%20OR%20%22Starship%22",
+  "Google News (more)": "Error: 503 https://news.google.com/rss/search?q=%22Vend%C3%A9e%20Globe%22%20when",
+  "Google News (wc)": "Error: 503 https://news.google.com/rss/search?q=%22Euro%202028%22%20OR%20%222030",
+  "Google News (oly)": "Error: 503 https://news.google.com/rss/search?q=%22LA28%22%20OR%20%22Los%20Angel"
  },
  "items": [
+  {
+   "id": "Royal Central:https://royalcentral.co.uk/uk/the-princess-of-wales-scotland-219971/",
+   "passion": "royal",
+   "title": "The Princess of Wales learned how creative expression can nourish the soul on suprise visit to Scotland",
+   "source": "Royal Central",
+   "time": "2026-11-27T08:00:00.000Z",
+   "url": "https://royalcentral.co.uk/uk/the-princess-of-wales-scotland-219971/"
+  },
   {
    "id": "Royal Central:https://royalcentral.co.uk/features/king-charles-christmas-4-219551/",
    "passion": "royal",
@@ -96,124 +104,12 @@
    "url": "https://royalcentral.co.uk/uk/king-christmas-day-219939/"
   },
   {
-   "id": "Royal Central:https://royalcentral.co.uk/features/larry-the-cat-has-the-purr-fect-response-to-prince-williams-downing-street-visit-219934/",
-   "passion": "royal",
-   "title": "Larry the Cat has the purr-fect response to Prince William’s Downing Street visit",
-   "source": "Royal Central",
-   "time": "2026-11-24T18:38:28.000Z",
-   "url": "https://royalcentral.co.uk/features/larry-the-cat-has-the-purr-fect-response-to-prince-williams-downing-street-visit-219934/"
-  },
-  {
-   "id": "BBC News:https://www.bbc.co.uk/news/articles/c8zx9pvg167vo?at_medium=RSS&amp;at_campaign=rss",
-   "passion": "royal",
-   "title": "Princess of Wales drops in on arts project in the Borders",
-   "source": "BBC News",
-   "time": "2026-11-26T16:18:33.000Z",
-   "url": "https://www.bbc.co.uk/news/articles/c8zx9pvg167vo?at_medium=RSS&amp;at_campaign=rss"
-  },
-  {
    "id": "Vogue:https://www.vogue.com/article/warm-up-your-thanksgiving-weekend-with-fresh-from-the-runway-sweet-potato-orange-dressing",
    "passion": "fashion",
    "title": "Warm Up Your Thanksgiving Weekend With Fresh From the Runway Sweet Potato-Orange Dressing",
    "source": "Vogue",
    "time": "2026-11-26T13:00:00.000Z",
    "url": "https://www.vogue.com/article/warm-up-your-thanksgiving-weekend-with-fresh-from-the-runway-sweet-potato-orange-dressing"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimAFBVV95cUxQRUFvV1JEbjU2YVUzTmxycnBXTXp6OXBMbW96cEF3YVo3cGRiUnJqTC1jQ1BpMERXN2xldjlqcnR4NjV3elJlRWdNdDRMM0pPSWM2WkN4RXl1THVSME1LMmFwLV9zeVgwMXJ1a1U1cFhNV1k4MXpLeUxWckU0NGtRR0hFMUdaa0dQenJPSDBENWV4V0VhR0VSdA?oc=5",
-   "passion": "fashion",
-   "title": "Denver Has Spoken! Meet the Denver Fashion Week Fall 2026 People’s Choice Winners",
-   "source": "303 Magazine",
-   "time": "2026-11-25T19:01:14.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRUFvV1JEbjU2YVUzTmxycnBXTXp6OXBMbW96cEF3YVo3cGRiUnJqTC1jQ1BpMERXN2xldjlqcnR4NjV3elJlRWdNdDRMM0pPSWM2WkN4RXl1THVSME1LMmFwLV9zeVgwMXJ1a1U1cFhNV1k4MXpLeUxWckU0NGtRR0hFMUdaa0dQenJPSDBENWV4V0VhR0VSdA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcmowMk51X0cxZk5JSVREVEs5Sm9xejhMeXFlMEo2bHJXRVJncTE0QjdlellBZ2NNUkNKRUZiSklpVW14eFl6VVJ5WTVCalBlTUduUGUxcGJNUzVucENBbWp0QjJRZHNKaGpFMlFGSmNvZnVWWkp5VEwwbGVIa3U3N0s0bXRfdWpxMzZKRzVRN0V3YzRsMElWUm5ZWUlJbjRMd0I4allwQ2E5T0ViZXhrQVVZZGxxOFd6R3U1ck1BdG1taDhBekNwRmdCc1k2MjBaLThKN1E2Yi1WazIwWlFN?oc=5",
-   "passion": "fashion",
-   "title": "Photos: Underground Runway brings streetwear to Columbia Fashion Week",
-   "source": "Post and Courier",
-   "time": "2026-11-21T10:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOcmowMk51X0cxZk5JSVREVEs5Sm9xejhMeXFlMEo2bHJXRVJncTE0QjdlellBZ2NNUkNKRUZiSklpVW14eFl6VVJ5WTVCalBlTUduUGUxcGJNUzVucENBbWp0QjJRZHNKaGpFMlFGSmNvZnVWWkp5VEwwbGVIa3U3N0s0bXRfdWpxMzZKRzVRN0V3YzRsMElWUm5ZWUlJbjRMd0I4allwQ2E5T0ViZXhrQVVZZGxxOFd6R3U1ck1BdG1taDhBekNwRmdCc1k2MjBaLThKN1E2Yi1WazIwWlFN?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GNDdoVGdZZ0o5TUdiQ0tfSmdLTmZTTTQ1UzA0dUlETG9Dc2I4X3NVRGIwUkFLZURFTWF0bkx3VUxEckhGZ0EtVV9hdXk3cmw0NE5XSU1R?oc=5",
-   "passion": "fashion",
-   "title": "Checking into our Fashion Week Hotels of Choice",
-   "source": "PAPER Magazine",
-   "time": "2026-11-24T22:08:31.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GNDdoVGdZZ0o5TUdiQ0tfSmdLTmZTTTQ1UzA0dUlETG9Dc2I4X3NVRGIwUkFLZURFTWF0bkx3VUxEckhGZ0EtVV9hdXk3cmw0NE5XSU1R?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT0ZPWEFwN0hGQjYtdFNpZGxKVDFvcWR6NkFqWUhSV2xXYnJaZ0FmOEoxWUtyWUxZRjQxTl9VNkM4enFXc3Q1UjZlZjhUN0tNOHVDaDI0Wml5S1JzUlB0eDFhT2tneVJCOE55MGlEdVdKUjJ2UFNnMGdZaWFGTWpDbXF2Y3E4bmRObVRCX3B6anRGdXlNWFBILVhYa2FoZkF2SzlNZU1SdThGVjlnVndvVm5VWnZZc2wzdzc4?oc=5",
-   "passion": "fashion",
-   "title": "H&M Wool Protests To Sweep Nation On Black Friday After Fashion Week Takeovers",
-   "source": "People for the Ethical Treatment of Animals (PETA)",
-   "time": "2026-11-25T23:08:01.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPT0ZPWEFwN0hGQjYtdFNpZGxKVDFvcWR6NkFqWUhSV2xXYnJaZ0FmOEoxWUtyWUxZRjQxTl9VNkM4enFXc3Q1UjZlZjhUN0tNOHVDaDI0Wml5S1JzUlB0eDFhT2tneVJCOE55MGlEdVdKUjJ2UFNnMGdZaWFGTWpDbXF2Y3E4bmRObVRCX3B6anRGdXlNWFBILVhYa2FoZkF2SzlNZU1SdThGVjlnVndvVm5VWnZZc2wzdzc4?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMirwFBVV95cUxQelg3SW9WVmRXdHRUTEo4UW1xd2l2dnJxWTU1aVZYcnVzOVFlOEpxR1Z6QkxQUk0tcENiT2FhOE8xbFg1TmVTSUVMMWNLSXFLN3g3THlnN3ZIRnNTMDZhQnBkajRDVEFqdXAySlpId1dBUXgwMzItNUhnSllkWTRKT2poUFZWUGRqMjlzNm80MVdyTW94bnVXWldqTXZLZkxKWkM5ZUdSUWhySFBtNDZ3?oc=5",
-   "passion": "fashion",
-   "title": "Woolrich Opens Milan Flagship, Plans January Milan Runway Show",
-   "source": "WWD",
-   "time": "2026-11-24T06:01:08.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQelg3SW9WVmRXdHRUTEo4UW1xd2l2dnJxWTU1aVZYcnVzOVFlOEpxR1Z6QkxQUk0tcENiT2FhOE8xbFg1TmVTSUVMMWNLSXFLN3g3THlnN3ZIRnNTMDZhQnBkajRDVEFqdXAySlpId1dBUXgwMzItNUhnSllkWTRKT2poUFZWUGRqMjlzNm80MVdyTW94bnVXWldqTXZLZkxKWkM5ZUdSUWhySFBtNDZ3?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiggFBVV95cUxPdHkyVTlORlhDak9OWDM2cTFqMVpqTHBQZWl1VThvd3NnOGctRVI0NnR3VGRnNTFTZVhFVnpoLWJEY3IwOFpFSk5oLUZ1S2NKU3ViVU95WTZ3WmNaTFZDUGVvcnRHbWdCR3RMbmRybXh6V3dsWUpYTEppTE1YM2c2N0dB?oc=5",
-   "passion": "fashion",
-   "title": "Behind the Latest Legal Battle Over the New York Fashion Week Brand",
-   "source": "The Fashion Law",
-   "time": "2026-11-23T14:06:21.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdHkyVTlORlhDak9OWDM2cTFqMVpqTHBQZWl1VThvd3NnOGctRVI0NnR3VGRnNTFTZVhFVnpoLWJEY3IwOFpFSk5oLUZ1S2NKU3ViVU95WTZ3WmNaTFZDUGVvcnRHbWdCR3RMbmRybXh6V3dsWUpYTEppTE1YM2c2N0dB?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiakFVX3lxTE1jVUowLTdMTENudXZZYjRBRUZaVGdqOWx5UlRJRVBsMkp1SGdwTWxLcVJjRl81Qk9KT0h2SWtnYzRYOUpSa2dxZURkazJMM2lFZjBUU0pDdzNUSXJQRzFWVHNVMm5YNW9xT3c?oc=5",
-   "passion": "fashion",
-   "title": "The best street style looks from Fashion Week Tashkent put a modern spin on tradition",
-   "source": "Vogue Adria",
-   "time": "2026-11-26T14:00:07.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jVUowLTdMTENudXZZYjRBRUZaVGdqOWx5UlRJRVBsMkp1SGdwTWxLcVJjRl81Qk9KT0h2SWtnYzRYOUpSa2dxZURkazJMM2lFZjBUU0pDdzNUSXJQRzFWVHNVMm5YNW9xT3c?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMixwFBVV95cUxNSU0tSm5YTnREaERDSDBPOG5TdFg3SlpkdUlTM2NLWld0bVA4TnhNT2kwTDRuNWpUcFlQdlFBbFNERXRYNXNxMGNvamFMM1JJSkhNa3lKbGUxbERNanhSajVOczctLUw1aDY5Y0FFcFlZdnpKVjdhZ0Ryd0lzakhUNjZlMmJ3OVZ1U0Jxa2xvNldwdEVUNXNvSV9vdUIzZWh1WXRkbnEzN3NsR0hpTzU0R1R1UnBLeFFieVZhaEJFS1YxSjQ5WU80?oc=5",
-   "passion": "fashion",
-   "title": "Woolrich in the BasicNet era: new Milanese flagship and a Milan Fashion Week show - FashionNetwork",
-   "source": "The World's Fashion Business News",
-   "time": "2026-11-24T15:41:16.000Z",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSU0tSm5YTnREaERDSDBPOG5TdFg3SlpkdUlTM2NLWld0bVA4TnhNT2kwTDRuNWpUcFlQdlFBbFNERXRYNXNxMGNvamFMM1JJSkhNa3lKbGUxbERNanhSajVOczctLUw1aDY5Y0FFcFlZdnpKVjdhZ0Ryd0lzakhUNjZlMmJ3OVZ1U0Jxa2xvNldwdEVUNXNvSV9vdUIzZWh1WXRkbnEzN3NsR0hpTzU0R1R1UnBLeFFieVZhaEJFS1YxSjQ5WU80?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYllTY28xcTZid2tVZ2dfLUJuLXVrbFVrdmpDdXNSSktaa3c5Szg5X1hQREN2VDIyOUFiSFRsTEVRbVRrUHFKVkp6cGw2c3VDb0g0MDVuUVRVTG5TcjYtU0tvNTF1bFpjTUR5amZmWE9TRmROcUN2MTJfVmdSMkt4ckZ5eHBmcDFWT21HVW4wRzg2N2w4NmpkbEExMWZMUUI5OE1hckxXMHBRQ0tGc19kcnFFM1dBVWE4OE4w?oc=5",
-   "passion": "fashion",
-   "title": "Phoenix Fashion Week hits the runway",
-   "source": "12News",
-   "time": "2026-11-20T21:16:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNYllTY28xcTZid2tVZ2dfLUJuLXVrbFVrdmpDdXNSSktaa3c5Szg5X1hQREN2VDIyOUFiSFRsTEVRbVRrUHFKVkp6cGw2c3VDb0g0MDVuUVRVTG5TcjYtU0tvNTF1bFpjTUR5amZmWE9TRmROcUN2MTJfVmdSMkt4ckZ5eHBmcDFWT21HVW4wRzg2N2w4NmpkbEExMWZMUUI5OE1hckxXMHBRQ0tGc19kcnFFM1dBVWE4OE4w?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeEZ1VDcxUUdpX3JlUlY3S2M0bVFkaEFkcXNrZ2pXazNLMXBoQ0diSzl0amZpVFVFQzlYd1o4YlVEMnduMXB0YXZoLWVJUFhvcDNFaFMxalVrcThWRFhPMlIxV29uSTRQLXl1djBiQzNrTEltbWM0eGtULTJWaDF5YVRFWkkyZ2tmLXNQVk1EbjhhcGdzcFNwWlJJREhtaFRESllNQVFOQWc?oc=5",
-   "passion": "fashion",
-   "title": "Christian Dior board approves Agache merger terms",
-   "source": "Reuters",
-   "time": "2026-11-20T21:01:43.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeEZ1VDcxUUdpX3JlUlY3S2M0bVFkaEFkcXNrZ2pXazNLMXBoQ0diSzl0amZpVFVFQzlYd1o4YlVEMnduMXB0YXZoLWVJUFhvcDNFaFMxalVrcThWRFhPMlIxV29uSTRQLXl1djBiQzNrTEltbWM0eGtULTJWaDF5YVRFWkkyZ2tmLXNQVk1EbjhhcGdzcFNwWlJJREhtaFRESllNQVFOQWc?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMia0FVX3lxTE43RUZmTUFlQWZMVUtTeXp3eFEyaEp3V3QwWG9YZTh1cmxJa0pNb21RYkYzemVqUmsxcGhkcFBCaE8zQmpodUlQbkNsU1M4eGY5ZmZGbGhJb2NCOF9tdHRxWWJzRVBoRUF6eVg40gFrQVVfeXFMTlloQlZBOVR2cTdjRFNaM3Jod0lwcFpsLURfR3FMbGZZQ0c2Q190M1FUaWkwYmhlY2U3N1JEazNEWnlWOGhha2RrTURSbnd0SC1VcFBnMXhSalYwbjJFV1h3SVBLUUNFUjVvSEU?oc=5",
-   "passion": "fashion",
-   "title": "Taylor Swift ends busy fashion week in Chiefs jacket from favorite, familiar brand",
-   "source": "Kansas City Star",
-   "time": "2026-11-22T20:10:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE43RUZmTUFlQWZMVUtTeXp3eFEyaEp3V3QwWG9YZTh1cmxJa0pNb21RYkYzemVqUmsxcGhkcFBCaE8zQmpodUlQbkNsU1M4eGY5ZmZGbGhJb2NCOF9tdHRxWWJzRVBoRUF6eVg40gFrQVVfeXFMTlloQlZBOVR2cTdjRFNaM3Jod0lwcFpsLURfR3FMbGZZQ0c2Q190M1FUaWkwYmhlY2U3N1JEazNEWnlWOGhha2RrTURSbnd0SC1VcFBnMXhSalYwbjJFV1h3SVBLUUNFUjVvSEU?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitgFBVV95cUxQSlQzbkFQNVlNc2xNMUtTYWI1aVBpME5jdTBWZGh3TTlxRGs0ZmhzclVubWFQMWRZaGNTNXlFY2dJMXN1bGpKUC1vaWhOWjR6VG9vOWJzS1diNkdPTURxWUdzN0tGLThraWM2elJra1A2UDhYZkJyNW1Wam5UdURxWGFHWTBBbEkzWjRHYm1oaFJwek1VekJkSTl2amM5U2Z6aHE3QmFuNEoycWdFSURyc2ZTSkFHQQ?oc=5",
-   "passion": "fashion",
-   "title": "Jamaica International Fashion Week: When worlds collided on the runway",
-   "source": "Galaxy Television",
-   "time": "2026-11-23T13:16:48.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSlQzbkFQNVlNc2xNMUtTYWI1aVBpME5jdTBWZGh3TTlxRGs0ZmhzclVubWFQMWRZaGNTNXlFY2dJMXN1bGpKUC1vaWhOWjR6VG9vOWJzS1diNkdPTURxWUdzN0tGLThraWM2elJra1A2UDhYZkJyNW1Wam5UdURxWGFHWTBBbEkzWjRHYm1oaFJwek1VekJkSTl2amM5U2Z6aHE3QmFuNEoycWdFSURyc2ZTSkFHQQ?oc=5"
   },
   {
    "id": "Variety:https://variety.com/2026/film/awards/chiwetel-ejiofor-stephen-frears-dirty-pretty-things-1236959080/",
@@ -392,100 +288,108 @@
    "url": "https://www.politico.com/live-updates/2026/11/19/congress/house-ethics-rules-revamp-01176438"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-culture/your-chance-to-ask-michael-matthews-anything-about-professional-cycling-his-career-and-more-askcn/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/racing/cobbled-classics-reveal-revamped-routes-as-e3-saxo-classic-and-dwars-door-vlaanderen-make-changes-for-2027/",
    "passion": "cicl",
-   "title": "Your chance to ask Michael Matthews anything about professional cycling, his career and more – AskCN",
+   "title": "Cobbled Classics reveal revamped routes as E3 Saxo Classic and Dwars door Vlaanderen make changes for 2027",
    "source": "Cyclingnews",
-   "time": "2026-11-26T18:53:27.000Z",
-   "url": "https://www.cyclingnews.com/cycling-culture/your-chance-to-ask-michael-matthews-anything-about-professional-cycling-his-career-and-more-askcn/"
+   "time": "2026-11-27T14:39:09.000Z",
+   "url": "https://www.cyclingnews.com/pro-cycling/racing/cobbled-classics-reveal-revamped-routes-as-e3-saxo-classic-and-dwars-door-vlaanderen-make-changes-for-2027/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/racing/winning-isnt-everything-inside-cyclings-high-stakes-race-for-uci-points/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-tech-components/smart-trainers/black-friday-smart-trainer-deals-2026-upgrade-your-indoor-cycling-set-up-with-a-top-spec-turbo/",
    "passion": "cicl",
-   "title": "Winning isn’t everything: Inside cycling’s high-stakes race for UCI points",
+   "title": "Black Friday smart trainer deals 2026: Upgrade your indoor cycling set-up with a top spec turbo",
    "source": "Cyclingnews",
-   "time": "2026-11-26T18:12:00.000Z",
-   "url": "https://www.cyclingnews.com/pro-cycling/racing/winning-isnt-everything-inside-cyclings-high-stakes-race-for-uci-points/"
+   "time": "2026-11-27T13:57:57.000Z",
+   "url": "https://www.cyclingnews.com/cycling-tech-components/smart-trainers/black-friday-smart-trainer-deals-2026-upgrade-your-indoor-cycling-set-up-with-a-top-spec-turbo/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/our-top-rated-cycling-headphones-are-now-35-percent-off-save-on-sonys-linkbuds-clip-in-the-us-and-uk/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-tech-components/weve-tested-these-usd8-99-chinese-aero-socks-and-theyre-faster-than-big-brands-and-way-cheaper-too-thanks-to-black-friday-markdowns/",
    "passion": "cicl",
-   "title": "Our top-rated cycling headphones are now 35% off – save on Sony's LinkBuds Clip in the US and UK",
+   "title": "We’ve tested these $8.99 Chinese aero socks and they’re faster than big brands and WAY cheaper too thanks to Black Friday markdowns",
    "source": "Cyclingnews",
-   "time": "2026-11-26T17:23:25.000Z",
-   "url": "https://www.cyclingnews.com/cycling-kit-accessories/our-top-rated-cycling-headphones-are-now-35-percent-off-save-on-sonys-linkbuds-clip-in-the-us-and-uk/"
+   "time": "2026-11-27T13:52:53.000Z",
+   "url": "https://www.cyclingnews.com/cycling-tech-components/weve-tested-these-usd8-99-chinese-aero-socks-and-theyre-faster-than-big-brands-and-way-cheaper-too-thanks-to-black-friday-markdowns/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/black-friday-bike-deals-crazy-deals-on-shimano-di2-aero-socks-and-indoor-trainers/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-tech-components/black-friday-garmin-deals-massive-deals-on-edge-computers-smartwatches-power-meters-and-more/",
    "passion": "cicl",
-   "title": "Black Friday bike deals: Crazy deals on Shimano Di2, aero socks and indoor trainers",
+   "title": "Black Friday Garmin deals: Massive savings on Edge computers, smartwatches, power meters and more",
    "source": "Cyclingnews",
-   "time": "2026-11-26T16:26:14.000Z",
-   "url": "https://www.cyclingnews.com/cycling-kit-accessories/black-friday-bike-deals-crazy-deals-on-shimano-di2-aero-socks-and-indoor-trainers/"
+   "time": "2026-11-27T13:39:45.000Z",
+   "url": "https://www.cyclingnews.com/cycling-tech-components/black-friday-garmin-deals-massive-deals-on-edge-computers-smartwatches-power-meters-and-more/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/teams-riders/when-you-see-an-opportunity-you-have-to-act-quickly-thibau-nys-and-lucinda-brands-cyclo-cross-team-find-new-sponsorship-from-2027-onwards/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/these-brilliant-bike-lights-are-the-most-eye-catching-ive-ever-tested-you-can-now-save-up-to-40-percent-off-the-usual-price-in-this-black-friday-deal/",
    "passion": "cicl",
-   "title": "'When you see an opportunity, you have to act quickly' – Thibau Nys and Lucinda Brand's cyclo-cross team find new sponsorship from 2027 onwards",
+   "title": "These brilliant bike lights are the most eye-catching I've ever tested. You can now save up to 40% off the usual price in this Black Friday deal",
    "source": "Cyclingnews",
-   "time": "2026-11-26T16:01:01.000Z",
-   "url": "https://www.cyclingnews.com/pro-cycling/teams-riders/when-you-see-an-opportunity-you-have-to-act-quickly-thibau-nys-and-lucinda-brands-cyclo-cross-team-find-new-sponsorship-from-2027-onwards/"
+   "time": "2026-11-27T13:31:24.000Z",
+   "url": "https://www.cyclingnews.com/cycling-kit-accessories/these-brilliant-bike-lights-are-the-most-eye-catching-ive-ever-tested-you-can-now-save-up-to-40-percent-off-the-usual-price-in-this-black-friday-deal/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/huge-black-friday-discounts-on-shimano-road-groupsets-at-sigma-sports-with-105-di2-ultegra-and-dura-ace-all-better-than-half-price/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-tech-components/black-friday-wahoo-deals-2026/",
    "passion": "cicl",
-   "title": "Huge Black Friday discounts on Shimano road groupsets at Sigma Sports, with 105 Di2, Ultegra and Dura-Ace all better than half price",
+   "title": "Black Friday Wahoo deals 2026: Kickr Core 2 hits best-ever price, Elemnt computers on sale too",
    "source": "Cyclingnews",
-   "time": "2026-11-26T15:35:07.000Z",
-   "url": "https://www.cyclingnews.com/cycling-kit-accessories/huge-black-friday-discounts-on-shimano-road-groupsets-at-sigma-sports-with-105-di2-ultegra-and-dura-ace-all-better-than-half-price/"
+   "time": "2026-11-27T13:02:11.000Z",
+   "url": "https://www.cyclingnews.com/cycling-tech-components/black-friday-wahoo-deals-2026/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-culture/streaming/get-a-31-percent-saving-on-peacock-tv-this-black-friday-the-exclusive-us-streaming-home-of-the-tour-de-france/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/teams-riders/tadej-pogacars-neo-pro-salary-revealed-as-his-agent-details-big-rise-in-wages-for-young-talents/",
    "passion": "cicl",
-   "title": "Get a 31% saving on Peacock TV this Black Friday – the exclusive US streaming home of the Tour de France",
+   "title": "Tadej Pogačar’s neo-pro salary revealed, as his agent details big rise in wages for young talents",
    "source": "Cyclingnews",
-   "time": "2026-11-26T15:12:27.000Z",
-   "url": "https://www.cyclingnews.com/cycling-culture/streaming/get-a-31-percent-saving-on-peacock-tv-this-black-friday-the-exclusive-us-streaming-home-of-the-tour-de-france/"
+   "time": "2026-11-27T12:52:25.000Z",
+   "url": "https://www.cyclingnews.com/pro-cycling/teams-riders/tadej-pogacars-neo-pro-salary-revealed-as-his-agent-details-big-rise-in-wages-for-young-talents/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/a-pair-of-race-winning-continental-gp5000-s-tr-tyres-plus-500ml-of-stans-sealant-is-now-only-gbp99-95-at-merlin-cycles/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/teams-riders/hes-not-a-guy-that-just-mails-it-in-hes-always-been-a-real-killer-in-races-why-george-bennett-is-backing-primoz-roglic-for-special-results-as-former-teammates-reunite-at-nsn/",
    "passion": "cicl",
-   "title": "A pair of race-winning Continental GP5000 S TR tyres plus 500ml of Stan's sealant is now only £99.95 at Merlin Cycles",
+   "title": "'He's not a guy that just mails it in... he's always been a real killer in races' – Why George Bennett is backing Primož Roglič for 'special results' as former teammates reunite at NSN",
    "source": "Cyclingnews",
-   "time": "2026-11-26T15:08:29.000Z",
-   "url": "https://www.cyclingnews.com/cycling-kit-accessories/a-pair-of-race-winning-continental-gp5000-s-tr-tyres-plus-500ml-of-stans-sealant-is-now-only-gbp99-95-at-merlin-cycles/"
+   "time": "2026-11-27T12:20:01.000Z",
+   "url": "https://www.cyclingnews.com/pro-cycling/teams-riders/hes-not-a-guy-that-just-mails-it-in-hes-always-been-a-real-killer-in-races-why-george-bennett-is-backing-primoz-roglic-for-special-results-as-former-teammates-reunite-at-nsn/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/womens-cycling/the-only-way-for-the-race-to-grow-womens-festival-elsy-jacobs-race-becomes-part-of-the-mens-tour-of-luxembourg-organisation/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/womens-cycling/rabobank-returns-to-title-sponsorship-as-new-naming-sponsor-of-visma-lease-a-bike-women/",
    "passion": "cicl",
-   "title": "'The only way for the race to grow' – Women’s Festival Elsy Jacobs race becomes part of themen'sTour of Luxembourg organisation",
+   "title": "Rabobank returns to title sponsorship as new naming sponsor of Visma-Lease a Bike Women",
    "source": "Cyclingnews",
-   "time": "2026-11-26T14:09:03.000Z",
-   "url": "https://www.cyclingnews.com/pro-cycling/womens-cycling/the-only-way-for-the-race-to-grow-womens-festival-elsy-jacobs-race-becomes-part-of-the-mens-tour-of-luxembourg-organisation/"
+   "time": "2026-11-27T12:02:15.000Z",
+   "url": "https://www.cyclingnews.com/pro-cycling/womens-cycling/rabobank-returns-to-title-sponsorship-as-new-naming-sponsor-of-visma-lease-a-bike-women/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/helmets/if-youre-looking-for-the-best-urban-e-bike-helmet-weve-found-it-and-its-got-a-usd39-saving-in-this-black-friday-cycling-deal/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-culture/this-black-friday-lego-deal-drops-the-brilliant-icons-road-bike-set-by-28-percent/",
    "passion": "cicl",
-   "title": "If you're looking for the best urban e-bike helmet, we've found it, and it's got a $39 saving in this Black Friday cycling deal",
+   "title": "This Black Friday Lego deal drops the brilliant Icons Road Bike set by 28% – it's now just £79 in this Amazon deal",
    "source": "Cyclingnews",
-   "time": "2026-11-26T14:07:23.000Z",
-   "url": "https://www.cyclingnews.com/cycling-kit-accessories/helmets/if-youre-looking-for-the-best-urban-e-bike-helmet-weve-found-it-and-its-got-a-usd39-saving-in-this-black-friday-cycling-deal/"
+   "time": "2026-11-27T10:42:55.000Z",
+   "url": "https://www.cyclingnews.com/cycling-culture/this-black-friday-lego-deal-drops-the-brilliant-icons-road-bike-set-by-28-percent/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/pro-cycling/teams-riders/visma-steps-down-as-title-sponsor-of-visma-lease-a-bike-team/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-kit-accessories/influencers-rejoice-the-follow-me-camera-drone-that-can-fly-at-25mph-and-fits-in-your-jersey-pocket-is-now-on-sale/",
    "passion": "cicl",
-   "title": "Visma steps down as title sponsor of Visma-Lease a Bike team",
+   "title": "Influencers rejoice: The follow-me camera drone that can fly at 25mph and fits in your jersey pocket is now on sale",
    "source": "Cyclingnews",
-   "time": "2026-11-26T13:24:13.000Z",
-   "url": "https://www.cyclingnews.com/pro-cycling/teams-riders/visma-steps-down-as-title-sponsor-of-visma-lease-a-bike-team/"
+   "time": "2026-11-27T10:27:59.000Z",
+   "url": "https://www.cyclingnews.com/cycling-kit-accessories/influencers-rejoice-the-follow-me-camera-drone-that-can-fly-at-25mph-and-fits-in-your-jersey-pocket-is-now-on-sale/"
   },
   {
-   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-tech-components/its-never-been-cheaper-for-chris-froome-to-give-you-directions-with-this-big-brand-busting-bike-computer-deal-for-black-friday/",
+   "id": "Cyclingnews:https://www.cyclingnews.com/cycling-culture/streaming/watch-uci-cyclo-cross-world-cup-tv-guide/",
    "passion": "cicl",
-   "title": "It’s never been cheaper for Chris Froome to give you directions with this big brand busting bike computer deal for Black Friday",
+   "title": "How to watch UCI Cyclo-cross World Cup: Live streams and TV channels for Ostrava and Tábor races",
    "source": "Cyclingnews",
-   "time": "2026-11-26T12:46:11.000Z",
-   "url": "https://www.cyclingnews.com/cycling-tech-components/its-never-been-cheaper-for-chris-froome-to-give-you-directions-with-this-big-brand-busting-bike-computer-deal-for-black-friday/"
+   "time": "2026-11-27T09:54:55.000Z",
+   "url": "https://www.cyclingnews.com/cycling-culture/streaming/watch-uci-cyclo-cross-world-cup-tv-guide/"
+  },
+  {
+   "id": "Ski Racing:https://skiracing.com/viktoria-zaytsevas-world-cup-debut-had-roots-in-edwards-colorado/",
+   "passion": "sci",
+   "title": "Viktoria Zaytseva’s World Cup Debut Had Roots in Edwards, Colorado",
+   "source": "Ski Racing",
+   "time": "2026-11-27T14:28:39.000Z",
+   "url": "https://skiracing.com/viktoria-zaytsevas-world-cup-debut-had-roots-in-edwards-colorado/"
   },
   {
    "id": "Ski Racing:https://skiracing.com/aksel-lindenmeyr-to-make-world-cup-debut-in-copper-mountain-super-g/",
@@ -574,14 +478,6 @@
    "source": "Ski Racing",
    "time": "2026-11-24T17:26:26.000Z",
    "url": "https://skiracing.com/kyle-negomir-copper-mountain/"
-  },
-  {
-   "id": "Ski Racing:https://skiracing.com/dr-haley-perlus-on-training-the-mental-side-of-ski-racing/",
-   "passion": "sci",
-   "title": "Dr. Haley Perlus on Training the Mental Side of Ski Racing",
-   "source": "Ski Racing",
-   "time": "2026-11-24T00:43:22.000Z",
-   "url": "https://skiracing.com/dr-haley-perlus-on-training-the-mental-side-of-ski-racing/"
   },
   {
    "id": "ESPN:https://www.espn.com/tennis/story/_/id/50574609/zverev-rybakina-alcaraz-andreeva-top-tennis-players-2026",
@@ -688,6 +584,62 @@
    "url": "https://sportscar365.com/lemans/wec/ford-unveils-gt41-hypercar-at-detroit-lions-nfl-game/"
   },
   {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/who-will-replace-marc-marquez-at-ducati/10878218/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "Who will replace Marc Marquez at Ducati?",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T13:27:47.000Z",
+   "url": "https://www.motorsport.com/motogp/news/who-will-replace-marc-marquez-at-ducati/10878218/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/a-retirement-in-true-marc-marquez-style/10878212/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "A retirement in true Marc Marquez style",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T13:23:23.000Z",
+   "url": "https://www.motorsport.com/motogp/news/a-retirement-in-true-marc-marquez-style/10878212/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/marc-marquez-explains-decision-behind-shock-motogp-retirement/10878184/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "Marc Marquez explains decision behind shock MotoGP retirement",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T12:38:08.000Z",
+   "url": "https://www.motorsport.com/motogp/news/marc-marquez-explains-decision-behind-shock-motogp-retirement/10878184/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/motogp-valencia-gp-marco-bezzecchi-leads-marc-marquez-in-cold-fp1/10878160/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "MotoGP Valencia GP: Marco Bezzecchi leads Marc Marquez in cold FP1",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T10:41:59.000Z",
+   "url": "https://www.motorsport.com/motogp/news/motogp-valencia-gp-marco-bezzecchi-leads-marc-marquez-in-cold-fp1/10878160/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/alberto-puig-on-shock-marc-marquez-retirement-im-not-surprisedits-the-right-decision/10878153/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "Alberto Puig on shock Marc Marquez retirement: 'I'm not surprised, it's the right decision'",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T10:29:23.000Z",
+   "url": "https://www.motorsport.com/motogp/news/alberto-puig-on-shock-marc-marquez-retirement-im-not-surprisedits-the-right-decision/10878153/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/marc-marquez-will-retire-from-motogp-after-valencia-gp/10878128/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "Marc Marquez announces immediate retirement from MotoGP in bombshell announcement",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T09:45:51.000Z",
+   "url": "https://www.motorsport.com/motogp/news/marc-marquez-will-retire-from-motogp-after-valencia-gp/10878128/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
+   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/2026-motogp-valencia-grand-prix-how-to-watch-session-times-more/10878054/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
+   "passion": "more",
+   "title": "2026 MotoGP Valencia Grand Prix – How to watch, session times & more",
+   "source": "Motorsport.com",
+   "time": "2026-11-27T06:00:03.000Z",
+   "url": "https://www.motorsport.com/motogp/news/2026-motogp-valencia-grand-prix-how-to-watch-session-times-more/10878054/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
+  },
+  {
    "id": "Motorsport.com:https://www.motorsport.com/motogp/news/jack-miller-to-bring-back-unraced-australian-gp-livery-for-valencia-motogp-farewell/10878052/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
    "passion": "more",
    "title": "Jack Miller to revive unraced Australian GP livery for MotoGP farewell",
@@ -726,62 +678,6 @@
    "source": "Motorsport.com",
    "time": "2026-11-26T12:07:12.000Z",
    "url": "https://www.motorsport.com/motogp/news/marquezs-unexpected-riding-shift-in-pursuit-of-a-10th-world-title/10877862/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/joan-mir-viaja-a-valencia-tras-recibir-el-ok-de-sus-medicos/10877809/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Joan Mir cleared to travel to Valencia MotoGP finale after receiving medical approval",
-   "source": "Motorsport.com",
-   "time": "2026-11-26T08:48:09.000Z",
-   "url": "https://www.motorsport.com/motogp/news/joan-mir-viaja-a-valencia-tras-recibir-el-ok-de-sus-medicos/10877809/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/wedswhy-aprilias-duo-is-set-for-a-fond-farewell-after-valencia-duel-we-found-something-we-didnt-exp/10877197/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Aprilia MotoGP duo set for fond farewell after Valencia duel: \"We found something we didn't expect\"",
-   "source": "Motorsport.com",
-   "time": "2026-11-25T16:07:20.000Z",
-   "url": "https://www.motorsport.com/motogp/news/wedswhy-aprilias-duo-is-set-for-a-fond-farewell-after-valencia-duel-we-found-something-we-didnt-exp/10877197/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/embargo-injured-francesco-bagnaia-will-miss-last-gp-with-ducati-first-test-with-aprilia/10877690/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Injured Francesco Bagnaia will miss last GP with Ducati, first test with Aprilia",
-   "source": "Motorsport.com",
-   "time": "2026-11-25T15:43:44.000Z",
-   "url": "https://www.motorsport.com/motogp/news/embargo-injured-francesco-bagnaia-will-miss-last-gp-with-ducati-first-test-with-aprilia/10877690/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/six-ways-marc-marquez-outgunned-the-factory-aprilias-to-the-2026-motogp-title/10877602/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Six ways Marc Marquez outgunned Aprilia to the 2026 MotoGP title",
-   "source": "Motorsport.com",
-   "time": "2026-11-25T09:50:55.000Z",
-   "url": "https://www.motorsport.com/motogp/news/six-ways-marc-marquez-outgunned-the-factory-aprilias-to-the-2026-motogp-title/10877602/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/gigi-dalligna-marc-marquez-is-the-best-rider-in-history-no-doubt-about-that/10877521/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Gigi Dall'Igna: ‘Marc Marquez is the best rider in history, no doubt about that’",
-   "source": "Motorsport.com",
-   "time": "2026-11-24T16:36:03.000Z",
-   "url": "https://www.motorsport.com/motogp/news/gigi-dalligna-marc-marquez-is-the-best-rider-in-history-no-doubt-about-that/10877521/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/maverick-vinales-ruled-out-of-valencia-gp-cant-bid-farewell-to-motogp/10877477/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Maverick Vinales ruled out of Valencia GP, can’t bid farewell to MotoGP",
-   "source": "Motorsport.com",
-   "time": "2026-11-24T13:53:08.000Z",
-   "url": "https://www.motorsport.com/motogp/news/maverick-vinales-ruled-out-of-valencia-gp-cant-bid-farewell-to-motogp/10877477/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Motorsport.com:https://www.motorsport.com/motogp/news/marco-bezzecchi-admits-to-too-many-mistakes-after-painful-motogp-title-loss/10877363/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www",
-   "passion": "more",
-   "title": "Marco Bezzecchi admits to “too many mistakes” after “painful” MotoGP title loss",
-   "source": "Motorsport.com",
-   "time": "2026-11-24T13:18:01.000Z",
-   "url": "https://www.motorsport.com/motogp/news/marco-bezzecchi-admits-to-too-many-mistakes-after-painful-motogp-title-loss/10877363/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-MOTOGP&amp;utm_term=News&amp;utm_content=www"
   },
   {
    "id": "Motorsport.com:https://www.motorsport.com/wrc/news/hyundai-calls-on-neuville-fourmaux-and-meeke-for-latest-rally2-test/10878007/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-WRC&amp;utm_term=News&amp;utm_content=www",
@@ -1102,678 +998,6 @@
    "source": "Motorsport.com",
    "time": "2026-10-16T14:56:52.000Z",
    "url": "https://www.motorsport.com/fia-f2/news/colton-herta-eyes-potential-indy-500-return-and-imsa-enduros-as-2027-plans-remain-in-flux/10865671/?utm_source=RSS&amp;utm_medium=referral&amp;utm_campaign=RSS-INDYCAR&amp;utm_term=News&amp;utm_content=www"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tLTEtNTdNc1dSTXBLMEV4VXhxMGpLNzRHU3F5QXRDd2tVYmN3U3pQTXo3T1Z2ZFRFSmZEN25YWlBhaTJYeUFXcUp3UjhXa0ZsNEg4bnlJRnl5a3lyMm42RFdPY21kVE1N?oc=5",
-   "passion": "dakar",
-   "title": "Polaris RZR Factory Racing Reveals Four-Crew 2027 Dakar Lineup",
-   "source": "UTV Guide",
-   "time": "2026-11-20T15:53:35.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tLTEtNTdNc1dSTXBLMEV4VXhxMGpLNzRHU3F5QXRDd2tVYmN3U3pQTXo3T1Z2ZFRFSmZEN25YWlBhaTJYeUFXcUp3UjhXa0ZsNEg4bnlJRnl5a3lyMm42RFdPY21kVE1N?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMWtCS1dIZkJJTHh2TEh0blRRN2pCU1F1OE93a21zb2ZFVWVLUmtaLUNVa0JGcjJNUE9qNHlhS2xHWkpYMDhsRWxGNDhwU1duODdhRnBiQXVpaGdjYmtncDdybTAybXhfVDM2RDU0QlB6TUNJMWZXbVlRYkp3NHRXd2NIWFlmUVktbkdnX2IybDdNVXFLcWlLd3hDTERjYVh1MzhRdHMwaGxmREJmUnVGekVkdEYzWURCbmFBT21WdVh3Q1ZuQ0tmWmdXOHE4b0d4cFJTdnFxaHQwdw?oc=5",
-   "passion": "dakar",
-   "title": "Fernando Alonso returns to Dakar: Why his first rally-raid experience was a shock to the system",
-   "source": "Motorsport.com",
-   "time": "2026-11-20T12:15:03.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOMWtCS1dIZkJJTHh2TEh0blRRN2pCU1F1OE93a21zb2ZFVWVLUmtaLUNVa0JGcjJNUE9qNHlhS2xHWkpYMDhsRWxGNDhwU1duODdhRnBiQXVpaGdjYmtncDdybTAybXhfVDM2RDU0QlB6TUNJMWZXbVlRYkp3NHRXd2NIWFlmUVktbkdnX2IybDdNVXFLcWlLd3hDTERjYVh1MzhRdHMwaGxmREJmUnVGekVkdEYzWURCbmFBT21WdVh3Q1ZuQ0tmWmdXOHE4b0d4cFJTdnFxaHQwdw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiigFBVV95cUxQOFFVUUt2emFjMnJOb1ozSXlLOFMzNndxSlRiU1FKMlZpdU55ZDYyMzJSb2RsSlpMYTdyUENzN1lEMERIMmVtSktoOWlBbDZ5N0dMaE1wQ0k4c2prbTRKMklrNFN5WW43Zkx1MW9zVi1NekdWV2ZsMTZxc3lTdEVZdW1KM2FVZXBSYnfSAZIBQVVfeXFMTjRWalViOHRaRDJRYVZPQUZmMDdISXdwZ2w0MTIyNXJrLXBsRGVfdVdTaXJTMC16T3RDdlBELW10VkVLX3hIMHc5MDJleWtxaW9rQmxhVk9rcDI3OU94WVNmRUZtd2hwMUpwX256NVdBZjZRVnlLUlk4Z3htdFNMSm53a2RuUHBNMGpXem55UE5qZUE?oc=5",
-   "passion": "dakar",
-   "title": "Aston Martin Enters Dakar 2027 With Prodrive-Built Dreadnought Rally Raiders | THE SHOP",
-   "source": "THE SHOP",
-   "time": "2026-11-20T19:08:20.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOFFVUUt2emFjMnJOb1ozSXlLOFMzNndxSlRiU1FKMlZpdU55ZDYyMzJSb2RsSlpMYTdyUENzN1lEMERIMmVtSktoOWlBbDZ5N0dMaE1wQ0k4c2prbTRKMklrNFN5WW43Zkx1MW9zVi1NekdWV2ZsMTZxc3lTdEVZdW1KM2FVZXBSYnfSAZIBQVVfeXFMTjRWalViOHRaRDJRYVZPQUZmMDdISXdwZ2w0MTIyNXJrLXBsRGVfdVdTaXJTMC16T3RDdlBELW10VkVLX3hIMHc5MDJleWtxaW9rQmxhVk9rcDI3OU94WVNmRUZtd2hwMUpwX256NVdBZjZRVnlLUlk4Z3htdFNMSm53a2RuUHBNMGpXem55UE5qZUE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxQVGJBcTZEdmZlUklQVmRseUdCcUdxcU42dVpwTjJuWmk0cm51SWtzbzlvak52UDJQZ2ZDRVNDRHJrenluWi1NZGctZ2VDYV9wc3k4MDZBVUx6U2paS2RQTjJ1VEFhLTF0amVzeVVOSzAta2J2bU1hQ0ZwaWFNdElSblJBTXdKaXJCZDI0NVhPYUFoZmwwTXhMNEpUOVZ1bkgxS3VvUdIBqgFBVV95cUxNa2lYa2lFTlFzd2RXVWg2RGdNbDc1aDItbjdfUS16Szg2eWJFdjc4SVpHWjRZbFBuTnhoTnFiQVIzbnlMS2xKbEluUzkzZ3ltOHBGOS1CdzlPSmg3Zlk2WmFJeWFwSkQxa2k1UXRBR0RMR0dtNFRrZDNZaUxYd242OUpHaTZMWjJtLTRicDZPelFlQVFSN2ZBcjRwZnUxS3lDLThSekJSMHVjQQ?oc=5",
-   "passion": "dakar",
-   "title": "Aston Martin’s V12-powered SUV is all ready for the Dakar Rally",
-   "source": "Yanko Design",
-   "time": "2026-11-20T17:20:05.000Z",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVGJBcTZEdmZlUklQVmRseUdCcUdxcU42dVpwTjJuWmk0cm51SWtzbzlvak52UDJQZ2ZDRVNDRHJrenluWi1NZGctZ2VDYV9wc3k4MDZBVUx6U2paS2RQTjJ1VEFhLTF0amVzeVVOSzAta2J2bU1hQ0ZwaWFNdElSblJBTXdKaXJCZDI0NVhPYUFoZmwwTXhMNEpUOVZ1bkgxS3VvUdIBqgFBVV95cUxNa2lYa2lFTlFzd2RXVWg2RGdNbDc1aDItbjdfUS16Szg2eWJFdjc4SVpHWjRZbFBuTnhoTnFiQVIzbnlMS2xKbEluUzkzZ3ltOHBGOS1CdzlPSmg3Zlk2WmFJeWFwSkQxa2k1UXRBR0RMR0dtNFRrZDNZaUxYd242OUpHaTZMWjJtLTRicDZPelFlQVFSN2ZBcjRwZnUxS3lDLThSekJSMHVjQQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimAFBVV95cUxOYi1pTzVZVU5TSXE5cVRILTVLWXVVYUZ0V0JoSWdjYWxqSmRsd05WVVNGX09UYXFrU3BZYzk1SnUzQnJFdFlKS0d6MjUyaUV2aG1tTUtpdHhoME90WTFET2xLaXk1alVGdnF0SzU4RlVjdVVQVVMwbkhzTVprQ096STFlSGFnWkRmQnZaX1VncEVoXzV5eTJPSA?oc=5",
-   "passion": "dakar",
-   "title": "Rieju to tackle Dakar 2027 on £4600 Aventura 307 adventure bike",
-   "source": "Enduro21 | News",
-   "time": "2026-11-25T13:46:25.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYi1pTzVZVU5TSXE5cVRILTVLWXVVYUZ0V0JoSWdjYWxqSmRsd05WVVNGX09UYXFrU3BZYzk1SnUzQnJFdFlKS0d6MjUyaUV2aG1tTUtpdHhoME90WTFET2xLaXk1alVGdnF0SzU4RlVjdVVQVVMwbkhzTVprQ096STFlSGFnWkRmQnZaX1VncEVoXzV5eTJPSA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQllrQjBZZDhicUQ1RGtrQlhpWlV0cTMwV3hLVUxoQjdkTTJLNkVNVFozOE81LXh3R3JDTFF4UE0tUVVkZF9MX0NrMkVXbENHOVVlTlg2VThqaTl4V0lvZkw4ajhYUEw4R25oX3RiMkNQTHNrZlBWZFlsQWsxSjM4Z1dTMnJFQWFT?oc=5",
-   "passion": "dakar",
-   "title": "Kove Wants Everyone To Get Into Off-Road Motorcycling, And Its Tiny New Rally Bikes Might Just Do It",
-   "source": "RideApart.com",
-   "time": "2026-11-24T13:41:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQllrQjBZZDhicUQ1RGtrQlhpWlV0cTMwV3hLVUxoQjdkTTJLNkVNVFozOE81LXh3R3JDTFF4UE0tUVVkZF9MX0NrMkVXbENHOVVlTlg2VThqaTl4V0lvZkw4ajhYUEw4R25oX3RiMkNQTHNrZlBWZFlsQWsxSjM4Z1dTMnJFQWFT?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiowFBVV95cUxOTDJ0Q1hNQmZTb1NDWmVJTkRKbGEwS3ZrUUZuVmpUUmt4VlpYYVNqdVNSUG5hMFNLbFg5c2ZSZ1pVYk43dkJ5eFZOSEU4ZGY5bUZYNEl5ZlNWMVJBRi1BQldCRi0wX3poMy1CY0k5eEtqaUExQWNpRjA3eG8tN2dFSDdMbTEwNkstSVQzWXQ2b2R4eWRJNXlHZ0NYMmkyV053M0I4?oc=5",
-   "passion": "dakar",
-   "title": "KTM X-BOW develops ARROW off-roader using rally-raid engineering",
-   "source": "Race Tech Magazine",
-   "time": "2026-11-26T12:18:43.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTDJ0Q1hNQmZTb1NDWmVJTkRKbGEwS3ZrUUZuVmpUUmt4VlpYYVNqdVNSUG5hMFNLbFg5c2ZSZ1pVYk43dkJ5eFZOSEU4ZGY5bUZYNEl5ZlNWMVJBRi1BQldCRi0wX3poMy1CY0k5eEtqaUExQWNpRjA3eG8tN2dFSDdMbTEwNkstSVQzWXQ2b2R4eWRJNXlHZ0NYMmkyV053M0I4?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1Jwa1A2Tm13SzBCbFpqM2ExUG1La2M2UDVKNWpIUlhpTHVVVlZ1dW9iLWlTcnZlUDY0eWJBci1JNWlLcVJ6NjhaYXVQdUxfRG15T00zbEhzc1g1ZS1sekVFU0NRRWFvZldOcmZSRk5tbC1kQW1jSlVRZTVjUUVndEluTmR4OEtkenlVNDQxMnItaGtvNEpzb3BwNkJfNTdyd1BEX2doclNaZjg?oc=5",
-   "passion": "dakar",
-   "title": "Fernando Alonso Had Six Months for His First Dakar. This Time He Gets Two Days",
-   "source": "MotorBiscuit",
-   "time": "2026-11-20T05:09:48.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1Jwa1A2Tm13SzBCbFpqM2ExUG1La2M2UDVKNWpIUlhpTHVVVlZ1dW9iLWlTcnZlUDY0eWJBci1JNWlLcVJ6NjhaYXVQdUxfRG15T00zbEhzc1g1ZS1sekVFU0NRRWFvZldOcmZSRk5tbC1kQW1jSlVRZTVjUUVndEluTmR4OEtkenlVNDQxMnItaGtvNEpzb3BwNkJfNTdyd1BEX2doclNaZjg?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMilAFBVV95cUxQSEh2bGwyMDhLVm9pN280U2JaWFhhSGNnV0R4TjFxSmJJeU9FaVlIZXBmM1Bhd2dHU3FraWg2d2c3S0daenA3WE5KNVJtSzhJbjVNTGRaZV9KTFp3VzYxT2FrM0RUQXRydWlzaW1RdGRueEtMX3pMa210aEdHWlJQN2ZsNkEwN3JCWnQzNTI4RUhvWDdx?oc=5",
-   "passion": "dakar",
-   "title": "Photos: Aston Martin turns Call of Duty Dreadnought into real-world Dakar racer",
-   "source": "Interesting Engineering",
-   "time": "2026-11-26T15:49:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSEh2bGwyMDhLVm9pN280U2JaWFhhSGNnV0R4TjFxSmJJeU9FaVlIZXBmM1Bhd2dHU3FraWg2d2c3S0daenA3WE5KNVJtSzhJbjVNTGRaZV9KTFp3VzYxT2FrM0RUQXRydWlzaW1RdGRueEtMX3pMa210aEdHWlJQN2ZsNkEwN3JCWnQzNTI4RUhvWDdx?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjlCUU45a1NoUTNZbDJlbmlpNXE2TUMzTVA0UkhCOWxGdXlpTE9DbHlKV2plM0lRSzdoUEtYUTZ6UXMzaGVnd1d2MzNMZlV0Y19yUHN6Q0tZUlp5MWdvYjFRalFJbGZJRzJzNGNvMVpnUmlHNF9sYmxhSGVLTG1wUWR6bUVod1V0NEZJNGZiOWVtaVBZRy1MdmRuTnQ?oc=5",
-   "passion": "dakar",
-   "title": "Formula 1 News: Alonso mocks Honda as Dakar escape beckons",
-   "source": "AutoRacing1.com",
-   "time": "2026-11-22T11:06:33.000Z",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjlCUU45a1NoUTNZbDJlbmlpNXE2TUMzTVA0UkhCOWxGdXlpTE9DbHlKV2plM0lRSzdoUEtYUTZ6UXMzaGVnd1d2MzNMZlV0Y19yUHN6Q0tZUlp5MWdvYjFRalFJbGZJRzJzNGNvMVpnUmlHNF9sYmxhSGVLTG1wUWR6bUVod1V0NEZJNGZiOWVtaVBZRy1MdmRuTnQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimgFBVV95cUxPSUZ1WUFoNENzMU9XdUNjSy01d2ZGSDF3ODh6SUMwN0JnUjB4S3dqeDc3ZzBhUUtxQ00tRzl2T1lYclVmejFPMFlkNm44RmhNSW5BTHRiWkhFZXBSWTVXN0J3bkxTb25nbEEybkt4MFprYXFaVWFCRkZmd05fUjZsUGs3ZjJQWTd0YnFuNFVKbVpPMWIxV1llZzRn?oc=5",
-   "passion": "dakar",
-   "title": "Dakar Rally returns to Algarve in 2027",
-   "source": "The Portugal News",
-   "time": "2026-11-21T08:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSUZ1WUFoNENzMU9XdUNjSy01d2ZGSDF3ODh6SUMwN0JnUjB4S3dqeDc3ZzBhUUtxQ00tRzl2T1lYclVmejFPMFlkNm44RmhNSW5BTHRiWkhFZXBSWTVXN0J3bkxTb25nbEEybkt4MFprYXFaVWFCRkZmd05fUjZsUGs3ZjJQWTd0YnFuNFVKbVpPMWIxV1llZzRn?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa0lOeVFTWEVSOHFCd0R4MXZYTmJ4SHBqYVNLSHVWYkNRM2hGNC1fLXVPLXhtRnVaOFVjR2hDZnZOSUM1VHNQTk83RHh5MzNRZVNMdnRhenh5RHAwSndTY3M2VkF5cjYwYmFFODlZTVdfeV84NVBzQUNPU3g1XzVwX1d3aWdiX1BQRTJHcGNncTMwMGFfNEtweGJLUXZ4R0lsblYyelBuanBWRkRHNEhLWDN5Sm1WcjF1eFc0?oc=5",
-   "passion": "dakar",
-   "title": "Toyota names five crews for 2027 Dakar Rally, adds hydrogen-powered Hilux",
-   "source": "Sowetan",
-   "time": "2026-11-20T12:00:11.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQa0lOeVFTWEVSOHFCd0R4MXZYTmJ4SHBqYVNLSHVWYkNRM2hGNC1fLXVPLXhtRnVaOFVjR2hDZnZOSUM1VHNQTk83RHh5MzNRZVNMdnRhenh5RHAwSndTY3M2VkF5cjYwYmFFODlZTVdfeV84NVBzQUNPU3g1XzVwX1d3aWdiX1BQRTJHcGNncTMwMGFfNEtweGJLUXZ4R0lsblYyelBuanBWRkRHNEhLWDN5Sm1WcjF1eFc0?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMirwFBVV95cUxPWTlxXzdtSkRIYlJGTFZhYzF3aUlNbVJyMFpVVFY5V21rcnJIRl8tU2lJNWZnSFpwOS1saWZqQ21sRnhSWmFhckJOZHVCbVhQNFZBZ2lIMGZ1cWxCXzJTRVBKVENNTFBoWnVZRTVDWm5oR08tdEdpTmdNRmEyMlBaZGVMZTRibVpKNmljMHBKUlhRR1ZuZzJIQlRsZFZDdTJaMUVhTnNLMWx6VWpxM3Iw?oc=5",
-   "passion": "ac",
-   "title": "SIX MONTHS TO GO: YOUR INVITATION TO THE LOUIS VUITTON 38",
-   "source": "Louis Vuitton 38th America’s Cup",
-   "time": "2026-11-20T09:33:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWTlxXzdtSkRIYlJGTFZhYzF3aUlNbVJyMFpVVFY5V21rcnJIRl8tU2lJNWZnSFpwOS1saWZqQ21sRnhSWmFhckJOZHVCbVhQNFZBZ2lIMGZ1cWxCXzJTRVBKVENNTFBoWnVZRTVDWm5oR08tdEdpTmdNRmEyMlBaZGVMZTRibVpKNmljMHBKUlhRR1ZuZzJIQlRsZFZDdTJaMUVhTnNLMWx6VWpxM3Iw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMihgFBVV95cUxQLTZKbnFndXd2R3BsNzllZGpiLWV2TUdRZjQ1TG54NzVDQnhxUS1IQU5JV2lFZENjeWx2N1hQRXdickpzdjJnbkVrMUp4TEhBc3RCZDdSb3BQeC1vd2tCSFJhVnI3LVVZRGlrQXlNMFRXd1dvMzVYYzJENDJxOWNQdGdLN2tudw?oc=5",
-   "passion": "ac",
-   "title": "Naples to host Louis Vuitton 38th America's Cup in 2027 - Sail-World.com",
-   "source": "Google News",
-   "time": "2026-11-22T22:43:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQLTZKbnFndXd2R3BsNzllZGpiLWV2TUdRZjQ1TG54NzVDQnhxUS1IQU5JV2lFZENjeWx2N1hQRXdickpzdjJnbkVrMUp4TEhBc3RCZDdSb3BQeC1vd2tCSFJhVnI3LVVZRGlrQXlNMFRXd1dvMzVYYzJENDJxOWNQdGdLN2tudw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijwFBVV95cUxObHZ5VTB4bGh4VWlsZHcwLWVFbEpldGJVSnRycUJmMU5yQVVTS2h6REhkYXBXVGRWMmpET0JzS2QwM18weFp0RFhmLUNTd2F0TVo5UW92ZVZJR1M4R3FqbUhPbHpJTGpGMl9QYlBCOXZZMHNvU0JDXzJSdzEzakl1TlhZQlJMc3lfNFp3VWltdw?oc=5",
-   "passion": "ac",
-   "title": "Six months to go: Naples gears up for the 38th America's Cup",
-   "source": "Live Sail Die",
-   "time": "2026-11-20T22:20:22.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObHZ5VTB4bGh4VWlsZHcwLWVFbEpldGJVSnRycUJmMU5yQVVTS2h6REhkYXBXVGRWMmpET0JzS2QwM18weFp0RFhmLUNTd2F0TVo5UW92ZVZJR1M4R3FqbUhPbHpJTGpGMl9QYlBCOXZZMHNvU0JDXzJSdzEzakl1TlhZQlJMc3lfNFp3VWltdw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMigwFBVV95cUxNVWNhamNMaTg0UWYwZXdwSjdzbF9MVjNKYXB6S3BGYTNXMm1IcTV4dG5HMm1HZXFIaDM3X3gxRG9tcS1zd3pERlBkUnRzdm4zUWc0SVdIbzNLLXVIcXhqUFpVSUVMdUEwWm5Lb3VmdlU1VFlIRVFDR0EtdzFXT3ZMTmQyc9IBiAFBVV95cUxPRHpQcXZjS2NONExEdGJHLTVOWFI2OUgyNHhRcS1sZmJ5WXM1SGhtd1lnZzlxRUg5VTA5ZG1Nci1mZHNsNEcwc1phYVB3U256bHpWbC1raHMtbHJNaC1pTUpkbWlHVXlieVE5Z2NRcXd6UXVPdGNqbFJJUWx5NjVPYkxsVWlYYzlG?oc=5",
-   "passion": "ac",
-   "title": "Naples to Host the 2027 America’s Cup as Racing Opens May 22",
-   "source": "Italia Report USA",
-   "time": "2026-11-23T14:36:15.000Z",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVWNhamNMaTg0UWYwZXdwSjdzbF9MVjNKYXB6S3BGYTNXMm1IcTV4dG5HMm1HZXFIaDM3X3gxRG9tcS1zd3pERlBkUnRzdm4zUWc0SVdIbzNLLXVIcXhqUFpVSUVMdUEwWm5Lb3VmdlU1VFlIRVFDR0EtdzFXT3ZMTmQyc9IBiAFBVV95cUxPRHpQcXZjS2NONExEdGJHLTVOWFI2OUgyNHhRcS1sZmJ5WXM1SGhtd1lnZzlxRUg5VTA5ZG1Nci1mZHNsNEcwc1phYVB3U256bHpWbC1raHMtbHJNaC1pTUpkbWlHVXlieVE5Z2NRcXd6UXVPdGNqbFJJUWx5NjVPYkxsVWlYYzlG?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimgFBVV95cUxQU3M3WkRBWUVuQnhVWkkwNTZRSEplenZwa0xSdWdtZHdnT2xaQzlrNVdtazdZSGp1WnNwS1dJSjZrdzRNb3h3RWkyRXJWakpnNHM1dHcxdTVMbWc1bVhmOXRaejJ4aEtwblVYSmlQaGYxWW42am5meTZpZGNGbVZmRWZuNjY2eUtiQmJ6djIwTVJPcUlrR3ZOSUhR?oc=5",
-   "passion": "ac",
-   "title": "AMERICA’S CUP HONOURED AT THE BEST EVENT AWARDS IN VENICE",
-   "source": "Louis Vuitton 38th America’s Cup",
-   "time": "2026-11-26T12:45:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQU3M3WkRBWUVuQnhVWkkwNTZRSEplenZwa0xSdWdtZHdnT2xaQzlrNVdtazdZSGp1WnNwS1dJSjZrdzRNb3h3RWkyRXJWakpnNHM1dHcxdTVMbWc1bVhmOXRaejJ4aEtwblVYSmlQaGYxWW42am5meTZpZGNGbVZmRWZuNjY2eUtiQmJ6djIwTVJPcUlrR3ZOSUhR?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMickFVX3lxTFBHMmdxdzYyM29wZjZHR3ZJZUVydkpncDlvcmVDbGNRQng4TnU2Qk11dHpIZzZRNFJPWEZiZzlFLWlPajV2bVRZZGdmRDZKUFJiekNIQm9MRDhrUVNNNGJScGljYUpYdDF3dkQ4V0s2VmZzUQ?oc=5",
-   "passion": "ac",
-   "title": "America’s Cup 2027 preparations gather pace in Naples",
-   "source": "Marine Industry News",
-   "time": "2026-11-23T11:54:46.000Z",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHMmdxdzYyM29wZjZHR3ZJZUVydkpncDlvcmVDbGNRQng4TnU2Qk11dHpIZzZRNFJPWEZiZzlFLWlPajV2bVRZZGdmRDZKUFJiekNIQm9MRDhrUVNNNGJScGljYUpYdDF3dkQ4V0s2VmZzUQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGc1VGxHZ2ZiT1I1QVJRb21UcllONkc3MFBPRDN0d3c4Sy1keWlNYVZsUDBvajFKRDU5VmM2Y0hUZTJqYTlQTkFvRGREYWFfbDBJa0loZUg5N1pWR1JGX05IeWphSEtVMkcxNTFaUFhXdDRYZTNVakVZQkhxQ1g4WjZIM1JxX01Cd2dsTkhfNkFXY3E5dkd3cUI3TzE4NWFtbmNFQVFaRlM1RUcyMl92M3htTVJjN1nSAbwBQVVfeXFMTWd3YW00cUpqcVZRRWQ5WkU5dmlmUkRkT0QzUEk5emdZUkxZcEJqa2I5eWktZUJCdnlZejVoN3NJOHgzbE0ySzlmVlNFbERDd21udE01WUJUWmZ4a2ZRa1N0SlFmWEZQZ29NMzBrOVpfZ0ZsUnp4d0FWZnFzNHVOWFRJMkxvNWtrUTZkSjZibDZSZzJOUUpWa2NqTkJmQ19MbWVFRWFJWXYwR1JUd2ZldTNpZGRDbE42WHF5NEI?oc=5",
-   "passion": "ac",
-   "title": "America’s Cup, six months to go in Naples: seven AC75s and a new challenge for the Cup’s future",
-   "source": "Pressmare",
-   "time": "2026-11-22T14:54:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGc1VGxHZ2ZiT1I1QVJRb21UcllONkc3MFBPRDN0d3c4Sy1keWlNYVZsUDBvajFKRDU5VmM2Y0hUZTJqYTlQTkFvRGREYWFfbDBJa0loZUg5N1pWR1JGX05IeWphSEtVMkcxNTFaUFhXdDRYZTNVakVZQkhxQ1g4WjZIM1JxX01Cd2dsTkhfNkFXY3E5dkd3cUI3TzE4NWFtbmNFQVFaRlM1RUcyMl92M3htTVJjN1nSAbwBQVVfeXFMTWd3YW00cUpqcVZRRWQ5WkU5dmlmUkRkT0QzUEk5emdZUkxZcEJqa2I5eWktZUJCdnlZejVoN3NJOHgzbE0ySzlmVlNFbERDd21udE01WUJUWmZ4a2ZRa1N0SlFmWEZQZ29NMzBrOVpfZ0ZsUnp4d0FWZnFzNHVOWFRJMkxvNWtrUTZkSjZibDZSZzJOUUpWa2NqTkJmQ19MbWVFRWFJWXYwR1JUd2ZldTNpZGRDbE42WHF5NEI?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxOYnZBNlhHT2hGcVA0Wnp4ZVJOQ0FOUFJXakVVd1lSQkg0czZoMEtKTDhJeHFxdkN5ZnY1aHFvMXBGU3M1T0F1QlVOYXl1U05xRWNhYmNKVUNYSW02TjgzWE9EODhZdVF4eGh1dy1waTlxdHE0dnJwNGMxSEJxZjByM2h6SURRenBWTlBxT1JZdGUta0E?oc=5",
-   "passion": "ac",
-   "title": "Six months out: who's ahead at the America's Cup bases in Naples?",
-   "source": "Live Sail Die",
-   "time": "2026-11-22T13:57:08.000Z",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYnZBNlhHT2hGcVA0Wnp4ZVJOQ0FOUFJXakVVd1lSQkg0czZoMEtKTDhJeHFxdkN5ZnY1aHFvMXBGU3M1T0F1QlVOYXl1U05xRWNhYmNKVUNYSW02TjgzWE9EODhZdVF4eGh1dy1waTlxdHE0dnJwNGMxSEJxZjByM2h6SURRenBWTlBxT1JZdGUta0E?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMilgFBVV95cUxNZjZoTll0Slp5TEFDckZFeDRQMXJZUTc5TlI2VlpZa3lfMk9mV040QWRuODlnWm0wWnlPTVRmQUNYcWZ6eFBFVUc0djF5STlZM2ZaMWc0V3NRQWlyMnlHZ1E5ZnBNR2ppZTdoU3JSUEd2QzloMmxyWDgzNkM2VUdETHQyZURLQTh1azMyWktLekpJaThGcVE?oc=5",
-   "passion": "ac",
-   "title": "America’s Cup – Some are sailing, some haven’t arrived yet!",
-   "source": "Sailweb",
-   "time": "2026-11-22T17:34:05.000Z",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZjZoTll0Slp5TEFDckZFeDRQMXJZUTc5TlI2VlpZa3lfMk9mV040QWRuODlnWm0wWnlPTVRmQUNYcWZ6eFBFVUc0djF5STlZM2ZaMWc0V3NRQWlyMnlHZ1E5ZnBNR2ppZTdoU3JSUEd2QzloMmxyWDgzNkM2VUdETHQyZURLQTh1azMyWktLekpJaThGcVE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijAFBVV95cUxPQjdvNW84MGpMejRBOGtSZjhaeVN2dzR2TUI4b1ctZ3E5a0JlYUFQcHBCTjdCS2lkLUlGR2FXYzJHMzJ6bGs4TUdPMUt3TFAzdmJ6YmVRaHhZZTUzVUY4ZkloWmxFaXJmSFZOejhpSmNqay1EWFJvNHVPV3EwaEJ1RVBzZGJ4MFhPMlF0dA?oc=5",
-   "passion": "ac",
-   "title": "6 MONTHS TO GO: The Work Behind the Start Line",
-   "source": "Louis Vuitton 38th America’s Cup",
-   "time": "2026-11-23T15:40:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQjdvNW84MGpMejRBOGtSZjhaeVN2dzR2TUI4b1ctZ3E5a0JlYUFQcHBCTjdCS2lkLUlGR2FXYzJHMzJ6bGs4TUdPMUt3TFAzdmJ6YmVRaHhZZTUzVUY4ZkloWmxFaXJmSFZOejhpSmNqay1EWFJvNHVPV3EwaEJ1RVBzZGJ4MFhPMlF0dA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdGt3SVRBMExhNnUxX2xoeEFMczIzNmlsNXJ0WUVsYVVhVldqbkdGMk43R1lYWnoxWmxuNWdPdWhTaXJBZzlBZnF5LUxtSkp6MGdFU2EzSGIxNXlWU3hhd3lhaEZSV1VEYUU5SEctYVJPLXpiT2ZERjAzMlloTWJ3X2VYYWhjYk9uNmNUbUFQWV9KWVpZVTVGM0JaTVVYajY1RHROcVZaeXZzYVI4Z0lsT3pWUUtxMlQ2RUxoLTBYN0RhUjRTaFNKeGJjc3hLRmFyQURjQ2RFWjc2ZmVXcm1NZDJMdkYzbVJwWjg0RG9pUTE?oc=5",
-   "passion": "ac",
-   "title": "Why Team NZ turned to Aussie recruit for America's Cup defence",
-   "source": "NZ Herald",
-   "time": "2026-11-24T05:04:29.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdGt3SVRBMExhNnUxX2xoeEFMczIzNmlsNXJ0WUVsYVVhVldqbkdGMk43R1lYWnoxWmxuNWdPdWhTaXJBZzlBZnF5LUxtSkp6MGdFU2EzSGIxNXlWU3hhd3lhaEZSV1VEYUU5SEctYVJPLXpiT2ZERjAzMlloTWJ3X2VYYWhjYk9uNmNUbUFQWV9KWVpZVTVGM0JaTVVYajY1RHROcVZaeXZzYVI4Z0lsT3pWUUtxMlQ2RUxoLTBYN0RhUjRTaFNKeGJjc3hLRmFyQURjQ2RFWjc2ZmVXcm1NZDJMdkYzbVJwWjg0RG9pUTE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMicEFVX3lxTFAzdWtLaEJTaW5LdXBoSmxPMDdWRXhtR2E4Y3pQU1VYc3hpb2JRbUpTNGo5RmY2eHgzbGFmcl9sUENGb1RLWjEwVDlUeUhEQzVyVm5QVHRuaTlVVFRyOVA3b3Q5cW9oODI4NkJwUFoyT0M?oc=5",
-   "passion": "ac",
-   "title": "Put your star on the map - Team Australia opens its America's Cup supporters club - Sail-World.com",
-   "source": "Google News",
-   "time": "2026-11-24T21:05:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAzdWtLaEJTaW5LdXBoSmxPMDdWRXhtR2E4Y3pQU1VYc3hpb2JRbUpTNGo5RmY2eHgzbGFmcl9sUENGb1RLWjEwVDlUeUhEQzVyVm5QVHRuaTlVVFRyOVA3b3Q5cW9oODI4NkJwUFoyT0M?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMinwFBVV95cUxOaXZ0dEZBakc0Tndzc3pZczFKdUZCMkJIazFFXzhXTnBtYVFKQjNqMl8zSlZqZ0lDVlphekVrRExmQmctZVBicWxEN0NPMkpSamFlVFF4OGZqMzNNdVA4WFlqc2xOTzd3Z0xsWTN4WmJ2eDYzYlZSMGxWSGhxdWh4S1A0d1VnTU9vY1A5Y0FmVkpHRUFYbFJGY1doM2FOcU0?oc=5",
-   "passion": "wec",
-   "title": "Ford unveils GT41, as America’s Race Team vows to ‘Go Like Hell’",
-   "source": "FIA WEC",
-   "time": "2026-11-26T18:02:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaXZ0dEZBakc0Tndzc3pZczFKdUZCMkJIazFFXzhXTnBtYVFKQjNqMl8zSlZqZ0lDVlphekVrRExmQmctZVBicWxEN0NPMkpSamFlVFF4OGZqMzNNdVA4WFlqc2xOTzd3Z0xsWTN4WmJ2eDYzYlZSMGxWSGhxdWh4S1A0d1VnTU9vY1A5Y0FmVkpHRUFYbFJGY1doM2FOcU0?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMickFVX3lxTE5JaUpSZmU3bm51U2ZaN1NTMWJrUWh4QVN4cVoyQkRmR2p3Nmt3aVZmMklEMkEwSjBuRlc1UUFMNnYtOFFXRU5HclZ2ZVBKM3BnaUVidlhsUDdqb2ZvZW11UFM5bWFreVdNRDRndjJhV2o0dw?oc=5",
-   "passion": "wec",
-   "title": "Hypercar",
-   "source": "Ford Racing",
-   "time": "2026-11-24T02:13:50.000Z",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JaUpSZmU3bm51U2ZaN1NTMWJrUWh4QVN4cVoyQkRmR2p3Nmt3aVZmMklEMkEwSjBuRlc1UUFMNnYtOFFXRU5HclZ2ZVBKM3BnaUVidlhsUDdqb2ZvZW11UFM5bWFreVdNRDRndjJhV2o0dw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMikwFBVV95cUxNdF91Ui01T3ZxcFNnQ1hqNlVpVkd6LWNZVnp1aVk5MHRta1ZyYVRDZGhGOWxPdkhSQ09KSS16N3Q3cjdaS0RvV3pRYk90SFVRQzJULTZaZ1M1MldiX21JbHBQa2ROVnBOSEthLS1rVUgyT0tJZ1Bnd09FN01wN3V4SkFWV3JTeFRsVmJWeS1iUDFkYm8?oc=5",
-   "passion": "wec",
-   "title": "Why Peugeot is quitting WEC’s Hypercar class",
-   "source": "Motorsport.com",
-   "time": "2026-11-24T09:11:32.000Z",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdF91Ui01T3ZxcFNnQ1hqNlVpVkd6LWNZVnp1aVk5MHRta1ZyYVRDZGhGOWxPdkhSQ09KSS16N3Q3cjdaS0RvV3pRYk90SFVRQzJULTZaZ1M1MldiX21JbHBQa2ROVnBOSEthLS1rVUgyT0tJZ1Bnd09FN01wN3V4SkFWV3JTeFRsVmJWeS1iUDFkYm8?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHRNZjc0YXlSNGV6LTd3UWNwN3RmRmxGWGw2RDY1c2phR2VXTktDRUstZGViNGZIZFpBdW04bFRyNkloQ28xbUY1WllhZUYtaUdVZkRlQUpzWlVzMDZKOFRDMFZXV2p1UEJ1bGRCNHNxSk4ycW9UZGhkUnVpQ0V5YkpEWQ?oc=5",
-   "passion": "wec",
-   "title": "Estre joins Toyota for 2027 WEC Hypercar program - RACER",
-   "source": "Racing News",
-   "time": "2026-11-20T08:02:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNHRNZjc0YXlSNGV6LTd3UWNwN3RmRmxGWGw2RDY1c2phR2VXTktDRUstZGViNGZIZFpBdW04bFRyNkloQ28xbUY1WllhZUYtaUdVZkRlQUpzWlVzMDZKOFRDMFZXV2p1UEJ1bGRCNHNxSk4ycW9UZGhkUnVpQ0V5YkpEWQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitAFBVV95cUxNbEhQVmZoUmlLWkpSak1EWUFnS2R5dkVwVk5MUFROOWducURINHlsSWJ0eGY0M3R4Yl84R1VwYTNNeWUzd0ItbzVrMjFwNDI5NE5SRUxjc0cxUFlWYjFaOEw4VXNtYVRTWDYxM0xEQXc1ZWtjUGZLTVdFSjY5UzF3cDAydmtQa0t1ZlRMa01rZHpuUkJuRXkyRXl3VDdpQmJBclB4NVlPMGtQRFZINW80dEtZcjU?oc=5",
-   "passion": "wec",
-   "title": "Ford Racing unveils the Ford GT41 to race at the 2027 24 Hours of Le Mans",
-   "source": "24 Heures du Mans",
-   "time": "2026-11-26T18:01:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbEhQVmZoUmlLWkpSak1EWUFnS2R5dkVwVk5MUFROOWducURINHlsSWJ0eGY0M3R4Yl84R1VwYTNNeWUzd0ItbzVrMjFwNDI5NE5SRUxjc0cxUFlWYjFaOEw4VXNtYVRTWDYxM0xEQXc1ZWtjUGZLTVdFSjY5UzF3cDAydmtQa0t1ZlRMa01rZHpuUkJuRXkyRXl3VDdpQmJBclB4NVlPMGtQRFZINW80dEtZcjU?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxNODkxbG1RdTUxeVpiSXpjUDdzX1BPdkROTFlmaVV1dzM0aklKaVBMVWVWa1lnWE9hbTJuY2FJeTI1WTVueVlXNHhIdnlpQnpQSmVhNFl3T1JFcU9taWZLZ0d4UjA4ZWlSTHNxbGNodUt3TVNXSVYtVlpPZ1h4RWoyb1N4bGt6SUVfblU3SUJLbGJjaDVXU1VVMnR1TUtVQThPS2NZbA?oc=5",
-   "passion": "wec",
-   "title": "Ford publicly unveils 2027 WEC Hypercar challenger, names it the GT41",
-   "source": "DIVEBOMB Motorsport",
-   "time": "2026-11-26T18:04:30.000Z",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNODkxbG1RdTUxeVpiSXpjUDdzX1BPdkROTFlmaVV1dzM0aklKaVBMVWVWa1lnWE9hbTJuY2FJeTI1WTVueVlXNHhIdnlpQnpQSmVhNFl3T1JFcU9taWZLZ0d4UjA4ZWlSTHNxbGNodUt3TVNXSVYtVlpPZ1h4RWoyb1N4bGt6SUVfblU3SUJLbGJjaDVXU1VVMnR1TUtVQThPS2NZbA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiggFBVV95cUxQVER1cExQN1JKbDMyTGU3QVpZWWJWUjFfOXN3OGY3RGx5R3hZWDNqMEpDQ3ltVXQ2ZTZodmhPTG0wNUpZZW5vSk4wVGtlOWt1blhVeFVxSHJNSm10bjQ3ZzFhbHR2UXpvZnB0SFJjMG8xSkdpd2ZEbnlGRDNmOEN5U1lB?oc=5",
-   "passion": "wec",
-   "title": "Peugeot Poised for Shock WEC Exit",
-   "source": "Sportscar365",
-   "time": "2026-11-20T10:13:27.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVER1cExQN1JKbDMyTGU3QVpZWWJWUjFfOXN3OGY3RGx5R3hZWDNqMEpDQ3ltVXQ2ZTZodmhPTG0wNUpZZW5vSk4wVGtlOWt1blhVeFVxSHJNSm10bjQ3ZzFhbHR2UXpvZnB0SFJjMG8xSkdpd2ZEbnlGRDNmOEN5U1lB?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMickFVX3lxTE5Dckw0b1NLdVJfWExmUk01ZFFuZzVudmJQaXNsQlJISkVTb0ZpUWJXeEJxVmRsYmQ4Z2Q0U2tuMEpWYXBzRjVZbndYYzRfbk1EczI2UXBBMjJadmY0emRLY3VRbW5qc0V2QkRnWk1HUHpIdw?oc=5",
-   "passion": "wec",
-   "title": "Kévin Estre will race for Toyota in WEC and Porsche in IMSA",
-   "source": "AutoNext.co",
-   "time": "2026-11-20T09:11:41.000Z",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Dckw0b1NLdVJfWExmUk01ZFFuZzVudmJQaXNsQlJISkVTb0ZpUWJXeEJxVmRsYmQ4Z2Q0U2tuMEpWYXBzRjVZbndYYzRfbk1EczI2UXBBMjJadmY0emRLY3VRbW5qc0V2QkRnWk1HUHpIdw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMikAFBVV95cUxNYjdRT0kyZEt4TW9tb3BuMk1VZktOend3NHZMQWo1MGNRN2dLQmxtSkJwX2hicjU0TzByWEk0VjcxNk9GWnNickVXbjl0dmN4WXlHTHZLRHh0RjZrczhGdmFfSVBjbnJCYUgyNjZVa0txY1FXRTBWeVFVMy11eEt6TXlrTlpqU1NsMm93TkZmMTI?oc=5",
-   "passion": "wec",
-   "title": "Ford unveils all-new GT41 Hypercar for 2027 WEC return",
-   "source": "The Supercar Blog",
-   "time": "2026-11-26T18:52:54.000Z",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYjdRT0kyZEt4TW9tb3BuMk1VZktOend3NHZMQWo1MGNRN2dLQmxtSkJwX2hicjU0TzByWEk0VjcxNk9GWnNickVXbjl0dmN4WXlHTHZLRHh0RjZrczhGdmFfSVBjbnJCYUgyNjZVa0txY1FXRTBWeVFVMy11eEt6TXlrTlpqU1NsMm93TkZmMTI?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMifkFVX3lxTFBVV2Q1NlZTdjg4RHgyTG1haGRPekxMeklYYXVuTTBiRktvbHZUMjMzbHRKb3hzbTMwMW1jR3o5aWNwU0xzOEU5TDV3UDF3RS02ZDVtWTVMQ1FxNUFmb093Q0lXd25MN3RjT2VueExQa3FQS3ZCMDNDeDBUcjAwUQ?oc=5",
-   "passion": "wec",
-   "title": "The Race Car Ford’s Building for Le Mans Is “95 Percent” Complete, and It Has a Name",
-   "source": "Hagerty",
-   "time": "2026-11-26T18:08:45.000Z",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBVV2Q1NlZTdjg4RHgyTG1haGRPekxMeklYYXVuTTBiRktvbHZUMjMzbHRKb3hzbTMwMW1jR3o5aWNwU0xzOEU5TDV3UDF3RS02ZDVtWTVMQ1FxNUFmb093Q0lXd25MN3RjT2VueExQa3FQS3ZCMDNDeDBUcjAwUQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fWHR5aXVPVEVwOXJDTVNJazVQZC0wN2QteXBrcjl3RVcxWVFqOU4yb2duVjd6UVZwTV9ZUS04Qk9FQ1ZFWmRwYVd0SjZDVS1Tb0RWeV85SFU2dzZCNFE?oc=5",
-   "passion": "wec",
-   "title": "America’s Race Team Returns",
-   "source": "Ford Racing",
-   "time": "2026-11-26T19:42:03.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fWHR5aXVPVEVwOXJDTVNJazVQZC0wN2QteXBrcjl3RVcxWVFqOU4yb2duVjd6UVZwTV9ZUS04Qk9FQ1ZFWmRwYVd0SjZDVS1Tb0RWeV85SFU2dzZCNFE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMilwFBVV95cUxPZUp6a0VnRWNNVVR2bzdQR0pTUmswUmMyQTh3Z05TOTEycmtUQ05GRVcyNUhUWHA3Q2RzNFZFS3pkWUdoMGxsaWhmTzZuR21pZW5nU3BacktJTzVkVnMxREhpYm1VX21fSFVQSGpJc2VWZkowZDdGZktNVFl0a3Rqb0xudTNONi11d1luSUNnMWNzNzBuVlA4?oc=5",
-   "passion": "wec",
-   "title": "Ford reveals name for 2027 WEC LMDh challenger",
-   "source": "Motorsport.com",
-   "time": "2026-11-26T18:00:14.000Z",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZUp6a0VnRWNNVVR2bzdQR0pTUmswUmMyQTh3Z05TOTEycmtUQ05GRVcyNUhUWHA3Q2RzNFZFS3pkWUdoMGxsaWhmTzZuR21pZW5nU3BacktJTzVkVnMxREhpYm1VX21fSFVQSGpJc2VWZkowZDdGZktNVFl0a3Rqb0xudTNONi11d1luSUNnMWNzNzBuVlA4?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMifEFVX3lxTE1CUm15aElOR3Bnb3RkOFhXUVdOR2NNVzVKcjJUaHZ0UXQzRUUtaUthcnR1aTYydEoxYlhFYW0zZWM2NHlSeW1pbzh1c1JsZHB2bE9JSWE4MmhicE81TGJDN1RHd0NYSkoyNHg3VmZQWWhtam5Tdy02ZGNoSFI?oc=5",
-   "passion": "space",
-   "title": "Starship’s triumph and Vulcan’s failure",
-   "source": "The Planetary Society",
-   "time": "2026-11-26T09:31:59.000Z",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1CUm15aElOR3Bnb3RkOFhXUVdOR2NNVzVKcjJUaHZ0UXQzRUUtaUthcnR1aTYydEoxYlhFYW0zZWM2NHlSeW1pbzh1c1JsZHB2bE9JSWE4MmhicE81TGJDN1RHd0NYSkoyNHg3VmZQWWhtam5Tdy02ZGNoSFI?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVFVrdHE3QlZ1OHpJZXFMdDgwTjZVdFZyNjFmNVcydnlUODZlTDFIek5hNGpJMXBLUEhsREVTaGF6T0pueFRWZWZvVzAzTG81TjJncTVtZHI3c0pBLW1zbHI5ME9IZTdHX3VJY0xLUFN1UnktVEpPWUtuRlY5TXo2M09yWFZVYlB2aTFsczlZczZqUGF5WUszMS1oYkY4Y3NOX0k5NkdXZnJSNkcyczM4MkZuN3dTOVA5NlZZOEF0OFVQLUtQc1p1UTZGaG9qWTV4SnpSS3RWNzZrdU1l?oc=5",
-   "passion": "space",
-   "title": "SpaceX will retire 1st Starship upper stage ever caught by 'chopsticks,' Elon Musk says",
-   "source": "Space",
-   "time": "2026-11-21T13:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVFVrdHE3QlZ1OHpJZXFMdDgwTjZVdFZyNjFmNVcydnlUODZlTDFIek5hNGpJMXBLUEhsREVTaGF6T0pueFRWZWZvVzAzTG81TjJncTVtZHI3c0pBLW1zbHI5ME9IZTdHX3VJY0xLUFN1UnktVEpPWUtuRlY5TXo2M09yWFZVYlB2aTFsczlZczZqUGF5WUszMS1oYkY4Y3NOX0k5NkdXZnJSNkcyczM4MkZuN3dTOVA5NlZZOEF0OFVQLUtQc1p1UTZGaG9qWTV4SnpSS3RWNzZrdU1l?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMirwFBVV95cUxNeUdiR0lKMlhuN08xTkpHNHVvRUE2Ty1Nd2RqLXNGNWNmZWdGWHFxdGFVZ0dZc1dmSlVNbTFsOE9TOS14aHVZckZaZjVDYm5IXy15dDV5N21yYWdHSnQwaVYtbWdyQ1JiTWxfSWw5Q2dGdFRhQmhILXFpMUxsaGNvOGx0NUcyX19wMjlPT3BFUUs0Q1pYanNybHkwWGxaRE1HTGRDZlpBYWt1elBURDQ4?oc=5",
-   "passion": "space",
-   "title": "NASA may get $2 billion boost as White House seeks to accelerate Artemis",
-   "source": "Ars Technica",
-   "time": "2026-11-24T16:12:46.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeUdiR0lKMlhuN08xTkpHNHVvRUE2Ty1Nd2RqLXNGNWNmZWdGWHFxdGFVZ0dZc1dmSlVNbTFsOE9TOS14aHVZckZaZjVDYm5IXy15dDV5N21yYWdHSnQwaVYtbWdyQ1JiTWxfSWw5Q2dGdFRhQmhILXFpMUxsaGNvOGx0NUcyX19wMjlPT3BFUUs0Q1pYanNybHkwWGxaRE1HTGRDZlpBYWt1elBURDQ4?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GRUhmOFc4TzRLQmhZQkRoZmhsazB5NzhoN0FtOWg1dlBmanZfZzg5U1ViLUNpdnZpNFJtcnVpcjBsN0twQVpsZjg3Zmg3ZXVMRFl6b1N5V2VGYUxW?oc=5",
-   "passion": "space",
-   "title": "Orion Reference Guide",
-   "source": "NASA (.gov)",
-   "time": "2026-11-24T06:10:25.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GRUhmOFc4TzRLQmhZQkRoZmhsazB5NzhoN0FtOWg1dlBmanZfZzg5U1ViLUNpdnZpNFJtcnVpcjBsN0twQVpsZjg3Zmg3ZXVMRFl6b1N5V2VGYUxW?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitgFBVV95cUxQblozbWgtbTl6UkJvWFZuUWc2b25FV3ZLdWUyTFd6U0hvMWluVDlKQ1ByakoyTC1ibmRGRHlJRVBPYTJwZWZRRlpGSUFlUXM3cGpUaWo2TDg0UmcxYTh4dk83bHVCWEZZR3BfZ2pKaFNVZE85OUlkZkNUbkZNOGhnU3NaQllGSFhYcW05WnpGdjhmTU9xUkJOaUhfQ2F3Z0IxVDV2REU0dEFtQUVCdklNTUFTU2FSUQ?oc=5",
-   "passion": "space",
-   "title": "NASA tests redesigned SLS fitting meant to prevent hydrogen leaks on Artemis III",
-   "source": "Aerospace America",
-   "time": "2026-11-20T19:12:40.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQblozbWgtbTl6UkJvWFZuUWc2b25FV3ZLdWUyTFd6U0hvMWluVDlKQ1ByakoyTC1ibmRGRHlJRVBPYTJwZWZRRlpGSUFlUXM3cGpUaWo2TDg0UmcxYTh4dk83bHVCWEZZR3BfZ2pKaFNVZE85OUlkZkNUbkZNOGhnU3NaQllGSFhYcW05WnpGdjhmTU9xUkJOaUhfQ2F3Z0IxVDV2REU0dEFtQUVCdklNTUFTU2FSUQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiiwFBVV95cUxQT0RwS1ZNN3JVMFBubkdIR3RKNk41NS1kM1I5WDd2dDg1Q0NVLTVSci1VeVRqTE1jekthZ1BqOHVkbkw3TEJvRmtxaW1HWjMzbkFpLW9DOWZON2p0ZWREemZEV0tSVTdDeWpHd0VrWU5WbVJtOGVJTW1tT3VhYi1BUUt0QXhFQVdMUzhZ?oc=5",
-   "passion": "space",
-   "title": "Starship Flight 15 and 16: Nov. Launch and Dec. Target [2026]",
-   "source": "shattered.io",
-   "time": "2026-11-23T15:59:08.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQT0RwS1ZNN3JVMFBubkdIR3RKNk41NS1kM1I5WDd2dDg1Q0NVLTVSci1VeVRqTE1jekthZ1BqOHVkbkw3TEJvRmtxaW1HWjMzbkFpLW9DOWZON2p0ZWREemZEV0tSVTdDeWpHd0VrWU5WbVJtOGVJTW1tT3VhYi1BUUt0QXhFQVdMUzhZ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijAFBVV95cUxNMmcwR0VQUTFsZzJONlRGLXJZVkUzNmpEUlFrSTBFV2M1V3hjTHBOdjU4U3NCbkhxSHdwZjNiOXctQms0b2xhUERBU08tZHVaejROekYwQ3JiYnhBOEZYcFl3YXhWd1dTQ2JwZmdLa3lOYzF1ZF8wbUNoWURQa2NCcUpWTHhNNGw2bU1ZZg?oc=5",
-   "passion": "space",
-   "title": "White House seeks an additional $2 billion for Artemis in 2027",
-   "source": "SpaceNews",
-   "time": "2026-11-25T11:51:55.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMmcwR0VQUTFsZzJONlRGLXJZVkUzNmpEUlFrSTBFV2M1V3hjTHBOdjU4U3NCbkhxSHdwZjNiOXctQms0b2xhUERBU08tZHVaejROekYwQ3JiYnhBOEZYcFl3YXhWd1dTQ2JwZmdLa3lOYzF1ZF8wbUNoWURQa2NCcUpWTHhNNGw2bU1ZZg?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMivgFBVV95cUxOZWVMa0NXd3dqUWI2ckFHbHRUTUtPOGNiR1VSMUZHYnB0ZEVnOWItNzJVWVRKQ3F4N1ZGTEk5cHlQdGkwb1pOaURJVnhMYzduM3NSQzFoMnJkdHI5WnlBUWhWX09LZlF5N0ZCNzVVQXQxeWdiOTc1elpBTTJEdGZmMlRFVGI0bnFsbTQ5bERTZmlna1QzSGpQcVdjdXQtZF9CeWtxLTgySUZoamRKZjFZRzlwcjdUOXJzT25RYVR3?oc=5",
-   "passion": "space",
-   "title": "Three space milestones that sound like science fiction",
-   "source": "Scientific American",
-   "time": "2026-11-23T11:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZWVMa0NXd3dqUWI2ckFHbHRUTUtPOGNiR1VSMUZHYnB0ZEVnOWItNzJVWVRKQ3F4N1ZGTEk5cHlQdGkwb1pOaURJVnhMYzduM3NSQzFoMnJkdHI5WnlBUWhWX09LZlF5N0ZCNzVVQXQxeWdiOTc1elpBTTJEdGZmMlRFVGI0bnFsbTQ5bERTZmlna1QzSGpQcVdjdXQtZF9CeWtxLTgySUZoamRKZjFZRzlwcjdUOXJzT25RYVR3?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVTJfSGs2NGZDOFhrdW5jZjlzY1JHZ1JwLUtKQ1Q0Y002WmY0Mk40blZ5M3hGYUI1bjRjZVRfbnVrandsd3NGeTdaSlNxSlo5aTZWZkdCQ0UzM3dUQzV3TkYtTnMwN2NBN3BIdW1GdFdlRmdvbFk3dDl4Q1J0eDNXaVJORHdZR3lZazBkTmIzdzhvTTV0SDZOd21ZNVB5eWw0RlJBeExsMC0zRk5DakJWc0YxSVAzS0hWNlVST1YwOXRZb3JrdEZvSFNGVV9JUHE0MHRidHhia1lucGtS?oc=5",
-   "passion": "space",
-   "title": "Ancient Greek sanctuary discovered atop mountain — and it may have been dedicated to the goddess Artemis",
-   "source": "Live Science",
-   "time": "2026-11-24T11:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVTJfSGs2NGZDOFhrdW5jZjlzY1JHZ1JwLUtKQ1Q0Y002WmY0Mk40blZ5M3hGYUI1bjRjZVRfbnVrandsd3NGeTdaSlNxSlo5aTZWZkdCQ0UzM3dUQzV3TkYtTnMwN2NBN3BIdW1GdFdlRmdvbFk3dDl4Q1J0eDNXaVJORHdZR3lZazBkTmIzdzhvTTV0SDZOd21ZNVB5eWw0RlJBeExsMC0zRk5DakJWc0YxSVAzS0hWNlVST1YwOXRZb3JrdEZvSFNGVV9JUHE0MHRidHhia1lucGtS?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi-wFBVV95cUxNTUhNQUliLVFKcXhOcVJhWjJ4T29YRmkyRFJLOE9ILU1DSk8xdnRfTGhHVUtHLTZRM0ZJbS1CeUxBSUJhZTRvdTMzLTE3N1M1U3M1SExlSnNJUDB6VzFMZFR2VDFlVzV2SUIyRk9Pay1DSkVHcDB2cUpqaHREcUo3bFVpNUxOdERIa0dVa21rVDc0XzdNUVlaOC1LWnZxM3hUaDM0dDNhUVNub3lFalFJcmtCS0RyMzVHX2ZuYkhMbUpzd3RuWGstUFFSeXQ2RjhTLUpoTHZxbENkOW5uUFVZbmpvWXowYWg5VENOeExIRThKOFBYSHFwNmN4UQ?oc=5",
-   "passion": "space",
-   "title": "ESA astronaut Luca Parmitano joins NASA’s Artemis III mission as pilot",
-   "source": "ESA",
-   "time": "2026-11-22T09:06:44.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNTUhNQUliLVFKcXhOcVJhWjJ4T29YRmkyRFJLOE9ILU1DSk8xdnRfTGhHVUtHLTZRM0ZJbS1CeUxBSUJhZTRvdTMzLTE3N1M1U3M1SExlSnNJUDB6VzFMZFR2VDFlVzV2SUIyRk9Pay1DSkVHcDB2cUpqaHREcUo3bFVpNUxOdERIa0dVa21rVDc0XzdNUVlaOC1LWnZxM3hUaDM0dDNhUVNub3lFalFJcmtCS0RyMzVHX2ZuYkhMbUpzd3RuWGstUFFSeXQ2RjhTLUpoTHZxbENkOW5uUFVZbmpvWXowYWg5VENOeExIRThKOFBYSHFwNmN4UQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVmw0MDJHdmRjQTBlVHJManVTMU1NYWJkSG1xZTN2ajcyMk1TSHhQOXFCMnhjbHZfVllFMWpZY0FPWVkydlFnSDlDNlFaeDJlS1RzTHowTDRFNDl3ZDFJenRhNzBKc0ctYVNJOW5RaW8xNzFLWi1LZDh0dWJLTEJyYl8xdnRqUFhKS2lnT0xTS3VFbHFldXlMa3FrLTRuM1JfYUN1QmNGN3RIRVRuTWRiQzJmYXhWVS10T01yT0FrRlQ4T2JkeDFsNw?oc=5",
-   "passion": "space",
-   "title": "Why SpaceX’s Starship is commercial aerospace’s most ambitious test program",
-   "source": "Aerospace Testing International",
-   "time": "2026-11-20T15:20:35.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVmw0MDJHdmRjQTBlVHJManVTMU1NYWJkSG1xZTN2ajcyMk1TSHhQOXFCMnhjbHZfVllFMWpZY0FPWVkydlFnSDlDNlFaeDJlS1RzTHowTDRFNDl3ZDFJenRhNzBKc0ctYVNJOW5RaW8xNzFLWi1LZDh0dWJLTEJyYl8xdnRqUFhKS2lnT0xTS3VFbHFldXlMa3FrLTRuM1JfYUN1QmNGN3RIRVRuTWRiQzJmYXhWVS10T01yT0FrRlQ4T2JkeDFsNw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYm9wY25lbEJINTVEVGgzQTBsOC1HV3dwWHB0WGN4aHlqOXlxM2F5YnRJRW4zQzNZVkEtY1d5ZmtYTkRiZ3U4YUkxeTBrSEVXUGtnUDRaZ1ZkVVZ0cFVyVVJZbVhXZms2NmpkeFZSM0JpWGIxTHdxekJlaGJodXk5TFF0MXlzYU9wazR4V25IMklBRGN3QTUwT2U3S25UclVWX3BsWnZnb0Y0X0tqcHh2YmZNcWpJOHo5YUVBOXJlUzdHaFROOVdkbmllckRHX01sWEhDRQ?oc=5",
-   "passion": "space",
-   "title": "Your Mental Health: What we can learn from astronauts about isolation",
-   "source": "Spectrum News",
-   "time": "2026-11-20T22:49:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPYm9wY25lbEJINTVEVGgzQTBsOC1HV3dwWHB0WGN4aHlqOXlxM2F5YnRJRW4zQzNZVkEtY1d5ZmtYTkRiZ3U4YUkxeTBrSEVXUGtnUDRaZ1ZkVVZ0cFVyVVJZbVhXZms2NmpkeFZSM0JpWGIxTHdxekJlaGJodXk5TFF0MXlzYU9wazR4V25IMklBRGN3QTUwT2U3S25UclVWX3BsWnZnb0Y0X0tqcHh2YmZNcWpJOHo5YUVBOXJlUzdHaFROOVdkbmllckRHX01sWEhDRQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRmRpdmtVdDA4bDZIQzE0VHFIRk9QMHF6Tm5RbVFlVXROZUpOQWR1aDlfYUVudHhmTFc1YVNZb0dXRWR6d2dpeHgxd3hzcGFiM1FtemYyYzVEaVF5YkJmQTA2TnpLRE9CRXRFRkwwcV95ck1UNzUtYzlYTUg5SW1QZml0ZWM4MDlw?oc=5",
-   "passion": "more",
-   "title": "2028 Vendée Globe: the new skippers who dared to believe in the dream",
-   "source": "Vendée Globe",
-   "time": "2026-11-25T10:26:04.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRmRpdmtVdDA4bDZIQzE0VHFIRk9QMHF6Tm5RbVFlVXROZUpOQWR1aDlfYUVudHhmTFc1YVNZb0dXRWR6d2dpeHgxd3hzcGFiM1FtemYyYzVEaVF5YkJmQTA2TnpLRE9CRXRFRkwwcV95ck1UNzUtYzlYTUg5SW1QZml0ZWM4MDlw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVnNBSVFtWlBJeDNLbFM5S2pqWWhoMVV5ZS1MMUtnaFV1NUViZXNfM2JBUUxKcTdPbHVDeTlPaGI1RU9acUlIQTJmWkJSWFdmVjJDLWViTWk5a01STHlFNHo4YmYwS3U4QlVTdWhjZ0QxSlVYUUJpVFRoRWt3TXFRWktXbjVYQnhUWmlpQ25pLU5qOUo5OXZ0WDFsZWdfMmcyMFVmVDR1SHY4V2lONWJuQTVsOVNQQ0RT?oc=5",
-   "passion": "more",
-   "title": "Inside Les Sables d’Olonne, the graceful capital of solo offshore sailing",
-   "source": "Yachting World",
-   "time": "2026-11-26T10:58:03.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVnNBSVFtWlBJeDNLbFM5S2pqWWhoMVV5ZS1MMUtnaFV1NUViZXNfM2JBUUxKcTdPbHVDeTlPaGI1RU9acUlIQTJmWkJSWFdmVjJDLWViTWk5a01STHlFNHo4YmYwS3U4QlVTdWhjZ0QxSlVYUUJpVFRoRWt3TXFRWktXbjVYQnhUWmlpQ25pLU5qOUo5OXZ0WDFsZWdfMmcyMFVmVDR1SHY4V2lONWJuQTVsOVNQQ0RT?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMirwFBVV95cUxPRXBxRHBaRThPREMxZmxqMXpsSzJSeUluOGhFRnhkQ2JuR29Hb1Iyd1VkSXY0M19uREg2SFN1QVVLckpHZW1MVHBmeVhKclgtMlBJVXlkQjlxcWh0TWtFd3d3SGxQMlhabE81UGNiYmlQMjBUZGktZ25LVzBOUFIwSzVnUTM4UW92M0ZjbTA0RWNvaU1lSS1iSC15amhOWWNrMWgwTHVLNnlkNG85eGNj?oc=5",
-   "passion": "more",
-   "title": "Park City area sailor becomes first woman to win offshore racing series",
-   "source": "Park Record",
-   "time": "2026-11-24T19:35:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRXBxRHBaRThPREMxZmxqMXpsSzJSeUluOGhFRnhkQ2JuR29Hb1Iyd1VkSXY0M19uREg2SFN1QVVLckpHZW1MVHBmeVhKclgtMlBJVXlkQjlxcWh0TWtFd3d3SGxQMlhabE81UGNiYmlQMjBUZGktZ25LVzBOUFIwSzVnUTM4UW92M0ZjbTA0RWNvaU1lSS1iSC15amhOWWNrMWgwTHVLNnlkNG85eGNj?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdVpRelpwdXBzQU1qX1kydUVLYWtqVm1WU0kwYURfV2IwMndsOVpWbzBaSWpwM2doV281dzZPemtzcEpGNnBqZmRnbFdRUmhrY0V3MUtrbS1EUndxb1lxRTNfeVdUWXJWS1NIYmxvQzlzWjB2YlUweEoxNTBWX0kxWUY0d0tSbXJzdUdHSEh3eDlDcHlvWjY2VkRUUm9YaGVpa3dyWVplNzUxWFJvczh0X2Q5eFFjdWxEQlpfVlBuek5rR09mZ3ZqdA?oc=5",
-   "passion": "more",
-   "title": "Boris Herrmann leads strong international showing on Route du Rhum - Destination Guadeloupe",
-   "source": "Vendée Globe",
-   "time": "2026-11-23T10:26:39.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdVpRelpwdXBzQU1qX1kydUVLYWtqVm1WU0kwYURfV2IwMndsOVpWbzBaSWpwM2doV281dzZPemtzcEpGNnBqZmRnbFdRUmhrY0V3MUtrbS1EUndxb1lxRTNfeVdUWXJWS1NIYmxvQzlzWjB2YlUweEoxNTBWX0kxWUY0d0tSbXJzdUdHSEh3eDlDcHlvWjY2VkRUUm9YaGVpa3dyWVplNzUxWFJvczh0X2Q5eFFjdWxEQlpfVlBuek5rR09mZ3ZqdA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT2RWWVR2dkNVd0ZXeVhxSkR3b0dLZ3NfeWdqUFJJeWNJd080dVNaN1VrTEtnWDFOc1QzWXNxRkxnMThobzlqWTBpb2FaQklza0pEbkl2RlozUFI5RzVZUUdtb0J1SkhqRzk4SHBxeUlqbklpX3U1eTY4b1NnT0ItbVNKTm45UkMzbEd3dUVfU2s4NzJfS2tpT0FVR2dXcWZGUThUME1tbk9LYm1YckhzV0ZwT0ZYMzlKY2VpQldiT0Y?oc=5",
-   "passion": "more",
-   "title": "Embrace The Challenge announces six-strong sailing squad for The Ocean Race 2027",
-   "source": "The Ocean Race",
-   "time": "2026-11-24T08:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT2RWWVR2dkNVd0ZXeVhxSkR3b0dLZ3NfeWdqUFJJeWNJd080dVNaN1VrTEtnWDFOc1QzWXNxRkxnMThobzlqWTBpb2FaQklza0pEbkl2RlozUFI5RzVZUUdtb0J1SkhqRzk4SHBxeUlqbklpX3U1eTY4b1NnT0ItbVNKTm45UkMzbEd3dUVfU2s4NzJfS2tpT0FVR2dXcWZGUThUME1tbk9LYm1YckhzV0ZwT0ZYMzlKY2VpQldiT0Y?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijgFBVV95cUxOY0JzTmc1djVFbWxQeVlKalViSGVWeWw4TlBrdm83SzRyTjVwREtDNzhjcjl5Zkgza3lTazVlOFNTLWVIM0NFRFR4T3hMejZFOFotZ1dmWVpkVnAydnlJd2VfenRUV29KTUFGSFNJaksweHNDdFRtaDdCZzRHeUN4S1JMSWVFQXdNV004Wm1B?oc=5",
-   "passion": "more",
-   "title": "Oliver Heer enters The Ocean Race 2027",
-   "source": "Scuttlebutt Sailing News",
-   "time": "2026-11-24T19:04:35.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOY0JzTmc1djVFbWxQeVlKalViSGVWeWw4TlBrdm83SzRyTjVwREtDNzhjcjl5Zkgza3lTazVlOFNTLWVIM0NFRFR4T3hMejZFOFotZ1dmWVpkVnAydnlJd2VfenRUV29KTUFGSFNJaksweHNDdFRtaDdCZzRHeUN4S1JMSWVFQXdNV004Wm1B?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiggJBVV95cUxQamJ5T0FOLVlIVm82c1Q5Zm82OTRLUklSOGVqekZ1WXVGUExHdmJtRlpZTHozeHRaSl93OUJqSDhGcjFtd2ZfSHBCRUFUMmQtQlo4SndaU0ZYSkJNeXJ0MGNrdk00YzMweElaUjhUZGItZ0REVnA4VlIzcngyNTMtaXV2dGM3Y1ViOWdpc1FzSTlnQnlhbUJVb1RkZ3BseTUwX0c5SHRvU3JmZGdQaEkya3JrX0hnV25IamdoZ3dtb2d3MWI5THoxZUJWelRUNjV3ektMQnlfY2tKRjhMWXVyYVMtV2lLRVJDR01UbGlyWHg0cHRWeXdwc1pzZW9heG5ZRWc?oc=5",
-   "passion": "more",
-   "title": "Route du Rhum–Destination Guadeloupe 2026 celebrates its Winners and Delivers Major Economic Momentum Across the Region.",
-   "source": "The Columbus Dispatch",
-   "time": "2026-11-24T21:43:11.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQamJ5T0FOLVlIVm82c1Q5Zm82OTRLUklSOGVqekZ1WXVGUExHdmJtRlpZTHozeHRaSl93OUJqSDhGcjFtd2ZfSHBCRUFUMmQtQlo4SndaU0ZYSkJNeXJ0MGNrdk00YzMweElaUjhUZGItZ0REVnA4VlIzcngyNTMtaXV2dGM3Y1ViOWdpc1FzSTlnQnlhbUJVb1RkZ3BseTUwX0c5SHRvU3JmZGdQaEkya3JrX0hnV25IamdoZ3dtb2d3MWI5THoxZUJWelRUNjV3ektMQnlfY2tKRjhMWXVyYVMtV2lLRVJDR01UbGlyWHg0cHRWeXdwc1pzZW9heG5ZRWc?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zMDZ5YklscTd6TmtMbWJBYkxnQm96MWN4TjN1NGNoQUNsbWtGN1djN203Z1dtWWtsVC1sai0tNUJueHduTEpHWE8tUTlPQXVGWTlaZ1VmUGVlRVdab0hHUUdiWjR0TXlz?oc=5",
-   "passion": "more",
-   "title": "Catch ‘Coco’ if you can!",
-   "source": "Route du Rhum 2026",
-   "time": "2026-11-24T01:43:20.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zMDZ5YklscTd6TmtMbWJBYkxnQm96MWN4TjN1NGNoQUNsbWtGN1djN203Z1dtWWtsVC1sai0tNUJueHduTEpHWE8tUTlPQXVGWTlaZ1VmUGVlRVdab0hHUUdiWjR0TXlz?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMinAFBVV95cUxOLVp2eGIyMkZSbzBYMkxWeHI2Tl9FeWY2dW8zUWxxa1B3LTdRQ1pIazdmaDhiMGF2T1FmRFdDN3RvdVk3cEVXSk1Pako3NU1NMUVHbnl6VHMySGdwTE9ZWFozYmE0b2JPNVExMkNmNjFDeElFVU9FNW4wRXdaR3hJckFxSXpqNTNrcjlqYWl2V0JUa1ZRZ1BYN2tscHQ?oc=5",
-   "passion": "more",
-   "title": "Embrace The Challenge names six-strong squad for The Ocean Race 2027",
-   "source": "Live Sail Die",
-   "time": "2026-11-24T19:05:55.000Z",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLVp2eGIyMkZSbzBYMkxWeHI2Tl9FeWY2dW8zUWxxa1B3LTdRQ1pIazdmaDhiMGF2T1FmRFdDN3RvdVk3cEVXSk1Pako3NU1NMUVHbnl6VHMySGdwTE9ZWFozYmE0b2JPNVExMkNmNjFDeElFVU9FNW4wRXdaR3hJckFxSXpqNTNrcjlqYWl2V0JUa1ZRZ1BYN2tscHQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWnozMU8zQkpMekRYSnJ0cDJSVThCV0hWRThwdW40OWxLM1AzbVZyd0Nxb3lSc1RLT0ZfTU5peG5ieDNnaUZQLUlNVjBwVktIUlo4LWRzVHRFVFc5T3BxcGFReVBVZFNUNzNIbk5TQzBWblFhajFxMllVQnd0Nm9vOHBKS2hFQkpp?oc=5",
-   "passion": "more",
-   "title": "Romain and Titouan Pilliard, arriving together",
-   "source": "Route du Rhum",
-   "time": "2026-11-21T16:45:02.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWnozMU8zQkpMekRYSnJ0cDJSVThCV0hWRThwdW40OWxLM1AzbVZyd0Nxb3lSc1RLT0ZfTU5peG5ieDNnaUZQLUlNVjBwVktIUlo4LWRzVHRFVFc5T3BxcGFReVBVZFNUNzNIbk5TQzBWblFhajFxMllVQnd0Nm9vOHBKS2hFQkpp?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMif0FVX3lxTE5zVkw0Wl9zRlpncWJNQ0xsb0FPZ1RfcXoxWFN2RGZDa25idjZqSmFsRkJpdFIwSm5IUGlNNjNDSkN3QTA1SVhiWWlNNzUwZkJENVA0TDc4YThfNWVseUFTd1N5YXdFZXZfUmZnR3FzSzVmVGU1ZmVpXzJ2MldveFE?oc=5",
-   "passion": "more",
-   "title": "Transat Café L'Or Le Havre Normandie launched in Paris - Sail-World.com",
-   "source": "Google News",
-   "time": "2026-11-26T18:57:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5zVkw0Wl9zRlpncWJNQ0xsb0FPZ1RfcXoxWFN2RGZDa25idjZqSmFsRkJpdFIwSm5IUGlNNjNDSkN3QTA1SVhiWWlNNzUwZkJENVA0TDc4YThfNWVseUFTd1N5YXdFZXZfUmZnR3FzSzVmVGU1ZmVpXzJ2MldveFE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMioAJBVV95cUxQRVJjdFVvU2RodkxXNGVmdHNEaWkyMTBuQnAzQkFZWkZUYUVJalA3SjU4NTFPZmtkQVh5TXdic0g3MWVIdnNpUTBrbEJjdl9aMks1LXBYTEh3ekVaMnZQSF9KN3VxeUt2cW5ReFBMZlljTWVpMDVwUlhtVDIta1p2M1ZzRms2V1Y1TFVIMDd4VWU2SERmVkJGODNjQjFHaXdHd2J3SFhzYmJ3OVRjNDY4Yzd5MHByN0dXelIzYy1Qd251Q1hiTVlBQk54MHhKQUZ4QU5NQ25WUVVrM0t5dUtLam1fdUpHOWU2eDNBQkM2dzlOS0pUcXdfOHh0WGNOVkd5WWhHMmVEdGkzb0taZkpxcE01WHVnZmh5VmdjVVg0QzE?oc=5",
-   "passion": "more",
-   "title": "Route du Rhum – Destination Guadeloupe 2026 celebrates its Winners as the Race Delivers Major Economic Momentum Across the Region.",
-   "source": "SMN News",
-   "time": "2026-11-24T19:33:20.000Z",
-   "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQRVJjdFVvU2RodkxXNGVmdHNEaWkyMTBuQnAzQkFZWkZUYUVJalA3SjU4NTFPZmtkQVh5TXdic0g3MWVIdnNpUTBrbEJjdl9aMks1LXBYTEh3ekVaMnZQSF9KN3VxeUt2cW5ReFBMZlljTWVpMDVwUlhtVDIta1p2M1ZzRms2V1Y1TFVIMDd4VWU2SERmVkJGODNjQjFHaXdHd2J3SFhzYmJ3OVRjNDY4Yzd5MHByN0dXelIzYy1Qd251Q1hiTVlBQk54MHhKQUZ4QU5NQ25WUVVrM0t5dUtLam1fdUpHOWU2eDNBQkM2dzlOS0pUcXdfOHh0WGNOVkd5WWhHMmVEdGkzb0taZkpxcE01WHVnZmh5VmdjVVg0QzE?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMDV6WU5RZ0p0dVVtQnZ3N05lX2lvYlNzbzhIblZXNldSN0prUHBVZ0FheUE5QTl1NDRPX3puVm5fNEVLQkprNFN1OVNDLWFlSldJcUhiNjZ4UFF6Y2VzNTUzamNxdXBzX1V5bDNSWXkwdVF1aDcwVkNyc3ZTUVZnOEVHVDlaSnV4QnRYbUJzZ0FtV0xFQlJsT2NkVDlwLXg2N0toTEpuR0NkdGRfb0c5bXNLZGtBQ3lESW9MbC1iSWRlVzJZYW9qOWJ4a25odGN4T0VHMw?oc=5",
-   "passion": "wc",
-   "title": "2026/27 UEFA Nations League: All the fixtures and results",
-   "source": "UEFA.com",
-   "time": "2026-11-20T08:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMDV6WU5RZ0p0dVVtQnZ3N05lX2lvYlNzbzhIblZXNldSN0prUHBVZ0FheUE5QTl1NDRPX3puVm5fNEVLQkprNFN1OVNDLWFlSldJcUhiNjZ4UFF6Y2VzNTUzamNxdXBzX1V5bDNSWXkwdVF1aDcwVkNyc3ZTUVZnOEVHVDlaSnV4QnRYbUJzZ0FtV0xFQlJsT2NkVDlwLXg2N0toTEpuR0NkdGRfb0c5bXNLZGtBQ3lESW9MbC1iSWRlVzJZYW9qOWJ4a25odGN4T0VHMw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMilAFBVV95cUxQSC02NE03NktMRWJkN1J4cjZzSTRSSEh4cWRXNzU0UG5CWjZ5YUh0d0stN01DZHZkc2RXUzJLQ0ZfRFBISVBTb2Vha1EwbzRkYkl5N0lQTkhxNDlSbEE1RjVjRmVpcEhxdkwyOG43Rk1Ya25BTVlJZXpiTXpvdWstSHFqc0hteEZldVBfTDRLSF9oNlh5?oc=5",
-   "passion": "wc",
-   "title": "YouTube declines to bid on 2030 World Cup TV rights: Sources",
-   "source": "The New York Times",
-   "time": "2026-11-20T15:55:54.000Z",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSC02NE03NktMRWJkN1J4cjZzSTRSSEh4cWRXNzU0UG5CWjZ5YUh0d0stN01DZHZkc2RXUzJLQ0ZfRFBISVBTb2Vha1EwbzRkYkl5N0lQTkhxNDlSbEE1RjVjRmVpcEhxdkwyOG43Rk1Ya25BTVlJZXpiTXpvdWstSHFqc0hteEZldVBfTDRLSF9oNlh5?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi5gFBVV95cUxPc3h2cW9VNHNaRlZkUUozdnZ1UDM5Sk0xWWJZLXFULVczSnhSSGlGM2ZEYUoydDhGdlJ6X3g5NHhRWFhmcVVoNGtZUWRlUkRqdHY3UE1OTXJBOFc2SjNGX0hOaWpmRTJBd29jNDF2Zm1KVS0yTi16aEE5YUkxUGFPdnBPaUJUOW5DUlpqcFBYem1aeFcwZE1BZXg0TkY2RGRLcUx0LTE3dTZzSUpRZlZwR0Y1SGdOWFdPa2U1a3UyRVRRVXRReE1faS13TTRvMXBZU3M0Ul9mWmVBZHZuLXZpOGF6TG92Z9IB5gFBVV95cUxNRU5HXzVvaHdkQlVXLXF3MFEwbkVxMmRFODNLYXpwaVpXZ0JGSjlSS2VGUGFzemRmZ2tyb2FJa0IzQnphR1hBUVZUYzJTa25jazAyakduZ0R3ZFZRSFpCTVc2ODBaaUpMSVlzTXZ3T3R6SEJEbS1TQUxYUldZUEJOQVNva0FuMzN1MS1LMjMwNERJRlFmWEhvRjVFcm5TZVdQOXlCNk9LVDlCZnZBTzcwQUtDMlBNVDhxZXlhYlcwNTlOWVRMWXdfaXdiQzlRZ2NNdUFLVEg3LXVuaExjZlQtUkhqaDk1dw?oc=5",
-   "passion": "wc",
-   "title": "Way-Too-Early Predictions For The UEFA Nations League Quarterfinals",
-   "source": "FOX Sports",
-   "time": "2026-11-20T17:26:58.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPc3h2cW9VNHNaRlZkUUozdnZ1UDM5Sk0xWWJZLXFULVczSnhSSGlGM2ZEYUoydDhGdlJ6X3g5NHhRWFhmcVVoNGtZUWRlUkRqdHY3UE1OTXJBOFc2SjNGX0hOaWpmRTJBd29jNDF2Zm1KVS0yTi16aEE5YUkxUGFPdnBPaUJUOW5DUlpqcFBYem1aeFcwZE1BZXg0TkY2RGRLcUx0LTE3dTZzSUpRZlZwR0Y1SGdOWFdPa2U1a3UyRVRRVXRReE1faS13TTRvMXBZU3M0Ul9mWmVBZHZuLXZpOGF6TG92Z9IB5gFBVV95cUxNRU5HXzVvaHdkQlVXLXF3MFEwbkVxMmRFODNLYXpwaVpXZ0JGSjlSS2VGUGFzemRmZ2tyb2FJa0IzQnphR1hBUVZUYzJTa25jazAyakduZ0R3ZFZRSFpCTVc2ODBaaUpMSVlzTXZ3T3R6SEJEbS1TQUxYUldZUEJOQVNva0FuMzN1MS1LMjMwNERJRlFmWEhvRjVFcm5TZVdQOXlCNk9LVDlCZnZBTzcwQUtDMlBNVDhxZXlhYlcwNTlOWVRMWXdfaXdiQzlRZ2NNdUFLVEg3LXVuaExjZlQtUkhqaDk1dw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMisAFBVV95cUxOX09EaWRKRFRKaHlkeVFmcHlFSWtZUndrMzZ3UVp4ZlkxS2JmN2pZWnFJYVZlN0ZLb050NGVuRTNkSlpmaEFfc2V6QXJxU09sdFF4c0NTMHdncVdDTlRFRTNQX0RPZnVMeWFtcENUc1oyc1BST3dnSDl2a1FQZlNtMENMOUdNZDRibjV6MVoydWxOSkNoUWZDeklQS3c5Nk1nOVRmQS1qczlya2REbkM4Ng?oc=5",
-   "passion": "wc",
-   "title": "FIFA Finds Few U.S. Networks Interested in 2030 World Cup Broadcast Rights",
-   "source": "TVTechnology",
-   "time": "2026-11-20T14:11:15.000Z",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOX09EaWRKRFRKaHlkeVFmcHlFSWtZUndrMzZ3UVp4ZlkxS2JmN2pZWnFJYVZlN0ZLb050NGVuRTNkSlpmaEFfc2V6QXJxU09sdFF4c0NTMHdncVdDTlRFRTNQX0RPZnVMeWFtcENUc1oyc1BST3dnSDl2a1FQZlNtMENMOUdNZDRibjV6MVoydWxOSkNoUWZDeklQS3c5Nk1nOVRmQS1qczlya2REbkM4Ng?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMEdBcTQ4RnlPQWJtSGRWQWtHaHVYdW14dkVzb3E4NDljRFNlcmRIVDZ3aEthY1ZrQS04M3hIT2xRVzIzN3FQREpKTlNTYkZWTEE2WDlZREtZQU93cXBJX2VHR2lnTWYyS2VlckVzSVMwWnRZalNhMy1Gel9aT1M0dzNTV211bFBzdEhjUVFCbmtWOXRaWk05c1d6a2c0N1E0dHp2MDNPTUdrQkdpczI4MjhBVXVtTlJfckNMM2dsajlmTnFPZzFzOEdneXdtWUFuTEg1bnhR?oc=5",
-   "passion": "wc",
-   "title": "How A Wounded Trump And Fractious Spanish Politics Are Shaping FIFA’s 2030 World Cup",
-   "source": "Forbes",
-   "time": "2026-11-23T15:44:51.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMEdBcTQ4RnlPQWJtSGRWQWtHaHVYdW14dkVzb3E4NDljRFNlcmRIVDZ3aEthY1ZrQS04M3hIT2xRVzIzN3FQREpKTlNTYkZWTEE2WDlZREtZQU93cXBJX2VHR2lnTWYyS2VlckVzSVMwWnRZalNhMy1Gel9aT1M0dzNTV211bFBzdEhjUVFCbmtWOXRaWk05c1d6a2c0N1E0dHp2MDNPTUdrQkdpczI4MjhBVXVtTlJfckNMM2dsajlmTnFPZzFzOEdneXdtWUFuTEg1bnhR?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitgFBVV95cUxPSElHNEozY1dCNFVyYUc1VWs3VmpramRCZTZMMFdnbGpVLWdCR0J3VUdESTlRNW0tay1DbDhmOE83TnFGbVBaRFFET3ZVQW9OaHJZUVVacjFDcDVTY29SWkdDYTFLeUZGdWxHSVJDTkhRSUtmWXVhRUc4NXg1VGZoTDdqZEEtLWs3TDVQSVZSVjh3VlNwalNuczNGenpEd1RxODB2X1R3STk0Q0k2d0VlM0lfc1BZUQ?oc=5",
-   "passion": "wc",
-   "title": "Spain thought it had the 2030 World Cup final. Morocco had other plans.",
-   "source": "Reuters",
-   "time": "2026-11-25T07:03:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSElHNEozY1dCNFVyYUc1VWs3VmpramRCZTZMMFdnbGpVLWdCR0J3VUdESTlRNW0tay1DbDhmOE83TnFGbVBaRFFET3ZVQW9OaHJZUVVacjFDcDVTY29SWkdDYTFLeUZGdWxHSVJDTkhRSUtmWXVhRUc4NXg1VGZoTDdqZEEtLWs3TDVQSVZSVjh3VlNwalNuczNGenpEd1RxODB2X1R3STk0Q0k2d0VlM0lfc1BZUQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimgFBVV95cUxNZnN5TVBBSHFMN2RCYkRjTDBFTUhZUllKWnYySGxIcXc3dy1pYUd0Wi1FR2xMTVFaY3pLTk9yLXdjTWluQXl4cW1EQ1dQLXlxWVYtYXoyOHZlcHdpc2pCcU1ocHBsaDgyYTBJcWxic01OWk5hSHFVV2hOVHl3dkdKbFZlUE1tLXBrdF90Vl9FdTluLWNPVFVEd2xB?oc=5",
-   "passion": "wc",
-   "title": "Guardiola 'embarrassed' to say no to Italy, national team my 'next step'",
-   "source": "ESPN",
-   "time": "2026-11-25T01:18:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZnN5TVBBSHFMN2RCYkRjTDBFTUhZUllKWnYySGxIcXc3dy1pYUd0Wi1FR2xMTVFaY3pLTk9yLXdjTWluQXl4cW1EQ1dQLXlxWVYtYXoyOHZlcHdpc2pCcU1ocHBsaDgyYTBJcWxic01OWk5hSHFVV2hOVHl3dkdKbFZlUE1tLXBrdF90Vl9FdTluLWNPVFVEd2xB?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQi0yZVE4akY4dEt6eDBSb0xnQmlNelhJMEg4ejVZNTRFRzhvZldnUlgyWFVmdGpoREp3S0Z6Q2FqdXh0YzJHZ3V1dzM4Sk5RY3ExcGlWa0huOVRuUWRFM01kR0NlNVZDWkNXV0dUcjIyeEREaVlCTENzMGcwRU5tMHhNcXpqQndo?oc=5",
-   "passion": "wc",
-   "title": "Drama surrounding 2030 World Cup broadcasting rights",
-   "source": "Yahoo Sports",
-   "time": "2026-11-22T15:30:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQi0yZVE4akY4dEt6eDBSb0xnQmlNelhJMEg4ejVZNTRFRzhvZldnUlgyWFVmdGpoREp3S0Z6Q2FqdXh0YzJHZ3V1dzM4Sk5RY3ExcGlWa0huOVRuUWRFM01kR0NlNVZDWkNXV0dUcjIyeEREaVlCTENzMGcwRU5tMHhNcXpqQndo?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiswFBVV95cUxQb3pWaTlaVmZRYTJJNkFodmZ6R1ZWN2FqeGlMMFVoelZnNGtwRmdlenJhNGNmNWtaZnpMaFltVUNSakdwVFFDSi1hSnFCQkEyZjl1c1dGS3JFWlpSZU5vZU9XYXl6MEo4SW5idUk3S2IxWEIxWW9GNmx4U3JjNHlZUnU4Y2NHRG5neGpvVEN4RWd6TEc4TEhGLVlraFBOWjJIa0tncmRwMU53djhkaFdlalZ3aw?oc=5",
-   "passion": "wc",
-   "title": "Soccer’s Most Loyal Fans May Lose Out in a Streaming 2030 World Cup",
-   "source": "Sportico.com",
-   "time": "2026-11-25T21:31:28.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb3pWaTlaVmZRYTJJNkFodmZ6R1ZWN2FqeGlMMFVoelZnNGtwRmdlenJhNGNmNWtaZnpMaFltVUNSakdwVFFDSi1hSnFCQkEyZjl1c1dGS3JFWlpSZU5vZU9XYXl6MEo4SW5idUk3S2IxWEIxWW9GNmx4U3JjNHlZUnU4Y2NHRG5neGpvVEN4RWd6TEc4TEhGLVlraFBOWjJIa0tncmRwMU53djhkaFdlalZ3aw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijAFBVV95cUxPbnVhNzRla3BmcGZ0Tl9fdTB0RXRKRk9najhtWHpJSDZoZ3k5dS1FQWhad3dRdUVFNUctU19TYWNSTnlFY3YtQlZUWVljQTZkMlZ5SFBabC1JUFEtOUw1c2E3SDVaa3EzWjNwdkNxZVF3cUNTal9BXzdDd2hLWS1ycGxva2FFM1VCSXFMTQ?oc=5",
-   "passion": "wc",
-   "title": "YouTube Sits Out 2030 World Cup Rights Auction as FIFA’s Bidding Field Shrinks",
-   "source": "TheWrap",
-   "time": "2026-11-20T16:01:10.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbnVhNzRla3BmcGZ0Tl9fdTB0RXRKRk9najhtWHpJSDZoZ3k5dS1FQWhad3dRdUVFNUctU19TYWNSTnlFY3YtQlZUWVljQTZkMlZ5SFBabC1JUFEtOUw1c2E3SDVaa3EzWjNwdkNxZVF3cUNTal9BXzdDd2hLWS1ycGxva2FFM1VCSXFMTQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMijAFBVV95cUxQVDZidkhXM29OQ21jakZTUzdOclF0d2J2bDUwbnR3ZlBYZ0hldmlBa3dERUhYTFgtbjhEb19RU3RjdU45dFRVMW9ncm1BSkZ5YnpCam5HZFFUSzdhamlRd2pOdVdUWGdhRm1xcHdaN2dUamxHV1BiaVpJQmJvb3c1VXpXdVNQYmRCMGRzOA?oc=5",
-   "passion": "wc",
-   "title": "UEFA Nations League Quarterfinal Draw: Spain, France, England Learn Fates",
-   "source": "Sports Illustrated",
-   "time": "2026-11-20T11:42:58.000Z",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVDZidkhXM29OQ21jakZTUzdOclF0d2J2bDUwbnR3ZlBYZ0hldmlBa3dERUhYTFgtbjhEb19RU3RjdU45dFRVMW9ncm1BSkZ5YnpCam5HZFFUSzdhamlRd2pOdVdUWGdhRm1xcHdaN2dUamxHV1BiaVpJQmJvb3c1VXpXdVNQYmRCMGRzOA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMingFBVV95cUxPU0xsX1RfVUhLRG8wcXBOcDJtbDAteUVoWUxBVHgtR042U3ZCYncySWpTVnZXNHI1OHlRZDNkYjFCLTM3RXJ6bkxjckh3M29sQmdjUU8xWlZCNktJYTdSaDYzQVdLMllZWVpTWmNkSFFwRGVEYS1reGNSTHlyOGVadldMaFRub1hZZFRXc2FjNUJXNFQtOHQ4bnV4SmxvUQ?oc=5",
-   "passion": "wc",
-   "title": "YouTube latest contender to bow out of 2030 World Cup bid",
-   "source": "Awful Announcing",
-   "time": "2026-11-20T13:52:48.000Z",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPU0xsX1RfVUhLRG8wcXBOcDJtbDAteUVoWUxBVHgtR042U3ZCYncySWpTVnZXNHI1OHlRZDNkYjFCLTM3RXJ6bkxjckh3M29sQmdjUU8xWlZCNktJYTdSaDYzQVdLMllZWVpTWmNkSFFwRGVEYS1reGNSTHlyOGVadldMaFRub1hZZFRXc2FjNUJXNFQtOHQ4bnV4SmxvUQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMizAFBVV95cUxPZEFBQURRTk1tS1hBT3BNcHNvZWxhUXNTRjdGZ3ZiRlQ1SHdrTTFWWVRza0NKc0k4QloxU1RtOFhIOW92NnRTeURjd29yVlRxV2FVX3oxYkNta284eERQQkVMYXd2S2d1UldZZmhrZUZpZHF0cFNpLU1MNURrcUZrdlhLOTIySkFCNXBCQTAwNDdxOHMteV9uX3puN2VkXzMxbHhrT2NCTHNNbThlWHctc3RJSmQ4aWJFUHpaZHZPVkFHcU11Y2puS3lfaU4?oc=5",
-   "passion": "oly",
-   "title": "L.A. Olympics organizing committee discloses $595-million deficit in new tax filing",
-   "source": "Los Angeles Times",
-   "time": "2026-11-25T21:03:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZEFBQURRTk1tS1hBT3BNcHNvZWxhUXNTRjdGZ3ZiRlQ1SHdrTTFWWVRza0NKc0k4QloxU1RtOFhIOW92NnRTeURjd29yVlRxV2FVX3oxYkNta284eERQQkVMYXd2S2d1UldZZmhrZUZpZHF0cFNpLU1MNURrcUZrdlhLOTIySkFCNXBCQTAwNDdxOHMteV9uX3puN2VkXzMxbHhrT2NCTHNNbThlWHctc3RJSmQ4aWJFUHpaZHZPVkFHcU11Y2puS3lfaU4?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimwFBVV95cUxOUW9zZ3hwbHIwVjRReU5oNWV6dGh4V2hSbWNxVUdEUmlQV2RsRHlvRXFtcTZFUjJWeWs0S05lWEFuUDZsNFRrNGFxUnFJa05mZUpXd01VUE1aVzJIaFZ3a21xam5tYTJLMWhMQ3IzVk10YzBJTnpYWTVGV0FLX0Z1a1d0b0h4cHVGQ1dFYUdpaDhxX2dBZ1pxV2J3cw?oc=5",
-   "passion": "oly",
-   "title": "Coco Gauff and Taylor Townsend offer ‘sneak peek’ for LA28 doubles partnership after Billie Jean King Cup win",
-   "source": "Olympics",
-   "time": "2026-11-23T11:27:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUW9zZ3hwbHIwVjRReU5oNWV6dGh4V2hSbWNxVUdEUmlQV2RsRHlvRXFtcTZFUjJWeWs0S05lWEFuUDZsNFRrNGFxUnFJa05mZUpXd01VUE1aVzJIaFZ3a21xam5tYTJLMWhMQ3IzVk10YzBJTnpYWTVGV0FLX0Z1a1d0b0h4cHVGQ1dFYUdpaDhxX2dBZ1pxV2J3cw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiygFBVV95cUxNcjNnVC1kTFRqZjhMWUx5NHhZdzBCSFJ1andKbmc5R2FqZVcyOUxycUNNSjh0MXRhSnB6dnoyZGxfNVZmMkVVRmZLTmFIY3dPV3lOUkthQkJLY3dfajdDLVEtR1ZVMDRDS1JLTmtCWVZvVE85RE1WVGJXT0xGbUh5UC1FR3Vzd052ck1KdDZWN3JMdnMxMFRyLV9EdkI3VWZTU0c3WEN2dlRzSExSN3Ywa2w2T0gzQVZzcXZLUVNBM1dHQUJPbTZLc3Rn0gHSAUFVX3lxTE5NT2Z1amZ1LUIxcFZaeFFOdHQ3SW1YQkxDaDFDT1RJSmRLM204M01YaDlQdzh5UlVwTm4xenJvVmtfWWc0ZVJxUWZwSTdrc2RDUXZkY3BNWVEzYkt4R3JTQ1RXYktPczMwVVZOM3B1dXp2UW1TOE1KZkY5RlBwMlc5dVBmYnQwZld3RV9tQlFmd3pPSGxhaDM5WkU3NlRhVnhLNlZHQU1LZE1SU3BiZnpzNjdrNmVxWnlIU2IxZDBQT0tvRWpHR0tLR2dHdTFYdEVnQQ?oc=5",
-   "passion": "oly",
-   "title": "Los Angeles Councilwoman demands answers on LA28's reported deficit, executive pay",
-   "source": "NBC Los Angeles",
-   "time": "2026-11-25T22:56:30.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcjNnVC1kTFRqZjhMWUx5NHhZdzBCSFJ1andKbmc5R2FqZVcyOUxycUNNSjh0MXRhSnB6dnoyZGxfNVZmMkVVRmZLTmFIY3dPV3lOUkthQkJLY3dfajdDLVEtR1ZVMDRDS1JLTmtCWVZvVE85RE1WVGJXT0xGbUh5UC1FR3Vzd052ck1KdDZWN3JMdnMxMFRyLV9EdkI3VWZTU0c3WEN2dlRzSExSN3Ywa2w2T0gzQVZzcXZLUVNBM1dHQUJPbTZLc3Rn0gHSAUFVX3lxTE5NT2Z1amZ1LUIxcFZaeFFOdHQ3SW1YQkxDaDFDT1RJSmRLM204M01YaDlQdzh5UlVwTm4xenJvVmtfWWc0ZVJxUWZwSTdrc2RDUXZkY3BNWVEzYkt4R3JTQ1RXYktPczMwVVZOM3B1dXp2UW1TOE1KZkY5RlBwMlc5dVBmYnQwZld3RV9tQlFmd3pPSGxhaDM5WkU3NlRhVnhLNlZHQU1LZE1SU3BiZnpzNjdrNmVxWnlIU2IxZDBQT0tvRWpHR0tLR2dHdTFYdEVnQQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiekFVX3lxTFBIVFBZek5iODV0Skp5N2RUSEJDOUlXRU1Fd1NzVU42aEJqckQyVDVybW1jWmRYTjRWVEo5Y2R2MTNET1VDWUJhMnZENm5ZU3VkamxjTWk1ZGpQcDJCYlZkNkVrdk5jWTR5TmpVbzVUQzF3X1V5Tlo5SFdR?oc=5",
-   "passion": "oly",
-   "title": "Los Angeles 2028 Summer Olympic Games | Bidding, Host, Venues, Planning, Sports, Marketing, & Facts",
-   "source": "Britannica",
-   "time": "2026-11-20T08:00:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBIVFBZek5iODV0Skp5N2RUSEJDOUlXRU1Fd1NzVU42aEJqckQyVDVybW1jWmRYTjRWVEo5Y2R2MTNET1VDWUJhMnZENm5ZU3VkamxjTWk1ZGpQcDJCYlZkNkVrdk5jWTR5TmpVbzVUQzF3X1V5Tlo5SFdR?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimwFBVV95cUxOX0JtOTFZbjNQb1ljRVRKM0twMnI3TklpNTJrY2k1a3BWbHV6SkhybGhzUFM1eHFrTmNJSWdhSHpkT2FHYXFaUmpYdTh1eW14ZkVPR0pocVFncjJnX3FGR1ZoRzM5MUtFeFh1OS1fUWVWa3ZBalFNUWxOM2l6T28yd1RnRlhqdVh5UmNaUVpvSVctVEJENUxLdl9Scw?oc=5",
-   "passion": "oly",
-   "title": "I went to the historic Dakar 2026 Youth Olympic Games. It was beautiful, but it left me with one special request.",
-   "source": "Business Insider",
-   "time": "2026-11-23T10:09:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX0JtOTFZbjNQb1ljRVRKM0twMnI3TklpNTJrY2k1a3BWbHV6SkhybGhzUFM1eHFrTmNJSWdhSHpkT2FHYXFaUmpYdTh1eW14ZkVPR0pocVFncjJnX3FGR1ZoRzM5MUtFeFh1OS1fUWVWa3ZBalFNUWxOM2l6T28yd1RnRlhqdVh5UmNaUVpvSVctVEJENUxLdl9Scw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMipAFBVV95cUxORmcyR1BDZ1h0VjR3TW9WVTd4alBJc0V1dzk5ZWliVkRtVjNfeF9tQnN0ZnVrRS13Tm5ZRmFSNHV1YTNPOEx1dzBGTG96QjlCaXdTLTBFMnJFTEJReFgwV3hHNEdvZEt2d3doS0lacjlQTlVmU0t0cVp4RFJkd184X3haZExvMGxuMXo2M3FsVHV6RTVjWUM5OUZaSG1nRU9jMXUwUA?oc=5",
-   "passion": "oly",
-   "title": "LA28 Olympics organizers disclose nearly $600 million deficit",
-   "source": "CBS News",
-   "time": "2026-11-26T05:18:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORmcyR1BDZ1h0VjR3TW9WVTd4alBJc0V1dzk5ZWliVkRtVjNfeF9tQnN0ZnVrRS13Tm5ZRmFSNHV1YTNPOEx1dzBGTG96QjlCaXdTLTBFMnJFTEJReFgwV3hHNEdvZEt2d3doS0lacjlQTlVmU0t0cVp4RFJkd184X3haZExvMGxuMXo2M3FsVHV6RTVjWUM5OUZaSG1nRU9jMXUwUA?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMitAFBVV95cUxQQTFUMGVjYXlUaWMxck9RTW44V1Z1bGVtOEk1UkMxOVNHSkhhQnF1czBaQUhsWG9rNU5ldG5RSExrcE9FOHU0bGpVVnlxUHdkcHlzQktIQXRsVDZXUTJiRUhhMTdCS2dYQzRPcmR6c1NmMlN3My12ZDZTUWxmVDBfRkRZY2YyQ19OTGg5QmVXZV9GVGNJeFhib0VmdEhUUmNwc1RLTm4wdndDYk85cmhUUkJTazQ?oc=5",
-   "passion": "oly",
-   "title": "Austria picks Santa Monica beachfront for its LA28 Olympic hospitality house",
-   "source": "Los Angeles Daily News",
-   "time": "2026-11-23T23:59:58.000Z",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQTFUMGVjYXlUaWMxck9RTW44V1Z1bGVtOEk1UkMxOVNHSkhhQnF1czBaQUhsWG9rNU5ldG5RSExrcE9FOHU0bGpVVnlxUHdkcHlzQktIQXRsVDZXUTJiRUhhMTdCS2dYQzRPcmR6c1NmMlN3My12ZDZTUWxmVDBfRkRZY2YyQ19OTGg5QmVXZV9GVGNJeFhib0VmdEhUUmNwc1RLTm4wdndDYk85cmhUUkJTazQ?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa0o4dkxmQ1o5MkhCWjRGY29JNFl4TUFVWkdLTEJiSjdDNkpVQndTR0NFSW9MUk11b1FWNEVjTWpqd2V4R2psVzRjcEloclZpOW15VWJ6Tldhbk5STDZ2cmpBSXozODBrckpZRE9ieGtmOHF1Tld4Z25rdVBuVzBFSk1Ea3haNktGV3BWVGl5aURMUVpvSHB2MDM0SUlNQVJkM1pveHB0ZnJQeGtULXBCN2dKVC1QaTVrTkt2S09ZMWpuWnd3LUFqeUo2SjhOWlJPclI0SkVmN281MzlQaTdUbnRiNGk3bDdmV1ZjYnZWc1RhOC01SzZv?oc=5",
-   "passion": "oly",
-   "title": "LOS ANGELES 2028: San Jose City Council wants to host the Olympic Torch, but wants a proposal on how to cover possible $703,010 costs",
-   "source": "The Sports Examiner",
-   "time": "2026-11-22T03:48:10.000Z",
-   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQa0o4dkxmQ1o5MkhCWjRGY29JNFl4TUFVWkdLTEJiSjdDNkpVQndTR0NFSW9MUk11b1FWNEVjTWpqd2V4R2psVzRjcEloclZpOW15VWJ6Tldhbk5STDZ2cmpBSXozODBrckpZRE9ieGtmOHF1Tld4Z25rdVBuVzBFSk1Ea3haNktGV3BWVGl5aURMUVpvSHB2MDM0SUlNQVJkM1pveHB0ZnJQeGtULXBCN2dKVC1QaTVrTkt2S09ZMWpuWnd3LUFqeUo2SjhOWlJPclI0SkVmN281MzlQaTdUbnRiNGk3bDdmV1ZjYnZWc1RhOC01SzZv?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMimwFBVV95cUxQTTMyeFFQV1NzSE9SbjA4WnFheU1KMGdnNGx0UnQtTkdmTGNSVHBGTTRNdndjaUhvR1k2bjdZYnRWNVNUbmJBWFBPc1JNLUpVczItWkxxZG14YURsRlVWU0gtR1otdTZmTjMxRGlZSXZWV0RXdzAtVUpxaTlXdmVuT21zOUhQVEQ1a0c5UGhYZEtiVElfV3hoUG5hZw?oc=5",
-   "passion": "oly",
-   "title": "Trinity Rodman explains why LA28 could be \"huge\" for women's football: \"To grow the sport, you need eyes on it\"",
-   "source": "Olympics",
-   "time": "2026-11-20T22:21:00.000Z",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQTTMyeFFQV1NzSE9SbjA4WnFheU1KMGdnNGx0UnQtTkdmTGNSVHBGTTRNdndjaUhvR1k2bjdZYnRWNVNUbmJBWFBPc1JNLUpVczItWkxxZG14YURsRlVWU0gtR1otdTZmTjMxRGlZSXZWV0RXdzAtVUpxaTlXdmVuT21zOUhQVEQ1a0c5UGhYZEtiVElfV3hoUG5hZw?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYmVWMVVlWkpuRWNXbjFNX29rNHlIRmFWS09IMkFzNG9zZTlzODdKRFB6UFR1eVlpd3UtdEk5cmJfbHJEek00ekNpdDJVaDZfUVlhc2J0LXhJOS1mWEhOTWR2aUNlaHBZX1d5R3o3NW1CRmR2MEFRcHoxQ1AzdzVhbWdKWHJUbkpyczRSMTB3RXV4NmNVdU9IazV1cXBTQlMycE96N21panU?oc=5",
-   "passion": "oly",
-   "title": "LA28 Cultural Olympiad shakeup: Director out amid concerns over funding and leadership",
-   "source": "Los Angeles Times",
-   "time": "2026-11-24T23:04:30.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYmVWMVVlWkpuRWNXbjFNX29rNHlIRmFWS09IMkFzNG9zZTlzODdKRFB6UFR1eVlpd3UtdEk5cmJfbHJEek00ekNpdDJVaDZfUVlhc2J0LXhJOS1mWEhOTWR2aUNlaHBZX1d5R3o3NW1CRmR2MEFRcHoxQ1AzdzVhbWdKWHJUbkpyczRSMTB3RXV4NmNVdU9IazV1cXBTQlMycE96N21panU?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMirwFBVV95cUxQUktZYlFfNnFoZG5XOXV5OEl3TWlfenU4Z0FCenRvSnVyb0VMc1ZfUjd6YlNfd3hRTUotWlpIQkw4Z0xvQXhoSGh1eVlPYURPOWZfaFYzRk4zZTlJYnR3NklOYUd1bDNSMmJWNGpwX2tpR1dJYTFfMi1qRGhUZjMxT0tLb3FpV2ZWbVNuaWZfQkFaTjdoOFdXZ1o4S3FGaGlVMkZVWGJ4WWt3UHVUNVE0?oc=5",
-   "passion": "oly",
-   "title": "Los Angeles City Council demands answers on LA28's nearly $600 million budget deficit",
-   "source": "CBS News",
-   "time": "2026-11-26T05:44:31.000Z",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQUktZYlFfNnFoZG5XOXV5OEl3TWlfenU4Z0FCenRvSnVyb0VMc1ZfUjd6YlNfd3hRTUotWlpIQkw4Z0xvQXhoSGh1eVlPYURPOWZfaFYzRk4zZTlJYnR3NklOYUd1bDNSMmJWNGpwX2tpR1dJYTFfMi1qRGhUZjMxT0tLb3FpV2ZWbVNuaWZfQkFaTjdoOFdXZ1o4S3FGaGlVMkZVWGJ4WWt3UHVUNVE0?oc=5"
-  },
-  {
-   "id": "Google News:https://news.google.com/rss/articles/CBMiogFBVV95cUxOVndZVmJDZkNTdVlaNWZvbDJwa3FkMUpEeE9xdC1TdkdRVkNKTlpmNU1LMTNqc1hMZENuWkhCZWNDNnFjbWg0UWpMdjZueXdTYjVJc191NVplNGNwTWpXaThiVG92WXBfVjB3dnRicVduZTdKcWJiUXJkOUFTTDhrQUZGdUFnT0RXcHp4SmlNdXJlZFMyVkdWazJSWUVCUm9NbHc?oc=5",
-   "passion": "oly",
-   "title": "How to qualify for handball at LA28 Olympics: The qualification system explained",
-   "source": "Olympics",
-   "time": "2026-11-20T13:05:05.000Z",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVndZVmJDZkNTdVlaNWZvbDJwa3FkMUpEeE9xdC1TdkdRVkNKTlpmNU1LMTNqc1hMZENuWkhCZWNDNnFjbWg0UWpMdjZueXdTYjVJc191NVplNGNwTWpXaThiVG92WXBfVjB3dnRicVduZTdKcWJiUXJkOUFTTDhrQUZGdUFnT0RXcHp4SmlNdXJlZFMyVkdWazJSWUVCUm9NbHc?oc=5"
   }
  ]
 }

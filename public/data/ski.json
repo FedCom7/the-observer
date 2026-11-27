@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T05:00:08.649Z",
+ "updated": "2026-11-27T14:59:32.307Z",
  "season": 2027,
  "races": [
   {
@@ -460,20 +460,6 @@
    "cancelled": false
   },
   {
-   "raceid": "131711",
-   "eventid": "62941",
-   "category": "WC",
-   "place": "Val Gardena-Groeden Südtirol",
-   "country": "ITA",
-   "discipline": "Super G",
-   "gender": "men",
-   "start": "2026-12-18T10:30:00.000Z",
-   "approxTime": true,
-   "tz": "Europe/Rome",
-   "runs": [],
-   "cancelled": false
-  },
-  {
    "raceid": "131604",
    "eventid": "62812",
    "category": "WC",
@@ -481,24 +467,34 @@
    "country": "SUI",
    "discipline": "Super G",
    "gender": "women",
-   "start": "2026-12-18T10:30:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-18T09:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Zurich",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-18T09:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
-   "raceid": "131712",
+   "raceid": "131711",
    "eventid": "62941",
    "category": "WC",
    "place": "Val Gardena-Groeden Südtirol",
    "country": "ITA",
-   "discipline": "Downhill",
+   "discipline": "Super G",
    "gender": "men",
-   "start": "2026-12-19T10:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-18T11:00:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Rome",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-18T11:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -509,10 +505,34 @@
    "country": "SUI",
    "discipline": "Super G",
    "gender": "women",
-   "start": "2026-12-19T10:30:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-19T09:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Zurich",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-19T09:30:00.000Z"
+    }
+   ],
+   "cancelled": false
+  },
+  {
+   "raceid": "131712",
+   "eventid": "62941",
+   "category": "WC",
+   "place": "Val Gardena-Groeden Südtirol",
+   "country": "ITA",
+   "discipline": "Downhill",
+   "gender": "men",
+   "start": "2026-12-19T11:00:00.000Z",
+   "approxTime": false,
+   "tz": "Europe/Rome",
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-19T11:00:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {
@@ -523,10 +543,19 @@
    "country": "SUI",
    "discipline": "Giant Slalom",
    "gender": "women",
-   "start": "2026-12-20T09:00:00.000Z",
-   "approxTime": true,
+   "start": "2026-12-20T08:30:00.000Z",
+   "approxTime": false,
    "tz": "Europe/Zurich",
-   "runs": [],
+   "runs": [
+    {
+     "run": "1st",
+     "start": "2026-12-20T08:30:00.000Z"
+    },
+    {
+     "run": "2nd",
+     "start": "2026-12-20T11:30:00.000Z"
+    }
+   ],
    "cancelled": false
   },
   {

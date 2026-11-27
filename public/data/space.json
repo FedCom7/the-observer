@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-27T05:03:25.487Z",
- "llAt": "2026-11-27T05:03:25.487Z",
- "llBlockedUntil": "2026-11-27T05:23:06.072Z",
+ "updated": "2026-11-27T15:01:14.161Z",
+ "llAt": "2026-11-27T15:01:14.161Z",
+ "llBlockedUntil": null,
  "crewed": [
   {
    "id": "a5556e79-a01f-48c6-b822-69bbadb4460d",
@@ -1101,15 +1101,6 @@
  ],
  "llEvents": [
   {
-   "id": 1578,
-   "name": "Progress MS-36 Docking",
-   "type": "Docking",
-   "date": "2026-11-26T12:11:00Z",
-   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Rassvet module of the ISS.",
-   "location": "International Space Station",
-   "webcast": false
-  },
-  {
    "id": 1579,
    "name": "Shenzhou 23 Landing",
    "type": "Spacecraft Landing",
@@ -1165,15 +1156,6 @@
   }
  ],
  "events": [
-  {
-   "id": 1578,
-   "name": "Progress MS-36 Docking",
-   "type": "Docking",
-   "date": "2026-11-26T12:11:00Z",
-   "description": "The Progress MS-36 spacecraft is scheduled to autonomously dock to the Rassvet module of the ISS.",
-   "location": "International Space Station",
-   "webcast": false
-  },
   {
    "id": 1579,
    "name": "Shenzhou 23 Landing",
@@ -2431,7 +2413,7 @@
   ]
  },
  "spacex": {
-  "at": "2026-11-26T12:21:59.970Z",
+  "at": "2026-11-27T15:00:51.177Z",
   "stats": {
    "total": 749,
    "successes": 734,
@@ -3552,6 +3534,12 @@
  },
  "news": [
   {
+   "title": "APOD: 2026 November 27 – The Moon Watchers",
+   "source": "NASA · News releases",
+   "time": "2026-11-27T05:05:00.000Z",
+   "url": "https://science.nasa.gov/image-article/apod-2026-november-27-the-moon-watchers/"
+  },
+  {
    "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day",
    "source": "NASA · Space Station blog",
    "time": "2026-11-26T12:19:44.000Z",
@@ -3694,16 +3682,10 @@
    "source": "NASA · Commercial Crew blog",
    "time": "2026-10-07T10:01:13.000Z",
    "url": "https://www.nasa.gov/blogs/spacestation/2026/10/07/nasas-spacex-crew-12-saying-farewell-closing-dragon-hatch-soon/"
-  },
-  {
-   "title": "Crew-12 Ready to Depart as New Residents Begin Advanced Health Research",
-   "source": "NASA · Commercial Crew blog",
-   "time": "2026-10-06T17:57:55.000Z",
-   "url": "https://www.nasa.gov/blogs/spacestation/2026/10/06/crew-12-ready-to-depart-as-new-residents-begin-advanced-health-research/"
   }
  ],
  "corps": {
-  "at": "2026-11-27T05:03:14.372Z",
+  "at": "2026-11-27T15:01:00.898Z",
   "group": {
    "number": 24,
    "title": "NASA Astronaut Group 24",
@@ -4108,7 +4090,7 @@
   }
  },
  "artemisFlow": {
-  "at": "2026-11-27T05:03:18.901Z",
+  "at": "2026-11-27T15:01:05.753Z",
   "mission": "Artemis III",
   "capsules": {
    "Artemis I": {
@@ -4621,7 +4603,7 @@
   ]
  },
  "agenda": {
-  "at": "2026-11-27T05:03:25.486Z",
+  "at": "2026-11-27T15:01:14.160Z",
   "items": [
    {
     "id": "agenda:3c0lv8lc68i763re0fftneqfgi@google.com",
