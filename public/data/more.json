@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T07:41:07.037Z",
+ "updated": "2026-11-28T16:50:36.745Z",
  "motogp": {
   "season": 2026,
   "rounds": [
@@ -3901,7 +3901,29 @@
       "start": "2026-11-29T13:00:00.000Z"
      }
     ],
-    "results": null
+    "results": {
+     "race": [],
+     "sprint": [
+      {
+       "pos": 1,
+       "name": "Marco Bezzecchi",
+       "nation": "IT",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 2,
+       "name": "Jorge Martin",
+       "nation": "ES",
+       "team": "Aprilia Racing"
+      },
+      {
+       "pos": 3,
+       "name": "Enea Bastianini",
+       "nation": "IT",
+       "team": "Red Bull KTM Tech3"
+      }
+     ]
+    }
    }
   ],
   "riders": [
@@ -3919,27 +3941,27 @@
    },
    {
     "pos": 2,
-    "name": "Jorge Martin",
-    "number": 89,
-    "nation": "ES",
-    "team": "Aprilia Racing",
-    "constructor": "Aprilia",
-    "points": 396,
-    "wins": 1,
-    "podiums": 10,
-    "sprintWins": 4
-   },
-   {
-    "pos": 3,
     "name": "Marco Bezzecchi",
     "number": 72,
     "nation": "IT",
     "team": "Aprilia Racing",
     "constructor": "Aprilia",
-    "points": 394,
+    "points": 406,
     "wins": 7,
     "podiums": 13,
-    "sprintWins": 1
+    "sprintWins": 2
+   },
+   {
+    "pos": 3,
+    "name": "Jorge Martin",
+    "number": 89,
+    "nation": "ES",
+    "team": "Aprilia Racing",
+    "constructor": "Aprilia",
+    "points": 405,
+    "wins": 1,
+    "podiums": 10,
+    "sprintWins": 4
    },
    {
     "pos": 4,
@@ -3948,7 +3970,7 @@
     "nation": "ES",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 315,
+    "points": 318,
     "wins": 1,
     "podiums": 7,
     "sprintWins": 2
@@ -3960,7 +3982,7 @@
     "nation": "JP",
     "team": "SuperFile Trackhouse MotoGP Team",
     "constructor": "Aprilia",
-    "points": 309,
+    "points": 315,
     "wins": 1,
     "podiums": 4,
     "sprintWins": 0
@@ -3972,7 +3994,7 @@
     "nation": "IT",
     "team": "Pertamina Enduro VR46 Racing Team",
     "constructor": "Ducati",
-    "points": 298,
+    "points": 303,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 0
@@ -3996,7 +4018,7 @@
     "nation": "ES",
     "team": "BK8 Gresini Racing MotoGP",
     "constructor": "Ducati",
-    "points": 204,
+    "points": 208,
     "wins": 1,
     "podiums": 3,
     "sprintWins": 1
@@ -4020,7 +4042,7 @@
     "nation": "IT",
     "team": "Red Bull KTM Tech3",
     "constructor": "KTM",
-    "points": 152,
+    "points": 159,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4044,7 +4066,7 @@
     "nation": "ZA",
     "team": "Red Bull KTM Factory Racing",
     "constructor": "KTM",
-    "points": 127,
+    "points": 129,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
@@ -4183,11 +4205,11 @@
    },
    {
     "pos": 24,
-    "name": "Augusto Fernandez",
-    "number": 47,
+    "name": "Pol Espargaro",
+    "number": 44,
     "nation": "ES",
-    "team": "Prima Pramac Yamaha MotoGP",
-    "constructor": "Yamaha",
+    "team": "Red Bull KTM Tech3",
+    "constructor": "KTM",
     "points": 6,
     "wins": 0,
     "podiums": 0,
@@ -4195,12 +4217,12 @@
    },
    {
     "pos": 25,
-    "name": "Pol Espargaro",
-    "number": 44,
+    "name": "Augusto Fernandez",
+    "number": 47,
     "nation": "ES",
-    "team": "Red Bull KTM Tech3",
-    "constructor": "KTM",
-    "points": 5,
+    "team": "Prima Pramac Yamaha MotoGP",
+    "constructor": "Yamaha",
+    "points": 6,
     "wins": 0,
     "podiums": 0,
     "sprintWins": 0
