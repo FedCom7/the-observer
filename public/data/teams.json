@@ -1,12 +1,14 @@
 {
- "updated": "2026-11-27T23:24:44.933Z",
+ "updated": "2026-11-28T07:40:18.809Z",
  "milan": {
   "key": "milan",
   "name": "AC Milan",
   "sport": "soccer",
   "league": "ita.1",
   "id": "103",
-  "status": {},
+  "status": {
+   "history": "127 seasons"
+  },
   "card": {
    "id": "103",
    "name": "AC Milan",
@@ -392,7 +394,7 @@
     ]
    }
   ],
-  "historyAt": "2026-11-27T05:00:21.229Z",
+  "historyAt": "2026-11-28T07:41:12.947Z",
   "history": [
    {
     "season": "1899–1900",
@@ -14072,7 +14074,9 @@
   "sport": "football",
   "league": "nfl",
   "id": "17",
-  "status": {},
+  "status": {
+   "history": "66 seasons"
+  },
   "card": {
    "id": "17",
    "name": "New England Patriots",
@@ -14103,7 +14107,7 @@
    "sacks": 27
   },
   "competitions": null,
-  "historyAt": "2026-11-27T05:00:27.906Z",
+  "historyAt": "2026-11-28T07:41:18.892Z",
   "history": [
    {
     "season": "1960",
@@ -20933,7 +20937,9 @@
   "sport": "football",
   "league": "college-football",
   "id": "251",
-  "status": {},
+  "status": {
+   "history": "133 seasons"
+  },
   "card": {
    "id": "251",
    "name": "Texas Longhorns",
@@ -20942,14 +20948,14 @@
    "color": "#af5c37",
    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
    "standing": "2nd in SEC",
-   "record": "9-2",
+   "record": "10-2",
    "rank": null,
-   "gp": 11,
-   "w": 9,
+   "gp": 12,
+   "w": 10,
    "d": 0,
    "l": 2,
-   "pf": 347,
-   "pa": 181,
+   "pf": 363,
+   "pa": 187,
    "pts": null,
    "pos": null,
    "seed": 2
@@ -20964,7 +20970,7 @@
    "sacks": 33
   },
   "competitions": null,
-  "historyAt": "2026-11-27T05:00:31.811Z",
+  "historyAt": "2026-11-28T07:41:22.438Z",
   "history": [
    {
     "season": "1893",
@@ -26550,6 +26556,16 @@
      "them": 3,
      "result": "W",
      "type": "Regular Season"
+    },
+    {
+     "date": "2026-11-28",
+     "opp": "245",
+     "oppName": "Texas A&M Aggies",
+     "home": false,
+     "us": 16,
+     "them": 6,
+     "result": "W",
+     "type": "Regular Season"
     }
    ]
   },
@@ -26756,11 +26772,11 @@
    },
    {
     "season": 2026,
-    "w": 9,
+    "w": 10,
     "d": 0,
     "l": 2,
-    "pf": 347,
-    "pa": 181
+    "pf": 363,
+    "pa": 187
    }
   ],
   "rivals": [
@@ -26938,18 +26954,18 @@
      "abbr": "TA&M",
      "color": "#500000",
      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png",
-     "standing": "15th in SEC",
-     "record": "4-7",
+     "standing": "16th in SEC",
+     "record": "4-8",
      "rank": null,
-     "gp": 11,
+     "gp": 12,
      "w": 4,
      "d": 0,
-     "l": 7,
-     "pf": 249,
-     "pa": 218,
+     "l": 8,
+     "pf": 255,
+     "pa": 234,
      "pts": null,
      "pos": null,
-     "seed": 15
+     "seed": 16
     },
     "stats": {
      "ppg": 22.636,
@@ -26961,21 +26977,32 @@
      "sacks": 12
     },
     "allTime": {
-     "wins": 78,
+     "wins": 79,
      "losses": 37,
      "draws": 5,
-     "total": 120,
-     "text": "Texas leads, 78–37–5"
+     "total": 121,
+     "text": "Texas leads, 79–37–5"
     },
     "page": "Texas–Texas A&M football rivalry",
     "since2001": {
-     "w": 10,
+     "w": 11,
      "d": 0,
      "l": 3,
-     "gf": 406,
-     "ga": 255
+     "gf": 422,
+     "ga": 261
     },
     "recent": [
+     {
+      "date": "2026-11-28",
+      "opp": "245",
+      "oppName": "Texas A&M Aggies",
+      "home": false,
+      "us": 16,
+      "them": 6,
+      "result": "W",
+      "type": "Regular Season",
+      "season": 2026
+     },
      {
       "date": "2025-11-29",
       "opp": "245",
@@ -27074,17 +27101,6 @@
       "result": "W",
       "type": "Regular Season",
       "season": 2005
-     },
-     {
-      "date": "2004-11-26",
-      "opp": "245",
-      "oppName": "Texas A&M Aggies",
-      "home": true,
-      "us": 26,
-      "them": 13,
-      "result": "W",
-      "type": "Regular Season",
-      "season": 2004
      }
     ]
    },
@@ -27471,14 +27487,14 @@
      "color": "#be0000",
      "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
      "standing": "1st in Big 12",
-     "record": "11-0",
+     "record": "12-0",
      "rank": null,
-     "gp": 11,
-     "w": 11,
+     "gp": 12,
+     "w": 12,
      "d": 0,
      "l": 0,
-     "pf": 417,
-     "pa": 203,
+     "pf": 469,
+     "pa": 231,
      "pts": null,
      "pos": null,
      "seed": 1
@@ -27579,7 +27595,9 @@
   "sport": "baseball",
   "league": "mlb",
   "id": "19",
-  "status": {},
+  "status": {
+   "history": "143 seasons"
+  },
   "card": {
    "id": "19",
    "name": "Los Angeles Dodgers",
@@ -27602,7 +27620,7 @@
   },
   "stats": null,
   "competitions": null,
-  "historyAt": "2026-11-27T05:00:34.680Z",
+  "historyAt": "2026-11-28T07:41:24.578Z",
   "history": [
    {
     "season": "1883",
